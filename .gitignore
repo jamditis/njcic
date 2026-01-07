@@ -1,0 +1,17 @@
+# Cloned repositories (for local exploration only)
+repos/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Environment files
+.env
+.env.local
