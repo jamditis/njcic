@@ -1,5 +1,7 @@
 # NJ Civic Info Consortium (NJCIC) Research Project
 
+[![Update NJCIC Dashboard](https://github.com/jamditis/njcic/actions/workflows/update-dashboard.yml/badge.svg)](https://github.com/jamditis/njcic/actions/workflows/update-dashboard.yml)
+
 This repository contains research and exploration materials related to the New Jersey Civic Information Consortium.
 
 ## Project Structure

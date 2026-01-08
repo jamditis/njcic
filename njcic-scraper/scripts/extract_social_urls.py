@@ -30,9 +30,17 @@ from bs4 import BeautifulSoup
 from tqdm import tqdm
 
 
-# Configuration
-INPUT_FILE = "/home/user/njcic/repos/njcic-grantees-map/data/grantees.json"
-OUTPUT_FILE = "/home/user/njcic/njcic-scraper/data/grantees_with_social.json"
+# Configuration - Use relative paths
+SCRIPT_DIR = Path(__file__).resolve().parent
+BASE_DIR = SCRIPT_DIR.parent
+# Look for grantees.json in multiple locations
+INPUT_FILE_OPTIONS = [
+    BASE_DIR.parent / "repos" / "njcic-grantees-map" / "data" / "grantees.json",
+    BASE_DIR / "data" / "grantees.json",
+    Path.cwd() / "data" / "grantees.json",
+]
+INPUT_FILE = next((f for f in INPUT_FILE_OPTIONS if f.exists()), INPUT_FILE_OPTIONS[0])
+OUTPUT_FILE = BASE_DIR / "data" / "grantees_with_social.json"
 REQUEST_TIMEOUT = 10  # seconds
 REQUEST_DELAY = 0.5  # seconds between requests
 MAX_RETRIES = 2

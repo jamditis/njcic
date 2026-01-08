@@ -1,0 +1,23 @@
+# This directory contains dashboard data files
+# The main data file should be named: dashboard-data.json
+#
+# Expected JSON structure:
+# {
+#   "summary": {
+#     "totalGrantees": number,
+#     "totalPosts": number,
+#     "totalEngagement": number,
+#     "platformsMonitored": number
+#   },
+#   "platforms": {
+#     "Instagram": number,
+#     "TikTok": number,
+#     "YouTube": number,
+#     ...
+#   },
+#   "grantees": [
+#     { "name": "Grantee Name", "engagement": number },
+#     ...
+#   ],
+#   "lastUpdated": "ISO 8601 timestamp"
+# }

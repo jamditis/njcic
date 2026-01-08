@@ -1,0 +1,239 @@
+name: Update NJCIC Dashboard
+
+on:
+  schedule:
+    # Run weekly on Monday at 7am ET (12:00 UTC)
+    - cron: '0 12 * * 1'
+  workflow_dispatch:
+    inputs:
+      platforms:
+        description: 'Platforms to scrape (comma-separated)'
+        required: false
+        default: 'twitter,youtube,bluesky,instagram'
+      skip_url_extraction:
+        description: 'Skip URL extraction step'
+        required: false
+        type: boolean
+        default: false
+
+env:
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120  # 2-hour timeout
+
+    steps:
+      # Step 1: Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 2: Set up Python with pip caching
+      - name: Set up Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+          cache-dependency-path: 'njcic-scraper/requirements.txt'
+
+      # Step 3: Install Python dependencies
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r njcic-scraper/requirements.txt
+
+      # Step 4: Install Playwright with Chromium
+      - name: Install Playwright browsers
+        run: |
+          pip install playwright
+          playwright install chromium --with-deps
+
+      # Step 5: Run URL extraction script
+      - name: Extract social media URLs from grantee websites
+        id: url_extraction
+        continue-on-error: true
+        if: ${{ github.event.inputs.skip_url_extraction != 'true' }}
+        run: |
+          cd njcic-scraper
+          python scripts/extract_social_urls.py 2>&1 | tee ../url_extraction.log
+          echo "extraction_status=$?" >> $GITHUB_OUTPUT
+        env:
+          PYTHONUNBUFFERED: 1
+
+      # Step 6: Run social media scraper
+      - name: Run social media scraper
+        id: scraper
+        continue-on-error: true
+        run: |
+          cd njcic-scraper
+          PLATFORMS="${{ github.event.inputs.platforms || 'twitter,youtube,bluesky,instagram' }}"
+          python main.py --platforms "$PLATFORMS" 2>&1 | tee ../scraper.log
+          echo "scraper_status=$?" >> $GITHUB_OUTPUT
+        env:
+          PYTHONUNBUFFERED: 1
+          # Twitter/X API credentials
+          TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
+          TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+          TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+          # YouTube API
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          # Bluesky credentials
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          # Instagram credentials (if using authenticated scraping)
+          INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
+          INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
+          INSTAGRAM_SESSION_FILE: ${{ secrets.INSTAGRAM_SESSION_FILE }}
+          # Facebook credentials (if needed)
+          FACEBOOK_ACCESS_TOKEN: ${{ secrets.FACEBOOK_ACCESS_TOKEN }}
+
+      # Step 7: Run data validation
+      - name: Validate scraped data
+        id: validation
+        continue-on-error: true
+        run: |
+          cd njcic-scraper
+          if [ -f "scripts/validate_data.py" ]; then
+            python scripts/validate_data.py 2>&1 | tee ../validation.log
+          else
+            echo "No validation script found, skipping..."
+            echo "Checking for output files..."
+            ls -la output/ 2>/dev/null || echo "No output directory"
+            ls -la data/ 2>/dev/null || echo "No data directory"
+          fi
+          echo "validation_status=$?" >> $GITHUB_OUTPUT
+
+      # Step 8: Prepare dashboard data
+      - name: Prepare dashboard data
+        id: prepare_dashboard
+        continue-on-error: true
+        run: |
+          cd njcic-scraper
+          if [ -f "scripts/prepare_dashboard_data.py" ]; then
+            python scripts/prepare_dashboard_data.py 2>&1 | tee ../prepare_dashboard.log
+          elif [ -f "prepare_dashboard_data.py" ]; then
+            python prepare_dashboard_data.py 2>&1 | tee ../prepare_dashboard.log
+          else
+            echo "Warning: prepare_dashboard_data.py not found"
+            echo "Looking for dashboard data files..."
+            find . -name "dashboard*.json" -o -name "*dashboard*.json" 2>/dev/null || true
+          fi
+          echo "prepare_status=$?" >> $GITHUB_OUTPUT
+
+      # Step 9: Copy dashboard data
+      - name: Copy dashboard data to dashboard directory
+        run: |
+          # Look for dashboard-data.json in various locations
+          DASHBOARD_JSON=""
+          for path in \
+            "njcic-scraper/dashboard-data.json" \
+            "njcic-scraper/output/dashboard-data.json" \
+            "njcic-scraper/data/dashboard-data.json"; do
+            if [ -f "$path" ]; then
+              DASHBOARD_JSON="$path"
+              break
+            fi
+          done
+
+          if [ -n "$DASHBOARD_JSON" ]; then
+            echo "Found dashboard data at: $DASHBOARD_JSON"
+            mkdir -p dashboard/data
+            cp "$DASHBOARD_JSON" dashboard/data/dashboard-data.json
+            echo "Dashboard data copied successfully"
+          else
+            echo "Warning: dashboard-data.json not found in expected locations"
+            echo "Listing available JSON files:"
+            find njcic-scraper -name "*.json" -type f 2>/dev/null | head -20 || true
+          fi
+
+      # Step 10: Commit and push changes
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          # Add all relevant files
+          git add -A dashboard/data/ || true
+          git add -A njcic-scraper/output/ || true
+          git add -A njcic-scraper/data/ || true
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+            git commit -m "Update dashboard data - $TIMESTAMP
+
+            Automated update from GitHub Actions workflow.
+            Platforms scraped: ${{ github.event.inputs.platforms || 'twitter,youtube,bluesky,instagram' }}"
+
+            git push
+            echo "Changes committed and pushed successfully"
+          fi
+
+      # Step 11: Upload scraping artifacts
+      - name: Upload scraping artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scraping-artifacts-${{ github.run_number }}
+          retention-days: 30
+          path: |
+            njcic-scraper/output/**/*.csv
+            njcic-scraper/output/**/*.json
+            njcic-scraper/data/**/*.csv
+            njcic-scraper/data/**/*.json
+            njcic-scraper/*.log
+            *.log
+            njcic-scraper/SCRAPE_REPORT*.md
+            njcic-scraper/SESSION_REPORT*.md
+          if-no-files-found: warn
+
+      # Step 12: Generate run summary
+      - name: Generate workflow summary
+        if: always()
+        run: |
+          echo "## NJCIC Dashboard Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Run Date:** $(date -u +"%Y-%m-%d %H:%M UTC")" >> $GITHUB_STEP_SUMMARY
+          echo "**Platforms:** ${{ github.event.inputs.platforms || 'twitter,youtube,bluesky,instagram' }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Step Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Step | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| URL Extraction | ${{ steps.url_extraction.outcome || 'skipped' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Social Scraper | ${{ steps.scraper.outcome || 'skipped' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Data Validation | ${{ steps.validation.outcome || 'skipped' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Dashboard Prep | ${{ steps.prepare_dashboard.outcome || 'skipped' }} |" >> $GITHUB_STEP_SUMMARY
+
+  # Notification job - runs after main job completes
+  notify:
+    needs: update-dashboard
+    runs-on: ubuntu-latest
+    if: failure() && (secrets.SLACK_WEBHOOK != '')
+
+    steps:
+      - name: Send Slack notification on failure
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          fields: repo,message,commit,author,action,eventName,ref,workflow
+          text: 'NJCIC Dashboard update failed! Check the workflow run for details.'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
+        if: ${{ secrets.SLACK_WEBHOOK != '' }}
+
+      - name: Send email notification on failure (via GitHub)
+        if: failure()
+        run: |
+          echo "Workflow failed. GitHub will send automatic notifications to repository watchers."
+          echo "To receive email notifications, ensure you're watching this repository."
+          echo ""
+          echo "Failed run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

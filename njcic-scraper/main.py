@@ -40,10 +40,11 @@ from scrapers.youtube import YouTubeScraper
 from scrapers.threads import ThreadsScraper
 
 
-# Constants
-GRANTEES_DATA_PATH = Path("/home/user/njcic/njcic-scraper/data/grantees_with_social.json")
-SCRAPING_REPORT_PATH = Path("/home/user/njcic/njcic-scraper/output/scraping_report.json")
-ENGAGEMENT_SUMMARY_PATH = Path("/home/user/njcic/njcic-scraper/output/engagement_summary.csv")
+# Constants - Use relative paths based on script location
+BASE_DIR = Path(__file__).resolve().parent
+GRANTEES_DATA_PATH = BASE_DIR / "data" / "grantees_with_social.json"
+SCRAPING_REPORT_PATH = BASE_DIR / "output" / "scraping_report.json"
+ENGAGEMENT_SUMMARY_PATH = BASE_DIR / "output" / "engagement_summary.csv"
 
 # Platform to scraper class mapping
 PLATFORM_SCRAPERS = {

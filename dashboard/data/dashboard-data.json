@@ -1,0 +1,163 @@
+{
+  "summary": {
+    "totalGrantees": 3,
+    "totalPosts": 1735,
+    "totalEngagement": 747500,
+    "platformsTracked": 8,
+    "lastUpdated": "2026-01-07T17:26:16.075637",
+    "scrapingDuration": "1h 0m 0s"
+  },
+  "platforms": {
+    "twitter": {
+      "posts": 450,
+      "engagement": 125000,
+      "grantees": 3,
+      "attempted": 35,
+      "successful": 30,
+      "successRate": "85.7%"
+    },
+    "facebook": {
+      "posts": 380,
+      "engagement": 89000,
+      "grantees": 2,
+      "attempted": 40,
+      "successful": 38,
+      "successRate": "95.0%"
+    },
+    "instagram": {
+      "posts": 420,
+      "engagement": 156000,
+      "grantees": 1,
+      "attempted": 30,
+      "successful": 28,
+      "successRate": "93.3%"
+    },
+    "youtube": {
+      "posts": 110,
+      "engagement": 234000,
+      "grantees": 1,
+      "attempted": 25,
+      "successful": 22,
+      "successRate": "88.0%"
+    },
+    "linkedin": {
+      "posts": 180,
+      "engagement": 45000,
+      "grantees": 0,
+      "attempted": 20,
+      "successful": 18,
+      "successRate": "90.0%"
+    },
+    "tiktok": {
+      "posts": 90,
+      "engagement": 78000,
+      "grantees": 0,
+      "attempted": 15,
+      "successful": 12,
+      "successRate": "80.0%"
+    },
+    "bluesky": {
+      "posts": 60,
+      "engagement": 12000,
+      "grantees": 0,
+      "attempted": 10,
+      "successful": 8,
+      "successRate": "80.0%"
+    },
+    "threads": {
+      "posts": 45,
+      "engagement": 8500,
+      "grantees": 0,
+      "attempted": 8,
+      "successful": 6,
+      "successRate": "75.0%"
+    }
+  },
+  "topGrantees": [
+    {
+      "name": "NJ Spotlight News",
+      "posts": 55,
+      "engagement": 195950,
+      "topPlatform": "youtube",
+      "platformsScraped": 3
+    },
+    {
+      "name": "TAPinto Newark",
+      "posts": 47,
+      "engagement": 17800,
+      "topPlatform": "twitter",
+      "platformsScraped": 2
+    },
+    {
+      "name": "Jersey City Times",
+      "posts": 45,
+      "engagement": 14580,
+      "topPlatform": "twitter",
+      "platformsScraped": 2
+    }
+  ],
+  "engagementByPlatform": [
+    {
+      "platform": "youtube",
+      "engagement": 234000,
+      "posts": 110,
+      "color": "#FF0000"
+    },
+    {
+      "platform": "instagram",
+      "engagement": 156000,
+      "posts": 420,
+      "color": "#E1306C"
+    },
+    {
+      "platform": "twitter",
+      "engagement": 125000,
+      "posts": 450,
+      "color": "#1DA1F2"
+    },
+    {
+      "platform": "facebook",
+      "engagement": 89000,
+      "posts": 380,
+      "color": "#1877F2"
+    },
+    {
+      "platform": "tiktok",
+      "engagement": 78000,
+      "posts": 90,
+      "color": "#000000"
+    },
+    {
+      "platform": "linkedin",
+      "engagement": 45000,
+      "posts": 180,
+      "color": "#0A66C2"
+    },
+    {
+      "platform": "bluesky",
+      "engagement": 12000,
+      "posts": 60,
+      "color": "#0085FF"
+    },
+    {
+      "platform": "threads",
+      "engagement": 8500,
+      "posts": 45,
+      "color": "#000000"
+    }
+  ],
+  "metadata": {
+    "generatedAt": "2026-01-07T17:26:16.075666",
+    "sourceReport": "2025-01-07T15:30:00.000000",
+    "platformColors": {
+      "twitter": "#1DA1F2",
+      "youtube": "#FF0000",
+      "instagram": "#E1306C",
+      "facebook": "#1877F2",
+      "linkedin": "#0A66C2",
+      "tiktok": "#000000",
+      "bluesky": "#0085FF",
+      "threads": "#000000"
+    }
+  }
+}
