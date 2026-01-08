@@ -14,15 +14,25 @@ This repository contains research and exploration materials related to the New J
 
 ## About NJCIC
 
-The **New Jersey Civic Information Consortium** is the first publicly funded nonprofit in the United States dedicated to supporting local journalism and civic information needs. Established in 2018 through bipartisan legislation, the Consortium has invested **$10+ million** in local news and civic media projects since 2021.
+The **New Jersey Civic Information Consortium** is the first publicly funded nonprofit in the United States dedicated to supporting local journalism and civic information needs. Established in 2018 through bipartisan legislation, the Consortium has invested **$12+ million** in local news and civic media projects since 2021.
 
 ### Key Facts
 - **Founded:** 2018 (operational 2021)
 - **Type:** 501(c)(3) nonprofit
 - **Host:** Montclair State University
-- **Organizations Funded:** 65+
-- **Counties Reached:** 19 of 21 NJ counties
+- **Total Funding:** $12,070,438
+- **Grants Awarded:** 135
+- **Coverage Years:** 2021-2025
+- **Counties Reached:** 18 of 21 NJ counties (86%)
 - **BIPOC-led Projects:** 48%
+
+### Impact Metrics (since 2021)
+- **Stories Published:** 9,065+
+- **News Briefs Published:** 14,493+
+- **Ethnic/BIPOC & Spanish-language Stories:** 3,856
+- **New Storytellers Trained:** 1,271
+- **Stories Amplified Across Platforms:** 2,327
+- **Residents Trained on Public Meeting Coverage:** 158
 
 ### Member Universities
 1. Montclair State University (host)
