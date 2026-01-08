@@ -1,0 +1,45 @@
+# NJCIC Grantee Social Media Scraper - Requirements
+# Python 3.9+ required
+
+# Video and media downloading
+yt-dlp>=2024.1.0
+
+# Instagram scraping
+instaloader>=4.10
+
+# Browser automation for JavaScript-heavy sites
+playwright>=1.40.0
+
+# Data manipulation and analysis
+pandas>=2.0.0
+
+# HTTP requests
+requests>=2.31.0
+aiohttp>=3.9.0
+
+# HTML parsing
+beautifulsoup4>=4.12.0
+
+# Progress bars
+tqdm>=4.66.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# Additional utilities
+pytz>=2023.3
+python-dateutil>=2.8.2
+pillow>=10.0.0
+
+# Social media specific libraries
+tweepy>=4.14.0
+facebook-sdk>=3.1.0
+
+# Data validation
+pydantic>=2.0.0
+
+# Logging enhancements
+coloredlogs>=15.0.1
+
+# JSON handling
+ujson>=5.8.0
