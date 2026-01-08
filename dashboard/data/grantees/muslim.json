@@ -2,19 +2,25 @@
   "name": "Muslim",
   "slug": "muslim",
   "summary": {
-    "total_posts": 26,
-    "total_engagement": 1305280,
+    "total_posts": 38,
+    "total_engagement": 1868309,
     "total_followers": 0,
-    "platforms_active": 1,
-    "engagement_rate": 50203.08,
-    "last_updated": "2026-01-08T11:51:27.721482"
+    "platforms_active": 2,
+    "engagement_rate": 49166.03,
+    "last_updated": "2026-01-08T12:46:42.077355"
   },
   "platform_breakdown": {
     "tiktok": {
       "posts": 26,
-      "posts_pct": 100.0,
+      "posts_pct": 68.4,
       "engagement": 1305280,
-      "engagement_pct": 100.0
+      "engagement_pct": 69.9
+    },
+    "instagram": {
+      "posts": 12,
+      "posts_pct": 31.6,
+      "engagement": 563029,
+      "engagement_pct": 30.1
     }
   },
   "platforms": {
@@ -104,6 +110,88 @@
           "percentage": 100.0
         }
       }
+    },
+    "instagram": {
+      "posts": 12,
+      "engagement": 563029,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 46919.08,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DTL3qVYjsn7/",
+          "text": "",
+          "date": "2026-01-06T22:09:12",
+          "engagement": {
+            "likes": 105722,
+            "comments": 497,
+            "shares": 0,
+            "views": 0,
+            "total": 106219
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DTBdBTUj3Aw/",
+          "text": "",
+          "date": "2026-01-02T21:05:49",
+          "engagement": {
+            "likes": 67527,
+            "comments": 317,
+            "shares": 0,
+            "views": 0,
+            "total": 67844
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DTLLwdNjkXp/",
+          "text": "",
+          "date": "2026-01-06T15:45:34",
+          "engagement": {
+            "likes": 62136,
+            "comments": 170,
+            "shares": 0,
+            "views": 0,
+            "total": 62306
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 2.4,
+        "posts_per_week": 16.8,
+        "date_range_days": 5,
+        "first_post": "2026-01-02T21:05:49",
+        "last_post": "2026-01-08T18:37:07"
+      },
+      "time_series": [
+        {
+          "date": "2025-12-29",
+          "posts": 5,
+          "engagement": 236176
+        },
+        {
+          "date": "2026-01-05",
+          "posts": 7,
+          "engagement": 326853
+        }
+      ],
+      "content_types": {
+        "image": {
+          "count": 8,
+          "engagement": 392085,
+          "percentage": 66.7
+        },
+        "video": {
+          "count": 4,
+          "engagement": 170944,
+          "percentage": 33.3
+        }
+      }
     }
   },
   "top_posts": [
@@ -150,6 +238,20 @@
       "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-i-photomode-tx/ae16314aabb64b8ea4c1d3ac8be9423e~tplv-photomode-image.jpeg?dr=9616&x-expires=1768068000&x-signature=mlOCjz0sCvo3xAFKUynD%2FiUulXk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast5&ftpl=1"
     },
     {
+      "id": null,
+      "url": "https://www.instagram.com/p/DTL3qVYjsn7/",
+      "text": "",
+      "date": "2026-01-06T22:09:12",
+      "engagement": {
+        "likes": 105722,
+        "comments": 497,
+        "shares": 0,
+        "views": 0,
+        "total": 106219
+      },
+      "thumbnail": null
+    },
+    {
       "id": "7586011398421892407",
       "url": "https://www.tiktok.com/@muslim/video/7586011398421892407",
       "text": "We were so innocent | Credits to: @\ud835\udc74\ud835\udc8a\ud835\udc8f\ud835\udc8a\ud83c\udde7\ud83c\udde9 #islam #Allah #muslim ",
@@ -162,28 +264,14 @@
         "total": 85635
       },
       "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ocMGRuckpISFEXDy7BRFjNzEIcDBs3A4xgfoUe~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=lmQZVbgeFP%2BCHEBVybRXBwFh9wI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
-    },
-    {
-      "id": "7585617630099148046",
-      "url": "https://www.tiktok.com/@muslim/video/7585617630099148046",
-      "text": "My 8 missed days from last Ramadan on their way to Ramadan 2026\u00a0#rama...",
-      "date": "2025-12-19T10:11:13",
-      "engagement": {
-        "likes": 44200,
-        "comments": 312,
-        "shares": 18900,
-        "views": 656100,
-        "total": 63412
-      },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/osihlNsiZzUbG7aBIUx4z6PF7FIBBWgFHTEqA~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=abxuOic6PMOYTFNNJaxnO1Zyk20%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
     }
   ],
   "overall_frequency": {
-    "posts_per_day": 1.19,
-    "posts_per_week": 8.33,
-    "date_range_days": 21,
+    "posts_per_day": 1.68,
+    "posts_per_week": 11.76,
+    "date_range_days": 22,
     "first_post": "2025-12-17T12:11:23",
-    "last_post": "2026-01-07T13:42:32"
+    "last_post": "2026-01-08T18:37:07"
   },
   "time_series": [
     {
@@ -198,13 +286,13 @@
     },
     {
       "date": "2025-12-29",
-      "posts": 9,
-      "engagement": 308893
+      "posts": 14,
+      "engagement": 545069
     },
     {
       "date": "2026-01-05",
-      "posts": 2,
-      "engagement": 1624
+      "posts": 9,
+      "engagement": 328477
     }
   ]
 }

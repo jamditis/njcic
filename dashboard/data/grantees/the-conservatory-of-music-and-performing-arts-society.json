@@ -1,0 +1,200 @@
+{
+  "name": "The Conservatory of Music and Performing Arts Society",
+  "slug": "the-conservatory-of-music-and-performing-arts-society",
+  "summary": {
+    "total_posts": 12,
+    "total_engagement": 38,
+    "total_followers": 0,
+    "platforms_active": 1,
+    "engagement_rate": 3.17,
+    "last_updated": "2026-01-08T12:46:42.100422"
+  },
+  "platform_breakdown": {
+    "instagram": {
+      "posts": 12,
+      "posts_pct": 100.0,
+      "engagement": 38,
+      "engagement_pct": 100.0
+    }
+  },
+  "platforms": {
+    "instagram": {
+      "posts": 12,
+      "engagement": 38,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 3.17,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DHYzX5oO6Gf/",
+          "text": "",
+          "date": "2025-03-19T16:25:08",
+          "engagement": {
+            "likes": 5,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 5
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/C22gE8OucUm/",
+          "text": "",
+          "date": "2024-02-02T16:20:02",
+          "engagement": {
+            "likes": 5,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 5
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/C22fkphuNqp/",
+          "text": "",
+          "date": "2024-02-02T16:15:38",
+          "engagement": {
+            "likes": 5,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 5
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.02,
+        "posts_per_week": 0.14,
+        "date_range_days": 602,
+        "first_post": "2024-02-02T16:13:53",
+        "last_post": "2025-09-26T20:20:49"
+      },
+      "time_series": [
+        {
+          "date": "2024-01-29",
+          "posts": 7,
+          "engagement": 21
+        },
+        {
+          "date": "2025-03-17",
+          "posts": 1,
+          "engagement": 5
+        },
+        {
+          "date": "2025-09-22",
+          "posts": 4,
+          "engagement": 12
+        }
+      ],
+      "content_types": {
+        "image": {
+          "count": 12,
+          "engagement": 38,
+          "percentage": 100.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DHYzX5oO6Gf/",
+      "text": "",
+      "date": "2025-03-19T16:25:08",
+      "engagement": {
+        "likes": 5,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 5
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/C22gE8OucUm/",
+      "text": "",
+      "date": "2024-02-02T16:20:02",
+      "engagement": {
+        "likes": 5,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 5
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/C22fkphuNqp/",
+      "text": "",
+      "date": "2024-02-02T16:15:38",
+      "engagement": {
+        "likes": 5,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 5
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/C22fX1hu4r9/",
+      "text": "",
+      "date": "2024-02-02T16:13:53",
+      "engagement": {
+        "likes": 5,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 5
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DPFCLQzEiLc/",
+      "text": "",
+      "date": "2025-09-26T20:20:49",
+      "engagement": {
+        "likes": 4,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 4
+      },
+      "thumbnail": null
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0.02,
+    "posts_per_week": 0.14,
+    "date_range_days": 602,
+    "first_post": "2024-02-02T16:13:53",
+    "last_post": "2025-09-26T20:20:49"
+  },
+  "time_series": [
+    {
+      "date": "2024-01-29",
+      "posts": 7,
+      "engagement": 21
+    },
+    {
+      "date": "2025-03-17",
+      "posts": 1,
+      "engagement": 5
+    },
+    {
+      "date": "2025-09-22",
+      "posts": 4,
+      "engagement": 12
+    }
+  ]
+}

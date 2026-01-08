@@ -1,110 +1,105 @@
 {
-  "name": "Two River Times",
-  "slug": "two-river-times",
+  "name": "Cranford High School",
+  "slug": "cranford-high-school",
   "summary": {
     "total_posts": 12,
-    "total_engagement": 202,
+    "total_engagement": 256,
     "total_followers": 0,
     "platforms_active": 1,
-    "engagement_rate": 16.83,
-    "last_updated": "2026-01-08T12:46:42.109092"
+    "engagement_rate": 21.33,
+    "last_updated": "2026-01-08T12:46:42.047410"
   },
   "platform_breakdown": {
     "instagram": {
       "posts": 12,
       "posts_pct": 100.0,
-      "engagement": 202,
+      "engagement": 256,
       "engagement_pct": 100.0
     }
   },
   "platforms": {
     "instagram": {
       "posts": 12,
-      "engagement": 202,
+      "engagement": 256,
       "views": 0,
       "followers": 0,
-      "engagement_rate": 16.83,
+      "engagement_rate": 21.33,
       "top_posts": [
         {
           "id": null,
-          "url": "https://www.instagram.com/p/DSJHsN2D3YT/",
+          "url": "https://www.instagram.com/p/DOXcxjvDILd/",
           "text": "",
-          "date": "2025-12-12T00:00:10",
+          "date": "2025-09-09T03:28:11",
           "engagement": {
-            "likes": 54,
-            "comments": 1,
+            "likes": 113,
+            "comments": 3,
             "shares": 0,
             "views": 0,
-            "total": 55
+            "total": 116
           },
           "thumbnail": null
         },
         {
           "id": null,
-          "url": "https://www.instagram.com/p/DR0MuC6CfoC/",
+          "url": "https://www.instagram.com/p/DSYJBoClLs0/",
           "text": "",
-          "date": "2025-12-03T21:00:04",
+          "date": "2025-12-17T20:00:26",
           "engagement": {
-            "likes": 37,
-            "comments": 1,
-            "shares": 0,
-            "views": 0,
-            "total": 38
-          },
-          "thumbnail": null
-        },
-        {
-          "id": null,
-          "url": "https://www.instagram.com/p/DSoBOL4jZXH/",
-          "text": "",
-          "date": "2025-12-24T00:00:05",
-          "engagement": {
-            "likes": 23,
+            "likes": 43,
             "comments": 0,
             "shares": 0,
             "views": 0,
-            "total": 23
+            "total": 43
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DSbJScGjYvl/",
+          "text": "",
+          "date": "2025-12-19T00:00:27",
+          "engagement": {
+            "likes": 18,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 18
           },
           "thumbnail": null
         }
       ],
       "frequency": {
-        "posts_per_day": 0.21,
-        "posts_per_week": 1.47,
-        "date_range_days": 57,
-        "first_post": "2025-11-11T00:00:10",
-        "last_post": "2026-01-07T00:00:12"
+        "posts_per_day": 0.1,
+        "posts_per_week": 0.7,
+        "date_range_days": 126,
+        "first_post": "2025-09-04T11:01:36",
+        "last_post": "2026-01-08T14:27:10"
       },
       "time_series": [
         {
-          "date": "2025-11-10",
-          "posts": 3,
-          "engagement": 17
+          "date": "2025-09-01",
+          "posts": 1,
+          "engagement": 14
         },
         {
-          "date": "2025-11-24",
+          "date": "2025-09-08",
           "posts": 1,
-          "engagement": 11
+          "engagement": 116
         },
         {
           "date": "2025-12-01",
           "posts": 1,
-          "engagement": 38
+          "engagement": 11
         },
         {
           "date": "2025-12-08",
-          "posts": 2,
-          "engagement": 62
+          "posts": 3,
+          "engagement": 16
         },
         {
           "date": "2025-12-15",
-          "posts": 2,
-          "engagement": 29
-        },
-        {
-          "date": "2025-12-22",
-          "posts": 2,
-          "engagement": 29
+          "posts": 5,
+          "engagement": 83
         },
         {
           "date": "2026-01-05",
@@ -115,7 +110,7 @@
       "content_types": {
         "image": {
           "count": 12,
-          "engagement": 202,
+          "engagement": 256,
           "percentage": 100.0
         }
       }
@@ -124,51 +119,51 @@
   "top_posts": [
     {
       "id": null,
-      "url": "https://www.instagram.com/p/DSJHsN2D3YT/",
+      "url": "https://www.instagram.com/p/DOXcxjvDILd/",
       "text": "",
-      "date": "2025-12-12T00:00:10",
+      "date": "2025-09-09T03:28:11",
       "engagement": {
-        "likes": 54,
-        "comments": 1,
+        "likes": 113,
+        "comments": 3,
         "shares": 0,
         "views": 0,
-        "total": 55
+        "total": 116
       },
       "thumbnail": null
     },
     {
       "id": null,
-      "url": "https://www.instagram.com/p/DR0MuC6CfoC/",
+      "url": "https://www.instagram.com/p/DSYJBoClLs0/",
       "text": "",
-      "date": "2025-12-03T21:00:04",
+      "date": "2025-12-17T20:00:26",
       "engagement": {
-        "likes": 37,
-        "comments": 1,
-        "shares": 0,
-        "views": 0,
-        "total": 38
-      },
-      "thumbnail": null
-    },
-    {
-      "id": null,
-      "url": "https://www.instagram.com/p/DSoBOL4jZXH/",
-      "text": "",
-      "date": "2025-12-24T00:00:05",
-      "engagement": {
-        "likes": 23,
+        "likes": 43,
         "comments": 0,
         "shares": 0,
         "views": 0,
-        "total": 23
+        "total": 43
       },
       "thumbnail": null
     },
     {
       "id": null,
-      "url": "https://www.instagram.com/p/DTMEXLgiMyc/",
+      "url": "https://www.instagram.com/p/DSbJScGjYvl/",
       "text": "",
-      "date": "2026-01-07T00:00:12",
+      "date": "2025-12-19T00:00:27",
+      "engagement": {
+        "likes": 18,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 18
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DTQMX_PgHEA/",
+      "text": "",
+      "date": "2026-01-08T14:27:10",
       "engagement": {
         "likes": 15,
         "comments": 1,
@@ -180,56 +175,51 @@
     },
     {
       "id": null,
-      "url": "https://www.instagram.com/p/DSfixMZDO9Q/",
+      "url": "https://www.instagram.com/p/DSVUhRekyAc/",
       "text": "",
-      "date": "2025-12-20T17:00:04",
+      "date": "2025-12-16T17:43:09",
       "engagement": {
-        "likes": 15,
+        "likes": 14,
         "comments": 0,
         "shares": 0,
         "views": 0,
-        "total": 15
+        "total": 14
       },
       "thumbnail": null
     }
   ],
   "overall_frequency": {
-    "posts_per_day": 0.21,
-    "posts_per_week": 1.47,
-    "date_range_days": 57,
-    "first_post": "2025-11-11T00:00:10",
-    "last_post": "2026-01-07T00:00:12"
+    "posts_per_day": 0.1,
+    "posts_per_week": 0.7,
+    "date_range_days": 126,
+    "first_post": "2025-09-04T11:01:36",
+    "last_post": "2026-01-08T14:27:10"
   },
   "time_series": [
     {
-      "date": "2025-11-10",
-      "posts": 3,
-      "engagement": 17
+      "date": "2025-09-01",
+      "posts": 1,
+      "engagement": 14
     },
     {
-      "date": "2025-11-24",
+      "date": "2025-09-08",
       "posts": 1,
-      "engagement": 11
+      "engagement": 116
     },
     {
       "date": "2025-12-01",
       "posts": 1,
-      "engagement": 38
+      "engagement": 11
     },
     {
       "date": "2025-12-08",
-      "posts": 2,
-      "engagement": 62
+      "posts": 3,
+      "engagement": 16
     },
     {
       "date": "2025-12-15",
-      "posts": 2,
-      "engagement": 29
-    },
-    {
-      "date": "2025-12-22",
-      "posts": 2,
-      "engagement": 29
+      "posts": 5,
+      "engagement": 83
     },
     {
       "date": "2026-01-05",

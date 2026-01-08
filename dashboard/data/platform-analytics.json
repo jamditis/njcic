@@ -2,30 +2,42 @@
   "platforms": {
     "instagram": {
       "color": "#E1306C",
-      "grantees": 39,
-      "total_posts": 468,
-      "total_engagement": 44369,
+      "grantees": 48,
+      "total_posts": 576,
+      "total_engagement": 626219,
       "total_followers": 0,
-      "avg_engagement_per_post": 94.81,
+      "avg_engagement_per_post": 1087.19,
       "avg_posts_per_grantee": 12.0,
       "content_types": {
         "video": {
-          "count": 135,
-          "engagement": 14912,
-          "percentage": 28.8
+          "count": 160,
+          "engagement": 186622,
+          "percentage": 27.8
         },
         "image": {
-          "count": 333,
-          "engagement": 29457,
-          "percentage": 71.2
+          "count": 416,
+          "engagement": 439597,
+          "percentage": 72.2
         }
       },
       "top_grantees": [
         {
+          "name": "Muslim",
+          "slug": "muslim",
+          "posts": 12,
+          "engagement": 563029
+        },
+        {
+          "name": "Movimiento Cosecha",
+          "slug": "movimiento-cosecha",
+          "posts": 12,
+          "engagement": 16484
+        },
+        {
           "name": "HudPost",
           "slug": "hudpost",
           "posts": 12,
-          "engagement": 12820
+          "engagement": 12874
         },
         {
           "name": "Inside Climate News",
@@ -37,25 +49,25 @@
           "name": "NJ Spotlight News",
           "slug": "nj-spotlight-news",
           "posts": 12,
-          "engagement": 3641
+          "engagement": 3643
         },
         {
           "name": "Trenton Journal",
           "slug": "trenton-journal",
           "posts": 12,
-          "engagement": 2847
+          "engagement": 2850
         },
         {
           "name": "New Labor",
           "slug": "new-labor",
           "posts": 12,
-          "engagement": 2754
+          "engagement": 2760
         },
         {
           "name": "VietLead",
           "slug": "vietlead",
           "posts": 12,
-          "engagement": 2290
+          "engagement": 2309
         },
         {
           "name": "The College of New Jersey",
@@ -68,18 +80,6 @@
           "slug": "black-in-jersey",
           "posts": 12,
           "engagement": 1547
-        },
-        {
-          "name": "Newark Water Coalition",
-          "slug": "newark-water-coalition",
-          "posts": 12,
-          "engagement": 1256
-        },
-        {
-          "name": "The Tower at Princeton High School",
-          "slug": "the-tower-at-princeton-high-school",
-          "posts": 12,
-          "engagement": 1068
         }
       ]
     },
@@ -87,14 +87,14 @@
       "color": "#000000",
       "grantees": 14,
       "total_posts": 305,
-      "total_engagement": 1672398,
+      "total_engagement": 1672320,
       "total_followers": 0,
-      "avg_engagement_per_post": 5483.27,
+      "avg_engagement_per_post": 5483.02,
       "avg_posts_per_grantee": 21.8,
       "content_types": {
         "video": {
           "count": 305,
-          "engagement": 1672398,
+          "engagement": 1672320,
           "percentage": 100.0
         }
       },
@@ -127,7 +127,7 @@
           "name": "The College of New Jersey",
           "slug": "the-college-of-new-jersey",
           "posts": 26,
-          "engagement": 2966
+          "engagement": 2888
         },
         {
           "name": "Slice of Culture   Saint Peter s University",
@@ -258,11 +258,11 @@
     "by_engagement": [
       {
         "platform": "tiktok",
-        "engagement": 1672398
+        "engagement": 1672320
       },
       {
         "platform": "instagram",
-        "engagement": 44369
+        "engagement": 626219
       },
       {
         "platform": "bluesky",
@@ -272,7 +272,7 @@
     "by_posts": [
       {
         "platform": "instagram",
-        "posts": 468
+        "posts": 576
       },
       {
         "platform": "tiktok",
@@ -284,5 +284,5 @@
       }
     ]
   },
-  "generated_at": "2026-01-08T11:51:27.748819"
+  "generated_at": "2026-01-08T12:46:42.114219"
 }

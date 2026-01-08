@@ -1,28 +1,28 @@
 {
   "summary": {
-    "totalGrantees": 44,
-    "totalPosts": 985,
-    "totalEngagement": 1727673,
+    "totalGrantees": 50,
+    "totalPosts": 1093,
+    "totalEngagement": 2309445,
     "totalFollowers": 52152,
     "platformsTracked": 3,
-    "avgEngagementRate": 1753.98,
-    "lastUpdated": "2026-01-08T11:51:27.749349",
+    "avgEngagementRate": 2112.94,
+    "lastUpdated": "2026-01-08T12:46:42.114775",
     "scrapingDuration": "aggregated"
   },
   "platforms": {
     "instagram": {
-      "posts": 468,
-      "engagement": 44369,
+      "posts": 576,
+      "engagement": 626219,
       "followers": 0,
-      "grantees": 39,
-      "avgEngagement": 94.81
+      "grantees": 48,
+      "avgEngagement": 1087.19
     },
     "tiktok": {
       "posts": 305,
-      "engagement": 1672398,
+      "engagement": 1672320,
       "followers": 0,
       "grantees": 14,
-      "avgEngagement": 5483.27
+      "avgEngagement": 5483.02
     },
     "bluesky": {
       "posts": 212,
@@ -36,12 +36,12 @@
     {
       "name": "Muslim",
       "slug": "muslim",
-      "posts": 26,
-      "engagement": 1305280,
+      "posts": 38,
+      "engagement": 1868309,
       "followers": 0,
-      "engagementRate": 50203.08,
+      "engagementRate": 49166.03,
       "topPlatform": "tiktok",
-      "platformsScraped": 1
+      "platformsScraped": 2
     },
     {
       "name": "Global Patriot Newspapers online",
@@ -57,19 +57,29 @@
       "name": "HudPost",
       "slug": "hudpost",
       "posts": 37,
-      "engagement": 117859,
+      "engagement": 117913,
       "followers": 0,
-      "engagementRate": 3185.38,
+      "engagementRate": 3186.84,
       "topPlatform": "tiktok",
+      "platformsScraped": 2
+    },
+    {
+      "name": "Movimiento Cosecha",
+      "slug": "movimiento-cosecha",
+      "posts": 24,
+      "engagement": 16755,
+      "followers": 1355,
+      "engagementRate": 698.12,
+      "topPlatform": "instagram",
       "platformsScraped": 2
     },
     {
       "name": "NJ Spotlight News",
       "slug": "nj-spotlight-news",
       "posts": 63,
-      "engagement": 12252,
+      "engagement": 12254,
       "followers": 3301,
-      "engagementRate": 194.48,
+      "engagementRate": 194.51,
       "topPlatform": "tiktok",
       "platformsScraped": 3
     },
@@ -97,9 +107,9 @@
       "name": "The College of New Jersey",
       "slug": "the-college-of-new-jersey",
       "posts": 38,
-      "engagement": 4759,
+      "engagement": 4681,
       "followers": 0,
-      "engagementRate": 125.24,
+      "engagementRate": 123.18,
       "topPlatform": "tiktok",
       "platformsScraped": 2
     },
@@ -107,9 +117,9 @@
       "name": "Trenton Journal",
       "slug": "trenton-journal",
       "posts": 12,
-      "engagement": 2847,
+      "engagement": 2850,
       "followers": 0,
-      "engagementRate": 237.25,
+      "engagementRate": 237.5,
       "topPlatform": "instagram",
       "platformsScraped": 1
     },
@@ -117,9 +127,9 @@
       "name": "New Labor",
       "slug": "new-labor",
       "posts": 12,
-      "engagement": 2754,
+      "engagement": 2760,
       "followers": 0,
-      "engagementRate": 229.5,
+      "engagementRate": 230.0,
       "topPlatform": "instagram",
       "platformsScraped": 1
     },
@@ -127,9 +137,9 @@
       "name": "Slice of Culture   Saint Peter s University",
       "slug": "slice-of-culture-saint-peter-s-university",
       "posts": 38,
-      "engagement": 2407,
+      "engagement": 2408,
       "followers": 0,
-      "engagementRate": 63.34,
+      "engagementRate": 63.37,
       "topPlatform": "tiktok",
       "platformsScraped": 2
     },
@@ -137,34 +147,24 @@
       "name": "VietLead",
       "slug": "vietlead",
       "posts": 12,
-      "engagement": 2290,
+      "engagement": 2309,
       "followers": 0,
-      "engagementRate": 190.83,
+      "engagementRate": 192.42,
       "topPlatform": "instagram",
       "platformsScraped": 1
-    },
-    {
-      "name": "Daily Targum",
-      "slug": "daily-targum",
-      "posts": 38,
-      "engagement": 2180,
-      "followers": 0,
-      "engagementRate": 57.37,
-      "topPlatform": "tiktok",
-      "platformsScraped": 2
     }
   ],
   "engagementByPlatform": [
     {
       "platform": "tiktok",
-      "engagement": 1672398,
+      "engagement": 1672320,
       "posts": 305,
       "color": "#000000"
     },
     {
       "platform": "instagram",
-      "engagement": 44369,
-      "posts": 468,
+      "engagement": 626219,
+      "posts": 576,
       "color": "#E1306C"
     },
     {
@@ -175,7 +175,7 @@
     }
   ],
   "metadata": {
-    "generatedAt": "2026-01-08T11:51:27.749368",
+    "generatedAt": "2026-01-08T12:46:42.114795",
     "platformColors": {
       "twitter": "#1DA1F2",
       "youtube": "#FF0000",
