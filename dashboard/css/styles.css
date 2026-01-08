@@ -495,12 +495,12 @@ h6 {
     opacity: 1;
 }
 
-/* Grantee name - primary hierarchy */
+/* Grantee name - primary hierarchy (sans-serif for data context) */
 .grantee-card h3,
 .grantee-card .font-bold:first-of-type,
 .grantee-card .font-semibold {
-    font-family: var(--font-heading);
-    font-weight: 600;
+    font-family: var(--font-family);
+    font-weight: 700;
     color: var(--color-dark);
     transition: color 0.3s ease;
     line-height: 1.35;
@@ -513,10 +513,11 @@ h6 {
     color: var(--color-primary-dark);
 }
 
-/* Engagement number - clear secondary importance */
+/* All numbers in grantee cards - sans-serif for data readability */
 .grantee-card .text-2xl,
-.grantee-card .text-xl {
-    font-family: var(--font-heading);
+.grantee-card .text-xl,
+.grantee-card .text-lg {
+    font-family: var(--font-family);
     font-weight: 700;
     font-variant-numeric: tabular-nums;
     letter-spacing: -0.02em;
