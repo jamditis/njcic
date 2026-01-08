@@ -240,10 +240,9 @@ jobs:
           text: 'NJCIC Dashboard update failed! Check the workflow run for details.'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
-        if: ${{ secrets.SLACK_WEBHOOK != '' }}
+        continue-on-error: true
 
-      - name: Send email notification on failure (via GitHub)
-        if: failure()
+      - name: Log failure info
         run: |
           echo "Workflow failed. GitHub will send automatic notifications to repository watchers."
           echo "To receive email notifications, ensure you're watching this repository."
