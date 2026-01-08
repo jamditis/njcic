@@ -1,0 +1,270 @@
+{
+  "name": "New Jersey Council for the Humanities and Journalism   Design",
+  "slug": "new-jersey-council-for-the-humanities-and-journalism-design",
+  "summary": {
+    "total_posts": 12,
+    "total_engagement": 60,
+    "total_followers": 0,
+    "platforms_active": 1,
+    "engagement_rate": 5.0,
+    "last_updated": "2026-01-08T11:06:07.672748"
+  },
+  "platform_breakdown": {
+    "instagram": {
+      "posts": 12,
+      "posts_pct": 100.0,
+      "engagement": 60,
+      "engagement_pct": 100.0
+    }
+  },
+  "platforms": {
+    "instagram": {
+      "posts": 12,
+      "engagement": 60,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 5.0,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DQ8H3p0AaRo/",
+          "text": "",
+          "date": "2025-11-11T14:50:00",
+          "engagement": {
+            "likes": 26,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 26
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DQKaaEtiUSF/",
+          "text": "",
+          "date": "2025-10-23T19:00:09",
+          "engagement": {
+            "likes": 15,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 15
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DO6UHuikWQ6/",
+          "text": "",
+          "date": "2025-09-22T16:25:59",
+          "engagement": {
+            "likes": 6,
+            "comments": 1,
+            "shares": 0,
+            "views": 0,
+            "total": 7
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.12,
+        "posts_per_week": 0.84,
+        "date_range_days": 96,
+        "first_post": "2025-09-11T20:23:12",
+        "last_post": "2025-12-17T16:56:33"
+      },
+      "time_series": [
+        {
+          "date": "2025-09-08",
+          "posts": 1,
+          "engagement": 0
+        },
+        {
+          "date": "2025-09-22",
+          "posts": 1,
+          "engagement": 7
+        },
+        {
+          "date": "2025-09-29",
+          "posts": 2,
+          "engagement": 0
+        },
+        {
+          "date": "2025-10-06",
+          "posts": 2,
+          "engagement": 6
+        },
+        {
+          "date": "2025-10-20",
+          "posts": 1,
+          "engagement": 15
+        },
+        {
+          "date": "2025-10-27",
+          "posts": 1,
+          "engagement": 4
+        },
+        {
+          "date": "2025-11-10",
+          "posts": 1,
+          "engagement": 26
+        },
+        {
+          "date": "2025-11-24",
+          "posts": 1,
+          "engagement": 0
+        },
+        {
+          "date": "2025-12-08",
+          "posts": 1,
+          "engagement": 0
+        },
+        {
+          "date": "2025-12-15",
+          "posts": 1,
+          "engagement": 2
+        }
+      ],
+      "content_types": {
+        "image": {
+          "count": 12,
+          "engagement": 60,
+          "percentage": 100.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DQ8H3p0AaRo/",
+      "text": "",
+      "date": "2025-11-11T14:50:00",
+      "engagement": {
+        "likes": 26,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 26
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DQKaaEtiUSF/",
+      "text": "",
+      "date": "2025-10-23T19:00:09",
+      "engagement": {
+        "likes": 15,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 15
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DO6UHuikWQ6/",
+      "text": "",
+      "date": "2025-09-22T16:25:59",
+      "engagement": {
+        "likes": 6,
+        "comments": 1,
+        "shares": 0,
+        "views": 0,
+        "total": 7
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DQZiq0mER3U/",
+      "text": "",
+      "date": "2025-10-29T16:00:57",
+      "engagement": {
+        "likes": 4,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 4
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DPjM_UNDkPB/",
+      "text": "",
+      "date": "2025-10-08T13:32:32",
+      "engagement": {
+        "likes": 4,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 4
+      },
+      "thumbnail": null
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0.12,
+    "posts_per_week": 0.84,
+    "date_range_days": 96,
+    "first_post": "2025-09-11T20:23:12",
+    "last_post": "2025-12-17T16:56:33"
+  },
+  "time_series": [
+    {
+      "date": "2025-09-08",
+      "posts": 1,
+      "engagement": 0
+    },
+    {
+      "date": "2025-09-22",
+      "posts": 1,
+      "engagement": 7
+    },
+    {
+      "date": "2025-09-29",
+      "posts": 2,
+      "engagement": 0
+    },
+    {
+      "date": "2025-10-06",
+      "posts": 2,
+      "engagement": 6
+    },
+    {
+      "date": "2025-10-20",
+      "posts": 1,
+      "engagement": 15
+    },
+    {
+      "date": "2025-10-27",
+      "posts": 1,
+      "engagement": 4
+    },
+    {
+      "date": "2025-11-10",
+      "posts": 1,
+      "engagement": 26
+    },
+    {
+      "date": "2025-11-24",
+      "posts": 1,
+      "engagement": 0
+    },
+    {
+      "date": "2025-12-08",
+      "posts": 1,
+      "engagement": 0
+    },
+    {
+      "date": "2025-12-15",
+      "posts": 1,
+      "engagement": 2
+    }
+  ]
+}

@@ -1,21 +1,28 @@
 {
   "summary": {
-    "totalGrantees": 15,
-    "totalPosts": 397,
-    "totalEngagement": 128939,
+    "totalGrantees": 40,
+    "totalPosts": 865,
+    "totalEngagement": 173230,
     "totalFollowers": 48947,
-    "platformsTracked": 2,
-    "avgEngagementRate": 324.78,
-    "lastUpdated": "2026-01-07T22:22:16.684132",
+    "platformsTracked": 3,
+    "avgEngagementRate": 200.27,
+    "lastUpdated": "2026-01-08T11:06:07.690249",
     "scrapingDuration": "aggregated"
   },
   "platforms": {
+    "instagram": {
+      "posts": 468,
+      "engagement": 44369,
+      "followers": 0,
+      "grantees": 39,
+      "avgEngagement": 94.81
+    },
     "tiktok": {
       "posts": 222,
-      "engagement": 118289,
+      "engagement": 118211,
       "followers": 0,
       "grantees": 10,
-      "avgEngagement": 532.83
+      "avgEngagement": 532.48
     },
     "bluesky": {
       "posts": 175,
@@ -29,12 +36,22 @@
     {
       "name": "HudPost",
       "slug": "hudpost",
-      "posts": 26,
-      "engagement": 103608,
+      "posts": 38,
+      "engagement": 116428,
       "followers": 0,
-      "engagementRate": 3984.92,
+      "engagementRate": 3063.89,
       "topPlatform": "tiktok",
-      "platformsScraped": 1
+      "platformsScraped": 2
+    },
+    {
+      "name": "NJ Spotlight News",
+      "slug": "nj-spotlight-news",
+      "posts": 63,
+      "engagement": 10420,
+      "followers": 3301,
+      "engagementRate": 165.4,
+      "topPlatform": "tiktok",
+      "platformsScraped": 3
     },
     {
       "name": "The Jersey Vindicator",
@@ -47,112 +64,108 @@
       "platformsScraped": 1
     },
     {
-      "name": "NJ Spotlight News",
-      "slug": "nj-spotlight-news",
-      "posts": 51,
-      "engagement": 6779,
-      "followers": 3301,
-      "engagementRate": 132.92,
-      "topPlatform": "tiktok",
+      "name": "Inside Climate News",
+      "slug": "inside-climate-news",
+      "posts": 37,
+      "engagement": 5976,
+      "followers": 25578,
+      "engagementRate": 161.51,
+      "topPlatform": "instagram",
       "platformsScraped": 2
     },
     {
       "name": "The College of New Jersey",
       "slug": "the-college-of-new-jersey",
-      "posts": 26,
-      "engagement": 2966,
+      "posts": 38,
+      "engagement": 4681,
       "followers": 0,
-      "engagementRate": 114.08,
+      "engagementRate": 123.18,
       "topPlatform": "tiktok",
+      "platformsScraped": 2
+    },
+    {
+      "name": "Trenton Journal",
+      "slug": "trenton-journal",
+      "posts": 12,
+      "engagement": 2847,
+      "followers": 0,
+      "engagementRate": 237.25,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "New Labor",
+      "slug": "new-labor",
+      "posts": 12,
+      "engagement": 2754,
+      "followers": 0,
+      "engagementRate": 229.5,
+      "topPlatform": "instagram",
       "platformsScraped": 1
     },
     {
       "name": "Slice of Culture   Saint Peter s University",
       "slug": "slice-of-culture-saint-peter-s-university",
-      "posts": 26,
-      "engagement": 1791,
+      "posts": 38,
+      "engagement": 2407,
       "followers": 0,
-      "engagementRate": 68.88,
+      "engagementRate": 63.34,
       "topPlatform": "tiktok",
+      "platformsScraped": 2
+    },
+    {
+      "name": "VietLead",
+      "slug": "vietlead",
+      "posts": 12,
+      "engagement": 2290,
+      "followers": 0,
+      "engagementRate": 190.83,
+      "topPlatform": "instagram",
       "platformsScraped": 1
     },
     {
       "name": "Daily Targum",
       "slug": "daily-targum",
-      "posts": 26,
-      "engagement": 1610,
-      "followers": 0,
-      "engagementRate": 61.92,
-      "topPlatform": "tiktok",
-      "platformsScraped": 1
-    },
-    {
-      "name": "South Jersey Climate News Project",
-      "slug": "south-jersey-climate-news-project",
       "posts": 38,
-      "engagement": 847,
-      "followers": 43,
-      "engagementRate": 22.29,
+      "engagement": 2179,
+      "followers": 0,
+      "engagementRate": 57.34,
       "topPlatform": "tiktok",
       "platformsScraped": 2
     },
     {
-      "name": "Inside Climate News",
-      "slug": "inside-climate-news",
-      "posts": 25,
-      "engagement": 698,
-      "followers": 25578,
-      "engagementRate": 27.92,
-      "topPlatform": "bluesky",
-      "platformsScraped": 1
-    },
-    {
-      "name": "Lens 15 Media",
-      "slug": "lens-15-media",
-      "posts": 26,
-      "engagement": 496,
+      "name": "Black in Jersey",
+      "slug": "black-in-jersey",
+      "posts": 12,
+      "engagement": 1547,
       "followers": 0,
-      "engagementRate": 19.08,
-      "topPlatform": "tiktok",
+      "engagementRate": 128.92,
+      "topPlatform": "instagram",
       "platformsScraped": 1
     },
     {
-      "name": "Clinton Hill Community Action",
-      "slug": "clinton-hill-community-action",
-      "posts": 26,
-      "engagement": 301,
+      "name": "Newark Water Coalition",
+      "slug": "newark-water-coalition",
+      "posts": 12,
+      "engagement": 1256,
       "followers": 0,
-      "engagementRate": 11.58,
-      "topPlatform": "tiktok",
-      "platformsScraped": 1
-    },
-    {
-      "name": "Chalkbeat Newark  Civic News Company ",
-      "slug": "chalkbeat-newark-civic-news-company",
-      "posts": 25,
-      "engagement": 123,
-      "followers": 11032,
-      "engagementRate": 4.92,
-      "topPlatform": "bluesky",
-      "platformsScraped": 1
-    },
-    {
-      "name": "Public Square Amplified",
-      "slug": "public-square-amplified",
-      "posts": 25,
-      "engagement": 58,
-      "followers": 82,
-      "engagementRate": 2.32,
-      "topPlatform": "bluesky",
+      "engagementRate": 104.67,
+      "topPlatform": "instagram",
       "platformsScraped": 1
     }
   ],
   "engagementByPlatform": [
     {
       "platform": "tiktok",
-      "engagement": 118289,
+      "engagement": 118211,
       "posts": 222,
       "color": "#000000"
+    },
+    {
+      "platform": "instagram",
+      "engagement": 44369,
+      "posts": 468,
+      "color": "#E1306C"
     },
     {
       "platform": "bluesky",
@@ -162,7 +175,7 @@
     }
   ],
   "metadata": {
-    "generatedAt": "2026-01-07T22:22:16.684151",
+    "generatedAt": "2026-01-08T11:06:07.690266",
     "platformColors": {
       "twitter": "#1DA1F2",
       "youtube": "#FF0000",

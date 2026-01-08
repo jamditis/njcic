@@ -2,25 +2,31 @@
   "name": "South Jersey Climate News Project",
   "slug": "south-jersey-climate-news-project",
   "summary": {
-    "total_posts": 38,
-    "total_engagement": 847,
+    "total_posts": 50,
+    "total_engagement": 1023,
     "total_followers": 43,
-    "platforms_active": 2,
-    "engagement_rate": 22.29,
-    "last_updated": "2026-01-07T22:22:16.678378"
+    "platforms_active": 3,
+    "engagement_rate": 20.46,
+    "last_updated": "2026-01-08T11:06:07.680406"
   },
   "platform_breakdown": {
     "bluesky": {
       "posts": 25,
-      "posts_pct": 65.8,
+      "posts_pct": 50.0,
       "engagement": 7,
-      "engagement_pct": 0.8
+      "engagement_pct": 0.7
     },
     "tiktok": {
       "posts": 13,
-      "posts_pct": 34.2,
+      "posts_pct": 26.0,
       "engagement": 840,
-      "engagement_pct": 99.2
+      "engagement_pct": 82.1
+    },
+    "instagram": {
+      "posts": 12,
+      "posts_pct": 24.0,
+      "engagement": 176,
+      "engagement_pct": 17.2
     }
   },
   "platforms": {
@@ -292,6 +298,93 @@
           "percentage": 100.0
         }
       }
+    },
+    "instagram": {
+      "posts": 12,
+      "engagement": 176,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 14.67,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DSYQH4BDwUE/",
+          "text": "",
+          "date": "2025-12-17T21:02:27",
+          "engagement": {
+            "likes": 31,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 31
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DS8FNYbEasb/",
+          "text": "",
+          "date": "2025-12-31T18:59:44",
+          "engagement": {
+            "likes": 19,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 19
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DS5cehFj_oK/",
+          "text": "",
+          "date": "2025-12-30T18:25:20",
+          "engagement": {
+            "likes": 18,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 18
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.52,
+        "posts_per_week": 3.64,
+        "date_range_days": 23,
+        "first_post": "2025-12-15T22:45:40",
+        "last_post": "2026-01-08T00:35:36"
+      },
+      "time_series": [
+        {
+          "date": "2025-12-15",
+          "posts": 3,
+          "engagement": 59
+        },
+        {
+          "date": "2025-12-22",
+          "posts": 2,
+          "engagement": 20
+        },
+        {
+          "date": "2025-12-29",
+          "posts": 5,
+          "engagement": 74
+        },
+        {
+          "date": "2026-01-05",
+          "posts": 2,
+          "engagement": 23
+        }
+      ],
+      "content_types": {
+        "image": {
+          "count": 12,
+          "engagement": 176,
+          "percentage": 100.0
+        }
+      }
     }
   },
   "top_posts": [
@@ -367,11 +460,11 @@
     }
   ],
   "overall_frequency": {
-    "posts_per_day": 0.06,
-    "posts_per_week": 0.42,
-    "date_range_days": 650,
+    "posts_per_day": 0.07,
+    "posts_per_week": 0.49,
+    "date_range_days": 699,
     "first_post": "2024-02-08T12:22:03",
-    "last_post": "2025-11-19T19:06:57"
+    "last_post": "2026-01-08T00:35:36"
   },
   "time_series": [
     {
@@ -488,6 +581,26 @@
       "date": "2025-11-17",
       "posts": 1,
       "engagement": 6
+    },
+    {
+      "date": "2025-12-15",
+      "posts": 3,
+      "engagement": 59
+    },
+    {
+      "date": "2025-12-22",
+      "posts": 2,
+      "engagement": 20
+    },
+    {
+      "date": "2025-12-29",
+      "posts": 5,
+      "engagement": 74
+    },
+    {
+      "date": "2026-01-05",
+      "posts": 2,
+      "engagement": 23
     }
   ]
 }

@@ -431,10 +431,15 @@ def load_platform_data(platform_dir: Path) -> Tuple[List[Dict], Optional[Dict]]:
             posts.extend(data.get('posts', []))
             metadata = data.get('engagement_metrics') or data
 
-    # Check for metadata.json
+    # Check for metadata.json (Instagram stores posts here)
     metadata_file = platform_dir / "metadata.json"
     if metadata_file.exists():
-        metadata = read_json(metadata_file) or metadata
+        meta_data = read_json(metadata_file)
+        if meta_data:
+            metadata = meta_data
+            # Instagram stores posts inside metadata.json
+            if 'posts' in meta_data and not posts:
+                posts.extend(meta_data.get('posts', []))
 
     # Also check subdirectories (YouTube uses channel_id subdirs)
     for subdir in platform_dir.iterdir():

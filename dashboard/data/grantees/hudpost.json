@@ -2,19 +2,25 @@
   "name": "HudPost",
   "slug": "hudpost",
   "summary": {
-    "total_posts": 26,
-    "total_engagement": 103608,
+    "total_posts": 38,
+    "total_engagement": 116428,
     "total_followers": 0,
-    "platforms_active": 1,
-    "engagement_rate": 3984.92,
-    "last_updated": "2026-01-07T22:22:16.662078"
+    "platforms_active": 2,
+    "engagement_rate": 3063.89,
+    "last_updated": "2026-01-08T11:06:07.663368"
   },
   "platform_breakdown": {
     "tiktok": {
       "posts": 26,
-      "posts_pct": 100.0,
+      "posts_pct": 68.4,
       "engagement": 103608,
-      "engagement_pct": 100.0
+      "engagement_pct": 89.0
+    },
+    "instagram": {
+      "posts": 12,
+      "posts_pct": 31.6,
+      "engagement": 12820,
+      "engagement_pct": 11.0
     }
   },
   "platforms": {
@@ -159,6 +165,98 @@
           "percentage": 100.0
         }
       }
+    },
+    "instagram": {
+      "posts": 12,
+      "engagement": 12820,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 1068.33,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DSfnKRMDYdU/",
+          "text": "",
+          "date": "2025-12-20T17:40:32",
+          "engagement": {
+            "likes": 2966,
+            "comments": 45,
+            "shares": 0,
+            "views": 0,
+            "total": 3011
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DSkkK3zgGj8/",
+          "text": "",
+          "date": "2025-12-22T15:48:30",
+          "engagement": {
+            "likes": 1952,
+            "comments": 168,
+            "shares": 0,
+            "views": 0,
+            "total": 2120
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DTGt7-7AcTT/",
+          "text": "",
+          "date": "2026-01-04T22:10:13",
+          "engagement": {
+            "likes": 1225,
+            "comments": 58,
+            "shares": 0,
+            "views": 0,
+            "total": 1283
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.63,
+        "posts_per_week": 4.41,
+        "date_range_days": 19,
+        "first_post": "2025-12-20T13:57:38",
+        "last_post": "2026-01-08T16:31:10"
+      },
+      "time_series": [
+        {
+          "date": "2025-12-15",
+          "posts": 4,
+          "engagement": 5460
+        },
+        {
+          "date": "2025-12-22",
+          "posts": 5,
+          "engagement": 4638
+        },
+        {
+          "date": "2025-12-29",
+          "posts": 1,
+          "engagement": 1283
+        },
+        {
+          "date": "2026-01-05",
+          "posts": 2,
+          "engagement": 1439
+        }
+      ],
+      "content_types": {
+        "image": {
+          "count": 9,
+          "engagement": 10305,
+          "percentage": 75.0
+        },
+        "video": {
+          "count": 3,
+          "engagement": 2515,
+          "percentage": 25.0
+        }
+      }
     }
   },
   "top_posts": [
@@ -175,6 +273,34 @@
         "total": 95863
       },
       "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIRikM6wjCogsALrxHvgPXfFBuE6AzeehkyGIE~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=0WcU4hXK5PBSdBLsoFpP2nWF9Y8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DSfnKRMDYdU/",
+      "text": "",
+      "date": "2025-12-20T17:40:32",
+      "engagement": {
+        "likes": 2966,
+        "comments": 45,
+        "shares": 0,
+        "views": 0,
+        "total": 3011
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DSkkK3zgGj8/",
+      "text": "",
+      "date": "2025-12-22T15:48:30",
+      "engagement": {
+        "likes": 1952,
+        "comments": 168,
+        "shares": 0,
+        "views": 0,
+        "total": 2120
+      },
+      "thumbnail": null
     },
     {
       "id": "7555506528581733687",
@@ -203,42 +329,14 @@
         "total": 1468
       },
       "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oYiIkXI1woGJNzBJAwfmiIApCWIa2DTGBum0yC~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=ym%2FyjUoG3MAPU06OSOeM3EACK%2FE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
-    },
-    {
-      "id": "7580404443385007373",
-      "url": "https://www.tiktok.com/@hudpost/video/7580404443385007373",
-      "text": "North Bergen and Winterfest go hand in hand and @willy_gonza found ou...",
-      "date": "2025-12-05T09:01:39",
-      "engagement": {
-        "likes": 1001,
-        "comments": 37,
-        "shares": 263,
-        "views": 25000,
-        "total": 1301
-      },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/owBdAANMEFB8KEwEQpED3ef2QdRUgGQoDSmMqR~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=QBf8sdE5NxTWIFn2S4FBfMJPhVY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
-    },
-    {
-      "id": "7566389487660469517",
-      "url": "https://www.tiktok.com/@hudpost/video/7566389487660469517",
-      "text": "A fire at 6731 Kennedy Boulevard in North Bergen led to the deaths of...",
-      "date": "2025-10-28T14:36:05",
-      "engagement": {
-        "likes": 532,
-        "comments": 13,
-        "shares": 344,
-        "views": 23800,
-        "total": 889
-      },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ooivHi8MkQC8rfSEfNFQ4AQmBC0A7Q4cWCe3QA~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=4AYw02NbkkIOuVyLwE436D8fgmA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
     }
   ],
   "overall_frequency": {
-    "posts_per_day": 0.16,
-    "posts_per_week": 1.12,
-    "date_range_days": 160,
+    "posts_per_day": 0.23,
+    "posts_per_week": 1.61,
+    "date_range_days": 164,
     "first_post": "2025-07-28T13:16:46",
-    "last_post": "2026-01-05T06:48:06"
+    "last_post": "2026-01-08T16:31:10"
   },
   "time_series": [
     {
@@ -307,14 +405,24 @@
       "engagement": 114
     },
     {
+      "date": "2025-12-15",
+      "posts": 4,
+      "engagement": 5460
+    },
+    {
       "date": "2025-12-22",
-      "posts": 2,
-      "engagement": 144
+      "posts": 7,
+      "engagement": 4782
+    },
+    {
+      "date": "2025-12-29",
+      "posts": 1,
+      "engagement": 1283
     },
     {
       "date": "2026-01-05",
-      "posts": 1,
-      "engagement": 68
+      "posts": 3,
+      "engagement": 1507
     }
   ]
 }

@@ -2,19 +2,25 @@
   "name": "Montclair Local Nonprofit News",
   "slug": "montclair-local-nonprofit-news",
   "summary": {
-    "total_posts": 25,
-    "total_engagement": 38,
+    "total_posts": 37,
+    "total_engagement": 321,
     "total_followers": 2468,
-    "platforms_active": 1,
-    "engagement_rate": 1.52,
-    "last_updated": "2026-01-07T22:22:16.671386"
+    "platforms_active": 2,
+    "engagement_rate": 8.68,
+    "last_updated": "2026-01-08T11:06:07.669585"
   },
   "platform_breakdown": {
     "bluesky": {
       "posts": 25,
-      "posts_pct": 100.0,
+      "posts_pct": 67.6,
       "engagement": 38,
-      "engagement_pct": 100.0
+      "engagement_pct": 11.8
+    },
+    "instagram": {
+      "posts": 12,
+      "posts_pct": 32.4,
+      "engagement": 283,
+      "engagement_pct": 88.2
     }
   },
   "platforms": {
@@ -94,97 +100,189 @@
           "percentage": 100.0
         }
       }
+    },
+    "instagram": {
+      "posts": 12,
+      "engagement": 283,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 23.58,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DTA2ZHqDdtm/",
+          "text": "",
+          "date": "2026-01-02T17:02:09",
+          "engagement": {
+            "likes": 32,
+            "comments": 18,
+            "shares": 0,
+            "views": 0,
+            "total": 50
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DPg2H84DVe5/",
+          "text": "",
+          "date": "2025-10-07T15:34:15",
+          "engagement": {
+            "likes": 38,
+            "comments": 3,
+            "shares": 0,
+            "views": 0,
+            "total": 41
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DTOQ1vLEhSl/",
+          "text": "",
+          "date": "2026-01-07T20:27:42",
+          "engagement": {
+            "likes": 37,
+            "comments": 2,
+            "shares": 0,
+            "views": 0,
+            "total": 39
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.13,
+        "posts_per_week": 0.91,
+        "date_range_days": 92,
+        "first_post": "2025-10-07T15:34:15",
+        "last_post": "2026-01-07T22:00:16"
+      },
+      "time_series": [
+        {
+          "date": "2025-10-06",
+          "posts": 1,
+          "engagement": 41
+        },
+        {
+          "date": "2025-12-29",
+          "posts": 7,
+          "engagement": 171
+        },
+        {
+          "date": "2026-01-05",
+          "posts": 4,
+          "engagement": 71
+        }
+      ],
+      "content_types": {
+        "image": {
+          "count": 2,
+          "engagement": 80,
+          "percentage": 16.7
+        },
+        "video": {
+          "count": 10,
+          "engagement": 203,
+          "percentage": 83.3
+        }
+      }
     }
   },
   "top_posts": [
     {
-      "id": "3mbi4sbcdgs2u",
-      "url": "https://bsky.app/profile/montclairlocalnews.bsky.social/post/3mbi4sbcdgs2u",
-      "text": "When a heavy snowstorm collapsed the roof of a kennel at a busy Newark animal shelter, displacing more than 30 dogs, the community quickly stepped in, with more than 100 foster applications pouring in",
-      "date": "2026-01-03T00:13:02.576000",
+      "id": null,
+      "url": "https://www.instagram.com/p/DTA2ZHqDdtm/",
+      "text": "",
+      "date": "2026-01-02T17:02:09",
       "engagement": {
-        "likes": 4,
-        "comments": 0,
+        "likes": 32,
+        "comments": 18,
         "shares": 0,
         "views": 0,
-        "total": 4
+        "total": 50
       },
       "thumbnail": null
     },
     {
-      "id": "3mbp2yf5lx32o",
-      "url": "https://bsky.app/profile/montclairlocalnews.bsky.social/post/3mbp2yf5lx32o",
-      "text": "Hours Before Board\u2019s Vote, Montclair Superintendent Says New Ballot Questions Not\u00a0Finalized\n\nSuperintendent Turner: \u201cThe administration is continuing to work to ensure that any proposed language is ac",
-      "date": "2026-01-05T18:29:17",
+      "id": null,
+      "url": "https://www.instagram.com/p/DPg2H84DVe5/",
+      "text": "",
+      "date": "2025-10-07T15:34:15",
       "engagement": {
-        "likes": 2,
+        "likes": 38,
+        "comments": 3,
+        "shares": 0,
+        "views": 0,
+        "total": 41
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DTOQ1vLEhSl/",
+      "text": "",
+      "date": "2026-01-07T20:27:42",
+      "engagement": {
+        "likes": 37,
+        "comments": 2,
+        "shares": 0,
+        "views": 0,
+        "total": 39
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DS3NmDGkjQ2/",
+      "text": "",
+      "date": "2025-12-29T21:40:17",
+      "engagement": {
+        "likes": 23,
         "comments": 1,
         "shares": 0,
         "views": 0,
-        "total": 3
+        "total": 24
       },
       "thumbnail": null
     },
     {
-      "id": "3mbmax5bjgs2o",
-      "url": "https://bsky.app/profile/montclairlocalnews.bsky.social/post/3mbmax5bjgs2o",
-      "text": "From the camper kitchen to the heart of the home, she was always ready to make you a legendary sandwich or her famous waffles. Her skills with brain teasers and puzzles were unmatched, and you could a",
-      "date": "2026-01-04T15:38:00.048000",
+      "id": null,
+      "url": "https://www.instagram.com/p/DS5qjTnknI6/",
+      "text": "",
+      "date": "2025-12-30T20:29:46",
       "engagement": {
-        "likes": 3,
-        "comments": 0,
+        "likes": 21,
+        "comments": 2,
         "shares": 0,
         "views": 0,
-        "total": 3
-      },
-      "thumbnail": null
-    },
-    {
-      "id": "3mbuhpvfcee2i",
-      "url": "https://bsky.app/profile/montclairlocalnews.bsky.social/post/3mbuhpvfcee2i",
-      "text": "What Will Montclair\u2019s 2026 School Deficit Referendum Cost You? Do the Math with Our\u00a0Calculator\n\nFind out what the March 10 Montclair school referendum will cost you, if approved.",
-      "date": "2026-01-07T22:00:29",
-      "engagement": {
-        "likes": 1,
-        "comments": 0,
-        "shares": 1,
-        "views": 0,
-        "total": 2
-      },
-      "thumbnail": null
-    },
-    {
-      "id": "3mbubh36r2d2n",
-      "url": "https://bsky.app/profile/montclairlocalnews.bsky.social/post/3mbubh36r2d2n",
-      "text": "Tony-Nominated Actor Joshua Henry on Dream Role in \u2018Ragtime\u2019 and\u00a0Montclair\n\nEven though Joshua Henry spends the majority of his days playing Coalhouse Walker Jr. on Broadway, he doesn\u2019t reserve his ta",
-      "date": "2026-01-07T20:08:11",
-      "engagement": {
-        "likes": 2,
-        "comments": 0,
-        "shares": 0,
-        "views": 0,
-        "total": 2
+        "total": 23
       },
       "thumbnail": null
     }
   ],
   "overall_frequency": {
-    "posts_per_day": 5.0,
-    "posts_per_week": 35.0,
-    "date_range_days": 5,
-    "first_post": "2026-01-02T16:37:14.520000",
+    "posts_per_day": 0.4,
+    "posts_per_week": 2.8,
+    "date_range_days": 92,
+    "first_post": "2025-10-07T15:34:15",
     "last_post": "2026-01-07T23:22:18"
   },
   "time_series": [
     {
+      "date": "2025-10-06",
+      "posts": 1,
+      "engagement": 41
+    },
+    {
       "date": "2025-12-29",
-      "posts": 9,
-      "engagement": 18
+      "posts": 16,
+      "engagement": 189
     },
     {
       "date": "2026-01-05",
-      "posts": 16,
-      "engagement": 20
+      "posts": 20,
+      "engagement": 91
     }
   ]
 }

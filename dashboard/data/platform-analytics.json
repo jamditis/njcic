@@ -1,17 +1,100 @@
 {
   "platforms": {
+    "instagram": {
+      "color": "#E1306C",
+      "grantees": 39,
+      "total_posts": 468,
+      "total_engagement": 44369,
+      "total_followers": 0,
+      "avg_engagement_per_post": 94.81,
+      "avg_posts_per_grantee": 12.0,
+      "content_types": {
+        "video": {
+          "count": 135,
+          "engagement": 14912,
+          "percentage": 28.8
+        },
+        "image": {
+          "count": 333,
+          "engagement": 29457,
+          "percentage": 71.2
+        }
+      },
+      "top_grantees": [
+        {
+          "name": "HudPost",
+          "slug": "hudpost",
+          "posts": 12,
+          "engagement": 12820
+        },
+        {
+          "name": "Inside Climate News",
+          "slug": "inside-climate-news",
+          "posts": 12,
+          "engagement": 5278
+        },
+        {
+          "name": "NJ Spotlight News",
+          "slug": "nj-spotlight-news",
+          "posts": 12,
+          "engagement": 3641
+        },
+        {
+          "name": "Trenton Journal",
+          "slug": "trenton-journal",
+          "posts": 12,
+          "engagement": 2847
+        },
+        {
+          "name": "New Labor",
+          "slug": "new-labor",
+          "posts": 12,
+          "engagement": 2754
+        },
+        {
+          "name": "VietLead",
+          "slug": "vietlead",
+          "posts": 12,
+          "engagement": 2290
+        },
+        {
+          "name": "The College of New Jersey",
+          "slug": "the-college-of-new-jersey",
+          "posts": 12,
+          "engagement": 1793
+        },
+        {
+          "name": "Black in Jersey",
+          "slug": "black-in-jersey",
+          "posts": 12,
+          "engagement": 1547
+        },
+        {
+          "name": "Newark Water Coalition",
+          "slug": "newark-water-coalition",
+          "posts": 12,
+          "engagement": 1256
+        },
+        {
+          "name": "The Tower at Princeton High School",
+          "slug": "the-tower-at-princeton-high-school",
+          "posts": 12,
+          "engagement": 1068
+        }
+      ]
+    },
     "tiktok": {
       "color": "#000000",
       "grantees": 10,
       "total_posts": 222,
-      "total_engagement": 118289,
+      "total_engagement": 118211,
       "total_followers": 0,
-      "avg_engagement_per_post": 532.83,
+      "avg_engagement_per_post": 532.48,
       "avg_posts_per_grantee": 22.2,
       "content_types": {
         "video": {
           "count": 222,
-          "engagement": 118289,
+          "engagement": 118211,
           "percentage": 100.0
         }
       },
@@ -32,7 +115,7 @@
           "name": "The College of New Jersey",
           "slug": "the-college-of-new-jersey",
           "posts": 26,
-          "engagement": 2966
+          "engagement": 2888
         },
         {
           "name": "Slice of Culture   Saint Peter s University",
@@ -163,7 +246,11 @@
     "by_engagement": [
       {
         "platform": "tiktok",
-        "engagement": 118289
+        "engagement": 118211
+      },
+      {
+        "platform": "instagram",
+        "engagement": 44369
       },
       {
         "platform": "bluesky",
@@ -171,6 +258,10 @@
       }
     ],
     "by_posts": [
+      {
+        "platform": "instagram",
+        "posts": 468
+      },
       {
         "platform": "tiktok",
         "posts": 222
@@ -181,5 +272,5 @@
       }
     ]
   },
-  "generated_at": "2026-01-07T22:22:16.683695"
+  "generated_at": "2026-01-08T11:06:07.689954"
 }
