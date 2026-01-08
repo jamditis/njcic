@@ -11,7 +11,7 @@ on:
       platforms:
         description: 'Platforms to scrape (comma-separated)'
         required: false
-        default: 'twitter,youtube,bluesky,instagram'
+        default: 'twitter,youtube,bluesky,instagram,tiktok,threads,facebook'
       skip_url_extraction:
         description: 'Skip URL extraction step'
         required: false
@@ -82,7 +82,7 @@ jobs:
         continue-on-error: true
         run: |
           cd njcic-scraper
-          PLATFORMS="${{ github.event.inputs.platforms || 'twitter,youtube,bluesky,instagram' }}"
+          PLATFORMS="${{ github.event.inputs.platforms || 'twitter,youtube,bluesky,instagram,tiktok,threads,facebook' }}"
           python main.py --platforms "$PLATFORMS" 2>&1 | tee ../scraper.log
           echo "scraper_status=$?" >> $GITHUB_OUTPUT
         env:
@@ -183,7 +183,7 @@ jobs:
             git commit -m "Update dashboard data - $TIMESTAMP
 
             Automated update from GitHub Actions workflow.
-            Platforms scraped: ${{ github.event.inputs.platforms || 'twitter,youtube,bluesky,instagram' }}"
+            Platforms scraped: ${{ github.event.inputs.platforms || 'twitter,youtube,bluesky,instagram,tiktok,threads,facebook' }}"
 
             git push
             echo "Changes committed and pushed successfully"
@@ -214,7 +214,7 @@ jobs:
           echo "## NJCIC Dashboard Update Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Run Date:** $(date -u +"%Y-%m-%d %H:%M UTC")" >> $GITHUB_STEP_SUMMARY
-          echo "**Platforms:** ${{ github.event.inputs.platforms || 'twitter,youtube,bluesky,instagram' }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Platforms:** ${{ github.event.inputs.platforms || 'twitter,youtube,bluesky,instagram,tiktok,threads,facebook' }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Step Results" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
