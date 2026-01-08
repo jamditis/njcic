@@ -9,21 +9,28 @@
 :root {
     /* NJCIC Official Brand Colors */
     --njcic-teal: #2dc8d2;
+    --njcic-teal-dark: #0e7c86;    /* Accessible teal for text on light bg */
+    --njcic-teal-darker: #095057;  /* Even darker for small text */
     --njcic-orange: #f34213;
+    --njcic-orange-dark: #c73610;  /* Accessible orange for backgrounds */
     --njcic-dark: #183642;
     --njcic-gray: #2b3436;
     --njcic-light: #e8f9fa;
 
     /* Brand Colors (mapped to NJCIC) */
-    --color-primary: #0e7c86;      /* Rich Teal */
-    --color-primary-light: #2dc8d2; /* Bright Teal (NJCIC Teal) */
+    --color-primary: #0e7c86;      /* Rich Teal - USE FOR TEXT ON LIGHT BG */
+    --color-primary-light: #2dc8d2; /* Bright Teal - decorative only */
     --color-primary-dark: #095057;  /* Deep Teal */
     --color-accent: #f34213;       /* NJCIC Orange - Secondary accent */
+    --color-accent-dark: #c73610;  /* Darker orange for text */
 
     /* Neutral Scale (using NJCIC Dark/Gray) */
     --color-dark: #183642;    /* NJCIC Dark Navy */
     --color-dark-800: #2b3436; /* NJCIC Gray */
+    --color-gray-600: #475569; /* Slate 600 - better for body text */
     --color-gray-500: #64748b; /* Slate 500 */
+    --color-gray-400: #94a3b8; /* Slate 400 */
+    --color-gray-300: #cbd5e1; /* Slate 300 - for text on dark bg */
     --color-gray-200: #e2e8f0; /* Slate 200 */
     --color-gray-100: #f1f5f9; /* Slate 100 */
     --color-gray-50: #f8fafc;  /* Slate 50 */
@@ -354,18 +361,19 @@ h6 {
     align-items: center;
     gap: 0.5rem;
     padding: 0.25rem 0.75rem;
-    background: rgba(45, 200, 210, 0.15);
-    border: 1px solid rgba(45, 200, 210, 0.3);
+    background: rgba(14, 124, 134, 0.15);
+    border: 1px solid rgba(14, 124, 134, 0.3);
     border-radius: 9999px;
     font-size: 0.875rem;
-    color: #2dc8d2;
+    color: #0e7c86;
+    font-weight: 500;
 }
 
 .live-indicator::before {
     content: '';
     width: 8px;
     height: 8px;
-    background: #2dc8d2;
+    background: #0e7c86;
     border-radius: 50%;
     animation: pulse 2s ease-in-out infinite;
 }
@@ -569,39 +577,39 @@ h6 {
     text-decoration: none;
 }
 
-/* Primary button - teal */
+/* Primary button - dark teal for contrast */
 .btn-primary {
-    background: var(--njcic-teal);
+    background: var(--njcic-teal-dark);
     color: white;
 }
 
 .btn-primary:hover {
-    background: #25b0b9;
-    box-shadow: 0 4px 12px rgba(45, 200, 210, 0.4);
+    background: var(--njcic-teal-darker);
+    box-shadow: 0 4px 12px rgba(14, 124, 134, 0.4);
     transform: translateY(-1px);
 }
 
-/* Secondary button - orange (for important CTAs) */
+/* Secondary button - darker orange for contrast */
 .btn-secondary {
-    background: var(--njcic-orange);
+    background: var(--njcic-orange-dark);
     color: white;
 }
 
 .btn-secondary:hover {
-    background: #d93a11;
-    box-shadow: 0 4px 12px rgba(243, 66, 19, 0.4);
+    background: #a82e0d;
+    box-shadow: 0 4px 12px rgba(199, 54, 16, 0.4);
     transform: translateY(-1px);
 }
 
-/* Outline button */
+/* Outline button - dark teal text for contrast */
 .btn-outline {
     background: transparent;
-    color: var(--njcic-teal);
-    border: 2px solid var(--njcic-teal);
+    color: var(--njcic-teal-dark);
+    border: 2px solid var(--njcic-teal-dark);
 }
 
 .btn-outline:hover {
-    background: var(--njcic-teal);
+    background: var(--njcic-teal-dark);
     color: white;
 }
 
@@ -676,4 +684,145 @@ h6 {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+/* ==========================================================================
+   Accessible Color Classes
+   ========================================================================== */
+
+/* Links on light backgrounds - use dark teal for 5.7:1 contrast */
+.link-accessible,
+a.text-teal-accessible {
+    color: var(--njcic-teal-dark);
+}
+
+.link-accessible:hover,
+a.text-teal-accessible:hover {
+    color: var(--njcic-teal-darker);
+    text-decoration: underline;
+}
+
+/* Text on dark backgrounds */
+.text-on-dark {
+    color: var(--color-gray-100);
+}
+
+.text-on-dark-muted {
+    color: var(--color-gray-300);
+}
+
+/* Footer specific - lighter text for dark bg */
+.footer-text {
+    color: var(--color-gray-300);
+}
+
+.footer-text-muted {
+    color: var(--color-gray-400);
+}
+
+.footer-heading {
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   Platform Badges - Accessible Colors
+   ========================================================================== */
+
+.badge-platform {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* TikTok - black on light gray (passes) */
+.badge-tiktok {
+    background: #f0f0f0;
+    color: #000000;
+}
+
+/* Instagram - darker pink for contrast */
+.badge-instagram {
+    background: #fce4ec;
+    color: #9f1239;
+}
+
+/* Bluesky - darker blue for contrast */
+.badge-bluesky {
+    background: #e6f3ff;
+    color: #0052cc;
+}
+
+/* YouTube - darker red for contrast */
+.badge-youtube {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+/* Twitter/X - dark on light */
+.badge-twitter {
+    background: #f3f4f6;
+    color: #1f2937;
+}
+
+/* Default/Unknown platform */
+.badge-default {
+    background: #f3f4f6;
+    color: #374151;
+}
+
+/* ==========================================================================
+   Hero Section Fixes
+   ========================================================================== */
+
+/* Metric card labels on dark hero - use light colors */
+.metric-label {
+    color: var(--color-gray-200);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* Hero subtitle - ensure readable on dark */
+.hero-subtitle {
+    color: var(--color-gray-300);
+}
+
+/* ==========================================================================
+   Table & Rankings Fixes
+   ========================================================================== */
+
+/* Leaderboard rank circles */
+.leaderboard-rank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.leaderboard-rank.gold {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: #78350f;
+}
+
+.leaderboard-rank.silver {
+    background: linear-gradient(135deg, #e5e7eb, #d1d5db);
+    color: #374151;
+}
+
+.leaderboard-rank.bronze {
+    background: linear-gradient(135deg, #fdba74, #fb923c);
+    color: #7c2d12;
+}
+
+.leaderboard-rank.default {
+    background: #f3f4f6;
+    color: #374151;
 }
