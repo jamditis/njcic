@@ -6,10 +6,10 @@
     <title>NJCIC Social Media Impact Dashboard</title>
     <meta name="description" content="Tracking the social media impact of the New Jersey Civic Information Consortium grantees.">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts - Libre Baskerville for editorial authority, Source Sans 3 for readability -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS (CDN for simplicity, would use build step in production) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -42,8 +42,8 @@
                         }
                     },
                     fontFamily: {
-                        'heading': ['Space Grotesk', 'system-ui', 'sans-serif'],
-                        'sans': ['DM Sans', 'system-ui', 'sans-serif']
+                        'heading': ['Libre Baskerville', 'Georgia', 'Times New Roman', 'serif'],
+                        'sans': ['Source Sans 3', 'system-ui', 'sans-serif']
                     }
                 }
             }
@@ -51,6 +51,24 @@
     </script>
 </head>
 <body class="bg-gray-50 font-sans antialiased text-slate-900">
+
+    <!-- SVG Gradient Definitions for data visualization -->
+    <svg class="absolute w-0 h-0" aria-hidden="true">
+        <defs>
+            <linearGradient id="gradient-teal-orange" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#2dc8d2"/>
+                <stop offset="100%" stop-color="#f34213"/>
+            </linearGradient>
+            <linearGradient id="gradient-teal-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2dc8d2"/>
+                <stop offset="100%" stop-color="#0e7c86"/>
+            </linearGradient>
+            <linearGradient id="gradient-orange-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f34213"/>
+                <stop offset="100%" stop-color="#c73610"/>
+            </linearGradient>
+        </defs>
+    </svg>
 
     <!-- Skip Link for Accessibility -->
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-lg">
@@ -86,28 +104,28 @@
         <div class="h-1 bg-gradient-to-r from-njcic-teal via-njcic-orange to-njcic-teal"></div>
 
         <!-- Navigation -->
-        <nav id="main-nav" class="sticky top-0 z-40 bg-njcic-dark border-b border-njcic-teal/20" role="navigation" aria-label="Main navigation">
+        <nav id="main-nav" class="sticky top-0 z-40" role="navigation" aria-label="Main navigation">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between h-16">
                     <!-- Logo -->
                     <a href="index.html" class="flex items-center gap-3">
-                        <!-- Circular badge with NJ -->
                         <div class="w-10 h-10 rounded-full bg-gradient-to-br from-njcic-teal to-njcic-dark flex items-center justify-center">
                             <span class="text-white font-bold text-sm">NJ</span>
                         </div>
                         <div class="hidden sm:block">
                             <span class="text-lg font-bold text-white">NJCIC</span>
-                            <span class="text-xs text-gray-500 block -mt-1">Dashboard</span>
+                            <span class="text-xs text-gray-400 block -mt-1">Dashboard</span>
                         </div>
                     </a>
 
                     <!-- Desktop Menu -->
                     <div class="hidden md:flex items-center space-x-1">
-                        <a href="#overview" class="px-3 py-2 rounded-md text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Overview</a>
-                        <a href="#grantees" class="px-3 py-2 rounded-md text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Grantees</a>
-                        <a href="#rankings" class="px-3 py-2 rounded-md text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Rankings</a>
-                        <a href="platforms.html" class="px-3 py-2 rounded-md text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Platforms</a>
-                        <a href="about.html" class="px-3 py-2 rounded-md text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">About</a>
+                        <a href="index.html" class="nav-link" aria-current="page">Overview</a>
+                        <a href="grantee.html" class="nav-link">Grantees</a>
+                        <a href="rankings.html" class="nav-link">Rankings</a>
+                        <a href="platforms.html" class="nav-link">Platforms</a>
+                        <a href="methodology.html" class="nav-link">Methodology</a>
+                        <a href="about.html" class="nav-link">About</a>
                     </div>
 
                     <!-- Search & Mobile Toggle -->
@@ -124,7 +142,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                             </svg>
                         </div>
-                        <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-300 hover:text-white" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+                        <button id="mobile-menu-btn" class="md:hidden p-2 text-white hover:text-njcic-teal" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                             </svg>
@@ -132,24 +150,29 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden bg-njcic-dark border-t border-njcic-teal/20 py-2">
-                <a href="#overview" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10">Overview</a>
-                <a href="#grantees" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10">Grantees</a>
-                <a href="#rankings" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10">Rankings</a>
-                <a href="platforms.html" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10">Platforms</a>
-                <a href="about.html" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10">About</a>
+            <div id="mobile-menu" class="hidden md:hidden border-t border-njcic-teal/20 py-2">
+                <a href="index.html" class="mobile-nav-link" aria-current="page">Overview</a>
+                <a href="grantee.html" class="mobile-nav-link">Grantees</a>
+                <a href="rankings.html" class="mobile-nav-link">Rankings</a>
+                <a href="platforms.html" class="mobile-nav-link">Platforms</a>
+                <a href="methodology.html" class="mobile-nav-link">Methodology</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
             </div>
         </nav>
 
         <!-- Hero Section -->
-        <section id="overview" class="hero-pattern bg-gradient-to-br from-njcic-dark via-njcic-gray to-njcic-dark text-white pt-16 pb-24 sm:pt-20 sm:pb-32 relative overflow-hidden">
-            <!-- Background decoration -->
+        <section id="overview" class="hero-pattern hero-enhanced gradient-mesh bg-gradient-to-br from-njcic-dark via-njcic-gray to-njcic-dark text-white pt-16 pb-24 sm:pt-20 sm:pb-32 relative overflow-hidden noise-overlay">
+            <!-- Background decoration - animated gradient orbs -->
             <div class="absolute inset-0 opacity-10 pointer-events-none">
                 <div class="absolute top-0 right-0 w-96 h-96 bg-njcic-teal rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
                 <div class="absolute bottom-0 left-0 w-96 h-96 bg-njcic-orange rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
             </div>
+            <!-- Decorative geometric circles -->
+            <div class="absolute top-20 left-10 w-32 h-32 border border-njcic-teal/10 rounded-full pointer-events-none"></div>
+            <div class="absolute bottom-40 right-20 w-48 h-48 border border-njcic-orange/10 rounded-full pointer-events-none"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-24 border border-white/5 rounded-full pointer-events-none"></div>
 
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16">
@@ -222,8 +245,11 @@
             </div>
         </section>
 
+        <!-- Section Divider Wave -->
+        <div class="divider-wave bg-njcic-dark -mt-1"></div>
+
         <!-- Grantees Section -->
-        <section id="grantees" class="py-16 sm:py-24 -mt-12 relative z-10 grid-pattern">
+        <section id="grantees" class="py-16 sm:py-24 -mt-12 relative z-10 section-teal-flow dot-pattern">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
                 <!-- Section Header & Controls -->
@@ -285,8 +311,13 @@
             </div>
         </section>
 
+        <!-- Editorial Divider -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="divider-editorial"></div>
+        </div>
+
         <!-- Analytics Section -->
-        <section id="charts" class="py-16 bg-white border-t border-slate-100">
+        <section id="charts" class="py-16 bg-white section-dual-flow relative geo-shapes">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="mb-10 text-center">
                     <h2 class="text-2xl font-bold text-slate-900">Platform Analytics</h2>
@@ -295,7 +326,7 @@
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <!-- Distribution -->
-                    <div class="chart-card">
+                    <div class="chart-card card-gradient-teal hover-lift-teal">
                         <h3 class="text-lg font-bold text-slate-800 mb-6 px-2">Content Distribution</h3>
                         <div class="relative flex-1 min-h-[300px]">
                             <canvas id="platformChart"></canvas>
@@ -304,15 +335,15 @@
                     </div>
 
                     <!-- Engagement -->
-                    <div class="chart-card">
+                    <div class="chart-card card-gradient-orange hover-lift-orange">
                         <h3 class="text-lg font-bold text-slate-800 mb-6 px-2">Engagement by Platform</h3>
                         <div class="relative flex-1 min-h-[300px]">
                             <canvas id="engagementByPlatformChart"></canvas>
                         </div>
                     </div>
-                    
+
                     <!-- Top Performers -->
-                    <div class="chart-card lg:col-span-2">
+                    <div class="chart-card lg:col-span-2 card-stripe-accent corner-accent-tl corner-accent-br">
                         <div class="flex items-center justify-between mb-6 px-2">
                             <h3 class="text-lg font-bold text-slate-800">Top 10 Grantees by Engagement</h3>
                             <span class="text-xs font-medium text-slate-400 bg-slate-50 px-2 py-1 rounded">Click bar for details</span>
@@ -325,8 +356,13 @@
             </div>
         </section>
 
+        <!-- Diamond Divider -->
+        <div class="divider-diamond bg-white">
+            <span></span>
+        </div>
+
         <!-- Rankings Table Section -->
-        <section id="rankings" class="py-16 bg-slate-50 border-t border-slate-200">
+        <section id="rankings" class="py-16 section-orange-flow topo-lines relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between mb-8">
                     <h2 class="text-2xl font-bold text-slate-900 section-heading">Rankings Leaderboard</h2>
@@ -335,7 +371,7 @@
                     </div>
                 </div>
 
-                <div class="rankings-table-container bg-white">
+                <div class="rankings-table-container bg-white frame-accent frosted-card">
                     <div class="overflow-x-auto custom-scrollbar">
                         <table class="w-full text-sm text-left" id="rankings-table">
                             <thead>
@@ -357,8 +393,11 @@
             </div>
         </section>
 
+        <!-- Footer Divider -->
+        <div class="divider-gradient"></div>
+
         <!-- Footer -->
-        <footer class="bg-njcic-gray text-white py-12" role="contentinfo">
+        <footer class="bg-njcic-gray text-white py-12 relative noise-overlay" role="contentinfo">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Brand column -->
@@ -378,20 +417,20 @@
                     <!-- Quick links -->
                     <div>
                         <h4 class="text-white font-semibold mb-4">Dashboard</h4>
-                        <ul class="space-y-2 text-sm text-gray-300">
-                            <li><a href="index.html" class="hover:text-white transition-colors">Overview</a></li>
-                            <li><a href="rankings.html" class="hover:text-white transition-colors">Rankings</a></li>
-                            <li><a href="platforms.html" class="hover:text-white transition-colors">Platforms</a></li>
-                            <li><a href="methodology.html" class="hover:text-white transition-colors">Methodology</a></li>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="index.html" class="text-gray-300 hover:text-njcic-teal transition-colors">Overview</a></li>
+                            <li><a href="rankings.html" class="text-gray-300 hover:text-njcic-teal transition-colors">Rankings</a></li>
+                            <li><a href="platforms.html" class="text-gray-300 hover:text-njcic-teal transition-colors">Platforms</a></li>
+                            <li><a href="methodology.html" class="text-gray-300 hover:text-njcic-teal transition-colors">Methodology</a></li>
                         </ul>
                     </div>
-                    
+
                     <!-- About NJCIC -->
                     <div>
                         <h4 class="text-white font-semibold mb-4">About NJCIC</h4>
-                        <ul class="space-y-2 text-sm text-gray-300">
-                            <li><a href="https://njcivicinfo.org" target="_blank" rel="noopener" class="hover:text-white transition-colors">Official Website</a></li>
-                            <li><a href="about.html" class="hover:text-white transition-colors">About This Dashboard</a></li>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="https://njcivicinfo.org" target="_blank" rel="noopener" class="text-gray-300 hover:text-njcic-orange transition-colors">Official Website</a></li>
+                            <li><a href="about.html" class="text-gray-300 hover:text-njcic-orange transition-colors">About This Dashboard</a></li>
                         </ul>
                     </div>
                 </div>

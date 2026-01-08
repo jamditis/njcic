@@ -74,20 +74,70 @@
 
     <!-- Main Content -->
     <div id="main-content" class="opacity-0 transition-opacity duration-500">
-        <!-- Header with Navigation -->
-        <header class="bg-njcic-dark text-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <!-- Accent Stripe -->
+        <div class="h-1 bg-gradient-to-r from-njcic-teal via-njcic-orange to-njcic-teal"></div>
+
+        <!-- Navigation -->
+        <nav id="main-nav" class="sticky top-0 z-40" aria-label="Main navigation">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <!-- Logo -->
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-njcic-teal to-njcic-dark flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">NJ</span>
+                        </div>
+                        <div class="hidden sm:block">
+                            <span class="text-lg font-bold text-white">NJCIC</span>
+                            <span class="text-xs text-gray-400 block -mt-1">Dashboard</span>
+                        </div>
+                    </a>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="index.html" class="nav-link">Overview</a>
+                        <a href="grantee.html" class="nav-link" aria-current="page">Grantees</a>
+                        <a href="rankings.html" class="nav-link">Rankings</a>
+                        <a href="platforms.html" class="nav-link">Platforms</a>
+                        <a href="methodology.html" class="nav-link">Methodology</a>
+                        <a href="about.html" class="nav-link">About</a>
+                    </div>
+
+                    <!-- Mobile Toggle -->
+                    <div class="flex items-center gap-3">
+                        <button id="mobile-menu-btn" class="md:hidden p-2 text-white hover:text-njcic-teal" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden border-t border-njcic-teal/20 py-2">
+                <a href="index.html" class="mobile-nav-link">Overview</a>
+                <a href="grantee.html" class="mobile-nav-link" aria-current="page">Grantees</a>
+                <a href="rankings.html" class="mobile-nav-link">Rankings</a>
+                <a href="platforms.html" class="mobile-nav-link">Platforms</a>
+                <a href="methodology.html" class="mobile-nav-link">Methodology</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+            </div>
+        </nav>
+
+        <!-- Breadcrumb Header -->
+        <header class="bg-njcic-dark text-white py-4">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
                     <div>
                         <!-- Breadcrumb -->
-                        <nav class="flex items-center text-sm mb-2" aria-label="Breadcrumb">
+                        <nav class="flex items-center text-sm" aria-label="Breadcrumb">
                             <a href="index.html" class="text-gray-400 hover:text-njcic-teal transition-colors">
                                 Home
                             </a>
                             <svg class="w-4 h-4 mx-2 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                             </svg>
-                            <a href="index.html" class="text-gray-400 hover:text-njcic-teal transition-colors">
+                            <a href="grantee.html" class="text-gray-400 hover:text-njcic-teal transition-colors">
                                 Grantees
                             </a>
                             <svg class="w-4 h-4 mx-2 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -95,9 +145,6 @@
                             </svg>
                             <span id="breadcrumb-name" class="text-njcic-teal font-medium">Loading...</span>
                         </nav>
-                        <h1 class="text-xl sm:text-2xl font-bold">
-                            <span class="text-njcic-teal">NJCIC</span> Social Media Impact
-                        </h1>
                     </div>
                     <div class="mt-3 sm:mt-0">
                         <a href="index.html" class="inline-flex items-center px-4 py-2 text-sm font-medium text-njcic-teal border border-njcic-teal rounded-lg hover:bg-njcic-teal hover:text-white transition-colors">

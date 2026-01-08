@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - NJCIC Social Media Dashboard</title>
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts - Libre Baskerville for editorial authority, Source Sans 3 for readability -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -34,8 +34,8 @@
                         'njcic-light': '#e8f9fa'
                     },
                     fontFamily: {
-                        'heading': ['Space Grotesk', 'system-ui', 'sans-serif'],
-                        'sans': ['DM Sans', 'system-ui', 'sans-serif']
+                        'heading': ['Libre Baskerville', 'Georgia', 'Times New Roman', 'serif'],
+                        'sans': ['Source Sans 3', 'system-ui', 'sans-serif']
                     }
                 }
             }
@@ -50,34 +50,33 @@
     <div class="h-1 bg-gradient-to-r from-njcic-teal via-njcic-orange to-njcic-teal"></div>
 
     <!-- Navigation -->
-    <nav id="main-nav" class="sticky top-0 z-40 bg-njcic-dark border-b border-njcic-teal/20" aria-label="Main navigation">
+    <nav id="main-nav" class="sticky top-0 z-40" aria-label="Main navigation">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                    <!-- Logo -->
-                    <a href="index.html" class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-njcic-teal to-njcic-dark flex items-center justify-center">
-                            <span class="text-white font-bold text-sm">NJ</span>
-                        </div>
-                        <div class="hidden sm:block">
-                            <span class="text-lg font-bold text-white">NJCIC</span>
-                            <span class="text-xs text-gray-400 block -mt-1">Dashboard</span>
-                        </div>
-                    </a>
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-njcic-teal to-njcic-dark flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">NJ</span>
+                    </div>
+                    <div class="hidden sm:block">
+                        <span class="text-lg font-bold text-white">NJCIC</span>
+                        <span class="text-xs text-gray-400 block -mt-1">Dashboard</span>
+                    </div>
+                </a>
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="index.html#overview" class="px-3 py-2 rounded-md text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Overview</a>
-                    <a href="index.html#grantees" class="px-3 py-2 rounded-md text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Grantees</a>
-                    <a href="rankings.html" class="px-3 py-2 rounded-md text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Rankings</a>
-                    <a href="platforms.html" class="px-3 py-2 rounded-md text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Platforms</a>
-                    <a href="about.html" class="px-3 py-2 rounded-md text-sm text-white bg-white/10" aria-current="page">About</a>
-                    <a href="methodology.html" class="px-3 py-2 rounded-md text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Methodology</a>
+                    <a href="index.html" class="nav-link">Overview</a>
+                    <a href="grantee.html" class="nav-link">Grantees</a>
+                    <a href="rankings.html" class="nav-link">Rankings</a>
+                    <a href="platforms.html" class="nav-link">Platforms</a>
+                    <a href="methodology.html" class="nav-link">Methodology</a>
+                    <a href="about.html" class="nav-link" aria-current="page">About</a>
                 </div>
 
                 <!-- Mobile Toggle -->
                 <div class="flex items-center gap-3">
-                    <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-300 hover:text-white" aria-expanded="false" aria-controls="mobile-menu">
-                        <span class="sr-only">Open main menu</span>
+                    <button id="mobile-menu-btn" class="md:hidden p-2 text-white hover:text-njcic-teal" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
@@ -87,13 +86,13 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-njcic-dark border-t border-njcic-teal/20 py-2">
-            <a href="index.html#overview" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10">Overview</a>
-            <a href="index.html#grantees" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10">Grantees</a>
-            <a href="rankings.html" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10">Rankings</a>
-            <a href="platforms.html" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10">Platforms</a>
-            <a href="about.html" class="block px-4 py-2 text-sm text-white bg-white/10" aria-current="page">About</a>
-            <a href="methodology.html" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10">Methodology</a>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-njcic-teal/20 py-2">
+            <a href="index.html" class="mobile-nav-link">Overview</a>
+            <a href="grantee.html" class="mobile-nav-link">Grantees</a>
+            <a href="rankings.html" class="mobile-nav-link">Rankings</a>
+            <a href="platforms.html" class="mobile-nav-link">Platforms</a>
+            <a href="methodology.html" class="mobile-nav-link">Methodology</a>
+            <a href="about.html" class="mobile-nav-link" aria-current="page">About</a>
         </div>
     </nav>
 
