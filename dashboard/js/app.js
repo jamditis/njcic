@@ -507,11 +507,11 @@
                         <div class="grid grid-cols-2 gap-3 mb-4">
                             <div class="bg-slate-50 rounded-lg p-3 text-center">
                                 <div class="text-lg font-bold text-njcic-dark">${formatAbbreviated(grantee.posts)}</div>
-                                <div class="text-xs text-gray-500">Posts</div>
+                                <div class="text-xs text-gray-500">posts</div>
                             </div>
                             <div class="bg-slate-50 rounded-lg p-3 text-center">
                                 <div class="text-lg font-bold text-njcic-teal">${formatAbbreviated(grantee.engagement)}</div>
-                                <div class="text-xs text-gray-500">Engagement</div>
+                                <div class="text-xs text-gray-500">engagement</div>
                             </div>
                         </div>
 
