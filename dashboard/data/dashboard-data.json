@@ -1,12 +1,12 @@
 {
   "summary": {
-    "totalGrantees": 40,
-    "totalPosts": 865,
-    "totalEngagement": 173230,
-    "totalFollowers": 48947,
+    "totalGrantees": 44,
+    "totalPosts": 955,
+    "totalEngagement": 1725977,
+    "totalFollowers": 50308,
     "platformsTracked": 3,
-    "avgEngagementRate": 200.27,
-    "lastUpdated": "2026-01-08T11:06:07.690249",
+    "avgEngagementRate": 1807.31,
+    "lastUpdated": "2026-01-08T11:29:59.146329",
     "scrapingDuration": "aggregated"
   },
   "platforms": {
@@ -18,28 +18,48 @@
       "avgEngagement": 94.81
     },
     "tiktok": {
-      "posts": 222,
-      "engagement": 118211,
+      "posts": 300,
+      "engagement": 1670714,
       "followers": 0,
-      "grantees": 10,
-      "avgEngagement": 532.48
+      "grantees": 13,
+      "avgEngagement": 5569.05
     },
     "bluesky": {
-      "posts": 175,
-      "engagement": 10650,
-      "followers": 48947,
-      "grantees": 7,
-      "avgEngagement": 60.86
+      "posts": 187,
+      "engagement": 10894,
+      "followers": 50308,
+      "grantees": 8,
+      "avgEngagement": 58.26
     }
   },
   "topGrantees": [
     {
+      "name": "Muslim",
+      "slug": "muslim",
+      "posts": 26,
+      "engagement": 1304640,
+      "followers": 0,
+      "engagementRate": 50178.46,
+      "topPlatform": "tiktok",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Global Patriot Newspapers online",
+      "slug": "global-patriot-newspapers-online",
+      "posts": 26,
+      "engagement": 242814,
+      "followers": 0,
+      "engagementRate": 9339.0,
+      "topPlatform": "tiktok",
+      "platformsScraped": 1
+    },
+    {
       "name": "HudPost",
       "slug": "hudpost",
       "posts": 38,
-      "engagement": 116428,
+      "engagement": 117943,
       "followers": 0,
-      "engagementRate": 3063.89,
+      "engagementRate": 3103.76,
       "topPlatform": "tiktok",
       "platformsScraped": 2
     },
@@ -47,9 +67,9 @@
       "name": "NJ Spotlight News",
       "slug": "nj-spotlight-news",
       "posts": 63,
-      "engagement": 10420,
+      "engagement": 12252,
       "followers": 3301,
-      "engagementRate": 165.4,
+      "engagementRate": 194.48,
       "topPlatform": "tiktok",
       "platformsScraped": 3
     },
@@ -57,9 +77,9 @@
       "name": "The Jersey Vindicator",
       "slug": "the-jersey-vindicator",
       "posts": 25,
-      "engagement": 9607,
+      "engagement": 9603,
       "followers": 6443,
-      "engagementRate": 384.28,
+      "engagementRate": 384.12,
       "topPlatform": "bluesky",
       "platformsScraped": 1
     },
@@ -67,9 +87,9 @@
       "name": "Inside Climate News",
       "slug": "inside-climate-news",
       "posts": 37,
-      "engagement": 5976,
-      "followers": 25578,
-      "engagementRate": 161.51,
+      "engagement": 5966,
+      "followers": 25584,
+      "engagementRate": 161.24,
       "topPlatform": "instagram",
       "platformsScraped": 2
     },
@@ -77,9 +97,9 @@
       "name": "The College of New Jersey",
       "slug": "the-college-of-new-jersey",
       "posts": 38,
-      "engagement": 4681,
+      "engagement": 4759,
       "followers": 0,
-      "engagementRate": 123.18,
+      "engagementRate": 125.24,
       "topPlatform": "tiktok",
       "platformsScraped": 2
     },
@@ -127,38 +147,18 @@
       "name": "Daily Targum",
       "slug": "daily-targum",
       "posts": 38,
-      "engagement": 2179,
+      "engagement": 2180,
       "followers": 0,
-      "engagementRate": 57.34,
+      "engagementRate": 57.37,
       "topPlatform": "tiktok",
       "platformsScraped": 2
-    },
-    {
-      "name": "Black in Jersey",
-      "slug": "black-in-jersey",
-      "posts": 12,
-      "engagement": 1547,
-      "followers": 0,
-      "engagementRate": 128.92,
-      "topPlatform": "instagram",
-      "platformsScraped": 1
-    },
-    {
-      "name": "Newark Water Coalition",
-      "slug": "newark-water-coalition",
-      "posts": 12,
-      "engagement": 1256,
-      "followers": 0,
-      "engagementRate": 104.67,
-      "topPlatform": "instagram",
-      "platformsScraped": 1
     }
   ],
   "engagementByPlatform": [
     {
       "platform": "tiktok",
-      "engagement": 118211,
-      "posts": 222,
+      "engagement": 1670714,
+      "posts": 300,
       "color": "#000000"
     },
     {
@@ -169,13 +169,13 @@
     },
     {
       "platform": "bluesky",
-      "engagement": 10650,
-      "posts": 175,
+      "engagement": 10894,
+      "posts": 187,
       "color": "#0085FF"
     }
   ],
   "metadata": {
-    "generatedAt": "2026-01-08T11:06:07.690266",
+    "generatedAt": "2026-01-08T11:29:59.146348",
     "platformColors": {
       "twitter": "#1DA1F2",
       "youtube": "#FF0000",

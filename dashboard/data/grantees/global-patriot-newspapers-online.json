@@ -1,0 +1,280 @@
+{
+  "name": "Global Patriot Newspapers online",
+  "slug": "global-patriot-newspapers-online",
+  "summary": {
+    "total_posts": 26,
+    "total_engagement": 242814,
+    "total_followers": 0,
+    "platforms_active": 1,
+    "engagement_rate": 9339.0,
+    "last_updated": "2026-01-08T11:29:59.101430"
+  },
+  "platform_breakdown": {
+    "tiktok": {
+      "posts": 26,
+      "posts_pct": 100.0,
+      "engagement": 242814,
+      "engagement_pct": 100.0
+    }
+  },
+  "platforms": {
+    "tiktok": {
+      "posts": 26,
+      "engagement": 242814,
+      "views": 516300,
+      "followers": 0,
+      "engagement_rate": 9339.0,
+      "top_posts": [
+        {
+          "id": "7575664444659813662",
+          "url": "https://www.tiktok.com/@globalpatriot/video/7575664444659813662",
+          "text": "Fafo",
+          "date": "2025-11-22T14:27:33",
+          "engagement": {
+            "likes": 9482,
+            "comments": 58,
+            "shares": 10200,
+            "views": 13800,
+            "total": 19740
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oYEhAIDB9Qp6FJ9nJVfBRtMBY0KeViEaAEEKGQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=K12QUphZy9K5W9A%2FsEVnJuz5vGY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7573162558828383519",
+          "url": "https://www.tiktok.com/@globalpatriot/video/7573162558828383519",
+          "text": "My name is Richard Cannon. Many people know me as Global Patriot, but...",
+          "date": "2025-11-15T20:38:49",
+          "engagement": {
+            "likes": 12700,
+            "comments": 133,
+            "shares": 5919,
+            "views": 27000,
+            "total": 18752
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/o8SOqfl8HCxgoALjLIYgzSeKrMIKAcexn3HGIE~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=CaunBqLGFHetWVGinNAVQuh8w2s%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7574987784834927902",
+          "url": "https://www.tiktok.com/@globalpatriot/video/7574987784834927902",
+          "text": "TikTok video #7574987784834927902",
+          "date": "2025-11-20T18:41:39",
+          "engagement": {
+            "likes": 9464,
+            "comments": 37,
+            "shares": 7401,
+            "views": 14700,
+            "total": 16902
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oc1zQAFUVRVHOt4fEBDAQNHkRbpAwBYEL8EZf6~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=lEjLTrvOHHMHV66zUr0%2BFuNLfRI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.34,
+        "posts_per_week": 2.38,
+        "date_range_days": 73,
+        "first_post": "2025-10-26T08:42:24",
+        "last_post": "2026-01-07T22:59:00"
+      },
+      "time_series": [
+        {
+          "date": "2025-10-20",
+          "posts": 1,
+          "engagement": 9540
+        },
+        {
+          "date": "2025-10-27",
+          "posts": 2,
+          "engagement": 24664
+        },
+        {
+          "date": "2025-11-03",
+          "posts": 5,
+          "engagement": 60916
+        },
+        {
+          "date": "2025-11-10",
+          "posts": 1,
+          "engagement": 18752
+        },
+        {
+          "date": "2025-11-17",
+          "posts": 3,
+          "engagement": 52853
+        },
+        {
+          "date": "2025-11-24",
+          "posts": 1,
+          "engagement": 13781
+        },
+        {
+          "date": "2025-12-08",
+          "posts": 3,
+          "engagement": 20092
+        },
+        {
+          "date": "2025-12-15",
+          "posts": 1,
+          "engagement": 5345
+        },
+        {
+          "date": "2025-12-22",
+          "posts": 4,
+          "engagement": 23081
+        },
+        {
+          "date": "2025-12-29",
+          "posts": 1,
+          "engagement": 6817
+        },
+        {
+          "date": "2026-01-05",
+          "posts": 3,
+          "engagement": 6973
+        }
+      ],
+      "content_types": {
+        "video": {
+          "count": 26,
+          "engagement": 242814,
+          "percentage": 100.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": "7575664444659813662",
+      "url": "https://www.tiktok.com/@globalpatriot/video/7575664444659813662",
+      "text": "Fafo",
+      "date": "2025-11-22T14:27:33",
+      "engagement": {
+        "likes": 9482,
+        "comments": 58,
+        "shares": 10200,
+        "views": 13800,
+        "total": 19740
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oYEhAIDB9Qp6FJ9nJVfBRtMBY0KeViEaAEEKGQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=K12QUphZy9K5W9A%2FsEVnJuz5vGY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7573162558828383519",
+      "url": "https://www.tiktok.com/@globalpatriot/video/7573162558828383519",
+      "text": "My name is Richard Cannon. Many people know me as Global Patriot, but...",
+      "date": "2025-11-15T20:38:49",
+      "engagement": {
+        "likes": 12700,
+        "comments": 133,
+        "shares": 5919,
+        "views": 27000,
+        "total": 18752
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/o8SOqfl8HCxgoALjLIYgzSeKrMIKAcexn3HGIE~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=CaunBqLGFHetWVGinNAVQuh8w2s%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7574987784834927902",
+      "url": "https://www.tiktok.com/@globalpatriot/video/7574987784834927902",
+      "text": "TikTok video #7574987784834927902",
+      "date": "2025-11-20T18:41:39",
+      "engagement": {
+        "likes": 9464,
+        "comments": 37,
+        "shares": 7401,
+        "views": 14700,
+        "total": 16902
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oc1zQAFUVRVHOt4fEBDAQNHkRbpAwBYEL8EZf6~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=lEjLTrvOHHMHV66zUr0%2BFuNLfRI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7575714926388432158",
+      "url": "https://www.tiktok.com/@globalpatriot/video/7575714926388432158",
+      "text": "TikTok video #7575714926388432158",
+      "date": "2025-11-22T17:43:21",
+      "engagement": {
+        "likes": 6468,
+        "comments": 59,
+        "shares": 9684,
+        "views": 15100,
+        "total": 16211
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oUQEQBInjsFRAYMSFXBP8VeeMFwIFQzAqeLVCK~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=pQQY4PtlvSsf5mxR%2FpgEeILpxW0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7569783029212744990",
+      "url": "https://www.tiktok.com/@globalpatriot/video/7569783029212744990",
+      "text": "I pass this photo on my wall every day dozens of times and never miss...",
+      "date": "2025-11-06T18:04:29",
+      "engagement": {
+        "likes": 10900,
+        "comments": 107,
+        "shares": 3616,
+        "views": 39200,
+        "total": 14623
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/ok80hABBIiAi5A4afCAAIAJi8qNM3TvFab5IqR~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=eSHprHSZRNs46OZpEiWL5iJDJAY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0.34,
+    "posts_per_week": 2.38,
+    "date_range_days": 73,
+    "first_post": "2025-10-26T08:42:24",
+    "last_post": "2026-01-07T22:59:00"
+  },
+  "time_series": [
+    {
+      "date": "2025-10-20",
+      "posts": 1,
+      "engagement": 9540
+    },
+    {
+      "date": "2025-10-27",
+      "posts": 2,
+      "engagement": 24664
+    },
+    {
+      "date": "2025-11-03",
+      "posts": 5,
+      "engagement": 60916
+    },
+    {
+      "date": "2025-11-10",
+      "posts": 1,
+      "engagement": 18752
+    },
+    {
+      "date": "2025-11-17",
+      "posts": 3,
+      "engagement": 52853
+    },
+    {
+      "date": "2025-11-24",
+      "posts": 1,
+      "engagement": 13781
+    },
+    {
+      "date": "2025-12-08",
+      "posts": 3,
+      "engagement": 20092
+    },
+    {
+      "date": "2025-12-15",
+      "posts": 1,
+      "engagement": 5345
+    },
+    {
+      "date": "2025-12-22",
+      "posts": 4,
+      "engagement": 23081
+    },
+    {
+      "date": "2025-12-29",
+      "posts": 1,
+      "engagement": 6817
+    },
+    {
+      "date": "2026-01-05",
+      "posts": 3,
+      "engagement": 6973
+    }
+  ]
+}

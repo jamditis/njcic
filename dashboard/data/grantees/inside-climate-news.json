@@ -3,33 +3,33 @@
   "slug": "inside-climate-news",
   "summary": {
     "total_posts": 37,
-    "total_engagement": 5976,
-    "total_followers": 25578,
+    "total_engagement": 5966,
+    "total_followers": 25584,
     "platforms_active": 2,
-    "engagement_rate": 161.51,
-    "last_updated": "2026-01-08T11:06:07.664767"
+    "engagement_rate": 161.24,
+    "last_updated": "2026-01-08T11:29:59.108077"
   },
   "platform_breakdown": {
     "bluesky": {
       "posts": 25,
       "posts_pct": 67.6,
-      "engagement": 698,
-      "engagement_pct": 11.7
+      "engagement": 688,
+      "engagement_pct": 11.5
     },
     "instagram": {
       "posts": 12,
       "posts_pct": 32.4,
       "engagement": 5278,
-      "engagement_pct": 88.3
+      "engagement_pct": 88.5
     }
   },
   "platforms": {
     "bluesky": {
       "posts": 25,
-      "engagement": 698,
+      "engagement": 688,
       "views": 0,
-      "followers": 25578,
-      "engagement_rate": 27.92,
+      "followers": 25584,
+      "engagement_rate": 27.52,
       "top_posts": [
         {
           "id": "3mbmklohqsk2u",
@@ -65,11 +65,11 @@
           "text": "A look at one scientist\u2019s journey provides a window into the Trump administration\u2019s hollowing out of NOAA, an agency that has long been a world leader in ocean science and protection.",
           "date": "2026-01-06T17:44:09.849000",
           "engagement": {
-            "likes": 24,
+            "likes": 26,
             "comments": 1,
-            "shares": 17,
+            "shares": 18,
             "views": 0,
-            "total": 42
+            "total": 45
           },
           "thumbnail": null
         }
@@ -78,14 +78,14 @@
         "posts_per_day": 1.67,
         "posts_per_week": 11.69,
         "date_range_days": 15,
-        "first_post": "2025-12-23T18:38:17.679000",
-        "last_post": "2026-01-08T00:54:41.531000"
+        "first_post": "2025-12-24T00:09:03.454000",
+        "last_post": "2026-01-08T16:53:04.664000"
       },
       "time_series": [
         {
           "date": "2025-12-22",
-          "posts": 9,
-          "engagement": 218
+          "posts": 8,
+          "engagement": 183
         },
         {
           "date": "2025-12-29",
@@ -94,14 +94,14 @@
         },
         {
           "date": "2026-01-05",
-          "posts": 6,
-          "engagement": 161
+          "posts": 7,
+          "engagement": 186
         }
       ],
       "content_types": {
         "link": {
           "count": 25,
-          "engagement": 698,
+          "engagement": 688,
           "percentage": 100.0
         }
       }
@@ -292,11 +292,11 @@
     }
   ],
   "overall_frequency": {
-    "posts_per_day": 0.31,
-    "posts_per_week": 2.17,
-    "date_range_days": 121,
+    "posts_per_day": 0.3,
+    "posts_per_week": 2.1,
+    "date_range_days": 122,
     "first_post": "2025-09-08T15:34:20",
-    "last_post": "2026-01-08T00:54:41.531000"
+    "last_post": "2026-01-08T16:53:04.664000"
   },
   "time_series": [
     {
@@ -341,8 +341,8 @@
     },
     {
       "date": "2025-12-22",
-      "posts": 9,
-      "engagement": 218
+      "posts": 8,
+      "engagement": 183
     },
     {
       "date": "2025-12-29",
@@ -351,8 +351,8 @@
     },
     {
       "date": "2026-01-05",
-      "posts": 6,
-      "engagement": 161
+      "posts": 7,
+      "engagement": 186
     }
   ]
 }
