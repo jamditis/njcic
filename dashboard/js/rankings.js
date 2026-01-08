@@ -92,13 +92,52 @@
      * Process grantees data from available sources
      */
     function processGranteesData() {
-        // Prefer rankings data if available, otherwise use dashboard data
-        const sourceData = rankingsData || dashboardData;
+        // Use rankings.json if available with by_engagement format
+        if (rankingsData && rankingsData.by_engagement) {
+            // Build grantees from rankings data - need to merge with dashboard data for full info
+            const engagementMap = {};
+            const postsMap = {};
+            const rateMap = {};
 
-        if (sourceData.topGrantees) {
-            grantees = sourceData.topGrantees.map((g, index) => ({
+            rankingsData.by_engagement.forEach(g => { engagementMap[g.slug] = g.value; });
+            if (rankingsData.by_posts) {
+                rankingsData.by_posts.forEach(g => { postsMap[g.slug] = g.value; });
+            }
+            if (rankingsData.by_engagement_rate) {
+                rankingsData.by_engagement_rate.forEach(g => { rateMap[g.slug] = g.value; });
+            }
+
+            grantees = rankingsData.by_engagement.map((g, index) => ({
                 rank: index + 1,
                 name: g.name,
+                slug: g.slug,
+                posts: postsMap[g.slug] || 0,
+                engagement: g.value || 0,
+                engagementRate: rateMap[g.slug] || (postsMap[g.slug] > 0 ? (g.value / postsMap[g.slug]).toFixed(1) : 0),
+                platforms: 1,
+                bestPlatform: 'unknown',
+                platformData: {}
+            }));
+
+            // Merge with dashboard data for additional info
+            if (dashboardData && dashboardData.topGrantees) {
+                const dashboardMap = {};
+                dashboardData.topGrantees.forEach(g => {
+                    dashboardMap[g.slug] = g;
+                });
+                grantees.forEach(g => {
+                    const dash = dashboardMap[g.slug];
+                    if (dash) {
+                        g.platforms = dash.platformsScraped || 1;
+                        g.bestPlatform = dash.topPlatform || 'unknown';
+                    }
+                });
+            }
+        } else if (dashboardData && dashboardData.topGrantees) {
+            grantees = dashboardData.topGrantees.map((g, index) => ({
+                rank: index + 1,
+                name: g.name,
+                slug: g.slug,
                 posts: g.posts || 0,
                 engagement: g.engagement || 0,
                 engagementRate: g.posts > 0 ? (g.engagement / g.posts).toFixed(1) : 0,
@@ -106,10 +145,11 @@
                 bestPlatform: g.topPlatform || 'unknown',
                 platformData: g.platformData || {}
             }));
-        } else if (sourceData.grantees) {
-            grantees = sourceData.grantees.map((g, index) => ({
+        } else if (dashboardData && dashboardData.grantees) {
+            grantees = dashboardData.grantees.map((g, index) => ({
                 rank: index + 1,
                 name: g.name,
+                slug: g.slug,
                 posts: g.posts || 0,
                 engagement: g.engagement || 0,
                 engagementRate: g.posts > 0 ? (g.engagement / g.posts).toFixed(1) : 0,

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methodology - NJCIC Social Media Dashboard</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'njcic-teal': '#2dc8d2',
+                        'njcic-dark': '#183642',
+                        'njcic-light': '#e8f9fa'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-40 bg-njcic-dark/95 backdrop-blur-sm border-b border-njcic-teal/20 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-xl font-bold">
+                        <span class="text-njcic-teal">NJCIC</span>
+                        <span class="text-white hidden sm:inline"> Dashboard</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all">Dashboard</a>
+                    <a href="rankings.html" class="px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all">Rankings</a>
+                    <a href="platforms.html" class="px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all">Platforms</a>
+                    <a href="about.html" class="px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all">About</a>
+                    <a href="methodology.html" class="px-4 py-2 rounded-lg text-njcic-teal bg-njcic-teal/10 transition-all font-medium">Methodology</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-njcic-dark to-gray-800 text-white py-16 sm:py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-6">Methodology</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                How we collect, process, and present social media data for NJCIC grantees.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-12 sm:py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Data Collection -->
+            <section class="mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-njcic-dark mb-6">Data Collection</h2>
+                <div class="prose prose-lg max-w-none text-gray-700">
+                    <p class="mb-4">
+                        Social media data is collected using automated scrapers that gather publicly available information from each platform. We prioritize respecting platform terms of service and rate limits.
+                    </p>
+
+                    <div class="bg-white rounded-xl shadow-md p-6 border border-gray-100 my-6">
+                        <h3 class="text-lg font-bold text-njcic-dark mb-4">Platforms Tracked</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-black rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                                    <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-njcic-dark">TikTok</h4>
+                                    <p class="text-sm text-gray-600">Video content, likes, comments, shares, views</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-[#0085FF] rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                                    <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-njcic-dark">Bluesky</h4>
+                                    <p class="text-sm text-gray-600">Posts, likes, reposts, replies, followers</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-[#FF0000] rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                                    <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-njcic-dark">YouTube</h4>
+                                    <p class="text-sm text-gray-600">Videos, views, likes, comments (coming soon)</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-black rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                                    <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-njcic-dark">X (Twitter)</h4>
+                                    <p class="text-sm text-gray-600">Tweets, likes, retweets, replies (coming soon)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Metrics Definitions -->
+            <section class="mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-njcic-dark mb-6">Metrics Definitions</h2>
+                <div class="space-y-4">
+                    <div class="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+                        <h3 class="text-lg font-bold text-njcic-dark mb-2">Total Engagement</h3>
+                        <p class="text-gray-700">
+                            The sum of all interactions across posts: <strong>likes + comments + shares/reposts</strong>.
+                            Views are tracked separately as they represent reach rather than active engagement.
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+                        <h3 class="text-lg font-bold text-njcic-dark mb-2">Engagement Rate</h3>
+                        <p class="text-gray-700">
+                            Average engagement per post: <strong>Total Engagement / Number of Posts</strong>.
+                            This normalizes performance regardless of posting frequency.
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+                        <h3 class="text-lg font-bold text-njcic-dark mb-2">Total Posts</h3>
+                        <p class="text-gray-700">
+                            The number of posts scraped from each platform. We collect up to the <strong>25 most recent posts</strong>
+                            per platform per grantee during each scraping cycle.
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+                        <h3 class="text-lg font-bold text-njcic-dark mb-2">Followers</h3>
+                        <p class="text-gray-700">
+                            The number of followers/subscribers on each platform. This metric is available where
+                            the platform's public API provides it (e.g., Bluesky).
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Data Processing -->
+            <section class="mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-njcic-dark mb-6">Data Processing</h2>
+                <div class="prose prose-lg max-w-none text-gray-700">
+                    <p class="mb-4">
+                        After collection, data goes through several processing steps:
+                    </p>
+                    <ol class="list-decimal list-inside space-y-3 mb-6">
+                        <li><strong>Aggregation</strong> - Posts from each grantee are combined across platforms</li>
+                        <li><strong>Normalization</strong> - Engagement metrics are standardized across different platform formats</li>
+                        <li><strong>Time Series</strong> - Posts are grouped by week to identify trends</li>
+                        <li><strong>Ranking</strong> - Grantees are ranked by various metrics (engagement, posts, rate)</li>
+                        <li><strong>Content Analysis</strong> - Posts are categorized by type (video, image, link, text)</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Update Schedule -->
+            <section class="mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-njcic-dark mb-6">Update Schedule</h2>
+                <div class="bg-njcic-light rounded-xl p-6">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-njcic-teal rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-njcic-dark mb-2">Weekly Updates</h3>
+                            <p class="text-gray-700">
+                                Data is refreshed automatically every <strong>Monday at 7:00 AM ET</strong> via GitHub Actions.
+                                The scraper runs for approximately 30-60 minutes to collect fresh data from all platforms.
+                            </p>
+                            <p class="text-gray-600 text-sm mt-2">
+                                Manual updates can also be triggered as needed for special analysis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Limitations -->
+            <section class="mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-njcic-dark mb-6">Limitations</h2>
+                <div class="bg-amber-50 border border-amber-200 rounded-xl p-6">
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-amber-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                        </svg>
+                        <div>
+                            <h3 class="text-lg font-bold text-amber-800 mb-2">Important Considerations</h3>
+                            <ul class="text-amber-900 space-y-2">
+                                <li><strong>Sample Size:</strong> We collect up to 25 recent posts per platform, which may not represent complete historical performance.</li>
+                                <li><strong>Platform Availability:</strong> Some platforms (Instagram, Facebook) require authentication and are not yet included.</li>
+                                <li><strong>Missing Accounts:</strong> Grantees without public social media handles on tracked platforms will not appear in the data.</li>
+                                <li><strong>Engagement Timing:</strong> Engagement metrics are captured at the time of scraping; viral posts may continue to grow.</li>
+                                <li><strong>Platform Changes:</strong> Social media platforms may change their APIs or terms, affecting data collection.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technical Details -->
+            <section class="mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-njcic-dark mb-6">Technical Details</h2>
+                <div class="bg-gray-900 rounded-xl p-6 text-gray-100 font-mono text-sm overflow-x-auto">
+                    <div class="space-y-2">
+                        <p><span class="text-njcic-teal">Stack:</span> Python 3.11, Playwright, BeautifulSoup</p>
+                        <p><span class="text-njcic-teal">Frontend:</span> Vanilla JavaScript, Tailwind CSS, Chart.js</p>
+                        <p><span class="text-njcic-teal">Hosting:</span> GitHub Pages</p>
+                        <p><span class="text-njcic-teal">Automation:</span> GitHub Actions (weekly cron job)</p>
+                        <p><span class="text-njcic-teal">Data Format:</span> JSON (dashboard-data.json, grantee-specific files)</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 text-sm mt-4">
+                    The source code for this project is available on
+                    <a href="https://github.com/jamditis/njcic" target="_blank" rel="noopener noreferrer" class="text-njcic-teal hover:underline">GitHub</a>.
+                </p>
+            </section>
+
+            <!-- Contact -->
+            <section class="mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-njcic-dark mb-6">Questions or Feedback?</h2>
+                <div class="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+                    <p class="text-gray-700 mb-4">
+                        If you have questions about the methodology, notice data discrepancies, or would like to request
+                        additional features, please reach out to the Center for Cooperative Media.
+                    </p>
+                    <a href="mailto:cooperativemedia@montclair.edu" class="inline-flex items-center px-4 py-2 bg-njcic-teal text-white rounded-lg hover:bg-opacity-90 transition-colors">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        Contact Us
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-njcic-dark text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                <div class="text-center sm:text-left mb-4 sm:mb-0">
+                    <p class="text-gray-400 text-sm">
+                        <span class="text-njcic-teal font-semibold">NJCIC</span> - New Jersey Civic Information Consortium
+                    </p>
+                    <p class="text-gray-500 text-xs mt-1">
+                        Supporting local journalism and civic information across New Jersey
+                    </p>
+                </div>
+                <div class="text-center sm:text-right">
+                    <a href="index.html" class="text-njcic-teal hover:text-white transition-colors text-sm">
+                        Back to Dashboard
+                    </a>
+                </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-gray-700 text-center">
+                <p class="text-gray-500 text-xs">
+                    Dashboard powered by the Center for Cooperative Media at Montclair State University
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

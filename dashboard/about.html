@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - NJCIC Social Media Dashboard</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'njcic-teal': '#2dc8d2',
+                        'njcic-dark': '#183642',
+                        'njcic-light': '#e8f9fa'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-40 bg-njcic-dark/95 backdrop-blur-sm border-b border-njcic-teal/20 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-xl font-bold">
+                        <span class="text-njcic-teal">NJCIC</span>
+                        <span class="text-white hidden sm:inline"> Dashboard</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all">Dashboard</a>
+                    <a href="rankings.html" class="px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all">Rankings</a>
+                    <a href="platforms.html" class="px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all">Platforms</a>
+                    <a href="about.html" class="px-4 py-2 rounded-lg text-njcic-teal bg-njcic-teal/10 transition-all font-medium">About</a>
+                    <a href="methodology.html" class="px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all">Methodology</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-njcic-dark to-gray-800 text-white py-16 sm:py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-6">
+                <span class="text-njcic-teal">NJCIC</span> Social Media Impact Dashboard
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Tracking and analyzing the social media presence of New Jersey Civic Information Consortium grantees to measure civic journalism impact across the state.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-12 sm:py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- What is NJCIC -->
+            <section class="mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-njcic-dark mb-6">What is NJCIC?</h2>
+                <div class="prose prose-lg max-w-none text-gray-700">
+                    <p class="mb-4">
+                        The <strong>New Jersey Civic Information Consortium (NJCIC)</strong> is a first-in-the-nation initiative that provides funding to support local journalism and civic information projects across New Jersey. Established in 2018, the Consortium is a partnership between five public research universities in the state.
+                    </p>
+                    <p class="mb-4">
+                        NJCIC awards grants to news organizations, community groups, and civic technology projects that are working to address local news deserts and information gaps in New Jersey communities.
+                    </p>
+                    <div class="bg-njcic-light rounded-xl p-6 my-6">
+                        <h3 class="text-lg font-bold text-njcic-dark mb-3">Partner Universities</h3>
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-700">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-njcic-teal rounded-full mr-2"></span>Montclair State University</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-njcic-teal rounded-full mr-2"></span>Rutgers University</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-njcic-teal rounded-full mr-2"></span>Rowan University</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-njcic-teal rounded-full mr-2"></span>New Jersey Institute of Technology</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-njcic-teal rounded-full mr-2"></span>The College of New Jersey</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About This Dashboard -->
+            <section class="mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-njcic-dark mb-6">About This Dashboard</h2>
+                <div class="prose prose-lg max-w-none text-gray-700">
+                    <p class="mb-4">
+                        This dashboard provides real-time analytics on the social media performance of NJCIC grantees. By tracking engagement across platforms like TikTok, Bluesky, YouTube, and more, we aim to:
+                    </p>
+                    <ul class="list-disc list-inside mb-6 space-y-2">
+                        <li><strong>Measure Impact</strong> - Quantify the reach and engagement of civic journalism projects</li>
+                        <li><strong>Identify Trends</strong> - Understand which platforms and content types resonate with audiences</li>
+                        <li><strong>Support Grantees</strong> - Provide data-driven insights to help organizations improve their outreach</li>
+                        <li><strong>Demonstrate Value</strong> - Show funders and stakeholders the tangible impact of their investment</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Dashboard Features -->
+            <section class="mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-njcic-dark mb-6">Dashboard Features</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+                        <div class="w-12 h-12 bg-njcic-teal/10 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-njcic-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-njcic-dark mb-2">Individual Grantee Pages</h3>
+                        <p class="text-gray-600">Detailed analytics for each grantee including platform breakdown, top posts, and engagement trends.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+                        <div class="w-12 h-12 bg-njcic-teal/10 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-njcic-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-njcic-dark mb-2">Comparison Tools</h3>
+                        <p class="text-gray-600">Compare grantees side-by-side to understand relative performance across metrics.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+                        <div class="w-12 h-12 bg-njcic-teal/10 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-njcic-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-njcic-dark mb-2">Platform Analytics</h3>
+                        <p class="text-gray-600">Cross-platform comparisons showing which platforms drive the most engagement.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+                        <div class="w-12 h-12 bg-njcic-teal/10 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-njcic-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-njcic-dark mb-2">Weekly Updates</h3>
+                        <p class="text-gray-600">Data is automatically refreshed weekly to provide up-to-date insights.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Credits -->
+            <section class="mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-njcic-dark mb-6">Credits</h2>
+                <div class="bg-white rounded-xl shadow-md p-6 border border-gray-100">
+                    <p class="text-gray-700 mb-4">
+                        This dashboard was developed by the <strong>Center for Cooperative Media</strong> at Montclair State University as part of ongoing research to understand and support the local journalism ecosystem in New Jersey.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-6">
+                        <a href="https://centerforcooperativemedia.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 bg-njcic-teal text-white rounded-lg hover:bg-opacity-90 transition-colors">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                            Center for Cooperative Media
+                        </a>
+                        <a href="https://njcivicinfo.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 border border-njcic-teal text-njcic-teal rounded-lg hover:bg-njcic-teal hover:text-white transition-colors">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                            NJCIC Website
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-njcic-dark text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                <div class="text-center sm:text-left mb-4 sm:mb-0">
+                    <p class="text-gray-400 text-sm">
+                        <span class="text-njcic-teal font-semibold">NJCIC</span> - New Jersey Civic Information Consortium
+                    </p>
+                    <p class="text-gray-500 text-xs mt-1">
+                        Supporting local journalism and civic information across New Jersey
+                    </p>
+                </div>
+                <div class="text-center sm:text-right">
+                    <a href="index.html" class="text-njcic-teal hover:text-white transition-colors text-sm">
+                        Back to Dashboard
+                    </a>
+                </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-gray-700 text-center">
+                <p class="text-gray-500 text-xs">
+                    Dashboard powered by the Center for Cooperative Media at Montclair State University
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
