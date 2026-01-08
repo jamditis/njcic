@@ -7,46 +7,17 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 
-    <!-- Custom Styles -->
+    <!-- Custom Styles (includes fonts via @import) -->
     <link rel="stylesheet" href="../css/styles.css">
 
     <!-- Tailwind Config -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'njcic-teal': '#2dc8d2',
-                        'njcic-dark': '#183642',
-                        'njcic-light': '#e8f9fa',
-                        'platform-tiktok': '#000000',
-                        'platform-bluesky': '#0085FF',
-                        'platform-instagram': '#E4405F',
-                        'platform-youtube': '#FF0000',
-                        'platform-twitter': '#1DA1F2',
-                        'platform-facebook': '#1877F2',
-                        'platform-linkedin': '#0A66C2',
-                        'platform-threads': '#000000'
-                    },
-                    fontFamily: {
-                        'heading': ['Libre Baskerville', 'Georgia', 'Times New Roman', 'serif'],
-                        'sans': ['Source Sans 3', 'system-ui', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
+    <script src="../js/tailwind-config.js"></script>
 </head>
 <body class="bg-gray-50 font-sans antialiased" data-slug="global-patriot-newspapers-online">
     <!-- Loading State -->

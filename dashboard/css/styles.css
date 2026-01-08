@@ -1,6 +1,16 @@
 /* ==========================================================================
    NJCIC Dashboard - Modern UI Design System
+
+   This is the single source of truth for all dashboard styling.
+   All pages should link only this CSS file - no need for separate
+   Google Fonts links or Tailwind config duplication in HTML.
    ========================================================================== */
+
+/* ==========================================================================
+   Font Imports
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 /* ==========================================================================
    Variables & Theme

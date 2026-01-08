@@ -9,21 +9,16 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-    <!-- Google Fonts - Libre Baskerville for editorial authority, Source Sans 3 for readability -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-
-    <!-- Tailwind CSS (CDN for simplicity, would use build step in production) -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 
-    <!-- Custom Styles -->
+    <!-- Custom Styles (includes fonts via @import) -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Tailwind Config -->
+    <!-- Tailwind Config - minimal, colors match CSS custom properties -->
     <script>
         tailwind.config = {
             theme: {
@@ -34,19 +29,7 @@
                         'njcic-dark': '#183642',
                         'njcic-gray': '#2b3436',
                         'njcic-light': '#e8f9fa',
-                        primary: {
-                            DEFAULT: '#0e7c86',
-                            light: '#2dc8d2',
-                            dark: '#095057',
-                        },
-                        dark: {
-                            DEFAULT: '#183642',
-                            800: '#2b3436',
-                        }
-                    },
-                    fontFamily: {
-                        'heading': ['Libre Baskerville', 'Georgia', 'Times New Roman', 'serif'],
-                        'sans': ['Source Sans 3', 'system-ui', 'sans-serif']
+                        primary: { DEFAULT: '#0e7c86', light: '#2dc8d2', dark: '#095057' },
                     }
                 }
             }
