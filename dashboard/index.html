@@ -46,6 +46,11 @@
 </head>
 <body class="bg-gray-50 font-sans antialiased text-slate-900">
 
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-lg">
+        Skip to main content
+    </a>
+
     <!-- Loading Overlay -->
     <div id="loading-overlay" class="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center transition-opacity duration-300">
         <div class="loading-spinner mb-4"></div>
@@ -69,10 +74,10 @@
     </div>
 
     <!-- Main Content -->
-    <div id="main-content" class="opacity-0 transition-opacity duration-700">
+    <div id="main-content" class="opacity-0 transition-opacity duration-700" role="main">
         
         <!-- Navigation -->
-        <nav id="main-nav" class="sticky top-0 z-40 w-full">
+        <nav id="main-nav" class="sticky top-0 z-40 w-full" role="navigation" aria-label="Main navigation">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between h-16">
                     <!-- Logo -->
@@ -97,14 +102,15 @@
                                 type="text"
                                 id="grantee-search"
                                 placeholder="Search..."
+                                aria-label="Search grantees"
                                 class="w-32 sm:w-48 px-3 py-1.5 pl-9 bg-slate-100 border-none rounded-full text-sm text-slate-700 focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all search-input"
                             >
                             <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-slate-400 group-focus-within:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                             </svg>
                         </div>
-                        <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-slate-900">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-slate-900" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                             </svg>
                         </button>
@@ -150,7 +156,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="counter text-3xl font-bold text-white mb-1" id="counter-grantees">0</div>
+                        <div class="counter text-3xl font-bold text-white mb-1" id="counter-grantees" aria-live="polite">0</div>
                         <div class="text-slate-400 text-sm font-medium">Active Grantees</div>
                     </div>
 
@@ -163,7 +169,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="counter text-3xl font-bold text-white mb-1" id="counter-posts">0</div>
+                        <div class="counter text-3xl font-bold text-white mb-1" id="counter-posts" aria-live="polite">0</div>
                         <div class="text-slate-400 text-sm font-medium">Total Posts</div>
                     </div>
 
@@ -176,7 +182,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="counter text-3xl font-bold text-white mb-1" id="counter-engagement">0</div>
+                        <div class="counter text-3xl font-bold text-white mb-1" id="counter-engagement" aria-live="polite">0</div>
                         <div class="text-slate-400 text-sm font-medium">Total Engagement</div>
                     </div>
 
@@ -189,7 +195,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="counter text-3xl font-bold text-white mb-1" id="counter-platforms">0</div>
+                        <div class="counter text-3xl font-bold text-white mb-1" id="counter-platforms" aria-live="polite">0</div>
                         <div class="text-slate-400 text-sm font-medium">Platforms Monitored</div>
                     </div>
                 </div>
@@ -210,7 +216,7 @@
                     <div class="flex flex-wrap gap-3">
                         <!-- Platform Filter -->
                         <div class="relative">
-                            <select id="platform-filter" class="appearance-none bg-white border border-slate-200 rounded-lg pl-4 pr-10 py-2 text-sm font-medium text-slate-700 hover:border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors cursor-pointer shadow-sm">
+                            <select id="platform-filter" aria-label="Filter by platform" class="appearance-none bg-white border border-slate-200 rounded-lg pl-4 pr-10 py-2 text-sm font-medium text-slate-700 hover:border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors cursor-pointer shadow-sm">
                                 <option value="all">All Platforms</option>
                                 <option value="tiktok">TikTok</option>
                                 <option value="bluesky">BlueSky</option>
@@ -225,7 +231,7 @@
 
                         <!-- Sort -->
                         <div class="relative">
-                            <select id="sort-option" class="appearance-none bg-white border border-slate-200 rounded-lg pl-4 pr-10 py-2 text-sm font-medium text-slate-700 hover:border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors cursor-pointer shadow-sm">
+                            <select id="sort-option" aria-label="Sort grantees" class="appearance-none bg-white border border-slate-200 rounded-lg pl-4 pr-10 py-2 text-sm font-medium text-slate-700 hover:border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors cursor-pointer shadow-sm">
                                 <option value="engagement-desc">Highest Engagement</option>
                                 <option value="posts-desc">Most Posts</option>
                                 <option value="name-asc">Name (A-Z)</option>
@@ -244,7 +250,7 @@
                 </div>
 
                 <!-- Grid -->
-                <div id="grantees-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div id="grantees-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" aria-live="polite">
                     <!-- Cards Populated by JS -->
                 </div>
 
@@ -305,7 +311,7 @@
                 <div class="flex items-center justify-between mb-8">
                     <h2 class="text-2xl font-bold text-slate-900">Rankings Leaderboard</h2>
                     <div class="text-sm font-medium text-slate-500 bg-white px-3 py-1 rounded-full shadow-sm border border-slate-200">
-                        <span id="rankings-count" class="text-primary font-bold">0</span> tracked
+                        <span id="rankings-count" class="text-primary font-bold" aria-live="polite">0</span> tracked
                     </div>
                 </div>
 
@@ -332,7 +338,7 @@
         </section>
 
         <!-- Footer -->
-        <footer class="bg-dark text-slate-400 py-12 border-t border-slate-800">
+        <footer class="bg-dark text-slate-400 py-12 border-t border-slate-800" role="contentinfo">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div>

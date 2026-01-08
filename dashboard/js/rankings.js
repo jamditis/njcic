@@ -1024,6 +1024,18 @@
             });
         }
 
+        // Nav search input (grantee-search in the nav bar)
+        const granteeSearch = document.getElementById('grantee-search');
+        if (granteeSearch) {
+            granteeSearch.addEventListener('input', (e) => {
+                filterGrantees(e.target.value);
+                // Sync with main search input if it exists
+                if (searchInput && searchInput !== granteeSearch) {
+                    searchInput.value = e.target.value;
+                }
+            });
+        }
+
         // Grantee type filter dropdown
         const typeFilter = document.getElementById('grantee-type-filter');
         if (typeFilter) {
@@ -1031,6 +1043,33 @@
                 currentTypeFilter = e.target.value;
                 currentPage = 1; // Reset to first page when filtering
                 applyFilters();
+            });
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+                mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Close mobile menu when a link is clicked
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                });
             });
         }
     }

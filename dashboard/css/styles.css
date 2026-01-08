@@ -76,9 +76,11 @@ body {
     background: rgba(14, 124, 134, 0.05);
 }
 
-.nav-link.active {
+.nav-link.active,
+.nav-link.nav-link-active {
     color: var(--color-primary);
     background: rgba(14, 124, 134, 0.1);
+    font-weight: 600;
 }
 
 /* ==========================================================================
@@ -337,4 +339,32 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-gray-500);
+}
+
+/* ==========================================================================
+   Accessibility
+   ========================================================================== */
+
+/* Focus visible outline for keyboard navigation */
+:focus-visible {
+    outline: 2px solid var(--color-primary-light);
+    outline-offset: 2px;
+}
+
+/* Remove focus outline for mouse users */
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Screen reader only class */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }

@@ -228,13 +228,15 @@
 
         if (mobileMenuBtn && mobileMenu) {
             mobileMenuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', !isHidden);
             });
 
             // Close menu when clicking a link
             mobileMenu.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
                     mobileMenu.classList.add('hidden');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
                 });
             });
         }

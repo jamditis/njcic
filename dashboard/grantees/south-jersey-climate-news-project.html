@@ -72,44 +72,78 @@
 
     <!-- Main Content -->
     <div id="main-content" class="opacity-0 transition-opacity duration-500">
-        <!-- Header with Navigation -->
-        <header class="bg-njcic-dark text-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                    <div>
-                        <!-- Breadcrumb -->
-                        <nav class="flex items-center text-sm mb-2" aria-label="Breadcrumb">
-                            <a href="../index.html" class="text-gray-400 hover:text-njcic-teal transition-colors">
-                                Home
-                            </a>
-                            <svg class="w-4 h-4 mx-2 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                            </svg>
-                            <a href="../index.html#grantees" class="text-gray-400 hover:text-njcic-teal transition-colors">
-                                Grantees
-                            </a>
-                            <svg class="w-4 h-4 mx-2 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                            </svg>
-                            <span id="breadcrumb-name" class="text-njcic-teal font-medium">South Jersey Climate News Project</span>
-                        </nav>
-                        <h1 class="text-xl sm:text-2xl font-bold">
-                            <span class="text-njcic-teal">NJCIC</span> Social Media Impact
-                        </h1>
-                    </div>
-                    <div class="mt-3 sm:mt-0">
-                        <a href="../index.html" class="inline-flex items-center px-4 py-2 text-sm font-medium text-njcic-teal border border-njcic-teal rounded-lg hover:bg-njcic-teal hover:text-white transition-colors">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
-                            </svg>
-                            Back to Dashboard
-                        </a>
-                    </div>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-lg">
+        Skip to main content
+    </a>
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="sticky top-0 z-40 w-full bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <a href="../index.html" class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white font-bold text-sm">NJ</div>
+                        <span class="text-lg font-bold text-slate-900 tracking-tight">NJCIC <span class="text-slate-400 font-normal hidden sm:inline">Dashboard</span></span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="../index.html#overview" class="nav-link px-3 py-2 rounded-md text-sm">Overview</a>
+                    <a href="../index.html#grantees" class="nav-link px-3 py-2 rounded-md text-sm font-semibold text-primary" aria-current="page">Grantees</a>
+                    <a href="../index.html#rankings" class="nav-link px-3 py-2 rounded-md text-sm">Rankings</a>
+                    <a href="../platforms.html" class="nav-link px-3 py-2 rounded-md text-sm">Platforms</a>
+                    <a href="../about.html" class="nav-link px-3 py-2 rounded-md text-sm">About</a>
+                </div>
+
+                <!-- Mobile Toggle -->
+                <div class="flex items-center gap-3">
+                    <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-slate-900" aria-expanded="false" aria-controls="mobile-menu">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
-        </header>
+        </div>
 
-        <!-- Grantee Hero Section -->
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 py-2 shadow-lg">
+            <a href="../index.html#overview" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50">Overview</a>
+            <a href="../index.html#grantees" class="block px-4 py-2 text-sm text-primary font-semibold bg-slate-50" aria-current="page">Grantees</a>
+            <a href="../index.html#rankings" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50">Rankings</a>
+            <a href="../platforms.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50">Platforms</a>
+            <a href="../about.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50">About</a>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="bg-slate-50 border-b border-slate-200" aria-label="Breadcrumb">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <ol class="flex items-center text-sm">
+                <li>
+                    <a href="../index.html" class="text-slate-500 hover:text-primary transition-colors">Dashboard</a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                    <a href="../index.html#grantees" class="text-slate-500 hover:text-primary transition-colors">Grantees</a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 mx-2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                    <span id="breadcrumb-name" class="text-slate-900 font-medium">South Jersey Climate News Project</span>
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+<!-- Grantee Hero Section -->
         <section class="bg-gradient-to-br from-njcic-dark to-gray-800 text-white py-10 sm:py-14">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-8">

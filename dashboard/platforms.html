@@ -27,7 +27,16 @@
                     colors: {
                         'njcic-teal': '#2dc8d2',
                         'njcic-dark': '#183642',
-                        'njcic-light': '#e8f9fa'
+                        'njcic-light': '#e8f9fa',
+                        primary: {
+                            DEFAULT: '#0e7c86',
+                            light: '#2dc8d2',
+                            dark: '#095057',
+                        },
+                        dark: {
+                            DEFAULT: '#0f172a',
+                            800: '#1e293b',
+                        }
                     },
                     fontFamily: {
                         'sans': ['Inter', 'system-ui', 'sans-serif']
@@ -103,30 +112,71 @@
 
     <!-- Main Content -->
     <div id="main-content" class="opacity-0 transition-opacity duration-500">
-        <!-- Header -->
-        <header class="bg-njcic-dark text-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+        <!-- Navigation -->
+        <nav id="main-nav" role="navigation" aria-label="Main navigation" class="sticky top-0 z-40 w-full">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0 flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white font-bold text-sm">NJ</div>
+                        <span class="text-lg font-bold text-slate-900 tracking-tight">NJCIC <span class="text-slate-400 font-normal hidden sm:inline">Dashboard</span></span>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="index.html#overview" class="nav-link px-3 py-2 rounded-md text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">Overview</a>
+                        <a href="index.html#grantees" class="nav-link px-3 py-2 rounded-md text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">Grantees</a>
+                        <a href="rankings.html" class="nav-link px-3 py-2 rounded-md text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">Rankings</a>
+                        <a href="platforms.html" class="nav-link nav-link-active px-3 py-2 rounded-md text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-primary" aria-current="page">Platforms</a>
+                        <a href="about.html" class="nav-link px-3 py-2 rounded-md text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">About</a>
+                        <a href="methodology.html" class="nav-link px-3 py-2 rounded-md text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">Methodology</a>
+                    </div>
+
+                    <!-- Search & Mobile Toggle -->
+                    <div class="flex items-center gap-3">
+                        <div class="relative group">
+                            <input
+                                type="text"
+                                id="grantee-search"
+                                placeholder="Search..."
+                                class="w-32 sm:w-48 px-3 py-1.5 pl-9 bg-slate-100 border-none rounded-full text-sm text-slate-700 focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all search-input"
+                            >
+                            <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-slate-400 group-focus-within:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+                        <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-md" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 py-2 shadow-lg">
+                <a href="index.html#overview" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 focus:outline-none focus-visible:bg-slate-100">Overview</a>
+                <a href="index.html#grantees" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 focus:outline-none focus-visible:bg-slate-100">Grantees</a>
+                <a href="rankings.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 focus:outline-none focus-visible:bg-slate-100">Rankings</a>
+                <a href="platforms.html" class="block px-4 py-2 text-sm text-primary font-medium bg-slate-50 focus:outline-none focus-visible:bg-slate-100" aria-current="page">Platforms</a>
+                <a href="about.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 focus:outline-none focus-visible:bg-slate-100">About</a>
+                <a href="methodology.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 focus:outline-none focus-visible:bg-slate-100">Methodology</a>
+            </div>
+        </nav>
+
+        <!-- Page Header -->
+        <header class="bg-njcic-dark text-white py-8 sm:py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
                     <div>
-                        <nav class="text-sm text-gray-400 mb-2 flex flex-wrap items-center gap-x-4 gap-y-1">
-                            <a href="index.html" class="hover:text-njcic-teal transition-colors">Dashboard</a>
-                            <a href="rankings.html" class="hover:text-njcic-teal transition-colors">Rankings</a>
-                            <span class="text-njcic-teal">Platforms</span>
-                            <a href="about.html" class="hover:text-njcic-teal transition-colors">About</a>
-                            <a href="methodology.html" class="hover:text-njcic-teal transition-colors">Methodology</a>
-                        </nav>
                         <h1 class="text-2xl sm:text-3xl font-bold">
                             <span class="text-njcic-teal">Platform</span> Analytics
                         </h1>
                         <p class="text-gray-300 mt-1">Deep-dive analytics for each social media platform</p>
                     </div>
                     <div class="mt-4 sm:mt-0 flex items-center gap-4">
-                        <a href="index.html" class="inline-flex items-center px-4 py-2 rounded-lg bg-white bg-opacity-10 hover:bg-opacity-20 transition-colors text-sm font-medium">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
-                            </svg>
-                            Back to Dashboard
-                        </a>
                         <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-njcic-teal bg-opacity-20 text-njcic-teal">
                             <span class="w-2 h-2 rounded-full bg-njcic-teal mr-2 animate-pulse"></span>
                             Live Data
@@ -319,5 +369,37 @@
     <!-- Scripts -->
     <script src="js/charts.js"></script>
     <script src="js/platforms.js"></script>
+
+    <!-- Mobile Menu Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+                    mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!mobileMenuBtn.contains(event.target) && !mobileMenu.contains(event.target)) {
+                        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+
+                // Close menu when pressing Escape
+                document.addEventListener('keydown', function(event) {
+                    if (event.key === 'Escape') {
+                        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>

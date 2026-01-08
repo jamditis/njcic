@@ -27,7 +27,16 @@
                     colors: {
                         'njcic-teal': '#2dc8d2',
                         'njcic-dark': '#183642',
-                        'njcic-light': '#e8f9fa'
+                        'njcic-light': '#e8f9fa',
+                        primary: {
+                            DEFAULT: '#0e7c86',
+                            light: '#2dc8d2',
+                            dark: '#095057',
+                        },
+                        dark: {
+                            DEFAULT: '#0f172a',
+                            800: '#1e293b',
+                        }
                     },
                     fontFamily: {
                         'sans': ['Inter', 'system-ui', 'sans-serif']
@@ -322,24 +331,69 @@
 
     <!-- Main Content -->
     <div id="main-content" class="opacity-0 transition-opacity duration-500">
-        <!-- Header -->
-        <header class="bg-njcic-dark text-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                    <div>
-                        <h1 class="text-2xl sm:text-3xl font-bold">
-                            <span class="text-njcic-teal">NJCIC</span> Rankings & Comparisons
-                        </h1>
-                        <p class="text-gray-300 mt-1">New Jersey Civic Information Consortium</p>
+        <!-- Navigation -->
+        <nav id="main-nav" class="sticky top-0 z-40 w-full" aria-label="Main navigation">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0 flex items-center gap-2">
+                        <a href="index.html" class="flex items-center gap-2">
+                            <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white font-bold text-sm">NJ</div>
+                            <span class="text-lg font-bold text-slate-900 tracking-tight">NJCIC <span class="text-slate-400 font-normal hidden sm:inline">Dashboard</span></span>
+                        </a>
                     </div>
-                    <nav class="mt-4 sm:mt-0 flex items-center space-x-4">
-                        <a href="index.html" class="text-gray-300 hover:text-njcic-teal transition-colors font-medium">Dashboard</a>
-                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-njcic-teal bg-opacity-20 text-njcic-teal">Rankings</span>
-                        <a href="platforms.html" class="text-gray-300 hover:text-njcic-teal transition-colors font-medium">Platforms</a>
-                        <a href="about.html" class="text-gray-300 hover:text-njcic-teal transition-colors font-medium">About</a>
-                        <a href="methodology.html" class="text-gray-300 hover:text-njcic-teal transition-colors font-medium">Methodology</a>
-                    </nav>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="index.html#overview" class="nav-link px-3 py-2 rounded-md text-sm">Overview</a>
+                        <a href="index.html#grantees" class="nav-link px-3 py-2 rounded-md text-sm">Grantees</a>
+                        <a href="rankings.html" class="nav-link nav-link-active px-3 py-2 rounded-md text-sm" aria-current="page">Rankings</a>
+                        <a href="platforms.html" class="nav-link px-3 py-2 rounded-md text-sm">Platforms</a>
+                        <a href="about.html" class="nav-link px-3 py-2 rounded-md text-sm">About</a>
+                        <a href="methodology.html" class="nav-link px-3 py-2 rounded-md text-sm">Methodology</a>
+                    </div>
+
+                    <!-- Search & Mobile Toggle -->
+                    <div class="flex items-center gap-3">
+                        <div class="relative group">
+                            <input
+                                type="text"
+                                id="grantee-search"
+                                placeholder="Search..."
+                                class="w-32 sm:w-48 px-3 py-1.5 pl-9 bg-slate-100 border-none rounded-full text-sm text-slate-700 focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all search-input"
+                            >
+                            <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-slate-400 group-focus-within:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+                        <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-slate-900" aria-expanded="false" aria-controls="mobile-menu">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 py-2 shadow-lg">
+                <a href="index.html#overview" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50">Overview</a>
+                <a href="index.html#grantees" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50">Grantees</a>
+                <a href="rankings.html" class="block px-4 py-2 text-sm text-slate-900 font-medium bg-slate-50" aria-current="page">Rankings</a>
+                <a href="platforms.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50">Platforms</a>
+                <a href="about.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50">About</a>
+                <a href="methodology.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50">Methodology</a>
+            </div>
+        </nav>
+
+        <!-- Page Header -->
+        <header class="bg-njcic-dark text-white py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-2xl sm:text-3xl font-bold">
+                    <span class="text-njcic-teal">NJCIC</span> Rankings & Comparisons
+                </h1>
+                <p class="text-gray-300 mt-1">New Jersey Civic Information Consortium</p>
             </div>
         </header>
 
