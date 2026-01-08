@@ -7,14 +7,22 @@
    ========================================================================== */
 
 :root {
-    /* Brand Colors */
+    /* NJCIC Official Brand Colors */
+    --njcic-teal: #2dc8d2;
+    --njcic-orange: #f34213;
+    --njcic-dark: #183642;
+    --njcic-gray: #2b3436;
+    --njcic-light: #e8f9fa;
+
+    /* Brand Colors (mapped to NJCIC) */
     --color-primary: #0e7c86;      /* Rich Teal */
-    --color-primary-light: #2dc8d2; /* Bright Teal (Highlights) */
+    --color-primary-light: #2dc8d2; /* Bright Teal (NJCIC Teal) */
     --color-primary-dark: #095057;  /* Deep Teal */
-    
-    /* Neutral Scale (Slate) */
-    --color-dark: #0f172a;    /* Slate 900 */
-    --color-dark-800: #1e293b; /* Slate 800 */
+    --color-accent: #f34213;       /* NJCIC Orange - Secondary accent */
+
+    /* Neutral Scale (using NJCIC Dark/Gray) */
+    --color-dark: #183642;    /* NJCIC Dark Navy */
+    --color-dark-800: #2b3436; /* NJCIC Gray */
     --color-gray-500: #64748b; /* Slate 500 */
     --color-gray-200: #e2e8f0; /* Slate 200 */
     --color-gray-100: #f1f5f9; /* Slate 100 */
@@ -29,7 +37,8 @@
     --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
 
     /* Typography */
-    --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    --font-heading: 'Space Grotesk', system-ui, sans-serif;
 }
 
 /* ==========================================================================
@@ -52,6 +61,54 @@ body {
     background-color: var(--color-gray-50);
     color: var(--color-dark);
     line-height: 1.5;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.875rem;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+h4 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+h5 {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+h6 {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Metric numbers - impactful display for statistics */
+.metric-number {
+    font-family: var(--font-heading);
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    letter-spacing: -0.03em;
 }
 
 /* ==========================================================================
@@ -125,21 +182,53 @@ body {
     border-color: var(--color-primary-light);
 }
 
-/* Metric Cards (Floating on Dark Hero) */
-.metric-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+/* Primary card - subtle gradient border */
+.card-primary {
+    background: var(--color-white);
+    border: 1px solid transparent;
+    background-image: linear-gradient(white, white),
+                      linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-dark) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
     border-radius: 1rem;
+}
+
+/* Metric Cards (Glass morphism with brand colors) */
+.metric-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(45, 200, 210, 0.2);
+    border-radius: 1.25rem;
     padding: 1.5rem;
-    transition: transform 0.3s ease, background 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                background 0.3s ease,
+                border-color 0.3s ease;
     animation: slideUpFade 0.6s ease-out forwards;
     opacity: 0;
 }
 
+.metric-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-accent) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
 .metric-card:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.12);
     transform: translateY(-4px);
+    border-color: rgba(45, 200, 210, 0.4);
+}
+
+.metric-card:hover::before {
+    opacity: 1;
 }
 
 .metric-card:nth-child(1) { animation-delay: 0.1s; }
@@ -149,28 +238,89 @@ body {
 
 /* Chart Cards */
 .chart-card {
-    @extend .modern-card;
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-sm);
     padding: 1.5rem;
     height: 100%;
     display: flex;
     flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-/* Grantee Cards */
+.chart-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary-light);
+}
+
+/* Grantee Cards - distinctive hover with border glow */
 .grantee-card {
     background: var(--color-white);
-    border: 1px solid var(--color-gray-200);
-    border-radius: 0.75rem;
+    border: 2px solid var(--color-gray-200);
+    border-radius: 1rem;
     overflow: hidden;
-    transition: all 0.3s ease;
+    position: relative;
     opacity: 0;
     animation: slideUpFade 0.5s ease forwards;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.grantee-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
 }
 
 .grantee-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
     border-color: var(--color-primary-light);
+    box-shadow: 0 0 0 3px rgba(45, 200, 210, 0.1),
+                0 10px 40px -10px rgba(24, 54, 66, 0.2);
+    transform: translateY(-2px);
+}
+
+.grantee-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Section heading with accent border */
+.section-heading {
+    position: relative;
+    padding-left: 1rem;
+}
+
+.section-heading::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, var(--color-primary-light) 0%, var(--color-accent) 100%);
+    border-radius: 2px;
+}
+
+/* Rankings row - highlight effect */
+.ranking-row {
+    transition: all 0.2s ease;
+}
+
+.ranking-row:hover {
+    background: linear-gradient(90deg, rgba(45, 200, 210, 0.05) 0%, transparent 100%) !important;
+}
+
+/* Top 3 ranking special treatment */
+.ranking-row.top-3 {
+    background: linear-gradient(90deg, rgba(243, 66, 19, 0.03) 0%, transparent 100%);
 }
 
 /* ==========================================================================
@@ -200,22 +350,29 @@ body {
 }
 
 .live-indicator {
-    position: relative;
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    background: rgba(45, 200, 210, 0.15);
+    border: 1px solid rgba(45, 200, 210, 0.3);
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    color: #2dc8d2;
 }
 
 .live-indicator::before {
     content: '';
-    position: relative;
-    display: block;
     width: 8px;
     height: 8px;
+    background: #2dc8d2;
     border-radius: 50%;
-    background-color: var(--color-primary-light);
-    box-shadow: 0 0 8px var(--color-primary-light);
-    margin-right: 8px;
-    animation: pulse-dot 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.2); }
 }
 
 /* ==========================================================================
@@ -277,11 +434,11 @@ body {
 }
 
 #rankings-table tbody tr {
-    transition: background 0.1s ease;
+    transition: background 0.2s ease;
 }
 
 #rankings-table tbody tr:hover {
-    background-color: var(--color-gray-50);
+    background: linear-gradient(90deg, rgba(45, 200, 210, 0.05) 0%, transparent 100%);
 }
 
 /* ==========================================================================
@@ -339,6 +496,158 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-gray-500);
+}
+
+/* ==========================================================================
+   Distinctive Visual Elements
+   ========================================================================== */
+
+/* Gradient divider */
+.divider-gradient {
+    height: 2px;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        #2dc8d2 20%,
+        #f34213 50%,
+        #2dc8d2 80%,
+        transparent 100%
+    );
+    margin: 2rem 0;
+}
+
+/* Subtle pattern background for sections */
+.pattern-bg {
+    background-image:
+        radial-gradient(circle at 25% 25%, rgba(45, 200, 210, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(243, 66, 19, 0.03) 0%, transparent 50%);
+}
+
+/* Subtle grid pattern for white sections */
+.grid-pattern {
+    background-image:
+        linear-gradient(rgba(45, 200, 210, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(45, 200, 210, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+/* Custom scrollbar for tables */
+.custom-scrollbar::-webkit-scrollbar {
+    height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f3f4f6;
+    border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #2dc8d2;
+    border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #25b0b9;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+/* Base button reset */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+/* Primary button - teal */
+.btn-primary {
+    background: var(--njcic-teal);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #25b0b9;
+    box-shadow: 0 4px 12px rgba(45, 200, 210, 0.4);
+    transform: translateY(-1px);
+}
+
+/* Secondary button - orange (for important CTAs) */
+.btn-secondary {
+    background: var(--njcic-orange);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #d93a11;
+    box-shadow: 0 4px 12px rgba(243, 66, 19, 0.4);
+    transform: translateY(-1px);
+}
+
+/* Outline button */
+.btn-outline {
+    background: transparent;
+    color: var(--njcic-teal);
+    border: 2px solid var(--njcic-teal);
+}
+
+.btn-outline:hover {
+    background: var(--njcic-teal);
+    color: white;
+}
+
+/* Ghost button for nav/subtle actions */
+.btn-ghost {
+    background: transparent;
+    color: var(--njcic-dark);
+}
+
+.btn-ghost:hover {
+    background: rgba(45, 200, 210, 0.1);
+    color: var(--njcic-teal);
+}
+
+/* Button with icon */
+.btn svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Button focus state */
+.btn:focus-visible {
+    outline: 2px solid #f34213;
+    outline-offset: 2px;
+}
+
+/* ==========================================================================
+   Filter Tabs
+   ========================================================================== */
+
+.filter-tab {
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    transition: all 0.2s;
+    background: #f3f4f6;
+    color: #4b5563;
+}
+
+.filter-tab:hover {
+    background: #e5e7eb;
+}
+
+.filter-tab.active {
+    background: #183642;
+    color: white;
 }
 
 /* ==========================================================================

@@ -460,10 +460,10 @@
         if (!tabsContainer) return;
 
         // Add click handlers to existing tabs
-        tabsContainer.querySelectorAll('.rankings-filter-tab').forEach(tab => {
+        tabsContainer.querySelectorAll('.filter-tab').forEach(tab => {
             tab.addEventListener('click', () => {
                 // Update active state
-                tabsContainer.querySelectorAll('.rankings-filter-tab').forEach(t => t.classList.remove('active'));
+                tabsContainer.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
                 tab.classList.add('active');
 
                 // Update filter and apply
@@ -494,7 +494,7 @@
                 // Update tab UI
                 const tabsContainer = document.getElementById('rankings-platform-tabs');
                 if (tabsContainer) {
-                    tabsContainer.querySelectorAll('.rankings-filter-tab').forEach(tab => {
+                    tabsContainer.querySelectorAll('.filter-tab').forEach(tab => {
                         tab.classList.remove('active');
                         if (tab.dataset.platform === normalizedPlatform) {
                             tab.classList.add('active');

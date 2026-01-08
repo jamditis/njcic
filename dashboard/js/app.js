@@ -493,7 +493,7 @@
             const platformColor = getPlatformColor(grantee.topPlatform);
 
             return `
-                <a href="grantees/${grantee.slug}.html" class="grantee-card group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-njcic-teal/30" style="animation-delay: ${index * 50}ms">
+                <a href="grantees/${grantee.slug}.html" class="grantee-card group block" style="animation-delay: ${index * 50}ms">
                     <div class="p-5">
                         <!-- Header -->
                         <div class="flex items-start justify-between mb-4">
@@ -505,11 +505,11 @@
 
                         <!-- Stats -->
                         <div class="grid grid-cols-2 gap-3 mb-4">
-                            <div class="bg-gray-50 rounded-lg p-3 text-center">
+                            <div class="bg-slate-50 rounded-lg p-3 text-center">
                                 <div class="text-lg font-bold text-njcic-dark">${formatAbbreviated(grantee.posts)}</div>
                                 <div class="text-xs text-gray-500">Posts</div>
                             </div>
-                            <div class="bg-gray-50 rounded-lg p-3 text-center">
+                            <div class="bg-slate-50 rounded-lg p-3 text-center">
                                 <div class="text-lg font-bold text-njcic-teal">${formatAbbreviated(grantee.engagement)}</div>
                                 <div class="text-xs text-gray-500">Engagement</div>
                             </div>
@@ -517,18 +517,15 @@
 
                         <!-- Footer -->
                         <div class="flex items-center justify-between text-sm">
-                            <div class="flex items-center gap-1">
+                            <div class="flex items-center gap-1.5 text-gray-500">
                                 ${getPlatformIcon(grantee.topPlatform)}
-                                <span class="text-gray-500 capitalize">${grantee.topPlatform || 'N/A'}</span>
+                                <span class="capitalize">${grantee.topPlatform || 'N/A'}</span>
                             </div>
-                            <div class="text-gray-400">
-                                ${engagementRate} eng/post
+                            <div class="text-gray-400 font-medium">
+                                ${engagementRate} <span class="text-xs">eng/post</span>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Hover indicator -->
-                    <div class="h-1 bg-gradient-to-r from-njcic-teal to-njcic-dark transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
                 </a>
             `;
         }).join('');
@@ -588,21 +585,23 @@
                 rankClass = 'text-amber-600 font-bold';
             }
 
+            const rowClass = rank <= 3 ? 'ranking-row top-3' : 'ranking-row';
+
             return `
-                <tr class="hover:bg-gray-50 transition-colors cursor-pointer" onclick="window.location.href='grantees/${grantee.slug}.html'">
-                    <td class="px-6 py-4 whitespace-nowrap">
+                <tr class="${rowClass} cursor-pointer" onclick="window.location.href='grantees/${grantee.slug}.html'">
+                    <td class="px-6 py-4 whitespace-nowrap text-center">
                         <span class="${rankClass}">${rankDisplay}</span>
                     </td>
                     <td class="px-6 py-4">
                         <div class="font-medium text-njcic-dark hover:text-njcic-teal transition-colors">${grantee.name}</div>
                     </td>
-                    <td class="px-6 py-4 whitespace-nowrap">
+                    <td class="px-6 py-4 whitespace-nowrap text-right">
                         <span class="text-gray-900">${formatNumber(grantee.posts)}</span>
                     </td>
-                    <td class="px-6 py-4 whitespace-nowrap">
+                    <td class="px-6 py-4 whitespace-nowrap text-right">
                         <span class="font-semibold text-njcic-teal">${formatNumber(grantee.engagement)}</span>
                     </td>
-                    <td class="px-6 py-4 whitespace-nowrap">
+                    <td class="px-6 py-4 whitespace-nowrap hidden sm:table-cell">
                         <div class="flex items-center gap-1">
                             <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium capitalize" style="background-color: ${getPlatformColor(grantee.topPlatform)}20; color: ${getPlatformColor(grantee.topPlatform)}">
                                 ${grantee.topPlatform || 'N/A'}
@@ -610,7 +609,7 @@
                             ${grantee.platformsScraped > 1 ? `<span class="text-xs text-gray-400">+${grantee.platformsScraped - 1}</span>` : ''}
                         </div>
                     </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-gray-600">
+                    <td class="px-6 py-4 whitespace-nowrap text-right text-gray-600 hidden md:table-cell">
                         ${engagementRate}
                     </td>
                 </tr>

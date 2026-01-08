@@ -9,7 +9,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS (CDN for simplicity, would use build step in production) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -26,18 +26,24 @@
             theme: {
                 extend: {
                     colors: {
+                        'njcic-teal': '#2dc8d2',
+                        'njcic-orange': '#f34213',
+                        'njcic-dark': '#183642',
+                        'njcic-gray': '#2b3436',
+                        'njcic-light': '#e8f9fa',
                         primary: {
                             DEFAULT: '#0e7c86',
                             light: '#2dc8d2',
                             dark: '#095057',
                         },
                         dark: {
-                            DEFAULT: '#0f172a',
-                            800: '#1e293b',
+                            DEFAULT: '#183642',
+                            800: '#2b3436',
                         }
                     },
                     fontFamily: {
-                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                        'heading': ['Space Grotesk', 'system-ui', 'sans-serif'],
+                        'sans': ['DM Sans', 'system-ui', 'sans-serif']
                     }
                 }
             }
@@ -75,24 +81,33 @@
 
     <!-- Main Content -->
     <div id="main-content" class="opacity-0 transition-opacity duration-700" role="main">
-        
+
+        <!-- Accent Stripe -->
+        <div class="h-1 bg-gradient-to-r from-njcic-teal via-njcic-orange to-njcic-teal"></div>
+
         <!-- Navigation -->
-        <nav id="main-nav" class="sticky top-0 z-40 w-full" role="navigation" aria-label="Main navigation">
+        <nav id="main-nav" class="sticky top-0 z-40 bg-njcic-dark border-b border-njcic-teal/20" role="navigation" aria-label="Main navigation">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between h-16">
                     <!-- Logo -->
-                    <div class="flex-shrink-0 flex items-center gap-2">
-                        <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white font-bold text-sm">NJ</div>
-                        <span class="text-lg font-bold text-slate-900 tracking-tight">NJCIC <span class="text-slate-400 font-normal hidden sm:inline">Dashboard</span></span>
-                    </div>
+                    <a href="index.html" class="flex items-center gap-3">
+                        <!-- Circular badge with NJ -->
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-njcic-teal to-njcic-dark flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">NJ</span>
+                        </div>
+                        <div class="hidden sm:block">
+                            <span class="text-lg font-bold text-white">NJCIC</span>
+                            <span class="text-xs text-gray-400 block -mt-1">Dashboard</span>
+                        </div>
+                    </a>
 
                     <!-- Desktop Menu -->
                     <div class="hidden md:flex items-center space-x-1">
-                        <a href="#overview" class="nav-link px-3 py-2 rounded-md text-sm">Overview</a>
-                        <a href="#grantees" class="nav-link px-3 py-2 rounded-md text-sm">Grantees</a>
-                        <a href="#rankings" class="nav-link px-3 py-2 rounded-md text-sm">Rankings</a>
-                        <a href="platforms.html" class="nav-link px-3 py-2 rounded-md text-sm">Platforms</a>
-                        <a href="about.html" class="nav-link px-3 py-2 rounded-md text-sm">About</a>
+                        <a href="#overview" class="px-3 py-2 rounded-md text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Overview</a>
+                        <a href="#grantees" class="px-3 py-2 rounded-md text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Grantees</a>
+                        <a href="#rankings" class="px-3 py-2 rounded-md text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Rankings</a>
+                        <a href="platforms.html" class="px-3 py-2 rounded-md text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Platforms</a>
+                        <a href="about.html" class="px-3 py-2 rounded-md text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">About</a>
                     </div>
 
                     <!-- Search & Mobile Toggle -->
@@ -103,13 +118,13 @@
                                 id="grantee-search"
                                 placeholder="Search..."
                                 aria-label="Search grantees"
-                                class="w-32 sm:w-48 px-3 py-1.5 pl-9 bg-slate-100 border-none rounded-full text-sm text-slate-700 focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all search-input"
+                                class="w-32 sm:w-48 px-3 py-1.5 pl-9 bg-white/10 border border-white/20 rounded-full text-sm text-white placeholder-gray-400 focus:bg-white/20 focus:border-njcic-teal focus:ring-2 focus:ring-njcic-teal/20 transition-all"
                             >
-                            <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-slate-400 group-focus-within:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 group-focus-within:text-njcic-teal transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                             </svg>
                         </div>
-                        <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-slate-900" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+                        <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-300 hover:text-white" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                             </svg>
@@ -119,23 +134,28 @@
             </div>
             
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 py-2 shadow-lg">
-                <a href="#overview" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50">Overview</a>
-                <a href="#grantees" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50">Grantees</a>
-                <a href="#rankings" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50">Rankings</a>
-                <a href="platforms.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50">Platforms</a>
-                <a href="about.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50">About</a>
+            <div id="mobile-menu" class="hidden md:hidden bg-njcic-dark border-t border-njcic-teal/20 py-2">
+                <a href="#overview" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10">Overview</a>
+                <a href="#grantees" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10">Grantees</a>
+                <a href="#rankings" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10">Rankings</a>
+                <a href="platforms.html" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10">Platforms</a>
+                <a href="about.html" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10">About</a>
             </div>
         </nav>
 
         <!-- Hero Section -->
-        <section id="overview" class="hero-pattern bg-dark text-white pt-16 pb-24 sm:pt-20 sm:pb-32">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="overview" class="hero-pattern bg-gradient-to-br from-njcic-dark via-njcic-gray to-njcic-dark text-white pt-16 pb-24 sm:pt-20 sm:pb-32 relative overflow-hidden">
+            <!-- Background decoration -->
+            <div class="absolute inset-0 opacity-10 pointer-events-none">
+                <div class="absolute top-0 right-0 w-96 h-96 bg-njcic-teal rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+                <div class="absolute bottom-0 left-0 w-96 h-96 bg-njcic-orange rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
+            </div>
+
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/10 text-xs font-medium text-primary-light mb-6 backdrop-blur-sm">
+                    <div class="inline-flex items-center gap-2 text-xs font-medium mb-6">
                         <span class="live-indicator">Live Data</span>
-                        <span class="w-px h-3 bg-white/20"></span>
-                        <span class="text-slate-300">Updated <span id="last-updated">--</span></span>
+                        <span class="text-slate-300 ml-2">Updated <span id="last-updated">--</span></span>
                     </div>
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6">
                         Measuring <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-light to-blue-400">Civic Impact</span>
@@ -156,7 +176,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="counter text-3xl font-bold text-white mb-1" id="counter-grantees" aria-live="polite">0</div>
+                        <div class="counter metric-number text-3xl font-bold text-white mb-1" id="counter-grantees" aria-live="polite">0</div>
                         <div class="text-slate-400 text-sm font-medium">Active Grantees</div>
                     </div>
 
@@ -169,7 +189,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="counter text-3xl font-bold text-white mb-1" id="counter-posts" aria-live="polite">0</div>
+                        <div class="counter metric-number text-3xl font-bold text-white mb-1" id="counter-posts" aria-live="polite">0</div>
                         <div class="text-slate-400 text-sm font-medium">Total Posts</div>
                     </div>
 
@@ -182,7 +202,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="counter text-3xl font-bold text-white mb-1" id="counter-engagement" aria-live="polite">0</div>
+                        <div class="counter metric-number text-3xl font-bold text-white mb-1" id="counter-engagement" aria-live="polite">0</div>
                         <div class="text-slate-400 text-sm font-medium">Total Engagement</div>
                     </div>
 
@@ -195,7 +215,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="counter text-3xl font-bold text-white mb-1" id="counter-platforms" aria-live="polite">0</div>
+                        <div class="counter metric-number text-3xl font-bold text-white mb-1" id="counter-platforms" aria-live="polite">0</div>
                         <div class="text-slate-400 text-sm font-medium">Platforms Monitored</div>
                     </div>
                 </div>
@@ -203,14 +223,14 @@
         </section>
 
         <!-- Grantees Section -->
-        <section id="grantees" class="py-16 sm:py-24 -mt-12 relative z-10">
+        <section id="grantees" class="py-16 sm:py-24 -mt-12 relative z-10 grid-pattern">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
                 <!-- Section Header & Controls -->
                 <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
                     <div>
-                        <h2 class="text-2xl font-bold text-slate-900">Grantee Performance</h2>
-                        <p class="text-slate-500 mt-1">Detailed metrics for all tracked organizations.</p>
+                        <h2 class="text-2xl font-bold text-slate-900 section-heading">Grantee Performance</h2>
+                        <p class="text-slate-500 mt-1 pl-4">Detailed metrics for all tracked organizations.</p>
                     </div>
                     
                     <div class="flex flex-wrap gap-3">
@@ -309,14 +329,14 @@
         <section id="rankings" class="py-16 bg-slate-50 border-t border-slate-200">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between mb-8">
-                    <h2 class="text-2xl font-bold text-slate-900">Rankings Leaderboard</h2>
+                    <h2 class="text-2xl font-bold text-slate-900 section-heading">Rankings Leaderboard</h2>
                     <div class="text-sm font-medium text-slate-500 bg-white px-3 py-1 rounded-full shadow-sm border border-slate-200">
                         <span id="rankings-count" class="text-primary font-bold" aria-live="polite">0</span> tracked
                     </div>
                 </div>
 
                 <div class="rankings-table-container bg-white">
-                    <div class="overflow-x-auto">
+                    <div class="overflow-x-auto custom-scrollbar">
                         <table class="w-full text-sm text-left" id="rankings-table">
                             <thead>
                                 <tr>
@@ -338,39 +358,47 @@
         </section>
 
         <!-- Footer -->
-        <footer class="bg-dark text-slate-400 py-12 border-t border-slate-800" role="contentinfo">
+        <footer class="bg-njcic-gray text-white py-12" role="contentinfo">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Brand column -->
                     <div>
-                        <div class="flex items-center gap-2 mb-4">
-                            <div class="w-6 h-6 rounded bg-primary flex items-center justify-center text-white text-xs font-bold">NJ</div>
-                            <span class="text-white font-bold text-lg">NJCIC Dashboard</span>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-njcic-teal to-njcic-dark flex items-center justify-center">
+                                <span class="text-white font-bold">NJ</span>
+                            </div>
+                            <div>
+                                <div class="font-bold text-lg">NJ Civic Information</div>
+                                <div class="text-sm text-gray-400">Consortium</div>
+                            </div>
                         </div>
-                        <p class="text-sm leading-relaxed mb-4">
-                            An open-source project tracking the impact of local news and information initiatives in New Jersey.
-                        </p>
+                        <p class="text-gray-400 text-sm">Supporting local news and civic information in New Jersey.</p>
                     </div>
                     
+                    <!-- Quick links -->
                     <div>
-                        <h4 class="text-white font-semibold mb-4">Resources</h4>
-                        <ul class="space-y-2 text-sm">
-                            <li><a href="https://njcivicinfo.org" class="hover:text-primary transition-colors">NJCIC Website</a></li>
-                            <li><a href="https://njcivicinfo.org/map/" class="hover:text-primary transition-colors">Grantees Map</a></li>
-                            <li><a href="https://centerforcooperativemedia.org" class="hover:text-primary transition-colors">Center for Cooperative Media</a></li>
+                        <h4 class="font-semibold mb-4 text-njcic-teal">Dashboard</h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><a href="index.html" class="hover:text-white transition-colors">Overview</a></li>
+                            <li><a href="rankings.html" class="hover:text-white transition-colors">Rankings</a></li>
+                            <li><a href="platforms.html" class="hover:text-white transition-colors">Platforms</a></li>
+                            <li><a href="methodology.html" class="hover:text-white transition-colors">Methodology</a></li>
                         </ul>
                     </div>
-
+                    
+                    <!-- About NJCIC -->
                     <div>
-                        <h4 class="text-white font-semibold mb-4">Project</h4>
-                        <ul class="space-y-2 text-sm">
-                            <li><a href="https://github.com/jamditis/njcic" class="hover:text-primary transition-colors">GitHub Repository</a></li>
-                            <li><a href="about.html" class="hover:text-primary transition-colors">About the Project</a></li>
-                            <li><a href="methodology.html" class="hover:text-primary transition-colors">Methodology</a></li>
+                        <h4 class="font-semibold mb-4 text-njcic-teal">About NJCIC</h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><a href="https://njcivicinfo.org" target="_blank" rel="noopener" class="hover:text-white transition-colors">Official Website</a></li>
+                            <li><a href="about.html" class="hover:text-white transition-colors">About This Dashboard</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
-                    &copy; 2026 Center for Cooperative Media. All rights reserved.
+                
+                <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <p class="text-sm text-gray-500">Data updated: <span id="footer-last-updated" class="text-gray-400">--</span></p>
+                    <p class="text-sm text-gray-500">Built by the Center for Cooperative Media</p>
                 </div>
             </div>
         </footer>
