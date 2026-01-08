@@ -1,6 +1,8 @@
 name: Update NJCIC Dashboard
 
 on:
+  push:
+    branches: [main]
   schedule:
     # Run weekly on Monday at 7am ET (12:00 UTC)
     - cron: '0 12 * * 1'
