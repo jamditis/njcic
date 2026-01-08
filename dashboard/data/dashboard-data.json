@@ -1,154 +1,126 @@
 {
   "summary": {
-    "totalGrantees": 3,
-    "totalPosts": 1735,
-    "totalEngagement": 747500,
-    "platformsTracked": 8,
-    "lastUpdated": "2026-01-07T17:26:16.075637",
-    "scrapingDuration": "1h 0m 0s"
+    "totalGrantees": 14,
+    "totalPosts": 371,
+    "totalEngagement": 130252,
+    "platformsTracked": 2,
+    "lastUpdated": "2026-01-07T18:18:16.057920",
+    "scrapingDuration": "aggregated"
   },
   "platforms": {
-    "twitter": {
-      "posts": 450,
-      "engagement": 125000,
-      "grantees": 3,
-      "attempted": 35,
-      "successful": 30,
-      "successRate": "85.7%"
-    },
-    "facebook": {
-      "posts": 380,
-      "engagement": 89000,
-      "grantees": 2,
-      "attempted": 40,
-      "successful": 38,
-      "successRate": "95.0%"
-    },
-    "instagram": {
-      "posts": 420,
-      "engagement": 156000,
-      "grantees": 1,
-      "attempted": 30,
-      "successful": 28,
-      "successRate": "93.3%"
-    },
-    "youtube": {
-      "posts": 110,
-      "engagement": 234000,
-      "grantees": 1,
-      "attempted": 25,
-      "successful": 22,
-      "successRate": "88.0%"
-    },
-    "linkedin": {
-      "posts": 180,
-      "engagement": 45000,
-      "grantees": 0,
-      "attempted": 20,
-      "successful": 18,
-      "successRate": "90.0%"
-    },
     "tiktok": {
-      "posts": 90,
-      "engagement": 78000,
-      "grantees": 0,
-      "attempted": 15,
-      "successful": 12,
-      "successRate": "80.0%"
+      "posts": 196,
+      "engagement": 119632,
+      "grantees": 9
     },
     "bluesky": {
-      "posts": 60,
-      "engagement": 12000,
-      "grantees": 0,
-      "attempted": 10,
-      "successful": 8,
-      "successRate": "80.0%"
-    },
-    "threads": {
-      "posts": 45,
-      "engagement": 8500,
-      "grantees": 0,
-      "attempted": 8,
-      "successful": 6,
-      "successRate": "75.0%"
+      "posts": 175,
+      "engagement": 10620,
+      "grantees": 7
     }
   },
   "topGrantees": [
     {
+      "name": "HudPost",
+      "posts": 26,
+      "engagement": 103604,
+      "topPlatform": "tiktok",
+      "platformsScraped": 1
+    },
+    {
+      "name": "The Jersey Vindicator",
+      "posts": 25,
+      "engagement": 9610,
+      "topPlatform": "bluesky",
+      "platformsScraped": 1
+    },
+    {
       "name": "NJ Spotlight News",
-      "posts": 55,
-      "engagement": 195950,
-      "topPlatform": "youtube",
-      "platformsScraped": 3
-    },
-    {
-      "name": "TAPinto Newark",
-      "posts": 47,
-      "engagement": 17800,
-      "topPlatform": "twitter",
+      "posts": 51,
+      "engagement": 8623,
+      "topPlatform": "tiktok",
       "platformsScraped": 2
     },
     {
-      "name": "Jersey City Times",
-      "posts": 45,
-      "engagement": 14580,
-      "topPlatform": "twitter",
+      "name": "The College of New Jersey",
+      "posts": 26,
+      "engagement": 2966,
+      "topPlatform": "tiktok",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Slice of Culture   Saint Peter s University",
+      "posts": 26,
+      "engagement": 1791,
+      "topPlatform": "tiktok",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Daily Targum",
+      "posts": 26,
+      "engagement": 1609,
+      "topPlatform": "tiktok",
+      "platformsScraped": 1
+    },
+    {
+      "name": "South Jersey Climate News Project",
+      "posts": 38,
+      "engagement": 847,
+      "topPlatform": "tiktok",
       "platformsScraped": 2
+    },
+    {
+      "name": "Inside Climate News",
+      "posts": 25,
+      "engagement": 675,
+      "topPlatform": "bluesky",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Clinton Hill Community Action",
+      "posts": 26,
+      "engagement": 301,
+      "topPlatform": "tiktok",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Chalkbeat Newark  Civic News Company ",
+      "posts": 25,
+      "engagement": 113,
+      "topPlatform": "bluesky",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Public Square Amplified",
+      "posts": 25,
+      "engagement": 58,
+      "topPlatform": "bluesky",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Montclair Local Nonprofit News",
+      "posts": 25,
+      "engagement": 38,
+      "topPlatform": "bluesky",
+      "platformsScraped": 1
     }
   ],
   "engagementByPlatform": [
     {
-      "platform": "youtube",
-      "engagement": 234000,
-      "posts": 110,
-      "color": "#FF0000"
-    },
-    {
-      "platform": "instagram",
-      "engagement": 156000,
-      "posts": 420,
-      "color": "#E1306C"
-    },
-    {
-      "platform": "twitter",
-      "engagement": 125000,
-      "posts": 450,
-      "color": "#1DA1F2"
-    },
-    {
-      "platform": "facebook",
-      "engagement": 89000,
-      "posts": 380,
-      "color": "#1877F2"
-    },
-    {
       "platform": "tiktok",
-      "engagement": 78000,
-      "posts": 90,
+      "engagement": 119632,
+      "posts": 196,
       "color": "#000000"
-    },
-    {
-      "platform": "linkedin",
-      "engagement": 45000,
-      "posts": 180,
-      "color": "#0A66C2"
     },
     {
       "platform": "bluesky",
-      "engagement": 12000,
-      "posts": 60,
+      "engagement": 10620,
+      "posts": 175,
       "color": "#0085FF"
-    },
-    {
-      "platform": "threads",
-      "engagement": 8500,
-      "posts": 45,
-      "color": "#000000"
     }
   ],
   "metadata": {
-    "generatedAt": "2026-01-07T17:26:16.075666",
-    "sourceReport": "2025-01-07T15:30:00.000000",
+    "generatedAt": "2026-01-07T18:18:16.057940",
     "platformColors": {
       "twitter": "#1DA1F2",
       "youtube": "#FF0000",

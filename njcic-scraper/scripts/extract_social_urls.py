@@ -431,17 +431,24 @@ def main():
         'metadata': {
             'total_grantees': total_processed,
             'extraction_date': time.strftime('%Y-%m-%d'),
-            'source_file': INPUT_FILE,
+            'source_file': str(INPUT_FILE),
             'statistics': stats,
         }
     }
 
-    print(f"Saving results to: {OUTPUT_FILE}")
     output_path = Path(OUTPUT_FILE)
+    print(f"Saving results to: {output_path}")
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
+    # Custom JSON encoder to handle Path objects
+    class PathEncoder(json.JSONEncoder):
+        def default(self, obj):
+            if isinstance(obj, Path):
+                return str(obj)
+            return super().default(obj)
+
     with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(output_data, f, indent=2, ensure_ascii=False)
+        json.dump(output_data, f, indent=2, ensure_ascii=False, cls=PathEncoder)
 
     print(f"✓ Results saved successfully!")
     print()
