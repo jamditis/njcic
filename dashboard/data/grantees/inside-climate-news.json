@@ -1,0 +1,200 @@
+{
+  "name": "Inside Climate News",
+  "slug": "inside-climate-news",
+  "summary": {
+    "total_posts": 25,
+    "total_engagement": 675,
+    "total_followers": 25576,
+    "platforms_active": 1,
+    "engagement_rate": 27.0,
+    "last_updated": "2026-01-07T18:27:25.584152"
+  },
+  "platform_breakdown": {
+    "bluesky": {
+      "posts": 25,
+      "posts_pct": 100.0,
+      "engagement": 675,
+      "engagement_pct": 100.0
+    }
+  },
+  "platforms": {
+    "bluesky": {
+      "posts": 25,
+      "engagement": 675,
+      "views": 0,
+      "followers": 25576,
+      "engagement_rate": 27.0,
+      "top_posts": [
+        {
+          "id": "3mbmklohqsk2u",
+          "url": "https://bsky.app/profile/insideclimatenews.org/post/3mbmklohqsk2u",
+          "text": "Scientists warn that a proposed expansion of Florida\u2019s Port Everglades could cause unprecedented damage to corals in the U.S., including some of the only remaining endangered staghorn corals that surv",
+          "date": "2026-01-04T18:30:32.842000",
+          "engagement": {
+            "likes": 28,
+            "comments": 1,
+            "shares": 32,
+            "views": 0,
+            "total": 61
+          },
+          "thumbnail": null
+        },
+        {
+          "id": "3mbf4hod56s2z",
+          "url": "https://bsky.app/profile/insideclimatenews.org/post/3mbf4hod56s2z",
+          "text": "25 years of Everglades restoration: The historic effort was designed to replenish South Florida\u2019s drinking water supply. Now it may help save the region from climate change.",
+          "date": "2026-01-01T19:29:07.919000",
+          "engagement": {
+            "likes": 40,
+            "comments": 0,
+            "shares": 17,
+            "views": 0,
+            "total": 57
+          },
+          "thumbnail": null
+        },
+        {
+          "id": "3mbriwlcza22z",
+          "url": "https://bsky.app/profile/insideclimatenews.org/post/3mbriwlcza22z",
+          "text": "A look at one scientist\u2019s journey provides a window into the Trump administration\u2019s hollowing out of NOAA, an agency that has long been a world leader in ocean science and protection.",
+          "date": "2026-01-06T17:44:09.849000",
+          "engagement": {
+            "likes": 24,
+            "comments": 1,
+            "shares": 17,
+            "views": 0,
+            "total": 42
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 1.67,
+        "posts_per_week": 11.69,
+        "date_range_days": 15,
+        "first_post": "2025-12-23T18:38:17.679000",
+        "last_post": "2026-01-08T00:54:41.531000"
+      },
+      "time_series": [
+        {
+          "date": "2025-12-22",
+          "posts": 9,
+          "engagement": 218
+        },
+        {
+          "date": "2025-12-29",
+          "posts": 10,
+          "engagement": 319
+        },
+        {
+          "date": "2026-01-05",
+          "posts": 6,
+          "engagement": 138
+        }
+      ],
+      "content_types": {
+        "link": {
+          "count": 25,
+          "engagement": 675,
+          "percentage": 100.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": "3mbmklohqsk2u",
+      "url": "https://bsky.app/profile/insideclimatenews.org/post/3mbmklohqsk2u",
+      "text": "Scientists warn that a proposed expansion of Florida\u2019s Port Everglades could cause unprecedented damage to corals in the U.S., including some of the only remaining endangered staghorn corals that surv",
+      "date": "2026-01-04T18:30:32.842000",
+      "engagement": {
+        "likes": 28,
+        "comments": 1,
+        "shares": 32,
+        "views": 0,
+        "total": 61
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3mbf4hod56s2z",
+      "url": "https://bsky.app/profile/insideclimatenews.org/post/3mbf4hod56s2z",
+      "text": "25 years of Everglades restoration: The historic effort was designed to replenish South Florida\u2019s drinking water supply. Now it may help save the region from climate change.",
+      "date": "2026-01-01T19:29:07.919000",
+      "engagement": {
+        "likes": 40,
+        "comments": 0,
+        "shares": 17,
+        "views": 0,
+        "total": 57
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3mbriwlcza22z",
+      "url": "https://bsky.app/profile/insideclimatenews.org/post/3mbriwlcza22z",
+      "text": "A look at one scientist\u2019s journey provides a window into the Trump administration\u2019s hollowing out of NOAA, an agency that has long been a world leader in ocean science and protection.",
+      "date": "2026-01-06T17:44:09.849000",
+      "engagement": {
+        "likes": 24,
+        "comments": 1,
+        "shares": 17,
+        "views": 0,
+        "total": 42
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3mbcclnyskk2l",
+      "url": "https://bsky.app/profile/insideclimatenews.org/post/3mbcclnyskk2l",
+      "text": "The Trump administration is moving to narrow which wetlands qualify for federal protection. But New Jersey\u2019s stricter legal framework shows how states can fight back.",
+      "date": "2025-12-31T16:40:45.033000",
+      "engagement": {
+        "likes": 27,
+        "comments": 0,
+        "shares": 13,
+        "views": 0,
+        "total": 40
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3mbmrkbsgqs2x",
+      "url": "https://bsky.app/profile/insideclimatenews.org/post/3mbmrkbsgqs2x",
+      "text": "New Jersey Fibershed is an affiliate of a global movement that supports creating more sustainable clothing and fabrics from the wool of local sheep, alpacas and goats.",
+      "date": "2026-01-04T20:35:02.199000",
+      "engagement": {
+        "likes": 26,
+        "comments": 1,
+        "shares": 12,
+        "views": 0,
+        "total": 39
+      },
+      "thumbnail": null
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 1.67,
+    "posts_per_week": 11.69,
+    "date_range_days": 15,
+    "first_post": "2025-12-23T18:38:17.679000",
+    "last_post": "2026-01-08T00:54:41.531000"
+  },
+  "time_series": [
+    {
+      "date": "2025-12-22",
+      "posts": 9,
+      "engagement": 218
+    },
+    {
+      "date": "2025-12-29",
+      "posts": 10,
+      "engagement": 319
+    },
+    {
+      "date": "2026-01-05",
+      "posts": 6,
+      "engagement": 138
+    }
+  ]
+}

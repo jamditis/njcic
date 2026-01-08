@@ -161,7 +161,7 @@ function createPlatformChart(ctx, data) {
                         label: function(context) {
                             const total = context.dataset.data.reduce((a, b) => a + b, 0);
                             const percentage = ((context.raw / total) * 100).toFixed(1);
-                            return ` ${context.label}: ${formatNumber(context.raw)} (${percentage}%)`;
+                            return ` ${context.label}: ${formatNumber(context.raw)} posts (${percentage}%)`;
                         }
                     }
                 }
@@ -177,12 +177,122 @@ function createPlatformChart(ctx, data) {
 }
 
 /**
- * Create Top Grantees Horizontal Bar Chart
+ * Create Engagement by Platform Bar Chart
  * @param {HTMLCanvasElement} ctx - Canvas context
- * @param {Array} data - Array of { name, engagement } objects
+ * @param {Array|Object} data - Engagement data by platform
  * @returns {Chart} Chart.js instance
  */
-function createGranteesChart(ctx, data) {
+function createEngagementByPlatformChart(ctx, data) {
+    let labels, engagementValues, postsValues, colors;
+
+    // Handle both array format (from engagementByPlatform) and object format (from platformEngagement)
+    if (Array.isArray(data)) {
+        labels = data.map(item => {
+            const platform = item.platform || '';
+            return platform.charAt(0).toUpperCase() + platform.slice(1);
+        });
+        engagementValues = data.map(item => item.engagement || 0);
+        postsValues = data.map(item => item.posts || 0);
+        colors = data.map(item => item.color || getPlatformColor(item.platform));
+    } else {
+        labels = Object.keys(data);
+        engagementValues = Object.values(data);
+        postsValues = labels.map(() => 0); // No post data in this format
+        colors = labels.map(label => getPlatformColor(label));
+    }
+
+    return new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Engagement',
+                data: engagementValues,
+                backgroundColor: colors.map(c => c + 'CC'), // Add transparency
+                borderColor: colors,
+                borderWidth: 2,
+                borderRadius: 8,
+                borderSkipped: false,
+                barThickness: 'flex',
+                maxBarThickness: 80
+            }]
+        },
+        options: {
+            ...chartDefaults,
+            indexAxis: 'x',
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: {
+                        color: 'rgba(0, 0, 0, 0.05)',
+                        drawBorder: false
+                    },
+                    ticks: {
+                        font: {
+                            family: 'Inter',
+                            size: 11
+                        },
+                        color: '#6B7280',
+                        callback: function(value) {
+                            return formatAbbreviated(value);
+                        }
+                    }
+                },
+                x: {
+                    grid: {
+                        display: false
+                    },
+                    ticks: {
+                        font: {
+                            family: 'Inter',
+                            size: 12,
+                            weight: '500'
+                        },
+                        color: NJCIC_COLORS.dark
+                    }
+                }
+            },
+            plugins: {
+                ...chartDefaults.plugins,
+                tooltip: {
+                    ...chartDefaults.plugins.tooltip,
+                    callbacks: {
+                        title: function(context) {
+                            return context[0].label;
+                        },
+                        label: function(context) {
+                            const idx = context.dataIndex;
+                            const engagement = engagementValues[idx];
+                            const posts = postsValues[idx];
+                            const lines = [` Engagement: ${formatNumber(engagement)}`];
+                            if (posts > 0) {
+                                lines.push(` Posts: ${formatNumber(posts)}`);
+                                lines.push(` Avg per Post: ${formatNumber(Math.round(engagement / posts))}`);
+                            }
+                            return lines;
+                        }
+                    }
+                }
+            },
+            animation: {
+                duration: 1000,
+                easing: 'easeOutQuart',
+                delay: function(context) {
+                    return context.dataIndex * 150;
+                }
+            }
+        }
+    });
+}
+
+/**
+ * Create Top Grantees Horizontal Bar Chart (with click support)
+ * @param {HTMLCanvasElement} ctx - Canvas context
+ * @param {Array} data - Array of { name, engagement, slug } objects
+ * @param {Function} onClick - Click handler function
+ * @returns {Chart} Chart.js instance
+ */
+function createGranteesChart(ctx, data, onClick) {
     // Sort by engagement and take top 10
     const sortedData = [...data]
         .sort((a, b) => b.engagement - a.engagement)
@@ -197,7 +307,7 @@ function createGranteesChart(ctx, data) {
         return `rgba(45, 200, 210, ${opacity})`;
     });
 
-    return new Chart(ctx, {
+    const chart = new Chart(ctx, {
         type: 'bar',
         data: {
             labels: labels,
@@ -209,7 +319,7 @@ function createGranteesChart(ctx, data) {
                 borderRadius: 4,
                 borderSkipped: false,
                 barThickness: 'flex',
-                maxBarThickness: 30
+                maxBarThickness: 35
             }]
         },
         options: {
@@ -258,7 +368,19 @@ function createGranteesChart(ctx, data) {
                             return sortedData[index].name;
                         },
                         label: function(context) {
-                            return ` Engagement: ${formatNumber(context.raw)}`;
+                            const idx = context.dataIndex;
+                            const grantee = sortedData[idx];
+                            const lines = [` Engagement: ${formatNumber(context.raw)}`];
+                            if (grantee.posts) {
+                                lines.push(` Posts: ${formatNumber(grantee.posts)}`);
+                            }
+                            if (grantee.topPlatform) {
+                                lines.push(` Top Platform: ${grantee.topPlatform}`);
+                            }
+                            return lines;
+                        },
+                        afterBody: function() {
+                            return ['\nClick to view details'];
                         }
                     }
                 }
@@ -269,9 +391,23 @@ function createGranteesChart(ctx, data) {
                 delay: function(context) {
                     return context.dataIndex * 100;
                 }
+            },
+            onHover: (event, elements) => {
+                event.native.target.style.cursor = elements.length ? 'pointer' : 'default';
+            },
+            onClick: (event, elements) => {
+                if (elements.length > 0 && onClick) {
+                    const index = elements[0].index;
+                    onClick(sortedData[index]);
+                }
             }
         }
     });
+
+    // Store reference to sorted data for later updates
+    chart._sortedData = sortedData;
+
+    return chart;
 }
 
 /**
@@ -295,7 +431,7 @@ function updateChartData(chart, newData) {
     if (!chart) return;
 
     if (Array.isArray(newData)) {
-        chart.data.labels = newData.map(item => item.label || item.name);
+        chart.data.labels = newData.map(item => item.label || item.name || item.platform);
         chart.data.datasets[0].data = newData.map(item => item.value || item.engagement);
     } else {
         chart.data.labels = Object.keys(newData);
@@ -322,6 +458,7 @@ window.NJCICCharts = {
     formatAbbreviated,
     getPlatformColor,
     createPlatformChart,
+    createEngagementByPlatformChart,
     createGranteesChart,
     updateChartData,
     destroyChart

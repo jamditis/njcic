@@ -1,0 +1,350 @@
+{
+  "name": "Clinton Hill Community Action",
+  "slug": "clinton-hill-community-action",
+  "summary": {
+    "total_posts": 26,
+    "total_engagement": 301,
+    "total_followers": 0,
+    "platforms_active": 1,
+    "engagement_rate": 11.58,
+    "last_updated": "2026-01-07T18:27:25.577575"
+  },
+  "platform_breakdown": {
+    "tiktok": {
+      "posts": 26,
+      "posts_pct": 100.0,
+      "engagement": 301,
+      "engagement_pct": 100.0
+    }
+  },
+  "platforms": {
+    "tiktok": {
+      "posts": 26,
+      "engagement": 301,
+      "views": 8937,
+      "followers": 0,
+      "engagement_rate": 11.58,
+      "top_posts": [
+        {
+          "id": "7311562190878788894",
+          "url": "https://www.tiktok.com/@clintonhillaction/video/7311562190878788894",
+          "text": "Love our city. It's these moments that we Shout \ud83d\udde3\ufe0f we're from  #Newar...",
+          "date": "2023-12-11T21:35:55",
+          "engagement": {
+            "likes": 48,
+            "comments": 1,
+            "shares": 2,
+            "views": 1032,
+            "total": 51
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/24719cdc113846f78aa3ea06c012dfbd_1702355757~tplv-tiktokx-origin.image?dr=9636&x-expires=1768003200&x-signature=mm4NpApkRFaEr5QrTAxekKaaow8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7140292883172674859",
+          "url": "https://www.tiktok.com/@clintonhillaction/video/7140292883172674859",
+          "text": "#clintonhillfoodies #hungry #wegotyou #communityaction #advocate #hea...",
+          "date": "2022-09-06T08:43:12",
+          "engagement": {
+            "likes": 40,
+            "comments": 1,
+            "shares": 0,
+            "views": 323,
+            "total": 41
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ac61882860214c8a988ce42c5a099a84_1662478993~tplv-tiktokx-origin.image?dr=9636&x-expires=1768003200&x-signature=2i1U4qkNrkD%2FxUtlVEyqTHE211E%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7153304802951220523",
+          "url": "https://www.tiktok.com/@clintonhillaction/video/7153304802951220523",
+          "text": "#work#retreat #teambuilding #myjobiscool #workflow #workfriends #work...",
+          "date": "2022-10-11T10:16:34",
+          "engagement": {
+            "likes": 33,
+            "comments": 0,
+            "shares": 0,
+            "views": 867,
+            "total": 33
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/b19f634b4d784cd8a4477fac758606f5_1665508595~tplv-tiktokx-origin.image?dr=9636&x-expires=1768003200&x-signature=kSThEp1dZ3DJTAYGWAoKjwvpyNU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.05,
+        "posts_per_week": 0.35,
+        "date_range_days": 481,
+        "first_post": "2022-08-17T08:36:21",
+        "last_post": "2023-12-11T21:35:55"
+      },
+      "time_series": [
+        {
+          "date": "2022-08-15",
+          "posts": 1,
+          "engagement": 15
+        },
+        {
+          "date": "2022-08-22",
+          "posts": 2,
+          "engagement": 13
+        },
+        {
+          "date": "2022-08-29",
+          "posts": 1,
+          "engagement": 12
+        },
+        {
+          "date": "2022-09-05",
+          "posts": 2,
+          "engagement": 48
+        },
+        {
+          "date": "2022-09-12",
+          "posts": 1,
+          "engagement": 9
+        },
+        {
+          "date": "2022-09-19",
+          "posts": 1,
+          "engagement": 26
+        },
+        {
+          "date": "2022-10-10",
+          "posts": 1,
+          "engagement": 33
+        },
+        {
+          "date": "2022-11-14",
+          "posts": 3,
+          "engagement": 41
+        },
+        {
+          "date": "2022-12-12",
+          "posts": 2,
+          "engagement": 18
+        },
+        {
+          "date": "2022-12-19",
+          "posts": 1,
+          "engagement": 4
+        },
+        {
+          "date": "2023-01-02",
+          "posts": 1,
+          "engagement": 2
+        },
+        {
+          "date": "2023-01-16",
+          "posts": 1,
+          "engagement": 3
+        },
+        {
+          "date": "2023-01-23",
+          "posts": 1,
+          "engagement": 1
+        },
+        {
+          "date": "2023-06-05",
+          "posts": 1,
+          "engagement": 15
+        },
+        {
+          "date": "2023-07-03",
+          "posts": 1,
+          "engagement": 9
+        },
+        {
+          "date": "2023-08-28",
+          "posts": 3,
+          "engagement": 0
+        },
+        {
+          "date": "2023-09-04",
+          "posts": 1,
+          "engagement": 1
+        },
+        {
+          "date": "2023-12-11",
+          "posts": 1,
+          "engagement": 51
+        }
+      ],
+      "content_types": {
+        "video": {
+          "count": 26,
+          "engagement": 301,
+          "percentage": 100.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": "7311562190878788894",
+      "url": "https://www.tiktok.com/@clintonhillaction/video/7311562190878788894",
+      "text": "Love our city. It's these moments that we Shout \ud83d\udde3\ufe0f we're from  #Newar...",
+      "date": "2023-12-11T21:35:55",
+      "engagement": {
+        "likes": 48,
+        "comments": 1,
+        "shares": 2,
+        "views": 1032,
+        "total": 51
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/24719cdc113846f78aa3ea06c012dfbd_1702355757~tplv-tiktokx-origin.image?dr=9636&x-expires=1768003200&x-signature=mm4NpApkRFaEr5QrTAxekKaaow8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7140292883172674859",
+      "url": "https://www.tiktok.com/@clintonhillaction/video/7140292883172674859",
+      "text": "#clintonhillfoodies #hungry #wegotyou #communityaction #advocate #hea...",
+      "date": "2022-09-06T08:43:12",
+      "engagement": {
+        "likes": 40,
+        "comments": 1,
+        "shares": 0,
+        "views": 323,
+        "total": 41
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ac61882860214c8a988ce42c5a099a84_1662478993~tplv-tiktokx-origin.image?dr=9636&x-expires=1768003200&x-signature=2i1U4qkNrkD%2FxUtlVEyqTHE211E%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7153304802951220523",
+      "url": "https://www.tiktok.com/@clintonhillaction/video/7153304802951220523",
+      "text": "#work#retreat #teambuilding #myjobiscool #workflow #workfriends #work...",
+      "date": "2022-10-11T10:16:34",
+      "engagement": {
+        "likes": 33,
+        "comments": 0,
+        "shares": 0,
+        "views": 867,
+        "total": 33
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/b19f634b4d784cd8a4477fac758606f5_1665508595~tplv-tiktokx-origin.image?dr=9636&x-expires=1768003200&x-signature=kSThEp1dZ3DJTAYGWAoKjwvpyNU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7145566312725499182",
+      "url": "https://www.tiktok.com/@clintonhillaction/video/7145566312725499182",
+      "text": "#NAACP  #communityimpact #Newark #Advocate #clintonhillsection",
+      "date": "2022-09-20T13:46:55",
+      "engagement": {
+        "likes": 24,
+        "comments": 1,
+        "shares": 1,
+        "views": 930,
+        "total": 26
+      },
+      "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/f5e096e5228241118e81cf320b20e04f_1663706816~tplv-tiktokx-origin.image?dr=9636&x-expires=1768003200&x-signature=J%2BE2FkwDUpdgxmAv2vKe0yMV5Vg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7166280430725893422",
+      "url": "https://www.tiktok.com/@clintonhillaction/video/7166280430725893422",
+      "text": "#cpr #classes #clintonhill #action #communityaction #advocate #staysa...",
+      "date": "2022-11-15T09:28:15",
+      "engagement": {
+        "likes": 18,
+        "comments": 0,
+        "shares": 0,
+        "views": 256,
+        "total": 18
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/3f933f10cdf448a1a9223d9ad45d8714_1668529696~tplv-tiktokx-origin.image?dr=9636&x-expires=1768003200&x-signature=1827%2BAonf2ITiaw%2Fg6i11M8OiMA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0.05,
+    "posts_per_week": 0.35,
+    "date_range_days": 481,
+    "first_post": "2022-08-17T08:36:21",
+    "last_post": "2023-12-11T21:35:55"
+  },
+  "time_series": [
+    {
+      "date": "2022-08-15",
+      "posts": 1,
+      "engagement": 15
+    },
+    {
+      "date": "2022-08-22",
+      "posts": 2,
+      "engagement": 13
+    },
+    {
+      "date": "2022-08-29",
+      "posts": 1,
+      "engagement": 12
+    },
+    {
+      "date": "2022-09-05",
+      "posts": 2,
+      "engagement": 48
+    },
+    {
+      "date": "2022-09-12",
+      "posts": 1,
+      "engagement": 9
+    },
+    {
+      "date": "2022-09-19",
+      "posts": 1,
+      "engagement": 26
+    },
+    {
+      "date": "2022-10-10",
+      "posts": 1,
+      "engagement": 33
+    },
+    {
+      "date": "2022-11-14",
+      "posts": 3,
+      "engagement": 41
+    },
+    {
+      "date": "2022-12-12",
+      "posts": 2,
+      "engagement": 18
+    },
+    {
+      "date": "2022-12-19",
+      "posts": 1,
+      "engagement": 4
+    },
+    {
+      "date": "2023-01-02",
+      "posts": 1,
+      "engagement": 2
+    },
+    {
+      "date": "2023-01-16",
+      "posts": 1,
+      "engagement": 3
+    },
+    {
+      "date": "2023-01-23",
+      "posts": 1,
+      "engagement": 1
+    },
+    {
+      "date": "2023-06-05",
+      "posts": 1,
+      "engagement": 15
+    },
+    {
+      "date": "2023-07-03",
+      "posts": 1,
+      "engagement": 9
+    },
+    {
+      "date": "2023-08-28",
+      "posts": 3,
+      "engagement": 0
+    },
+    {
+      "date": "2023-09-04",
+      "posts": 1,
+      "engagement": 1
+    },
+    {
+      "date": "2023-12-11",
+      "posts": 1,
+      "engagement": 51
+    }
+  ]
+}

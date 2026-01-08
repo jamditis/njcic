@@ -1,0 +1,250 @@
+{
+  "name": "Public Square Amplified",
+  "slug": "public-square-amplified",
+  "summary": {
+    "total_posts": 25,
+    "total_engagement": 58,
+    "total_followers": 82,
+    "platforms_active": 1,
+    "engagement_rate": 2.32,
+    "last_updated": "2026-01-07T18:27:25.591963"
+  },
+  "platform_breakdown": {
+    "bluesky": {
+      "posts": 25,
+      "posts_pct": 100.0,
+      "engagement": 58,
+      "engagement_pct": 100.0
+    }
+  },
+  "platforms": {
+    "bluesky": {
+      "posts": 25,
+      "engagement": 58,
+      "views": 0,
+      "followers": 82,
+      "engagement_rate": 2.32,
+      "top_posts": [
+        {
+          "id": "3m3ilniaahs2p",
+          "url": "https://bsky.app/profile/publicsq.bsky.social/post/3m3ilniaahs2p",
+          "text": "\u201cIf you can't fly, then run,\nif you can't run, then walk,\nif you can't walk, then crawl,\nbut whatever you do,\nyou have to keep moving forward.\u201d\n- Dr. Martin Luther King Jr.\n\n#NoKings #NoKingsInAmerica",
+          "date": "2025-10-18T20:07:38.416000",
+          "engagement": {
+            "likes": 2,
+            "comments": 0,
+            "shares": 2,
+            "views": 0,
+            "total": 4
+          },
+          "thumbnail": null
+        },
+        {
+          "id": "3lzqzj7ivsc2w",
+          "url": "https://bsky.app/profile/publicsq.bsky.social/post/3lzqzj7ivsc2w",
+          "text": "In pt. 2 of our 2025 Citizen Journalism class\u2019s series on the Essex-Hudson Greenway, the team explores national Greenway trends, the role of vegetation and biodiversity, and how public transit connect",
+          "date": "2025-09-26T17:46:42.078000",
+          "engagement": {
+            "likes": 3,
+            "comments": 0,
+            "shares": 1,
+            "views": 0,
+            "total": 4
+          },
+          "thumbnail": null
+        },
+        {
+          "id": "3lz5rgkh3qc2n",
+          "url": "https://bsky.app/profile/publicsq.bsky.social/post/3lz5rgkh3qc2n",
+          "text": "Our community news platform includes news stories in the form of \"News Poems\" to offers everyone a unique storytelling venue. Read one from Political Writer, @mattdragon.com",
+          "date": "2025-09-19T02:01:27.947000",
+          "engagement": {
+            "likes": 3,
+            "comments": 0,
+            "shares": 1,
+            "views": 0,
+            "total": 4
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.6,
+        "posts_per_week": 4.2,
+        "date_range_days": 42,
+        "first_post": "2025-09-16T21:13:10.512000",
+        "last_post": "2025-10-29T17:01:49.062000"
+      },
+      "time_series": [
+        {
+          "date": "2025-09-15",
+          "posts": 7,
+          "engagement": 15
+        },
+        {
+          "date": "2025-09-22",
+          "posts": 2,
+          "engagement": 7
+        },
+        {
+          "date": "2025-09-29",
+          "posts": 3,
+          "engagement": 4
+        },
+        {
+          "date": "2025-10-06",
+          "posts": 2,
+          "engagement": 6
+        },
+        {
+          "date": "2025-10-13",
+          "posts": 4,
+          "engagement": 9
+        },
+        {
+          "date": "2025-10-20",
+          "posts": 5,
+          "engagement": 11
+        },
+        {
+          "date": "2025-10-27",
+          "posts": 2,
+          "engagement": 6
+        }
+      ],
+      "content_types": {
+        "image": {
+          "count": 22,
+          "engagement": 50,
+          "percentage": 88.0
+        },
+        "quote": {
+          "count": 2,
+          "engagement": 7,
+          "percentage": 8.0
+        },
+        "text": {
+          "count": 1,
+          "engagement": 1,
+          "percentage": 4.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": "3m3ilniaahs2p",
+      "url": "https://bsky.app/profile/publicsq.bsky.social/post/3m3ilniaahs2p",
+      "text": "\u201cIf you can't fly, then run,\nif you can't run, then walk,\nif you can't walk, then crawl,\nbut whatever you do,\nyou have to keep moving forward.\u201d\n- Dr. Martin Luther King Jr.\n\n#NoKings #NoKingsInAmerica",
+      "date": "2025-10-18T20:07:38.416000",
+      "engagement": {
+        "likes": 2,
+        "comments": 0,
+        "shares": 2,
+        "views": 0,
+        "total": 4
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3lzqzj7ivsc2w",
+      "url": "https://bsky.app/profile/publicsq.bsky.social/post/3lzqzj7ivsc2w",
+      "text": "In pt. 2 of our 2025 Citizen Journalism class\u2019s series on the Essex-Hudson Greenway, the team explores national Greenway trends, the role of vegetation and biodiversity, and how public transit connect",
+      "date": "2025-09-26T17:46:42.078000",
+      "engagement": {
+        "likes": 3,
+        "comments": 0,
+        "shares": 1,
+        "views": 0,
+        "total": 4
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3lz5rgkh3qc2n",
+      "url": "https://bsky.app/profile/publicsq.bsky.social/post/3lz5rgkh3qc2n",
+      "text": "Our community news platform includes news stories in the form of \"News Poems\" to offers everyone a unique storytelling venue. Read one from Political Writer, @mattdragon.com",
+      "date": "2025-09-19T02:01:27.947000",
+      "engagement": {
+        "likes": 3,
+        "comments": 0,
+        "shares": 1,
+        "views": 0,
+        "total": 4
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3m4dwfdkfyk2a",
+      "url": "https://bsky.app/profile/publicsq.bsky.social/post/3m4dwfdkfyk2a",
+      "text": "In his latest Opinion piece, Political Writer Matt Dragon explores the destructive historical racism embedded in ICE's kidnapping and disappearing of immigrants without due process. www.publicsq.org/l",
+      "date": "2025-10-29T17:01:49.062000",
+      "engagement": {
+        "likes": 2,
+        "comments": 0,
+        "shares": 1,
+        "views": 0,
+        "total": 3
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3lyyaf7fvbk2w",
+      "url": "https://bsky.app/profile/publicsq.bsky.social/post/3lyyaf7fvbk2w",
+      "text": "Noticed anything different off the Turnpike recently? PSA has a billboard! In honor of #DemocracyDay2025, we thought it was time to make our values visible in a big way. How are you supporting local n",
+      "date": "2025-09-16T21:13:10.512000",
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 2,
+        "views": 0,
+        "total": 3
+      },
+      "thumbnail": null
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0.6,
+    "posts_per_week": 4.2,
+    "date_range_days": 42,
+    "first_post": "2025-09-16T21:13:10.512000",
+    "last_post": "2025-10-29T17:01:49.062000"
+  },
+  "time_series": [
+    {
+      "date": "2025-09-15",
+      "posts": 7,
+      "engagement": 15
+    },
+    {
+      "date": "2025-09-22",
+      "posts": 2,
+      "engagement": 7
+    },
+    {
+      "date": "2025-09-29",
+      "posts": 3,
+      "engagement": 4
+    },
+    {
+      "date": "2025-10-06",
+      "posts": 2,
+      "engagement": 6
+    },
+    {
+      "date": "2025-10-13",
+      "posts": 4,
+      "engagement": 9
+    },
+    {
+      "date": "2025-10-20",
+      "posts": 5,
+      "engagement": 11
+    },
+    {
+      "date": "2025-10-27",
+      "posts": 2,
+      "engagement": 6
+    }
+  ]
+}

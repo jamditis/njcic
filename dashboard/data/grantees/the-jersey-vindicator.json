@@ -1,0 +1,225 @@
+{
+  "name": "The Jersey Vindicator",
+  "slug": "the-jersey-vindicator",
+  "summary": {
+    "total_posts": 25,
+    "total_engagement": 9610,
+    "total_followers": 6443,
+    "platforms_active": 1,
+    "engagement_rate": 384.4,
+    "last_updated": "2026-01-07T18:27:25.600582"
+  },
+  "platform_breakdown": {
+    "bluesky": {
+      "posts": 25,
+      "posts_pct": 100.0,
+      "engagement": 9610,
+      "engagement_pct": 100.0
+    }
+  },
+  "platforms": {
+    "bluesky": {
+      "posts": 25,
+      "engagement": 9610,
+      "views": 0,
+      "followers": 6443,
+      "engagement_rate": 384.4,
+      "top_posts": [
+        {
+          "id": "3mak2pg3pms2s",
+          "url": "https://bsky.app/profile/thetnholler.bsky.social/post/3mak2pg3pms2s",
+          "text": "CBS News(max) is officially cooked. Bari Weiss killed a whole-ass network.",
+          "date": "2025-12-22T01:15:47.303000",
+          "engagement": {
+            "likes": 6700,
+            "comments": 316,
+            "shares": 2438,
+            "views": 0,
+            "total": 9454
+          },
+          "thumbnail": null
+        },
+        {
+          "id": "3majr3a4ngc2a",
+          "url": "https://bsky.app/profile/jbean04.bsky.social/post/3majr3a4ngc2a",
+          "text": "Brilliant",
+          "date": "2025-12-21T22:23:26.271000",
+          "engagement": {
+            "likes": 17,
+            "comments": 0,
+            "shares": 4,
+            "views": 0,
+            "total": 21
+          },
+          "thumbnail": null
+        },
+        {
+          "id": "3ma6yr3j3lo2r",
+          "url": "https://bsky.app/profile/jerseyvindicator.bsky.social/post/3ma6yr3j3lo2r",
+          "text": "Sen. Andy Kim renews call to close Delaney Hall as advocates decry worsening conditions, lack of proper shelter for visitors",
+          "date": "2025-12-17T15:41:37",
+          "engagement": {
+            "likes": 10,
+            "comments": 2,
+            "shares": 7,
+            "views": 0,
+            "total": 19
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 1.14,
+        "posts_per_week": 7.98,
+        "date_range_days": 22,
+        "first_post": "2025-12-15T23:25:39",
+        "last_post": "2026-01-07T01:34:54"
+      },
+      "time_series": [
+        {
+          "date": "2025-12-15",
+          "posts": 9,
+          "engagement": 90
+        },
+        {
+          "date": "2025-12-22",
+          "posts": 9,
+          "engagement": 9497
+        },
+        {
+          "date": "2025-12-29",
+          "posts": 6,
+          "engagement": 21
+        },
+        {
+          "date": "2026-01-05",
+          "posts": 1,
+          "engagement": 2
+        }
+      ],
+      "content_types": {
+        "link": {
+          "count": 20,
+          "engagement": 120,
+          "percentage": 80.0
+        },
+        "video": {
+          "count": 1,
+          "engagement": 9454,
+          "percentage": 4.0
+        },
+        "image": {
+          "count": 1,
+          "engagement": 21,
+          "percentage": 4.0
+        },
+        "text": {
+          "count": 3,
+          "engagement": 15,
+          "percentage": 12.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": "3mak2pg3pms2s",
+      "url": "https://bsky.app/profile/thetnholler.bsky.social/post/3mak2pg3pms2s",
+      "text": "CBS News(max) is officially cooked. Bari Weiss killed a whole-ass network.",
+      "date": "2025-12-22T01:15:47.303000",
+      "engagement": {
+        "likes": 6700,
+        "comments": 316,
+        "shares": 2438,
+        "views": 0,
+        "total": 9454
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3majr3a4ngc2a",
+      "url": "https://bsky.app/profile/jbean04.bsky.social/post/3majr3a4ngc2a",
+      "text": "Brilliant",
+      "date": "2025-12-21T22:23:26.271000",
+      "engagement": {
+        "likes": 17,
+        "comments": 0,
+        "shares": 4,
+        "views": 0,
+        "total": 21
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3ma6yr3j3lo2r",
+      "url": "https://bsky.app/profile/jerseyvindicator.bsky.social/post/3ma6yr3j3lo2r",
+      "text": "Sen. Andy Kim renews call to close Delaney Hall as advocates decry worsening conditions, lack of proper shelter for visitors",
+      "date": "2025-12-17T15:41:37",
+      "engagement": {
+        "likes": 10,
+        "comments": 2,
+        "shares": 7,
+        "views": 0,
+        "total": 19
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3ma6yr3j3lo2r",
+      "url": "https://bsky.app/profile/jerseyvindicator.bsky.social/post/3ma6yr3j3lo2r",
+      "text": "Sen. Andy Kim renews call to close Delaney Hall as advocates decry worsening conditions, lack of proper shelter for visitors",
+      "date": "2025-12-17T15:41:37",
+      "engagement": {
+        "likes": 10,
+        "comments": 2,
+        "shares": 7,
+        "views": 0,
+        "total": 19
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3mamp3ymnr52i",
+      "url": "https://bsky.app/profile/jerseyvindicator.bsky.social/post/3mamp3ymnr52i",
+      "text": "New Jersey co-leads multistate suit over Trump move to defund Consumer Financial Protection Bureau",
+      "date": "2025-12-23T02:26:02",
+      "engagement": {
+        "likes": 9,
+        "comments": 0,
+        "shares": 2,
+        "views": 0,
+        "total": 11
+      },
+      "thumbnail": null
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 1.14,
+    "posts_per_week": 7.98,
+    "date_range_days": 22,
+    "first_post": "2025-12-15T23:25:39",
+    "last_post": "2026-01-07T01:34:54"
+  },
+  "time_series": [
+    {
+      "date": "2025-12-15",
+      "posts": 9,
+      "engagement": 90
+    },
+    {
+      "date": "2025-12-22",
+      "posts": 9,
+      "engagement": 9497
+    },
+    {
+      "date": "2025-12-29",
+      "posts": 6,
+      "engagement": 21
+    },
+    {
+      "date": "2026-01-05",
+      "posts": 1,
+      "engagement": 2
+    }
+  ]
+}

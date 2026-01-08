@@ -1,0 +1,360 @@
+{
+  "name": "The College of New Jersey",
+  "slug": "the-college-of-new-jersey",
+  "summary": {
+    "total_posts": 26,
+    "total_engagement": 2966,
+    "total_followers": 0,
+    "platforms_active": 1,
+    "engagement_rate": 114.08,
+    "last_updated": "2026-01-07T18:27:25.598904"
+  },
+  "platform_breakdown": {
+    "tiktok": {
+      "posts": 26,
+      "posts_pct": 100.0,
+      "engagement": 2966,
+      "engagement_pct": 100.0
+    }
+  },
+  "platforms": {
+    "tiktok": {
+      "posts": 26,
+      "engagement": 2966,
+      "views": 65168,
+      "followers": 0,
+      "engagement_rate": 114.08,
+      "top_posts": [
+        {
+          "id": "7474330270196419871",
+          "url": "https://www.tiktok.com/@tcnjsignal/video/7474330270196419871",
+          "text": "Managing editors Ally and Izzy interview Cooper\u2019s Riverview, \u201cRho,\u201d s...",
+          "date": "2025-02-22T12:39:26",
+          "engagement": {
+            "likes": 497,
+            "comments": 6,
+            "shares": 378,
+            "views": 13700,
+            "total": 881
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/ogbuDfhYEEoVQfTF4AnAFBS0QhRiAaRkVEHGd4~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=uUBvgzdMGKjy8LajDkqMxTMAWFk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7490605848465607966",
+          "url": "https://www.tiktok.com/@tcnjsignal/video/7490605848465607966",
+          "text": "The College of New Jersey\u2019s President, Michael Bernstein, was joined ...",
+          "date": "2025-04-07T09:17:02",
+          "engagement": {
+            "likes": 335,
+            "comments": 2,
+            "shares": 49,
+            "views": 11000,
+            "total": 386
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oE2LeiKlQYMo3MbbyehHnQf2fo3ewGLrzCIAAg~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=obbPf2V8uxXUMgkn7lq5cRmSZng%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7479135200203607326",
+          "url": "https://www.tiktok.com/@tcnjsignal/video/7479135200203607326",
+          "text": "In this series, Managing Editors Ally Uhlendorf and Isabella Darcy vi...",
+          "date": "2025-03-07T11:25:02",
+          "engagement": {
+            "likes": 160,
+            "comments": 2,
+            "shares": 85,
+            "views": 14000,
+            "total": 247
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/okDLLKAyfAIDwLLFADRnqgB1OEEVFENJezDIL4~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=p59jSPNQZ3ZSIbvkzo0Z3JpbZqA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.06,
+        "posts_per_week": 0.42,
+        "date_range_days": 408,
+        "first_post": "2024-10-18T13:08:04",
+        "last_post": "2025-12-01T10:36:05"
+      },
+      "time_series": [
+        {
+          "date": "2024-10-14",
+          "posts": 1,
+          "engagement": 114
+        },
+        {
+          "date": "2024-11-04",
+          "posts": 1,
+          "engagement": 22
+        },
+        {
+          "date": "2024-11-11",
+          "posts": 1,
+          "engagement": 27
+        },
+        {
+          "date": "2025-02-03",
+          "posts": 1,
+          "engagement": 159
+        },
+        {
+          "date": "2025-02-17",
+          "posts": 1,
+          "engagement": 881
+        },
+        {
+          "date": "2025-02-24",
+          "posts": 1,
+          "engagement": 16
+        },
+        {
+          "date": "2025-03-03",
+          "posts": 2,
+          "engagement": 355
+        },
+        {
+          "date": "2025-04-07",
+          "posts": 1,
+          "engagement": 386
+        },
+        {
+          "date": "2025-04-14",
+          "posts": 2,
+          "engagement": 211
+        },
+        {
+          "date": "2025-04-21",
+          "posts": 2,
+          "engagement": 79
+        },
+        {
+          "date": "2025-04-28",
+          "posts": 1,
+          "engagement": 29
+        },
+        {
+          "date": "2025-08-25",
+          "posts": 2,
+          "engagement": 161
+        },
+        {
+          "date": "2025-10-06",
+          "posts": 1,
+          "engagement": 44
+        },
+        {
+          "date": "2025-10-13",
+          "posts": 1,
+          "engagement": 2
+        },
+        {
+          "date": "2025-10-27",
+          "posts": 1,
+          "engagement": 111
+        },
+        {
+          "date": "2025-11-03",
+          "posts": 3,
+          "engagement": 204
+        },
+        {
+          "date": "2025-11-10",
+          "posts": 1,
+          "engagement": 97
+        },
+        {
+          "date": "2025-11-17",
+          "posts": 1,
+          "engagement": 66
+        },
+        {
+          "date": "2025-12-01",
+          "posts": 1,
+          "engagement": 2
+        }
+      ],
+      "content_types": {
+        "video": {
+          "count": 26,
+          "engagement": 2966,
+          "percentage": 100.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": "7474330270196419871",
+      "url": "https://www.tiktok.com/@tcnjsignal/video/7474330270196419871",
+      "text": "Managing editors Ally and Izzy interview Cooper\u2019s Riverview, \u201cRho,\u201d s...",
+      "date": "2025-02-22T12:39:26",
+      "engagement": {
+        "likes": 497,
+        "comments": 6,
+        "shares": 378,
+        "views": 13700,
+        "total": 881
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/ogbuDfhYEEoVQfTF4AnAFBS0QhRiAaRkVEHGd4~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=uUBvgzdMGKjy8LajDkqMxTMAWFk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7490605848465607966",
+      "url": "https://www.tiktok.com/@tcnjsignal/video/7490605848465607966",
+      "text": "The College of New Jersey\u2019s President, Michael Bernstein, was joined ...",
+      "date": "2025-04-07T09:17:02",
+      "engagement": {
+        "likes": 335,
+        "comments": 2,
+        "shares": 49,
+        "views": 11000,
+        "total": 386
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oE2LeiKlQYMo3MbbyehHnQf2fo3ewGLrzCIAAg~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=obbPf2V8uxXUMgkn7lq5cRmSZng%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7479135200203607326",
+      "url": "https://www.tiktok.com/@tcnjsignal/video/7479135200203607326",
+      "text": "In this series, Managing Editors Ally Uhlendorf and Isabella Darcy vi...",
+      "date": "2025-03-07T11:25:02",
+      "engagement": {
+        "likes": 160,
+        "comments": 2,
+        "shares": 85,
+        "views": 14000,
+        "total": 247
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/okDLLKAyfAIDwLLFADRnqgB1OEEVFENJezDIL4~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=p59jSPNQZ3ZSIbvkzo0Z3JpbZqA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7468756288046910750",
+      "url": "https://www.tiktok.com/@tcnjsignal/video/7468756288046910750",
+      "text": "President Donald Trump has signed a slew of executive orders since hi...",
+      "date": "2025-02-07T12:09:34",
+      "engagement": {
+        "likes": 149,
+        "comments": 1,
+        "shares": 9,
+        "views": 2303,
+        "total": 159
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oQDsmnfhAeIlnFDEb34BAaV3EpIEWIQAR3CPEw~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=zd%2Fa6AMZcl8Iz8mTzb6rhy6pP%2FU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7427209914130517278",
+      "url": "https://www.tiktok.com/@tcnjsignal/video/7427209914130517278",
+      "text": "How are you lions feeling about the upcoming election? \ud83d\uddf3\ufe0f#tcnj #theco...",
+      "date": "2024-10-18T13:08:04",
+      "engagement": {
+        "likes": 106,
+        "comments": 2,
+        "shares": 6,
+        "views": 2519,
+        "total": 114
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/039daa0f828341ccae0548e317d1fcf6_1729282087~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=G43EE3uIOXaGERYRGta6yyUUbCQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0.06,
+    "posts_per_week": 0.42,
+    "date_range_days": 408,
+    "first_post": "2024-10-18T13:08:04",
+    "last_post": "2025-12-01T10:36:05"
+  },
+  "time_series": [
+    {
+      "date": "2024-10-14",
+      "posts": 1,
+      "engagement": 114
+    },
+    {
+      "date": "2024-11-04",
+      "posts": 1,
+      "engagement": 22
+    },
+    {
+      "date": "2024-11-11",
+      "posts": 1,
+      "engagement": 27
+    },
+    {
+      "date": "2025-02-03",
+      "posts": 1,
+      "engagement": 159
+    },
+    {
+      "date": "2025-02-17",
+      "posts": 1,
+      "engagement": 881
+    },
+    {
+      "date": "2025-02-24",
+      "posts": 1,
+      "engagement": 16
+    },
+    {
+      "date": "2025-03-03",
+      "posts": 2,
+      "engagement": 355
+    },
+    {
+      "date": "2025-04-07",
+      "posts": 1,
+      "engagement": 386
+    },
+    {
+      "date": "2025-04-14",
+      "posts": 2,
+      "engagement": 211
+    },
+    {
+      "date": "2025-04-21",
+      "posts": 2,
+      "engagement": 79
+    },
+    {
+      "date": "2025-04-28",
+      "posts": 1,
+      "engagement": 29
+    },
+    {
+      "date": "2025-08-25",
+      "posts": 2,
+      "engagement": 161
+    },
+    {
+      "date": "2025-10-06",
+      "posts": 1,
+      "engagement": 44
+    },
+    {
+      "date": "2025-10-13",
+      "posts": 1,
+      "engagement": 2
+    },
+    {
+      "date": "2025-10-27",
+      "posts": 1,
+      "engagement": 111
+    },
+    {
+      "date": "2025-11-03",
+      "posts": 3,
+      "engagement": 204
+    },
+    {
+      "date": "2025-11-10",
+      "posts": 1,
+      "engagement": 97
+    },
+    {
+      "date": "2025-11-17",
+      "posts": 1,
+      "engagement": 66
+    },
+    {
+      "date": "2025-12-01",
+      "posts": 1,
+      "engagement": 2
+    }
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "name": "HudPost",
+  "slug": "hudpost",
+  "summary": {
+    "total_posts": 26,
+    "total_engagement": 103604,
+    "total_followers": 0,
+    "platforms_active": 1,
+    "engagement_rate": 3984.77,
+    "last_updated": "2026-01-07T18:27:25.581888"
+  },
+  "platform_breakdown": {
+    "tiktok": {
+      "posts": 26,
+      "posts_pct": 100.0,
+      "engagement": 103604,
+      "engagement_pct": 100.0
+    }
+  },
+  "platforms": {
+    "tiktok": {
+      "posts": 26,
+      "engagement": 103604,
+      "views": 1093713,
+      "followers": 0,
+      "engagement_rate": 3984.77,
+      "top_posts": [
+        {
+          "id": "7556306262837841166",
+          "url": "https://www.tiktok.com/@hudpost/video/7556306262837841166",
+          "text": "Rapper NBA  YoungBoy was seen in Union City on Wednesday, October 1, ...",
+          "date": "2025-10-01T10:28:29",
+          "engagement": {
+            "likes": 86900,
+            "comments": 551,
+            "shares": 8412,
+            "views": 900300,
+            "total": 95863
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIRikM6wjCogsALrxHvgPXfFBuE6AzeehkyGIE~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=wYzlzv2kYN%2BeNCxRTn%2BDqPTJL%2BY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7555506528581733687",
+          "url": "https://www.tiktok.com/@hudpost/video/7555506528581733687",
+          "text": "Tonnelle Avenue remains closed in both directions from 46th Street to...",
+          "date": "2025-09-29T06:44:26",
+          "engagement": {
+            "likes": 1495,
+            "comments": 27,
+            "shares": 428,
+            "views": 79500,
+            "total": 1950
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/osMi0jBdIEXfzoGDojoCaDTB2IiVSwrfgAvFHV~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=1ylyPvikVH2zZb7rZhaKn122%2FdU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7581189031174688013",
+          "url": "https://www.tiktok.com/@hudpost/video/7581189031174688013",
+          "text": "Nueva Linea has been part of Bergenline Ave since the 1980s, offering...",
+          "date": "2025-12-07T11:45:53",
+          "engagement": {
+            "likes": 1088,
+            "comments": 26,
+            "shares": 354,
+            "views": 17200,
+            "total": 1468
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oYiIkXI1woGJNzBJAwfmiIApCWIa2DTGBum0yC~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=tAuvI0QNcT6xGqZwgcpELrwUVbo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.16,
+        "posts_per_week": 1.12,
+        "date_range_days": 160,
+        "first_post": "2025-07-28T13:16:46",
+        "last_post": "2026-01-05T06:48:06"
+      },
+      "time_series": [
+        {
+          "date": "2025-07-28",
+          "posts": 2,
+          "engagement": 221
+        },
+        {
+          "date": "2025-08-18",
+          "posts": 2,
+          "engagement": 316
+        },
+        {
+          "date": "2025-08-25",
+          "posts": 1,
+          "engagement": 101
+        },
+        {
+          "date": "2025-09-01",
+          "posts": 1,
+          "engagement": 284
+        },
+        {
+          "date": "2025-09-22",
+          "posts": 1,
+          "engagement": 428
+        },
+        {
+          "date": "2025-09-29",
+          "posts": 2,
+          "engagement": 97813
+        },
+        {
+          "date": "2025-10-13",
+          "posts": 2,
+          "engagement": 108
+        },
+        {
+          "date": "2025-10-20",
+          "posts": 1,
+          "engagement": 11
+        },
+        {
+          "date": "2025-10-27",
+          "posts": 1,
+          "engagement": 889
+        },
+        {
+          "date": "2025-11-03",
+          "posts": 2,
+          "engagement": 187
+        },
+        {
+          "date": "2025-11-24",
+          "posts": 1,
+          "engagement": 21
+        },
+        {
+          "date": "2025-12-01",
+          "posts": 4,
+          "engagement": 2903
+        },
+        {
+          "date": "2025-12-08",
+          "posts": 2,
+          "engagement": 114
+        },
+        {
+          "date": "2025-12-22",
+          "posts": 2,
+          "engagement": 144
+        },
+        {
+          "date": "2026-01-05",
+          "posts": 1,
+          "engagement": 64
+        }
+      ],
+      "content_types": {
+        "video": {
+          "count": 26,
+          "engagement": 103604,
+          "percentage": 100.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": "7556306262837841166",
+      "url": "https://www.tiktok.com/@hudpost/video/7556306262837841166",
+      "text": "Rapper NBA  YoungBoy was seen in Union City on Wednesday, October 1, ...",
+      "date": "2025-10-01T10:28:29",
+      "engagement": {
+        "likes": 86900,
+        "comments": 551,
+        "shares": 8412,
+        "views": 900300,
+        "total": 95863
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIRikM6wjCogsALrxHvgPXfFBuE6AzeehkyGIE~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=wYzlzv2kYN%2BeNCxRTn%2BDqPTJL%2BY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7555506528581733687",
+      "url": "https://www.tiktok.com/@hudpost/video/7555506528581733687",
+      "text": "Tonnelle Avenue remains closed in both directions from 46th Street to...",
+      "date": "2025-09-29T06:44:26",
+      "engagement": {
+        "likes": 1495,
+        "comments": 27,
+        "shares": 428,
+        "views": 79500,
+        "total": 1950
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/osMi0jBdIEXfzoGDojoCaDTB2IiVSwrfgAvFHV~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=1ylyPvikVH2zZb7rZhaKn122%2FdU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7581189031174688013",
+      "url": "https://www.tiktok.com/@hudpost/video/7581189031174688013",
+      "text": "Nueva Linea has been part of Bergenline Ave since the 1980s, offering...",
+      "date": "2025-12-07T11:45:53",
+      "engagement": {
+        "likes": 1088,
+        "comments": 26,
+        "shares": 354,
+        "views": 17200,
+        "total": 1468
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oYiIkXI1woGJNzBJAwfmiIApCWIa2DTGBum0yC~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=tAuvI0QNcT6xGqZwgcpELrwUVbo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7580404443385007373",
+      "url": "https://www.tiktok.com/@hudpost/video/7580404443385007373",
+      "text": "North Bergen and Winterfest go hand in hand and @willy_gonza found ou...",
+      "date": "2025-12-05T09:01:39",
+      "engagement": {
+        "likes": 1001,
+        "comments": 37,
+        "shares": 263,
+        "views": 25000,
+        "total": 1301
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/owBdAANMEFB8KEwEQpED3ef2QdRUgGQoDSmMqR~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=S7LUP%2FiPDDnfdlamKlafcbdFQMY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7566389487660469517",
+      "url": "https://www.tiktok.com/@hudpost/video/7566389487660469517",
+      "text": "A fire at 6731 Kennedy Boulevard in North Bergen led to the deaths of...",
+      "date": "2025-10-28T14:36:05",
+      "engagement": {
+        "likes": 532,
+        "comments": 13,
+        "shares": 344,
+        "views": 23800,
+        "total": 889
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ooivHi8MkQC8rfSEfNFQ4AQmBC0A7Q4cWCe3QA~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=%2FT0NVsGSKjUCSgrFy70S6t%2B3xFE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0.16,
+    "posts_per_week": 1.12,
+    "date_range_days": 160,
+    "first_post": "2025-07-28T13:16:46",
+    "last_post": "2026-01-05T06:48:06"
+  },
+  "time_series": [
+    {
+      "date": "2025-07-28",
+      "posts": 2,
+      "engagement": 221
+    },
+    {
+      "date": "2025-08-18",
+      "posts": 2,
+      "engagement": 316
+    },
+    {
+      "date": "2025-08-25",
+      "posts": 1,
+      "engagement": 101
+    },
+    {
+      "date": "2025-09-01",
+      "posts": 1,
+      "engagement": 284
+    },
+    {
+      "date": "2025-09-22",
+      "posts": 1,
+      "engagement": 428
+    },
+    {
+      "date": "2025-09-29",
+      "posts": 2,
+      "engagement": 97813
+    },
+    {
+      "date": "2025-10-13",
+      "posts": 2,
+      "engagement": 108
+    },
+    {
+      "date": "2025-10-20",
+      "posts": 1,
+      "engagement": 11
+    },
+    {
+      "date": "2025-10-27",
+      "posts": 1,
+      "engagement": 889
+    },
+    {
+      "date": "2025-11-03",
+      "posts": 2,
+      "engagement": 187
+    },
+    {
+      "date": "2025-11-24",
+      "posts": 1,
+      "engagement": 21
+    },
+    {
+      "date": "2025-12-01",
+      "posts": 4,
+      "engagement": 2903
+    },
+    {
+      "date": "2025-12-08",
+      "posts": 2,
+      "engagement": 114
+    },
+    {
+      "date": "2025-12-22",
+      "posts": 2,
+      "engagement": 144
+    },
+    {
+      "date": "2026-01-05",
+      "posts": 1,
+      "engagement": 64
+    }
+  ]
+}

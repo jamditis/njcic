@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rankings & Comparisons | NJCIC Social Media Impact Dashboard</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'njcic-teal': '#2dc8d2',
+                        'njcic-dark': '#183642',
+                        'njcic-light': '#e8f9fa'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Additional Rankings Page Styles -->
+    <style>
+        /* Table Styles */
+        .rankings-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .rankings-table th {
+            cursor: pointer;
+            user-select: none;
+            transition: background-color 0.2s;
+        }
+
+        .rankings-table th:hover {
+            background-color: #e8f9fa;
+        }
+
+        .rankings-table th.sorted-asc::after {
+            content: ' \2191';
+            color: #2dc8d2;
+        }
+
+        .rankings-table th.sorted-desc::after {
+            content: ' \2193';
+            color: #2dc8d2;
+        }
+
+        .rankings-table tbody tr {
+            cursor: pointer;
+            transition: background-color 0.15s;
+        }
+
+        .rankings-table tbody tr:hover {
+            background-color: #e8f9fa;
+        }
+
+        /* Platform Badge */
+        .platform-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin: 2px;
+        }
+
+        .platform-badge.tiktok {
+            background-color: #f0f0f0;
+            color: #000000;
+        }
+
+        .platform-badge.bluesky {
+            background-color: #e6f3ff;
+            color: #0085FF;
+        }
+
+        .platform-badge.instagram {
+            background-color: #fce4ec;
+            color: #E4405F;
+        }
+
+        .platform-badge.youtube {
+            background-color: #ffebee;
+            color: #FF0000;
+        }
+
+        .platform-badge.twitter {
+            background-color: #e3f2fd;
+            color: #1DA1F2;
+        }
+
+        .platform-badge.facebook {
+            background-color: #e3f2fd;
+            color: #1877F2;
+        }
+
+        /* Leaderboard Cards */
+        .leaderboard-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .leaderboard-item:hover {
+            background-color: #e8f9fa;
+            transform: translateX(4px);
+        }
+
+        .leaderboard-rank {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        .leaderboard-rank.gold {
+            background: linear-gradient(135deg, #ffd700, #ffec8b);
+            color: #8b6914;
+        }
+
+        .leaderboard-rank.silver {
+            background: linear-gradient(135deg, #c0c0c0, #e8e8e8);
+            color: #595959;
+        }
+
+        .leaderboard-rank.bronze {
+            background: linear-gradient(135deg, #cd7f32, #daa06d);
+            color: #5c3d1e;
+        }
+
+        .leaderboard-rank.default {
+            background-color: #f3f4f6;
+            color: #6b7280;
+        }
+
+        /* Comparison Cards */
+        .comparison-card {
+            border: 2px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s;
+        }
+
+        .comparison-card.selected {
+            border-color: #2dc8d2;
+            box-shadow: 0 0 20px rgba(45, 200, 210, 0.2);
+        }
+
+        /* Tab Styles */
+        .platform-tab {
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .platform-tab:hover {
+            background-color: #e8f9fa;
+        }
+
+        .platform-tab.active {
+            background-color: #2dc8d2;
+            color: white;
+        }
+
+        /* Stats Card */
+        .stat-card {
+            background: linear-gradient(135deg, #ffffff, #f9fafb);
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Search Input */
+        .search-input {
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 10px 16px 10px 40px;
+            width: 100%;
+            max-width: 300px;
+            transition: all 0.2s;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #2dc8d2;
+            box-shadow: 0 0 0 3px rgba(45, 200, 210, 0.1);
+        }
+
+        /* Comparison Select */
+        .comparison-select {
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 10px 16px;
+            min-width: 200px;
+            transition: all 0.2s;
+            background-color: white;
+        }
+
+        .comparison-select:focus {
+            outline: none;
+            border-color: #2dc8d2;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+    <!-- Loading State -->
+    <div id="loading-overlay" class="fixed inset-0 bg-white z-50 flex items-center justify-center">
+        <div class="text-center">
+            <div class="loading-spinner mx-auto mb-4"></div>
+            <p class="text-njcic-dark text-lg font-medium">Loading Rankings...</p>
+        </div>
+    </div>
+
+    <!-- Error State -->
+    <div id="error-state" class="hidden fixed inset-0 bg-white z-50 flex items-center justify-center">
+        <div class="text-center max-w-md px-6">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-red-100 flex items-center justify-center">
+                <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+            </div>
+            <h2 class="text-xl font-bold text-gray-900 mb-2">Unable to Load Data</h2>
+            <p id="error-message" class="text-gray-600 mb-4">There was an error loading the rankings data.</p>
+            <button onclick="location.reload()" class="px-6 py-2 bg-njcic-teal text-white rounded-lg hover:bg-opacity-90 transition-colors">
+                Try Again
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="opacity-0 transition-opacity duration-500">
+        <!-- Header -->
+        <header class="bg-njcic-dark text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                        <h1 class="text-2xl sm:text-3xl font-bold">
+                            <span class="text-njcic-teal">NJCIC</span> Rankings & Comparisons
+                        </h1>
+                        <p class="text-gray-300 mt-1">New Jersey Civic Information Consortium</p>
+                    </div>
+                    <nav class="mt-4 sm:mt-0 flex items-center space-x-4">
+                        <a href="index.html" class="text-gray-300 hover:text-njcic-teal transition-colors font-medium">
+                            Dashboard
+                        </a>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-njcic-teal bg-opacity-20 text-njcic-teal">
+                            Rankings
+                        </span>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Stats Summary Section -->
+        <section class="bg-gradient-to-br from-njcic-dark to-gray-800 text-white py-8 sm:py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-8">
+                    <h2 class="text-xl sm:text-2xl font-semibold text-gray-300">Aggregate Statistics</h2>
+                </div>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                    <!-- Average Engagement -->
+                    <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-4 sm:p-6 text-center">
+                        <div class="text-2xl sm:text-3xl font-bold text-white mb-1" id="stat-avg-engagement">--</div>
+                        <div class="text-gray-300 text-sm font-medium">Avg Engagement/Grantee</div>
+                    </div>
+                    <!-- Median Posts -->
+                    <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-4 sm:p-6 text-center">
+                        <div class="text-2xl sm:text-3xl font-bold text-white mb-1" id="stat-median-posts">--</div>
+                        <div class="text-gray-300 text-sm font-medium">Median Posts/Grantee</div>
+                    </div>
+                    <!-- Platform Adoption -->
+                    <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-4 sm:p-6 text-center">
+                        <div class="text-2xl sm:text-3xl font-bold text-white mb-1" id="stat-platform-adoption">--</div>
+                        <div class="text-gray-300 text-sm font-medium">Platforms Tracked</div>
+                    </div>
+                    <!-- Total Reach -->
+                    <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-4 sm:p-6 text-center">
+                        <div class="text-2xl sm:text-3xl font-bold text-white mb-1" id="stat-total-reach">--</div>
+                        <div class="text-gray-300 text-sm font-medium">Total Reach (Est.)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leaderboards Section -->
+        <section class="py-8 sm:py-12 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">Leaderboards</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Top 5 by Engagement -->
+                    <div class="bg-white rounded-2xl shadow-lg p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-bold text-njcic-dark">Top by Engagement</h3>
+                            <span class="text-2xl">&#128293;</span>
+                        </div>
+                        <div id="leaderboard-engagement" class="space-y-2">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Top 5 by Posts -->
+                    <div class="bg-white rounded-2xl shadow-lg p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-bold text-njcic-dark">Top by Total Posts</h3>
+                            <span class="text-2xl">&#128196;</span>
+                        </div>
+                        <div id="leaderboard-posts" class="space-y-2">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Top 5 by Engagement Rate -->
+                    <div class="bg-white rounded-2xl shadow-lg p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-bold text-njcic-dark">Top by Engagement Rate</h3>
+                            <span class="text-2xl">&#128200;</span>
+                        </div>
+                        <div id="leaderboard-rate" class="space-y-2">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Leaderboards Section -->
+        <section class="py-8 sm:py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">Platform Leaderboards</h2>
+
+                <!-- Platform Tabs -->
+                <div class="flex flex-wrap gap-2 mb-6" id="platform-tabs">
+                    <!-- Populated by JS -->
+                </div>
+
+                <!-- Platform Leaderboard Content -->
+                <div class="bg-gray-50 rounded-2xl p-6" id="platform-leaderboard-content">
+                    <div id="platform-leaderboard-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rankings Table Section -->
+        <section class="py-8 sm:py-12 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6">
+                    <h2 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-4 sm:mb-0">Full Rankings</h2>
+                    <!-- Search Box -->
+                    <div class="relative">
+                        <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                        <input type="text" id="search-input" class="search-input" placeholder="Search grantees...">
+                    </div>
+                </div>
+
+                <!-- Rankings Table -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="rankings-table" id="rankings-table">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider" data-sort="rank">
+                                        Rank
+                                    </th>
+                                    <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider" data-sort="name">
+                                        Grantee Name
+                                    </th>
+                                    <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider" data-sort="posts">
+                                        Total Posts
+                                    </th>
+                                    <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider" data-sort="engagement">
+                                        Total Engagement
+                                    </th>
+                                    <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider" data-sort="rate">
+                                        Eng. Rate
+                                    </th>
+                                    <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider" data-sort="platforms">
+                                        Platforms
+                                    </th>
+                                    <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider" data-sort="bestPlatform">
+                                        Best Platform
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="rankings-tbody" class="divide-y divide-gray-100">
+                                <!-- Populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Table Footer Info -->
+                <div class="mt-4 text-sm text-gray-500 text-center">
+                    <span id="table-info">Showing all grantees</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Tool Section -->
+        <section class="py-8 sm:py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">Compare Grantees</h2>
+
+                <!-- Grantee Selection -->
+                <div class="bg-gray-50 rounded-2xl p-6 mb-6">
+                    <p class="text-gray-600 mb-4">Select 2-3 grantees to compare their social media performance:</p>
+                    <div class="flex flex-wrap gap-4">
+                        <select id="compare-select-1" class="comparison-select">
+                            <option value="">Select Grantee 1</option>
+                        </select>
+                        <select id="compare-select-2" class="comparison-select">
+                            <option value="">Select Grantee 2</option>
+                        </select>
+                        <select id="compare-select-3" class="comparison-select">
+                            <option value="">Select Grantee 3 (optional)</option>
+                        </select>
+                        <button id="compare-btn" class="btn-primary" onclick="NJCICRankings.updateComparison()">
+                            Compare
+                        </button>
+                        <button id="clear-compare-btn" class="px-6 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors font-medium" onclick="NJCICRankings.clearComparison()">
+                            Clear
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Comparison Cards -->
+                <div id="comparison-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                    <!-- Populated by JS -->
+                    <div class="comparison-card flex items-center justify-center min-h-[300px] text-gray-400">
+                        <p>Select grantees above to compare</p>
+                    </div>
+                </div>
+
+                <!-- Comparison Chart -->
+                <div id="comparison-chart-container" class="bg-gray-50 rounded-2xl p-6 hidden">
+                    <h3 class="text-lg font-bold text-njcic-dark mb-4">Comparison Chart</h3>
+                    <div class="relative h-80">
+                        <canvas id="comparison-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-njcic-dark text-white py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                    <div class="text-center sm:text-left mb-4 sm:mb-0">
+                        <p class="text-gray-400 text-sm">
+                            <span class="text-njcic-teal font-semibold">NJCIC</span> - New Jersey Civic Information Consortium
+                        </p>
+                        <p class="text-gray-500 text-xs mt-1">
+                            Supporting local journalism and civic information across New Jersey
+                        </p>
+                    </div>
+                    <div class="text-center sm:text-right">
+                        <p class="text-gray-400 text-sm">
+                            Last Updated: <span id="last-updated" class="text-njcic-teal font-medium">--</span>
+                        </p>
+                        <p class="text-gray-500 text-xs mt-1">
+                            Data refreshes automatically
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-6 pt-6 border-t border-gray-700 text-center">
+                    <p class="text-gray-500 text-xs">
+                        Dashboard powered by the Center for Cooperative Media at Montclair State University
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/charts.js"></script>
+    <script src="js/rankings.js"></script>
+</body>
+</html>

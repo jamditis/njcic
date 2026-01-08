@@ -1,0 +1,179 @@
+{
+  "platforms": {
+    "tiktok": {
+      "color": "#000000",
+      "grantees": 9,
+      "total_posts": 196,
+      "total_engagement": 119632,
+      "total_followers": 0,
+      "avg_engagement_per_post": 610.37,
+      "avg_posts_per_grantee": 21.8,
+      "content_types": {
+        "video": {
+          "count": 196,
+          "engagement": 119632,
+          "percentage": 100.0
+        }
+      },
+      "top_grantees": [
+        {
+          "name": "HudPost",
+          "slug": "hudpost",
+          "posts": 26,
+          "engagement": 103604
+        },
+        {
+          "name": "NJ Spotlight News",
+          "slug": "nj-spotlight-news",
+          "posts": 26,
+          "engagement": 8504
+        },
+        {
+          "name": "The College of New Jersey",
+          "slug": "the-college-of-new-jersey",
+          "posts": 26,
+          "engagement": 2966
+        },
+        {
+          "name": "Slice of Culture   Saint Peter s University",
+          "slug": "slice-of-culture-saint-peter-s-university",
+          "posts": 26,
+          "engagement": 1791
+        },
+        {
+          "name": "Daily Targum",
+          "slug": "daily-targum",
+          "posts": 26,
+          "engagement": 1609
+        },
+        {
+          "name": "South Jersey Climate News Project",
+          "slug": "south-jersey-climate-news-project",
+          "posts": 13,
+          "engagement": 840
+        },
+        {
+          "name": "Clinton Hill Community Action",
+          "slug": "clinton-hill-community-action",
+          "posts": 26,
+          "engagement": 301
+        },
+        {
+          "name": "Camden Parent   Student Union",
+          "slug": "camden-parent-student-union",
+          "posts": 26,
+          "engagement": 17
+        },
+        {
+          "name": "Mental Health Association of New Jersey",
+          "slug": "mental-health-association-of-new-jersey",
+          "posts": 1,
+          "engagement": 0
+        }
+      ]
+    },
+    "bluesky": {
+      "color": "#0085FF",
+      "grantees": 7,
+      "total_posts": 175,
+      "total_engagement": 10620,
+      "total_followers": 48943,
+      "avg_engagement_per_post": 60.69,
+      "avg_posts_per_grantee": 25.0,
+      "content_types": {
+        "link": {
+          "count": 131,
+          "engagement": 1027,
+          "percentage": 74.9
+        },
+        "text": {
+          "count": 8,
+          "engagement": 17,
+          "percentage": 4.6
+        },
+        "image": {
+          "count": 31,
+          "engagement": 101,
+          "percentage": 17.7
+        },
+        "quote": {
+          "count": 4,
+          "engagement": 21,
+          "percentage": 2.3
+        },
+        "video": {
+          "count": 1,
+          "engagement": 9454,
+          "percentage": 0.6
+        }
+      },
+      "top_grantees": [
+        {
+          "name": "The Jersey Vindicator",
+          "slug": "the-jersey-vindicator",
+          "posts": 25,
+          "engagement": 9610
+        },
+        {
+          "name": "Inside Climate News",
+          "slug": "inside-climate-news",
+          "posts": 25,
+          "engagement": 675
+        },
+        {
+          "name": "NJ Spotlight News",
+          "slug": "nj-spotlight-news",
+          "posts": 25,
+          "engagement": 119
+        },
+        {
+          "name": "Chalkbeat Newark  Civic News Company ",
+          "slug": "chalkbeat-newark-civic-news-company",
+          "posts": 25,
+          "engagement": 113
+        },
+        {
+          "name": "Public Square Amplified",
+          "slug": "public-square-amplified",
+          "posts": 25,
+          "engagement": 58
+        },
+        {
+          "name": "Montclair Local Nonprofit News",
+          "slug": "montclair-local-nonprofit-news",
+          "posts": 25,
+          "engagement": 38
+        },
+        {
+          "name": "South Jersey Climate News Project",
+          "slug": "south-jersey-climate-news-project",
+          "posts": 25,
+          "engagement": 7
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "by_engagement": [
+      {
+        "platform": "tiktok",
+        "engagement": 119632
+      },
+      {
+        "platform": "bluesky",
+        "engagement": 10620
+      }
+    ],
+    "by_posts": [
+      {
+        "platform": "tiktok",
+        "posts": 196
+      },
+      {
+        "platform": "bluesky",
+        "posts": 175
+      }
+    ]
+  },
+  "generated_at": "2026-01-07T18:27:25.603301"
+}

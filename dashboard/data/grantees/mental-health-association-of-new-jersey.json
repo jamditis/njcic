@@ -1,0 +1,54 @@
+{
+  "name": "Mental Health Association of New Jersey",
+  "slug": "mental-health-association-of-new-jersey",
+  "summary": {
+    "total_posts": 1,
+    "total_engagement": 0,
+    "total_followers": 0,
+    "platforms_active": 1,
+    "engagement_rate": 0.0,
+    "last_updated": "2026-01-07T18:27:25.585933"
+  },
+  "platform_breakdown": {
+    "tiktok": {
+      "posts": 1,
+      "posts_pct": 100.0,
+      "engagement": 0,
+      "engagement_pct": 0
+    }
+  },
+  "platforms": {
+    "tiktok": {
+      "posts": 1,
+      "engagement": 0,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 0.0,
+      "top_posts": [],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {
+        "video": {
+          "count": 1,
+          "engagement": 0,
+          "percentage": 100.0
+        }
+      }
+    }
+  },
+  "top_posts": [],
+  "overall_frequency": {
+    "posts_per_day": 0,
+    "posts_per_week": 0,
+    "date_range_days": 0,
+    "first_post": null,
+    "last_post": null
+  },
+  "time_series": []
+}

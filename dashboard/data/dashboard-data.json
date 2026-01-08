@@ -3,104 +3,146 @@
     "totalGrantees": 14,
     "totalPosts": 371,
     "totalEngagement": 130252,
+    "totalFollowers": 48943,
     "platformsTracked": 2,
-    "lastUpdated": "2026-01-07T18:18:16.057920",
+    "avgEngagementRate": 351.08,
+    "lastUpdated": "2026-01-07T18:27:25.603550",
     "scrapingDuration": "aggregated"
   },
   "platforms": {
     "tiktok": {
       "posts": 196,
       "engagement": 119632,
-      "grantees": 9
+      "followers": 0,
+      "grantees": 9,
+      "avgEngagement": 610.37
     },
     "bluesky": {
       "posts": 175,
       "engagement": 10620,
-      "grantees": 7
+      "followers": 48943,
+      "grantees": 7,
+      "avgEngagement": 60.69
     }
   },
   "topGrantees": [
     {
       "name": "HudPost",
+      "slug": "hudpost",
       "posts": 26,
       "engagement": 103604,
+      "followers": 0,
+      "engagementRate": 3984.77,
       "topPlatform": "tiktok",
       "platformsScraped": 1
     },
     {
       "name": "The Jersey Vindicator",
+      "slug": "the-jersey-vindicator",
       "posts": 25,
       "engagement": 9610,
+      "followers": 6443,
+      "engagementRate": 384.4,
       "topPlatform": "bluesky",
       "platformsScraped": 1
     },
     {
       "name": "NJ Spotlight News",
+      "slug": "nj-spotlight-news",
       "posts": 51,
       "engagement": 8623,
+      "followers": 3301,
+      "engagementRate": 169.08,
       "topPlatform": "tiktok",
       "platformsScraped": 2
     },
     {
       "name": "The College of New Jersey",
+      "slug": "the-college-of-new-jersey",
       "posts": 26,
       "engagement": 2966,
+      "followers": 0,
+      "engagementRate": 114.08,
       "topPlatform": "tiktok",
       "platformsScraped": 1
     },
     {
       "name": "Slice of Culture   Saint Peter s University",
+      "slug": "slice-of-culture-saint-peter-s-university",
       "posts": 26,
       "engagement": 1791,
+      "followers": 0,
+      "engagementRate": 68.88,
       "topPlatform": "tiktok",
       "platformsScraped": 1
     },
     {
       "name": "Daily Targum",
+      "slug": "daily-targum",
       "posts": 26,
       "engagement": 1609,
+      "followers": 0,
+      "engagementRate": 61.88,
       "topPlatform": "tiktok",
       "platformsScraped": 1
     },
     {
       "name": "South Jersey Climate News Project",
+      "slug": "south-jersey-climate-news-project",
       "posts": 38,
       "engagement": 847,
+      "followers": 43,
+      "engagementRate": 22.29,
       "topPlatform": "tiktok",
       "platformsScraped": 2
     },
     {
       "name": "Inside Climate News",
+      "slug": "inside-climate-news",
       "posts": 25,
       "engagement": 675,
+      "followers": 25576,
+      "engagementRate": 27.0,
       "topPlatform": "bluesky",
       "platformsScraped": 1
     },
     {
       "name": "Clinton Hill Community Action",
+      "slug": "clinton-hill-community-action",
       "posts": 26,
       "engagement": 301,
+      "followers": 0,
+      "engagementRate": 11.58,
       "topPlatform": "tiktok",
       "platformsScraped": 1
     },
     {
       "name": "Chalkbeat Newark  Civic News Company ",
+      "slug": "chalkbeat-newark-civic-news-company",
       "posts": 25,
       "engagement": 113,
+      "followers": 11029,
+      "engagementRate": 4.52,
       "topPlatform": "bluesky",
       "platformsScraped": 1
     },
     {
       "name": "Public Square Amplified",
+      "slug": "public-square-amplified",
       "posts": 25,
       "engagement": 58,
+      "followers": 82,
+      "engagementRate": 2.32,
       "topPlatform": "bluesky",
       "platformsScraped": 1
     },
     {
       "name": "Montclair Local Nonprofit News",
+      "slug": "montclair-local-nonprofit-news",
       "posts": 25,
       "engagement": 38,
+      "followers": 2469,
+      "engagementRate": 1.52,
       "topPlatform": "bluesky",
       "platformsScraped": 1
     }
@@ -120,7 +162,7 @@
     }
   ],
   "metadata": {
-    "generatedAt": "2026-01-07T18:18:16.057940",
+    "generatedAt": "2026-01-07T18:27:25.603568",
     "platformColors": {
       "twitter": "#1DA1F2",
       "youtube": "#FF0000",
@@ -130,6 +172,7 @@
       "tiktok": "#000000",
       "bluesky": "#0085FF",
       "threads": "#000000"
-    }
+    },
+    "version": "2.0.0"
   }
 }

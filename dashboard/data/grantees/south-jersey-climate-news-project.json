@@ -1,0 +1,493 @@
+{
+  "name": "South Jersey Climate News Project",
+  "slug": "south-jersey-climate-news-project",
+  "summary": {
+    "total_posts": 38,
+    "total_engagement": 847,
+    "total_followers": 43,
+    "platforms_active": 2,
+    "engagement_rate": 22.29,
+    "last_updated": "2026-01-07T18:27:25.596686"
+  },
+  "platform_breakdown": {
+    "bluesky": {
+      "posts": 25,
+      "posts_pct": 65.8,
+      "engagement": 7,
+      "engagement_pct": 0.8
+    },
+    "tiktok": {
+      "posts": 13,
+      "posts_pct": 34.2,
+      "engagement": 840,
+      "engagement_pct": 99.2
+    }
+  },
+  "platforms": {
+    "bluesky": {
+      "posts": 25,
+      "engagement": 7,
+      "views": 0,
+      "followers": 43,
+      "engagement_rate": 0.28,
+      "top_posts": [
+        {
+          "id": "3lxcsphpjy22y",
+          "url": "https://bsky.app/profile/sjclimatenews.bsky.social/post/3lxcsphpjy22y",
+          "text": "Environmental justice advocates outline urgent need for climate action in Camden\n\nClick the link to learn more!\n\n@podcaststeve.bsky.social \n\nsjclimate.news/6307/showcas...",
+          "date": "2025-08-26T15:17:16.247000",
+          "engagement": {
+            "likes": 1,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 1
+          },
+          "thumbnail": null
+        },
+        {
+          "id": "3lwahhdthck2t",
+          "url": "https://bsky.app/profile/sjclimatenews.bsky.social/post/3lwahhdthck2t",
+          "text": "Important announcement!\n\nWe are going on a two-week hiatus. We will be back to publishing during the week of August 25.\n\nFor now, check out sjclimate.news to read tons of climate related stories.",
+          "date": "2025-08-12T23:25:21.476000",
+          "engagement": {
+            "likes": 1,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 1
+          },
+          "thumbnail": null
+        },
+        {
+          "id": "3lv5ac2emos2n",
+          "url": "https://bsky.app/profile/sjclimatenews.bsky.social/post/3lv5ac2emos2n",
+          "text": "\"The Center for Environmental Transformation, located in downtown Camden, New Jersey, was founded in 2007 with the mission to empower the community of Camden through positive environmental duties.\"\n\nT",
+          "date": "2025-07-29T23:13:56.751000",
+          "engagement": {
+            "likes": 0,
+            "comments": 0,
+            "shares": 1,
+            "views": 0,
+            "total": 1
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.21,
+        "posts_per_week": 1.47,
+        "date_range_days": 119,
+        "first_post": "2025-05-20T14:10:55.288000",
+        "last_post": "2025-09-16T16:06:06.736000"
+      },
+      "time_series": [
+        {
+          "date": "2025-05-19",
+          "posts": 1,
+          "engagement": 0
+        },
+        {
+          "date": "2025-05-26",
+          "posts": 2,
+          "engagement": 0
+        },
+        {
+          "date": "2025-06-02",
+          "posts": 2,
+          "engagement": 0
+        },
+        {
+          "date": "2025-06-09",
+          "posts": 2,
+          "engagement": 1
+        },
+        {
+          "date": "2025-06-16",
+          "posts": 2,
+          "engagement": 0
+        },
+        {
+          "date": "2025-06-23",
+          "posts": 2,
+          "engagement": 0
+        },
+        {
+          "date": "2025-06-30",
+          "posts": 2,
+          "engagement": 1
+        },
+        {
+          "date": "2025-07-07",
+          "posts": 2,
+          "engagement": 2
+        },
+        {
+          "date": "2025-07-14",
+          "posts": 2,
+          "engagement": 0
+        },
+        {
+          "date": "2025-07-28",
+          "posts": 2,
+          "engagement": 1
+        },
+        {
+          "date": "2025-08-04",
+          "posts": 1,
+          "engagement": 0
+        },
+        {
+          "date": "2025-08-11",
+          "posts": 1,
+          "engagement": 1
+        },
+        {
+          "date": "2025-08-25",
+          "posts": 2,
+          "engagement": 1
+        },
+        {
+          "date": "2025-09-08",
+          "posts": 1,
+          "engagement": 0
+        },
+        {
+          "date": "2025-09-15",
+          "posts": 1,
+          "engagement": 0
+        }
+      ],
+      "content_types": {
+        "link": {
+          "count": 22,
+          "engagement": 6,
+          "percentage": 88.0
+        },
+        "image": {
+          "count": 3,
+          "engagement": 1,
+          "percentage": 12.0
+        }
+      }
+    },
+    "tiktok": {
+      "posts": 13,
+      "engagement": 840,
+      "views": 10692,
+      "followers": 0,
+      "engagement_rate": 64.62,
+      "top_posts": [
+        {
+          "id": "7363790209756007723",
+          "url": "https://www.tiktok.com/@sjclimatenews/video/7363790209756007723",
+          "text": "#climatechange #southjersey #southjerseyclimatenews #journalism #clim...",
+          "date": "2024-04-30T15:27:05",
+          "engagement": {
+            "likes": 309,
+            "comments": 3,
+            "shares": 4,
+            "views": 2324,
+            "total": 316
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/f5e656558e644f0a91480718f0c8355e_1714516027~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=iYbej1fm21BaABJwkGknebx%2Fmeo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7354545334850227499",
+          "url": "https://www.tiktok.com/@sjclimatenews/video/7354545334850227499",
+          "text": "A little vlog from today\u2019s Society of Environmental Journalists confe...",
+          "date": "2024-04-05T17:32:24",
+          "engagement": {
+            "likes": 189,
+            "comments": 0,
+            "shares": 1,
+            "views": 1979,
+            "total": 190
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/c3ddb3b8eb214c7ab8a0deb43f7d63cc_1712363547~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=OxKb4nsssjrqS3n8WmtYhqTNQ0A%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7333313280200477982",
+          "url": "https://www.tiktok.com/@sjclimatenews/video/7333313280200477982",
+          "text": "The faces begind the screen! #southjersey #climatenews #climate #rowa...",
+          "date": "2024-02-08T12:22:03",
+          "engagement": {
+            "likes": 110,
+            "comments": 1,
+            "shares": 0,
+            "views": 2143,
+            "total": 111
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/7c29268418734f31b3157b700cb350c7_1707420126~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=gXsXw%2FU3cNDJNwSlLEc2shv1VD8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.02,
+        "posts_per_week": 0.14,
+        "date_range_days": 650,
+        "first_post": "2024-02-08T12:22:03",
+        "last_post": "2025-11-19T19:06:57"
+      },
+      "time_series": [
+        {
+          "date": "2024-02-05",
+          "posts": 2,
+          "engagement": 120
+        },
+        {
+          "date": "2024-04-01",
+          "posts": 1,
+          "engagement": 190
+        },
+        {
+          "date": "2024-04-29",
+          "posts": 1,
+          "engagement": 316
+        },
+        {
+          "date": "2025-02-10",
+          "posts": 1,
+          "engagement": 105
+        },
+        {
+          "date": "2025-03-24",
+          "posts": 1,
+          "engagement": 6
+        },
+        {
+          "date": "2025-03-31",
+          "posts": 1,
+          "engagement": 0
+        },
+        {
+          "date": "2025-04-14",
+          "posts": 1,
+          "engagement": 2
+        },
+        {
+          "date": "2025-06-09",
+          "posts": 1,
+          "engagement": 2
+        },
+        {
+          "date": "2025-06-30",
+          "posts": 1,
+          "engagement": 91
+        },
+        {
+          "date": "2025-09-08",
+          "posts": 1,
+          "engagement": 2
+        },
+        {
+          "date": "2025-11-17",
+          "posts": 1,
+          "engagement": 6
+        }
+      ],
+      "content_types": {
+        "video": {
+          "count": 13,
+          "engagement": 840,
+          "percentage": 100.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": "7363790209756007723",
+      "url": "https://www.tiktok.com/@sjclimatenews/video/7363790209756007723",
+      "text": "#climatechange #southjersey #southjerseyclimatenews #journalism #clim...",
+      "date": "2024-04-30T15:27:05",
+      "engagement": {
+        "likes": 309,
+        "comments": 3,
+        "shares": 4,
+        "views": 2324,
+        "total": 316
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/f5e656558e644f0a91480718f0c8355e_1714516027~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=iYbej1fm21BaABJwkGknebx%2Fmeo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7354545334850227499",
+      "url": "https://www.tiktok.com/@sjclimatenews/video/7354545334850227499",
+      "text": "A little vlog from today\u2019s Society of Environmental Journalists confe...",
+      "date": "2024-04-05T17:32:24",
+      "engagement": {
+        "likes": 189,
+        "comments": 0,
+        "shares": 1,
+        "views": 1979,
+        "total": 190
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/c3ddb3b8eb214c7ab8a0deb43f7d63cc_1712363547~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=OxKb4nsssjrqS3n8WmtYhqTNQ0A%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7333313280200477982",
+      "url": "https://www.tiktok.com/@sjclimatenews/video/7333313280200477982",
+      "text": "The faces begind the screen! #southjersey #climatenews #climate #rowa...",
+      "date": "2024-02-08T12:22:03",
+      "engagement": {
+        "likes": 110,
+        "comments": 1,
+        "shares": 0,
+        "views": 2143,
+        "total": 111
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/7c29268418734f31b3157b700cb350c7_1707420126~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=gXsXw%2FU3cNDJNwSlLEc2shv1VD8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7471366315001810219",
+      "url": "https://www.tiktok.com/@sjclimatenews/video/7471366315001810219",
+      "text": "TikTok video #7471366315001810219",
+      "date": "2025-02-14T12:57:51",
+      "engagement": {
+        "likes": 96,
+        "comments": 4,
+        "shares": 5,
+        "views": 1964,
+        "total": 105
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-i-photomode-tx/f461a8ac554f4f8eb514288b61b19343~tplv-photomode-image.jpeg?dr=9616&x-expires=1768006800&x-signature=GIAN0Of11aVLZdskdqbhNHoFkns%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast5&ftpl=1"
+    },
+    {
+      "id": "7522138144515362103",
+      "url": "https://www.tiktok.com/@sjclimatenews/video/7522138144515362103",
+      "text": "As \u201cJurassic World: Rebirth\u201d hits theaters, check out South Jersey\u2019s ...",
+      "date": "2025-07-01T08:38:28",
+      "engagement": {
+        "likes": 90,
+        "comments": 0,
+        "shares": 1,
+        "views": 1054,
+        "total": 91
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ocIikPBE4QaIxyz0UgtiCihP7ZBaoGA7BpARA~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=u1jX9YDrRBFkDUIC8gvlrPZmGLw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0.06,
+    "posts_per_week": 0.42,
+    "date_range_days": 650,
+    "first_post": "2024-02-08T12:22:03",
+    "last_post": "2025-11-19T19:06:57"
+  },
+  "time_series": [
+    {
+      "date": "2024-02-05",
+      "posts": 2,
+      "engagement": 120
+    },
+    {
+      "date": "2024-04-01",
+      "posts": 1,
+      "engagement": 190
+    },
+    {
+      "date": "2024-04-29",
+      "posts": 1,
+      "engagement": 316
+    },
+    {
+      "date": "2025-02-10",
+      "posts": 1,
+      "engagement": 105
+    },
+    {
+      "date": "2025-03-24",
+      "posts": 1,
+      "engagement": 6
+    },
+    {
+      "date": "2025-03-31",
+      "posts": 1,
+      "engagement": 0
+    },
+    {
+      "date": "2025-04-14",
+      "posts": 1,
+      "engagement": 2
+    },
+    {
+      "date": "2025-05-19",
+      "posts": 1,
+      "engagement": 0
+    },
+    {
+      "date": "2025-05-26",
+      "posts": 2,
+      "engagement": 0
+    },
+    {
+      "date": "2025-06-02",
+      "posts": 2,
+      "engagement": 0
+    },
+    {
+      "date": "2025-06-09",
+      "posts": 3,
+      "engagement": 3
+    },
+    {
+      "date": "2025-06-16",
+      "posts": 2,
+      "engagement": 0
+    },
+    {
+      "date": "2025-06-23",
+      "posts": 2,
+      "engagement": 0
+    },
+    {
+      "date": "2025-06-30",
+      "posts": 3,
+      "engagement": 92
+    },
+    {
+      "date": "2025-07-07",
+      "posts": 2,
+      "engagement": 2
+    },
+    {
+      "date": "2025-07-14",
+      "posts": 2,
+      "engagement": 0
+    },
+    {
+      "date": "2025-07-28",
+      "posts": 2,
+      "engagement": 1
+    },
+    {
+      "date": "2025-08-04",
+      "posts": 1,
+      "engagement": 0
+    },
+    {
+      "date": "2025-08-11",
+      "posts": 1,
+      "engagement": 1
+    },
+    {
+      "date": "2025-08-25",
+      "posts": 2,
+      "engagement": 1
+    },
+    {
+      "date": "2025-09-08",
+      "posts": 2,
+      "engagement": 2
+    },
+    {
+      "date": "2025-09-15",
+      "posts": 1,
+      "engagement": 0
+    },
+    {
+      "date": "2025-11-17",
+      "posts": 1,
+      "engagement": 6
+    }
+  ]
+}

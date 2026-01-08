@@ -1,0 +1,330 @@
+{
+  "name": "Camden Parent   Student Union",
+  "slug": "camden-parent-student-union",
+  "summary": {
+    "total_posts": 26,
+    "total_engagement": 17,
+    "total_followers": 0,
+    "platforms_active": 1,
+    "engagement_rate": 0.65,
+    "last_updated": "2026-01-07T18:27:25.573846"
+  },
+  "platform_breakdown": {
+    "tiktok": {
+      "posts": 26,
+      "posts_pct": 100.0,
+      "engagement": 17,
+      "engagement_pct": 100.0
+    }
+  },
+  "platforms": {
+    "tiktok": {
+      "posts": 26,
+      "engagement": 17,
+      "views": 2606,
+      "followers": 0,
+      "engagement_rate": 0.65,
+      "top_posts": [
+        {
+          "id": "7460211313306914055",
+          "url": "https://www.tiktok.com/@camdenpsu/video/7460211313306914055",
+          "text": "The Dangers of Not Drinking Water! -Ronnie D Did you know that not dr...",
+          "date": "2025-01-15T11:30:09",
+          "engagement": {
+            "likes": 5,
+            "comments": 0,
+            "shares": 0,
+            "views": 259,
+            "total": 5
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oMKeSF0XWAQpBsrRAQFiHfgDffdyirfEMSKcPQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1768003200&x-signature=DVYRXrszsrHKjNdWY8l%2FbGMe4Rk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7468810695950306578",
+          "url": "https://www.tiktok.com/@camdenpsu/video/7468810695950306578",
+          "text": "The Importance of Family Visits During the Holidays#camdencountynj #c...",
+          "date": "2025-02-07T15:40:19",
+          "engagement": {
+            "likes": 2,
+            "comments": 0,
+            "shares": 0,
+            "views": 195,
+            "total": 2
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okrmriAT8AgUgceyCMrPC9CAiQDoWEievRfg3m~tplv-tiktokx-origin.image?dr=9636&x-expires=1768003200&x-signature=WAL5HhWCxuCEL08EMTAUQiDeCRQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7536343053146049793",
+          "url": "https://www.tiktok.com/@camdenpsu/video/7536343053146049793",
+          "text": "Dance Teacher Racist Incedent #ronniedAndWeswill #cpsu #camden",
+          "date": "2025-08-08T15:20:14",
+          "engagement": {
+            "likes": 1,
+            "comments": 0,
+            "shares": 0,
+            "views": 122,
+            "total": 1
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUeTmeC0disrQAIIeWCLJJNGFxXmWQWsfpwACG~tplv-tiktokx-origin.image?dr=9636&x-expires=1768003200&x-signature=%2Frl4luRuz8kTzaImh5NKjwcDOag%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.11,
+        "posts_per_week": 0.77,
+        "date_range_days": 238,
+        "first_post": "2025-01-10T12:33:46",
+        "last_post": "2025-09-06T02:10:00"
+      },
+      "time_series": [
+        {
+          "date": "2025-01-06",
+          "posts": 1,
+          "engagement": 0
+        },
+        {
+          "date": "2025-01-13",
+          "posts": 2,
+          "engagement": 5
+        },
+        {
+          "date": "2025-01-20",
+          "posts": 1,
+          "engagement": 1
+        },
+        {
+          "date": "2025-01-27",
+          "posts": 1,
+          "engagement": 1
+        },
+        {
+          "date": "2025-02-03",
+          "posts": 1,
+          "engagement": 2
+        },
+        {
+          "date": "2025-03-17",
+          "posts": 1,
+          "engagement": 0
+        },
+        {
+          "date": "2025-03-24",
+          "posts": 1,
+          "engagement": 0
+        },
+        {
+          "date": "2025-05-12",
+          "posts": 1,
+          "engagement": 0
+        },
+        {
+          "date": "2025-05-19",
+          "posts": 2,
+          "engagement": 2
+        },
+        {
+          "date": "2025-05-26",
+          "posts": 1,
+          "engagement": 0
+        },
+        {
+          "date": "2025-06-02",
+          "posts": 2,
+          "engagement": 0
+        },
+        {
+          "date": "2025-06-09",
+          "posts": 4,
+          "engagement": 1
+        },
+        {
+          "date": "2025-07-21",
+          "posts": 1,
+          "engagement": 1
+        },
+        {
+          "date": "2025-07-28",
+          "posts": 2,
+          "engagement": 1
+        },
+        {
+          "date": "2025-08-04",
+          "posts": 2,
+          "engagement": 2
+        },
+        {
+          "date": "2025-09-01",
+          "posts": 2,
+          "engagement": 1
+        }
+      ],
+      "content_types": {
+        "video": {
+          "count": 26,
+          "engagement": 17,
+          "percentage": 100.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": "7460211313306914055",
+      "url": "https://www.tiktok.com/@camdenpsu/video/7460211313306914055",
+      "text": "The Dangers of Not Drinking Water! -Ronnie D Did you know that not dr...",
+      "date": "2025-01-15T11:30:09",
+      "engagement": {
+        "likes": 5,
+        "comments": 0,
+        "shares": 0,
+        "views": 259,
+        "total": 5
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oMKeSF0XWAQpBsrRAQFiHfgDffdyirfEMSKcPQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1768003200&x-signature=DVYRXrszsrHKjNdWY8l%2FbGMe4Rk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7468810695950306578",
+      "url": "https://www.tiktok.com/@camdenpsu/video/7468810695950306578",
+      "text": "The Importance of Family Visits During the Holidays#camdencountynj #c...",
+      "date": "2025-02-07T15:40:19",
+      "engagement": {
+        "likes": 2,
+        "comments": 0,
+        "shares": 0,
+        "views": 195,
+        "total": 2
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okrmriAT8AgUgceyCMrPC9CAiQDoWEievRfg3m~tplv-tiktokx-origin.image?dr=9636&x-expires=1768003200&x-signature=WAL5HhWCxuCEL08EMTAUQiDeCRQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7536343053146049793",
+      "url": "https://www.tiktok.com/@camdenpsu/video/7536343053146049793",
+      "text": "Dance Teacher Racist Incedent #ronniedAndWeswill #cpsu #camden",
+      "date": "2025-08-08T15:20:14",
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "views": 122,
+        "total": 1
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUeTmeC0disrQAIIeWCLJJNGFxXmWQWsfpwACG~tplv-tiktokx-origin.image?dr=9636&x-expires=1768003200&x-signature=%2Frl4luRuz8kTzaImh5NKjwcDOag%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7514073022983097607",
+      "url": "https://www.tiktok.com/@camdenpsu/video/7514073022983097607",
+      "text": "Leadership Salaries Exposed Part 1: Stop Calling It Transparent If We...",
+      "date": "2025-06-09T15:01:08",
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "views": 115,
+        "total": 1
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oMfoDDVVCBDRVH4EZWFl6QeaBGxMQgB61QBUYA~tplv-tiktokx-origin.image?dr=9636&x-expires=1768003200&x-signature=Kv4sGq8Z00V5akTdwuDFtmLtG5Y%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7534843704587111687",
+      "url": "https://www.tiktok.com/@camdenpsu/video/7534843704587111687",
+      "text": "Children Financial Crisis #RDWW #camdenpsu #finances",
+      "date": "2025-08-04T14:21:57",
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "views": 110,
+        "total": 1
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o4cOMXeGgQfbtNES6J7GeiEKRKHAqIeNLBFfQA~tplv-tiktokx-origin.image?dr=9636&x-expires=1768003200&x-signature=WtLJPmMMjFxozOxyLpRp4E89ciQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0.11,
+    "posts_per_week": 0.77,
+    "date_range_days": 238,
+    "first_post": "2025-01-10T12:33:46",
+    "last_post": "2025-09-06T02:10:00"
+  },
+  "time_series": [
+    {
+      "date": "2025-01-06",
+      "posts": 1,
+      "engagement": 0
+    },
+    {
+      "date": "2025-01-13",
+      "posts": 2,
+      "engagement": 5
+    },
+    {
+      "date": "2025-01-20",
+      "posts": 1,
+      "engagement": 1
+    },
+    {
+      "date": "2025-01-27",
+      "posts": 1,
+      "engagement": 1
+    },
+    {
+      "date": "2025-02-03",
+      "posts": 1,
+      "engagement": 2
+    },
+    {
+      "date": "2025-03-17",
+      "posts": 1,
+      "engagement": 0
+    },
+    {
+      "date": "2025-03-24",
+      "posts": 1,
+      "engagement": 0
+    },
+    {
+      "date": "2025-05-12",
+      "posts": 1,
+      "engagement": 0
+    },
+    {
+      "date": "2025-05-19",
+      "posts": 2,
+      "engagement": 2
+    },
+    {
+      "date": "2025-05-26",
+      "posts": 1,
+      "engagement": 0
+    },
+    {
+      "date": "2025-06-02",
+      "posts": 2,
+      "engagement": 0
+    },
+    {
+      "date": "2025-06-09",
+      "posts": 4,
+      "engagement": 1
+    },
+    {
+      "date": "2025-07-21",
+      "posts": 1,
+      "engagement": 1
+    },
+    {
+      "date": "2025-07-28",
+      "posts": 2,
+      "engagement": 1
+    },
+    {
+      "date": "2025-08-04",
+      "posts": 2,
+      "engagement": 2
+    },
+    {
+      "date": "2025-09-01",
+      "posts": 2,
+      "engagement": 1
+    }
+  ]
+}

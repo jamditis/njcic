@@ -1,0 +1,200 @@
+{
+  "name": "Chalkbeat Newark  Civic News Company ",
+  "slug": "chalkbeat-newark-civic-news-company",
+  "summary": {
+    "total_posts": 25,
+    "total_engagement": 113,
+    "total_followers": 11029,
+    "platforms_active": 1,
+    "engagement_rate": 4.52,
+    "last_updated": "2026-01-07T18:27:25.575899"
+  },
+  "platform_breakdown": {
+    "bluesky": {
+      "posts": 25,
+      "posts_pct": 100.0,
+      "engagement": 113,
+      "engagement_pct": 100.0
+    }
+  },
+  "platforms": {
+    "bluesky": {
+      "posts": 25,
+      "engagement": 113,
+      "views": 0,
+      "followers": 11029,
+      "engagement_rate": 4.52,
+      "top_posts": [
+        {
+          "id": "3mbp46jryzz2m",
+          "url": "https://bsky.app/profile/chalkbeat.org/post/3mbp46jryzz2m",
+          "text": "Tennessee\u2019s Education Savings Account program was promoted as an option to help students from low-income families leave struggling public schools. A new report shows most kids getting ESA funding don\u2019",
+          "date": "2026-01-05T18:50:38",
+          "engagement": {
+            "likes": 9,
+            "comments": 3,
+            "shares": 6,
+            "views": 0,
+            "total": 18
+          },
+          "thumbnail": null
+        },
+        {
+          "id": "3mbpkpybis224",
+          "url": "https://bsky.app/profile/chalkbeat.org/post/3mbpkpybis224",
+          "text": "Gov. Kathy Hochul wants every 10th grader across New York to take the Teen Mental Health First Aid course to help them spot signs of crisis and support their peers.",
+          "date": "2026-01-05T23:10:56",
+          "engagement": {
+            "likes": 12,
+            "comments": 1,
+            "shares": 1,
+            "views": 0,
+            "total": 14
+          },
+          "thumbnail": null
+        },
+        {
+          "id": "3mbpihqhqzs2u",
+          "url": "https://bsky.app/profile/chalkbeat.org/post/3mbpihqhqzs2u",
+          "text": "NYC schools Chancellor Kamar Samuels said every student deserves an integrated school in his opening letter to Education Department staff.",
+          "date": "2026-01-05T22:30:32",
+          "engagement": {
+            "likes": 11,
+            "comments": 2,
+            "shares": 0,
+            "views": 0,
+            "total": 13
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 8.33,
+        "posts_per_week": 58.31,
+        "date_range_days": 3,
+        "first_post": "2026-01-04T22:45:09",
+        "last_post": "2026-01-08T00:45:19"
+      },
+      "time_series": [
+        {
+          "date": "2025-12-29",
+          "posts": 1,
+          "engagement": 0
+        },
+        {
+          "date": "2026-01-05",
+          "posts": 24,
+          "engagement": 113
+        }
+      ],
+      "content_types": {
+        "link": {
+          "count": 19,
+          "engagement": 105,
+          "percentage": 76.0
+        },
+        "text": {
+          "count": 3,
+          "engagement": 0,
+          "percentage": 12.0
+        },
+        "image": {
+          "count": 3,
+          "engagement": 8,
+          "percentage": 12.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": "3mbp46jryzz2m",
+      "url": "https://bsky.app/profile/chalkbeat.org/post/3mbp46jryzz2m",
+      "text": "Tennessee\u2019s Education Savings Account program was promoted as an option to help students from low-income families leave struggling public schools. A new report shows most kids getting ESA funding don\u2019",
+      "date": "2026-01-05T18:50:38",
+      "engagement": {
+        "likes": 9,
+        "comments": 3,
+        "shares": 6,
+        "views": 0,
+        "total": 18
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3mbpkpybis224",
+      "url": "https://bsky.app/profile/chalkbeat.org/post/3mbpkpybis224",
+      "text": "Gov. Kathy Hochul wants every 10th grader across New York to take the Teen Mental Health First Aid course to help them spot signs of crisis and support their peers.",
+      "date": "2026-01-05T23:10:56",
+      "engagement": {
+        "likes": 12,
+        "comments": 1,
+        "shares": 1,
+        "views": 0,
+        "total": 14
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3mbpihqhqzs2u",
+      "url": "https://bsky.app/profile/chalkbeat.org/post/3mbpihqhqzs2u",
+      "text": "NYC schools Chancellor Kamar Samuels said every student deserves an integrated school in his opening letter to Education Department staff.",
+      "date": "2026-01-05T22:30:32",
+      "engagement": {
+        "likes": 11,
+        "comments": 2,
+        "shares": 0,
+        "views": 0,
+        "total": 13
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3mbu4tl5jjk2l",
+      "url": "https://bsky.app/profile/chalkbeat.org/post/3mbu4tl5jjk2l",
+      "text": "New mayor, new priorities. From universal child care to a surprising reversal on mayor control, here\u2019s what to watch as Mamdani pitches education plans in Albany.",
+      "date": "2026-01-07T18:45:43",
+      "engagement": {
+        "likes": 6,
+        "comments": 0,
+        "shares": 3,
+        "views": 0,
+        "total": 9
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3mbrxt2moj52t",
+      "url": "https://bsky.app/profile/chalkbeat.org/post/3mbrxt2moj52t",
+      "text": "NYC schools Chancellor Kamar Samuels told principals on Monday that he plans to double down on former Mayor Eric Adams\u2019 reading curriculum reforms.",
+      "date": "2026-01-06T22:10:37",
+      "engagement": {
+        "likes": 6,
+        "comments": 0,
+        "shares": 2,
+        "views": 0,
+        "total": 8
+      },
+      "thumbnail": null
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 8.33,
+    "posts_per_week": 58.31,
+    "date_range_days": 3,
+    "first_post": "2026-01-04T22:45:09",
+    "last_post": "2026-01-08T00:45:19"
+  },
+  "time_series": [
+    {
+      "date": "2025-12-29",
+      "posts": 1,
+      "engagement": 0
+    },
+    {
+      "date": "2026-01-05",
+      "posts": 24,
+      "engagement": 113
+    }
+  ]
+}

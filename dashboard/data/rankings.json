@@ -1,0 +1,433 @@
+{
+  "by_engagement": [
+    {
+      "rank": 1,
+      "name": "HudPost",
+      "slug": "hudpost",
+      "value": 103604
+    },
+    {
+      "rank": 2,
+      "name": "The Jersey Vindicator",
+      "slug": "the-jersey-vindicator",
+      "value": 9610
+    },
+    {
+      "rank": 3,
+      "name": "NJ Spotlight News",
+      "slug": "nj-spotlight-news",
+      "value": 8623
+    },
+    {
+      "rank": 4,
+      "name": "The College of New Jersey",
+      "slug": "the-college-of-new-jersey",
+      "value": 2966
+    },
+    {
+      "rank": 5,
+      "name": "Slice of Culture   Saint Peter s University",
+      "slug": "slice-of-culture-saint-peter-s-university",
+      "value": 1791
+    },
+    {
+      "rank": 6,
+      "name": "Daily Targum",
+      "slug": "daily-targum",
+      "value": 1609
+    },
+    {
+      "rank": 7,
+      "name": "South Jersey Climate News Project",
+      "slug": "south-jersey-climate-news-project",
+      "value": 847
+    },
+    {
+      "rank": 8,
+      "name": "Inside Climate News",
+      "slug": "inside-climate-news",
+      "value": 675
+    },
+    {
+      "rank": 9,
+      "name": "Clinton Hill Community Action",
+      "slug": "clinton-hill-community-action",
+      "value": 301
+    },
+    {
+      "rank": 10,
+      "name": "Chalkbeat Newark  Civic News Company ",
+      "slug": "chalkbeat-newark-civic-news-company",
+      "value": 113
+    },
+    {
+      "rank": 11,
+      "name": "Public Square Amplified",
+      "slug": "public-square-amplified",
+      "value": 58
+    },
+    {
+      "rank": 12,
+      "name": "Montclair Local Nonprofit News",
+      "slug": "montclair-local-nonprofit-news",
+      "value": 38
+    },
+    {
+      "rank": 13,
+      "name": "Camden Parent   Student Union",
+      "slug": "camden-parent-student-union",
+      "value": 17
+    },
+    {
+      "rank": 14,
+      "name": "Mental Health Association of New Jersey",
+      "slug": "mental-health-association-of-new-jersey",
+      "value": 0
+    }
+  ],
+  "by_posts": [
+    {
+      "rank": 1,
+      "name": "NJ Spotlight News",
+      "slug": "nj-spotlight-news",
+      "value": 51
+    },
+    {
+      "rank": 2,
+      "name": "South Jersey Climate News Project",
+      "slug": "south-jersey-climate-news-project",
+      "value": 38
+    },
+    {
+      "rank": 3,
+      "name": "Camden Parent   Student Union",
+      "slug": "camden-parent-student-union",
+      "value": 26
+    },
+    {
+      "rank": 4,
+      "name": "Clinton Hill Community Action",
+      "slug": "clinton-hill-community-action",
+      "value": 26
+    },
+    {
+      "rank": 5,
+      "name": "Daily Targum",
+      "slug": "daily-targum",
+      "value": 26
+    },
+    {
+      "rank": 6,
+      "name": "HudPost",
+      "slug": "hudpost",
+      "value": 26
+    },
+    {
+      "rank": 7,
+      "name": "Slice of Culture   Saint Peter s University",
+      "slug": "slice-of-culture-saint-peter-s-university",
+      "value": 26
+    },
+    {
+      "rank": 8,
+      "name": "The College of New Jersey",
+      "slug": "the-college-of-new-jersey",
+      "value": 26
+    },
+    {
+      "rank": 9,
+      "name": "Chalkbeat Newark  Civic News Company ",
+      "slug": "chalkbeat-newark-civic-news-company",
+      "value": 25
+    },
+    {
+      "rank": 10,
+      "name": "Inside Climate News",
+      "slug": "inside-climate-news",
+      "value": 25
+    },
+    {
+      "rank": 11,
+      "name": "Montclair Local Nonprofit News",
+      "slug": "montclair-local-nonprofit-news",
+      "value": 25
+    },
+    {
+      "rank": 12,
+      "name": "Public Square Amplified",
+      "slug": "public-square-amplified",
+      "value": 25
+    },
+    {
+      "rank": 13,
+      "name": "The Jersey Vindicator",
+      "slug": "the-jersey-vindicator",
+      "value": 25
+    },
+    {
+      "rank": 14,
+      "name": "Mental Health Association of New Jersey",
+      "slug": "mental-health-association-of-new-jersey",
+      "value": 1
+    }
+  ],
+  "by_engagement_rate": [
+    {
+      "rank": 1,
+      "name": "HudPost",
+      "slug": "hudpost",
+      "value": 3984.77
+    },
+    {
+      "rank": 2,
+      "name": "The Jersey Vindicator",
+      "slug": "the-jersey-vindicator",
+      "value": 384.4
+    },
+    {
+      "rank": 3,
+      "name": "NJ Spotlight News",
+      "slug": "nj-spotlight-news",
+      "value": 169.08
+    },
+    {
+      "rank": 4,
+      "name": "The College of New Jersey",
+      "slug": "the-college-of-new-jersey",
+      "value": 114.08
+    },
+    {
+      "rank": 5,
+      "name": "Slice of Culture   Saint Peter s University",
+      "slug": "slice-of-culture-saint-peter-s-university",
+      "value": 68.88
+    },
+    {
+      "rank": 6,
+      "name": "Daily Targum",
+      "slug": "daily-targum",
+      "value": 61.88
+    },
+    {
+      "rank": 7,
+      "name": "Inside Climate News",
+      "slug": "inside-climate-news",
+      "value": 27.0
+    },
+    {
+      "rank": 8,
+      "name": "South Jersey Climate News Project",
+      "slug": "south-jersey-climate-news-project",
+      "value": 22.29
+    },
+    {
+      "rank": 9,
+      "name": "Clinton Hill Community Action",
+      "slug": "clinton-hill-community-action",
+      "value": 11.58
+    },
+    {
+      "rank": 10,
+      "name": "Chalkbeat Newark  Civic News Company ",
+      "slug": "chalkbeat-newark-civic-news-company",
+      "value": 4.52
+    },
+    {
+      "rank": 11,
+      "name": "Public Square Amplified",
+      "slug": "public-square-amplified",
+      "value": 2.32
+    },
+    {
+      "rank": 12,
+      "name": "Montclair Local Nonprofit News",
+      "slug": "montclair-local-nonprofit-news",
+      "value": 1.52
+    },
+    {
+      "rank": 13,
+      "name": "Camden Parent   Student Union",
+      "slug": "camden-parent-student-union",
+      "value": 0.65
+    },
+    {
+      "rank": 14,
+      "name": "Mental Health Association of New Jersey",
+      "slug": "mental-health-association-of-new-jersey",
+      "value": 0.0
+    }
+  ],
+  "by_followers": [
+    {
+      "rank": 1,
+      "name": "Inside Climate News",
+      "slug": "inside-climate-news",
+      "value": 25576
+    },
+    {
+      "rank": 2,
+      "name": "Chalkbeat Newark  Civic News Company ",
+      "slug": "chalkbeat-newark-civic-news-company",
+      "value": 11029
+    },
+    {
+      "rank": 3,
+      "name": "The Jersey Vindicator",
+      "slug": "the-jersey-vindicator",
+      "value": 6443
+    },
+    {
+      "rank": 4,
+      "name": "NJ Spotlight News",
+      "slug": "nj-spotlight-news",
+      "value": 3301
+    },
+    {
+      "rank": 5,
+      "name": "Montclair Local Nonprofit News",
+      "slug": "montclair-local-nonprofit-news",
+      "value": 2469
+    },
+    {
+      "rank": 6,
+      "name": "Public Square Amplified",
+      "slug": "public-square-amplified",
+      "value": 82
+    },
+    {
+      "rank": 7,
+      "name": "South Jersey Climate News Project",
+      "slug": "south-jersey-climate-news-project",
+      "value": 43
+    },
+    {
+      "rank": 8,
+      "name": "Camden Parent   Student Union",
+      "slug": "camden-parent-student-union",
+      "value": 0
+    },
+    {
+      "rank": 9,
+      "name": "Clinton Hill Community Action",
+      "slug": "clinton-hill-community-action",
+      "value": 0
+    },
+    {
+      "rank": 10,
+      "name": "Daily Targum",
+      "slug": "daily-targum",
+      "value": 0
+    },
+    {
+      "rank": 11,
+      "name": "HudPost",
+      "slug": "hudpost",
+      "value": 0
+    },
+    {
+      "rank": 12,
+      "name": "Mental Health Association of New Jersey",
+      "slug": "mental-health-association-of-new-jersey",
+      "value": 0
+    },
+    {
+      "rank": 13,
+      "name": "Slice of Culture   Saint Peter s University",
+      "slug": "slice-of-culture-saint-peter-s-university",
+      "value": 0
+    },
+    {
+      "rank": 14,
+      "name": "The College of New Jersey",
+      "slug": "the-college-of-new-jersey",
+      "value": 0
+    }
+  ],
+  "by_platforms": [
+    {
+      "rank": 1,
+      "name": "NJ Spotlight News",
+      "slug": "nj-spotlight-news",
+      "value": 2
+    },
+    {
+      "rank": 2,
+      "name": "South Jersey Climate News Project",
+      "slug": "south-jersey-climate-news-project",
+      "value": 2
+    },
+    {
+      "rank": 3,
+      "name": "Camden Parent   Student Union",
+      "slug": "camden-parent-student-union",
+      "value": 1
+    },
+    {
+      "rank": 4,
+      "name": "Chalkbeat Newark  Civic News Company ",
+      "slug": "chalkbeat-newark-civic-news-company",
+      "value": 1
+    },
+    {
+      "rank": 5,
+      "name": "Clinton Hill Community Action",
+      "slug": "clinton-hill-community-action",
+      "value": 1
+    },
+    {
+      "rank": 6,
+      "name": "Daily Targum",
+      "slug": "daily-targum",
+      "value": 1
+    },
+    {
+      "rank": 7,
+      "name": "HudPost",
+      "slug": "hudpost",
+      "value": 1
+    },
+    {
+      "rank": 8,
+      "name": "Inside Climate News",
+      "slug": "inside-climate-news",
+      "value": 1
+    },
+    {
+      "rank": 9,
+      "name": "Mental Health Association of New Jersey",
+      "slug": "mental-health-association-of-new-jersey",
+      "value": 1
+    },
+    {
+      "rank": 10,
+      "name": "Montclair Local Nonprofit News",
+      "slug": "montclair-local-nonprofit-news",
+      "value": 1
+    },
+    {
+      "rank": 11,
+      "name": "Public Square Amplified",
+      "slug": "public-square-amplified",
+      "value": 1
+    },
+    {
+      "rank": 12,
+      "name": "Slice of Culture   Saint Peter s University",
+      "slug": "slice-of-culture-saint-peter-s-university",
+      "value": 1
+    },
+    {
+      "rank": 13,
+      "name": "The College of New Jersey",
+      "slug": "the-college-of-new-jersey",
+      "value": 1
+    },
+    {
+      "rank": 14,
+      "name": "The Jersey Vindicator",
+      "slug": "the-jersey-vindicator",
+      "value": 1
+    }
+  ],
+  "generated_at": "2026-01-07T18:27:25.602721"
+}

@@ -1,0 +1,350 @@
+{
+  "name": "Slice of Culture   Saint Peter s University",
+  "slug": "slice-of-culture-saint-peter-s-university",
+  "summary": {
+    "total_posts": 26,
+    "total_engagement": 1791,
+    "total_followers": 0,
+    "platforms_active": 1,
+    "engagement_rate": 68.88,
+    "last_updated": "2026-01-07T18:27:25.594201"
+  },
+  "platform_breakdown": {
+    "tiktok": {
+      "posts": 26,
+      "posts_pct": 100.0,
+      "engagement": 1791,
+      "engagement_pct": 100.0
+    }
+  },
+  "platforms": {
+    "tiktok": {
+      "posts": 26,
+      "engagement": 1791,
+      "views": 70063,
+      "followers": 0,
+      "engagement_rate": 68.88,
+      "top_posts": [
+        {
+          "id": "7231314047608753454",
+          "url": "https://www.tiktok.com/@sliceofculture/video/7231314047608753454",
+          "text": "Did you know the English voice actor of Nobara is Filipino-American? ...",
+          "date": "2023-05-09T15:31:53",
+          "engagement": {
+            "likes": 979,
+            "comments": 11,
+            "shares": 46,
+            "views": 43200,
+            "total": 1036
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/e074efa2ca4a4b9dbdda4700c588d027_1683671514~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=F3QYaCcG%2BwxlDA4vw748Cyk7n4g%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7324170578464673054",
+          "url": "https://www.tiktok.com/@sliceofculture/video/7324170578464673054",
+          "text": "Meet the first-year North Bergen Bruins teacher and wrestling coach w...",
+          "date": "2024-01-14T21:03:05",
+          "engagement": {
+            "likes": 85,
+            "comments": 7,
+            "shares": 84,
+            "views": 2915,
+            "total": 176
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/3ec606ee57bd459ca7ced1533f6a2190_1705291387~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=zke2uibDrRK37bx6ovCl%2B9JYVwA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7458431233157041451",
+          "url": "https://www.tiktok.com/@sliceofculture/video/7458431233157041451",
+          "text": "The 595 Newark Avenue courthouse that has been standing for a handful...",
+          "date": "2025-01-10T16:22:32",
+          "engagement": {
+            "likes": 163,
+            "comments": 2,
+            "shares": 10,
+            "views": 3817,
+            "total": 175
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIEACI4w6qBqGxmUnsBqBIZhqRBlRgXi7Qi4P~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=CXm0MryPUPvPk7jswbD7QApAkYg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.04,
+        "posts_per_week": 0.28,
+        "date_range_days": 612,
+        "first_post": "2023-05-09T15:31:53",
+        "last_post": "2025-01-10T16:22:32"
+      },
+      "time_series": [
+        {
+          "date": "2023-05-08",
+          "posts": 1,
+          "engagement": 1036
+        },
+        {
+          "date": "2023-05-15",
+          "posts": 1,
+          "engagement": 13
+        },
+        {
+          "date": "2023-12-18",
+          "posts": 2,
+          "engagement": 18
+        },
+        {
+          "date": "2023-12-25",
+          "posts": 1,
+          "engagement": 16
+        },
+        {
+          "date": "2024-01-01",
+          "posts": 1,
+          "engagement": 10
+        },
+        {
+          "date": "2024-01-08",
+          "posts": 3,
+          "engagement": 192
+        },
+        {
+          "date": "2024-01-15",
+          "posts": 1,
+          "engagement": 21
+        },
+        {
+          "date": "2024-02-12",
+          "posts": 2,
+          "engagement": 29
+        },
+        {
+          "date": "2024-02-19",
+          "posts": 1,
+          "engagement": 9
+        },
+        {
+          "date": "2024-02-26",
+          "posts": 1,
+          "engagement": 10
+        },
+        {
+          "date": "2024-03-18",
+          "posts": 1,
+          "engagement": 102
+        },
+        {
+          "date": "2024-05-20",
+          "posts": 3,
+          "engagement": 71
+        },
+        {
+          "date": "2024-06-03",
+          "posts": 1,
+          "engagement": 21
+        },
+        {
+          "date": "2024-07-08",
+          "posts": 1,
+          "engagement": 18
+        },
+        {
+          "date": "2024-08-12",
+          "posts": 2,
+          "engagement": 23
+        },
+        {
+          "date": "2024-09-09",
+          "posts": 1,
+          "engagement": 11
+        },
+        {
+          "date": "2024-09-23",
+          "posts": 1,
+          "engagement": 16
+        },
+        {
+          "date": "2025-01-06",
+          "posts": 1,
+          "engagement": 175
+        }
+      ],
+      "content_types": {
+        "video": {
+          "count": 26,
+          "engagement": 1791,
+          "percentage": 100.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": "7231314047608753454",
+      "url": "https://www.tiktok.com/@sliceofculture/video/7231314047608753454",
+      "text": "Did you know the English voice actor of Nobara is Filipino-American? ...",
+      "date": "2023-05-09T15:31:53",
+      "engagement": {
+        "likes": 979,
+        "comments": 11,
+        "shares": 46,
+        "views": 43200,
+        "total": 1036
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/e074efa2ca4a4b9dbdda4700c588d027_1683671514~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=F3QYaCcG%2BwxlDA4vw748Cyk7n4g%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7324170578464673054",
+      "url": "https://www.tiktok.com/@sliceofculture/video/7324170578464673054",
+      "text": "Meet the first-year North Bergen Bruins teacher and wrestling coach w...",
+      "date": "2024-01-14T21:03:05",
+      "engagement": {
+        "likes": 85,
+        "comments": 7,
+        "shares": 84,
+        "views": 2915,
+        "total": 176
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/3ec606ee57bd459ca7ced1533f6a2190_1705291387~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=zke2uibDrRK37bx6ovCl%2B9JYVwA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7458431233157041451",
+      "url": "https://www.tiktok.com/@sliceofculture/video/7458431233157041451",
+      "text": "The 595 Newark Avenue courthouse that has been standing for a handful...",
+      "date": "2025-01-10T16:22:32",
+      "engagement": {
+        "likes": 163,
+        "comments": 2,
+        "shares": 10,
+        "views": 3817,
+        "total": 175
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIEACI4w6qBqGxmUnsBqBIZhqRBlRgXi7Qi4P~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=CXm0MryPUPvPk7jswbD7QApAkYg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7347768462976011551",
+      "url": "https://www.tiktok.com/@sliceofculture/video/7347768462976011551",
+      "text": "For the bad b*tches with anxiety \ud83e\udd27\ud83d\udc96 Jenny spent her first time in Jer...",
+      "date": "2024-03-18T11:15:13",
+      "engagement": {
+        "likes": 102,
+        "comments": 0,
+        "shares": 0,
+        "views": 1521,
+        "total": 102
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/da9299ef0bef484eb7b6ac7e7a81d2ba_1710785716~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=yhHFIcLLig7IfSSaoB%2Biq39faWE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7371669565278850346",
+      "url": "https://www.tiktok.com/@sliceofculture/video/7371669565278850346",
+      "text": "Jordy, the founder of Knaws has been designing clothes for almost 5 y...",
+      "date": "2024-05-21T21:02:57",
+      "engagement": {
+        "likes": 45,
+        "comments": 1,
+        "shares": 0,
+        "views": 910,
+        "total": 46
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/7c84690ba7d34810a44728f55a5b8d7f_1716350578~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=DoHBrqHv7M%2B7oOAI9lk%2Fvr%2BMKkM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0.04,
+    "posts_per_week": 0.28,
+    "date_range_days": 612,
+    "first_post": "2023-05-09T15:31:53",
+    "last_post": "2025-01-10T16:22:32"
+  },
+  "time_series": [
+    {
+      "date": "2023-05-08",
+      "posts": 1,
+      "engagement": 1036
+    },
+    {
+      "date": "2023-05-15",
+      "posts": 1,
+      "engagement": 13
+    },
+    {
+      "date": "2023-12-18",
+      "posts": 2,
+      "engagement": 18
+    },
+    {
+      "date": "2023-12-25",
+      "posts": 1,
+      "engagement": 16
+    },
+    {
+      "date": "2024-01-01",
+      "posts": 1,
+      "engagement": 10
+    },
+    {
+      "date": "2024-01-08",
+      "posts": 3,
+      "engagement": 192
+    },
+    {
+      "date": "2024-01-15",
+      "posts": 1,
+      "engagement": 21
+    },
+    {
+      "date": "2024-02-12",
+      "posts": 2,
+      "engagement": 29
+    },
+    {
+      "date": "2024-02-19",
+      "posts": 1,
+      "engagement": 9
+    },
+    {
+      "date": "2024-02-26",
+      "posts": 1,
+      "engagement": 10
+    },
+    {
+      "date": "2024-03-18",
+      "posts": 1,
+      "engagement": 102
+    },
+    {
+      "date": "2024-05-20",
+      "posts": 3,
+      "engagement": 71
+    },
+    {
+      "date": "2024-06-03",
+      "posts": 1,
+      "engagement": 21
+    },
+    {
+      "date": "2024-07-08",
+      "posts": 1,
+      "engagement": 18
+    },
+    {
+      "date": "2024-08-12",
+      "posts": 2,
+      "engagement": 23
+    },
+    {
+      "date": "2024-09-09",
+      "posts": 1,
+      "engagement": 11
+    },
+    {
+      "date": "2024-09-23",
+      "posts": 1,
+      "engagement": 16
+    },
+    {
+      "date": "2025-01-06",
+      "posts": 1,
+      "engagement": 175
+    }
+  ]
+}

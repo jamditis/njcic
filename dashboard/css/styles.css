@@ -12,10 +12,41 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Account for sticky nav */
 }
 
 body {
     min-height: 100vh;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+#main-nav {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-link {
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #2dc8d2;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 60%;
 }
 
 /* ==========================================================================
@@ -123,6 +154,48 @@ body {
     box-shadow: 0 0 30px rgba(45, 200, 210, 0.2);
 }
 
+/* Grantee Cards */
+.grantee-card {
+    opacity: 0;
+    animation: slideUpFade 0.5s ease forwards;
+}
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================================================================
+   Platform Filter Buttons
+   ========================================================================== */
+
+.platform-btn {
+    background: #f3f4f6;
+    color: #4b5563;
+    border: 1px solid transparent;
+}
+
+.platform-btn:hover {
+    background: #e5e7eb;
+    color: #1f2937;
+}
+
+.platform-btn.active {
+    background: #2dc8d2;
+    color: white;
+    border-color: #2dc8d2;
+}
+
+.platform-btn.active:hover {
+    background: #26b3bc;
+}
+
 /* ==========================================================================
    Chart Customizations
    ========================================================================== */
@@ -155,6 +228,63 @@ body {
 .chart-container {
     position: relative;
     width: 100%;
+}
+
+/* ==========================================================================
+   Rankings Table
+   ========================================================================== */
+
+#rankings-table th {
+    user-select: none;
+}
+
+#rankings-table th[data-sort] {
+    cursor: pointer;
+}
+
+#rankings-table th[data-sort]:hover {
+    background-color: #f3f4f6;
+}
+
+#rankings-table th .sort-icon {
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+}
+
+#rankings-table th:hover .sort-icon {
+    opacity: 1;
+}
+
+#rankings-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+#rankings-table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+/* ==========================================================================
+   Form Elements
+   ========================================================================== */
+
+select {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+select:focus {
+    outline: none;
+    border-color: #2dc8d2;
+    box-shadow: 0 0 0 3px rgba(45, 200, 210, 0.2);
+}
+
+input[type="text"] {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #2dc8d2;
+    box-shadow: 0 0 0 3px rgba(45, 200, 210, 0.2);
 }
 
 /* ==========================================================================
@@ -219,11 +349,34 @@ body {
     .chart-card h3 {
         font-size: 1rem !important;
     }
+
+    /* Stack grantee cards */
+    .grantee-card {
+        animation-delay: 0ms !important;
+    }
+
+    /* Smaller table text on mobile */
+    #rankings-table {
+        font-size: 0.875rem;
+    }
+
+    #rankings-table th,
+    #rankings-table td {
+        padding: 0.75rem 0.5rem;
+    }
 }
 
 @media (max-width: 480px) {
     .counter {
         font-size: 1.5rem !important;
+    }
+
+    /* Hide some table columns on very small screens */
+    #rankings-table th:nth-child(5),
+    #rankings-table td:nth-child(5),
+    #rankings-table th:nth-child(6),
+    #rankings-table td:nth-child(6) {
+        display: none;
     }
 }
 
@@ -234,7 +387,9 @@ body {
 @media print {
     /* Remove non-essential elements */
     #loading-overlay,
-    #error-state {
+    #error-state,
+    #main-nav,
+    #mobile-menu {
         display: none !important;
     }
 
@@ -299,9 +454,15 @@ body {
 
     /* Remove hover effects */
     .metric-card:hover,
-    .chart-card:hover {
+    .chart-card:hover,
+    .grantee-card:hover {
         transform: none !important;
         box-shadow: none !important;
+    }
+
+    /* Hide grantee cards in print */
+    #grantees-grid {
+        display: none !important;
     }
 
     /* Page breaks */
@@ -345,9 +506,14 @@ a:focus {
         transition-duration: 0.01ms !important;
     }
 
-    .metric-card {
+    .metric-card,
+    .grantee-card {
         opacity: 1;
         transform: none;
+    }
+
+    html {
+        scroll-behavior: auto;
     }
 }
 
@@ -359,6 +525,14 @@ a:focus {
 
     .chart-card {
         border: 2px solid #183642;
+    }
+
+    .grantee-card {
+        border: 2px solid #183642;
+    }
+
+    .platform-btn {
+        border: 2px solid currentColor;
     }
 }
 
@@ -405,5 +579,130 @@ a:focus {
     }
     50% {
         opacity: 0.5;
+    }
+}
+
+/* ==========================================================================
+   Grantee Detail Page Styles
+   ========================================================================== */
+
+/* Line clamp utilities (in case Tailwind CDN doesn't include them) */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Platform card animations */
+#platform-cards > div {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: revealCard 0.5s ease forwards;
+}
+
+#platform-cards > div:nth-child(1) { animation-delay: 0.1s; }
+#platform-cards > div:nth-child(2) { animation-delay: 0.15s; }
+#platform-cards > div:nth-child(3) { animation-delay: 0.2s; }
+#platform-cards > div:nth-child(4) { animation-delay: 0.25s; }
+#platform-cards > div:nth-child(5) { animation-delay: 0.3s; }
+
+/* Top posts grid animations */
+#top-posts-grid > div {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: revealCard 0.5s ease forwards;
+}
+
+#top-posts-grid > div:nth-child(1) { animation-delay: 0.1s; }
+#top-posts-grid > div:nth-child(2) { animation-delay: 0.15s; }
+#top-posts-grid > div:nth-child(3) { animation-delay: 0.2s; }
+#top-posts-grid > div:nth-child(4) { animation-delay: 0.25s; }
+#top-posts-grid > div:nth-child(5) { animation-delay: 0.3s; }
+#top-posts-grid > div:nth-child(6) { animation-delay: 0.35s; }
+#top-posts-grid > div:nth-child(7) { animation-delay: 0.4s; }
+#top-posts-grid > div:nth-child(8) { animation-delay: 0.45s; }
+#top-posts-grid > div:nth-child(9) { animation-delay: 0.5s; }
+
+/* Timeline animations */
+#timeline-items > div {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideInFromLeft 0.5s ease forwards;
+}
+
+#timeline-items > div:nth-child(1) { animation-delay: 0.1s; }
+#timeline-items > div:nth-child(2) { animation-delay: 0.15s; }
+#timeline-items > div:nth-child(3) { animation-delay: 0.2s; }
+#timeline-items > div:nth-child(4) { animation-delay: 0.25s; }
+#timeline-items > div:nth-child(5) { animation-delay: 0.3s; }
+#timeline-items > div:nth-child(6) { animation-delay: 0.35s; }
+#timeline-items > div:nth-child(7) { animation-delay: 0.4s; }
+#timeline-items > div:nth-child(8) { animation-delay: 0.45s; }
+#timeline-items > div:nth-child(9) { animation-delay: 0.5s; }
+#timeline-items > div:nth-child(10) { animation-delay: 0.55s; }
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Platform icons in hero */
+#platform-icons > div {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: popIn 0.4s ease forwards;
+}
+
+#platform-icons > div:nth-child(1) { animation-delay: 0.1s; }
+#platform-icons > div:nth-child(2) { animation-delay: 0.15s; }
+#platform-icons > div:nth-child(3) { animation-delay: 0.2s; }
+#platform-icons > div:nth-child(4) { animation-delay: 0.25s; }
+#platform-icons > div:nth-child(5) { animation-delay: 0.3s; }
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Breadcrumb styling */
+nav[aria-label="Breadcrumb"] a:hover {
+    color: #2dc8d2;
+}
+
+/* Ranking badge glow effect */
+#ranking-badge span {
+    box-shadow: 0 0 20px rgba(45, 200, 210, 0.4);
+}
+
+/* Responsive adjustments for grantee page */
+@media (max-width: 640px) {
+    #platform-icons > div {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #platform-icons > div svg {
+        width: 1rem;
+        height: 1rem;
     }
 }
