@@ -3,27 +3,27 @@
   "slug": "inside-climate-news",
   "summary": {
     "total_posts": 25,
-    "total_engagement": 675,
-    "total_followers": 25576,
+    "total_engagement": 698,
+    "total_followers": 25578,
     "platforms_active": 1,
-    "engagement_rate": 27.0,
-    "last_updated": "2026-01-07T18:27:25.584152"
+    "engagement_rate": 27.92,
+    "last_updated": "2026-01-07T22:22:16.663869"
   },
   "platform_breakdown": {
     "bluesky": {
       "posts": 25,
       "posts_pct": 100.0,
-      "engagement": 675,
+      "engagement": 698,
       "engagement_pct": 100.0
     }
   },
   "platforms": {
     "bluesky": {
       "posts": 25,
-      "engagement": 675,
+      "engagement": 698,
       "views": 0,
-      "followers": 25576,
-      "engagement_rate": 27.0,
+      "followers": 25578,
+      "engagement_rate": 27.92,
       "top_posts": [
         {
           "id": "3mbmklohqsk2u",
@@ -89,13 +89,13 @@
         {
           "date": "2026-01-05",
           "posts": 6,
-          "engagement": 138
+          "engagement": 161
         }
       ],
       "content_types": {
         "link": {
           "count": 25,
-          "engagement": 675,
+          "engagement": 698,
           "percentage": 100.0
         }
       }
@@ -194,7 +194,7 @@
     {
       "date": "2026-01-05",
       "posts": 6,
-      "engagement": 138
+      "engagement": 161
     }
   ]
 }

@@ -3,24 +3,24 @@
   "slug": "nj-spotlight-news",
   "summary": {
     "total_posts": 51,
-    "total_engagement": 8623,
+    "total_engagement": 6779,
     "total_followers": 3301,
     "platforms_active": 2,
-    "engagement_rate": 169.08,
-    "last_updated": "2026-01-07T18:27:25.589677"
+    "engagement_rate": 132.92,
+    "last_updated": "2026-01-07T22:22:16.673312"
   },
   "platform_breakdown": {
     "bluesky": {
       "posts": 25,
       "posts_pct": 49.0,
       "engagement": 119,
-      "engagement_pct": 1.4
+      "engagement_pct": 1.8
     },
     "tiktok": {
       "posts": 26,
       "posts_pct": 51.0,
-      "engagement": 8504,
-      "engagement_pct": 98.6
+      "engagement": 6660,
+      "engagement_pct": 98.2
     }
   },
   "platforms": {
@@ -128,10 +128,10 @@
     },
     "tiktok": {
       "posts": 26,
-      "engagement": 8504,
-      "views": 197526,
+      "engagement": 6660,
+      "views": 176668,
       "followers": 0,
-      "engagement_rate": 327.08,
+      "engagement_rate": 256.15,
       "top_posts": [
         {
           "id": "7447216252998864174",
@@ -145,21 +145,7 @@
             "views": 142800,
             "total": 4978
           },
-          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/owDtZ8fGAxednF9EUF5BAdS9EWID0ILgRZx1AX~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=ZJ3858By7HZN959%2BpWR%2FmNfDAWI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
-        },
-        {
-          "id": "7429058846783573279",
-          "url": "https://www.tiktok.com/@njspotlightnews/video/7429058846783573279",
-          "text": "October is Breast Cancer Awareness Month. Earlier this year, Alanna V...",
-          "date": "2024-10-23T12:42:44",
-          "engagement": {
-            "likes": 1712,
-            "comments": 18,
-            "shares": 45,
-            "views": 26100,
-            "total": 1775
-          },
-          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/db304dca2020425cb515304bb5a92b9f_1729712568~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=KV2BDGwoFj37gOnc3wzlF5lt1ZI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/owDtZ8fGAxednF9EUF5BAdS9EWID0ILgRZx1AX~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=0R7CZKhfpDYzk9WkyY%2B1SKlzxGM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
         },
         {
           "id": "7356363047658622251",
@@ -173,17 +159,46 @@
             "views": 2534,
             "total": 299
           },
-          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/694de804f7344bfcb7c6226409e8357d_1712786758~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=6mNTfIEqj89XHLOd99WoRfbjFcU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/694de804f7344bfcb7c6226409e8357d_1712786758~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=U30X70yKt0otXfzvzAFg1ROguDY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7468808698396216618",
+          "url": "https://www.tiktok.com/@njspotlightnews/video/7468808698396216618",
+          "text": "A viral TikTok video of a fake ICE raid has devastated La Pupusa Loca...",
+          "date": "2025-02-07T15:32:52",
+          "engagement": {
+            "likes": 115,
+            "comments": 4,
+            "shares": 18,
+            "views": 2584,
+            "total": 137
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oc2ihAlQziBUwWBmA3iiwRBXC0AI6Y4IIqfcp0~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=ByzuVm1rDRQ1wJ%2BW3A7pXVUFogQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
         }
       ],
       "frequency": {
         "posts_per_day": 0.04,
         "posts_per_week": 0.28,
-        "date_range_days": 592,
-        "first_post": "2024-02-07T12:36:41",
+        "date_range_days": 614,
+        "first_post": "2024-01-16T10:55:24",
         "last_post": "2025-09-22T09:50:15"
       },
       "time_series": [
+        {
+          "date": "2024-01-15",
+          "posts": 1,
+          "engagement": 82
+        },
+        {
+          "date": "2024-01-22",
+          "posts": 1,
+          "engagement": 96
+        },
+        {
+          "date": "2024-01-29",
+          "posts": 1,
+          "engagement": 34
+        },
         {
           "date": "2024-02-05",
           "posts": 1,
@@ -245,11 +260,6 @@
           "engagement": 24
         },
         {
-          "date": "2024-10-21",
-          "posts": 1,
-          "engagement": 1775
-        },
-        {
           "date": "2024-12-02",
           "posts": 1,
           "engagement": 55
@@ -260,11 +270,6 @@
           "engagement": 4978
         },
         {
-          "date": "2024-12-30",
-          "posts": 1,
-          "engagement": 109
-        },
-        {
           "date": "2025-01-06",
           "posts": 1,
           "engagement": 60
@@ -273,11 +278,6 @@
           "date": "2025-01-13",
           "posts": 1,
           "engagement": 61
-        },
-        {
-          "date": "2025-01-20",
-          "posts": 1,
-          "engagement": 172
         },
         {
           "date": "2025-01-27",
@@ -303,7 +303,7 @@
       "content_types": {
         "video": {
           "count": 26,
-          "engagement": 8504,
+          "engagement": 6660,
           "percentage": 100.0
         }
       }
@@ -322,21 +322,7 @@
         "views": 142800,
         "total": 4978
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/owDtZ8fGAxednF9EUF5BAdS9EWID0ILgRZx1AX~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=ZJ3858By7HZN959%2BpWR%2FmNfDAWI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
-    },
-    {
-      "id": "7429058846783573279",
-      "url": "https://www.tiktok.com/@njspotlightnews/video/7429058846783573279",
-      "text": "October is Breast Cancer Awareness Month. Earlier this year, Alanna V...",
-      "date": "2024-10-23T12:42:44",
-      "engagement": {
-        "likes": 1712,
-        "comments": 18,
-        "shares": 45,
-        "views": 26100,
-        "total": 1775
-      },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/db304dca2020425cb515304bb5a92b9f_1729712568~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=KV2BDGwoFj37gOnc3wzlF5lt1ZI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/owDtZ8fGAxednF9EUF5BAdS9EWID0ILgRZx1AX~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=0R7CZKhfpDYzk9WkyY%2B1SKlzxGM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
     },
     {
       "id": "7356363047658622251",
@@ -350,21 +336,7 @@
         "views": 2534,
         "total": 299
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/694de804f7344bfcb7c6226409e8357d_1712786758~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=6mNTfIEqj89XHLOd99WoRfbjFcU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
-    },
-    {
-      "id": "7463623743642914094",
-      "url": "https://www.tiktok.com/@njspotlightnews/video/7463623743642914094",
-      "text": "According to Newark Mayor Ras Baraka, ICE officials entered a busines...",
-      "date": "2025-01-24T16:12:29",
-      "engagement": {
-        "likes": 132,
-        "comments": 37,
-        "shares": 3,
-        "views": 1837,
-        "total": 172
-      },
-      "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/o47tWZlIPQk5iAliLBB7dg4PGAUqUiHlEVo8I~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=7NH%2B93VfQkp0Aekzniw7zc8NcQI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/694de804f7344bfcb7c6226409e8357d_1712786758~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=U30X70yKt0otXfzvzAFg1ROguDY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
     },
     {
       "id": "7468808698396216618",
@@ -375,20 +347,63 @@
         "likes": 115,
         "comments": 4,
         "shares": 18,
-        "views": 2583,
+        "views": 2584,
         "total": 137
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oc2ihAlQziBUwWBmA3iiwRBXC0AI6Y4IIqfcp0~tplv-tiktokx-origin.image?dr=9636&x-expires=1768006800&x-signature=p2A1rnkILC6jQiqvU2%2B9tXKBlp4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oc2ihAlQziBUwWBmA3iiwRBXC0AI6Y4IIqfcp0~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=ByzuVm1rDRQ1wJ%2BW3A7pXVUFogQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7369685926982782251",
+      "url": "https://www.tiktok.com/@njspotlightnews/video/7369685926982782251",
+      "text": "A doctor and pharmacist from NJ are among 19 American medical aid wor...",
+      "date": "2024-05-16T12:45:27",
+      "engagement": {
+        "likes": 124,
+        "comments": 3,
+        "shares": 0,
+        "views": 966,
+        "total": 127
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/32aa071244b74007a88a85852d469717_1715888729~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=UhxGHi4W8r3wjnR087kRh3KfHj4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7328116624337243422",
+      "url": "https://www.tiktok.com/@njspotlightnews/video/7328116624337243422",
+      "text": "Officials and community members are mourning the loss of Passaic Coun...",
+      "date": "2024-01-25T12:15:27",
+      "engagement": {
+        "likes": 72,
+        "comments": 10,
+        "shares": 14,
+        "views": 5047,
+        "total": 96
+      },
+      "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/f5bd0391a5a4491ea5bea2f971646613_1706210130~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=JFlf68I7Qa3apozDQcVh8pHLNHQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
     }
   ],
   "overall_frequency": {
     "posts_per_day": 0.07,
     "posts_per_week": 0.49,
-    "date_range_days": 700,
-    "first_post": "2024-02-07T12:36:41",
+    "date_range_days": 722,
+    "first_post": "2024-01-16T10:55:24",
     "last_post": "2026-01-07T18:28:30.352000"
   },
   "time_series": [
+    {
+      "date": "2024-01-15",
+      "posts": 1,
+      "engagement": 82
+    },
+    {
+      "date": "2024-01-22",
+      "posts": 1,
+      "engagement": 96
+    },
+    {
+      "date": "2024-01-29",
+      "posts": 1,
+      "engagement": 34
+    },
     {
       "date": "2024-02-05",
       "posts": 1,
@@ -450,11 +465,6 @@
       "engagement": 24
     },
     {
-      "date": "2024-10-21",
-      "posts": 1,
-      "engagement": 1775
-    },
-    {
       "date": "2024-12-02",
       "posts": 1,
       "engagement": 55
@@ -465,11 +475,6 @@
       "engagement": 4978
     },
     {
-      "date": "2024-12-30",
-      "posts": 1,
-      "engagement": 109
-    },
-    {
       "date": "2025-01-06",
       "posts": 1,
       "engagement": 60
@@ -478,11 +483,6 @@
       "date": "2025-01-13",
       "posts": 1,
       "engagement": 61
-    },
-    {
-      "date": "2025-01-20",
-      "posts": 1,
-      "engagement": 172
     },
     {
       "date": "2025-01-27",

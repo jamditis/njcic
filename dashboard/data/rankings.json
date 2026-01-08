@@ -4,19 +4,19 @@
       "rank": 1,
       "name": "HudPost",
       "slug": "hudpost",
-      "value": 103604
+      "value": 103608
     },
     {
       "rank": 2,
       "name": "The Jersey Vindicator",
       "slug": "the-jersey-vindicator",
-      "value": 9610
+      "value": 9607
     },
     {
       "rank": 3,
       "name": "NJ Spotlight News",
       "slug": "nj-spotlight-news",
-      "value": 8623
+      "value": 6779
     },
     {
       "rank": 4,
@@ -34,7 +34,7 @@
       "rank": 6,
       "name": "Daily Targum",
       "slug": "daily-targum",
-      "value": 1609
+      "value": 1610
     },
     {
       "rank": 7,
@@ -46,40 +46,46 @@
       "rank": 8,
       "name": "Inside Climate News",
       "slug": "inside-climate-news",
-      "value": 675
+      "value": 698
     },
     {
       "rank": 9,
+      "name": "Lens 15 Media",
+      "slug": "lens-15-media",
+      "value": 496
+    },
+    {
+      "rank": 10,
       "name": "Clinton Hill Community Action",
       "slug": "clinton-hill-community-action",
       "value": 301
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "Chalkbeat Newark  Civic News Company ",
       "slug": "chalkbeat-newark-civic-news-company",
-      "value": 113
+      "value": 123
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "Public Square Amplified",
       "slug": "public-square-amplified",
       "value": 58
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "Montclair Local Nonprofit News",
       "slug": "montclair-local-nonprofit-news",
       "value": 38
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "Camden Parent   Student Union",
       "slug": "camden-parent-student-union",
       "value": 17
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "Mental Health Association of New Jersey",
       "slug": "mental-health-association-of-new-jersey",
       "value": 0
@@ -124,48 +130,54 @@
     },
     {
       "rank": 7,
+      "name": "Lens 15 Media",
+      "slug": "lens-15-media",
+      "value": 26
+    },
+    {
+      "rank": 8,
       "name": "Slice of Culture   Saint Peter s University",
       "slug": "slice-of-culture-saint-peter-s-university",
       "value": 26
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "The College of New Jersey",
       "slug": "the-college-of-new-jersey",
       "value": 26
     },
     {
-      "rank": 9,
+      "rank": 10,
       "name": "Chalkbeat Newark  Civic News Company ",
       "slug": "chalkbeat-newark-civic-news-company",
       "value": 25
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "Inside Climate News",
       "slug": "inside-climate-news",
       "value": 25
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "Montclair Local Nonprofit News",
       "slug": "montclair-local-nonprofit-news",
       "value": 25
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "Public Square Amplified",
       "slug": "public-square-amplified",
       "value": 25
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "The Jersey Vindicator",
       "slug": "the-jersey-vindicator",
       "value": 25
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "Mental Health Association of New Jersey",
       "slug": "mental-health-association-of-new-jersey",
       "value": 1
@@ -176,19 +188,19 @@
       "rank": 1,
       "name": "HudPost",
       "slug": "hudpost",
-      "value": 3984.77
+      "value": 3984.92
     },
     {
       "rank": 2,
       "name": "The Jersey Vindicator",
       "slug": "the-jersey-vindicator",
-      "value": 384.4
+      "value": 384.28
     },
     {
       "rank": 3,
       "name": "NJ Spotlight News",
       "slug": "nj-spotlight-news",
-      "value": 169.08
+      "value": 132.92
     },
     {
       "rank": 4,
@@ -206,13 +218,13 @@
       "rank": 6,
       "name": "Daily Targum",
       "slug": "daily-targum",
-      "value": 61.88
+      "value": 61.92
     },
     {
       "rank": 7,
       "name": "Inside Climate News",
       "slug": "inside-climate-news",
-      "value": 27.0
+      "value": 27.92
     },
     {
       "rank": 8,
@@ -222,36 +234,42 @@
     },
     {
       "rank": 9,
+      "name": "Lens 15 Media",
+      "slug": "lens-15-media",
+      "value": 19.08
+    },
+    {
+      "rank": 10,
       "name": "Clinton Hill Community Action",
       "slug": "clinton-hill-community-action",
       "value": 11.58
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "Chalkbeat Newark  Civic News Company ",
       "slug": "chalkbeat-newark-civic-news-company",
-      "value": 4.52
+      "value": 4.92
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "Public Square Amplified",
       "slug": "public-square-amplified",
       "value": 2.32
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "Montclair Local Nonprofit News",
       "slug": "montclair-local-nonprofit-news",
       "value": 1.52
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "Camden Parent   Student Union",
       "slug": "camden-parent-student-union",
       "value": 0.65
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "Mental Health Association of New Jersey",
       "slug": "mental-health-association-of-new-jersey",
       "value": 0.0
@@ -262,13 +280,13 @@
       "rank": 1,
       "name": "Inside Climate News",
       "slug": "inside-climate-news",
-      "value": 25576
+      "value": 25578
     },
     {
       "rank": 2,
       "name": "Chalkbeat Newark  Civic News Company ",
       "slug": "chalkbeat-newark-civic-news-company",
-      "value": 11029
+      "value": 11032
     },
     {
       "rank": 3,
@@ -286,7 +304,7 @@
       "rank": 5,
       "name": "Montclair Local Nonprofit News",
       "slug": "montclair-local-nonprofit-news",
-      "value": 2469
+      "value": 2468
     },
     {
       "rank": 6,
@@ -326,18 +344,24 @@
     },
     {
       "rank": 12,
+      "name": "Lens 15 Media",
+      "slug": "lens-15-media",
+      "value": 0
+    },
+    {
+      "rank": 13,
       "name": "Mental Health Association of New Jersey",
       "slug": "mental-health-association-of-new-jersey",
       "value": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "Slice of Culture   Saint Peter s University",
       "slug": "slice-of-culture-saint-peter-s-university",
       "value": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "The College of New Jersey",
       "slug": "the-college-of-new-jersey",
       "value": 0
@@ -394,40 +418,46 @@
     },
     {
       "rank": 9,
+      "name": "Lens 15 Media",
+      "slug": "lens-15-media",
+      "value": 1
+    },
+    {
+      "rank": 10,
       "name": "Mental Health Association of New Jersey",
       "slug": "mental-health-association-of-new-jersey",
       "value": 1
     },
     {
-      "rank": 10,
+      "rank": 11,
       "name": "Montclair Local Nonprofit News",
       "slug": "montclair-local-nonprofit-news",
       "value": 1
     },
     {
-      "rank": 11,
+      "rank": 12,
       "name": "Public Square Amplified",
       "slug": "public-square-amplified",
       "value": 1
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "Slice of Culture   Saint Peter s University",
       "slug": "slice-of-culture-saint-peter-s-university",
       "value": 1
     },
     {
-      "rank": 13,
+      "rank": 14,
       "name": "The College of New Jersey",
       "slug": "the-college-of-new-jersey",
       "value": 1
     },
     {
-      "rank": 14,
+      "rank": 15,
       "name": "The Jersey Vindicator",
       "slug": "the-jersey-vindicator",
       "value": 1
     }
   ],
-  "generated_at": "2026-01-07T18:27:25.602721"
+  "generated_at": "2026-01-07T22:22:16.683097"
 }

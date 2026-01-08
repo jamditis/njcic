@@ -1,0 +1,210 @@
+{
+  "name": "Lens 15 Media",
+  "slug": "lens-15-media",
+  "summary": {
+    "total_posts": 26,
+    "total_engagement": 496,
+    "total_followers": 0,
+    "platforms_active": 1,
+    "engagement_rate": 19.08,
+    "last_updated": "2026-01-07T22:22:16.667689"
+  },
+  "platform_breakdown": {
+    "tiktok": {
+      "posts": 26,
+      "posts_pct": 100.0,
+      "engagement": 496,
+      "engagement_pct": 100.0
+    }
+  },
+  "platforms": {
+    "tiktok": {
+      "posts": 26,
+      "engagement": 496,
+      "views": 11814,
+      "followers": 0,
+      "engagement_rate": 19.08,
+      "top_posts": [
+        {
+          "id": "7163387308635426050",
+          "url": "https://www.tiktok.com/@lens15media/video/7163387308635426050",
+          "text": "Carole Tonks says ahead of Hurricane Sandy, she made sure her Autisti...",
+          "date": "2022-11-07T14:21:30",
+          "engagement": {
+            "likes": 62,
+            "comments": 0,
+            "shares": 1,
+            "views": 655,
+            "total": 63
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/0069dd10387b4f11aca5c596b0ff3b78_1667856095~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=Ms4SX2%2FlAxgSqsXBMKDxs4kl4ro%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7164072234359852290",
+          "url": "https://www.tiktok.com/@lens15media/video/7164072234359852290",
+          "text": "Timika Cheek says #hurricanesandy and other storms taught her that th...",
+          "date": "2022-11-09T10:39:24",
+          "engagement": {
+            "likes": 53,
+            "comments": 0,
+            "shares": 1,
+            "views": 307,
+            "total": 54
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/b4a0a6717a044db0a652fa195432306c_1668015566~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=YDbhfvZdxrIiwgvguQleSy5c1%2FM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7162165446160977154",
+          "url": "https://www.tiktok.com/@lens15media/video/7162165446160977154",
+          "text": "Timika Cheek, who lives at an apartment complex for people with disab...",
+          "date": "2022-11-04T07:20:02",
+          "engagement": {
+            "likes": 44,
+            "comments": 0,
+            "shares": 1,
+            "views": 545,
+            "total": 45
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/d50a10c49507433bbeb4bfa02af48c0f_1667571603~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=%2FIrGsdALAdyTP1AM5y0TsIFOndI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.26,
+        "posts_per_week": 1.82,
+        "date_range_days": 96,
+        "first_post": "2022-11-02T13:06:28",
+        "last_post": "2023-02-07T09:57:52"
+      },
+      "time_series": [
+        {
+          "date": "2022-10-31",
+          "posts": 9,
+          "engagement": 139
+        },
+        {
+          "date": "2022-11-07",
+          "posts": 14,
+          "engagement": 335
+        },
+        {
+          "date": "2022-12-05",
+          "posts": 1,
+          "engagement": 20
+        },
+        {
+          "date": "2023-02-06",
+          "posts": 1,
+          "engagement": 2
+        }
+      ],
+      "content_types": {
+        "video": {
+          "count": 26,
+          "engagement": 496,
+          "percentage": 100.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": "7163387308635426050",
+      "url": "https://www.tiktok.com/@lens15media/video/7163387308635426050",
+      "text": "Carole Tonks says ahead of Hurricane Sandy, she made sure her Autisti...",
+      "date": "2022-11-07T14:21:30",
+      "engagement": {
+        "likes": 62,
+        "comments": 0,
+        "shares": 1,
+        "views": 655,
+        "total": 63
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/0069dd10387b4f11aca5c596b0ff3b78_1667856095~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=Ms4SX2%2FlAxgSqsXBMKDxs4kl4ro%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7164072234359852290",
+      "url": "https://www.tiktok.com/@lens15media/video/7164072234359852290",
+      "text": "Timika Cheek says #hurricanesandy and other storms taught her that th...",
+      "date": "2022-11-09T10:39:24",
+      "engagement": {
+        "likes": 53,
+        "comments": 0,
+        "shares": 1,
+        "views": 307,
+        "total": 54
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/b4a0a6717a044db0a652fa195432306c_1668015566~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=YDbhfvZdxrIiwgvguQleSy5c1%2FM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7162165446160977154",
+      "url": "https://www.tiktok.com/@lens15media/video/7162165446160977154",
+      "text": "Timika Cheek, who lives at an apartment complex for people with disab...",
+      "date": "2022-11-04T07:20:02",
+      "engagement": {
+        "likes": 44,
+        "comments": 0,
+        "shares": 1,
+        "views": 545,
+        "total": 45
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/d50a10c49507433bbeb4bfa02af48c0f_1667571603~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=%2FIrGsdALAdyTP1AM5y0TsIFOndI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7163377610737601793",
+      "url": "https://www.tiktok.com/@lens15media/video/7163377610737601793",
+      "text": "Norman Smith, who runs Project Freedom, an apartment complex for peop...",
+      "date": "2022-11-07T13:43:47",
+      "engagement": {
+        "likes": 41,
+        "comments": 1,
+        "shares": 1,
+        "views": 1323,
+        "total": 43
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/4bd10c8822304ce1a136581a06e79da0_1667853829~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=wfPBgbxs%2FDJ2Vm%2BtxmUE%2BhAMIms%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": "7163741022978116865",
+      "url": "https://www.tiktok.com/@lens15media/video/7163741022978116865",
+      "text": "Timika Cheek has 3 go-bags in her home just in case she needs to quic...",
+      "date": "2022-11-08T13:14:10",
+      "engagement": {
+        "likes": 35,
+        "comments": 0,
+        "shares": 1,
+        "views": 601,
+        "total": 36
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/af8001465ea74485b6b96462359ce865_1667938451~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=405rOIVfd0x8%2BN%2FKGw608TovVJk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0.26,
+    "posts_per_week": 1.82,
+    "date_range_days": 96,
+    "first_post": "2022-11-02T13:06:28",
+    "last_post": "2023-02-07T09:57:52"
+  },
+  "time_series": [
+    {
+      "date": "2022-10-31",
+      "posts": 9,
+      "engagement": 139
+    },
+    {
+      "date": "2022-11-07",
+      "posts": 14,
+      "engagement": 335
+    },
+    {
+      "date": "2022-12-05",
+      "posts": 1,
+      "engagement": 20
+    },
+    {
+      "date": "2023-02-06",
+      "posts": 1,
+      "engagement": 2
+    }
+  ]
+}

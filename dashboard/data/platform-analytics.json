@@ -2,16 +2,16 @@
   "platforms": {
     "tiktok": {
       "color": "#000000",
-      "grantees": 9,
-      "total_posts": 196,
-      "total_engagement": 119632,
+      "grantees": 10,
+      "total_posts": 222,
+      "total_engagement": 118289,
       "total_followers": 0,
-      "avg_engagement_per_post": 610.37,
-      "avg_posts_per_grantee": 21.8,
+      "avg_engagement_per_post": 532.83,
+      "avg_posts_per_grantee": 22.2,
       "content_types": {
         "video": {
-          "count": 196,
-          "engagement": 119632,
+          "count": 222,
+          "engagement": 118289,
           "percentage": 100.0
         }
       },
@@ -20,13 +20,13 @@
           "name": "HudPost",
           "slug": "hudpost",
           "posts": 26,
-          "engagement": 103604
+          "engagement": 103608
         },
         {
           "name": "NJ Spotlight News",
           "slug": "nj-spotlight-news",
           "posts": 26,
-          "engagement": 8504
+          "engagement": 6660
         },
         {
           "name": "The College of New Jersey",
@@ -44,13 +44,19 @@
           "name": "Daily Targum",
           "slug": "daily-targum",
           "posts": 26,
-          "engagement": 1609
+          "engagement": 1610
         },
         {
           "name": "South Jersey Climate News Project",
           "slug": "south-jersey-climate-news-project",
           "posts": 13,
           "engagement": 840
+        },
+        {
+          "name": "Lens 15 Media",
+          "slug": "lens-15-media",
+          "posts": 26,
+          "engagement": 496
         },
         {
           "name": "Clinton Hill Community Action",
@@ -76,14 +82,14 @@
       "color": "#0085FF",
       "grantees": 7,
       "total_posts": 175,
-      "total_engagement": 10620,
-      "total_followers": 48943,
-      "avg_engagement_per_post": 60.69,
+      "total_engagement": 10650,
+      "total_followers": 48947,
+      "avg_engagement_per_post": 60.86,
       "avg_posts_per_grantee": 25.0,
       "content_types": {
         "link": {
           "count": 131,
-          "engagement": 1027,
+          "engagement": 1060,
           "percentage": 74.9
         },
         "text": {
@@ -103,7 +109,7 @@
         },
         "video": {
           "count": 1,
-          "engagement": 9454,
+          "engagement": 9451,
           "percentage": 0.6
         }
       },
@@ -112,25 +118,25 @@
           "name": "The Jersey Vindicator",
           "slug": "the-jersey-vindicator",
           "posts": 25,
-          "engagement": 9610
+          "engagement": 9607
         },
         {
           "name": "Inside Climate News",
           "slug": "inside-climate-news",
           "posts": 25,
-          "engagement": 675
+          "engagement": 698
+        },
+        {
+          "name": "Chalkbeat Newark  Civic News Company ",
+          "slug": "chalkbeat-newark-civic-news-company",
+          "posts": 25,
+          "engagement": 123
         },
         {
           "name": "NJ Spotlight News",
           "slug": "nj-spotlight-news",
           "posts": 25,
           "engagement": 119
-        },
-        {
-          "name": "Chalkbeat Newark  Civic News Company ",
-          "slug": "chalkbeat-newark-civic-news-company",
-          "posts": 25,
-          "engagement": 113
         },
         {
           "name": "Public Square Amplified",
@@ -157,17 +163,17 @@
     "by_engagement": [
       {
         "platform": "tiktok",
-        "engagement": 119632
+        "engagement": 118289
       },
       {
         "platform": "bluesky",
-        "engagement": 10620
+        "engagement": 10650
       }
     ],
     "by_posts": [
       {
         "platform": "tiktok",
-        "posts": 196
+        "posts": 222
       },
       {
         "platform": "bluesky",
@@ -175,5 +181,5 @@
       }
     ]
   },
-  "generated_at": "2026-01-07T18:27:25.603301"
+  "generated_at": "2026-01-07T22:22:16.683695"
 }

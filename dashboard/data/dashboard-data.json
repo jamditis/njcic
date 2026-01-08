@@ -1,28 +1,28 @@
 {
   "summary": {
-    "totalGrantees": 14,
-    "totalPosts": 371,
-    "totalEngagement": 130252,
-    "totalFollowers": 48943,
+    "totalGrantees": 15,
+    "totalPosts": 397,
+    "totalEngagement": 128939,
+    "totalFollowers": 48947,
     "platformsTracked": 2,
-    "avgEngagementRate": 351.08,
-    "lastUpdated": "2026-01-07T18:27:25.603550",
+    "avgEngagementRate": 324.78,
+    "lastUpdated": "2026-01-07T22:22:16.684132",
     "scrapingDuration": "aggregated"
   },
   "platforms": {
     "tiktok": {
-      "posts": 196,
-      "engagement": 119632,
+      "posts": 222,
+      "engagement": 118289,
       "followers": 0,
-      "grantees": 9,
-      "avgEngagement": 610.37
+      "grantees": 10,
+      "avgEngagement": 532.83
     },
     "bluesky": {
       "posts": 175,
-      "engagement": 10620,
-      "followers": 48943,
+      "engagement": 10650,
+      "followers": 48947,
       "grantees": 7,
-      "avgEngagement": 60.69
+      "avgEngagement": 60.86
     }
   },
   "topGrantees": [
@@ -30,9 +30,9 @@
       "name": "HudPost",
       "slug": "hudpost",
       "posts": 26,
-      "engagement": 103604,
+      "engagement": 103608,
       "followers": 0,
-      "engagementRate": 3984.77,
+      "engagementRate": 3984.92,
       "topPlatform": "tiktok",
       "platformsScraped": 1
     },
@@ -40,9 +40,9 @@
       "name": "The Jersey Vindicator",
       "slug": "the-jersey-vindicator",
       "posts": 25,
-      "engagement": 9610,
+      "engagement": 9607,
       "followers": 6443,
-      "engagementRate": 384.4,
+      "engagementRate": 384.28,
       "topPlatform": "bluesky",
       "platformsScraped": 1
     },
@@ -50,9 +50,9 @@
       "name": "NJ Spotlight News",
       "slug": "nj-spotlight-news",
       "posts": 51,
-      "engagement": 8623,
+      "engagement": 6779,
       "followers": 3301,
-      "engagementRate": 169.08,
+      "engagementRate": 132.92,
       "topPlatform": "tiktok",
       "platformsScraped": 2
     },
@@ -80,9 +80,9 @@
       "name": "Daily Targum",
       "slug": "daily-targum",
       "posts": 26,
-      "engagement": 1609,
+      "engagement": 1610,
       "followers": 0,
-      "engagementRate": 61.88,
+      "engagementRate": 61.92,
       "topPlatform": "tiktok",
       "platformsScraped": 1
     },
@@ -100,10 +100,20 @@
       "name": "Inside Climate News",
       "slug": "inside-climate-news",
       "posts": 25,
-      "engagement": 675,
-      "followers": 25576,
-      "engagementRate": 27.0,
+      "engagement": 698,
+      "followers": 25578,
+      "engagementRate": 27.92,
       "topPlatform": "bluesky",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Lens 15 Media",
+      "slug": "lens-15-media",
+      "posts": 26,
+      "engagement": 496,
+      "followers": 0,
+      "engagementRate": 19.08,
+      "topPlatform": "tiktok",
       "platformsScraped": 1
     },
     {
@@ -120,9 +130,9 @@
       "name": "Chalkbeat Newark  Civic News Company ",
       "slug": "chalkbeat-newark-civic-news-company",
       "posts": 25,
-      "engagement": 113,
-      "followers": 11029,
-      "engagementRate": 4.52,
+      "engagement": 123,
+      "followers": 11032,
+      "engagementRate": 4.92,
       "topPlatform": "bluesky",
       "platformsScraped": 1
     },
@@ -135,34 +145,24 @@
       "engagementRate": 2.32,
       "topPlatform": "bluesky",
       "platformsScraped": 1
-    },
-    {
-      "name": "Montclair Local Nonprofit News",
-      "slug": "montclair-local-nonprofit-news",
-      "posts": 25,
-      "engagement": 38,
-      "followers": 2469,
-      "engagementRate": 1.52,
-      "topPlatform": "bluesky",
-      "platformsScraped": 1
     }
   ],
   "engagementByPlatform": [
     {
       "platform": "tiktok",
-      "engagement": 119632,
-      "posts": 196,
+      "engagement": 118289,
+      "posts": 222,
       "color": "#000000"
     },
     {
       "platform": "bluesky",
-      "engagement": 10620,
+      "engagement": 10650,
       "posts": 175,
       "color": "#0085FF"
     }
   ],
   "metadata": {
-    "generatedAt": "2026-01-07T18:27:25.603568",
+    "generatedAt": "2026-01-07T22:22:16.684151",
     "platformColors": {
       "twitter": "#1DA1F2",
       "youtube": "#FF0000",

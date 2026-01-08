@@ -3,27 +3,27 @@
   "slug": "chalkbeat-newark-civic-news-company",
   "summary": {
     "total_posts": 25,
-    "total_engagement": 113,
-    "total_followers": 11029,
+    "total_engagement": 123,
+    "total_followers": 11032,
     "platforms_active": 1,
-    "engagement_rate": 4.52,
-    "last_updated": "2026-01-07T18:27:25.575899"
+    "engagement_rate": 4.92,
+    "last_updated": "2026-01-07T22:22:16.652582"
   },
   "platform_breakdown": {
     "bluesky": {
       "posts": 25,
       "posts_pct": 100.0,
-      "engagement": 113,
+      "engagement": 123,
       "engagement_pct": 100.0
     }
   },
   "platforms": {
     "bluesky": {
       "posts": 25,
-      "engagement": 113,
+      "engagement": 123,
       "views": 0,
-      "followers": 11029,
-      "engagement_rate": 4.52,
+      "followers": 11032,
+      "engagement_rate": 4.92,
       "top_posts": [
         {
           "id": "3mbp46jryzz2m",
@@ -54,14 +54,14 @@
           "thumbnail": null
         },
         {
-          "id": "3mbpihqhqzs2u",
-          "url": "https://bsky.app/profile/chalkbeat.org/post/3mbpihqhqzs2u",
-          "text": "NYC schools Chancellor Kamar Samuels said every student deserves an integrated school in his opening letter to Education Department staff.",
-          "date": "2026-01-05T22:30:32",
+          "id": "3mbuqwmb5ax2q",
+          "url": "https://bsky.app/profile/chalkbeat.org/post/3mbuqwmb5ax2q",
+          "text": "After the Trump administration announced Monday that it was freezing funding for social programs in Colorado and four other states, officials said funds that help low-income families pay for child car",
+          "date": "2026-01-08T00:45:19",
           "engagement": {
-            "likes": 11,
-            "comments": 2,
-            "shares": 0,
+            "likes": 6,
+            "comments": 4,
+            "shares": 3,
             "views": 0,
             "total": 13
           },
@@ -84,13 +84,13 @@
         {
           "date": "2026-01-05",
           "posts": 24,
-          "engagement": 113
+          "engagement": 123
         }
       ],
       "content_types": {
         "link": {
           "count": 19,
-          "engagement": 105,
+          "engagement": 115,
           "percentage": 76.0
         },
         "text": {
@@ -136,6 +136,20 @@
       "thumbnail": null
     },
     {
+      "id": "3mbuqwmb5ax2q",
+      "url": "https://bsky.app/profile/chalkbeat.org/post/3mbuqwmb5ax2q",
+      "text": "After the Trump administration announced Monday that it was freezing funding for social programs in Colorado and four other states, officials said funds that help low-income families pay for child car",
+      "date": "2026-01-08T00:45:19",
+      "engagement": {
+        "likes": 6,
+        "comments": 4,
+        "shares": 3,
+        "views": 0,
+        "total": 13
+      },
+      "thumbnail": null
+    },
+    {
       "id": "3mbpihqhqzs2u",
       "url": "https://bsky.app/profile/chalkbeat.org/post/3mbpihqhqzs2u",
       "text": "NYC schools Chancellor Kamar Samuels said every student deserves an integrated school in his opening letter to Education Department staff.",
@@ -162,20 +176,6 @@
         "total": 9
       },
       "thumbnail": null
-    },
-    {
-      "id": "3mbrxt2moj52t",
-      "url": "https://bsky.app/profile/chalkbeat.org/post/3mbrxt2moj52t",
-      "text": "NYC schools Chancellor Kamar Samuels told principals on Monday that he plans to double down on former Mayor Eric Adams\u2019 reading curriculum reforms.",
-      "date": "2026-01-06T22:10:37",
-      "engagement": {
-        "likes": 6,
-        "comments": 0,
-        "shares": 2,
-        "views": 0,
-        "total": 8
-      },
-      "thumbnail": null
     }
   ],
   "overall_frequency": {
@@ -194,7 +194,7 @@
     {
       "date": "2026-01-05",
       "posts": 24,
-      "engagement": 113
+      "engagement": 123
     }
   ]
 }
