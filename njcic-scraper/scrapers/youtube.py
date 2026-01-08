@@ -249,9 +249,9 @@ class YouTubeScraper(BaseScraper):
                 'avg_engagement_rate': 0,
             }
 
-        total_views = sum(v.get('views', 0) for v in videos)
-        total_likes = sum(v.get('likes', 0) for v in videos)
-        total_comments = sum(v.get('comments', 0) for v in videos)
+        total_views = sum(v.get('views') or 0 for v in videos)
+        total_likes = sum(v.get('likes') or 0 for v in videos)
+        total_comments = sum(v.get('comments') or 0 for v in videos)
         num_videos = len(videos)
 
         avg_views = total_views / num_videos if num_videos > 0 else 0
@@ -260,10 +260,10 @@ class YouTubeScraper(BaseScraper):
         # Only for videos with views > 0
         engagement_rates = []
         for video in videos:
-            views = video.get('views', 0)
+            views = video.get('views') or 0
             if views > 0:
-                likes = video.get('likes', 0)
-                comments = video.get('comments', 0)
+                likes = video.get('likes') or 0
+                comments = video.get('comments') or 0
                 engagement_rate = ((likes + comments) / views) * 100
                 engagement_rates.append(engagement_rate)
 

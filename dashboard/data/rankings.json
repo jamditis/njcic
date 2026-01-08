@@ -2,93 +2,267 @@
   "by_engagement": [
     {
       "rank": 1,
-      "name": "HudPost",
-      "slug": "hudpost",
-      "value": 103608
+      "name": "Muslim",
+      "slug": "muslim",
+      "value": 1305280
     },
     {
       "rank": 2,
-      "name": "The Jersey Vindicator",
-      "slug": "the-jersey-vindicator",
-      "value": 9607
+      "name": "Global Patriot Newspapers online",
+      "slug": "global-patriot-newspapers-online",
+      "value": 243587
     },
     {
       "rank": 3,
-      "name": "NJ Spotlight News",
-      "slug": "nj-spotlight-news",
-      "value": 6779
+      "name": "HudPost",
+      "slug": "hudpost",
+      "value": 117859
     },
     {
       "rank": 4,
-      "name": "The College of New Jersey",
-      "slug": "the-college-of-new-jersey",
-      "value": 2966
+      "name": "NJ Spotlight News",
+      "slug": "nj-spotlight-news",
+      "value": 12252
     },
     {
       "rank": 5,
-      "name": "Slice of Culture   Saint Peter s University",
-      "slug": "slice-of-culture-saint-peter-s-university",
-      "value": 1791
+      "name": "The Jersey Vindicator",
+      "slug": "the-jersey-vindicator",
+      "value": 9603
     },
     {
       "rank": 6,
-      "name": "Daily Targum",
-      "slug": "daily-targum",
-      "value": 1610
+      "name": "Inside Climate News",
+      "slug": "inside-climate-news",
+      "value": 6323
     },
     {
       "rank": 7,
-      "name": "South Jersey Climate News Project",
-      "slug": "south-jersey-climate-news-project",
-      "value": 847
+      "name": "The College of New Jersey",
+      "slug": "the-college-of-new-jersey",
+      "value": 4759
     },
     {
       "rank": 8,
-      "name": "Inside Climate News",
-      "slug": "inside-climate-news",
-      "value": 698
+      "name": "Trenton Journal",
+      "slug": "trenton-journal",
+      "value": 2847
     },
     {
       "rank": 9,
-      "name": "Lens 15 Media",
-      "slug": "lens-15-media",
-      "value": 496
+      "name": "New Labor",
+      "slug": "new-labor",
+      "value": 2754
     },
     {
       "rank": 10,
-      "name": "Clinton Hill Community Action",
-      "slug": "clinton-hill-community-action",
-      "value": 301
+      "name": "Slice of Culture   Saint Peter s University",
+      "slug": "slice-of-culture-saint-peter-s-university",
+      "value": 2407
     },
     {
       "rank": 11,
-      "name": "Chalkbeat Newark  Civic News Company ",
-      "slug": "chalkbeat-newark-civic-news-company",
-      "value": 123
+      "name": "VietLead",
+      "slug": "vietlead",
+      "value": 2290
     },
     {
       "rank": 12,
-      "name": "Public Square Amplified",
-      "slug": "public-square-amplified",
-      "value": 58
+      "name": "Daily Targum",
+      "slug": "daily-targum",
+      "value": 2180
     },
     {
       "rank": 13,
-      "name": "Montclair Local Nonprofit News",
-      "slug": "montclair-local-nonprofit-news",
-      "value": 38
+      "name": "The Daily Targum  Targum Publishing Co  ",
+      "slug": "the-daily-targum-targum-publishing-co",
+      "value": 1611
     },
     {
       "rank": 14,
-      "name": "Camden Parent   Student Union",
-      "slug": "camden-parent-student-union",
-      "value": 17
+      "name": "Black in Jersey",
+      "slug": "black-in-jersey",
+      "value": 1547
     },
     {
       "rank": 15,
+      "name": "Newark Water Coalition",
+      "slug": "newark-water-coalition",
+      "value": 1256
+    },
+    {
+      "rank": 16,
+      "name": "The Tower at Princeton High School",
+      "slug": "the-tower-at-princeton-high-school",
+      "value": 1068
+    },
+    {
+      "rank": 17,
+      "name": "Chalkbeat Newark  Civic News Company ",
+      "slug": "chalkbeat-newark-civic-news-company",
+      "value": 1034
+    },
+    {
+      "rank": 18,
+      "name": "South Jersey Climate News Project",
+      "slug": "south-jersey-climate-news-project",
+      "value": 1023
+    },
+    {
+      "rank": 19,
+      "name": "Newark News and Story Collaborative",
+      "slug": "newark-news-and-story-collaborative",
+      "value": 1011
+    },
+    {
+      "rank": 20,
+      "name": "Camden Fireworks",
+      "slug": "camden-fireworks",
+      "value": 930
+    },
+    {
+      "rank": 21,
+      "name": "DoverNow Magazine",
+      "slug": "dovernow-magazine",
+      "value": 871
+    },
+    {
+      "rank": 22,
+      "name": "Clinton Hill Community Action",
+      "slug": "clinton-hill-community-action",
+      "value": 724
+    },
+    {
+      "rank": 23,
+      "name": "Central Desi",
+      "slug": "central-desi",
+      "value": 686
+    },
+    {
+      "rank": 24,
+      "name": "NJ Pen",
+      "slug": "nj-pen",
+      "value": 607
+    },
+    {
+      "rank": 25,
+      "name": "Lens 15 Media",
+      "slug": "lens-15-media",
+      "value": 594
+    },
+    {
+      "rank": 26,
+      "name": "Central New Jersey Network",
+      "slug": "central-new-jersey-network",
+      "value": 345
+    },
+    {
+      "rank": 27,
+      "name": "Montclair Local Nonprofit News",
+      "slug": "montclair-local-nonprofit-news",
+      "value": 318
+    },
+    {
+      "rank": 28,
+      "name": "coLAB Arts",
+      "slug": "colab-arts",
+      "value": 307
+    },
+    {
+      "rank": 29,
+      "name": "Movimiento Cosecha",
+      "slug": "movimiento-cosecha",
+      "value": 271
+    },
+    {
+      "rank": 30,
+      "name": "The Jersey Bee",
+      "slug": "the-jersey-bee",
+      "value": 242
+    },
+    {
+      "rank": 31,
+      "name": "Two River Times",
+      "slug": "two-river-times",
+      "value": 202
+    },
+    {
+      "rank": 32,
+      "name": "Hammonton Gazette",
+      "slug": "hammonton-gazette",
+      "value": 179
+    },
+    {
+      "rank": 33,
+      "name": "Public Square Amplified",
+      "slug": "public-square-amplified",
+      "value": 132
+    },
+    {
+      "rank": 34,
+      "name": "MercerMe",
+      "slug": "mercerme",
+      "value": 88
+    },
+    {
+      "rank": 35,
+      "name": "Healthy NewsWorks",
+      "slug": "healthy-newsworks",
+      "value": 81
+    },
+    {
+      "rank": 36,
+      "name": "Hopeloft  Inc ",
+      "slug": "hopeloft-inc",
+      "value": 73
+    },
+    {
+      "rank": 37,
+      "name": "Front Runner New Jersey",
+      "slug": "front-runner-new-jersey",
+      "value": 71
+    },
+    {
+      "rank": 38,
+      "name": "New Jersey Council for the Humanities and Journalism   Design",
+      "slug": "new-jersey-council-for-the-humanities-and-journalism-design",
+      "value": 60
+    },
+    {
+      "rank": 39,
+      "name": "Latino Spirit Media",
+      "slug": "latino-spirit-media",
+      "value": 54
+    },
+    {
+      "rank": 40,
+      "name": "Corporation for New Jersey Local Media",
+      "slug": "corporation-for-new-jersey-local-media",
+      "value": 51
+    },
+    {
+      "rank": 41,
+      "name": "Paterson Alliance",
+      "slug": "paterson-alliance",
+      "value": 41
+    },
+    {
+      "rank": 42,
       "name": "Mental Health Association of New Jersey",
       "slug": "mental-health-association-of-new-jersey",
-      "value": 0
+      "value": 37
+    },
+    {
+      "rank": 43,
+      "name": "Camden Parent   Student Union",
+      "slug": "camden-parent-student-union",
+      "value": 22
+    },
+    {
+      "rank": 44,
+      "name": "New Jersey Urban News",
+      "slug": "new-jersey-urban-news",
+      "value": -4
     }
   ],
   "by_posts": [
@@ -96,183 +270,531 @@
       "rank": 1,
       "name": "NJ Spotlight News",
       "slug": "nj-spotlight-news",
-      "value": 51
+      "value": 63
     },
     {
       "rank": 2,
       "name": "South Jersey Climate News Project",
       "slug": "south-jersey-climate-news-project",
-      "value": 38
+      "value": 50
     },
     {
       "rank": 3,
-      "name": "Camden Parent   Student Union",
-      "slug": "camden-parent-student-union",
-      "value": 26
+      "name": "Inside Climate News",
+      "slug": "inside-climate-news",
+      "value": 43
     },
     {
       "rank": 4,
-      "name": "Clinton Hill Community Action",
-      "slug": "clinton-hill-community-action",
-      "value": 26
+      "name": "Camden Parent   Student Union",
+      "slug": "camden-parent-student-union",
+      "value": 38
     },
     {
       "rank": 5,
-      "name": "Daily Targum",
-      "slug": "daily-targum",
-      "value": 26
+      "name": "Clinton Hill Community Action",
+      "slug": "clinton-hill-community-action",
+      "value": 38
     },
     {
       "rank": 6,
-      "name": "HudPost",
-      "slug": "hudpost",
-      "value": 26
+      "name": "Daily Targum",
+      "slug": "daily-targum",
+      "value": 38
     },
     {
       "rank": 7,
       "name": "Lens 15 Media",
       "slug": "lens-15-media",
-      "value": 26
+      "value": 38
     },
     {
       "rank": 8,
       "name": "Slice of Culture   Saint Peter s University",
       "slug": "slice-of-culture-saint-peter-s-university",
-      "value": 26
+      "value": 38
     },
     {
       "rank": 9,
       "name": "The College of New Jersey",
       "slug": "the-college-of-new-jersey",
-      "value": 26
+      "value": 38
     },
     {
       "rank": 10,
       "name": "Chalkbeat Newark  Civic News Company ",
       "slug": "chalkbeat-newark-civic-news-company",
-      "value": 25
+      "value": 37
     },
     {
       "rank": 11,
-      "name": "Inside Climate News",
-      "slug": "inside-climate-news",
-      "value": 25
+      "name": "HudPost",
+      "slug": "hudpost",
+      "value": 37
     },
     {
       "rank": 12,
       "name": "Montclair Local Nonprofit News",
       "slug": "montclair-local-nonprofit-news",
-      "value": 25
+      "value": 37
     },
     {
       "rank": 13,
       "name": "Public Square Amplified",
       "slug": "public-square-amplified",
-      "value": 25
+      "value": 37
     },
     {
       "rank": 14,
+      "name": "The Jersey Bee",
+      "slug": "the-jersey-bee",
+      "value": 37
+    },
+    {
+      "rank": 15,
+      "name": "Global Patriot Newspapers online",
+      "slug": "global-patriot-newspapers-online",
+      "value": 26
+    },
+    {
+      "rank": 16,
+      "name": "Muslim",
+      "slug": "muslim",
+      "value": 26
+    },
+    {
+      "rank": 17,
+      "name": "The Daily Targum  Targum Publishing Co  ",
+      "slug": "the-daily-targum-targum-publishing-co",
+      "value": 26
+    },
+    {
+      "rank": 18,
       "name": "The Jersey Vindicator",
       "slug": "the-jersey-vindicator",
       "value": 25
     },
     {
-      "rank": 15,
+      "rank": 19,
       "name": "Mental Health Association of New Jersey",
       "slug": "mental-health-association-of-new-jersey",
-      "value": 1
+      "value": 13
+    },
+    {
+      "rank": 20,
+      "name": "Black in Jersey",
+      "slug": "black-in-jersey",
+      "value": 12
+    },
+    {
+      "rank": 21,
+      "name": "Camden Fireworks",
+      "slug": "camden-fireworks",
+      "value": 12
+    },
+    {
+      "rank": 22,
+      "name": "Central Desi",
+      "slug": "central-desi",
+      "value": 12
+    },
+    {
+      "rank": 23,
+      "name": "Central New Jersey Network",
+      "slug": "central-new-jersey-network",
+      "value": 12
+    },
+    {
+      "rank": 24,
+      "name": "Corporation for New Jersey Local Media",
+      "slug": "corporation-for-new-jersey-local-media",
+      "value": 12
+    },
+    {
+      "rank": 25,
+      "name": "DoverNow Magazine",
+      "slug": "dovernow-magazine",
+      "value": 12
+    },
+    {
+      "rank": 26,
+      "name": "Front Runner New Jersey",
+      "slug": "front-runner-new-jersey",
+      "value": 12
+    },
+    {
+      "rank": 27,
+      "name": "Hammonton Gazette",
+      "slug": "hammonton-gazette",
+      "value": 12
+    },
+    {
+      "rank": 28,
+      "name": "Healthy NewsWorks",
+      "slug": "healthy-newsworks",
+      "value": 12
+    },
+    {
+      "rank": 29,
+      "name": "Hopeloft  Inc ",
+      "slug": "hopeloft-inc",
+      "value": 12
+    },
+    {
+      "rank": 30,
+      "name": "Latino Spirit Media",
+      "slug": "latino-spirit-media",
+      "value": 12
+    },
+    {
+      "rank": 31,
+      "name": "MercerMe",
+      "slug": "mercerme",
+      "value": 12
+    },
+    {
+      "rank": 32,
+      "name": "Movimiento Cosecha",
+      "slug": "movimiento-cosecha",
+      "value": 12
+    },
+    {
+      "rank": 33,
+      "name": "NJ Pen",
+      "slug": "nj-pen",
+      "value": 12
+    },
+    {
+      "rank": 34,
+      "name": "New Jersey Council for the Humanities and Journalism   Design",
+      "slug": "new-jersey-council-for-the-humanities-and-journalism-design",
+      "value": 12
+    },
+    {
+      "rank": 35,
+      "name": "New Jersey Urban News",
+      "slug": "new-jersey-urban-news",
+      "value": 12
+    },
+    {
+      "rank": 36,
+      "name": "New Labor",
+      "slug": "new-labor",
+      "value": 12
+    },
+    {
+      "rank": 37,
+      "name": "Newark News and Story Collaborative",
+      "slug": "newark-news-and-story-collaborative",
+      "value": 12
+    },
+    {
+      "rank": 38,
+      "name": "Newark Water Coalition",
+      "slug": "newark-water-coalition",
+      "value": 12
+    },
+    {
+      "rank": 39,
+      "name": "Paterson Alliance",
+      "slug": "paterson-alliance",
+      "value": 12
+    },
+    {
+      "rank": 40,
+      "name": "The Tower at Princeton High School",
+      "slug": "the-tower-at-princeton-high-school",
+      "value": 12
+    },
+    {
+      "rank": 41,
+      "name": "Trenton Journal",
+      "slug": "trenton-journal",
+      "value": 12
+    },
+    {
+      "rank": 42,
+      "name": "Two River Times",
+      "slug": "two-river-times",
+      "value": 12
+    },
+    {
+      "rank": 43,
+      "name": "VietLead",
+      "slug": "vietlead",
+      "value": 12
+    },
+    {
+      "rank": 44,
+      "name": "coLAB Arts",
+      "slug": "colab-arts",
+      "value": 12
     }
   ],
   "by_engagement_rate": [
     {
       "rank": 1,
-      "name": "HudPost",
-      "slug": "hudpost",
-      "value": 3984.92
+      "name": "Muslim",
+      "slug": "muslim",
+      "value": 50203.08
     },
     {
       "rank": 2,
-      "name": "The Jersey Vindicator",
-      "slug": "the-jersey-vindicator",
-      "value": 384.28
+      "name": "Global Patriot Newspapers online",
+      "slug": "global-patriot-newspapers-online",
+      "value": 9368.73
     },
     {
       "rank": 3,
-      "name": "NJ Spotlight News",
-      "slug": "nj-spotlight-news",
-      "value": 132.92
+      "name": "HudPost",
+      "slug": "hudpost",
+      "value": 3185.38
     },
     {
       "rank": 4,
-      "name": "The College of New Jersey",
-      "slug": "the-college-of-new-jersey",
-      "value": 114.08
+      "name": "The Jersey Vindicator",
+      "slug": "the-jersey-vindicator",
+      "value": 384.12
     },
     {
       "rank": 5,
-      "name": "Slice of Culture   Saint Peter s University",
-      "slug": "slice-of-culture-saint-peter-s-university",
-      "value": 68.88
+      "name": "Trenton Journal",
+      "slug": "trenton-journal",
+      "value": 237.25
     },
     {
       "rank": 6,
-      "name": "Daily Targum",
-      "slug": "daily-targum",
-      "value": 61.92
+      "name": "New Labor",
+      "slug": "new-labor",
+      "value": 229.5
     },
     {
       "rank": 7,
-      "name": "Inside Climate News",
-      "slug": "inside-climate-news",
-      "value": 27.92
+      "name": "NJ Spotlight News",
+      "slug": "nj-spotlight-news",
+      "value": 194.48
     },
     {
       "rank": 8,
-      "name": "South Jersey Climate News Project",
-      "slug": "south-jersey-climate-news-project",
-      "value": 22.29
+      "name": "VietLead",
+      "slug": "vietlead",
+      "value": 190.83
     },
     {
       "rank": 9,
-      "name": "Lens 15 Media",
-      "slug": "lens-15-media",
-      "value": 19.08
+      "name": "Inside Climate News",
+      "slug": "inside-climate-news",
+      "value": 147.05
     },
     {
       "rank": 10,
-      "name": "Clinton Hill Community Action",
-      "slug": "clinton-hill-community-action",
-      "value": 11.58
+      "name": "Black in Jersey",
+      "slug": "black-in-jersey",
+      "value": 128.92
     },
     {
       "rank": 11,
-      "name": "Chalkbeat Newark  Civic News Company ",
-      "slug": "chalkbeat-newark-civic-news-company",
-      "value": 4.92
+      "name": "The College of New Jersey",
+      "slug": "the-college-of-new-jersey",
+      "value": 125.24
     },
     {
       "rank": 12,
-      "name": "Public Square Amplified",
-      "slug": "public-square-amplified",
-      "value": 2.32
+      "name": "Newark Water Coalition",
+      "slug": "newark-water-coalition",
+      "value": 104.67
     },
     {
       "rank": 13,
-      "name": "Montclair Local Nonprofit News",
-      "slug": "montclair-local-nonprofit-news",
-      "value": 1.52
+      "name": "The Tower at Princeton High School",
+      "slug": "the-tower-at-princeton-high-school",
+      "value": 89.0
     },
     {
       "rank": 14,
-      "name": "Camden Parent   Student Union",
-      "slug": "camden-parent-student-union",
-      "value": 0.65
+      "name": "Newark News and Story Collaborative",
+      "slug": "newark-news-and-story-collaborative",
+      "value": 84.25
     },
     {
       "rank": 15,
+      "name": "Camden Fireworks",
+      "slug": "camden-fireworks",
+      "value": 77.5
+    },
+    {
+      "rank": 16,
+      "name": "DoverNow Magazine",
+      "slug": "dovernow-magazine",
+      "value": 72.58
+    },
+    {
+      "rank": 17,
+      "name": "Slice of Culture   Saint Peter s University",
+      "slug": "slice-of-culture-saint-peter-s-university",
+      "value": 63.34
+    },
+    {
+      "rank": 18,
+      "name": "The Daily Targum  Targum Publishing Co  ",
+      "slug": "the-daily-targum-targum-publishing-co",
+      "value": 61.96
+    },
+    {
+      "rank": 19,
+      "name": "Daily Targum",
+      "slug": "daily-targum",
+      "value": 57.37
+    },
+    {
+      "rank": 20,
+      "name": "Central Desi",
+      "slug": "central-desi",
+      "value": 57.17
+    },
+    {
+      "rank": 21,
+      "name": "NJ Pen",
+      "slug": "nj-pen",
+      "value": 50.58
+    },
+    {
+      "rank": 22,
+      "name": "Central New Jersey Network",
+      "slug": "central-new-jersey-network",
+      "value": 28.75
+    },
+    {
+      "rank": 23,
+      "name": "Chalkbeat Newark  Civic News Company ",
+      "slug": "chalkbeat-newark-civic-news-company",
+      "value": 27.95
+    },
+    {
+      "rank": 24,
+      "name": "coLAB Arts",
+      "slug": "colab-arts",
+      "value": 25.58
+    },
+    {
+      "rank": 25,
+      "name": "Movimiento Cosecha",
+      "slug": "movimiento-cosecha",
+      "value": 22.58
+    },
+    {
+      "rank": 26,
+      "name": "South Jersey Climate News Project",
+      "slug": "south-jersey-climate-news-project",
+      "value": 20.46
+    },
+    {
+      "rank": 27,
+      "name": "Clinton Hill Community Action",
+      "slug": "clinton-hill-community-action",
+      "value": 19.05
+    },
+    {
+      "rank": 28,
+      "name": "Two River Times",
+      "slug": "two-river-times",
+      "value": 16.83
+    },
+    {
+      "rank": 29,
+      "name": "Lens 15 Media",
+      "slug": "lens-15-media",
+      "value": 15.63
+    },
+    {
+      "rank": 30,
+      "name": "Hammonton Gazette",
+      "slug": "hammonton-gazette",
+      "value": 14.92
+    },
+    {
+      "rank": 31,
+      "name": "Montclair Local Nonprofit News",
+      "slug": "montclair-local-nonprofit-news",
+      "value": 8.59
+    },
+    {
+      "rank": 32,
+      "name": "MercerMe",
+      "slug": "mercerme",
+      "value": 7.33
+    },
+    {
+      "rank": 33,
+      "name": "Healthy NewsWorks",
+      "slug": "healthy-newsworks",
+      "value": 6.75
+    },
+    {
+      "rank": 34,
+      "name": "The Jersey Bee",
+      "slug": "the-jersey-bee",
+      "value": 6.54
+    },
+    {
+      "rank": 35,
+      "name": "Hopeloft  Inc ",
+      "slug": "hopeloft-inc",
+      "value": 6.08
+    },
+    {
+      "rank": 36,
+      "name": "Front Runner New Jersey",
+      "slug": "front-runner-new-jersey",
+      "value": 5.92
+    },
+    {
+      "rank": 37,
+      "name": "New Jersey Council for the Humanities and Journalism   Design",
+      "slug": "new-jersey-council-for-the-humanities-and-journalism-design",
+      "value": 5.0
+    },
+    {
+      "rank": 38,
+      "name": "Latino Spirit Media",
+      "slug": "latino-spirit-media",
+      "value": 4.5
+    },
+    {
+      "rank": 39,
+      "name": "Corporation for New Jersey Local Media",
+      "slug": "corporation-for-new-jersey-local-media",
+      "value": 4.25
+    },
+    {
+      "rank": 40,
+      "name": "Public Square Amplified",
+      "slug": "public-square-amplified",
+      "value": 3.57
+    },
+    {
+      "rank": 41,
+      "name": "Paterson Alliance",
+      "slug": "paterson-alliance",
+      "value": 3.42
+    },
+    {
+      "rank": 42,
       "name": "Mental Health Association of New Jersey",
       "slug": "mental-health-association-of-new-jersey",
-      "value": 0.0
+      "value": 2.85
+    },
+    {
+      "rank": 43,
+      "name": "Camden Parent   Student Union",
+      "slug": "camden-parent-student-union",
+      "value": 0.58
+    },
+    {
+      "rank": 44,
+      "name": "New Jersey Urban News",
+      "slug": "new-jersey-urban-news",
+      "value": -0.33
     }
   ],
   "by_followers": [
@@ -280,7 +802,7 @@
       "rank": 1,
       "name": "Inside Climate News",
       "slug": "inside-climate-news",
-      "value": 25578
+      "value": 25584
     },
     {
       "rank": 2,
@@ -308,156 +830,504 @@
     },
     {
       "rank": 6,
+      "name": "The Jersey Bee",
+      "slug": "the-jersey-bee",
+      "value": 1844
+    },
+    {
+      "rank": 7,
+      "name": "Movimiento Cosecha",
+      "slug": "movimiento-cosecha",
+      "value": 1355
+    },
+    {
+      "rank": 8,
       "name": "Public Square Amplified",
       "slug": "public-square-amplified",
       "value": 82
     },
     {
-      "rank": 7,
+      "rank": 9,
       "name": "South Jersey Climate News Project",
       "slug": "south-jersey-climate-news-project",
       "value": 43
     },
     {
-      "rank": 8,
+      "rank": 10,
+      "name": "Black in Jersey",
+      "slug": "black-in-jersey",
+      "value": 0
+    },
+    {
+      "rank": 11,
+      "name": "Camden Fireworks",
+      "slug": "camden-fireworks",
+      "value": 0
+    },
+    {
+      "rank": 12,
       "name": "Camden Parent   Student Union",
       "slug": "camden-parent-student-union",
       "value": 0
     },
     {
-      "rank": 9,
+      "rank": 13,
+      "name": "Central Desi",
+      "slug": "central-desi",
+      "value": 0
+    },
+    {
+      "rank": 14,
+      "name": "Central New Jersey Network",
+      "slug": "central-new-jersey-network",
+      "value": 0
+    },
+    {
+      "rank": 15,
       "name": "Clinton Hill Community Action",
       "slug": "clinton-hill-community-action",
       "value": 0
     },
     {
-      "rank": 10,
+      "rank": 16,
+      "name": "Corporation for New Jersey Local Media",
+      "slug": "corporation-for-new-jersey-local-media",
+      "value": 0
+    },
+    {
+      "rank": 17,
       "name": "Daily Targum",
       "slug": "daily-targum",
       "value": 0
     },
     {
-      "rank": 11,
+      "rank": 18,
+      "name": "DoverNow Magazine",
+      "slug": "dovernow-magazine",
+      "value": 0
+    },
+    {
+      "rank": 19,
+      "name": "Front Runner New Jersey",
+      "slug": "front-runner-new-jersey",
+      "value": 0
+    },
+    {
+      "rank": 20,
+      "name": "Global Patriot Newspapers online",
+      "slug": "global-patriot-newspapers-online",
+      "value": 0
+    },
+    {
+      "rank": 21,
+      "name": "Hammonton Gazette",
+      "slug": "hammonton-gazette",
+      "value": 0
+    },
+    {
+      "rank": 22,
+      "name": "Healthy NewsWorks",
+      "slug": "healthy-newsworks",
+      "value": 0
+    },
+    {
+      "rank": 23,
+      "name": "Hopeloft  Inc ",
+      "slug": "hopeloft-inc",
+      "value": 0
+    },
+    {
+      "rank": 24,
       "name": "HudPost",
       "slug": "hudpost",
       "value": 0
     },
     {
-      "rank": 12,
+      "rank": 25,
+      "name": "Latino Spirit Media",
+      "slug": "latino-spirit-media",
+      "value": 0
+    },
+    {
+      "rank": 26,
       "name": "Lens 15 Media",
       "slug": "lens-15-media",
       "value": 0
     },
     {
-      "rank": 13,
+      "rank": 27,
       "name": "Mental Health Association of New Jersey",
       "slug": "mental-health-association-of-new-jersey",
       "value": 0
     },
     {
-      "rank": 14,
+      "rank": 28,
+      "name": "MercerMe",
+      "slug": "mercerme",
+      "value": 0
+    },
+    {
+      "rank": 29,
+      "name": "Muslim",
+      "slug": "muslim",
+      "value": 0
+    },
+    {
+      "rank": 30,
+      "name": "NJ Pen",
+      "slug": "nj-pen",
+      "value": 0
+    },
+    {
+      "rank": 31,
+      "name": "New Jersey Council for the Humanities and Journalism   Design",
+      "slug": "new-jersey-council-for-the-humanities-and-journalism-design",
+      "value": 0
+    },
+    {
+      "rank": 32,
+      "name": "New Jersey Urban News",
+      "slug": "new-jersey-urban-news",
+      "value": 0
+    },
+    {
+      "rank": 33,
+      "name": "New Labor",
+      "slug": "new-labor",
+      "value": 0
+    },
+    {
+      "rank": 34,
+      "name": "Newark News and Story Collaborative",
+      "slug": "newark-news-and-story-collaborative",
+      "value": 0
+    },
+    {
+      "rank": 35,
+      "name": "Newark Water Coalition",
+      "slug": "newark-water-coalition",
+      "value": 0
+    },
+    {
+      "rank": 36,
+      "name": "Paterson Alliance",
+      "slug": "paterson-alliance",
+      "value": 0
+    },
+    {
+      "rank": 37,
       "name": "Slice of Culture   Saint Peter s University",
       "slug": "slice-of-culture-saint-peter-s-university",
       "value": 0
     },
     {
-      "rank": 15,
+      "rank": 38,
       "name": "The College of New Jersey",
       "slug": "the-college-of-new-jersey",
+      "value": 0
+    },
+    {
+      "rank": 39,
+      "name": "The Daily Targum  Targum Publishing Co  ",
+      "slug": "the-daily-targum-targum-publishing-co",
+      "value": 0
+    },
+    {
+      "rank": 40,
+      "name": "The Tower at Princeton High School",
+      "slug": "the-tower-at-princeton-high-school",
+      "value": 0
+    },
+    {
+      "rank": 41,
+      "name": "Trenton Journal",
+      "slug": "trenton-journal",
+      "value": 0
+    },
+    {
+      "rank": 42,
+      "name": "Two River Times",
+      "slug": "two-river-times",
+      "value": 0
+    },
+    {
+      "rank": 43,
+      "name": "VietLead",
+      "slug": "vietlead",
+      "value": 0
+    },
+    {
+      "rank": 44,
+      "name": "coLAB Arts",
+      "slug": "colab-arts",
       "value": 0
     }
   ],
   "by_platforms": [
     {
       "rank": 1,
-      "name": "NJ Spotlight News",
-      "slug": "nj-spotlight-news",
-      "value": 2
+      "name": "Inside Climate News",
+      "slug": "inside-climate-news",
+      "value": 3
     },
     {
       "rank": 2,
-      "name": "South Jersey Climate News Project",
-      "slug": "south-jersey-climate-news-project",
-      "value": 2
+      "name": "NJ Spotlight News",
+      "slug": "nj-spotlight-news",
+      "value": 3
     },
     {
       "rank": 3,
-      "name": "Camden Parent   Student Union",
-      "slug": "camden-parent-student-union",
-      "value": 1
+      "name": "South Jersey Climate News Project",
+      "slug": "south-jersey-climate-news-project",
+      "value": 3
     },
     {
       "rank": 4,
-      "name": "Chalkbeat Newark  Civic News Company ",
-      "slug": "chalkbeat-newark-civic-news-company",
-      "value": 1
+      "name": "Camden Parent   Student Union",
+      "slug": "camden-parent-student-union",
+      "value": 2
     },
     {
       "rank": 5,
-      "name": "Clinton Hill Community Action",
-      "slug": "clinton-hill-community-action",
-      "value": 1
+      "name": "Chalkbeat Newark  Civic News Company ",
+      "slug": "chalkbeat-newark-civic-news-company",
+      "value": 2
     },
     {
       "rank": 6,
-      "name": "Daily Targum",
-      "slug": "daily-targum",
-      "value": 1
+      "name": "Clinton Hill Community Action",
+      "slug": "clinton-hill-community-action",
+      "value": 2
     },
     {
       "rank": 7,
-      "name": "HudPost",
-      "slug": "hudpost",
-      "value": 1
+      "name": "Daily Targum",
+      "slug": "daily-targum",
+      "value": 2
     },
     {
       "rank": 8,
-      "name": "Inside Climate News",
-      "slug": "inside-climate-news",
-      "value": 1
+      "name": "HudPost",
+      "slug": "hudpost",
+      "value": 2
     },
     {
       "rank": 9,
       "name": "Lens 15 Media",
       "slug": "lens-15-media",
-      "value": 1
+      "value": 2
     },
     {
       "rank": 10,
       "name": "Mental Health Association of New Jersey",
       "slug": "mental-health-association-of-new-jersey",
-      "value": 1
+      "value": 2
     },
     {
       "rank": 11,
       "name": "Montclair Local Nonprofit News",
       "slug": "montclair-local-nonprofit-news",
-      "value": 1
+      "value": 2
     },
     {
       "rank": 12,
       "name": "Public Square Amplified",
       "slug": "public-square-amplified",
-      "value": 1
+      "value": 2
     },
     {
       "rank": 13,
       "name": "Slice of Culture   Saint Peter s University",
       "slug": "slice-of-culture-saint-peter-s-university",
-      "value": 1
+      "value": 2
     },
     {
       "rank": 14,
       "name": "The College of New Jersey",
       "slug": "the-college-of-new-jersey",
-      "value": 1
+      "value": 2
     },
     {
       "rank": 15,
+      "name": "The Jersey Bee",
+      "slug": "the-jersey-bee",
+      "value": 2
+    },
+    {
+      "rank": 16,
+      "name": "Black in Jersey",
+      "slug": "black-in-jersey",
+      "value": 1
+    },
+    {
+      "rank": 17,
+      "name": "Camden Fireworks",
+      "slug": "camden-fireworks",
+      "value": 1
+    },
+    {
+      "rank": 18,
+      "name": "Central Desi",
+      "slug": "central-desi",
+      "value": 1
+    },
+    {
+      "rank": 19,
+      "name": "Central New Jersey Network",
+      "slug": "central-new-jersey-network",
+      "value": 1
+    },
+    {
+      "rank": 20,
+      "name": "Corporation for New Jersey Local Media",
+      "slug": "corporation-for-new-jersey-local-media",
+      "value": 1
+    },
+    {
+      "rank": 21,
+      "name": "DoverNow Magazine",
+      "slug": "dovernow-magazine",
+      "value": 1
+    },
+    {
+      "rank": 22,
+      "name": "Front Runner New Jersey",
+      "slug": "front-runner-new-jersey",
+      "value": 1
+    },
+    {
+      "rank": 23,
+      "name": "Global Patriot Newspapers online",
+      "slug": "global-patriot-newspapers-online",
+      "value": 1
+    },
+    {
+      "rank": 24,
+      "name": "Hammonton Gazette",
+      "slug": "hammonton-gazette",
+      "value": 1
+    },
+    {
+      "rank": 25,
+      "name": "Healthy NewsWorks",
+      "slug": "healthy-newsworks",
+      "value": 1
+    },
+    {
+      "rank": 26,
+      "name": "Hopeloft  Inc ",
+      "slug": "hopeloft-inc",
+      "value": 1
+    },
+    {
+      "rank": 27,
+      "name": "Latino Spirit Media",
+      "slug": "latino-spirit-media",
+      "value": 1
+    },
+    {
+      "rank": 28,
+      "name": "MercerMe",
+      "slug": "mercerme",
+      "value": 1
+    },
+    {
+      "rank": 29,
+      "name": "Movimiento Cosecha",
+      "slug": "movimiento-cosecha",
+      "value": 1
+    },
+    {
+      "rank": 30,
+      "name": "Muslim",
+      "slug": "muslim",
+      "value": 1
+    },
+    {
+      "rank": 31,
+      "name": "NJ Pen",
+      "slug": "nj-pen",
+      "value": 1
+    },
+    {
+      "rank": 32,
+      "name": "New Jersey Council for the Humanities and Journalism   Design",
+      "slug": "new-jersey-council-for-the-humanities-and-journalism-design",
+      "value": 1
+    },
+    {
+      "rank": 33,
+      "name": "New Jersey Urban News",
+      "slug": "new-jersey-urban-news",
+      "value": 1
+    },
+    {
+      "rank": 34,
+      "name": "New Labor",
+      "slug": "new-labor",
+      "value": 1
+    },
+    {
+      "rank": 35,
+      "name": "Newark News and Story Collaborative",
+      "slug": "newark-news-and-story-collaborative",
+      "value": 1
+    },
+    {
+      "rank": 36,
+      "name": "Newark Water Coalition",
+      "slug": "newark-water-coalition",
+      "value": 1
+    },
+    {
+      "rank": 37,
+      "name": "Paterson Alliance",
+      "slug": "paterson-alliance",
+      "value": 1
+    },
+    {
+      "rank": 38,
+      "name": "The Daily Targum  Targum Publishing Co  ",
+      "slug": "the-daily-targum-targum-publishing-co",
+      "value": 1
+    },
+    {
+      "rank": 39,
       "name": "The Jersey Vindicator",
       "slug": "the-jersey-vindicator",
       "value": 1
+    },
+    {
+      "rank": 40,
+      "name": "The Tower at Princeton High School",
+      "slug": "the-tower-at-princeton-high-school",
+      "value": 1
+    },
+    {
+      "rank": 41,
+      "name": "Trenton Journal",
+      "slug": "trenton-journal",
+      "value": 1
+    },
+    {
+      "rank": 42,
+      "name": "Two River Times",
+      "slug": "two-river-times",
+      "value": 1
+    },
+    {
+      "rank": 43,
+      "name": "VietLead",
+      "slug": "vietlead",
+      "value": 1
+    },
+    {
+      "rank": 44,
+      "name": "coLAB Arts",
+      "slug": "colab-arts",
+      "value": 1
     }
   ],
-  "generated_at": "2026-01-07T22:22:16.683097"
+  "generated_at": "2026-01-08T11:51:27.747857"
 }

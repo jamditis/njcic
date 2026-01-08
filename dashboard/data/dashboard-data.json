@@ -1,168 +1,181 @@
 {
   "summary": {
-    "totalGrantees": 15,
-    "totalPosts": 397,
-    "totalEngagement": 128939,
-    "totalFollowers": 48947,
-    "platformsTracked": 2,
-    "avgEngagementRate": 324.78,
-    "lastUpdated": "2026-01-07T22:22:16.684132",
+    "totalGrantees": 44,
+    "totalPosts": 985,
+    "totalEngagement": 1727673,
+    "totalFollowers": 52152,
+    "platformsTracked": 3,
+    "avgEngagementRate": 1753.98,
+    "lastUpdated": "2026-01-08T11:51:27.749349",
     "scrapingDuration": "aggregated"
   },
   "platforms": {
-    "tiktok": {
-      "posts": 222,
-      "engagement": 118289,
+    "instagram": {
+      "posts": 468,
+      "engagement": 44369,
       "followers": 0,
-      "grantees": 10,
-      "avgEngagement": 532.83
+      "grantees": 39,
+      "avgEngagement": 94.81
+    },
+    "tiktok": {
+      "posts": 305,
+      "engagement": 1672398,
+      "followers": 0,
+      "grantees": 14,
+      "avgEngagement": 5483.27
     },
     "bluesky": {
-      "posts": 175,
-      "engagement": 10650,
-      "followers": 48947,
-      "grantees": 7,
-      "avgEngagement": 60.86
+      "posts": 212,
+      "engagement": 10906,
+      "followers": 52152,
+      "grantees": 9,
+      "avgEngagement": 51.44
     }
   },
   "topGrantees": [
     {
-      "name": "HudPost",
-      "slug": "hudpost",
+      "name": "Muslim",
+      "slug": "muslim",
       "posts": 26,
-      "engagement": 103608,
+      "engagement": 1305280,
       "followers": 0,
-      "engagementRate": 3984.92,
+      "engagementRate": 50203.08,
       "topPlatform": "tiktok",
       "platformsScraped": 1
+    },
+    {
+      "name": "Global Patriot Newspapers online",
+      "slug": "global-patriot-newspapers-online",
+      "posts": 26,
+      "engagement": 243587,
+      "followers": 0,
+      "engagementRate": 9368.73,
+      "topPlatform": "tiktok",
+      "platformsScraped": 1
+    },
+    {
+      "name": "HudPost",
+      "slug": "hudpost",
+      "posts": 37,
+      "engagement": 117859,
+      "followers": 0,
+      "engagementRate": 3185.38,
+      "topPlatform": "tiktok",
+      "platformsScraped": 2
+    },
+    {
+      "name": "NJ Spotlight News",
+      "slug": "nj-spotlight-news",
+      "posts": 63,
+      "engagement": 12252,
+      "followers": 3301,
+      "engagementRate": 194.48,
+      "topPlatform": "tiktok",
+      "platformsScraped": 3
     },
     {
       "name": "The Jersey Vindicator",
       "slug": "the-jersey-vindicator",
       "posts": 25,
-      "engagement": 9607,
+      "engagement": 9603,
       "followers": 6443,
-      "engagementRate": 384.28,
+      "engagementRate": 384.12,
       "topPlatform": "bluesky",
       "platformsScraped": 1
     },
     {
-      "name": "NJ Spotlight News",
-      "slug": "nj-spotlight-news",
-      "posts": 51,
-      "engagement": 6779,
-      "followers": 3301,
-      "engagementRate": 132.92,
-      "topPlatform": "tiktok",
-      "platformsScraped": 2
+      "name": "Inside Climate News",
+      "slug": "inside-climate-news",
+      "posts": 43,
+      "engagement": 6323,
+      "followers": 25584,
+      "engagementRate": 147.05,
+      "topPlatform": "instagram",
+      "platformsScraped": 3
     },
     {
       "name": "The College of New Jersey",
       "slug": "the-college-of-new-jersey",
-      "posts": 26,
-      "engagement": 2966,
+      "posts": 38,
+      "engagement": 4759,
       "followers": 0,
-      "engagementRate": 114.08,
+      "engagementRate": 125.24,
       "topPlatform": "tiktok",
+      "platformsScraped": 2
+    },
+    {
+      "name": "Trenton Journal",
+      "slug": "trenton-journal",
+      "posts": 12,
+      "engagement": 2847,
+      "followers": 0,
+      "engagementRate": 237.25,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "New Labor",
+      "slug": "new-labor",
+      "posts": 12,
+      "engagement": 2754,
+      "followers": 0,
+      "engagementRate": 229.5,
+      "topPlatform": "instagram",
       "platformsScraped": 1
     },
     {
       "name": "Slice of Culture   Saint Peter s University",
       "slug": "slice-of-culture-saint-peter-s-university",
-      "posts": 26,
-      "engagement": 1791,
+      "posts": 38,
+      "engagement": 2407,
       "followers": 0,
-      "engagementRate": 68.88,
+      "engagementRate": 63.34,
       "topPlatform": "tiktok",
+      "platformsScraped": 2
+    },
+    {
+      "name": "VietLead",
+      "slug": "vietlead",
+      "posts": 12,
+      "engagement": 2290,
+      "followers": 0,
+      "engagementRate": 190.83,
+      "topPlatform": "instagram",
       "platformsScraped": 1
     },
     {
       "name": "Daily Targum",
       "slug": "daily-targum",
-      "posts": 26,
-      "engagement": 1610,
-      "followers": 0,
-      "engagementRate": 61.92,
-      "topPlatform": "tiktok",
-      "platformsScraped": 1
-    },
-    {
-      "name": "South Jersey Climate News Project",
-      "slug": "south-jersey-climate-news-project",
       "posts": 38,
-      "engagement": 847,
-      "followers": 43,
-      "engagementRate": 22.29,
+      "engagement": 2180,
+      "followers": 0,
+      "engagementRate": 57.37,
       "topPlatform": "tiktok",
       "platformsScraped": 2
-    },
-    {
-      "name": "Inside Climate News",
-      "slug": "inside-climate-news",
-      "posts": 25,
-      "engagement": 698,
-      "followers": 25578,
-      "engagementRate": 27.92,
-      "topPlatform": "bluesky",
-      "platformsScraped": 1
-    },
-    {
-      "name": "Lens 15 Media",
-      "slug": "lens-15-media",
-      "posts": 26,
-      "engagement": 496,
-      "followers": 0,
-      "engagementRate": 19.08,
-      "topPlatform": "tiktok",
-      "platformsScraped": 1
-    },
-    {
-      "name": "Clinton Hill Community Action",
-      "slug": "clinton-hill-community-action",
-      "posts": 26,
-      "engagement": 301,
-      "followers": 0,
-      "engagementRate": 11.58,
-      "topPlatform": "tiktok",
-      "platformsScraped": 1
-    },
-    {
-      "name": "Chalkbeat Newark  Civic News Company ",
-      "slug": "chalkbeat-newark-civic-news-company",
-      "posts": 25,
-      "engagement": 123,
-      "followers": 11032,
-      "engagementRate": 4.92,
-      "topPlatform": "bluesky",
-      "platformsScraped": 1
-    },
-    {
-      "name": "Public Square Amplified",
-      "slug": "public-square-amplified",
-      "posts": 25,
-      "engagement": 58,
-      "followers": 82,
-      "engagementRate": 2.32,
-      "topPlatform": "bluesky",
-      "platformsScraped": 1
     }
   ],
   "engagementByPlatform": [
     {
       "platform": "tiktok",
-      "engagement": 118289,
-      "posts": 222,
+      "engagement": 1672398,
+      "posts": 305,
       "color": "#000000"
     },
     {
+      "platform": "instagram",
+      "engagement": 44369,
+      "posts": 468,
+      "color": "#E1306C"
+    },
+    {
       "platform": "bluesky",
-      "engagement": 10650,
-      "posts": 175,
+      "engagement": 10906,
+      "posts": 212,
       "color": "#0085FF"
     }
   ],
   "metadata": {
-    "generatedAt": "2026-01-07T22:22:16.684151",
+    "generatedAt": "2026-01-08T11:51:27.749368",
     "platformColors": {
       "twitter": "#1DA1F2",
       "youtube": "#FF0000",

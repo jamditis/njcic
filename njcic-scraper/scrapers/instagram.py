@@ -5,7 +5,9 @@ Scrapes post metadata without downloading media files for speed.
 
 import json
 import os
+import random
 import re
+import time
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, Any, Optional, List
@@ -13,6 +15,12 @@ from typing import Dict, Any, Optional, List
 import instaloader
 
 from .base import BaseScraper
+
+# Rate limiting constants - conservative to avoid 401/403 blocks
+MIN_DELAY_BETWEEN_REQUESTS = 30  # seconds between profiles
+MAX_DELAY_BETWEEN_REQUESTS = 60  # seconds between profiles
+DELAY_AFTER_LOGIN = 10  # seconds
+DELAY_BETWEEN_POSTS = 1.0  # seconds between posts
 
 
 class InstagramScraper(BaseScraper):
@@ -172,6 +180,9 @@ class InstagramScraper(BaseScraper):
             self.loader.login(username, password)
             self.logger.info(f"Successfully logged in as {username}")
 
+            # Rate limit: delay after login
+            time.sleep(DELAY_AFTER_LOGIN)
+
             # Save session for future use
             if self.session_file:
                 session_dir = os.path.dirname(self.session_file)
@@ -271,15 +282,16 @@ class InstagramScraper(BaseScraper):
 
         return metrics
 
-    def scrape(self, url: str, grantee_name: str) -> Dict[str, Any]:
+    def scrape(self, url: str, grantee_name: str, max_posts: int = 25) -> Dict[str, Any]:
         """
         Scrape Instagram profile posts.
 
-        Downloads metadata for the last 25 posts without downloading media files.
+        Downloads metadata for the specified number of posts without downloading media files.
 
         Args:
             url: Instagram profile URL
             grantee_name: Name of the grantee
+            max_posts: Maximum number of posts to scrape (default: 25)
 
         Returns:
             Dictionary containing:
@@ -312,6 +324,11 @@ class InstagramScraper(BaseScraper):
         try:
             # Attempt login
             self._login_if_needed()
+
+            # Rate limit: random delay before loading profile
+            delay = random.uniform(MIN_DELAY_BETWEEN_REQUESTS, MAX_DELAY_BETWEEN_REQUESTS)
+            self.logger.debug(f"Rate limit: waiting {delay:.1f}s before loading profile")
+            time.sleep(delay)
 
             # Load profile
             try:
@@ -373,13 +390,13 @@ class InstagramScraper(BaseScraper):
                     'engagement_metrics': metadata['engagement_metrics']
                 }
 
-            # Scrape posts (limit to 25)
-            self.logger.info(f"Downloading metadata for last 25 posts from {username}")
+            # Scrape posts (limit to max_posts)
+            self.logger.info(f"Downloading metadata for last {max_posts} posts from {username}")
             post_count = 0
 
             try:
                 for post in profile.get_posts():
-                    if post_count >= 25:
+                    if post_count >= max_posts:
                         break
 
                     try:
@@ -387,9 +404,12 @@ class InstagramScraper(BaseScraper):
                         posts_metadata.append(post_metadata)
                         post_count += 1
                         self.logger.info(
-                            f"Extracted metadata for post {post_count}/25: "
+                            f"Extracted metadata for post {post_count}/{max_posts}: "
                             f"{post.shortcode}"
                         )
+
+                        # Rate limit: small delay between posts
+                        time.sleep(DELAY_BETWEEN_POSTS)
                     except Exception as e:
                         error_msg = f"Error extracting post {post.shortcode}: {str(e)}"
                         self.logger.error(error_msg)
@@ -426,7 +446,7 @@ class InstagramScraper(BaseScraper):
                 'errors': errors,
             }
 
-            self._save_metadata(output_dir, metadata)
+            self.save_metadata(output_dir, metadata)
 
             success = posts_downloaded > 0 or len(errors) == 0
             self.logger.info(

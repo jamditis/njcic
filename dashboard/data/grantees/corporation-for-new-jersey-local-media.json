@@ -1,0 +1,270 @@
+{
+  "name": "Corporation for New Jersey Local Media",
+  "slug": "corporation-for-new-jersey-local-media",
+  "summary": {
+    "total_posts": 12,
+    "total_engagement": 51,
+    "total_followers": 0,
+    "platforms_active": 1,
+    "engagement_rate": 4.25,
+    "last_updated": "2026-01-08T11:51:27.702116"
+  },
+  "platform_breakdown": {
+    "instagram": {
+      "posts": 12,
+      "posts_pct": 100.0,
+      "engagement": 51,
+      "engagement_pct": 100.0
+    }
+  },
+  "platforms": {
+    "instagram": {
+      "posts": 12,
+      "engagement": 51,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 4.25,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DLSQgSnO3xQ/",
+          "text": "",
+          "date": "2025-06-24T13:30:37",
+          "engagement": {
+            "likes": 10,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 10
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DQw77EckwVI/",
+          "text": "",
+          "date": "2025-11-07T18:04:35",
+          "engagement": {
+            "likes": 7,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 7
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DQryR5kkydH/",
+          "text": "",
+          "date": "2025-11-05T18:03:45",
+          "engagement": {
+            "likes": 7,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 7
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.07,
+        "posts_per_week": 0.49,
+        "date_range_days": 169,
+        "first_post": "2025-05-22T14:21:15",
+        "last_post": "2025-11-07T18:04:35"
+      },
+      "time_series": [
+        {
+          "date": "2025-05-19",
+          "posts": 1,
+          "engagement": 6
+        },
+        {
+          "date": "2025-05-26",
+          "posts": 1,
+          "engagement": 3
+        },
+        {
+          "date": "2025-06-02",
+          "posts": 1,
+          "engagement": 1
+        },
+        {
+          "date": "2025-06-09",
+          "posts": 1,
+          "engagement": 1
+        },
+        {
+          "date": "2025-06-16",
+          "posts": 1,
+          "engagement": 3
+        },
+        {
+          "date": "2025-06-23",
+          "posts": 1,
+          "engagement": 10
+        },
+        {
+          "date": "2025-07-07",
+          "posts": 1,
+          "engagement": 5
+        },
+        {
+          "date": "2025-09-15",
+          "posts": 1,
+          "engagement": 4
+        },
+        {
+          "date": "2025-10-27",
+          "posts": 1,
+          "engagement": 1
+        },
+        {
+          "date": "2025-11-03",
+          "posts": 3,
+          "engagement": 17
+        }
+      ],
+      "content_types": {
+        "image": {
+          "count": 12,
+          "engagement": 51,
+          "percentage": 100.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DLSQgSnO3xQ/",
+      "text": "",
+      "date": "2025-06-24T13:30:37",
+      "engagement": {
+        "likes": 10,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 10
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DQw77EckwVI/",
+      "text": "",
+      "date": "2025-11-07T18:04:35",
+      "engagement": {
+        "likes": 7,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 7
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DQryR5kkydH/",
+      "text": "",
+      "date": "2025-11-05T18:03:45",
+      "engagement": {
+        "likes": 7,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 7
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DJ9YEGHv_HE/",
+      "text": "",
+      "date": "2025-05-22T14:21:15",
+      "engagement": {
+        "likes": 6,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 6
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DL53ZDFOyk1/",
+      "text": "",
+      "date": "2025-07-09T22:40:48",
+      "engagement": {
+        "likes": 4,
+        "comments": 1,
+        "shares": 0,
+        "views": 0,
+        "total": 5
+      },
+      "thumbnail": null
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0.07,
+    "posts_per_week": 0.49,
+    "date_range_days": 169,
+    "first_post": "2025-05-22T14:21:15",
+    "last_post": "2025-11-07T18:04:35"
+  },
+  "time_series": [
+    {
+      "date": "2025-05-19",
+      "posts": 1,
+      "engagement": 6
+    },
+    {
+      "date": "2025-05-26",
+      "posts": 1,
+      "engagement": 3
+    },
+    {
+      "date": "2025-06-02",
+      "posts": 1,
+      "engagement": 1
+    },
+    {
+      "date": "2025-06-09",
+      "posts": 1,
+      "engagement": 1
+    },
+    {
+      "date": "2025-06-16",
+      "posts": 1,
+      "engagement": 3
+    },
+    {
+      "date": "2025-06-23",
+      "posts": 1,
+      "engagement": 10
+    },
+    {
+      "date": "2025-07-07",
+      "posts": 1,
+      "engagement": 5
+    },
+    {
+      "date": "2025-09-15",
+      "posts": 1,
+      "engagement": 4
+    },
+    {
+      "date": "2025-10-27",
+      "posts": 1,
+      "engagement": 1
+    },
+    {
+      "date": "2025-11-03",
+      "posts": 3,
+      "engagement": 17
+    }
+  ]
+}

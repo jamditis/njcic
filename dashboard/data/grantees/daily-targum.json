@@ -2,28 +2,34 @@
   "name": "Daily Targum",
   "slug": "daily-targum",
   "summary": {
-    "total_posts": 26,
-    "total_engagement": 1610,
+    "total_posts": 38,
+    "total_engagement": 2180,
     "total_followers": 0,
-    "platforms_active": 1,
-    "engagement_rate": 61.92,
-    "last_updated": "2026-01-07T22:22:16.656463"
+    "platforms_active": 2,
+    "engagement_rate": 57.37,
+    "last_updated": "2026-01-08T11:51:27.703694"
   },
   "platform_breakdown": {
     "tiktok": {
       "posts": 26,
-      "posts_pct": 100.0,
-      "engagement": 1610,
-      "engagement_pct": 100.0
+      "posts_pct": 68.4,
+      "engagement": 1611,
+      "engagement_pct": 73.9
+    },
+    "instagram": {
+      "posts": 12,
+      "posts_pct": 31.6,
+      "engagement": 569,
+      "engagement_pct": 26.1
     }
   },
   "platforms": {
     "tiktok": {
       "posts": 26,
-      "engagement": 1610,
-      "views": 48896,
+      "engagement": 1611,
+      "views": 48920,
       "followers": 0,
-      "engagement_rate": 61.92,
+      "engagement_rate": 61.96,
       "top_posts": [
         {
           "id": "7565301845900397879",
@@ -31,13 +37,13 @@
           "text": "Rutgers fraternity Alpha Sigma Phi was closed immediately after a haz...",
           "date": "2025-10-25T16:15:19",
           "engagement": {
-            "likes": 690,
+            "likes": 691,
             "comments": 12,
             "shares": 258,
             "views": 25300,
-            "total": 960
+            "total": 961
           },
-          "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIDACHt9A2ORrdIjGVIFOe1JBQgfgGX6cfve8M~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=wgDymcH915g3%2FoDJ9ZQ5RADh7Zg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+          "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIDACHt9A2ORrdIjGVIFOe1JBQgfgGX6cfve8M~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=sEL965alf8BlvIcUfAbrl%2BkKEN4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
         },
         {
           "id": "7564854208504040759",
@@ -48,10 +54,10 @@
             "likes": 189,
             "comments": 1,
             "shares": 21,
-            "views": 8837,
+            "views": 8859,
             "total": 211
           },
-          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oUmuBYBWU747gn0TLIvBvg5ByPDwIASiEiavi~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=CFjHuzJt2I6O0Qi3CHU3GGsrJ3o%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oUmuBYBWU747gn0TLIvBvg5ByPDwIASiEiavi~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=taJNtigUNka4DHkjQtLGUI99y3o%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
         },
         {
           "id": "7553856050269556023",
@@ -62,10 +68,10 @@
             "likes": 149,
             "comments": 0,
             "shares": 4,
-            "views": 2089,
+            "views": 2090,
             "total": 153
           },
-          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/okC6saiEU3IzITAcdgv4BxUISANSICjwiBQ5P~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=K1zUD6NK0CAHQsDgX5ygJK7ZuDc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/okC6saiEU3IzITAcdgv4BxUISANSICjwiBQ5P~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=zvTMQsc2NfL3Cn8jOi3Af8aHY7M%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
         }
       ],
       "frequency": {
@@ -159,7 +165,7 @@
         {
           "date": "2025-10-20",
           "posts": 2,
-          "engagement": 1171
+          "engagement": 1172
         },
         {
           "date": "2025-12-01",
@@ -170,7 +176,104 @@
       "content_types": {
         "video": {
           "count": 26,
-          "engagement": 1610,
+          "engagement": 1611,
+          "percentage": 100.0
+        }
+      }
+    },
+    "instagram": {
+      "posts": 12,
+      "engagement": 569,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 47.42,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DSIy9nUk7FY/",
+          "text": "",
+          "date": "2025-12-11T20:59:16",
+          "engagement": {
+            "likes": 128,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 128
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DQp7oS5DVy1/",
+          "text": "",
+          "date": "2025-11-05T00:46:55",
+          "engagement": {
+            "likes": 120,
+            "comments": 3,
+            "shares": 0,
+            "views": 0,
+            "total": 123
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DOXgBIFjgCw/",
+          "text": "",
+          "date": "2025-09-09T03:56:42",
+          "engagement": {
+            "likes": 61,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 61
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.1,
+        "posts_per_week": 0.7,
+        "date_range_days": 118,
+        "first_post": "2025-09-09T03:56:42",
+        "last_post": "2026-01-06T03:55:22"
+      },
+      "time_series": [
+        {
+          "date": "2025-09-08",
+          "posts": 1,
+          "engagement": 61
+        },
+        {
+          "date": "2025-11-03",
+          "posts": 1,
+          "engagement": 123
+        },
+        {
+          "date": "2025-12-08",
+          "posts": 5,
+          "engagement": 249
+        },
+        {
+          "date": "2025-12-15",
+          "posts": 3,
+          "engagement": 57
+        },
+        {
+          "date": "2025-12-29",
+          "posts": 1,
+          "engagement": 38
+        },
+        {
+          "date": "2026-01-05",
+          "posts": 1,
+          "engagement": 41
+        }
+      ],
+      "content_types": {
+        "image": {
+          "count": 12,
+          "engagement": 569,
           "percentage": 100.0
         }
       }
@@ -183,13 +286,13 @@
       "text": "Rutgers fraternity Alpha Sigma Phi was closed immediately after a haz...",
       "date": "2025-10-25T16:15:19",
       "engagement": {
-        "likes": 690,
+        "likes": 691,
         "comments": 12,
         "shares": 258,
         "views": 25300,
-        "total": 960
+        "total": 961
       },
-      "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIDACHt9A2ORrdIjGVIFOe1JBQgfgGX6cfve8M~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=wgDymcH915g3%2FoDJ9ZQ5RADh7Zg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIDACHt9A2ORrdIjGVIFOe1JBQgfgGX6cfve8M~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=sEL965alf8BlvIcUfAbrl%2BkKEN4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
     },
     {
       "id": "7564854208504040759",
@@ -200,10 +303,10 @@
         "likes": 189,
         "comments": 1,
         "shares": 21,
-        "views": 8837,
+        "views": 8859,
         "total": 211
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oUmuBYBWU747gn0TLIvBvg5ByPDwIASiEiavi~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=CFjHuzJt2I6O0Qi3CHU3GGsrJ3o%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oUmuBYBWU747gn0TLIvBvg5ByPDwIASiEiavi~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=taJNtigUNka4DHkjQtLGUI99y3o%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
     },
     {
       "id": "7553856050269556023",
@@ -214,46 +317,46 @@
         "likes": 149,
         "comments": 0,
         "shares": 4,
-        "views": 2089,
+        "views": 2090,
         "total": 153
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/okC6saiEU3IzITAcdgv4BxUISANSICjwiBQ5P~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=K1zUD6NK0CAHQsDgX5ygJK7ZuDc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/okC6saiEU3IzITAcdgv4BxUISANSICjwiBQ5P~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=zvTMQsc2NfL3Cn8jOi3Af8aHY7M%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
     },
     {
-      "id": "7557086215455935758",
-      "url": "https://www.tiktok.com/@thedailytargum/video/7557086215455935758",
-      "text": "Meet the faces behind The Daily Targum!   #campusnewspaper #BehindThe...",
-      "date": "2025-10-03T12:54:37",
+      "id": null,
+      "url": "https://www.instagram.com/p/DSIy9nUk7FY/",
+      "text": "",
+      "date": "2025-12-11T20:59:16",
       "engagement": {
-        "likes": 62,
+        "likes": 128,
         "comments": 0,
-        "shares": 6,
-        "views": 1863,
-        "total": 68
+        "shares": 0,
+        "views": 0,
+        "total": 128
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oU4PK8X1MHeRWYvI9AQpFpBfwCkAsxTA4fjOEA~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=OV2f7KBHiiHS1yiMGgaFViHmtnA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": null
     },
     {
-      "id": "7364888770899922219",
-      "url": "https://www.tiktok.com/@thedailytargum/video/7364888770899922219",
-      "text": "On Monday, the Endowment Justice Collective (EJC) gathered at Brower ...",
-      "date": "2024-05-03T14:30:05",
+      "id": null,
+      "url": "https://www.instagram.com/p/DQp7oS5DVy1/",
+      "text": "",
+      "date": "2025-11-05T00:46:55",
       "engagement": {
-        "likes": 57,
-        "comments": 1,
+        "likes": 120,
+        "comments": 3,
         "shares": 0,
-        "views": 715,
-        "total": 58
+        "views": 0,
+        "total": 123
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/b9a851d6e16c40eb94bdfb7a7cbc2760_1714771807~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=4iyIustiSUPbOAHi0eMoQisUK0w%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": null
     }
   ],
   "overall_frequency": {
-    "posts_per_day": 0.04,
-    "posts_per_week": 0.28,
-    "date_range_days": 578,
+    "posts_per_day": 0.06,
+    "posts_per_week": 0.42,
+    "date_range_days": 612,
     "first_post": "2024-05-03T14:30:05",
-    "last_post": "2025-12-03T13:00:17"
+    "last_post": "2026-01-06T03:55:22"
   },
   "time_series": [
     {
@@ -318,8 +421,8 @@
     },
     {
       "date": "2025-09-08",
-      "posts": 1,
-      "engagement": 7
+      "posts": 2,
+      "engagement": 68
     },
     {
       "date": "2025-09-15",
@@ -339,12 +442,37 @@
     {
       "date": "2025-10-20",
       "posts": 2,
-      "engagement": 1171
+      "engagement": 1172
+    },
+    {
+      "date": "2025-11-03",
+      "posts": 1,
+      "engagement": 123
     },
     {
       "date": "2025-12-01",
       "posts": 1,
       "engagement": 4
+    },
+    {
+      "date": "2025-12-08",
+      "posts": 5,
+      "engagement": 249
+    },
+    {
+      "date": "2025-12-15",
+      "posts": 3,
+      "engagement": 57
+    },
+    {
+      "date": "2025-12-29",
+      "posts": 1,
+      "engagement": 38
+    },
+    {
+      "date": "2026-01-05",
+      "posts": 1,
+      "engagement": 41
     }
   ]
 }

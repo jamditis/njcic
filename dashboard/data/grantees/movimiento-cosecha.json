@@ -1,0 +1,240 @@
+{
+  "name": "Movimiento Cosecha",
+  "slug": "movimiento-cosecha",
+  "summary": {
+    "total_posts": 12,
+    "total_engagement": 271,
+    "total_followers": 1355,
+    "platforms_active": 1,
+    "engagement_rate": 22.58,
+    "last_updated": "2026-01-08T11:51:27.720502"
+  },
+  "platform_breakdown": {
+    "bluesky": {
+      "posts": 12,
+      "posts_pct": 100.0,
+      "engagement": 271,
+      "engagement_pct": 100.0
+    }
+  },
+  "platforms": {
+    "bluesky": {
+      "posts": 12,
+      "engagement": 271,
+      "views": 0,
+      "followers": 1355,
+      "engagement_rate": 22.58,
+      "top_posts": [
+        {
+          "id": "3lfuphv57bc2v",
+          "url": "https://bsky.app/profile/detentionwatchnetwork.org/post/3lfuphv57bc2v",
+          "text": "This week Congress is fast-tracking two immigration bills that will vastly expand the incoming Trump administration\u2019s ability to carry out its mass deportation plans. \n\n\ud83d\udea8Take action now: contact your ",
+          "date": "2025-01-16T16:33:46.657000",
+          "engagement": {
+            "likes": 49,
+            "comments": 1,
+            "shares": 44,
+            "views": 0,
+            "total": 94
+          },
+          "thumbnail": null
+        },
+        {
+          "id": "3lfuphxduyc2v",
+          "url": "https://bsky.app/profile/detentionwatchnetwork.org/post/3lfuphxduyc2v",
+          "text": "Both immigration bills will lead to many more people being detained without access to bond and will have a disproportionate impact on Black and brown communities as well as survivors of domestic viole",
+          "date": "2025-01-16T16:33:46.658000",
+          "engagement": {
+            "likes": 55,
+            "comments": 1,
+            "shares": 26,
+            "views": 0,
+            "total": 82
+          },
+          "thumbnail": null
+        },
+        {
+          "id": "3logkjyf3vk2l",
+          "url": "https://bsky.app/profile/tusk81.bsky.social/post/3logkjyf3vk2l",
+          "text": "In New Jersey, @cosecha.bsky.social organizer Haydi Torres stressed the importance of solidarity and standing up for community members who are feeling vulnerable. \u201cWe have to take care of each other i",
+          "date": "2025-05-05T14:14:56.774000",
+          "engagement": {
+            "likes": 17,
+            "comments": 1,
+            "shares": 3,
+            "views": 0,
+            "total": 21
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.07,
+        "posts_per_week": 0.49,
+        "date_range_days": 163,
+        "first_post": "2024-11-22T23:34:42.718000",
+        "last_post": "2025-05-05T14:14:56.774000"
+      },
+      "time_series": [
+        {
+          "date": "2024-11-18",
+          "posts": 3,
+          "engagement": 28
+        },
+        {
+          "date": "2024-12-02",
+          "posts": 1,
+          "engagement": 9
+        },
+        {
+          "date": "2025-01-13",
+          "posts": 2,
+          "engagement": 176
+        },
+        {
+          "date": "2025-01-20",
+          "posts": 4,
+          "engagement": 29
+        },
+        {
+          "date": "2025-04-07",
+          "posts": 1,
+          "engagement": 8
+        },
+        {
+          "date": "2025-05-05",
+          "posts": 1,
+          "engagement": 21
+        }
+      ],
+      "content_types": {
+        "text": {
+          "count": 3,
+          "engagement": 39,
+          "percentage": 25.0
+        },
+        "image": {
+          "count": 4,
+          "engagement": 28,
+          "percentage": 33.3
+        },
+        "link": {
+          "count": 5,
+          "engagement": 204,
+          "percentage": 41.7
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": "3lfuphv57bc2v",
+      "url": "https://bsky.app/profile/detentionwatchnetwork.org/post/3lfuphv57bc2v",
+      "text": "This week Congress is fast-tracking two immigration bills that will vastly expand the incoming Trump administration\u2019s ability to carry out its mass deportation plans. \n\n\ud83d\udea8Take action now: contact your ",
+      "date": "2025-01-16T16:33:46.657000",
+      "engagement": {
+        "likes": 49,
+        "comments": 1,
+        "shares": 44,
+        "views": 0,
+        "total": 94
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3lfuphxduyc2v",
+      "url": "https://bsky.app/profile/detentionwatchnetwork.org/post/3lfuphxduyc2v",
+      "text": "Both immigration bills will lead to many more people being detained without access to bond and will have a disproportionate impact on Black and brown communities as well as survivors of domestic viole",
+      "date": "2025-01-16T16:33:46.658000",
+      "engagement": {
+        "likes": 55,
+        "comments": 1,
+        "shares": 26,
+        "views": 0,
+        "total": 82
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3logkjyf3vk2l",
+      "url": "https://bsky.app/profile/tusk81.bsky.social/post/3logkjyf3vk2l",
+      "text": "In New Jersey, @cosecha.bsky.social organizer Haydi Torres stressed the importance of solidarity and standing up for community members who are feeling vulnerable. \u201cWe have to take care of each other i",
+      "date": "2025-05-05T14:14:56.774000",
+      "engagement": {
+        "likes": 17,
+        "comments": 1,
+        "shares": 3,
+        "views": 0,
+        "total": 21
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3lbl5dwtqec2l",
+      "url": "https://bsky.app/profile/cosecha.bsky.social/post/3lbl5dwtqec2l",
+      "text": "[1/2] \nDo you believe that all people should be treated with dignity and respect, regardless of their legal status? \n\nSo do we! \n\nWe are proud to be a movement made of, and led by, immigrant men and w",
+      "date": "2024-11-22T23:34:42.718000",
+      "engagement": {
+        "likes": 10,
+        "comments": 0,
+        "shares": 4,
+        "views": 0,
+        "total": 14
+      },
+      "thumbnail": null
+    },
+    {
+      "id": "3lglfx5jv7k2h",
+      "url": "https://bsky.app/profile/cosecha.bsky.social/post/3lglfx5jv7k2h",
+      "text": "[2/3] We are keeping our social media pages open to any sightings of ICE in our communities so we can keep folks informed. It is so important that in these moments we do not enter into panic but are s",
+      "date": "2025-01-25T17:14:35.332000",
+      "engagement": {
+        "likes": 11,
+        "comments": 0,
+        "shares": 2,
+        "views": 0,
+        "total": 13
+      },
+      "thumbnail": null
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0.07,
+    "posts_per_week": 0.49,
+    "date_range_days": 163,
+    "first_post": "2024-11-22T23:34:42.718000",
+    "last_post": "2025-05-05T14:14:56.774000"
+  },
+  "time_series": [
+    {
+      "date": "2024-11-18",
+      "posts": 3,
+      "engagement": 28
+    },
+    {
+      "date": "2024-12-02",
+      "posts": 1,
+      "engagement": 9
+    },
+    {
+      "date": "2025-01-13",
+      "posts": 2,
+      "engagement": 176
+    },
+    {
+      "date": "2025-01-20",
+      "posts": 4,
+      "engagement": 29
+    },
+    {
+      "date": "2025-04-07",
+      "posts": 1,
+      "engagement": 8
+    },
+    {
+      "date": "2025-05-05",
+      "posts": 1,
+      "engagement": 21
+    }
+  ]
+}

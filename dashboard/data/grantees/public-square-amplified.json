@@ -2,19 +2,25 @@
   "name": "Public Square Amplified",
   "slug": "public-square-amplified",
   "summary": {
-    "total_posts": 25,
-    "total_engagement": 58,
+    "total_posts": 37,
+    "total_engagement": 132,
     "total_followers": 82,
-    "platforms_active": 1,
-    "engagement_rate": 2.32,
-    "last_updated": "2026-01-07T22:22:16.675266"
+    "platforms_active": 2,
+    "engagement_rate": 3.57,
+    "last_updated": "2026-01-08T11:51:27.731059"
   },
   "platform_breakdown": {
     "bluesky": {
       "posts": 25,
-      "posts_pct": 100.0,
+      "posts_pct": 67.6,
       "engagement": 58,
-      "engagement_pct": 100.0
+      "engagement_pct": 43.9
+    },
+    "instagram": {
+      "posts": 12,
+      "posts_pct": 32.4,
+      "engagement": 74,
+      "engagement_pct": 56.1
     }
   },
   "platforms": {
@@ -129,86 +135,178 @@
           "percentage": 4.0
         }
       }
+    },
+    "instagram": {
+      "posts": 12,
+      "engagement": 74,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 6.17,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DP9Zw4AjXgy/",
+          "text": "",
+          "date": "2025-10-18T17:44:39",
+          "engagement": {
+            "likes": 11,
+            "comments": 2,
+            "shares": 0,
+            "views": 0,
+            "total": 13
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DQWwb5_gPzr/",
+          "text": "",
+          "date": "2025-10-28T14:03:32",
+          "engagement": {
+            "likes": 9,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 9
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DP9W6wojYru/",
+          "text": "",
+          "date": "2025-10-18T17:19:42",
+          "engagement": {
+            "likes": 6,
+            "comments": 2,
+            "shares": 0,
+            "views": 0,
+            "total": 8
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.26,
+        "posts_per_week": 1.82,
+        "date_range_days": 47,
+        "first_post": "2025-10-16T17:11:38",
+        "last_post": "2025-12-02T20:14:52"
+      },
+      "time_series": [
+        {
+          "date": "2025-10-13",
+          "posts": 5,
+          "engagement": 37
+        },
+        {
+          "date": "2025-10-20",
+          "posts": 4,
+          "engagement": 19
+        },
+        {
+          "date": "2025-10-27",
+          "posts": 2,
+          "engagement": 16
+        },
+        {
+          "date": "2025-12-01",
+          "posts": 1,
+          "engagement": 2
+        }
+      ],
+      "content_types": {
+        "image": {
+          "count": 9,
+          "engagement": 46,
+          "percentage": 75.0
+        },
+        "video": {
+          "count": 3,
+          "engagement": 28,
+          "percentage": 25.0
+        }
+      }
     }
   },
   "top_posts": [
     {
-      "id": "3m3ilniaahs2p",
-      "url": "https://bsky.app/profile/publicsq.bsky.social/post/3m3ilniaahs2p",
-      "text": "\u201cIf you can't fly, then run,\nif you can't run, then walk,\nif you can't walk, then crawl,\nbut whatever you do,\nyou have to keep moving forward.\u201d\n- Dr. Martin Luther King Jr.\n\n#NoKings #NoKingsInAmerica",
-      "date": "2025-10-18T20:07:38.416000",
+      "id": null,
+      "url": "https://www.instagram.com/p/DP9Zw4AjXgy/",
+      "text": "",
+      "date": "2025-10-18T17:44:39",
       "engagement": {
-        "likes": 2,
-        "comments": 0,
-        "shares": 2,
+        "likes": 11,
+        "comments": 2,
+        "shares": 0,
         "views": 0,
-        "total": 4
+        "total": 13
       },
       "thumbnail": null
     },
     {
-      "id": "3lzqzj7ivsc2w",
-      "url": "https://bsky.app/profile/publicsq.bsky.social/post/3lzqzj7ivsc2w",
-      "text": "In pt. 2 of our 2025 Citizen Journalism class\u2019s series on the Essex-Hudson Greenway, the team explores national Greenway trends, the role of vegetation and biodiversity, and how public transit connect",
-      "date": "2025-09-26T17:46:42.078000",
+      "id": null,
+      "url": "https://www.instagram.com/p/DQWwb5_gPzr/",
+      "text": "",
+      "date": "2025-10-28T14:03:32",
       "engagement": {
-        "likes": 3,
+        "likes": 9,
         "comments": 0,
-        "shares": 1,
+        "shares": 0,
         "views": 0,
-        "total": 4
+        "total": 9
       },
       "thumbnail": null
     },
     {
-      "id": "3lz5rgkh3qc2n",
-      "url": "https://bsky.app/profile/publicsq.bsky.social/post/3lz5rgkh3qc2n",
-      "text": "Our community news platform includes news stories in the form of \"News Poems\" to offers everyone a unique storytelling venue. Read one from Political Writer, @mattdragon.com",
-      "date": "2025-09-19T02:01:27.947000",
+      "id": null,
+      "url": "https://www.instagram.com/p/DP9W6wojYru/",
+      "text": "",
+      "date": "2025-10-18T17:19:42",
       "engagement": {
-        "likes": 3,
-        "comments": 0,
-        "shares": 1,
+        "likes": 6,
+        "comments": 2,
+        "shares": 0,
         "views": 0,
-        "total": 4
+        "total": 8
       },
       "thumbnail": null
     },
     {
-      "id": "3m4dwfdkfyk2a",
-      "url": "https://bsky.app/profile/publicsq.bsky.social/post/3m4dwfdkfyk2a",
-      "text": "In his latest Opinion piece, Political Writer Matt Dragon explores the destructive historical racism embedded in ICE's kidnapping and disappearing of immigrants without due process. www.publicsq.org/l",
-      "date": "2025-10-29T17:01:49.062000",
+      "id": null,
+      "url": "https://www.instagram.com/p/DP69ty-jWx3/",
+      "text": "",
+      "date": "2025-10-17T19:01:23",
       "engagement": {
-        "likes": 2,
+        "likes": 7,
         "comments": 0,
-        "shares": 1,
+        "shares": 0,
         "views": 0,
-        "total": 3
+        "total": 7
       },
       "thumbnail": null
     },
     {
-      "id": "3lyyaf7fvbk2w",
-      "url": "https://bsky.app/profile/publicsq.bsky.social/post/3lyyaf7fvbk2w",
-      "text": "Noticed anything different off the Turnpike recently? PSA has a billboard! In honor of #DemocracyDay2025, we thought it was time to make our values visible in a big way. How are you supporting local n",
-      "date": "2025-09-16T21:13:10.512000",
+      "id": null,
+      "url": "https://www.instagram.com/p/DQZpcPACU-P/",
+      "text": "",
+      "date": "2025-10-29T17:00:08",
       "engagement": {
-        "likes": 1,
-        "comments": 0,
-        "shares": 2,
+        "likes": 6,
+        "comments": 1,
+        "shares": 0,
         "views": 0,
-        "total": 3
+        "total": 7
       },
       "thumbnail": null
     }
   ],
   "overall_frequency": {
-    "posts_per_day": 0.6,
-    "posts_per_week": 4.2,
-    "date_range_days": 42,
+    "posts_per_day": 0.49,
+    "posts_per_week": 3.43,
+    "date_range_days": 76,
     "first_post": "2025-09-16T21:13:10.512000",
-    "last_post": "2025-10-29T17:01:49.062000"
+    "last_post": "2025-12-02T20:14:52"
   },
   "time_series": [
     {
@@ -233,18 +331,23 @@
     },
     {
       "date": "2025-10-13",
-      "posts": 4,
-      "engagement": 9
+      "posts": 9,
+      "engagement": 46
     },
     {
       "date": "2025-10-20",
-      "posts": 5,
-      "engagement": 11
+      "posts": 9,
+      "engagement": 30
     },
     {
       "date": "2025-10-27",
-      "posts": 2,
-      "engagement": 6
+      "posts": 4,
+      "engagement": 22
+    },
+    {
+      "date": "2025-12-01",
+      "posts": 1,
+      "engagement": 2
     }
   ]
 }

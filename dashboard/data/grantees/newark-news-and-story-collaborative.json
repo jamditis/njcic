@@ -1,0 +1,255 @@
+{
+  "name": "Newark News and Story Collaborative",
+  "slug": "newark-news-and-story-collaborative",
+  "summary": {
+    "total_posts": 12,
+    "total_engagement": 1011,
+    "total_followers": 0,
+    "platforms_active": 1,
+    "engagement_rate": 84.25,
+    "last_updated": "2026-01-08T11:51:27.727821"
+  },
+  "platform_breakdown": {
+    "instagram": {
+      "posts": 12,
+      "posts_pct": 100.0,
+      "engagement": 1011,
+      "engagement_pct": 100.0
+    }
+  },
+  "platforms": {
+    "instagram": {
+      "posts": 12,
+      "engagement": 1011,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 84.25,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DJFul2Bubn_/",
+          "text": "",
+          "date": "2025-04-30T23:40:34",
+          "engagement": {
+            "likes": 554,
+            "comments": 46,
+            "shares": 0,
+            "views": 0,
+            "total": 600
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DIhXbEruLLM/",
+          "text": "",
+          "date": "2025-04-16T20:49:14",
+          "engagement": {
+            "likes": 115,
+            "comments": 5,
+            "shares": 0,
+            "views": 0,
+            "total": 120
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DJH4KdCSjD5/",
+          "text": "",
+          "date": "2025-05-01T19:42:41",
+          "engagement": {
+            "likes": 68,
+            "comments": 3,
+            "shares": 0,
+            "views": 0,
+            "total": 71
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.01,
+        "posts_per_week": 0.07,
+        "date_range_days": 1064,
+        "first_post": "2023-02-08T12:33:37",
+        "last_post": "2026-01-07T21:50:58"
+      },
+      "time_series": [
+        {
+          "date": "2023-02-06",
+          "posts": 1,
+          "engagement": 16
+        },
+        {
+          "date": "2025-03-31",
+          "posts": 2,
+          "engagement": 30
+        },
+        {
+          "date": "2025-04-07",
+          "posts": 1,
+          "engagement": 25
+        },
+        {
+          "date": "2025-04-14",
+          "posts": 1,
+          "engagement": 120
+        },
+        {
+          "date": "2025-04-28",
+          "posts": 3,
+          "engagement": 733
+        },
+        {
+          "date": "2025-05-26",
+          "posts": 2,
+          "engagement": 75
+        },
+        {
+          "date": "2025-08-11",
+          "posts": 1,
+          "engagement": 0
+        },
+        {
+          "date": "2026-01-05",
+          "posts": 1,
+          "engagement": 12
+        }
+      ],
+      "content_types": {
+        "image": {
+          "count": 7,
+          "engagement": 770,
+          "percentage": 58.3
+        },
+        "video": {
+          "count": 5,
+          "engagement": 241,
+          "percentage": 41.7
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DJFul2Bubn_/",
+      "text": "",
+      "date": "2025-04-30T23:40:34",
+      "engagement": {
+        "likes": 554,
+        "comments": 46,
+        "shares": 0,
+        "views": 0,
+        "total": 600
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DIhXbEruLLM/",
+      "text": "",
+      "date": "2025-04-16T20:49:14",
+      "engagement": {
+        "likes": 115,
+        "comments": 5,
+        "shares": 0,
+        "views": 0,
+        "total": 120
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DJH4KdCSjD5/",
+      "text": "",
+      "date": "2025-05-01T19:42:41",
+      "engagement": {
+        "likes": 68,
+        "comments": 3,
+        "shares": 0,
+        "views": 0,
+        "total": 71
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DKSPLPCgWI5/",
+      "text": "",
+      "date": "2025-05-30T16:48:52",
+      "engagement": {
+        "likes": 63,
+        "comments": 3,
+        "shares": 0,
+        "views": 0,
+        "total": 66
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DI_7j0POoi2/",
+      "text": "",
+      "date": "2025-04-28T17:38:26",
+      "engagement": {
+        "likes": 58,
+        "comments": 4,
+        "shares": 0,
+        "views": 0,
+        "total": 62
+      },
+      "thumbnail": null
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0.01,
+    "posts_per_week": 0.07,
+    "date_range_days": 1064,
+    "first_post": "2023-02-08T12:33:37",
+    "last_post": "2026-01-07T21:50:58"
+  },
+  "time_series": [
+    {
+      "date": "2023-02-06",
+      "posts": 1,
+      "engagement": 16
+    },
+    {
+      "date": "2025-03-31",
+      "posts": 2,
+      "engagement": 30
+    },
+    {
+      "date": "2025-04-07",
+      "posts": 1,
+      "engagement": 25
+    },
+    {
+      "date": "2025-04-14",
+      "posts": 1,
+      "engagement": 120
+    },
+    {
+      "date": "2025-04-28",
+      "posts": 3,
+      "engagement": 733
+    },
+    {
+      "date": "2025-05-26",
+      "posts": 2,
+      "engagement": 75
+    },
+    {
+      "date": "2025-08-11",
+      "posts": 1,
+      "engagement": 0
+    },
+    {
+      "date": "2026-01-05",
+      "posts": 1,
+      "engagement": 12
+    }
+  ]
+}

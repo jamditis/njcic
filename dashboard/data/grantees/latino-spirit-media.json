@@ -1,0 +1,225 @@
+{
+  "name": "Latino Spirit Media",
+  "slug": "latino-spirit-media",
+  "summary": {
+    "total_posts": 12,
+    "total_engagement": 54,
+    "total_followers": 0,
+    "platforms_active": 1,
+    "engagement_rate": 4.5,
+    "last_updated": "2026-01-08T11:51:27.714061"
+  },
+  "platform_breakdown": {
+    "instagram": {
+      "posts": 12,
+      "posts_pct": 100.0,
+      "engagement": 54,
+      "engagement_pct": 100.0
+    }
+  },
+  "platforms": {
+    "instagram": {
+      "posts": 12,
+      "engagement": 54,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 4.5,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DPVz43ijeyg/",
+          "text": "",
+          "date": "2025-10-03T08:44:06",
+          "engagement": {
+            "likes": 14,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 14
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DPl--kNDU--/",
+          "text": "",
+          "date": "2025-10-09T15:29:08",
+          "engagement": {
+            "likes": 11,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 11
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DRqezrPDO-K/",
+          "text": "",
+          "date": "2025-11-30T02:38:36",
+          "engagement": {
+            "likes": 7,
+            "comments": 1,
+            "shares": 0,
+            "views": 0,
+            "total": 8
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.14,
+        "posts_per_week": 0.98,
+        "date_range_days": 85,
+        "first_post": "2025-09-12T18:11:14",
+        "last_post": "2025-12-07T01:38:57"
+      },
+      "time_series": [
+        {
+          "date": "2025-09-08",
+          "posts": 1,
+          "engagement": 1
+        },
+        {
+          "date": "2025-09-29",
+          "posts": 2,
+          "engagement": 19
+        },
+        {
+          "date": "2025-10-06",
+          "posts": 4,
+          "engagement": 20
+        },
+        {
+          "date": "2025-11-24",
+          "posts": 3,
+          "engagement": 12
+        },
+        {
+          "date": "2025-12-01",
+          "posts": 2,
+          "engagement": 2
+        }
+      ],
+      "content_types": {
+        "image": {
+          "count": 1,
+          "engagement": 1,
+          "percentage": 8.3
+        },
+        "video": {
+          "count": 11,
+          "engagement": 53,
+          "percentage": 91.7
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DPVz43ijeyg/",
+      "text": "",
+      "date": "2025-10-03T08:44:06",
+      "engagement": {
+        "likes": 14,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 14
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DPl--kNDU--/",
+      "text": "",
+      "date": "2025-10-09T15:29:08",
+      "engagement": {
+        "likes": 11,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 11
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DRqezrPDO-K/",
+      "text": "",
+      "date": "2025-11-30T02:38:36",
+      "engagement": {
+        "likes": 7,
+        "comments": 1,
+        "shares": 0,
+        "views": 0,
+        "total": 8
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DPU9MYZDDnL/",
+      "text": "",
+      "date": "2025-10-03T00:45:15",
+      "engagement": {
+        "likes": 5,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 5
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DPe6mjCj_uf/",
+      "text": "",
+      "date": "2025-10-06T21:39:21",
+      "engagement": {
+        "likes": 3,
+        "comments": 2,
+        "shares": 0,
+        "views": 0,
+        "total": 5
+      },
+      "thumbnail": null
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0.14,
+    "posts_per_week": 0.98,
+    "date_range_days": 85,
+    "first_post": "2025-09-12T18:11:14",
+    "last_post": "2025-12-07T01:38:57"
+  },
+  "time_series": [
+    {
+      "date": "2025-09-08",
+      "posts": 1,
+      "engagement": 1
+    },
+    {
+      "date": "2025-09-29",
+      "posts": 2,
+      "engagement": 19
+    },
+    {
+      "date": "2025-10-06",
+      "posts": 4,
+      "engagement": 20
+    },
+    {
+      "date": "2025-11-24",
+      "posts": 3,
+      "engagement": 12
+    },
+    {
+      "date": "2025-12-01",
+      "posts": 2,
+      "engagement": 2
+    }
+  ]
+}

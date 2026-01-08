@@ -2,19 +2,25 @@
   "name": "Camden Parent   Student Union",
   "slug": "camden-parent-student-union",
   "summary": {
-    "total_posts": 26,
-    "total_engagement": 17,
+    "total_posts": 38,
+    "total_engagement": 22,
     "total_followers": 0,
-    "platforms_active": 1,
-    "engagement_rate": 0.65,
-    "last_updated": "2026-01-07T22:22:16.648955"
+    "platforms_active": 2,
+    "engagement_rate": 0.58,
+    "last_updated": "2026-01-08T11:51:27.694662"
   },
   "platform_breakdown": {
     "tiktok": {
       "posts": 26,
-      "posts_pct": 100.0,
+      "posts_pct": 68.4,
       "engagement": 17,
-      "engagement_pct": 100.0
+      "engagement_pct": 77.3
+    },
+    "instagram": {
+      "posts": 12,
+      "posts_pct": 31.6,
+      "engagement": 5,
+      "engagement_pct": 22.7
     }
   },
   "platforms": {
@@ -37,7 +43,7 @@
             "views": 259,
             "total": 5
           },
-          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oMKeSF0XWAQpBsrRAQFiHfgDffdyirfEMSKcPQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=F8xeEZp036DhpxRNtUeplxfv9a0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oMKeSF0XWAQpBsrRAQFiHfgDffdyirfEMSKcPQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=XQe%2Bzc4oT8%2BLsO6alO0hAmZIZsc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
         },
         {
           "id": "7468810695950306578",
@@ -51,7 +57,7 @@
             "views": 195,
             "total": 2
           },
-          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okrmriAT8AgUgceyCMrPC9CAiQDoWEievRfg3m~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=0tW8zK2i%2BCQUGegiGpltSSzAFS8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okrmriAT8AgUgceyCMrPC9CAiQDoWEievRfg3m~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=Md6UjtRiPfUlXimsATxNd96oAkU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
         },
         {
           "id": "7536343053146049793",
@@ -65,7 +71,7 @@
             "views": 122,
             "total": 1
           },
-          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUeTmeC0disrQAIIeWCLJJNGFxXmWQWsfpwACG~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=J%2B7%2FJgLWdGq2foahEQh5iegZhuE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+          "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUeTmeC0disrQAIIeWCLJJNGFxXmWQWsfpwACG~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=A0Jnu2bQV3J0CGDXznnijVR7p40%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
         }
       ],
       "frequency": {
@@ -164,6 +170,93 @@
           "percentage": 100.0
         }
       }
+    },
+    "instagram": {
+      "posts": 12,
+      "engagement": 5,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 0.42,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DSfJXTDjBon/",
+          "text": "",
+          "date": "2025-12-20T13:18:04",
+          "engagement": {
+            "likes": 2,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 2
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DSbN0rFDK56/",
+          "text": "",
+          "date": "2025-12-19T00:40:05",
+          "engagement": {
+            "likes": 1,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 1
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DSGQL7xjQei/",
+          "text": "",
+          "date": "2025-12-10T21:16:41",
+          "engagement": {
+            "likes": 1,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 1
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.6,
+        "posts_per_week": 4.2,
+        "date_range_days": 20,
+        "first_post": "2025-12-02T21:22:18",
+        "last_post": "2025-12-23T17:14:36"
+      },
+      "time_series": [
+        {
+          "date": "2025-12-01",
+          "posts": 3,
+          "engagement": 1
+        },
+        {
+          "date": "2025-12-08",
+          "posts": 2,
+          "engagement": 1
+        },
+        {
+          "date": "2025-12-15",
+          "posts": 5,
+          "engagement": 3
+        },
+        {
+          "date": "2025-12-22",
+          "posts": 2,
+          "engagement": 0
+        }
+      ],
+      "content_types": {
+        "image": {
+          "count": 12,
+          "engagement": 5,
+          "percentage": 100.0
+        }
+      }
     }
   },
   "top_posts": [
@@ -179,7 +272,7 @@
         "views": 259,
         "total": 5
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oMKeSF0XWAQpBsrRAQFiHfgDffdyirfEMSKcPQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=F8xeEZp036DhpxRNtUeplxfv9a0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oMKeSF0XWAQpBsrRAQFiHfgDffdyirfEMSKcPQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=XQe%2Bzc4oT8%2BLsO6alO0hAmZIZsc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
     },
     {
       "id": "7468810695950306578",
@@ -193,7 +286,21 @@
         "views": 195,
         "total": 2
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okrmriAT8AgUgceyCMrPC9CAiQDoWEievRfg3m~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=0tW8zK2i%2BCQUGegiGpltSSzAFS8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okrmriAT8AgUgceyCMrPC9CAiQDoWEievRfg3m~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=Md6UjtRiPfUlXimsATxNd96oAkU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DSfJXTDjBon/",
+      "text": "",
+      "date": "2025-12-20T13:18:04",
+      "engagement": {
+        "likes": 2,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 2
+      },
+      "thumbnail": null
     },
     {
       "id": "7536343053146049793",
@@ -207,7 +314,7 @@
         "views": 122,
         "total": 1
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUeTmeC0disrQAIIeWCLJJNGFxXmWQWsfpwACG~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=J%2B7%2FJgLWdGq2foahEQh5iegZhuE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUeTmeC0disrQAIIeWCLJJNGFxXmWQWsfpwACG~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=A0Jnu2bQV3J0CGDXznnijVR7p40%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
     },
     {
       "id": "7514073022983097607",
@@ -221,29 +328,15 @@
         "views": 115,
         "total": 1
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oMfoDDVVCBDRVH4EZWFl6QeaBGxMQgB61QBUYA~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=Fdsez1JPK6SpWK9YZ4LBU0xWGvk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
-    },
-    {
-      "id": "7534843704587111687",
-      "url": "https://www.tiktok.com/@camdenpsu/video/7534843704587111687",
-      "text": "Children Financial Crisis #RDWW #camdenpsu #finances",
-      "date": "2025-08-04T14:21:57",
-      "engagement": {
-        "likes": 1,
-        "comments": 0,
-        "shares": 0,
-        "views": 110,
-        "total": 1
-      },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o4cOMXeGgQfbtNES6J7GeiEKRKHAqIeNLBFfQA~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=0Dnf0X1tKXJ2z4imEfgqOgABQB8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oMfoDDVVCBDRVH4EZWFl6QeaBGxMQgB61QBUYA~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=GHHBJqcuLcnxGI8cjgzeD5Fk5Dc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
     }
   ],
   "overall_frequency": {
     "posts_per_day": 0.11,
     "posts_per_week": 0.77,
-    "date_range_days": 238,
+    "date_range_days": 347,
     "first_post": "2025-01-10T12:33:46",
-    "last_post": "2025-09-06T02:10:00"
+    "last_post": "2025-12-23T17:14:36"
   },
   "time_series": [
     {
@@ -325,6 +418,26 @@
       "date": "2025-09-01",
       "posts": 2,
       "engagement": 1
+    },
+    {
+      "date": "2025-12-01",
+      "posts": 3,
+      "engagement": 1
+    },
+    {
+      "date": "2025-12-08",
+      "posts": 2,
+      "engagement": 1
+    },
+    {
+      "date": "2025-12-15",
+      "posts": 5,
+      "engagement": 3
+    },
+    {
+      "date": "2025-12-22",
+      "posts": 2,
+      "engagement": 0
     }
   ]
 }

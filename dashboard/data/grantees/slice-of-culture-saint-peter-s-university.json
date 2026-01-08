@@ -2,26 +2,32 @@
   "name": "Slice of Culture   Saint Peter s University",
   "slug": "slice-of-culture-saint-peter-s-university",
   "summary": {
-    "total_posts": 26,
-    "total_engagement": 1791,
+    "total_posts": 38,
+    "total_engagement": 2407,
     "total_followers": 0,
-    "platforms_active": 1,
-    "engagement_rate": 68.88,
-    "last_updated": "2026-01-07T22:22:16.676746"
+    "platforms_active": 2,
+    "engagement_rate": 63.34,
+    "last_updated": "2026-01-08T11:51:27.733285"
   },
   "platform_breakdown": {
     "tiktok": {
       "posts": 26,
-      "posts_pct": 100.0,
+      "posts_pct": 68.4,
       "engagement": 1791,
-      "engagement_pct": 100.0
+      "engagement_pct": 74.4
+    },
+    "instagram": {
+      "posts": 12,
+      "posts_pct": 31.6,
+      "engagement": 616,
+      "engagement_pct": 25.6
     }
   },
   "platforms": {
     "tiktok": {
       "posts": 26,
       "engagement": 1791,
-      "views": 70084,
+      "views": 70096,
       "followers": 0,
       "engagement_rate": 68.88,
       "top_posts": [
@@ -37,7 +43,7 @@
             "views": 43200,
             "total": 1036
           },
-          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/e074efa2ca4a4b9dbdda4700c588d027_1683671514~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=EbUK1CkpmxXHXZ4ulGBffsvrAN4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/e074efa2ca4a4b9dbdda4700c588d027_1683671514~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=uPlnwWdAkJ14KYZeanFkmgBgdWw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
         },
         {
           "id": "7324170578464673054",
@@ -48,10 +54,10 @@
             "likes": 85,
             "comments": 7,
             "shares": 84,
-            "views": 2931,
+            "views": 2938,
             "total": 176
           },
-          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/3ec606ee57bd459ca7ced1533f6a2190_1705291387~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=dTxmDpp8OWh5WJgSFB13Ia8SzGk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+          "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/3ec606ee57bd459ca7ced1533f6a2190_1705291387~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=WxUDbvp1EBwhjMaXqO6bmnEngUI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
         },
         {
           "id": "7458431233157041451",
@@ -62,10 +68,10 @@
             "likes": 163,
             "comments": 2,
             "shares": 10,
-            "views": 3820,
+            "views": 3823,
             "total": 175
           },
-          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIEACI4w6qBqGxmUnsBqBIZhqRBlRgXi7Qi4P~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=dygONPyqPRFdy79M6HLBGJpeu4M%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+          "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIEACI4w6qBqGxmUnsBqBIZhqRBlRgXi7Qi4P~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=Xg1Xhs4IrFGD6qiYpoN8mQde3zw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
         }
       ],
       "frequency": {
@@ -174,6 +180,103 @@
           "percentage": 100.0
         }
       }
+    },
+    "instagram": {
+      "posts": 12,
+      "engagement": 616,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 51.33,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DSkgbVnDlNP/",
+          "text": "",
+          "date": "2025-12-22T15:16:16",
+          "engagement": {
+            "likes": 110,
+            "comments": 7,
+            "shares": 0,
+            "views": 0,
+            "total": 117
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DOFLsHbjBL7/",
+          "text": "",
+          "date": "2025-09-02T01:18:07",
+          "engagement": {
+            "likes": 100,
+            "comments": 7,
+            "shares": 0,
+            "views": 0,
+            "total": 107
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DRfCgx8jtsX/",
+          "text": "",
+          "date": "2025-11-25T15:46:48",
+          "engagement": {
+            "likes": 81,
+            "comments": 6,
+            "shares": 0,
+            "views": 0,
+            "total": 87
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.09,
+        "posts_per_week": 0.63,
+        "date_range_days": 128,
+        "first_post": "2025-09-02T01:18:07",
+        "last_post": "2026-01-08T03:50:36"
+      },
+      "time_series": [
+        {
+          "date": "2025-09-01",
+          "posts": 1,
+          "engagement": 107
+        },
+        {
+          "date": "2025-11-24",
+          "posts": 1,
+          "engagement": 87
+        },
+        {
+          "date": "2025-12-22",
+          "posts": 1,
+          "engagement": 117
+        },
+        {
+          "date": "2025-12-29",
+          "posts": 6,
+          "engagement": 230
+        },
+        {
+          "date": "2026-01-05",
+          "posts": 3,
+          "engagement": 75
+        }
+      ],
+      "content_types": {
+        "video": {
+          "count": 4,
+          "engagement": 370,
+          "percentage": 33.3
+        },
+        "image": {
+          "count": 8,
+          "engagement": 246,
+          "percentage": 66.7
+        }
+      }
     }
   },
   "top_posts": [
@@ -189,7 +292,7 @@
         "views": 43200,
         "total": 1036
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/e074efa2ca4a4b9dbdda4700c588d027_1683671514~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=EbUK1CkpmxXHXZ4ulGBffsvrAN4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/e074efa2ca4a4b9dbdda4700c588d027_1683671514~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=uPlnwWdAkJ14KYZeanFkmgBgdWw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
     },
     {
       "id": "7324170578464673054",
@@ -200,10 +303,10 @@
         "likes": 85,
         "comments": 7,
         "shares": 84,
-        "views": 2931,
+        "views": 2938,
         "total": 176
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/3ec606ee57bd459ca7ced1533f6a2190_1705291387~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=dTxmDpp8OWh5WJgSFB13Ia8SzGk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/3ec606ee57bd459ca7ced1533f6a2190_1705291387~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=WxUDbvp1EBwhjMaXqO6bmnEngUI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
     },
     {
       "id": "7458431233157041451",
@@ -214,46 +317,46 @@
         "likes": 163,
         "comments": 2,
         "shares": 10,
-        "views": 3820,
+        "views": 3823,
         "total": 175
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIEACI4w6qBqGxmUnsBqBIZhqRBlRgXi7Qi4P~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=dygONPyqPRFdy79M6HLBGJpeu4M%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIEACI4w6qBqGxmUnsBqBIZhqRBlRgXi7Qi4P~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=Xg1Xhs4IrFGD6qiYpoN8mQde3zw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
     },
     {
-      "id": "7347768462976011551",
-      "url": "https://www.tiktok.com/@sliceofculture/video/7347768462976011551",
-      "text": "For the bad b*tches with anxiety \ud83e\udd27\ud83d\udc96 Jenny spent her first time in Jer...",
-      "date": "2024-03-18T11:15:13",
+      "id": null,
+      "url": "https://www.instagram.com/p/DSkgbVnDlNP/",
+      "text": "",
+      "date": "2025-12-22T15:16:16",
       "engagement": {
-        "likes": 102,
-        "comments": 0,
+        "likes": 110,
+        "comments": 7,
         "shares": 0,
-        "views": 1521,
-        "total": 102
+        "views": 0,
+        "total": 117
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/da9299ef0bef484eb7b6ac7e7a81d2ba_1710785716~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=Mf3A0X5DCFhqQH%2FqowPjceiZbzg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": null
     },
     {
-      "id": "7371669565278850346",
-      "url": "https://www.tiktok.com/@sliceofculture/video/7371669565278850346",
-      "text": "Jordy, the founder of Knaws has been designing clothes for almost 5 y...",
-      "date": "2024-05-21T21:02:57",
+      "id": null,
+      "url": "https://www.instagram.com/p/DOFLsHbjBL7/",
+      "text": "",
+      "date": "2025-09-02T01:18:07",
       "engagement": {
-        "likes": 45,
-        "comments": 1,
+        "likes": 100,
+        "comments": 7,
         "shares": 0,
-        "views": 910,
-        "total": 46
+        "views": 0,
+        "total": 107
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/7c84690ba7d34810a44728f55a5b8d7f_1716350578~tplv-tiktokx-origin.image?dr=9636&x-expires=1768021200&x-signature=EiqUrxjm5AQV5AfJ8HSnfHtTJkc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": null
     }
   ],
   "overall_frequency": {
     "posts_per_day": 0.04,
     "posts_per_week": 0.28,
-    "date_range_days": 612,
+    "date_range_days": 974,
     "first_post": "2023-05-09T15:31:53",
-    "last_post": "2025-01-10T16:22:32"
+    "last_post": "2026-01-08T03:50:36"
   },
   "time_series": [
     {
@@ -345,6 +448,31 @@
       "date": "2025-01-06",
       "posts": 1,
       "engagement": 175
+    },
+    {
+      "date": "2025-09-01",
+      "posts": 1,
+      "engagement": 107
+    },
+    {
+      "date": "2025-11-24",
+      "posts": 1,
+      "engagement": 87
+    },
+    {
+      "date": "2025-12-22",
+      "posts": 1,
+      "engagement": 117
+    },
+    {
+      "date": "2025-12-29",
+      "posts": 6,
+      "engagement": 230
+    },
+    {
+      "date": "2026-01-05",
+      "posts": 3,
+      "engagement": 75
     }
   ]
 }
