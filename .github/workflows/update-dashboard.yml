@@ -20,8 +20,16 @@ env:
   PYTHON_VERSION: '3.11'
 
 jobs:
+  # Dummy job that succeeds on push events to prevent workflow failure status
+  skip-on-push:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Skip - scraper only runs on schedule
+        run: echo "Skipping scraper workflow on push event. Scraper runs weekly on schedule."
+
   update-dashboard:
-    # Only run on schedule or manual trigger, skip if triggered by push
+    # Only run on schedule or manual trigger
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 120  # 2-hour timeout
@@ -215,11 +223,11 @@ jobs:
           echo "| Data Validation | ${{ steps.validation.outcome || 'skipped' }} |" >> $GITHUB_STEP_SUMMARY
           echo "| Dashboard Prep | ${{ steps.prepare_dashboard.outcome || 'skipped' }} |" >> $GITHUB_STEP_SUMMARY
 
-  # Notification job - runs after main job completes
+  # Notification job - runs after main job completes (only on schedule/dispatch)
   notify:
     needs: update-dashboard
     runs-on: ubuntu-latest
-    if: failure() && (secrets.SLACK_WEBHOOK != '')
+    if: always() && needs.update-dashboard.result == 'failure' && github.event_name != 'push'
 
     steps:
       - name: Send Slack notification on failure
