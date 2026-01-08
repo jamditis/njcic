@@ -2,34 +2,34 @@
   "name": "HudPost",
   "slug": "hudpost",
   "summary": {
-    "total_posts": 38,
-    "total_engagement": 117943,
+    "total_posts": 37,
+    "total_engagement": 117859,
     "total_followers": 0,
     "platforms_active": 2,
-    "engagement_rate": 3103.76,
-    "last_updated": "2026-01-08T11:29:59.105958"
+    "engagement_rate": 3185.38,
+    "last_updated": "2026-01-08T11:51:27.710887"
   },
   "platform_breakdown": {
     "tiktok": {
-      "posts": 26,
-      "posts_pct": 68.4,
-      "engagement": 105123,
+      "posts": 25,
+      "posts_pct": 67.6,
+      "engagement": 105039,
       "engagement_pct": 89.1
     },
     "instagram": {
       "posts": 12,
-      "posts_pct": 31.6,
+      "posts_pct": 32.4,
       "engagement": 12820,
       "engagement_pct": 10.9
     }
   },
   "platforms": {
     "tiktok": {
-      "posts": 26,
-      "engagement": 105123,
-      "views": 1152761,
+      "posts": 25,
+      "engagement": 105039,
+      "views": 1150044,
       "followers": 0,
-      "engagement_rate": 4043.19,
+      "engagement_rate": 4201.56,
       "top_posts": [
         {
           "id": "7556306262837841166",
@@ -75,8 +75,8 @@
         }
       ],
       "frequency": {
-        "posts_per_day": 0.21,
-        "posts_per_week": 1.47,
+        "posts_per_day": 0.2,
+        "posts_per_week": 1.4,
         "date_range_days": 120,
         "first_post": "2025-09-06T15:46:53",
         "last_post": "2026-01-05T06:48:06"
@@ -129,8 +129,8 @@
         },
         {
           "date": "2025-12-01",
-          "posts": 4,
-          "engagement": 2908
+          "posts": 3,
+          "engagement": 2824
         },
         {
           "date": "2025-12-08",
@@ -150,8 +150,8 @@
       ],
       "content_types": {
         "video": {
-          "count": 26,
-          "engagement": 105123,
+          "count": 25,
+          "engagement": 105039,
           "percentage": 100.0
         }
       }
@@ -322,8 +322,8 @@
     }
   ],
   "overall_frequency": {
-    "posts_per_day": 0.3,
-    "posts_per_week": 2.1,
+    "posts_per_day": 0.29,
+    "posts_per_week": 2.03,
     "date_range_days": 124,
     "first_post": "2025-09-06T15:46:53",
     "last_post": "2026-01-08T16:31:10"
@@ -376,8 +376,8 @@
     },
     {
       "date": "2025-12-01",
-      "posts": 4,
-      "engagement": 2908
+      "posts": 3,
+      "engagement": 2824
     },
     {
       "date": "2025-12-08",

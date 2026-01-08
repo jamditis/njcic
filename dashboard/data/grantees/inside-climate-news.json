@@ -2,34 +2,40 @@
   "name": "Inside Climate News",
   "slug": "inside-climate-news",
   "summary": {
-    "total_posts": 37,
-    "total_engagement": 5966,
+    "total_posts": 43,
+    "total_engagement": 6323,
     "total_followers": 25584,
-    "platforms_active": 2,
-    "engagement_rate": 161.24,
-    "last_updated": "2026-01-08T11:29:59.108077"
+    "platforms_active": 3,
+    "engagement_rate": 147.05,
+    "last_updated": "2026-01-08T11:51:27.713016"
   },
   "platform_breakdown": {
     "bluesky": {
       "posts": 25,
-      "posts_pct": 67.6,
-      "engagement": 688,
-      "engagement_pct": 11.5
+      "posts_pct": 58.1,
+      "engagement": 690,
+      "engagement_pct": 10.9
+    },
+    "tiktok": {
+      "posts": 6,
+      "posts_pct": 14.0,
+      "engagement": 355,
+      "engagement_pct": 5.6
     },
     "instagram": {
       "posts": 12,
-      "posts_pct": 32.4,
+      "posts_pct": 27.9,
       "engagement": 5278,
-      "engagement_pct": 88.5
+      "engagement_pct": 83.5
     }
   },
   "platforms": {
     "bluesky": {
       "posts": 25,
-      "engagement": 688,
+      "engagement": 690,
       "views": 0,
       "followers": 25584,
-      "engagement_rate": 27.52,
+      "engagement_rate": 27.6,
       "top_posts": [
         {
           "id": "3mbmklohqsk2u",
@@ -95,13 +101,105 @@
         {
           "date": "2026-01-05",
           "posts": 7,
-          "engagement": 186
+          "engagement": 188
         }
       ],
       "content_types": {
         "link": {
           "count": 25,
-          "engagement": 688,
+          "engagement": 690,
+          "percentage": 100.0
+        }
+      }
+    },
+    "tiktok": {
+      "posts": 6,
+      "engagement": 355,
+      "views": 11803,
+      "followers": 0,
+      "engagement_rate": 59.17,
+      "top_posts": [
+        {
+          "id": "7184855000902896942",
+          "url": "https://www.tiktok.com/@insideclimatenews/video/7184855000902896942",
+          "text": "This loud oil well sits just about 25 feet from the home that Yesinia...",
+          "date": "2023-01-04T10:47:13",
+          "engagement": {
+            "likes": 110,
+            "comments": 37,
+            "shares": 10,
+            "views": 6272,
+            "total": 157
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/60058d385dd641a7ba31777bcc5f35a5_1672854524~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=pNIlsyNAZ8S0MeC4cOy0nUC%2FB7E%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7213429581087313194",
+          "url": "https://www.tiktok.com/@insideclimatenews/video/7213429581087313194",
+          "text": "Cyclone Freddy was an exceptionally powerful, long-lasting and devast...",
+          "date": "2023-03-22T10:51:07",
+          "engagement": {
+            "likes": 87,
+            "comments": 0,
+            "shares": 1,
+            "views": 1056,
+            "total": 88
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/83fcfc37e2b6436c98a9401c0ba2e46a_1679507469~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=t7NCsPJeluC1LBqZNbShTtwWa0A%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        },
+        {
+          "id": "7195268559507852590",
+          "url": "https://www.tiktok.com/@insideclimatenews/video/7195268559507852590",
+          "text": "The coral reefs in the northern Red Sea could show scientists how oth...",
+          "date": "2023-02-01T12:16:59",
+          "engagement": {
+            "likes": 64,
+            "comments": 1,
+            "shares": 1,
+            "views": 1562,
+            "total": 66
+          },
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/2fbebf80f6284782b540f1caf7a00e3d_1675279020~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=DGX8l45GjVEo9wNHPU3S7YDgCmM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.05,
+        "posts_per_week": 0.35,
+        "date_range_days": 106,
+        "first_post": "2022-12-05T13:05:32",
+        "last_post": "2023-03-22T10:51:07"
+      },
+      "time_series": [
+        {
+          "date": "2022-12-05",
+          "posts": 1,
+          "engagement": 11
+        },
+        {
+          "date": "2023-01-02",
+          "posts": 1,
+          "engagement": 157
+        },
+        {
+          "date": "2023-01-30",
+          "posts": 1,
+          "engagement": 66
+        },
+        {
+          "date": "2023-02-27",
+          "posts": 1,
+          "engagement": 33
+        },
+        {
+          "date": "2023-03-20",
+          "posts": 1,
+          "engagement": 88
+        }
+      ],
+      "content_types": {
+        "video": {
+          "count": 6,
+          "engagement": 355,
           "percentage": 100.0
         }
       }
@@ -292,13 +390,38 @@
     }
   ],
   "overall_frequency": {
-    "posts_per_day": 0.3,
-    "posts_per_week": 2.1,
-    "date_range_days": 122,
-    "first_post": "2025-09-08T15:34:20",
+    "posts_per_day": 0.04,
+    "posts_per_week": 0.28,
+    "date_range_days": 1130,
+    "first_post": "2022-12-05T13:05:32",
     "last_post": "2026-01-08T16:53:04.664000"
   },
   "time_series": [
+    {
+      "date": "2022-12-05",
+      "posts": 1,
+      "engagement": 11
+    },
+    {
+      "date": "2023-01-02",
+      "posts": 1,
+      "engagement": 157
+    },
+    {
+      "date": "2023-01-30",
+      "posts": 1,
+      "engagement": 66
+    },
+    {
+      "date": "2023-02-27",
+      "posts": 1,
+      "engagement": 33
+    },
+    {
+      "date": "2023-03-20",
+      "posts": 1,
+      "engagement": 88
+    },
     {
       "date": "2025-09-08",
       "posts": 3,
@@ -352,7 +475,7 @@
     {
       "date": "2026-01-05",
       "posts": 7,
-      "engagement": 186
+      "engagement": 188
     }
   ]
 }

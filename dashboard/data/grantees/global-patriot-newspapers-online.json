@@ -3,27 +3,27 @@
   "slug": "global-patriot-newspapers-online",
   "summary": {
     "total_posts": 26,
-    "total_engagement": 242814,
+    "total_engagement": 243587,
     "total_followers": 0,
     "platforms_active": 1,
-    "engagement_rate": 9339.0,
-    "last_updated": "2026-01-08T11:29:59.101430"
+    "engagement_rate": 9368.73,
+    "last_updated": "2026-01-08T11:51:27.706861"
   },
   "platform_breakdown": {
     "tiktok": {
       "posts": 26,
       "posts_pct": 100.0,
-      "engagement": 242814,
+      "engagement": 243587,
       "engagement_pct": 100.0
     }
   },
   "platforms": {
     "tiktok": {
       "posts": 26,
-      "engagement": 242814,
-      "views": 516300,
+      "engagement": 243587,
+      "views": 516500,
       "followers": 0,
-      "engagement_rate": 9339.0,
+      "engagement_rate": 9368.73,
       "top_posts": [
         {
           "id": "7575664444659813662",
@@ -65,21 +65,21 @@
             "views": 14700,
             "total": 16902
           },
-          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oc1zQAFUVRVHOt4fEBDAQNHkRbpAwBYEL8EZf6~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=lEjLTrvOHHMHV66zUr0%2BFuNLfRI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+          "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oc1zQAFUVRVHOt4fEBDAQNHkRbpAwBYEL8EZf6~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=opH0mm%2FFdRQlggal3EQCq3mPV7U%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
         }
       ],
       "frequency": {
         "posts_per_day": 0.34,
         "posts_per_week": 2.38,
         "date_range_days": 73,
-        "first_post": "2025-10-26T08:42:24",
+        "first_post": "2025-10-26T08:33:50",
         "last_post": "2026-01-07T22:59:00"
       },
       "time_series": [
         {
           "date": "2025-10-20",
-          "posts": 1,
-          "engagement": 9540
+          "posts": 2,
+          "engagement": 19847
         },
         {
           "date": "2025-10-27",
@@ -88,8 +88,8 @@
         },
         {
           "date": "2025-11-03",
-          "posts": 5,
-          "engagement": 60916
+          "posts": 4,
+          "engagement": 51383
         },
         {
           "date": "2025-11-10",
@@ -109,7 +109,7 @@
         {
           "date": "2025-12-08",
           "posts": 3,
-          "engagement": 20092
+          "engagement": 20091
         },
         {
           "date": "2025-12-15",
@@ -135,7 +135,7 @@
       "content_types": {
         "video": {
           "count": 26,
-          "engagement": 242814,
+          "engagement": 243587,
           "percentage": 100.0
         }
       }
@@ -182,7 +182,7 @@
         "views": 14700,
         "total": 16902
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oc1zQAFUVRVHOt4fEBDAQNHkRbpAwBYEL8EZf6~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=lEjLTrvOHHMHV66zUr0%2BFuNLfRI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oc1zQAFUVRVHOt4fEBDAQNHkRbpAwBYEL8EZf6~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=opH0mm%2FFdRQlggal3EQCq3mPV7U%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
     },
     {
       "id": "7575714926388432158",
@@ -217,14 +217,14 @@
     "posts_per_day": 0.34,
     "posts_per_week": 2.38,
     "date_range_days": 73,
-    "first_post": "2025-10-26T08:42:24",
+    "first_post": "2025-10-26T08:33:50",
     "last_post": "2026-01-07T22:59:00"
   },
   "time_series": [
     {
       "date": "2025-10-20",
-      "posts": 1,
-      "engagement": 9540
+      "posts": 2,
+      "engagement": 19847
     },
     {
       "date": "2025-10-27",
@@ -233,8 +233,8 @@
     },
     {
       "date": "2025-11-03",
-      "posts": 5,
-      "engagement": 60916
+      "posts": 4,
+      "engagement": 51383
     },
     {
       "date": "2025-11-10",
@@ -254,7 +254,7 @@
     {
       "date": "2025-12-08",
       "posts": 3,
-      "engagement": 20092
+      "engagement": 20091
     },
     {
       "date": "2025-12-15",

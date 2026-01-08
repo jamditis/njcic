@@ -85,16 +85,16 @@
     },
     "tiktok": {
       "color": "#000000",
-      "grantees": 13,
-      "total_posts": 300,
-      "total_engagement": 1670714,
+      "grantees": 14,
+      "total_posts": 305,
+      "total_engagement": 1672398,
       "total_followers": 0,
-      "avg_engagement_per_post": 5569.05,
-      "avg_posts_per_grantee": 23.1,
+      "avg_engagement_per_post": 5483.27,
+      "avg_posts_per_grantee": 21.8,
       "content_types": {
         "video": {
-          "count": 300,
-          "engagement": 1670714,
+          "count": 305,
+          "engagement": 1672398,
           "percentage": 100.0
         }
       },
@@ -103,19 +103,19 @@
           "name": "Muslim",
           "slug": "muslim",
           "posts": 26,
-          "engagement": 1304640
+          "engagement": 1305280
         },
         {
           "name": "Global Patriot Newspapers online",
           "slug": "global-patriot-newspapers-online",
           "posts": 26,
-          "engagement": 242814
+          "engagement": 243587
         },
         {
           "name": "HudPost",
           "slug": "hudpost",
-          "posts": 26,
-          "engagement": 105123
+          "posts": 25,
+          "engagement": 105039
         },
         {
           "name": "NJ Spotlight News",
@@ -163,32 +163,32 @@
     },
     "bluesky": {
       "color": "#0085FF",
-      "grantees": 8,
-      "total_posts": 187,
-      "total_engagement": 10894,
-      "total_followers": 50308,
-      "avg_engagement_per_post": 58.26,
-      "avg_posts_per_grantee": 23.4,
+      "grantees": 9,
+      "total_posts": 212,
+      "total_engagement": 10906,
+      "total_followers": 52152,
+      "avg_engagement_per_post": 51.44,
+      "avg_posts_per_grantee": 23.6,
       "content_types": {
         "link": {
           "count": 137,
-          "engagement": 1251,
-          "percentage": 73.3
+          "engagement": 1237,
+          "percentage": 64.6
         },
         "text": {
           "count": 11,
           "engagement": 56,
-          "percentage": 5.9
+          "percentage": 5.2
         },
         "image": {
-          "count": 34,
-          "engagement": 117,
-          "percentage": 18.2
+          "count": 59,
+          "engagement": 143,
+          "percentage": 27.8
         },
         "quote": {
           "count": 4,
           "engagement": 21,
-          "percentage": 2.1
+          "percentage": 1.9
         },
         "video": {
           "count": 1,
@@ -207,7 +207,7 @@
           "name": "Inside Climate News",
           "slug": "inside-climate-news",
           "posts": 25,
-          "engagement": 688
+          "engagement": 690
         },
         {
           "name": "Movimiento Cosecha",
@@ -219,7 +219,7 @@
           "name": "Chalkbeat Newark  Civic News Company ",
           "slug": "chalkbeat-newark-civic-news-company",
           "posts": 25,
-          "engagement": 125
+          "engagement": 109
         },
         {
           "name": "NJ Spotlight News",
@@ -240,6 +240,12 @@
           "engagement": 35
         },
         {
+          "name": "The Jersey Bee",
+          "slug": "the-jersey-bee",
+          "posts": 25,
+          "engagement": 26
+        },
+        {
           "name": "South Jersey Climate News Project",
           "slug": "south-jersey-climate-news-project",
           "posts": 25,
@@ -252,7 +258,7 @@
     "by_engagement": [
       {
         "platform": "tiktok",
-        "engagement": 1670714
+        "engagement": 1672398
       },
       {
         "platform": "instagram",
@@ -260,7 +266,7 @@
       },
       {
         "platform": "bluesky",
-        "engagement": 10894
+        "engagement": 10906
       }
     ],
     "by_posts": [
@@ -270,13 +276,13 @@
       },
       {
         "platform": "tiktok",
-        "posts": 300
+        "posts": 305
       },
       {
         "platform": "bluesky",
-        "posts": 187
+        "posts": 212
       }
     ]
   },
-  "generated_at": "2026-01-08T11:29:59.145860"
+  "generated_at": "2026-01-08T11:51:27.748819"
 }

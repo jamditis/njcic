@@ -1,12 +1,12 @@
 {
   "summary": {
     "totalGrantees": 44,
-    "totalPosts": 955,
-    "totalEngagement": 1725977,
-    "totalFollowers": 50308,
+    "totalPosts": 985,
+    "totalEngagement": 1727673,
+    "totalFollowers": 52152,
     "platformsTracked": 3,
-    "avgEngagementRate": 1807.31,
-    "lastUpdated": "2026-01-08T11:29:59.146329",
+    "avgEngagementRate": 1753.98,
+    "lastUpdated": "2026-01-08T11:51:27.749349",
     "scrapingDuration": "aggregated"
   },
   "platforms": {
@@ -18,18 +18,18 @@
       "avgEngagement": 94.81
     },
     "tiktok": {
-      "posts": 300,
-      "engagement": 1670714,
+      "posts": 305,
+      "engagement": 1672398,
       "followers": 0,
-      "grantees": 13,
-      "avgEngagement": 5569.05
+      "grantees": 14,
+      "avgEngagement": 5483.27
     },
     "bluesky": {
-      "posts": 187,
-      "engagement": 10894,
-      "followers": 50308,
-      "grantees": 8,
-      "avgEngagement": 58.26
+      "posts": 212,
+      "engagement": 10906,
+      "followers": 52152,
+      "grantees": 9,
+      "avgEngagement": 51.44
     }
   },
   "topGrantees": [
@@ -37,9 +37,9 @@
       "name": "Muslim",
       "slug": "muslim",
       "posts": 26,
-      "engagement": 1304640,
+      "engagement": 1305280,
       "followers": 0,
-      "engagementRate": 50178.46,
+      "engagementRate": 50203.08,
       "topPlatform": "tiktok",
       "platformsScraped": 1
     },
@@ -47,19 +47,19 @@
       "name": "Global Patriot Newspapers online",
       "slug": "global-patriot-newspapers-online",
       "posts": 26,
-      "engagement": 242814,
+      "engagement": 243587,
       "followers": 0,
-      "engagementRate": 9339.0,
+      "engagementRate": 9368.73,
       "topPlatform": "tiktok",
       "platformsScraped": 1
     },
     {
       "name": "HudPost",
       "slug": "hudpost",
-      "posts": 38,
-      "engagement": 117943,
+      "posts": 37,
+      "engagement": 117859,
       "followers": 0,
-      "engagementRate": 3103.76,
+      "engagementRate": 3185.38,
       "topPlatform": "tiktok",
       "platformsScraped": 2
     },
@@ -86,12 +86,12 @@
     {
       "name": "Inside Climate News",
       "slug": "inside-climate-news",
-      "posts": 37,
-      "engagement": 5966,
+      "posts": 43,
+      "engagement": 6323,
       "followers": 25584,
-      "engagementRate": 161.24,
+      "engagementRate": 147.05,
       "topPlatform": "instagram",
-      "platformsScraped": 2
+      "platformsScraped": 3
     },
     {
       "name": "The College of New Jersey",
@@ -157,8 +157,8 @@
   "engagementByPlatform": [
     {
       "platform": "tiktok",
-      "engagement": 1670714,
-      "posts": 300,
+      "engagement": 1672398,
+      "posts": 305,
       "color": "#000000"
     },
     {
@@ -169,13 +169,13 @@
     },
     {
       "platform": "bluesky",
-      "engagement": 10894,
-      "posts": 187,
+      "engagement": 10906,
+      "posts": 212,
       "color": "#0085FF"
     }
   ],
   "metadata": {
-    "generatedAt": "2026-01-08T11:29:59.146348",
+    "generatedAt": "2026-01-08T11:51:27.749368",
     "platformColors": {
       "twitter": "#1DA1F2",
       "youtube": "#FF0000",
