@@ -426,7 +426,7 @@ class InstagramScraper(BaseScraper):
                 'errors': errors,
             }
 
-            self._save_metadata(output_dir, metadata)
+            self.save_metadata(output_dir, metadata)
 
             success = posts_downloaded > 0 or len(errors) == 0
             self.logger.info(
