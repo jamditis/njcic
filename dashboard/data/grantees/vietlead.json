@@ -3,27 +3,27 @@
   "slug": "vietlead",
   "summary": {
     "total_posts": 12,
-    "total_engagement": 2290,
+    "total_engagement": 2309,
     "total_followers": 0,
     "platforms_active": 1,
-    "engagement_rate": 190.83,
-    "last_updated": "2026-01-08T11:51:27.746322"
+    "engagement_rate": 192.42,
+    "last_updated": "2026-01-08T12:46:42.110440"
   },
   "platform_breakdown": {
     "instagram": {
       "posts": 12,
       "posts_pct": 100.0,
-      "engagement": 2290,
+      "engagement": 2309,
       "engagement_pct": 100.0
     }
   },
   "platforms": {
     "instagram": {
       "posts": 12,
-      "engagement": 2290,
+      "engagement": 2309,
       "views": 0,
       "followers": 0,
-      "engagement_rate": 190.83,
+      "engagement_rate": 192.42,
       "top_posts": [
         {
           "id": null,
@@ -59,11 +59,11 @@
           "text": "",
           "date": "2026-01-07T22:13:16",
           "engagement": {
-            "likes": 354,
+            "likes": 373,
             "comments": 0,
             "shares": 0,
             "views": 0,
-            "total": 354
+            "total": 373
           },
           "thumbnail": null
         }
@@ -109,13 +109,13 @@
         {
           "date": "2026-01-05",
           "posts": 1,
-          "engagement": 354
+          "engagement": 373
         }
       ],
       "content_types": {
         "image": {
           "count": 12,
-          "engagement": 2290,
+          "engagement": 2309,
           "percentage": 100.0
         }
       }
@@ -156,11 +156,11 @@
       "text": "",
       "date": "2026-01-07T22:13:16",
       "engagement": {
-        "likes": 354,
+        "likes": 373,
         "comments": 0,
         "shares": 0,
         "views": 0,
-        "total": 354
+        "total": 373
       },
       "thumbnail": null
     },
@@ -234,7 +234,7 @@
     {
       "date": "2026-01-05",
       "posts": 1,
-      "engagement": 354
+      "engagement": 373
     }
   ]
 }

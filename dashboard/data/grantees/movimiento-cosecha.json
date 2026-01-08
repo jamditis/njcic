@@ -2,19 +2,25 @@
   "name": "Movimiento Cosecha",
   "slug": "movimiento-cosecha",
   "summary": {
-    "total_posts": 12,
-    "total_engagement": 271,
+    "total_posts": 24,
+    "total_engagement": 16755,
     "total_followers": 1355,
-    "platforms_active": 1,
-    "engagement_rate": 22.58,
-    "last_updated": "2026-01-08T11:51:27.720502"
+    "platforms_active": 2,
+    "engagement_rate": 698.12,
+    "last_updated": "2026-01-08T12:46:42.074655"
   },
   "platform_breakdown": {
     "bluesky": {
       "posts": 12,
-      "posts_pct": 100.0,
+      "posts_pct": 50.0,
       "engagement": 271,
-      "engagement_pct": 100.0
+      "engagement_pct": 1.6
+    },
+    "instagram": {
+      "posts": 12,
+      "posts_pct": 50.0,
+      "engagement": 16484,
+      "engagement_pct": 98.4
     }
   },
   "platforms": {
@@ -124,86 +130,213 @@
           "percentage": 41.7
         }
       }
+    },
+    "instagram": {
+      "posts": 12,
+      "engagement": 16484,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 1373.67,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DPUJTonj93k/",
+          "text": "",
+          "date": "2025-10-02T17:11:44",
+          "engagement": {
+            "likes": 11802,
+            "comments": 168,
+            "shares": 0,
+            "views": 0,
+            "total": 11970
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DScqzp4DZUi/",
+          "text": "",
+          "date": "2025-12-19T14:12:35",
+          "engagement": {
+            "likes": 1609,
+            "comments": 8,
+            "shares": 0,
+            "views": 0,
+            "total": 1617
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.instagram.com/p/DPjOQ79jfy0/",
+          "text": "",
+          "date": "2025-10-08T13:43:40",
+          "engagement": {
+            "likes": 1274,
+            "comments": 21,
+            "shares": 0,
+            "views": 0,
+            "total": 1295
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.03,
+        "posts_per_week": 0.21,
+        "date_range_days": 391,
+        "first_post": "2024-12-03T19:44:21",
+        "last_post": "2025-12-30T18:37:52"
+      },
+      "time_series": [
+        {
+          "date": "2024-12-02",
+          "posts": 1,
+          "engagement": 43
+        },
+        {
+          "date": "2025-01-27",
+          "posts": 1,
+          "engagement": 495
+        },
+        {
+          "date": "2025-02-24",
+          "posts": 1,
+          "engagement": 236
+        },
+        {
+          "date": "2025-09-22",
+          "posts": 2,
+          "engagement": 539
+        },
+        {
+          "date": "2025-09-29",
+          "posts": 1,
+          "engagement": 11970
+        },
+        {
+          "date": "2025-10-06",
+          "posts": 1,
+          "engagement": 1295
+        },
+        {
+          "date": "2025-10-13",
+          "posts": 1,
+          "engagement": 59
+        },
+        {
+          "date": "2025-12-01",
+          "posts": 1,
+          "engagement": 102
+        },
+        {
+          "date": "2025-12-15",
+          "posts": 1,
+          "engagement": 1617
+        },
+        {
+          "date": "2025-12-22",
+          "posts": 1,
+          "engagement": 44
+        },
+        {
+          "date": "2025-12-29",
+          "posts": 1,
+          "engagement": 84
+        }
+      ],
+      "content_types": {
+        "image": {
+          "count": 10,
+          "engagement": 16341,
+          "percentage": 83.3
+        },
+        "video": {
+          "count": 2,
+          "engagement": 143,
+          "percentage": 16.7
+        }
+      }
     }
   },
   "top_posts": [
     {
-      "id": "3lfuphv57bc2v",
-      "url": "https://bsky.app/profile/detentionwatchnetwork.org/post/3lfuphv57bc2v",
-      "text": "This week Congress is fast-tracking two immigration bills that will vastly expand the incoming Trump administration\u2019s ability to carry out its mass deportation plans. \n\n\ud83d\udea8Take action now: contact your ",
-      "date": "2025-01-16T16:33:46.657000",
+      "id": null,
+      "url": "https://www.instagram.com/p/DPUJTonj93k/",
+      "text": "",
+      "date": "2025-10-02T17:11:44",
       "engagement": {
-        "likes": 49,
+        "likes": 11802,
+        "comments": 168,
+        "shares": 0,
+        "views": 0,
+        "total": 11970
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DScqzp4DZUi/",
+      "text": "",
+      "date": "2025-12-19T14:12:35",
+      "engagement": {
+        "likes": 1609,
+        "comments": 8,
+        "shares": 0,
+        "views": 0,
+        "total": 1617
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DPjOQ79jfy0/",
+      "text": "",
+      "date": "2025-10-08T13:43:40",
+      "engagement": {
+        "likes": 1274,
+        "comments": 21,
+        "shares": 0,
+        "views": 0,
+        "total": 1295
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DFVVtW_u2YU/",
+      "text": "",
+      "date": "2025-01-27T15:05:25",
+      "engagement": {
+        "likes": 494,
         "comments": 1,
-        "shares": 44,
+        "shares": 0,
         "views": 0,
-        "total": 94
+        "total": 495
       },
       "thumbnail": null
     },
     {
-      "id": "3lfuphxduyc2v",
-      "url": "https://bsky.app/profile/detentionwatchnetwork.org/post/3lfuphxduyc2v",
-      "text": "Both immigration bills will lead to many more people being detained without access to bond and will have a disproportionate impact on Black and brown communities as well as survivors of domestic viole",
-      "date": "2025-01-16T16:33:46.658000",
+      "id": null,
+      "url": "https://www.instagram.com/p/DPIQjXBjjlX/",
+      "text": "",
+      "date": "2025-09-28T02:24:10",
       "engagement": {
-        "likes": 55,
-        "comments": 1,
-        "shares": 26,
+        "likes": 233,
+        "comments": 61,
+        "shares": 0,
         "views": 0,
-        "total": 82
-      },
-      "thumbnail": null
-    },
-    {
-      "id": "3logkjyf3vk2l",
-      "url": "https://bsky.app/profile/tusk81.bsky.social/post/3logkjyf3vk2l",
-      "text": "In New Jersey, @cosecha.bsky.social organizer Haydi Torres stressed the importance of solidarity and standing up for community members who are feeling vulnerable. \u201cWe have to take care of each other i",
-      "date": "2025-05-05T14:14:56.774000",
-      "engagement": {
-        "likes": 17,
-        "comments": 1,
-        "shares": 3,
-        "views": 0,
-        "total": 21
-      },
-      "thumbnail": null
-    },
-    {
-      "id": "3lbl5dwtqec2l",
-      "url": "https://bsky.app/profile/cosecha.bsky.social/post/3lbl5dwtqec2l",
-      "text": "[1/2] \nDo you believe that all people should be treated with dignity and respect, regardless of their legal status? \n\nSo do we! \n\nWe are proud to be a movement made of, and led by, immigrant men and w",
-      "date": "2024-11-22T23:34:42.718000",
-      "engagement": {
-        "likes": 10,
-        "comments": 0,
-        "shares": 4,
-        "views": 0,
-        "total": 14
-      },
-      "thumbnail": null
-    },
-    {
-      "id": "3lglfx5jv7k2h",
-      "url": "https://bsky.app/profile/cosecha.bsky.social/post/3lglfx5jv7k2h",
-      "text": "[2/3] We are keeping our social media pages open to any sightings of ICE in our communities so we can keep folks informed. It is so important that in these moments we do not enter into panic but are s",
-      "date": "2025-01-25T17:14:35.332000",
-      "engagement": {
-        "likes": 11,
-        "comments": 0,
-        "shares": 2,
-        "views": 0,
-        "total": 13
+        "total": 294
       },
       "thumbnail": null
     }
   ],
   "overall_frequency": {
-    "posts_per_day": 0.07,
-    "posts_per_week": 0.49,
-    "date_range_days": 163,
+    "posts_per_day": 0.06,
+    "posts_per_week": 0.42,
+    "date_range_days": 402,
     "first_post": "2024-11-22T23:34:42.718000",
-    "last_post": "2025-05-05T14:14:56.774000"
+    "last_post": "2025-12-30T18:37:52"
   },
   "time_series": [
     {
@@ -213,8 +346,8 @@
     },
     {
       "date": "2024-12-02",
-      "posts": 1,
-      "engagement": 9
+      "posts": 2,
+      "engagement": 52
     },
     {
       "date": "2025-01-13",
@@ -227,6 +360,16 @@
       "engagement": 29
     },
     {
+      "date": "2025-01-27",
+      "posts": 1,
+      "engagement": 495
+    },
+    {
+      "date": "2025-02-24",
+      "posts": 1,
+      "engagement": 236
+    },
+    {
       "date": "2025-04-07",
       "posts": 1,
       "engagement": 8
@@ -235,6 +378,46 @@
       "date": "2025-05-05",
       "posts": 1,
       "engagement": 21
+    },
+    {
+      "date": "2025-09-22",
+      "posts": 2,
+      "engagement": 539
+    },
+    {
+      "date": "2025-09-29",
+      "posts": 1,
+      "engagement": 11970
+    },
+    {
+      "date": "2025-10-06",
+      "posts": 1,
+      "engagement": 1295
+    },
+    {
+      "date": "2025-10-13",
+      "posts": 1,
+      "engagement": 59
+    },
+    {
+      "date": "2025-12-01",
+      "posts": 1,
+      "engagement": 102
+    },
+    {
+      "date": "2025-12-15",
+      "posts": 1,
+      "engagement": 1617
+    },
+    {
+      "date": "2025-12-22",
+      "posts": 1,
+      "engagement": 44
+    },
+    {
+      "date": "2025-12-29",
+      "posts": 1,
+      "engagement": 84
     }
   ]
 }
