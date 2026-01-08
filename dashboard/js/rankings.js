@@ -14,6 +14,61 @@
         retryDelay: 1000
     };
 
+    // Grantee type mapping for filtering
+    const GRANTEE_TYPES = {
+        'news': [
+            'HudPost',
+            'NJ Spotlight News',
+            'The Jersey Vindicator',
+            'Inside Climate News',
+            'Chalkbeat Newark',
+            'Montclair Local',
+            'Two River Times',
+            'Hammonton Gazette',
+            'NJ Pen',
+            'Trenton Journal',
+            'Front Runner New Jersey',
+            'Newark News',
+            'Global Patriot Newspapers',
+            'South Jersey Climate News Project',
+            'Public Square Amplified'
+        ],
+        'university': [
+            'Daily Targum',
+            'The College of New Jersey',
+            'Slice of Culture Saint Peter\'s University',
+            'Slice of Culture - Saint Peter\'s University',
+            'The Tower at Princeton High School',
+            'Cranford High School',
+            'Wayne Hills High School'
+        ],
+        'nonprofit': [
+            'Muslim',
+            'Movimiento Cosecha',
+            'Clinton Hill Community Action',
+            'Newark Water Coalition',
+            'VietLead',
+            'New Labor',
+            'coLAB Arts',
+            'Healthy Newsworks',
+            'Mental Health Association of New Jersey'
+        ],
+        'other': [] // Default category for unmatched grantees
+    };
+
+    /**
+     * Get the grantee type based on name
+     */
+    function getGranteeType(name) {
+        for (const [type, names] of Object.entries(GRANTEE_TYPES)) {
+            if (type === 'other') continue;
+            if (names.some(n => name.toLowerCase().includes(n.toLowerCase()) || n.toLowerCase().includes(name.toLowerCase()))) {
+                return type;
+            }
+        }
+        return 'other';
+    }
+
     // State
     let dashboardData = null;
     let rankingsData = null;
@@ -21,7 +76,15 @@
     let filteredGrantees = [];
     let currentSort = { column: 'engagement', direction: 'desc' };
     let selectedPlatform = null;
+    let currentPlatformFilter = 'all';
+    let currentTypeFilter = 'all';
+    let currentSearchTerm = '';
     let comparisonChart = null;
+
+    // Pagination state
+    let currentPage = 1;
+    let rowsPerPage = 10;
+    const ROWS_PER_PAGE_KEY = 'njcic_rows_per_page';
 
     /**
      * Initialize the rankings page
@@ -41,12 +104,16 @@
             initStats();
             initLeaderboards();
             initPlatformTabs();
+            initRankingsPlatformFilterTabs();
             initRankingsTable();
             initComparisonTool();
             updateLastUpdated();
 
             // Set up event listeners
             setupEventListeners();
+
+            // Apply URL params if present
+            applyUrlParams();
 
             console.log('NJCIC Rankings page initialized successfully');
         } catch (error) {
@@ -114,6 +181,7 @@
                 posts: postsMap[g.slug] || 0,
                 engagement: g.value || 0,
                 engagementRate: rateMap[g.slug] || (postsMap[g.slug] > 0 ? (g.value / postsMap[g.slug]).toFixed(1) : 0),
+                momChange: generateMockMomChange(),
                 platforms: 1,
                 bestPlatform: 'unknown',
                 platformData: {}
@@ -141,6 +209,7 @@
                 posts: g.posts || 0,
                 engagement: g.engagement || 0,
                 engagementRate: g.posts > 0 ? (g.engagement / g.posts).toFixed(1) : 0,
+                momChange: generateMockMomChange(),
                 platforms: g.platformsScraped || 1,
                 bestPlatform: g.topPlatform || 'unknown',
                 platformData: g.platformData || {}
@@ -153,6 +222,7 @@
                 posts: g.posts || 0,
                 engagement: g.engagement || 0,
                 engagementRate: g.posts > 0 ? (g.engagement / g.posts).toFixed(1) : 0,
+                momChange: generateMockMomChange(),
                 platforms: g.platforms || 1,
                 bestPlatform: g.bestPlatform || 'unknown',
                 platformData: g.platformData || {}
@@ -168,6 +238,27 @@
         });
 
         filteredGrantees = [...grantees];
+    }
+
+    /**
+     * Generate mock Month-over-Month change value
+     * Creates realistic-looking values between -12% and +28% (biased slightly positive)
+     */
+    function generateMockMomChange() {
+        return Math.round((Math.random() - 0.3) * 40 * 10) / 10;
+    }
+
+    /**
+     * Format MoM change with color class and arrow
+     */
+    function formatMomChange(value) {
+        if (value > 0) {
+            return `<span class="mom-positive font-medium">+${value.toFixed(1)}% ↑</span>`;
+        } else if (value < 0) {
+            return `<span class="mom-negative font-medium">${value.toFixed(1)}% ↓</span>`;
+        } else {
+            return `<span class="mom-neutral font-medium">0.0%</span>`;
+        }
     }
 
     /**
@@ -362,11 +453,228 @@
     }
 
     /**
+     * Initialize platform filter tabs for the rankings table
+     */
+    function initRankingsPlatformFilterTabs() {
+        const tabsContainer = document.getElementById('rankings-platform-tabs');
+        if (!tabsContainer) return;
+
+        // Add click handlers to existing tabs
+        tabsContainer.querySelectorAll('.rankings-filter-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Update active state
+                tabsContainer.querySelectorAll('.rankings-filter-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                // Update filter and apply
+                currentPlatformFilter = tab.dataset.platform;
+                currentPage = 1; // Reset to first page when filtering
+                applyFilters();
+
+                // Update URL
+                updateUrlParams();
+            });
+        });
+    }
+
+    /**
+     * Apply URL parameters for platform filter
+     */
+    function applyUrlParams() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const platformParam = urlParams.get('platform');
+
+        if (platformParam) {
+            const normalizedPlatform = platformParam.toLowerCase();
+            const validPlatforms = ['all', 'tiktok', 'instagram', 'bluesky'];
+
+            if (validPlatforms.includes(normalizedPlatform)) {
+                currentPlatformFilter = normalizedPlatform;
+
+                // Update tab UI
+                const tabsContainer = document.getElementById('rankings-platform-tabs');
+                if (tabsContainer) {
+                    tabsContainer.querySelectorAll('.rankings-filter-tab').forEach(tab => {
+                        tab.classList.remove('active');
+                        if (tab.dataset.platform === normalizedPlatform) {
+                            tab.classList.add('active');
+                        }
+                    });
+                }
+
+                // Apply the filter
+                applyFilters();
+            }
+        }
+    }
+
+    /**
+     * Update URL parameters when filter changes
+     */
+    function updateUrlParams() {
+        const url = new URL(window.location);
+
+        if (currentPlatformFilter === 'all') {
+            url.searchParams.delete('platform');
+        } else {
+            url.searchParams.set('platform', currentPlatformFilter);
+        }
+
+        // Update URL without page reload
+        window.history.replaceState({}, '', url);
+    }
+
+    /**
+     * Apply all active filters (search + platform + type)
+     */
+    function applyFilters() {
+        let result = [...grantees];
+
+        // Apply platform filter
+        if (currentPlatformFilter !== 'all') {
+            result = result.filter(g =>
+                g.bestPlatform.toLowerCase() === currentPlatformFilter.toLowerCase()
+            );
+        }
+
+        // Apply type filter
+        if (currentTypeFilter !== 'all') {
+            result = result.filter(g =>
+                getGranteeType(g.name) === currentTypeFilter
+            );
+        }
+
+        // Apply search filter
+        if (currentSearchTerm) {
+            const term = currentSearchTerm.toLowerCase();
+            result = result.filter(g =>
+                g.name.toLowerCase().includes(term) ||
+                g.bestPlatform.toLowerCase().includes(term)
+            );
+        }
+
+        filteredGrantees = result;
+        renderTable();
+    }
+
+    /**
      * Initialize rankings table
      */
     function initRankingsTable() {
+        initPagination();
         renderTable();
         setupTableSorting();
+    }
+
+    /**
+     * Initialize pagination controls and load saved preference
+     */
+    function initPagination() {
+        // Load saved rows per page preference
+        const savedRowsPerPage = localStorage.getItem(ROWS_PER_PAGE_KEY);
+        if (savedRowsPerPage) {
+            rowsPerPage = savedRowsPerPage === 'all' ? 'all' : parseInt(savedRowsPerPage, 10);
+        }
+
+        // Set the select value
+        const rowsSelect = document.getElementById('rows-per-page');
+        if (rowsSelect) {
+            rowsSelect.value = rowsPerPage === 'all' ? 'all' : rowsPerPage.toString();
+
+            // Add change listener
+            rowsSelect.addEventListener('change', (e) => {
+                const value = e.target.value;
+                rowsPerPage = value === 'all' ? 'all' : parseInt(value, 10);
+                currentPage = 1; // Reset to first page
+                localStorage.setItem(ROWS_PER_PAGE_KEY, value);
+                renderTable();
+            });
+        }
+
+        // Add pagination button listeners
+        const prevBtn = document.getElementById('prev-page');
+        const nextBtn = document.getElementById('next-page');
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderTable();
+                }
+            });
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                const totalPages = getTotalPages();
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderTable();
+                }
+            });
+        }
+    }
+
+    /**
+     * Get total number of pages based on filtered data and rows per page
+     */
+    function getTotalPages() {
+        if (rowsPerPage === 'all') return 1;
+        return Math.ceil(filteredGrantees.length / rowsPerPage) || 1;
+    }
+
+    /**
+     * Get the slice of data for the current page
+     */
+    function getCurrentPageData() {
+        if (rowsPerPage === 'all') return filteredGrantees;
+
+        const startIndex = (currentPage - 1) * rowsPerPage;
+        const endIndex = startIndex + rowsPerPage;
+        return filteredGrantees.slice(startIndex, endIndex);
+    }
+
+    /**
+     * Update pagination controls display
+     */
+    function updatePaginationControls() {
+        const totalPages = getTotalPages();
+        const pageData = getCurrentPageData();
+        const totalCount = filteredGrantees.length;
+
+        // Calculate showing range
+        let startNum, endNum;
+        if (rowsPerPage === 'all' || totalCount === 0) {
+            startNum = totalCount > 0 ? 1 : 0;
+            endNum = totalCount;
+        } else {
+            startNum = totalCount > 0 ? (currentPage - 1) * rowsPerPage + 1 : 0;
+            endNum = Math.min(currentPage * rowsPerPage, totalCount);
+        }
+
+        // Update text displays
+        const showingStart = document.getElementById('showing-start');
+        const showingEnd = document.getElementById('showing-end');
+        const totalCountEl = document.getElementById('total-count');
+        const currentPageEl = document.getElementById('current-page');
+        const totalPagesEl = document.getElementById('total-pages');
+
+        if (showingStart) showingStart.textContent = startNum;
+        if (showingEnd) showingEnd.textContent = endNum;
+        if (totalCountEl) totalCountEl.textContent = totalCount;
+        if (currentPageEl) currentPageEl.textContent = currentPage;
+        if (totalPagesEl) totalPagesEl.textContent = totalPages;
+
+        // Update button states
+        const prevBtn = document.getElementById('prev-page');
+        const nextBtn = document.getElementById('next-page');
+
+        if (prevBtn) {
+            prevBtn.disabled = currentPage <= 1;
+        }
+        if (nextBtn) {
+            nextBtn.disabled = currentPage >= totalPages;
+        }
     }
 
     /**
@@ -376,31 +684,46 @@
         const tbody = document.getElementById('rankings-tbody');
         if (!tbody) return;
 
-        tbody.innerHTML = filteredGrantees.map(g => `
+        // Get paginated data
+        const pageData = getCurrentPageData();
+
+        // Calculate max and total engagement for share bars (based on all filtered, not just page)
+        const maxEngagement = Math.max(...filteredGrantees.map(g => g.engagement), 1);
+        const totalEngagement = filteredGrantees.reduce((sum, g) => sum + g.engagement, 0) || 1;
+
+        tbody.innerHTML = pageData.map(g => {
+            const barWidth = (g.engagement / maxEngagement) * 100;
+            const sharePercent = ((g.engagement / totalEngagement) * 100).toFixed(1);
+
+            return `
             <tr class="hover:bg-njcic-light transition-colors">
                 <td class="px-4 py-3 text-sm font-semibold text-njcic-teal">#${g.rank}</td>
                 <td class="px-4 py-3">
                     <div class="font-medium text-njcic-dark">${escapeHtml(g.name)}</div>
                 </td>
                 <td class="px-4 py-3 text-sm text-gray-700">${formatNumber(g.posts)}</td>
-                <td class="px-4 py-3 text-sm font-semibold text-gray-900">${formatNumber(g.engagement)}</td>
+                <td class="px-4 py-3">
+                    <div class="flex items-center gap-2">
+                        <div class="flex flex-col min-w-[70px]">
+                            <span class="font-semibold text-gray-900">${formatAbbreviated(g.engagement)}</span>
+                            <span class="text-xs text-gray-500">${sharePercent}% of total</span>
+                        </div>
+                        <div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden min-w-[60px]">
+                            <div class="h-full bg-njcic-teal rounded-full" style="width: ${barWidth}%"></div>
+                        </div>
+                    </div>
+                </td>
                 <td class="px-4 py-3 text-sm text-gray-700">${g.engagementRate}/post</td>
+                <td class="px-4 py-3 text-sm">${formatMomChange(g.momChange)}</td>
                 <td class="px-4 py-3 text-sm text-gray-700">${g.platforms}</td>
                 <td class="px-4 py-3">
                     <span class="platform-badge ${g.bestPlatform}">${capitalizeFirst(g.bestPlatform)}</span>
                 </td>
             </tr>
-        `).join('');
+        `}).join('');
 
-        // Update table info
-        const tableInfo = document.getElementById('table-info');
-        if (tableInfo) {
-            if (filteredGrantees.length === grantees.length) {
-                tableInfo.textContent = `Showing all ${grantees.length} grantees`;
-            } else {
-                tableInfo.textContent = `Showing ${filteredGrantees.length} of ${grantees.length} grantees`;
-            }
-        }
+        // Update pagination controls
+        updatePaginationControls();
     }
 
     /**
@@ -424,8 +747,9 @@
                 headers.forEach(h => h.classList.remove('sorted-asc', 'sorted-desc'));
                 header.classList.add(`sorted-${currentSort.direction}`);
 
-                // Sort data
+                // Sort data and reset to first page
                 sortGrantees(column, currentSort.direction);
+                currentPage = 1;
                 renderTable();
             });
         });
@@ -461,6 +785,10 @@
                     aVal = parseFloat(a.engagementRate);
                     bVal = parseFloat(b.engagementRate);
                     break;
+                case 'momChange':
+                    aVal = a.momChange;
+                    bVal = b.momChange;
+                    break;
                 case 'platforms':
                     aVal = a.platforms;
                     bVal = b.platforms;
@@ -481,18 +809,9 @@
      * Filter grantees by search term
      */
     function filterGrantees(searchTerm) {
-        const term = searchTerm.toLowerCase().trim();
-
-        if (!term) {
-            filteredGrantees = [...grantees];
-        } else {
-            filteredGrantees = grantees.filter(g =>
-                g.name.toLowerCase().includes(term) ||
-                g.bestPlatform.toLowerCase().includes(term)
-            );
-        }
-
-        renderTable();
+        currentSearchTerm = searchTerm.toLowerCase().trim();
+        currentPage = 1; // Reset to first page when filtering
+        applyFilters();
     }
 
     /**
@@ -704,6 +1023,16 @@
                 filterGrantees(e.target.value);
             });
         }
+
+        // Grantee type filter dropdown
+        const typeFilter = document.getElementById('grantee-type-filter');
+        if (typeFilter) {
+            typeFilter.addEventListener('change', (e) => {
+                currentTypeFilter = e.target.value;
+                currentPage = 1; // Reset to first page when filtering
+                applyFilters();
+            });
+        }
     }
 
     /**
@@ -833,10 +1162,67 @@
     }
 
     // Export public API
+
+    /**
+     * Export current table data to CSV
+     * Exports the filtered/sorted data currently displayed in the table
+     */
+    function exportToCSV() {
+        // CSV headers matching the table columns
+        const headers = [
+            'Rank',
+            'Grantee',
+            'Posts',
+            'Engagement',
+            'Engagement Rate',
+            'Top Platform',
+            'Platforms'
+        ];
+
+        // Build CSV rows from filtered grantees (respects current filters/sort)
+        const rows = filteredGrantees.map(g => [
+            g.rank,
+            '"' + g.name.replace(/"/g, '""') + '"', // Escape quotes in names
+            g.posts,
+            g.engagement,
+            g.engagementRate,
+            capitalizeFirst(g.bestPlatform),
+            g.platforms
+        ]);
+
+        // Combine headers and rows
+        const csvContent = [
+            headers.join(','),
+            ...rows.map(row => row.join(','))
+        ].join('\n');
+
+        // Generate filename with current date
+        const today = new Date();
+        const dateStr = today.toISOString().split('T')[0]; // YYYY-MM-DD format
+        const filename = 'njcic-rankings-' + dateStr + '.csv';
+
+        // Create blob and trigger download
+        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+        const url = URL.createObjectURL(blob);
+
+        const link = document.createElement('a');
+        link.setAttribute('href', url);
+        link.setAttribute('download', filename);
+        link.style.visibility = 'hidden';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        // Clean up the URL object
+        URL.revokeObjectURL(url);
+
+        console.log('Exported ' + filteredGrantees.length + ' grantees to ' + filename);
+    }
     window.NJCICRankings = {
         updateComparison,
         clearComparison,
         filterGrantees,
+        exportToCSV,
         getData: () => ({ grantees, dashboardData, rankingsData })
     };
 

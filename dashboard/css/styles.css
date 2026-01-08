@@ -1,6 +1,36 @@
 /* ==========================================================================
-   NJCIC Dashboard - Custom Styles
+   NJCIC Dashboard - Modern UI Design System
    ========================================================================== */
+
+/* ==========================================================================
+   Variables & Theme
+   ========================================================================== */
+
+:root {
+    /* Brand Colors */
+    --color-primary: #0e7c86;      /* Rich Teal */
+    --color-primary-light: #2dc8d2; /* Bright Teal (Highlights) */
+    --color-primary-dark: #095057;  /* Deep Teal */
+    
+    /* Neutral Scale (Slate) */
+    --color-dark: #0f172a;    /* Slate 900 */
+    --color-dark-800: #1e293b; /* Slate 800 */
+    --color-gray-500: #64748b; /* Slate 500 */
+    --color-gray-200: #e2e8f0; /* Slate 200 */
+    --color-gray-100: #f1f5f9; /* Slate 100 */
+    --color-gray-50: #f8fafc;  /* Slate 50 */
+    --color-white: #ffffff;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+
+    /* Typography */
+    --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
 
 /* ==========================================================================
    Base & Reset
@@ -12,11 +42,16 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* Account for sticky nav */
+    scroll-padding-top: 100px;
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-    min-height: 100vh;
+    background-color: var(--color-gray-50);
+    color: var(--color-dark);
+    line-height: 1.5;
 }
 
 /* ==========================================================================
@@ -24,89 +59,85 @@ body {
    ========================================================================== */
 
 #main-nav {
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+    transition: all 0.3s ease;
 }
 
 .nav-link {
-    position: relative;
+    font-weight: 500;
+    color: var(--color-gray-500);
     transition: all 0.2s ease;
 }
 
-.nav-link::after {
+.nav-link:hover {
+    color: var(--color-primary);
+    background: rgba(14, 124, 134, 0.05);
+}
+
+.nav-link.active {
+    color: var(--color-primary);
+    background: rgba(14, 124, 134, 0.1);
+}
+
+/* ==========================================================================
+   Hero Section & Patterns
+   ========================================================================== */
+
+.hero-pattern {
+    background-color: var(--color-dark);
+    background-image: radial-gradient(var(--color-dark-800) 1px, transparent 1px);
+    background-size: 32px 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-pattern::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background: #2dc8d2;
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
-}
-
-.nav-link:hover::after,
-.nav-link.active::after {
-    width: 60%;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: linear-gradient(to bottom, transparent, var(--color-gray-50));
+    pointer-events: none;
 }
 
 /* ==========================================================================
-   Loading States
+   Cards
    ========================================================================== */
 
-.loading-spinner {
-    width: 48px;
-    height: 48px;
-    border: 4px solid #e5e7eb;
-    border-top-color: #2dc8d2;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+/* Modern Card Base */
+.modern-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
+.modern-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary-light);
 }
 
-/* Skeleton loading for charts */
-.skeleton {
-    background: linear-gradient(
-        90deg,
-        #f0f0f0 25%,
-        #e0e0e0 50%,
-        #f0f0f0 75%
-    );
-    background-size: 200% 100%;
-    animation: skeleton-loading 1.5s ease-in-out infinite;
-}
-
-@keyframes skeleton-loading {
-    0% {
-        background-position: 200% 0;
-    }
-    100% {
-        background-position: -200% 0;
-    }
-}
-
-/* ==========================================================================
-   Counter Animations
-   ========================================================================== */
-
-.counter {
-    font-variant-numeric: tabular-nums;
-    transition: transform 0.3s ease;
-}
-
-.counter.counting {
-    transform: scale(1.05);
-}
-
-/* Reveal animation for metric cards */
+/* Metric Cards (Floating on Dark Hero) */
 .metric-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+    animation: slideUpFade 0.6s ease-out forwards;
     opacity: 0;
-    transform: translateY(20px);
-    animation: revealCard 0.6s ease forwards;
+}
+
+.metric-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-4px);
 }
 
 .metric-card:nth-child(1) { animation-delay: 0.1s; }
@@ -114,51 +145,35 @@ body {
 .metric-card:nth-child(3) { animation-delay: 0.3s; }
 .metric-card:nth-child(4) { animation-delay: 0.4s; }
 
-@keyframes revealCard {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Number count-up animation */
-@keyframes countUp {
-    from {
-        opacity: 0.5;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* ==========================================================================
-   Cards & Containers
-   ========================================================================== */
-
+/* Chart Cards */
 .chart-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.chart-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(24, 54, 66, 0.15);
-}
-
-/* Glass morphism effect for metric cards */
-.metric-card {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.metric-card:hover {
-    border-color: rgba(45, 200, 210, 0.3);
-    box-shadow: 0 0 30px rgba(45, 200, 210, 0.2);
+    @extend .modern-card;
+    padding: 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Grantee Cards */
 .grantee-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
     opacity: 0;
     animation: slideUpFade 0.5s ease forwards;
 }
+
+.grantee-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary-light);
+}
+
+/* ==========================================================================
+   Animations
+   ========================================================================== */
 
 @keyframes slideUpFade {
     from {
@@ -171,538 +186,155 @@ body {
     }
 }
 
-/* ==========================================================================
-   Platform Filter Buttons
-   ========================================================================== */
-
-.platform-btn {
-    background: #f3f4f6;
-    color: #4b5563;
-    border: 1px solid transparent;
+@keyframes pulse-ring {
+    0% { transform: scale(0.33); }
+    80%, 100% { opacity: 0; }
 }
 
-.platform-btn:hover {
-    background: #e5e7eb;
-    color: #1f2937;
+@keyframes pulse-dot {
+    0% { transform: scale(0.8); }
+    50% { transform: scale(1); }
+    100% { transform: scale(0.8); }
 }
 
-.platform-btn.active {
-    background: #2dc8d2;
-    color: white;
-    border-color: #2dc8d2;
-}
-
-.platform-btn.active:hover {
-    background: #26b3bc;
-}
-
-/* ==========================================================================
-   Chart Customizations
-   ========================================================================== */
-
-/* Custom legend styling */
-#platform-legend .legend-item {
+.live-indicator {
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 6px 12px;
-    background: #f9fafb;
-    border-radius: 20px;
-    font-size: 0.875rem;
-    color: #374151;
+}
+
+.live-indicator::before {
+    content: '';
+    position: relative;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--color-primary-light);
+    box-shadow: 0 0 8px var(--color-primary-light);
+    margin-right: 8px;
+    animation: pulse-dot 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
+}
+
+/* ==========================================================================
+   Components
+   ========================================================================== */
+
+/* Search Input */
+.search-input {
+    background: var(--color-gray-100);
+    border: 1px solid transparent;
     transition: all 0.2s ease;
 }
 
-#platform-legend .legend-item:hover {
-    background: #e8f9fa;
-    transform: scale(1.05);
+.search-input:focus {
+    background: var(--color-white);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(14, 124, 134, 0.1);
 }
 
-#platform-legend .legend-color {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
+/* Platform Filter Buttons */
+.platform-btn {
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    color: var(--color-gray-500);
+    border-radius: 9999px;
+    transition: all 0.2s ease;
+    font-weight: 500;
 }
 
-/* Chart container responsiveness */
-.chart-container {
-    position: relative;
-    width: 100%;
+.platform-btn:hover {
+    border-color: var(--color-gray-500);
+    color: var(--color-dark);
 }
 
-/* ==========================================================================
-   Rankings Table
-   ========================================================================== */
+.platform-btn.active {
+    background: var(--color-dark);
+    color: var(--color-white);
+    border-color: var(--color-dark);
+    box-shadow: var(--shadow-md);
+}
+
+/* Table Styles */
+.rankings-table-container {
+    border-radius: 1rem;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-gray-200);
+    overflow: hidden;
+}
+
+#rankings-table thead {
+    background: var(--color-gray-50);
+}
 
 #rankings-table th {
-    user-select: none;
-}
-
-#rankings-table th[data-sort] {
-    cursor: pointer;
-}
-
-#rankings-table th[data-sort]:hover {
-    background-color: #f3f4f6;
-}
-
-#rankings-table th .sort-icon {
-    opacity: 0.5;
-    transition: opacity 0.2s ease;
-}
-
-#rankings-table th:hover .sort-icon {
-    opacity: 1;
+    font-weight: 600;
+    color: var(--color-gray-500);
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--color-gray-200);
 }
 
 #rankings-table tbody tr {
-    transition: background-color 0.2s ease;
+    transition: background 0.1s ease;
 }
 
 #rankings-table tbody tr:hover {
-    background-color: #f9fafb;
+    background-color: var(--color-gray-50);
 }
 
 /* ==========================================================================
-   Form Elements
+   Loading & Utilities
    ========================================================================== */
 
-select {
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--color-gray-200);
+    border-top-color: var(--color-primary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
 }
 
-select:focus {
-    outline: none;
-    border-color: #2dc8d2;
-    box-shadow: 0 0 0 3px rgba(45, 200, 210, 0.2);
+@keyframes spin {
+    to { transform: rotate(360deg); }
 }
 
-input[type="text"] {
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+.skeleton {
+    background: linear-gradient(
+        90deg,
+        var(--color-gray-100) 25%,
+        var(--color-gray-200) 50%,
+        var(--color-gray-100) 75%
+    );
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s ease-in-out infinite;
 }
 
-input[type="text"]:focus {
-    outline: none;
-    border-color: #2dc8d2;
-    box-shadow: 0 0 0 3px rgba(45, 200, 210, 0.2);
+@keyframes skeleton-loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
 }
 
-/* ==========================================================================
-   Typography Enhancements
-   ========================================================================== */
-
-/* Number formatting */
-.number-formatted {
+.counter {
     font-variant-numeric: tabular-nums;
     letter-spacing: -0.02em;
 }
 
-/* Gradient text for hero */
-.gradient-text {
-    background: linear-gradient(135deg, #2dc8d2, #4fd1c5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
 }
 
-/* ==========================================================================
-   Button Styles
-   ========================================================================== */
-
-.btn-primary {
-    background: linear-gradient(135deg, #2dc8d2, #20b2bb);
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
+::-webkit-scrollbar-track {
+    background: transparent;
 }
 
-.btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(45, 200, 210, 0.4);
+::-webkit-scrollbar-thumb {
+    background: var(--color-gray-200);
+    border-radius: 4px;
 }
 
-.btn-primary:active {
-    transform: translateY(0);
-}
-
-/* ==========================================================================
-   Responsive Adjustments
-   ========================================================================== */
-
-@media (max-width: 640px) {
-    .counter {
-        font-size: 1.75rem !important;
-    }
-
-    .metric-card {
-        padding: 1rem !important;
-    }
-
-    .chart-card {
-        padding: 1rem !important;
-    }
-
-    .chart-card h3 {
-        font-size: 1rem !important;
-    }
-
-    /* Stack grantee cards */
-    .grantee-card {
-        animation-delay: 0ms !important;
-    }
-
-    /* Smaller table text on mobile */
-    #rankings-table {
-        font-size: 0.875rem;
-    }
-
-    #rankings-table th,
-    #rankings-table td {
-        padding: 0.75rem 0.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .counter {
-        font-size: 1.5rem !important;
-    }
-
-    /* Hide some table columns on very small screens */
-    #rankings-table th:nth-child(5),
-    #rankings-table td:nth-child(5),
-    #rankings-table th:nth-child(6),
-    #rankings-table td:nth-child(6) {
-        display: none;
-    }
-}
-
-/* ==========================================================================
-   Print Styles
-   ========================================================================== */
-
-@media print {
-    /* Remove non-essential elements */
-    #loading-overlay,
-    #error-state,
-    #main-nav,
-    #mobile-menu {
-        display: none !important;
-    }
-
-    /* Force background colors and images */
-    * {
-        -webkit-print-color-adjust: exact !important;
-        print-color-adjust: exact !important;
-    }
-
-    /* Reset body for print */
-    body {
-        background: white !important;
-        font-size: 12pt;
-    }
-
-    /* Header adjustments */
-    header {
-        background: #183642 !important;
-        padding: 1rem !important;
-    }
-
-    /* Hero section */
-    section.bg-gradient-to-br {
-        background: #183642 !important;
-        padding: 1.5rem !important;
-    }
-
-    /* Metric cards - ensure visible */
-    .metric-card {
-        background: rgba(255, 255, 255, 0.1) !important;
-        opacity: 1 !important;
-        transform: none !important;
-        animation: none !important;
-        page-break-inside: avoid;
-        border: 1px solid #2dc8d2 !important;
-    }
-
-    /* Chart cards */
-    .chart-card {
-        box-shadow: none !important;
-        border: 1px solid #e5e7eb !important;
-        page-break-inside: avoid;
-        margin-bottom: 1rem;
-    }
-
-    /* Charts section */
-    .grid.lg\:grid-cols-2 {
-        display: block !important;
-    }
-
-    .grid.lg\:grid-cols-2 > div {
-        width: 100% !important;
-        margin-bottom: 2rem !important;
-    }
-
-    /* Footer */
-    footer {
-        background: #183642 !important;
-        padding: 1rem !important;
-        margin-top: 2rem;
-    }
-
-    /* Remove hover effects */
-    .metric-card:hover,
-    .chart-card:hover,
-    .grantee-card:hover {
-        transform: none !important;
-        box-shadow: none !important;
-    }
-
-    /* Hide grantee cards in print */
-    #grantees-grid {
-        display: none !important;
-    }
-
-    /* Page breaks */
-    header,
-    section,
-    footer {
-        page-break-inside: avoid;
-    }
-
-    /* Add URL after links */
-    a[href]:after {
-        content: " (" attr(href) ")";
-        font-size: 0.8em;
-        color: #666;
-    }
-
-    /* Hide animations */
-    .animate-pulse {
-        animation: none !important;
-    }
-}
-
-/* ==========================================================================
-   Accessibility
-   ========================================================================== */
-
-/* Focus states */
-button:focus,
-a:focus {
-    outline: 2px solid #2dc8d2;
-    outline-offset: 2px;
-}
-
-/* Reduced motion */
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-
-    .metric-card,
-    .grantee-card {
-        opacity: 1;
-        transform: none;
-    }
-
-    html {
-        scroll-behavior: auto;
-    }
-}
-
-/* High contrast mode support */
-@media (prefers-contrast: high) {
-    .metric-card {
-        border: 2px solid #2dc8d2;
-    }
-
-    .chart-card {
-        border: 2px solid #183642;
-    }
-
-    .grantee-card {
-        border: 2px solid #183642;
-    }
-
-    .platform-btn {
-        border: 2px solid currentColor;
-    }
-}
-
-/* ==========================================================================
-   Utility Classes
-   ========================================================================== */
-
-.fade-in {
-    animation: fadeIn 0.5s ease forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.slide-up {
-    animation: slideUp 0.5s ease forwards;
-}
-
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Pulse animation for live indicator */
-.pulse-dot {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes pulse {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.5;
-    }
-}
-
-/* ==========================================================================
-   Grantee Detail Page Styles
-   ========================================================================== */
-
-/* Line clamp utilities (in case Tailwind CDN doesn't include them) */
-.line-clamp-2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-.line-clamp-3 {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-/* Platform card animations */
-#platform-cards > div {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: revealCard 0.5s ease forwards;
-}
-
-#platform-cards > div:nth-child(1) { animation-delay: 0.1s; }
-#platform-cards > div:nth-child(2) { animation-delay: 0.15s; }
-#platform-cards > div:nth-child(3) { animation-delay: 0.2s; }
-#platform-cards > div:nth-child(4) { animation-delay: 0.25s; }
-#platform-cards > div:nth-child(5) { animation-delay: 0.3s; }
-
-/* Top posts grid animations */
-#top-posts-grid > div {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: revealCard 0.5s ease forwards;
-}
-
-#top-posts-grid > div:nth-child(1) { animation-delay: 0.1s; }
-#top-posts-grid > div:nth-child(2) { animation-delay: 0.15s; }
-#top-posts-grid > div:nth-child(3) { animation-delay: 0.2s; }
-#top-posts-grid > div:nth-child(4) { animation-delay: 0.25s; }
-#top-posts-grid > div:nth-child(5) { animation-delay: 0.3s; }
-#top-posts-grid > div:nth-child(6) { animation-delay: 0.35s; }
-#top-posts-grid > div:nth-child(7) { animation-delay: 0.4s; }
-#top-posts-grid > div:nth-child(8) { animation-delay: 0.45s; }
-#top-posts-grid > div:nth-child(9) { animation-delay: 0.5s; }
-
-/* Timeline animations */
-#timeline-items > div {
-    opacity: 0;
-    transform: translateX(-20px);
-    animation: slideInFromLeft 0.5s ease forwards;
-}
-
-#timeline-items > div:nth-child(1) { animation-delay: 0.1s; }
-#timeline-items > div:nth-child(2) { animation-delay: 0.15s; }
-#timeline-items > div:nth-child(3) { animation-delay: 0.2s; }
-#timeline-items > div:nth-child(4) { animation-delay: 0.25s; }
-#timeline-items > div:nth-child(5) { animation-delay: 0.3s; }
-#timeline-items > div:nth-child(6) { animation-delay: 0.35s; }
-#timeline-items > div:nth-child(7) { animation-delay: 0.4s; }
-#timeline-items > div:nth-child(8) { animation-delay: 0.45s; }
-#timeline-items > div:nth-child(9) { animation-delay: 0.5s; }
-#timeline-items > div:nth-child(10) { animation-delay: 0.55s; }
-
-@keyframes slideInFromLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* Platform icons in hero */
-#platform-icons > div {
-    opacity: 0;
-    transform: scale(0.8);
-    animation: popIn 0.4s ease forwards;
-}
-
-#platform-icons > div:nth-child(1) { animation-delay: 0.1s; }
-#platform-icons > div:nth-child(2) { animation-delay: 0.15s; }
-#platform-icons > div:nth-child(3) { animation-delay: 0.2s; }
-#platform-icons > div:nth-child(4) { animation-delay: 0.25s; }
-#platform-icons > div:nth-child(5) { animation-delay: 0.3s; }
-
-@keyframes popIn {
-    from {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-/* Breadcrumb styling */
-nav[aria-label="Breadcrumb"] a:hover {
-    color: #2dc8d2;
-}
-
-/* Ranking badge glow effect */
-#ranking-badge span {
-    box-shadow: 0 0 20px rgba(45, 200, 210, 0.4);
-}
-
-/* Responsive adjustments for grantee page */
-@media (max-width: 640px) {
-    #platform-icons > div {
-        width: 2rem;
-        height: 2rem;
-    }
-
-    #platform-icons > div svg {
-        width: 1rem;
-        height: 1rem;
-    }
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-gray-500);
 }
