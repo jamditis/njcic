@@ -6,6 +6,7 @@ import asyncio
 import json
 import os
 import re
+import time
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, Any, Optional, List
@@ -18,6 +19,13 @@ except ImportError:
     PLAYWRIGHT_AVAILABLE = False
     async_playwright = None
     PlaywrightTimeout = Exception
+
+try:
+    from playwright_stealth.stealth import Stealth
+    STEALTH_AVAILABLE = True
+except ImportError:
+    STEALTH_AVAILABLE = False
+    Stealth = None
 
 from .base import BaseScraper
 
@@ -42,9 +50,19 @@ class TwitterScraper(BaseScraper):
         self.username = os.getenv('TWITTER_USERNAME')
         self.password = os.getenv('TWITTER_PASSWORD')
 
+        # Cookie persistence
+        self.cookies_dir = self.output_dir / '.cookies'
+        self.cookies_dir.mkdir(exist_ok=True, parents=True)
+        self.cookies_file = self.cookies_dir / 'twitter_cookies.json'
+
         if not PLAYWRIGHT_AVAILABLE:
             self.logger.warning(
                 "Playwright not installed. Install with: pip install playwright && playwright install"
+            )
+
+        if not STEALTH_AVAILABLE:
+            self.logger.warning(
+                "playwright-stealth not installed. Install with: pip install playwright-stealth"
             )
 
     def extract_username(self, url: str) -> Optional[str]:
@@ -94,9 +112,97 @@ class TwitterScraper(BaseScraper):
         username_path.mkdir(exist_ok=True, parents=True)
         return username_path
 
+    async def _save_cookies(self, context) -> None:
+        """Save browser cookies to file for session persistence."""
+        try:
+            cookies = await context.cookies()
+            with open(self.cookies_file, 'w') as f:
+                json.dump(cookies, f, indent=2)
+            self.logger.info(f"Saved {len(cookies)} cookies to {self.cookies_file}")
+        except Exception as e:
+            self.logger.warning(f"Failed to save cookies: {e}")
+
+    async def _load_cookies(self, context) -> bool:
+        """Load saved cookies into browser context."""
+        try:
+            if not self.cookies_file.exists():
+                self.logger.info("No saved cookies found")
+                return False
+
+            with open(self.cookies_file, 'r') as f:
+                cookies = json.load(f)
+
+            if not cookies:
+                self.logger.info("No cookies to load")
+                return False
+
+            await context.add_cookies(cookies)
+            self.logger.info(f"Loaded {len(cookies)} cookies from {self.cookies_file}")
+            return True
+        except Exception as e:
+            self.logger.warning(f"Failed to load cookies: {e}")
+            return False
+
+    async def _retry_with_backoff(self, func, max_retries: int = 3, initial_delay: float = 1.0):
+        """
+        Retry a function with exponential backoff.
+
+        Args:
+            func: Async function to retry
+            max_retries: Maximum number of retry attempts
+            initial_delay: Initial delay in seconds
+
+        Returns:
+            Result of the function call
+
+        Raises:
+            Last exception if all retries fail
+        """
+        delay = initial_delay
+        last_exception = None
+
+        for attempt in range(max_retries):
+            try:
+                return await func()
+            except Exception as e:
+                last_exception = e
+                if attempt < max_retries - 1:
+                    self.logger.warning(f"Attempt {attempt + 1} failed: {e}. Retrying in {delay}s...")
+                    await asyncio.sleep(delay)
+                    delay *= 2  # Exponential backoff
+                else:
+                    self.logger.error(f"All {max_retries} attempts failed")
+
+        raise last_exception
+
+    async def _check_login_status(self, page) -> bool:
+        """
+        Check if already logged in by looking for authenticated user elements.
+
+        Args:
+            page: Playwright page object
+
+        Returns:
+            True if already logged in, False otherwise
+        """
+        try:
+            await page.goto('https://x.com/home', wait_until='domcontentloaded', timeout=30000)
+            await page.wait_for_timeout(2000)
+
+            # Check for logged-in indicators
+            primary_column = await page.query_selector('[data-testid="primaryColumn"]')
+            if primary_column:
+                self.logger.info("Already logged in via saved cookies!")
+                return True
+
+            return False
+        except Exception as e:
+            self.logger.debug(f"Login check failed: {e}")
+            return False
+
     async def _login(self, page) -> bool:
         """
-        Log in to Twitter/X.
+        Log in to Twitter/X with improved security challenge handling.
 
         Args:
             page: Playwright page object
@@ -111,45 +217,103 @@ class TwitterScraper(BaseScraper):
         try:
             self.logger.info("Navigating to Twitter login...")
             await page.goto('https://x.com/i/flow/login', wait_until='domcontentloaded', timeout=60000)
-            await page.wait_for_timeout(2000)
-
-            # Wait for page to fully load
             await page.wait_for_timeout(3000)
 
             # Enter username
             self.logger.info("Entering username...")
-            username_input = await page.wait_for_selector('input[autocomplete="username"], input[name="text"]', timeout=15000)
-            await username_input.fill(self.username)
-            await page.wait_for_timeout(500)
+            username_selectors = [
+                'input[autocomplete="username"]',
+                'input[name="text"]',
+                'input[type="text"]'
+            ]
 
-            # Click Next button
-            next_button = await page.query_selector('[role="button"]:has-text("Next"), button:has-text("Next")')
-            if next_button:
-                await next_button.click()
-            else:
+            username_input = None
+            for selector in username_selectors:
+                try:
+                    username_input = await page.wait_for_selector(selector, timeout=5000)
+                    if username_input:
+                        break
+                except PlaywrightTimeout:
+                    continue
+
+            if not username_input:
+                self.logger.error("Could not find username input field")
+                return False
+
+            await username_input.fill(self.username)
+            await page.wait_for_timeout(1000)
+
+            # Click Next button with multiple selector attempts
+            next_button_selectors = [
+                '[role="button"]:has-text("Next")',
+                'button:has-text("Next")',
+                '[data-testid="ocfEnterTextNextButton"]'
+            ]
+
+            clicked = False
+            for selector in next_button_selectors:
+                try:
+                    next_button = await page.query_selector(selector)
+                    if next_button:
+                        await next_button.click()
+                        clicked = True
+                        break
+                except Exception:
+                    continue
+
+            if not clicked:
                 await page.keyboard.press('Enter')
+
             await page.wait_for_timeout(3000)
 
-            # Check for unusual activity prompt (may ask for email/phone/username verification)
-            unusual_prompt = await page.query_selector('input[data-testid="ocfEnterTextTextInput"], input[name="text"]:not([autocomplete])')
-            if unusual_prompt:
-                self.logger.info("Handling unusual activity verification...")
-                await unusual_prompt.fill(self.username)
-                await page.keyboard.press('Enter')
-                await page.wait_for_timeout(2000)
+            # Handle various security challenges
+            await self._handle_security_challenges(page)
 
-            # Enter password
+            # Enter password with multiple selectors
             self.logger.info("Entering password...")
-            password_input = await page.wait_for_selector('input[name="password"], input[type="password"]', timeout=15000)
+            password_selectors = [
+                'input[name="password"]',
+                'input[type="password"]',
+                'input[autocomplete="current-password"]'
+            ]
+
+            password_input = None
+            for selector in password_selectors:
+                try:
+                    password_input = await page.wait_for_selector(selector, timeout=10000)
+                    if password_input:
+                        break
+                except PlaywrightTimeout:
+                    continue
+
+            if not password_input:
+                self.logger.error("Could not find password input field - may be blocked by security challenge")
+                return False
+
             await password_input.fill(self.password)
-            await page.wait_for_timeout(500)
+            await page.wait_for_timeout(1000)
 
             # Click Log in button
-            login_button = await page.query_selector('[role="button"]:has-text("Log in"), button:has-text("Log in")')
-            if login_button:
-                await login_button.click()
-            else:
+            login_button_selectors = [
+                '[role="button"]:has-text("Log in")',
+                'button:has-text("Log in")',
+                '[data-testid="LoginForm_Login_Button"]'
+            ]
+
+            clicked = False
+            for selector in login_button_selectors:
+                try:
+                    login_button = await page.query_selector(selector)
+                    if login_button:
+                        await login_button.click()
+                        clicked = True
+                        break
+                except Exception:
+                    continue
+
+            if not clicked:
                 await page.keyboard.press('Enter')
+
             await page.wait_for_timeout(5000)
 
             # Verify login succeeded by checking for home timeline or profile elements
@@ -158,16 +322,75 @@ class TwitterScraper(BaseScraper):
                 self.logger.info("Login successful!")
                 return True
             except PlaywrightTimeout:
-                self.logger.error("Login verification failed - could not find main content")
+                # Check if there's an error message
+                error_texts = await page.query_selector_all('span[data-testid="error-detail"]')
+                if error_texts:
+                    error_msg = await error_texts[0].inner_text()
+                    self.logger.error(f"Login failed with error: {error_msg}")
+                else:
+                    self.logger.error("Login verification failed - could not find main content")
                 return False
 
         except Exception as e:
-            self.logger.error(f"Login failed: {e}")
+            self.logger.error(f"Login failed with exception: {e}", exc_info=True)
             return False
+
+    async def _handle_security_challenges(self, page) -> None:
+        """
+        Handle various security challenges during login.
+
+        Args:
+            page: Playwright page object
+        """
+        # Check for unusual activity prompt (may ask for email/phone/username verification)
+        try:
+            unusual_selectors = [
+                'input[data-testid="ocfEnterTextTextInput"]',
+                'input[name="text"]:not([autocomplete])',
+                'input[data-testid="ocfEnterTextTextInput"]'
+            ]
+
+            for selector in unusual_selectors:
+                unusual_prompt = await page.query_selector(selector)
+                if unusual_prompt:
+                    self.logger.warning("Detected security challenge - attempting to handle...")
+
+                    # Check what type of verification is requested
+                    page_text = await page.inner_text('body')
+
+                    if 'phone' in page_text.lower():
+                        self.logger.error("Phone verification required - not implemented")
+                        phone = os.getenv('TWITTER_PHONE')
+                        if phone:
+                            await unusual_prompt.fill(phone)
+                        else:
+                            self.logger.error("TWITTER_PHONE not set in environment")
+                            return
+
+                    elif 'email' in page_text.lower():
+                        self.logger.warning("Email verification requested")
+                        email = os.getenv('TWITTER_EMAIL')
+                        if email:
+                            await unusual_prompt.fill(email)
+                        else:
+                            # Try username as fallback
+                            await unusual_prompt.fill(self.username)
+
+                    else:
+                        # Default to username
+                        self.logger.info("Attempting username verification...")
+                        await unusual_prompt.fill(self.username)
+
+                    await page.keyboard.press('Enter')
+                    await page.wait_for_timeout(3000)
+                    break
+
+        except Exception as e:
+            self.logger.debug(f"No security challenge detected or error handling it: {e}")
 
     async def _extract_tweets(self, page) -> List[Dict[str, Any]]:
         """
-        Extract tweets from the current page.
+        Extract tweets from the current page with fallback selectors.
 
         Args:
             page: Playwright page object
@@ -178,39 +401,82 @@ class TwitterScraper(BaseScraper):
         tweets = []
 
         try:
-            # Try multiple selectors for tweets
-            await page.wait_for_selector('article[data-testid="tweet"], article[role="article"], [data-testid="cellInnerDiv"] article', timeout=15000)
+            # Try multiple selectors for tweets with fallbacks
+            tweet_article_selectors = [
+                'article[data-testid="tweet"]',
+                'article[role="article"]',
+                '[data-testid="cellInnerDiv"] article'
+            ]
 
-            # Get all tweet articles
-            tweet_elements = await page.query_selector_all('article[data-testid="tweet"]')
+            tweet_elements = None
+            for selector in tweet_article_selectors:
+                try:
+                    await page.wait_for_selector(selector, timeout=15000)
+                    tweet_elements = await page.query_selector_all(selector)
+                    if tweet_elements:
+                        self.logger.info(f"Found {len(tweet_elements)} tweets using selector: {selector}")
+                        break
+                except PlaywrightTimeout:
+                    continue
 
+            if not tweet_elements:
+                self.logger.error("Could not find any tweets on the page")
+                return tweets
+
+            # Extract data from each tweet
             for i, tweet_el in enumerate(tweet_elements[:self.max_posts]):
                 try:
                     tweet_data = {}
 
-                    # Extract text
-                    text_el = await tweet_el.query_selector('[data-testid="tweetText"]')
-                    if text_el:
-                        tweet_data['text'] = await text_el.inner_text()
-                    else:
+                    # Extract text with fallback selectors
+                    text_selectors = [
+                        '[data-testid="tweetText"]',
+                        '[lang] span',
+                        'div[dir="auto"]'
+                    ]
+
+                    text_found = False
+                    for text_selector in text_selectors:
+                        text_el = await tweet_el.query_selector(text_selector)
+                        if text_el:
+                            tweet_data['text'] = await text_el.inner_text()
+                            text_found = True
+                            break
+
+                    if not text_found:
                         tweet_data['text'] = ''
 
-                    # Extract engagement metrics
+                    # Extract engagement metrics with fallbacks
                     # Likes
-                    like_el = await tweet_el.query_selector('[data-testid="like"] span')
-                    tweet_data['likes'] = self._parse_count(await like_el.inner_text() if like_el else '0')
+                    like_selectors = [
+                        '[data-testid="like"] span',
+                        '[aria-label*="like"] span',
+                        '[data-testid="like"]'
+                    ]
+                    tweet_data['likes'] = await self._extract_metric(tweet_el, like_selectors)
 
                     # Retweets
-                    retweet_el = await tweet_el.query_selector('[data-testid="retweet"] span')
-                    tweet_data['retweets'] = self._parse_count(await retweet_el.inner_text() if retweet_el else '0')
+                    retweet_selectors = [
+                        '[data-testid="retweet"] span',
+                        '[aria-label*="repost"] span',
+                        '[aria-label*="retweet"] span'
+                    ]
+                    tweet_data['retweets'] = await self._extract_metric(tweet_el, retweet_selectors)
 
                     # Replies
-                    reply_el = await tweet_el.query_selector('[data-testid="reply"] span')
-                    tweet_data['replies'] = self._parse_count(await reply_el.inner_text() if reply_el else '0')
+                    reply_selectors = [
+                        '[data-testid="reply"] span',
+                        '[aria-label*="repl"] span'
+                    ]
+                    tweet_data['replies'] = await self._extract_metric(tweet_el, reply_selectors)
 
-                    # Views (if available)
-                    view_el = await tweet_el.query_selector('[data-testid="app-text-transition-container"] span')
-                    tweet_data['views'] = self._parse_count(await view_el.inner_text() if view_el else '0')
+                    # Views (if available) - with multiple fallbacks
+                    view_selectors = [
+                        '[data-testid="app-text-transition-container"] span',
+                        'a[href*="/analytics"] span',
+                        '[aria-label*="view"] span'
+                    ]
+                    tweet_data['views'] = await self._extract_metric(tweet_el, view_selectors)
 
                     # Extract time/date
                     time_el = await tweet_el.query_selector('time')
@@ -219,18 +485,49 @@ class TwitterScraper(BaseScraper):
                     else:
                         tweet_data['date'] = None
 
-                    tweets.append(tweet_data)
+                    # Only add tweet if we got at least some data
+                    if tweet_data.get('text') or any([
+                        tweet_data.get('likes', 0) > 0,
+                        tweet_data.get('retweets', 0) > 0,
+                        tweet_data.get('replies', 0) > 0
+                    ]):
+                        tweets.append(tweet_data)
+                        self.logger.debug(f"Extracted tweet {i+1}: {tweet_data.get('text', '')[:50]}...")
+                    else:
+                        self.logger.debug(f"Skipping tweet {i+1} - insufficient data")
 
                 except Exception as e:
-                    self.logger.warning(f"Error extracting tweet {i}: {e}")
+                    self.logger.warning(f"Error extracting tweet {i+1}: {e}")
                     continue
 
-        except PlaywrightTimeout:
-            self.logger.warning("Timeout waiting for tweets to load")
         except Exception as e:
-            self.logger.error(f"Error extracting tweets: {e}")
+            self.logger.error(f"Error during tweet extraction: {e}", exc_info=True)
 
+        self.logger.info(f"Successfully extracted {len(tweets)} tweets")
         return tweets
+
+    async def _extract_metric(self, element, selectors: List[str]) -> int:
+        """
+        Extract a metric value from an element using fallback selectors.
+
+        Args:
+            element: Playwright element to search within
+            selectors: List of selectors to try
+
+        Returns:
+            Parsed metric value (int)
+        """
+        for selector in selectors:
+            try:
+                metric_el = await element.query_selector(selector)
+                if metric_el:
+                    text = await metric_el.inner_text()
+                    value = self._parse_count(text)
+                    if value > 0 or text.strip() == '0':
+                        return value
+            except Exception:
+                continue
+        return 0
 
     def _parse_count(self, text: str) -> int:
         """Parse engagement count from text (handles K, M suffixes)."""
@@ -261,7 +558,7 @@ class TwitterScraper(BaseScraper):
 
     async def _scrape_async(self, url: str, username: str, grantee_name: str) -> Dict[str, Any]:
         """
-        Async scraping implementation using Playwright.
+        Async scraping implementation using Playwright with stealth and cookie persistence.
 
         Args:
             url: Twitter profile URL
@@ -288,55 +585,116 @@ class TwitterScraper(BaseScraper):
 
         async with async_playwright() as p:
             browser = None
+            context = None
             try:
-                # Launch browser
+                # Launch browser with enhanced anti-detection
+                self.logger.info("Launching browser with stealth mode...")
                 browser = await p.chromium.launch(
                     headless=self.headless,
                     args=[
                         '--disable-blink-features=AutomationControlled',
                         '--disable-dev-shm-usage',
-                        '--no-sandbox'
+                        '--disable-web-security',
+                        '--disable-features=IsolateOrigins,site-per-process',
+                        '--no-sandbox',
+                        '--disable-setuid-sandbox',
+                        '--disable-infobars',
+                        '--window-size=1920,1080',
+                        '--start-maximized',
+                        '--disable-extensions',
+                        '--disable-gpu'
                     ]
                 )
 
-                # Create context
+                # Create context with realistic settings
                 context = await browser.new_context(
                     viewport={'width': 1920, 'height': 1080},
                     user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
                     locale='en-US',
-                    timezone_id='America/New_York'
+                    timezone_id='America/New_York',
+                    permissions=['geolocation'],
+                    extra_http_headers={
+                        'Accept-Language': 'en-US,en;q=0.9',
+                        'Accept-Encoding': 'gzip, deflate, br',
+                        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                        'DNT': '1',
+                        'Connection': 'keep-alive',
+                        'Upgrade-Insecure-Requests': '1'
+                    }
                 )
 
                 page = await context.new_page()
 
-                # Login first
-                login_success = await self._login(page)
-                if not login_success:
-                    errors.append("Failed to login to Twitter")
-                    # Try without login anyway
-                    self.logger.info("Attempting to scrape without login...")
+                # Apply stealth mode
+                if STEALTH_AVAILABLE:
+                    self.logger.info("Applying stealth mode to page...")
+                    stealth_config = Stealth()
+                    await stealth_config.apply_stealth_async(page)
+                else:
+                    self.logger.warning("Stealth mode not available - detection risk higher")
 
-                # Navigate to profile
+                # Try to load saved cookies
+                cookies_loaded = await self._load_cookies(context)
+
+                # Check if already logged in
+                already_logged_in = False
+                if cookies_loaded:
+                    self.logger.info("Checking login status with saved cookies...")
+                    already_logged_in = await self._check_login_status(page)
+
+                # Login if not already authenticated
+                if not already_logged_in:
+                    self.logger.info("Not logged in - attempting authentication...")
+                    login_success = await self._login(page)
+                    if login_success:
+                        # Save cookies after successful login
+                        await self._save_cookies(context)
+                    else:
+                        errors.append("Failed to login to Twitter")
+                        self.logger.warning("Continuing without authentication - data may be limited...")
+                else:
+                    self.logger.info("Using existing authentication session")
+
+                # Navigate to profile with retry logic
                 profile_url = f"https://x.com/{username}"
-                self.logger.info(f"Navigating to {profile_url}")
-                await page.goto(profile_url, wait_until='domcontentloaded', timeout=60000)
-                await page.wait_for_timeout(3000)
+                self.logger.info(f"Navigating to profile: {profile_url}")
+
+                async def navigate_to_profile():
+                    await page.goto(profile_url, wait_until='domcontentloaded', timeout=60000)
+                    await page.wait_for_timeout(3000)
+
+                try:
+                    await self._retry_with_backoff(navigate_to_profile, max_retries=3)
+                except Exception as e:
+                    self.logger.error(f"Failed to navigate to profile after retries: {e}")
+                    errors.append(f"Navigation failed: {str(e)}")
+                    raise
 
                 # Extract follower count
                 followers = await self._extract_follower_count(page)
                 if followers:
                     engagement_metrics['followers_count'] = followers
-                    self.logger.info(f"Found {followers} followers")
+                    self.logger.info(f"Follower count: {followers:,}")
 
-                # Scroll to load more tweets
-                self.logger.info("Scrolling to load tweets...")
-                for _ in range(3):
+                # Scroll to load more tweets with progressive loading
+                self.logger.info("Loading tweets with progressive scrolling...")
+                scroll_attempts = 5  # Increased from 3
+                for i in range(scroll_attempts):
                     await page.evaluate('window.scrollTo(0, document.body.scrollHeight)')
                     await page.wait_for_timeout(2000)
+                    self.logger.debug(f"Scroll {i+1}/{scroll_attempts} completed")
 
-                # Extract tweets
-                tweets = await self._extract_tweets(page)
-                self.logger.info(f"Extracted {len(tweets)} tweets")
+                # Extract tweets with retry logic
+                async def extract_tweets_wrapper():
+                    return await self._extract_tweets(page)
+
+                try:
+                    tweets = await self._retry_with_backoff(extract_tweets_wrapper, max_retries=2)
+                    self.logger.info(f"Successfully extracted {len(tweets)} tweets")
+                except Exception as e:
+                    self.logger.error(f"Failed to extract tweets: {e}")
+                    errors.append(f"Tweet extraction failed: {str(e)}")
+                    tweets = []
 
                 # Calculate metrics
                 if tweets:
@@ -359,6 +717,9 @@ class TwitterScraper(BaseScraper):
                         ),
                         'posts_analyzed': num_tweets
                     })
+                    self.logger.info(f"Engagement metrics calculated: {total_likes:,} likes, "
+                                   f"{total_retweets:,} retweets, {total_replies:,} replies, "
+                                   f"{total_views:,} views")
 
                 # Save output
                 output_dir = self._create_output_directory(grantee_name, username)
@@ -370,21 +731,35 @@ class TwitterScraper(BaseScraper):
                     'grantee_name': grantee_name,
                     'scraped_at': datetime.now().isoformat(),
                     'posts_downloaded': len(tweets),
-                    'engagement_metrics': engagement_metrics
+                    'engagement_metrics': engagement_metrics,
+                    'stealth_mode_enabled': STEALTH_AVAILABLE,
+                    'authenticated': already_logged_in or (len(errors) == 0 or "Failed to login" not in str(errors))
                 }
                 self.save_metadata(output_dir, metadata)
 
                 # Save tweets
-                tweets_file = output_dir / 'tweets.json'
-                with open(tweets_file, 'w', encoding='utf-8') as f:
-                    json.dump(tweets, f, indent=2, ensure_ascii=False)
+                if tweets:
+                    tweets_file = output_dir / 'tweets.json'
+                    with open(tweets_file, 'w', encoding='utf-8') as f:
+                        json.dump(tweets, f, indent=2, ensure_ascii=False)
+                    self.logger.info(f"Saved tweets to {tweets_file}")
 
                 # Take screenshot
-                screenshot_path = output_dir / 'screenshot.png'
-                await page.screenshot(path=str(screenshot_path), full_page=False)
+                try:
+                    screenshot_path = output_dir / 'screenshot.png'
+                    await page.screenshot(path=str(screenshot_path), full_page=False)
+                    self.logger.info(f"Screenshot saved to {screenshot_path}")
+                except Exception as e:
+                    self.logger.warning(f"Failed to save screenshot: {e}")
 
                 # Success if we got follower count OR tweets
                 success = len(tweets) > 0 or engagement_metrics.get('followers_count') is not None
+
+                if success:
+                    self.logger.info(f"✓ Scraping successful for @{username}")
+                else:
+                    self.logger.warning(f"⚠ Scraping completed with limited data for @{username}")
+
                 return {
                     'success': success,
                     'posts_downloaded': len(tweets),
@@ -393,7 +768,7 @@ class TwitterScraper(BaseScraper):
                 }
 
             except Exception as e:
-                self.logger.error(f"Error during scraping: {e}")
+                self.logger.error(f"Fatal error during scraping: {e}", exc_info=True)
                 errors.append(str(e))
                 return {
                     'success': False,
@@ -403,8 +778,17 @@ class TwitterScraper(BaseScraper):
                 }
 
             finally:
+                if context:
+                    try:
+                        await context.close()
+                    except Exception:
+                        pass
                 if browser:
-                    await browser.close()
+                    try:
+                        await browser.close()
+                        self.logger.info("Browser closed successfully")
+                    except Exception:
+                        pass
 
     def scrape(self, url: str, grantee_name: str, max_posts: Optional[int] = None) -> Dict[str, Any]:
         """

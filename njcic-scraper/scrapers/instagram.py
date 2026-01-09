@@ -16,11 +16,14 @@ import instaloader
 
 from .base import BaseScraper
 
-# Rate limiting constants - conservative to avoid 401/403 blocks
-MIN_DELAY_BETWEEN_REQUESTS = 30  # seconds between profiles
-MAX_DELAY_BETWEEN_REQUESTS = 60  # seconds between profiles
-DELAY_AFTER_LOGIN = 10  # seconds
-DELAY_BETWEEN_POSTS = 1.0  # seconds between posts
+# Rate limiting constants with exponential backoff support
+INITIAL_DELAY = 2.0  # seconds - start small and increase if needed
+MAX_DELAY = 120.0  # seconds - cap for exponential backoff
+DELAY_AFTER_LOGIN = 5  # seconds
+DELAY_BETWEEN_POSTS = 0.5  # seconds between posts
+MAX_RETRIES = 3  # number of retries for failed requests
+BACKOFF_MULTIPLIER = 2.0  # exponential backoff multiplier
+JITTER_FACTOR = 0.3  # add ±30% jitter to delays
 
 
 class InstagramScraper(BaseScraper):
@@ -49,6 +52,11 @@ class InstagramScraper(BaseScraper):
             post_metadata_txt_pattern='',
             quiet=True
         )
+        # Track session state and delays for adaptive rate limiting
+        self._session_loaded = False
+        self._current_delay = INITIAL_DELAY
+        self._profiles_scraped = 0
+        self._rate_limit_hits = 0
 
     def extract_username(self, url: str) -> Optional[str]:
         """
@@ -92,13 +100,105 @@ class InstagramScraper(BaseScraper):
 
         return None
 
+    def _add_jitter(self, delay: float) -> float:
+        """
+        Add jitter to a delay to avoid thundering herd problems.
+
+        Args:
+            delay: Base delay in seconds
+
+        Returns:
+            Delay with jitter applied (±JITTER_FACTOR)
+        """
+        jitter = delay * JITTER_FACTOR * (2 * random.random() - 1)
+        return max(0.1, delay + jitter)
+
+    def _calculate_backoff_delay(self, attempt: int, base_delay: float = None) -> float:
+        """
+        Calculate exponential backoff delay with jitter.
+
+        Args:
+            attempt: Current attempt number (0-indexed)
+            base_delay: Optional base delay (uses self._current_delay if not provided)
+
+        Returns:
+            Delay in seconds with exponential backoff and jitter
+        """
+        if base_delay is None:
+            base_delay = self._current_delay
+
+        delay = min(base_delay * (BACKOFF_MULTIPLIER ** attempt), MAX_DELAY)
+        return self._add_jitter(delay)
+
+    def _increase_delay(self):
+        """Increase the current delay due to rate limiting."""
+        self._current_delay = min(self._current_delay * BACKOFF_MULTIPLIER, MAX_DELAY)
+        self._rate_limit_hits += 1
+        self.logger.warning(
+            f"Rate limiting detected. Increasing delay to {self._current_delay:.1f}s "
+            f"(hits: {self._rate_limit_hits})"
+        )
+
+    def _decrease_delay(self):
+        """Decrease the current delay after successful requests."""
+        if self._current_delay > INITIAL_DELAY:
+            self._current_delay = max(self._current_delay / BACKOFF_MULTIPLIER, INITIAL_DELAY)
+            self.logger.debug(f"Decreasing delay to {self._current_delay:.1f}s")
+
+    def _is_rate_limited_error(self, exception: Exception) -> bool:
+        """
+        Check if an exception indicates rate limiting.
+
+        Args:
+            exception: Exception to check
+
+        Returns:
+            True if the error is due to rate limiting
+        """
+        error_str = str(exception).lower()
+        rate_limit_indicators = [
+            '429',  # HTTP 429 Too Many Requests
+            'too many requests',
+            'rate limit',
+            'try again later',
+            'temporarily blocked',
+            'wait a few minutes',
+        ]
+        return any(indicator in error_str for indicator in rate_limit_indicators)
+
+    def _is_auth_error(self, exception: Exception) -> bool:
+        """
+        Check if an exception indicates authentication issues.
+
+        Args:
+            exception: Exception to check
+
+        Returns:
+            True if the error is due to authentication
+        """
+        error_str = str(exception).lower()
+        auth_indicators = [
+            '401',  # HTTP 401 Unauthorized
+            '403',  # HTTP 403 Forbidden
+            'unauthorized',
+            'login required',
+            'checkpoint required',
+            'challenge_required',
+        ]
+        return any(indicator in error_str for indicator in auth_indicators)
+
     def _load_session(self) -> bool:
         """
-        Load Instagram session from file if available.
+        Load Instagram session from file if available (with caching).
 
         Returns:
             True if session loaded successfully, False otherwise
         """
+        # Check if already loaded in memory
+        if self._session_loaded:
+            self.logger.debug("Using cached session")
+            return True
+
         if not self.session_file or not os.path.exists(self.session_file):
             return False
 
@@ -107,7 +207,8 @@ class InstagramScraper(BaseScraper):
                 username=self._get_session_username(),
                 filename=self.session_file
             )
-            self.logger.info("Session loaded successfully")
+            self.logger.info("Session loaded successfully from file")
+            self._session_loaded = True
             return True
         except Exception as e:
             self.logger.warning(f"Failed to load session: {e}")
@@ -151,14 +252,14 @@ class InstagramScraper(BaseScraper):
 
     def _login_if_needed(self) -> bool:
         """
-        Log in to Instagram using credentials from environment variables.
+        Log in to Instagram using credentials from environment variables with retry logic.
 
         Returns:
             True if login successful or already logged in, False otherwise
         """
         # Check if already logged in
         if self.loader.context.is_logged_in:
-            self.logger.info("Already logged in")
+            self.logger.debug("Already logged in via context")
             return True
 
         # Try to load existing session first
@@ -176,25 +277,46 @@ class InstagramScraper(BaseScraper):
             )
             return False
 
-        try:
-            self.loader.login(username, password)
-            self.logger.info(f"Successfully logged in as {username}")
+        # Try login with exponential backoff on failure
+        for attempt in range(MAX_RETRIES):
+            try:
+                if attempt > 0:
+                    delay = self._calculate_backoff_delay(attempt, base_delay=5.0)
+                    self.logger.info(f"Retrying login (attempt {attempt + 1}/{MAX_RETRIES}) after {delay:.1f}s...")
+                    time.sleep(delay)
 
-            # Rate limit: delay after login
-            time.sleep(DELAY_AFTER_LOGIN)
+                self.loader.login(username, password)
+                self.logger.info(f"Successfully logged in as {username}")
 
-            # Save session for future use
-            if self.session_file:
-                session_dir = os.path.dirname(self.session_file)
-                if session_dir:
-                    os.makedirs(session_dir, exist_ok=True)
-                self.loader.save_session_to_file(self.session_file)
-                self.logger.info(f"Session saved to {self.session_file}")
+                # Rate limit: delay after login
+                time.sleep(DELAY_AFTER_LOGIN)
 
-            return True
-        except Exception as e:
-            self.logger.error(f"Login failed: {e}")
-            return False
+                # Save session for future use
+                if self.session_file:
+                    session_dir = os.path.dirname(self.session_file)
+                    if session_dir:
+                        os.makedirs(session_dir, exist_ok=True)
+                    self.loader.save_session_to_file(self.session_file)
+                    self.logger.info(f"Session saved to {self.session_file}")
+                    self._session_loaded = True
+
+                return True
+
+            except Exception as e:
+                self.logger.error(f"Login attempt {attempt + 1} failed: {e}")
+
+                # Check if we should retry
+                if attempt < MAX_RETRIES - 1:
+                    if self._is_rate_limited_error(e):
+                        self.logger.warning("Rate limited during login, will retry with backoff")
+                    elif self._is_auth_error(e) and 'checkpoint' not in str(e).lower():
+                        # Don't retry if it's a checkpoint challenge or permanent auth failure
+                        self.logger.error("Authentication failed, credentials may be invalid")
+                        return False
+                else:
+                    self.logger.error("All login attempts failed")
+
+        return False
 
     def _extract_post_metadata(self, post) -> Dict[str, Any]:
         """
@@ -204,12 +326,25 @@ class InstagramScraper(BaseScraper):
             post: Instaloader Post object
 
         Returns:
-            Dictionary with post metadata
+            Dictionary with post metadata including rate_limited flag
         """
         # Instaloader returns -1 for likes/comments when rate-limited or data unavailable
         # Convert negative values to 0 to avoid corrupting engagement calculations
-        likes = post.likes if post.likes >= 0 else 0
-        comments = post.comments if post.comments >= 0 else 0
+        rate_limited = False
+        likes = post.likes
+        comments = post.comments
+
+        if likes < 0:
+            likes = 0
+            rate_limited = True
+        if comments < 0:
+            comments = 0
+            rate_limited = True
+
+        # Log if we detect rate-limited data
+        if rate_limited:
+            self.logger.debug(f"Post {post.shortcode} has rate-limited data (negative values)")
+            self._increase_delay()
 
         metadata = {
             'shortcode': post.shortcode,
@@ -221,6 +356,7 @@ class InstagramScraper(BaseScraper):
             'is_video': post.is_video,
             'video_views': post.video_view_count if post.is_video else None,
             'typename': post.typename,
+            'rate_limited': rate_limited,  # Track if data was rate-limited
         }
 
         # Add optional fields if available
@@ -331,28 +467,71 @@ class InstagramScraper(BaseScraper):
             # Attempt login
             self._login_if_needed()
 
-            # Rate limit: random delay before loading profile
-            delay = random.uniform(MIN_DELAY_BETWEEN_REQUESTS, MAX_DELAY_BETWEEN_REQUESTS)
-            self.logger.debug(f"Rate limit: waiting {delay:.1f}s before loading profile")
-            time.sleep(delay)
+            # Rate limit: adaptive delay between profiles (not before first one)
+            if self._profiles_scraped > 0:
+                delay = self._add_jitter(self._current_delay)
+                self.logger.debug(f"Rate limit: waiting {delay:.1f}s before loading profile")
+                time.sleep(delay)
 
-            # Load profile
-            try:
-                profile = instaloader.Profile.from_username(
-                    self.loader.context,
-                    username
-                )
-            except instaloader.exceptions.ProfileNotExistsException:
-                error_msg = f"Profile does not exist: {username}"
-                self.logger.error(error_msg)
-                return {
-                    'success': False,
-                    'posts_downloaded': 0,
-                    'errors': [error_msg],
-                    'engagement_metrics': {}
-                }
-            except Exception as e:
-                error_msg = f"Failed to load profile: {str(e)}"
+            # Load profile with retry logic
+            profile = None
+            for attempt in range(MAX_RETRIES):
+                try:
+                    if attempt > 0:
+                        delay = self._calculate_backoff_delay(attempt)
+                        self.logger.info(
+                            f"Retrying profile load (attempt {attempt + 1}/{MAX_RETRIES}) "
+                            f"after {delay:.1f}s..."
+                        )
+                        time.sleep(delay)
+
+                    profile = instaloader.Profile.from_username(
+                        self.loader.context,
+                        username
+                    )
+                    # Success - decrease delay if we've been rate limited before
+                    if self._rate_limit_hits > 0 and attempt == 0:
+                        self._decrease_delay()
+                    break
+
+                except instaloader.exceptions.ProfileNotExistsException:
+                    # Don't retry for profiles that don't exist
+                    error_msg = f"Profile does not exist: {username}"
+                    self.logger.error(error_msg)
+                    return {
+                        'success': False,
+                        'posts_downloaded': 0,
+                        'errors': [error_msg],
+                        'engagement_metrics': {}
+                    }
+                except Exception as e:
+                    self.logger.error(f"Profile load attempt {attempt + 1} failed: {str(e)}")
+
+                    # Check error type and decide whether to retry
+                    if self._is_rate_limited_error(e):
+                        self._increase_delay()
+                        if attempt < MAX_RETRIES - 1:
+                            continue
+                    elif self._is_auth_error(e):
+                        # Auth errors - try to re-login
+                        self.logger.warning("Authentication error, attempting re-login")
+                        self._session_loaded = False
+                        if self._login_if_needed() and attempt < MAX_RETRIES - 1:
+                            continue
+
+                    # On last attempt or unrecoverable error, fail
+                    if attempt == MAX_RETRIES - 1:
+                        error_msg = f"Failed to load profile after {MAX_RETRIES} attempts: {str(e)}"
+                        self.logger.error(error_msg)
+                        return {
+                            'success': False,
+                            'posts_downloaded': 0,
+                            'errors': [error_msg],
+                            'engagement_metrics': {}
+                        }
+
+            if profile is None:
+                error_msg = f"Failed to load profile: {username}"
                 self.logger.error(error_msg)
                 return {
                     'success': False,
@@ -454,10 +633,23 @@ class InstagramScraper(BaseScraper):
 
             self.save_metadata(output_dir, metadata)
 
+            # Track successful scrape
+            self._profiles_scraped += 1
+
+            # Check for rate-limited posts and warn if quality is degraded
+            rate_limited_posts = sum(1 for p in posts_metadata if p.get('rate_limited', False))
+            if rate_limited_posts > 0:
+                warning = (
+                    f"Warning: {rate_limited_posts}/{len(posts_metadata)} posts had rate-limited data. "
+                    f"Engagement metrics may be incomplete."
+                )
+                self.logger.warning(warning)
+                errors.append(warning)
+
             success = posts_downloaded > 0 or len(errors) == 0
             self.logger.info(
                 f"Scrape completed. Posts downloaded: {posts_downloaded}, "
-                f"Errors: {len(errors)}"
+                f"Errors: {len(errors)}, Current delay: {self._current_delay:.1f}s"
             )
 
             return {

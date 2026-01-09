@@ -8,6 +8,8 @@ import re
 import json
 import subprocess
 import time
+import random
+import os
 from pathlib import Path
 from typing import Dict, Any, Optional, List
 import logging
@@ -21,12 +23,40 @@ class TikTokScraper(BaseScraper):
 
     platform_name = "tiktok"
 
-    # Anti-bot user agents to rotate
+    # Expanded anti-bot user agents to rotate (15+ diverse agents)
     USER_AGENTS = [
+        # Chrome on Windows
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+        # Chrome on Mac
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_6_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        # Chrome on Linux
         "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+        # Firefox on Windows
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0",
+        # Firefox on Mac
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:121.0) Gecko/20100101 Firefox/121.0",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:122.0) Gecko/20100101 Firefox/122.0",
+        # Safari on Mac
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+        # Edge on Windows
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0",
+    ]
+
+    # TikTok API endpoints to try (configurable via environment)
+    API_ENDPOINTS = [
+        "api22-normal-c-useast2a.tiktokv.com",
+        "api16-normal-c-useast1a.tiktokv.com",
+        "api19-normal-c-useast1a.tiktokv.com",
+        "api22-normal-c-useast1a.tiktokv.com",
     ]
 
     def __init__(self, output_dir: Optional[Path] = None):
@@ -37,6 +67,20 @@ class TikTokScraper(BaseScraper):
             output_dir: Directory to save scraped data (Path object or None for config default)
         """
         super().__init__(output_dir)
+
+        # Load proxy configuration from environment
+        self.proxy = os.getenv("TIKTOK_PROXY") or os.getenv("HTTP_PROXY")
+        if self.proxy:
+            self.logger.info(f"Using proxy: {self.proxy}")
+
+        # Load API endpoint from environment or use default
+        custom_endpoint = os.getenv("TIKTOK_API_ENDPOINT")
+        if custom_endpoint:
+            self.api_endpoint = custom_endpoint
+            self.logger.info(f"Using custom TikTok API endpoint: {custom_endpoint}")
+        else:
+            self.api_endpoint = random.choice(self.API_ENDPOINTS)
+            self.logger.debug(f"Using default TikTok API endpoint: {self.api_endpoint}")
 
     def extract_username(self, url: str) -> Optional[str]:
         """
@@ -186,7 +230,7 @@ class TikTokScraper(BaseScraper):
 
     def _run_ytdlp(self, profile_url: str, temp_dir: Path, username: str, max_posts: int) -> List[Dict[str, Any]]:
         """
-        Execute yt-dlp to extract metadata.
+        Execute yt-dlp to extract metadata with improved retry logic.
 
         Args:
             profile_url: TikTok profile URL
@@ -210,23 +254,61 @@ class TikTokScraper(BaseScraper):
             "--skip-download",         # Don't download videos (metadata only)
             "--no-warnings",           # Suppress warnings for cleaner output
             "--playlist-end", str(max_posts),  # Limit to max_posts
-            "--user-agent", self._get_user_agent(),  # Rotate user agent
-            "--extractor-args", "tiktok:api_hostname=api22-normal-c-useast2a.tiktokv.com",  # Use specific API endpoint
+            "--extractor-args", f"tiktok:api_hostname={self.api_endpoint}",  # Use configured API endpoint
             "--sleep-requests", "1",   # Sleep 1 second between requests (rate limiting)
-            "--retries", "3",          # Retry failed requests 3 times
-            "--fragment-retries", "3", # Retry failed fragments 3 times
+            "--retries", "5",          # Retry failed requests 5 times
+            "--fragment-retries", "5", # Retry failed fragments 5 times
             "-o", output_template,     # Output template
-            profile_url,
         ]
+
+        # Try to use browser impersonation for better anti-bot evasion
+        # Requires curl-cffi package (pip install curl-cffi)
+        impersonate_target = os.getenv("TIKTOK_IMPERSONATE", "chrome")
+        try:
+            # Check if impersonation is available by testing if curl_cffi is installed
+            import importlib.util
+            if importlib.util.find_spec("curl_cffi") is not None:
+                cmd.extend(["--impersonate", impersonate_target])
+                self.logger.info(f"Using browser impersonation: {impersonate_target}")
+            else:
+                # Fallback to user agent rotation without impersonation
+                cmd.extend(["--user-agent", self._get_user_agent()])
+                self.logger.debug("Browser impersonation not available (curl_cffi not installed), using user agent rotation")
+        except Exception as e:
+            # Fallback to user agent rotation
+            cmd.extend(["--user-agent", self._get_user_agent()])
+            self.logger.debug(f"Could not enable impersonation: {e}")
+
+        # Add proxy if configured and disable cert verification for proxied requests
+        if self.proxy:
+            cmd.extend(["--proxy", self.proxy])
+            # Disable SSL verification when using proxy (common for corporate/container proxies)
+            cmd.append("--no-check-certificates")
+            self.logger.debug(f"Using proxy with SSL verification disabled: {self.proxy}")
+
+        # Check if TIKTOK_IGNORE_SSL env var is set (useful for testing environments)
+        if os.getenv("TIKTOK_IGNORE_SSL", "").lower() in ("1", "true", "yes"):
+            cmd.append("--no-check-certificates")
+            self.logger.debug("SSL certificate verification disabled via TIKTOK_IGNORE_SSL")
+
+        cmd.append(profile_url)
 
         self.logger.debug(f"Running yt-dlp command: {' '.join(cmd)}")
 
-        # Execute yt-dlp with retry logic
-        max_retries = 3
-        retry_delay = 5  # seconds
+        # Execute yt-dlp with exponential backoff + jitter
+        max_retries = 4
+        base_delay = 3  # Base delay in seconds
 
         for attempt in range(max_retries):
             try:
+                # Rotate API endpoint on retry attempts
+                if attempt > 0:
+                    new_endpoint = random.choice(self.API_ENDPOINTS)
+                    cmd = [arg.replace(f"tiktok:api_hostname={self.api_endpoint}",
+                                     f"tiktok:api_hostname={new_endpoint}")
+                          if "tiktok:api_hostname" in arg else arg for arg in cmd]
+                    self.logger.debug(f"Rotating API endpoint to: {new_endpoint}")
+
                 process = subprocess.run(
                     cmd,
                     capture_output=True,
@@ -240,44 +322,93 @@ class TikTokScraper(BaseScraper):
                     stderr = process.stderr.lower()
                     stdout = process.stdout.lower()
 
-                    # Anti-bot detection
-                    if any(keyword in stderr or keyword in stdout for keyword in
-                           ['captcha', 'blocked', '403', 'forbidden', 'too many requests']):
+                    self.logger.debug(f"yt-dlp stderr: {process.stderr}")
+                    self.logger.debug(f"yt-dlp stdout: {process.stdout}")
+
+                    # Enhanced anti-bot detection patterns
+                    anti_bot_keywords = [
+                        'captcha', 'blocked', '403', 'forbidden', 'too many requests',
+                        'rate limit', 'access denied', 'not available', 'restricted',
+                        'verification', 'challenge', 'suspicious activity', '429'
+                    ]
+
+                    if any(keyword in stderr or keyword in stdout for keyword in anti_bot_keywords):
                         if attempt < max_retries - 1:
-                            wait_time = retry_delay * (attempt + 1)
+                            # Exponential backoff with jitter
+                            wait_time = base_delay * (2 ** attempt) + random.uniform(0, 2)
                             self.logger.warning(
-                                f"Anti-bot detection triggered. Retrying in {wait_time}s... "
+                                f"Anti-bot detection triggered. Retrying in {wait_time:.1f}s... "
                                 f"(Attempt {attempt + 1}/{max_retries})"
                             )
                             time.sleep(wait_time)
                             continue
                         else:
                             raise Exception(
-                                "TikTok is blocking requests. Possible anti-bot measures detected. "
-                                "Try again later or use a VPN/proxy."
+                                "TikTok is blocking requests after multiple attempts. "
+                                "Anti-bot measures detected. Try again later, use a different "
+                                "network/VPN, or set TIKTOK_PROXY environment variable."
                             )
 
-                    # Network errors - retry
-                    if any(keyword in stderr or keyword in stdout for keyword in
-                           ['network', 'connection', 'timeout', 'unable to download']):
+                    # Network errors - retry with backoff
+                    network_keywords = [
+                        'network', 'connection', 'timeout', 'unable to download',
+                        'timed out', 'could not connect', 'connection refused'
+                    ]
+
+                    if any(keyword in stderr or keyword in stdout for keyword in network_keywords):
                         if attempt < max_retries - 1:
-                            self.logger.warning(f"Network error. Retrying... (Attempt {attempt + 1}/{max_retries})")
-                            time.sleep(retry_delay)
+                            wait_time = base_delay * (attempt + 1) + random.uniform(0, 1)
+                            self.logger.warning(
+                                f"Network error detected. Retrying in {wait_time:.1f}s... "
+                                f"(Attempt {attempt + 1}/{max_retries})"
+                            )
+                            time.sleep(wait_time)
                             continue
 
-                    # If no posts found, might be invalid username
-                    if 'no videos found' in stderr or 'no videos found' in stdout:
-                        self.logger.warning(f"No videos found for profile: {profile_url}")
+                    # Check for private account or embedding disabled
+                    private_keywords = ['private', 'embedding disabled', 'unable to extract secondary user id']
+                    if any(keyword in stderr or keyword in stdout for keyword in private_keywords):
+                        self.logger.warning(
+                            f"TikTok account appears to be private or has embedding disabled: {profile_url}. "
+                            f"This account cannot be scraped via yt-dlp. Try using official TikTok API if available."
+                        )
+                        return []
+
+                    # Check for no content (account exists but no videos)
+                    no_content_keywords = ['no videos found', 'no entries', 'playlist is empty']
+                    if any(keyword in stderr or keyword in stdout for keyword in no_content_keywords):
+                        self.logger.warning(
+                            f"No videos found for profile: {profile_url}. "
+                            f"Account may have no videos or username may be invalid."
+                        )
                         return []
 
                 # Parse .info.json files
                 posts_data = self._parse_info_json_files(temp_dir)
-                return posts_data
+
+                if posts_data:
+                    self.logger.info(f"Successfully extracted {len(posts_data)} posts")
+                    return posts_data
+                elif attempt < max_retries - 1:
+                    # No data but no error - might be transient issue
+                    wait_time = base_delay + random.uniform(0, 1)
+                    self.logger.warning(
+                        f"No data extracted but no error. Retrying in {wait_time:.1f}s... "
+                        f"(Attempt {attempt + 1}/{max_retries})"
+                    )
+                    time.sleep(wait_time)
+                    continue
+                else:
+                    return []
 
             except subprocess.TimeoutExpired:
                 if attempt < max_retries - 1:
-                    self.logger.warning(f"Process timeout. Retrying... (Attempt {attempt + 1}/{max_retries})")
-                    time.sleep(retry_delay)
+                    wait_time = base_delay * (attempt + 1)
+                    self.logger.warning(
+                        f"Process timeout after 10 minutes. Retrying... "
+                        f"(Attempt {attempt + 1}/{max_retries})"
+                    )
+                    time.sleep(wait_time)
                     continue
                 else:
                     raise
@@ -383,9 +514,8 @@ class TikTokScraper(BaseScraper):
         Get a rotating user agent for anti-bot evasion.
 
         Returns:
-            User agent string
+            User agent string from expanded pool
         """
-        import random
         return random.choice(self.USER_AGENTS)
 
     def _cleanup_temp_dir(self, temp_dir: Path) -> None:

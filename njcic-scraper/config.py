@@ -53,6 +53,13 @@ YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY", "")
 LINKEDIN_EMAIL = os.getenv("LINKEDIN_EMAIL", "")
 LINKEDIN_PASSWORD = os.getenv("LINKEDIN_PASSWORD", "")
 
+# TikTok-specific settings
+# TIKTOK_PROXY: Optional HTTP/HTTPS proxy for TikTok requests (e.g., "http://proxy:port")
+# TIKTOK_API_ENDPOINT: Optional custom TikTok API hostname (defaults to rotating endpoints)
+# HTTP_PROXY: Alternative proxy setting (TIKTOK_PROXY takes precedence)
+TIKTOK_PROXY = os.getenv("TIKTOK_PROXY", "")
+TIKTOK_API_ENDPOINT = os.getenv("TIKTOK_API_ENDPOINT", "")
+
 # User agent for requests
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
