@@ -1,6 +1,6 @@
 {
   "summary": {
-    "totalGrantees": 67,
+    "totalGrantees": 48,
     "totalPosts": 1827,
     "totalEngagement": 14301942,
     "totalFollowers": 8288309,
@@ -115,16 +115,6 @@
       "platformsScraped": 3
     },
     {
-      "name": "The Daily Targum @ Targum Publishing Co @",
-      "slug": "the-daily-targum-targum-publishing-co",
-      "posts": 38,
-      "engagement": 50780,
-      "followers": 15150,
-      "engagementRate": 1336.32,
-      "topPlatform": "tiktok",
-      "platformsScraped": 3
-    },
-    {
       "name": "Daily Targum",
       "slug": "daily-targum",
       "posts": 39,
@@ -203,6 +193,346 @@
       "engagementRate": 144.08,
       "topPlatform": "youtube",
       "platformsScraped": 4
+    },
+    {
+      "name": "Trenton Journal",
+      "slug": "trenton-journal",
+      "posts": 12,
+      "engagement": 2850,
+      "followers": 0,
+      "engagementRate": 237.5,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "New Labor",
+      "slug": "new-labor",
+      "posts": 12,
+      "engagement": 2760,
+      "followers": 0,
+      "engagementRate": 230.0,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "VietLead",
+      "slug": "vietlead",
+      "posts": 12,
+      "engagement": 2309,
+      "followers": 0,
+      "engagementRate": 192.42,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Black in Jersey",
+      "slug": "black-in-jersey",
+      "posts": 12,
+      "engagement": 1547,
+      "followers": 0,
+      "engagementRate": 128.92,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Newark Water Coalition",
+      "slug": "newark-water-coalition",
+      "posts": 12,
+      "engagement": 1256,
+      "followers": 0,
+      "engagementRate": 104.67,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "The Tower at Princeton High School",
+      "slug": "the-tower-at-princeton-high-school",
+      "posts": 12,
+      "engagement": 1068,
+      "followers": 0,
+      "engagementRate": 89.0,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Chalkbeat Newark  Civic News Company ",
+      "slug": "chalkbeat-newark-civic-news-company",
+      "posts": 37,
+      "engagement": 1034,
+      "followers": 11032,
+      "engagementRate": 27.95,
+      "topPlatform": "instagram",
+      "platformsScraped": 2
+    },
+    {
+      "name": "Newark News and Story Collaborative",
+      "slug": "newark-news-and-story-collaborative",
+      "posts": 12,
+      "engagement": 1011,
+      "followers": 0,
+      "engagementRate": 84.25,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Camden Fireworks",
+      "slug": "camden-fireworks",
+      "posts": 12,
+      "engagement": 930,
+      "followers": 0,
+      "engagementRate": 77.5,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "DoverNow Magazine",
+      "slug": "dovernow-magazine",
+      "posts": 12,
+      "engagement": 871,
+      "followers": 0,
+      "engagementRate": 72.58,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Central Desi",
+      "slug": "central-desi",
+      "posts": 12,
+      "engagement": 686,
+      "followers": 0,
+      "engagementRate": 57.17,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "TAPinto Hasbrouk Heights",
+      "slug": "tapinto-hasbrouk-heights",
+      "posts": 12,
+      "engagement": 682,
+      "followers": 0,
+      "engagementRate": 56.83,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "NJ Pen",
+      "slug": "nj-pen",
+      "posts": 12,
+      "engagement": 608,
+      "followers": 0,
+      "engagementRate": 50.67,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Wayne Hills High School",
+      "slug": "wayne-hills-high-school",
+      "posts": 12,
+      "engagement": 370,
+      "followers": 0,
+      "engagementRate": 30.83,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Montclair Local Nonprofit News",
+      "slug": "montclair-local-nonprofit-news",
+      "posts": 37,
+      "engagement": 319,
+      "followers": 2468,
+      "engagementRate": 8.62,
+      "topPlatform": "instagram",
+      "platformsScraped": 2
+    },
+    {
+      "name": "coLAB Arts",
+      "slug": "colab-arts",
+      "posts": 12,
+      "engagement": 307,
+      "followers": 0,
+      "engagementRate": 25.58,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Cranford High School",
+      "slug": "cranford-high-school",
+      "posts": 12,
+      "engagement": 256,
+      "followers": 0,
+      "engagementRate": 21.33,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "The Jersey Bee",
+      "slug": "the-jersey-bee",
+      "posts": 37,
+      "engagement": 242,
+      "followers": 1844,
+      "engagementRate": 6.54,
+      "topPlatform": "instagram",
+      "platformsScraped": 2
+    },
+    {
+      "name": "Two River Times",
+      "slug": "two-river-times",
+      "posts": 12,
+      "engagement": 202,
+      "followers": 0,
+      "engagementRate": 16.83,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Hammonton Gazette",
+      "slug": "hammonton-gazette",
+      "posts": 12,
+      "engagement": 179,
+      "followers": 0,
+      "engagementRate": 14.92,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Public Square Amplified",
+      "slug": "public-square-amplified",
+      "posts": 37,
+      "engagement": 132,
+      "followers": 82,
+      "engagementRate": 3.57,
+      "topPlatform": "instagram",
+      "platformsScraped": 2
+    },
+    {
+      "name": "MercerMe",
+      "slug": "mercerme",
+      "posts": 12,
+      "engagement": 88,
+      "followers": 0,
+      "engagementRate": 7.33,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Healthy NewsWorks",
+      "slug": "healthy-newsworks",
+      "posts": 12,
+      "engagement": 81,
+      "followers": 0,
+      "engagementRate": 6.75,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Hopeloft  Inc ",
+      "slug": "hopeloft-inc",
+      "posts": 12,
+      "engagement": 73,
+      "followers": 0,
+      "engagementRate": 6.08,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Front Runner New Jersey",
+      "slug": "front-runner-new-jersey",
+      "posts": 12,
+      "engagement": 71,
+      "followers": 0,
+      "engagementRate": 5.92,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "NJ Coalition to End Homelessness",
+      "slug": "nj-coalition-to-end-homelessness",
+      "posts": 12,
+      "engagement": 63,
+      "followers": 0,
+      "engagementRate": 5.25,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "New Jersey Council for the Humanities and Journalism   Design",
+      "slug": "new-jersey-council-for-the-humanities-and-journalism-design",
+      "posts": 12,
+      "engagement": 60,
+      "followers": 0,
+      "engagementRate": 5.0,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Latino Spirit Media",
+      "slug": "latino-spirit-media",
+      "posts": 12,
+      "engagement": 54,
+      "followers": 0,
+      "engagementRate": 4.5,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Corporation for New Jersey Local Media",
+      "slug": "corporation-for-new-jersey-local-media",
+      "posts": 12,
+      "engagement": 51,
+      "followers": 0,
+      "engagementRate": 4.25,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Paterson Alliance",
+      "slug": "paterson-alliance",
+      "posts": 12,
+      "engagement": 41,
+      "followers": 0,
+      "engagementRate": 3.42,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "The Conservatory of Music and Performing Arts Society",
+      "slug": "the-conservatory-of-music-and-performing-arts-society",
+      "posts": 12,
+      "engagement": 38,
+      "followers": 0,
+      "engagementRate": 3.17,
+      "topPlatform": "instagram",
+      "platformsScraped": 1
+    },
+    {
+      "name": "Mental Health Association of New Jersey",
+      "slug": "mental-health-association-of-new-jersey",
+      "posts": 13,
+      "engagement": 37,
+      "followers": 0,
+      "engagementRate": 2.85,
+      "topPlatform": "instagram",
+      "platformsScraped": 2
+    },
+    {
+      "name": "Camden Parent   Student Union",
+      "slug": "camden-parent-student-union",
+      "posts": 38,
+      "engagement": 22,
+      "followers": 0,
+      "engagementRate": 0.58,
+      "topPlatform": "tiktok",
+      "platformsScraped": 2
+    },
+    {
+      "name": "New Jersey Urban News",
+      "slug": "new-jersey-urban-news",
+      "posts": 12,
+      "engagement": -4,
+      "followers": 0,
+      "engagementRate": -0.33,
+      "topPlatform": "N/A",
+      "platformsScraped": 1
     }
   ],
   "engagementByPlatform": [
