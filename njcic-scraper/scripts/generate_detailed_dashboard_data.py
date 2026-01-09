@@ -494,13 +494,6 @@ def generate_grantee_analytics(grantee_dir: Path) -> Optional[Dict]:
             continue
 
         posts, metadata = load_platform_data(platform_dir)
-        if not posts:
-            continue
-
-        # Calculate platform metrics
-        platform_posts = len([p for p in posts if p])
-        platform_engagement = sum(get_post_engagement(p)['total'] for p in posts if p)
-        platform_views = sum(get_post_engagement(p)['views'] for p in posts if p)
 
         # Get follower count from metadata if available
         followers = 0
@@ -508,8 +501,19 @@ def generate_grantee_analytics(grantee_dir: Path) -> Optional[Dict]:
             followers = safe_int(
                 metadata.get('followers_count') or
                 metadata.get('followersCount') or
-                (metadata.get('profile', {}) or {}).get('followersCount')
+                (metadata.get('profile', {}) or {}).get('followersCount') or
+                (metadata.get('engagement_metrics', {}) or {}).get('followers_count') or
+                (metadata.get('data', {}) or {}).get('followers_count')
             )
+
+        # Skip if no posts AND no followers (need at least one data point)
+        if not posts and not followers:
+            continue
+
+        # Calculate platform metrics
+        platform_posts = len([p for p in posts if p])
+        platform_engagement = sum(get_post_engagement(p)['total'] for p in posts if p)
+        platform_views = sum(get_post_engagement(p)['views'] for p in posts if p)
 
         platforms_data[platform] = {
             'posts': platform_posts,

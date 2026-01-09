@@ -4,10 +4,10 @@
   "summary": {
     "total_posts": 28,
     "total_engagement": 8,
-    "total_followers": 0,
-    "platforms_active": 2,
+    "total_followers": 14503,
+    "platforms_active": 4,
     "engagement_rate": 0.29,
-    "last_updated": "2026-01-08T21:54:09.586449"
+    "last_updated": "2026-01-08T22:22:46.774042"
   },
   "platform_breakdown": {
     "youtube": {
@@ -16,9 +16,21 @@
       "engagement": 8,
       "engagement_pct": 100.0
     },
+    "twitter": {
+      "posts": 0,
+      "posts_pct": 0.0,
+      "engagement": 0,
+      "engagement_pct": 0.0
+    },
     "facebook": {
       "posts": 2,
       "posts_pct": 7.1,
+      "engagement": 0,
+      "engagement_pct": 0.0
+    },
+    "linkedin": {
+      "posts": 0,
+      "posts_pct": 0.0,
       "engagement": 0,
       "engagement_pct": 0.0
     }
@@ -90,11 +102,28 @@
         }
       }
     },
+    "twitter": {
+      "posts": 0,
+      "engagement": 0,
+      "views": 0,
+      "followers": 2972,
+      "engagement_rate": 0.0,
+      "top_posts": [],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {}
+    },
     "facebook": {
       "posts": 2,
       "engagement": 0,
       "views": 0,
-      "followers": 0,
+      "followers": 11000,
       "engagement_rate": 0.0,
       "top_posts": [
         {
@@ -141,6 +170,23 @@
           "percentage": 100.0
         }
       }
+    },
+    "linkedin": {
+      "posts": 0,
+      "engagement": 0,
+      "views": 0,
+      "followers": 531,
+      "engagement_rate": 0.0,
+      "top_posts": [],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {}
     }
   },
   "top_posts": [

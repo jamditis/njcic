@@ -1,11 +1,89 @@
 {
   "platforms": {
+    "twitter": {
+      "color": "#1DA1F2",
+      "grantees": 36,
+      "total_posts": 30,
+      "total_engagement": 50560,
+      "total_followers": 400043,
+      "avg_engagement_per_post": 1685.33,
+      "avg_posts_per_grantee": 0.8,
+      "content_types": {
+        "unknown": {
+          "count": 30,
+          "engagement": 50560,
+          "percentage": 100.0
+        }
+      },
+      "top_grantees": [
+        {
+          "name": "Muslim",
+          "slug": "muslim",
+          "posts": 9,
+          "engagement": 48466
+        },
+        {
+          "name": "Inside Climate News",
+          "slug": "inside-climate-news",
+          "posts": 8,
+          "engagement": 1128
+        },
+        {
+          "name": "HudPost",
+          "slug": "hudpost",
+          "posts": 6,
+          "engagement": 647
+        },
+        {
+          "name": "Center for Cooperative Media",
+          "slug": "center-for-cooperative-media",
+          "posts": 7,
+          "engagement": 319
+        },
+        {
+          "name": "70and73 com",
+          "slug": "70and73-com",
+          "posts": 0,
+          "engagement": 0
+        },
+        {
+          "name": "Asbury Park Media Collective",
+          "slug": "asbury-park-media-collective",
+          "posts": 0,
+          "engagement": 0
+        },
+        {
+          "name": "Camden Parent   Student Union",
+          "slug": "camden-parent-student-union",
+          "posts": 0,
+          "engagement": 0
+        },
+        {
+          "name": "Central New Jersey Network",
+          "slug": "central-new-jersey-network",
+          "posts": 0,
+          "engagement": 0
+        },
+        {
+          "name": "Chalkbeat Newark  Civic News Company ",
+          "slug": "chalkbeat-newark-civic-news-company",
+          "posts": 0,
+          "engagement": 0
+        },
+        {
+          "name": "Clinton Hill Community Action",
+          "slug": "clinton-hill-community-action",
+          "posts": 0,
+          "engagement": 0
+        }
+      ]
+    },
     "facebook": {
       "color": "#1877F2",
       "grantees": 45,
       "total_posts": 52,
       "total_engagement": 0,
-      "total_followers": 0,
+      "total_followers": 686951,
       "avg_engagement_per_post": 0.0,
       "avg_posts_per_grantee": 1.2,
       "content_types": {
@@ -156,6 +234,78 @@
         }
       ]
     },
+    "linkedin": {
+      "color": "#0A66C2",
+      "grantees": 16,
+      "total_posts": 0,
+      "total_engagement": 0,
+      "total_followers": 4939,
+      "avg_engagement_per_post": 0.0,
+      "avg_posts_per_grantee": 0.0,
+      "content_types": {},
+      "top_grantees": [
+        {
+          "name": "Beyond Expectations",
+          "slug": "beyond-expectations",
+          "posts": 0,
+          "engagement": 0
+        },
+        {
+          "name": "Camden Fireworks",
+          "slug": "camden-fireworks",
+          "posts": 0,
+          "engagement": 0
+        },
+        {
+          "name": "Central New Jersey Network",
+          "slug": "central-new-jersey-network",
+          "posts": 0,
+          "engagement": 0
+        },
+        {
+          "name": "Corporation for New Jersey Local Media",
+          "slug": "corporation-for-new-jersey-local-media",
+          "posts": 0,
+          "engagement": 0
+        },
+        {
+          "name": "Garden State Initiative",
+          "slug": "garden-state-initiative",
+          "posts": 0,
+          "engagement": 0
+        },
+        {
+          "name": "Healthy NewsWorks",
+          "slug": "healthy-newsworks",
+          "posts": 0,
+          "engagement": 0
+        },
+        {
+          "name": "Hopeloft",
+          "slug": "hopeloft",
+          "posts": 0,
+          "engagement": 0
+        },
+        {
+          "name": "Hopeloft  Inc ",
+          "slug": "hopeloft-inc",
+          "posts": 0,
+          "engagement": 0
+        },
+        {
+          "name": "HudPost",
+          "slug": "hudpost",
+          "posts": 0,
+          "engagement": 0
+        },
+        {
+          "name": "NJ Coalition to End Homelessness",
+          "slug": "nj-coalition-to-end-homelessness",
+          "posts": 0,
+          "engagement": 0
+        }
+      ]
+    },
     "tiktok": {
       "color": "#000000",
       "grantees": 16,
@@ -239,7 +389,7 @@
       "grantees": 48,
       "total_posts": 576,
       "total_engagement": 626252,
-      "total_followers": 0,
+      "total_followers": 7033019,
       "avg_engagement_per_post": 1087.24,
       "avg_posts_per_grantee": 12.0,
       "content_types": {
@@ -314,48 +464,6 @@
           "slug": "black-in-jersey",
           "posts": 12,
           "engagement": 1547
-        }
-      ]
-    },
-    "twitter": {
-      "color": "#1DA1F2",
-      "grantees": 4,
-      "total_posts": 30,
-      "total_engagement": 50560,
-      "total_followers": 0,
-      "avg_engagement_per_post": 1685.33,
-      "avg_posts_per_grantee": 7.5,
-      "content_types": {
-        "unknown": {
-          "count": 30,
-          "engagement": 50560,
-          "percentage": 100.0
-        }
-      },
-      "top_grantees": [
-        {
-          "name": "Muslim",
-          "slug": "muslim",
-          "posts": 9,
-          "engagement": 48466
-        },
-        {
-          "name": "Inside Climate News",
-          "slug": "inside-climate-news",
-          "posts": 8,
-          "engagement": 1128
-        },
-        {
-          "name": "HudPost",
-          "slug": "hudpost",
-          "posts": 6,
-          "engagement": 647
-        },
-        {
-          "name": "Center for Cooperative Media",
-          "slug": "center-for-cooperative-media",
-          "posts": 7,
-          "engagement": 319
         }
       ]
     },
@@ -477,6 +585,10 @@
       {
         "platform": "facebook",
         "engagement": 0
+      },
+      {
+        "platform": "linkedin",
+        "engagement": 0
       }
     ],
     "by_posts": [
@@ -503,8 +615,12 @@
       {
         "platform": "twitter",
         "posts": 30
+      },
+      {
+        "platform": "linkedin",
+        "posts": 0
       }
     ]
   },
-  "generated_at": "2026-01-08T21:54:09.696014"
+  "generated_at": "2026-01-08T22:22:46.882315"
 }

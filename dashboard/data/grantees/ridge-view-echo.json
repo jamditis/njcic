@@ -4,15 +4,21 @@
   "summary": {
     "total_posts": 1,
     "total_engagement": 0,
-    "total_followers": 0,
-    "platforms_active": 1,
+    "total_followers": 914,
+    "platforms_active": 2,
     "engagement_rate": 0.0,
-    "last_updated": "2026-01-08T21:54:09.655363"
+    "last_updated": "2026-01-08T22:22:46.845494"
   },
   "platform_breakdown": {
     "facebook": {
       "posts": 1,
       "posts_pct": 100.0,
+      "engagement": 0,
+      "engagement_pct": 0
+    },
+    "linkedin": {
+      "posts": 0,
+      "posts_pct": 0.0,
       "engagement": 0,
       "engagement_pct": 0
     }
@@ -22,7 +28,7 @@
       "posts": 1,
       "engagement": 0,
       "views": 0,
-      "followers": 0,
+      "followers": 819,
       "engagement_rate": 0.0,
       "top_posts": [
         {
@@ -55,6 +61,23 @@
           "percentage": 100.0
         }
       }
+    },
+    "linkedin": {
+      "posts": 0,
+      "engagement": 0,
+      "views": 0,
+      "followers": 95,
+      "engagement_rate": 0.0,
+      "top_posts": [],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {}
     }
   },
   "top_posts": [

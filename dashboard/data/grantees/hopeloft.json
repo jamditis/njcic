@@ -4,12 +4,18 @@
   "summary": {
     "total_posts": 13,
     "total_engagement": 269,
-    "total_followers": 0,
-    "platforms_active": 2,
+    "total_followers": 72535,
+    "platforms_active": 4,
     "engagement_rate": 20.69,
-    "last_updated": "2026-01-08T21:54:09.595002"
+    "last_updated": "2026-01-08T22:22:46.784356"
   },
   "platform_breakdown": {
+    "twitter": {
+      "posts": 0,
+      "posts_pct": 0.0,
+      "engagement": 0,
+      "engagement_pct": 0.0
+    },
     "instagram": {
       "posts": 12,
       "posts_pct": 92.3,
@@ -21,14 +27,37 @@
       "posts_pct": 7.7,
       "engagement": 0,
       "engagement_pct": 0.0
+    },
+    "linkedin": {
+      "posts": 0,
+      "posts_pct": 0.0,
+      "engagement": 0,
+      "engagement_pct": 0.0
     }
   },
   "platforms": {
+    "twitter": {
+      "posts": 0,
+      "engagement": 0,
+      "views": 0,
+      "followers": 5191,
+      "engagement_rate": 0.0,
+      "top_posts": [],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {}
+    },
     "instagram": {
       "posts": 12,
       "engagement": 269,
       "views": 0,
-      "followers": 0,
+      "followers": 6187,
       "engagement_rate": 22.42,
       "top_posts": [
         {
@@ -140,7 +169,7 @@
       "posts": 1,
       "engagement": 0,
       "views": 0,
-      "followers": 0,
+      "followers": 61000,
       "engagement_rate": 0.0,
       "top_posts": [
         {
@@ -173,6 +202,23 @@
           "percentage": 100.0
         }
       }
+    },
+    "linkedin": {
+      "posts": 0,
+      "engagement": 0,
+      "views": 0,
+      "followers": 157,
+      "engagement_rate": 0.0,
+      "top_posts": [],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {}
     }
   },
   "top_posts": [

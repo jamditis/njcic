@@ -4,9 +4,13 @@ Threads scraper using Playwright for browser automation.
 Threads doesn't have a public API yet, so we use browser automation
 to scrape posts. This implementation includes graceful fallbacks for
 anti-bot measures and rate limiting.
+
+Supports authentication via INSTAGRAM_USERNAME and INSTAGRAM_PASSWORD
+environment variables (Threads uses Instagram/Meta login).
 """
 from __future__ import annotations
 
+import os
 import re
 import json
 import asyncio
@@ -23,7 +27,11 @@ except ImportError:
     async_playwright = None
     PlaywrightTimeout = Exception
 
+from dotenv import load_dotenv
 from .base import BaseScraper
+
+# Load environment variables
+load_dotenv()
 
 
 class ThreadsScraper(BaseScraper):
@@ -44,11 +52,96 @@ class ThreadsScraper(BaseScraper):
         self.headless = headless
         self.timeout = timeout
         self.max_posts = 25  # Threads specific limit as per requirements
+        self.username = os.getenv('INSTAGRAM_USERNAME')
+        self.password = os.getenv('INSTAGRAM_PASSWORD')
+        self._logged_in = False
 
         if not PLAYWRIGHT_AVAILABLE:
             self.logger.warning(
                 "Playwright not installed. Install with: pip install playwright && playwright install"
             )
+
+    async def _login(self, page) -> bool:
+        """
+        Log in to Threads using Instagram credentials.
+
+        Threads uses Meta/Instagram login, so we authenticate via Instagram.
+
+        Args:
+            page: Playwright page object
+
+        Returns:
+            True if login successful, False otherwise
+        """
+        if not self.username or not self.password:
+            self.logger.warning("Instagram credentials not found in environment variables")
+            return False
+
+        try:
+            self.logger.info("Attempting Threads login via Instagram...")
+
+            # Navigate to Threads login page
+            await page.goto('https://www.threads.net/login', timeout=self.timeout)
+            await asyncio.sleep(3)
+
+            # Look for "Log in with Instagram" button or direct login form
+            # Threads may show different login flows
+            ig_login_btn = await page.query_selector('text="Log in with Instagram"')
+            if ig_login_btn:
+                await ig_login_btn.click()
+                await asyncio.sleep(3)
+
+            # Try to find login form (may be on same page or redirected)
+            username_input = await page.query_selector('input[name="username"], input[aria-label*="username" i], input[type="text"]')
+            password_input = await page.query_selector('input[name="password"], input[aria-label*="password" i], input[type="password"]')
+
+            if not username_input or not password_input:
+                # May need to click "Log in" first
+                login_link = await page.query_selector('text="Log in"')
+                if login_link:
+                    await login_link.click()
+                    await asyncio.sleep(2)
+                    username_input = await page.query_selector('input[name="username"], input[type="text"]')
+                    password_input = await page.query_selector('input[type="password"]')
+
+            if not username_input or not password_input:
+                self.logger.error("Could not find login form fields")
+                return False
+
+            # Fill credentials
+            await username_input.fill(self.username)
+            await asyncio.sleep(0.5)
+            await password_input.fill(self.password)
+            await asyncio.sleep(0.5)
+
+            # Submit form
+            submit_btn = await page.query_selector('button[type="submit"], button:has-text("Log in")')
+            if submit_btn:
+                await submit_btn.click()
+            else:
+                await page.keyboard.press('Enter')
+
+            # Wait for navigation
+            await asyncio.sleep(5)
+
+            # Check if login was successful
+            current_url = page.url
+            if 'threads.net' in current_url and 'login' not in current_url:
+                self.logger.info("Threads login successful")
+                self._logged_in = True
+                return True
+
+            # Check for security challenge
+            if 'challenge' in current_url or 'checkpoint' in current_url:
+                self.logger.warning("Security challenge detected - manual intervention may be required")
+                return False
+
+            self.logger.warning(f"Login status unclear, current URL: {current_url}")
+            return False
+
+        except Exception as e:
+            self.logger.error(f"Error during login: {e}")
+            return False
 
     def extract_username(self, url: str) -> Optional[str]:
         """
@@ -315,6 +408,13 @@ class ThreadsScraper(BaseScraper):
                 )
 
                 page = await context.new_page()
+
+                # Attempt login if credentials are available
+                if self.username and self.password:
+                    if not await self._login(page):
+                        self.logger.warning("Login failed, continuing without authentication")
+                    else:
+                        await asyncio.sleep(2)  # Brief pause after login
 
                 # Construct profile URL
                 profile_url = f"https://www.threads.net/@{username}" if not url.startswith('http') else url

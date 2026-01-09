@@ -4,10 +4,10 @@
   "summary": {
     "total_posts": 87,
     "total_engagement": 1223,
-    "total_followers": 43,
+    "total_followers": 452,
     "platforms_active": 4,
     "engagement_rate": 14.06,
-    "last_updated": "2026-01-08T21:54:09.662501"
+    "last_updated": "2026-01-08T22:22:46.852334"
   },
   "platform_breakdown": {
     "bluesky": {
@@ -375,7 +375,7 @@
       "posts": 12,
       "engagement": 179,
       "views": 0,
-      "followers": 0,
+      "followers": 409,
       "engagement_rate": 14.92,
       "top_posts": [
         {

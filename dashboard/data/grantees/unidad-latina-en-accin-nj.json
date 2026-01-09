@@ -4,10 +4,10 @@
   "summary": {
     "total_posts": 9,
     "total_engagement": 3,
-    "total_followers": 0,
+    "total_followers": 16000,
     "platforms_active": 2,
     "engagement_rate": 0.33,
-    "last_updated": "2026-01-08T21:54:09.688184"
+    "last_updated": "2026-01-08T22:22:46.875077"
   },
   "platform_breakdown": {
     "youtube": {
@@ -94,7 +94,7 @@
       "posts": 1,
       "engagement": 0,
       "views": 0,
-      "followers": 0,
+      "followers": 16000,
       "engagement_rate": 0.0,
       "top_posts": [],
       "frequency": {

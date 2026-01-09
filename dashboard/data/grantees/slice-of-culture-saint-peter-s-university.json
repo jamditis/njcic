@@ -4,10 +4,10 @@
   "summary": {
     "total_posts": 67,
     "total_engagement": 2444,
-    "total_followers": 0,
-    "platforms_active": 4,
+    "total_followers": 4471,
+    "platforms_active": 5,
     "engagement_rate": 36.48,
-    "last_updated": "2026-01-08T21:54:09.658552"
+    "last_updated": "2026-01-08T22:22:46.848717"
   },
   "platform_breakdown": {
     "tiktok": {
@@ -21,6 +21,12 @@
       "posts_pct": 41.8,
       "engagement": 36,
       "engagement_pct": 1.5
+    },
+    "twitter": {
+      "posts": 0,
+      "posts_pct": 0.0,
+      "engagement": 0,
+      "engagement_pct": 0.0
     },
     "instagram": {
       "posts": 12,
@@ -259,11 +265,28 @@
         }
       }
     },
+    "twitter": {
+      "posts": 0,
+      "engagement": 0,
+      "views": 0,
+      "followers": 110,
+      "engagement_rate": 0.0,
+      "top_posts": [],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {}
+    },
     "instagram": {
       "posts": 12,
       "engagement": 617,
       "views": 0,
-      "followers": 0,
+      "followers": 4080,
       "engagement_rate": 51.42,
       "top_posts": [
         {
@@ -360,7 +383,7 @@
       "posts": 1,
       "engagement": 0,
       "views": 0,
-      "followers": 0,
+      "followers": 281,
       "engagement_rate": 0.0,
       "top_posts": [
         {

@@ -4,10 +4,10 @@
   "summary": {
     "total_posts": 20,
     "total_engagement": 217,
-    "total_followers": 0,
-    "platforms_active": 3,
+    "total_followers": 5928,
+    "platforms_active": 5,
     "engagement_rate": 10.85,
-    "last_updated": "2026-01-08T21:54:09.685547"
+    "last_updated": "2026-01-08T22:22:46.873295"
   },
   "platform_breakdown": {
     "youtube": {
@@ -15,6 +15,12 @@
       "posts_pct": 30.0,
       "engagement": 15,
       "engagement_pct": 6.9
+    },
+    "twitter": {
+      "posts": 0,
+      "posts_pct": 0.0,
+      "engagement": 0,
+      "engagement_pct": 0.0
     },
     "instagram": {
       "posts": 12,
@@ -25,6 +31,12 @@
     "facebook": {
       "posts": 2,
       "posts_pct": 10.0,
+      "engagement": 0,
+      "engagement_pct": 0.0
+    },
+    "linkedin": {
+      "posts": 0,
+      "posts_pct": 0.0,
       "engagement": 0,
       "engagement_pct": 0.0
     }
@@ -96,11 +108,28 @@
         }
       }
     },
+    "twitter": {
+      "posts": 0,
+      "engagement": 0,
+      "views": 0,
+      "followers": 2217,
+      "engagement_rate": 0.0,
+      "top_posts": [],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {}
+    },
     "instagram": {
       "posts": 12,
       "engagement": 202,
       "views": 0,
-      "followers": 0,
+      "followers": 3079,
       "engagement_rate": 16.83,
       "top_posts": [
         {
@@ -202,7 +231,7 @@
       "posts": 2,
       "engagement": 0,
       "views": 0,
-      "followers": 0,
+      "followers": 9,
       "engagement_rate": 0.0,
       "top_posts": [
         {
@@ -249,6 +278,23 @@
           "percentage": 100.0
         }
       }
+    },
+    "linkedin": {
+      "posts": 0,
+      "engagement": 0,
+      "views": 0,
+      "followers": 623,
+      "engagement_rate": 0.0,
+      "top_posts": [],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {}
     }
   },
   "top_posts": [

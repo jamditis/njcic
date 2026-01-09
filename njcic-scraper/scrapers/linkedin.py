@@ -3,9 +3,12 @@ LinkedIn scraper implementation.
 
 Note: LinkedIn has strict anti-scraping measures. This scraper attempts
 to collect publicly available information on a best-effort basis.
+Supports optional authentication via LINKEDIN_EMAIL and LINKEDIN_PASSWORD
+environment variables.
 """
 from __future__ import annotations
 
+import os
 import re
 import time
 from pathlib import Path
@@ -14,14 +17,18 @@ from urllib.parse import urlparse, unquote
 from datetime import datetime
 
 if TYPE_CHECKING:
-    from playwright.sync_api import Page, Browser
+    from playwright.sync_api import Page, Browser, BrowserContext
 
 try:
     from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
 except ImportError:
     sync_playwright = None
 
+from dotenv import load_dotenv
 from .base import BaseScraper
+
+# Load environment variables
+load_dotenv()
 
 
 class LinkedInScraper(BaseScraper):
@@ -45,14 +52,86 @@ class LinkedInScraper(BaseScraper):
             output_dir: Directory to save scraped data
             headless: Whether to run browser in headless mode
         """
-        super().__init__(output_dir)
+        super().__init__(Path(output_dir) if isinstance(output_dir, str) else output_dir)
         self.headless = headless
+        self.email = os.getenv('LINKEDIN_EMAIL')
+        self.password = os.getenv('LINKEDIN_PASSWORD')
+        self._logged_in = False
 
         if sync_playwright is None:
             raise ImportError(
                 "Playwright is required for LinkedIn scraping. "
                 "Install with: pip install playwright && playwright install chromium"
             )
+
+    def _login(self, page: Page) -> bool:
+        """
+        Log in to LinkedIn using credentials from environment variables.
+
+        Args:
+            page: Playwright page object
+
+        Returns:
+            True if login successful, False otherwise
+        """
+        if not self.email or not self.password:
+            self.logger.warning("LinkedIn credentials not found in environment variables")
+            return False
+
+        try:
+            self.logger.info("Attempting LinkedIn login...")
+
+            # Navigate to login page
+            page.goto('https://www.linkedin.com/login', wait_until='domcontentloaded', timeout=30000)
+            time.sleep(2)
+
+            # Fill in credentials
+            email_input = page.query_selector('#username')
+            password_input = page.query_selector('#password')
+
+            if not email_input or not password_input:
+                self.logger.error("Could not find login form fields")
+                return False
+
+            email_input.fill(self.email)
+            time.sleep(0.5)
+            password_input.fill(self.password)
+            time.sleep(0.5)
+
+            # Click sign in button
+            sign_in_btn = page.query_selector('button[type="submit"]')
+            if sign_in_btn:
+                sign_in_btn.click()
+            else:
+                page.keyboard.press('Enter')
+
+            # Wait for navigation
+            time.sleep(5)
+
+            # Check if login was successful
+            current_url = page.url
+            if '/feed' in current_url or '/mynetwork' in current_url or '/in/' in current_url:
+                self.logger.info("LinkedIn login successful")
+                self._logged_in = True
+                return True
+
+            # Check for security challenge
+            if 'checkpoint' in current_url or 'challenge' in current_url:
+                self.logger.warning("LinkedIn security challenge detected - manual intervention may be required")
+                return False
+
+            # Check for error messages
+            error_msg = page.query_selector('.form__label--error, .alert-content')
+            if error_msg:
+                self.logger.error(f"Login failed: {error_msg.inner_text()}")
+                return False
+
+            self.logger.warning(f"Login status unclear, current URL: {current_url}")
+            return False
+
+        except Exception as e:
+            self.logger.error(f"Error during login: {e}")
+            return False
 
     def extract_username(self, url: str) -> str:
         """
@@ -354,8 +433,9 @@ class LinkedInScraper(BaseScraper):
 
             self.logger.info(f"Starting LinkedIn {page_type} scrape for: {username}")
 
-            # Create output directory
-            output_path = self.output_dir / self.platform_name / grantee_name / username
+            # Create output directory (follows standard structure: output/{grantee}/{platform}/{username})
+            base_output = self.get_output_path(grantee_name)
+            output_path = base_output / username
             output_path.mkdir(parents=True, exist_ok=True)
 
             # Initialize Playwright
@@ -382,6 +462,13 @@ class LinkedInScraper(BaseScraper):
                 page = context.new_page()
 
                 try:
+                    # Attempt login if credentials are available
+                    if self.email and self.password:
+                        if not self._login(page):
+                            self.logger.warning("Login failed, continuing without authentication")
+                        else:
+                            time.sleep(2)  # Brief pause after login
+
                     # Navigate to page with timeout
                     self.logger.info(f"Navigating to: {url}")
                     response = page.goto(url, wait_until='domcontentloaded', timeout=30000)
@@ -453,8 +540,7 @@ class LinkedInScraper(BaseScraper):
                         ]
                     }
 
-                    metadata_path = output_path / 'metadata.json'
-                    self.save_metadata(metadata, metadata_path)
+                    self.save_metadata(output_path, metadata)
 
                 except PlaywrightTimeout as e:
                     error_msg = f"Timeout navigating to page: {e}"
