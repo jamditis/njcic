@@ -40,7 +40,7 @@
         {
           "id": null,
           "url": "https://www.youtube.com/watch?v=rmsemFtYk7E",
-          "text": "Bi\u1ebft Quy\u1ec1n C\u1ee7a B\u1ea1n: H\u1ed9i Th\u1ea3o Tr\u1ef1c Tuy\u1ebfn D\u00e0nh Cho Ng\u01b0\u1eddi Vi\u00ean Ti\u1ec7m Nail Vi\u1ec7t (Know Your Rights Info)",
+          "text": "Biết Quyền Của Bạn: Hội Thảo Trực Tuyến Dành Cho Người Viên Tiệm Nail Việt (Know Your Rights Info)",
           "date": null,
           "engagement": {
             "likes": 1,
@@ -54,7 +54,7 @@
         {
           "id": null,
           "url": "https://www.youtube.com/watch?v=OxhW7U9BdN8",
-          "text": "[B\u1eb1ng Ti\u1ebfng Vi\u1ec7t] VietLead Crimmigration Resource Webpage Overview",
+          "text": "[Bằng Tiếng Việt] VietLead Crimmigration Resource Webpage Overview",
           "date": null,
           "engagement": {
             "likes": 1,
@@ -208,7 +208,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/vietlead/posts/pfbid0nfPNwBFawothVxhrB3f884ookReT7yw6FbzGpzJYUobVtNM55EDs8DBbQdNuoRRzl?__cft__[0]=AZa3g2sEEasQUoKKdFLJnrlT4rnpB5gT6_WQUQcNeIJDMSNLoClQt8okv2dDHEQbeEvwp_HauFdlx4aZyYvcB_5XU5l6mSHAUdo63K_vJoYTV2KtmnArJsfDuvdfG59R3kj7owEK-d67Y6tNCx7RvK4Z358LWpR8YdaYL4y_J3r7XeGMjXlgzfEptlZ6e79HyQE&__tn__=%2CO%2CP-R",
-          "text": "Home Is Where the Heart Is Recap & Update on the Community Defense Fund \nTh\u2026 See more",
+          "text": "Home Is Where the Heart Is Recap & Update on the Community Defense Fund \nTh… See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -352,5 +352,32 @@
       "posts": 1,
       "engagement": 373
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 48000,
+    "formattedFunding": "$48K",
+    "years": [
+      "2023"
+    ],
+    "status": "completed",
+    "county": "Camden County",
+    "city": "Camden",
+    "focusArea": "Civic engagement in NJ communities",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2023"
+        ],
+        "amount": 48000,
+        "formattedAmount": "$48K",
+        "description": "To hold neighborhood listening sessions in the 2023-2024 growing season through its Jersey Roots Youth Program, in collaboration with its Resilient Roots Farm Project, and to learn about what local issues are top of mind for its Black, Brown, and Southeast Asian neighbors who live, work, and play in East Camden neighborhoods.",
+        "focusArea": "Civic engagement in NJ communities",
+        "status": "completed"
+      }
+    ]
+  },
+  "website": "https://www.vietlead.org/our-roots-youth-program"
 }

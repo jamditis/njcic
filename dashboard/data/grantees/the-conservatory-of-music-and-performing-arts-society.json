@@ -219,5 +219,32 @@
       "posts": 4,
       "engagement": 12
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 35000,
+    "formattedFunding": "$35K",
+    "years": [
+      "2021"
+    ],
+    "status": "completed",
+    "county": "Mercer County",
+    "city": "Trenton",
+    "focusArea": "Civic news and information reporting",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2021"
+        ],
+        "amount": 35000,
+        "formattedAmount": "$35K",
+        "description": "To support Let My People Learn-HistorVic Education, a project that helps young people learn more about the workings of local governments and how policies and laws impact their communities.",
+        "focusArea": "Civic news and information reporting",
+        "status": "completed"
+      }
+    ]
+  },
+  "website": "https://www.facebook.com/COMPAStrentonnj/"
 }

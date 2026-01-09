@@ -274,5 +274,34 @@
       "posts": 2,
       "engagement": 55
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 35991,
+    "formattedFunding": "$36K",
+    "years": [
+      "2023",
+      "2024"
+    ],
+    "status": "active",
+    "county": "Passaic County",
+    "city": "Wayne",
+    "focusArea": "Journalism pipeline",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2023",
+          "2024"
+        ],
+        "amount": 35991,
+        "formattedAmount": "$36K",
+        "description": "To fund the creation of a podcasting studio and support the digital journalism program for students in Wayne Township.",
+        "focusArea": "Journalism pipeline",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://whhspatriotpress.com/category/multimedia/"
 }

@@ -221,5 +221,59 @@
       "posts": 2,
       "engagement": 4
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 308300,
+    "formattedFunding": "$308K",
+    "years": [
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "status": "active",
+    "county": "Statewide",
+    "city": "Newark",
+    "focusArea": "Civic news and information reporting; Blue Engine Tech & Sustainability Accelerator Grant; Journalism pipeline",
+    "grantCount": 3,
+    "hasMultipleGrants": true,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2022",
+          "2023",
+          "2024"
+        ],
+        "amount": 295000,
+        "formattedAmount": "$295K",
+        "description": "To build The Jersey Vindicator — the “ProPublica of New Jersey” — with the goal of engaging and empowering the public through investigative journalism at the local, county, and state level in its publication, ultimately ensuring that residents — particularly those in underserved communities — are better informed about government, business, education, transportation, criminal justice reform, and the environment.",
+        "focusArea": "Civic news and information reporting",
+        "status": "active"
+      },
+      {
+        "id": 2,
+        "years": [
+          "2024"
+        ],
+        "amount": 10000,
+        "formattedAmount": "$10K",
+        "description": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+        "focusArea": "Blue Engine Tech & Sustainability Accelerator Grant",
+        "status": "active"
+      },
+      {
+        "id": 3,
+        "years": [
+          "2025"
+        ],
+        "amount": 3300,
+        "formattedAmount": "$3K",
+        "description": "To support the placement of a student intern through the Statewide Paid Internship Program.",
+        "focusArea": "Journalism pipeline",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://jerseyvindicator.org"
 }

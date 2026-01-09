@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalGrantees": 60,
-    "totalPosts": 1875,
-    "totalEngagement": 2409264,
-    "totalFollowers": 8177104,
+    "totalGrantees": 59,
+    "totalPosts": 1776,
+    "totalEngagement": 444327,
+    "totalFollowers": 1066161,
     "platformsTracked": 7,
     "avgEngagementRate": 1284.94,
     "lastUpdated": "2026-01-08T23:13:30.345008",
@@ -11,25 +11,25 @@
   },
   "platforms": {
     "twitter": {
-      "posts": 30,
-      "engagement": 50560,
-      "followers": 400043,
-      "grantees": 36,
-      "avgEngagement": 1685.33
+      "posts": 21,
+      "engagement": 2094,
+      "followers": 249443,
+      "grantees": 35,
+      "avgEngagement": 99.71
     },
     "facebook": {
-      "posts": 52,
+      "posts": 50,
       "engagement": 0,
-      "followers": 686951,
-      "grantees": 45,
+      "followers": 406951,
+      "grantees": 44,
       "avgEngagement": 0.0
     },
     "youtube": {
-      "posts": 697,
-      "engagement": 28054,
+      "posts": 647,
+      "engagement": 1649,
       "followers": 0,
-      "grantees": 23,
-      "avgEngagement": 40.25
+      "grantees": 22,
+      "avgEngagement": 2.55
     },
     "linkedin": {
       "posts": 0,
@@ -39,18 +39,18 @@
       "avgEngagement": 0.0
     },
     "tiktok": {
-      "posts": 308,
-      "engagement": 1693492,
+      "posts": 282,
+      "engagement": 366455,
       "followers": 0,
-      "grantees": 16,
-      "avgEngagement": 5498.35
+      "grantees": 15,
+      "avgEngagement": 1299.49
     },
     "instagram": {
-      "posts": 576,
-      "engagement": 626252,
-      "followers": 7033019,
-      "grantees": 48,
-      "avgEngagement": 1087.24
+      "posts": 564,
+      "engagement": 63223,
+      "followers": 352676,
+      "grantees": 47,
+      "avgEngagement": 112.10
     },
     "bluesky": {
       "posts": 212,
@@ -61,16 +61,6 @@
     }
   },
   "topGrantees": [
-    {
-      "name": "Muslim",
-      "slug": "muslim",
-      "posts": 99,
-      "engagement": 1964937,
-      "followers": 7110943,
-      "engagementRate": 19847.85,
-      "topPlatform": "tiktok",
-      "platformsScraped": 5
-    },
     {
       "name": "Global Patriot Newspapers online",
       "slug": "global-patriot-newspapers-online",
@@ -665,26 +655,26 @@
   "engagementByPlatform": [
     {
       "platform": "tiktok",
-      "engagement": 1693492,
-      "posts": 308,
+      "engagement": 366455,
+      "posts": 282,
       "color": "#000000"
     },
     {
       "platform": "instagram",
-      "engagement": 626252,
-      "posts": 576,
+      "engagement": 63223,
+      "posts": 564,
       "color": "#E1306C"
     },
     {
       "platform": "twitter",
-      "engagement": 50560,
-      "posts": 30,
+      "engagement": 2094,
+      "posts": 21,
       "color": "#1DA1F2"
     },
     {
       "platform": "youtube",
-      "engagement": 28054,
-      "posts": 697,
+      "engagement": 1649,
+      "posts": 647,
       "color": "#FF0000"
     },
     {
@@ -696,7 +686,7 @@
     {
       "platform": "facebook",
       "engagement": 0,
-      "posts": 52,
+      "posts": 50,
       "color": "#1877F2"
     },
     {

@@ -162,7 +162,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/HealthyNewsWorks/posts/pfbid02TvXXEEsSDfBanEmvFPuJNg6JMwM5rYjPrx5DSsgkKcj9V5VoPc9w56LGqS7EdYMel?__cft__[0]=AZZP0nrxjI9mu1QHsXyIysWHylG9RVIgInM7IH_WS7qpfuOQ7mlrzS443QDFh3u5QVaqB7Viwkv5c5PLBsDrWfEaKItQQ2KvCjgFeSF67fGbzkJnImTZDlETzEFOYdXDHCKqivlWkIhWv3FG9NrKjCvzqjfWQ2bIYOFWjxhgMd_HGcBlMK3fMAFoemP7f4Wed0Q&__tn__=%2CO%2CP-R",
-          "text": "This holiday season, we\u2019re thankful for the young reporters who inspire us every day and for the community that supports them. \n\u2026 See more",
+          "text": "This holiday season, we’re thankful for the young reporters who inspire us every day and for the community that supports them. \n… See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -343,5 +343,32 @@
       "posts": 1,
       "engagement": 4
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 30000,
+    "formattedFunding": "$30K",
+    "years": [
+      "2025"
+    ],
+    "status": "active",
+    "county": "Statewide",
+    "city": "Camden",
+    "focusArea": "Civic news and information reporting",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2025"
+        ],
+        "amount": 30000,
+        "formattedAmount": "$30K",
+        "description": "To support the expansion of access to the Healthy NewsWorks literacy program and engage students and schools in Camden, New Jersey through community health journalism.",
+        "focusArea": "Civic news and information reporting",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://www.healthynewsworks.org/"
 }

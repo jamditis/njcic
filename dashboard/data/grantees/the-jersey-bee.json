@@ -388,5 +388,51 @@
       "posts": 1,
       "engagement": 27
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 403300,
+    "formattedFunding": "$403K",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "status": "active",
+    "county": "Essex County",
+    "city": "Bloomfield",
+    "focusArea": "Civic news and information reporting; Journalism pipeline",
+    "grantCount": 2,
+    "hasMultipleGrants": true,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "amount": 400000,
+        "formattedAmount": "$400K",
+        "description": "To launch a community-reporter corps pilot program that trains residents in news gathering, writing, and production and provides paid reporting assignments that prioritize the information needs of underserved populations in the surrounding community, inspire civic participation, and build narrative power.",
+        "focusArea": "Civic news and information reporting",
+        "status": "active"
+      },
+      {
+        "id": 2,
+        "years": [
+          "2025"
+        ],
+        "amount": 3300,
+        "formattedAmount": "$3K",
+        "description": "To support the placement of a student intern through the Statewide Paid Internship Program.",
+        "focusArea": "Journalism pipeline",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://jerseybee.org"
 }

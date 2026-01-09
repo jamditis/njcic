@@ -369,7 +369,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/camdenparentunion/posts/pfbid02DBxVM8RstR4R7BaGJCyNMhMhzQXJvkLNVfYXLATsLTrvgoBkDme8BZ3uE8p8dEfKl?__cft__[0]=AZZthbOhCpWMMe0v1VROq4fIAVfm2s_kvKIXIIThoSQ6cEwK5BKdgWPPZFDqwIoh3VPg0N1rcYVPDyxeEI4Cm68-TOkrbJ7_GLttNCD_4caTECY5yiOE8fybb5txVY8sjxZ-yc_LX9tyAliMvwjY1n3G1hc_aunHvLuFZZlZiVLrMrejxlec9oLt4yAg_sgcDug&__tn__=%2CO%2CP-R",
-          "text": "Only 3 days left until Kwanzaa!\nA celebration of culture, community, and the values that unite us. \n\u2026 See more",
+          "text": "Only 3 days left until Kwanzaa!\nA celebration of culture, community, and the values that unite us. \n… See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -578,5 +578,36 @@
       "posts": 2,
       "engagement": 0
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 280000,
+    "formattedFunding": "$280K",
+    "years": [
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "status": "active",
+    "county": "Camden County",
+    "city": "Camden",
+    "focusArea": "Civic engagement in NJ communities",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "amount": 280000,
+        "formattedAmount": "$280K",
+        "description": "To train Camden high school students in interviewing and media reporting so they can become community reporters and storytellers. The grant also will fund voter education programs and training.",
+        "focusArea": "Civic engagement in NJ communities",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://www.camdenpsu.com"
 }

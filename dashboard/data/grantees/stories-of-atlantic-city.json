@@ -28,7 +28,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/christian.correa.7528/posts/pfbid02HJUNpzQmHWUz8y3Nb7RBsTXXAjwHUmhkPxDUFQQ9BSqcBBiesUh521UXTv7jheXRl?__cft__[0]=AZY6mpUZ-DX3jbJ7kq3xtiuAC3uO5_Y3DKa8LSuMi11ptJaGCAigVmeblqQSYynlfSPfwfLlvRvz5yNTopfF9am6v6DFRrqCDMTCtDw-POFOtyYaLkL4G54cH54CZGUgNHbGBt-oxlh7lc6qbjNkBOR5j6gseei8NU0mcdUGZrzOvq3x2wnBZp63RTMFp8aGN9kI1cwC6qB26WWyk5VRntZq&__tn__=%2CO%2CP-R",
-          "text": "California Dreamin\u2019!",
+          "text": "California Dreamin’!",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -61,7 +61,7 @@
     {
       "id": "post_0",
       "url": "https://www.facebook.com/christian.correa.7528/posts/pfbid02HJUNpzQmHWUz8y3Nb7RBsTXXAjwHUmhkPxDUFQQ9BSqcBBiesUh521UXTv7jheXRl?__cft__[0]=AZY6mpUZ-DX3jbJ7kq3xtiuAC3uO5_Y3DKa8LSuMi11ptJaGCAigVmeblqQSYynlfSPfwfLlvRvz5yNTopfF9am6v6DFRrqCDMTCtDw-POFOtyYaLkL4G54cH54CZGUgNHbGBt-oxlh7lc6qbjNkBOR5j6gseei8NU0mcdUGZrzOvq3x2wnBZp63RTMFp8aGN9kI1cwC6qB26WWyk5VRntZq&__tn__=%2CO%2CP-R",
-      "text": "California Dreamin\u2019!",
+      "text": "California Dreamin’!",
       "date": null,
       "engagement": {
         "likes": 0,
@@ -80,5 +80,38 @@
     "first_post": null,
     "last_post": null
   },
-  "time_series": []
+  "time_series": [],
+  "grantInfo": {
+    "totalFunding": 99892,
+    "formattedFunding": "$100K",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "status": "active",
+    "county": "Atlantic County",
+    "city": "Atlantic City",
+    "focusArea": "Civic engagement in NJ communities",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        "amount": 99892,
+        "formattedAmount": "$100K",
+        "description": "To pilot an initiative to train and pay community members as reporters covering the local city council, planning board, board of education, and casino reinvestment authority meetings, and to develop new ways to engage community members in the decision-making processes that impact their lives. Traditional journalism methods are not meeting the larger Atlantic City community’s information needs.",
+        "focusArea": "Civic engagement in NJ communities",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://storiesofatlanticcity.com"
 }

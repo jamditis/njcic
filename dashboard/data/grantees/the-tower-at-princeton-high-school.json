@@ -228,7 +228,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/phstower/posts/pfbid0izs5S2BGBBogJJ38uA9REbPMHmiesUSEd5Cw96XDLEYAMt3q6EsaHyXSEjikE5SDl?__cft__[0]=AZb6DU2bq1jiwdGWliPgijXPKpYWRqChVd-Hh-5nYDRyJpapyEVD1mNDf0wCDnx-WwfV2mIzrYm-yTvqHqpjH5gwdOtpRHRAHun2PeCcxjfIt0wlA7X3jtdv5-qEKOptlC9jh3fmyGQBscTb28zLW5FxlcuR9DzKZssvSO3TGk2-3Nefzp4yFEG8bO72g56tk5o&__tn__=%2CO%2CP-R",
-          "text": "Interest meeting is tomorrow at break in room 155\u2014hope to see you there! Thank you to everyone who signed up at the club fair today!",
+          "text": "Interest meeting is tomorrow at break in room 155—hope to see you there! Thank you to everyone who signed up at the club fair today!",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -387,5 +387,32 @@
       "posts": 1,
       "engagement": 99
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 13700,
+    "formattedFunding": "$14K",
+    "years": [
+      "2025"
+    ],
+    "status": "active",
+    "county": "Gloucester County",
+    "city": "Princeton",
+    "focusArea": "Civic engagement in NJ communities",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2025"
+        ],
+        "amount": 13700,
+        "formattedAmount": "$14K",
+        "description": "To support technology and equipment upgrades that ensure equitable student participation in the newsroom and sustain print publication.",
+        "focusArea": "Civic engagement in NJ communities",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://www.towerphs.com/home"
 }

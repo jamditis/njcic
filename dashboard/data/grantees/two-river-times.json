@@ -237,7 +237,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/thetworivertimes/posts/pfbid02LVUTs5Ht6yWoCiCNKBfDhX69SQ6KRwnBs3NYnCWZ6YrsYsSJDmMQaNcd26Nyg4Gvl?__cft__[0]=AZZK09xgx-65Ld4VzQrAZ0HfCOSYyKgBzrUCizOyXulS0y7CGXByGY1jL9caUjhOUdAmKwDFQsKuB0KVLtWOTNq5zwDnYBYhZBESBVTP2hl1S6vSIEUSzexackRL3Qj-rtUTBa_t0fJ3Mguw-N8m4loIsKOuYJUjXaXOnqjC11K6NIRvOtPXNfxhHw17uA0k1n4&__tn__=%2CO%2CP-R",
-          "text": "TINTON FALLS \u2013 The New Jersey Health Planning Board has recommended approval of RWJBarnabas Health\u2019s controversial plan to relocate Monmouth Medical Center\u2019s (MMC) esse\u2026 See more",
+          "text": "TINTON FALLS – The New Jersey Health Planning Board has recommended approval of RWJBarnabas Health’s controversial plan to relocate Monmouth Medical Center’s (MMC) esse… See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -412,5 +412,32 @@
       "posts": 1,
       "engagement": 16
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 31879,
+    "formattedFunding": "$32K",
+    "years": [
+      "2024"
+    ],
+    "status": "active",
+    "county": "Monmouth County",
+    "city": "Red Bank",
+    "focusArea": "Civic news and information reporting",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2024"
+        ],
+        "amount": 31879,
+        "formattedAmount": "$32K",
+        "description": "To support the Two River Times with costs associated with its organization’s transition from a for-profit to a non-profit.",
+        "focusArea": "Civic news and information reporting",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://tworivertimes.com/"
 }

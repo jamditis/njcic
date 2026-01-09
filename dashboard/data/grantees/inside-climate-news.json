@@ -58,7 +58,7 @@
         {
           "id": "3mbmklohqsk2u",
           "url": "https://bsky.app/profile/insideclimatenews.org/post/3mbmklohqsk2u",
-          "text": "Scientists warn that a proposed expansion of Florida\u2019s Port Everglades could cause unprecedented damage to corals in the U.S., including some of the only remaining endangered staghorn corals that surv",
+          "text": "Scientists warn that a proposed expansion of Florida’s Port Everglades could cause unprecedented damage to corals in the U.S., including some of the only remaining endangered staghorn corals that surv",
           "date": "2026-01-04T18:30:32.842000",
           "engagement": {
             "likes": 28,
@@ -72,7 +72,7 @@
         {
           "id": "3mbf4hod56s2z",
           "url": "https://bsky.app/profile/insideclimatenews.org/post/3mbf4hod56s2z",
-          "text": "25 years of Everglades restoration: The historic effort was designed to replenish South Florida\u2019s drinking water supply. Now it may help save the region from climate change.",
+          "text": "25 years of Everglades restoration: The historic effort was designed to replenish South Florida’s drinking water supply. Now it may help save the region from climate change.",
           "date": "2026-01-01T19:29:07.919000",
           "engagement": {
             "likes": 40,
@@ -86,7 +86,7 @@
         {
           "id": "3mbriwlcza22z",
           "url": "https://bsky.app/profile/insideclimatenews.org/post/3mbriwlcza22z",
-          "text": "A look at one scientist\u2019s journey provides a window into the Trump administration\u2019s hollowing out of NOAA, an agency that has long been a world leader in ocean science and protection.",
+          "text": "A look at one scientist’s journey provides a window into the Trump administration’s hollowing out of NOAA, an agency that has long been a world leader in ocean science and protection.",
           "date": "2026-01-06T17:44:09.849000",
           "engagement": {
             "likes": 26,
@@ -232,7 +232,7 @@
         {
           "id": null,
           "url": "https://www.youtube.com/watch?v=nC3W-hWkyPU",
-          "text": "Inside Climate Talks: Disinformation on Steroids\u2014Climate Science Takes It on the Chin",
+          "text": "Inside Climate Talks: Disinformation on Steroids—Climate Science Takes It on the Chin",
           "date": null,
           "engagement": {
             "likes": 17,
@@ -298,7 +298,7 @@
         {
           "id": null,
           "url": null,
-          "text": "Taking aim at the United States and an \u201cirresponsible lifestyle\u201d with some of the world\u2019s highest carbon emissions per capita, Pope Francis on Wednesday doubled down on his earlier call for urgent act",
+          "text": "Taking aim at the United States and an “irresponsible lifestyle” with some of the world’s highest carbon emissions per capita, Pope Francis on Wednesday doubled down on his earlier call for urgent act",
           "date": "2023-10-10T01:00:01",
           "engagement": {
             "likes": 132,
@@ -312,7 +312,7 @@
         {
           "id": null,
           "url": null,
-          "text": "The Amazon is the most biodiverse environment in the world and its preservation is critical for controlling climate change. But its destruction hasn\u2019t stopped\u2014and has gotten worse under Brazil\u2019s curre",
+          "text": "The Amazon is the most biodiverse environment in the world and its preservation is critical for controlling climate change. But its destruction hasn’t stopped—and has gotten worse under Brazil’s curre",
           "date": "2021-12-29T12:45:00",
           "engagement": {
             "likes": 147,
@@ -326,7 +326,7 @@
         {
           "id": null,
           "url": null,
-          "text": "Peabody, Arch, Cloud Peak and now Murray Energy. The country\u2019s four largest coal producers have all filed for bankruptcy since 2016.",
+          "text": "Peabody, Arch, Cloud Peak and now Murray Energy. The country’s four largest coal producers have all filed for bankruptcy since 2016.",
           "date": "2019-11-04T01:40:00",
           "engagement": {
             "likes": 129,
@@ -517,7 +517,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/insideclimatenews/posts/pfbid02afAuXBZGzomhtm8QQ8ZBkL1aK2R7XCqNBTCBesGH4WGNm8RbVSK6JLvU4YUKPCUql?__cft__[0]=AZZwOo2DIYH4fNU6APDFpKnxdIjrmSe_AzflYD79ux8YCBCI7RKoJUhaF-dLpTihqRvIy3Vw1R2rLPAdx0hBN5SOgNFXJfjRmoBqIp32s1SkDa04Vs_MorM12dvWyovtoyMP33zD1tTauh8MyAibizt-zfwLqNyRyeLHA5XvlTtYvigR2aqf4OlCCd7a5btVd7rgc8MVqXcEqZe68fYEigY4mBvjMVqt6JGxyEug-Jl7Dw&__tn__=%2CO%2CP-R",
-          "text": "WEDNESDAY AT 7 PM ET!\u2026 See more",
+          "text": "WEDNESDAY AT 7 PM ET!… See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -746,5 +746,32 @@
       "posts": 7,
       "engagement": 188
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 62000,
+    "formattedFunding": "$62K",
+    "years": [
+      "2025"
+    ],
+    "status": "active",
+    "county": "Statewide",
+    "city": "Newark",
+    "focusArea": "Civic news and information reporting",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2025"
+        ],
+        "amount": 62000,
+        "formattedAmount": "$62K",
+        "description": "To support Inside Climate News in strengthening New Jersey’s local environmental reporting ecosystem through on-the-ground freelance journalism and collaborations with local media outlets, aiming to fill gaps in climate and environmental coverage while building a sustained reporting presence in communities across the state.",
+        "focusArea": "Civic news and information reporting",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://insideclimatenews.org/newsletter/?gad_source=1&gclid=Cj0KCQjwkN--BhDkARIsAD_mnIpM1joaw1gmG0B8QAFp33AGCU9ajNRulUr7X1OjmD1AGLZnZgEIGMQaAvyREALw_wcB"
 }

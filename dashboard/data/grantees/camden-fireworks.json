@@ -274,5 +274,32 @@
       "posts": 2,
       "engagement": 127
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 64460,
+    "formattedFunding": "$64K",
+    "years": [
+      "2023"
+    ],
+    "status": "completed",
+    "county": "Camden County",
+    "city": "Camden",
+    "focusArea": "Civic engagement in NJ communities",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2023"
+        ],
+        "amount": 64460,
+        "formattedAmount": "$64K",
+        "description": "To undertake a community-centered storytelling project in Camden documenting the challenges and opportunities of living a long, healthful life amidst environmental injustice by interviewing, facilitating discussions, and documenting the personal narratives of community members.",
+        "focusArea": "Civic engagement in NJ communities",
+        "status": "completed"
+      }
+    ]
+  },
+  "website": "https://camdenfireworks.org"
 }

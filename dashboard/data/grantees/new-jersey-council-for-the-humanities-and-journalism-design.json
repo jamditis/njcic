@@ -252,7 +252,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/NJHumanities/posts/pfbid024PWW7roGgtbYY2gCnJ9bPyRRhFjC9TLWgU4Z4p71XH6WHpwLpJUVo76o5TgXWvdZl?__cft__[0]=AZZzAiGA87mdKJtXgmy8QO-TczNF8eoGG0oy4Kd19qWgml0OXAIuwVJ4w0QU4MYnvlgEUTrC3dHBUxLwkH9WWhinW3QZCmV7lJ41OJhDVWKQZeWlzRsNNIXhV4IbVXmnXIy4t1kaqpfleEINfEVUMrmeY2zSUyPSudlZorEbMI9EtOOSp7y80vKRaVKbiG4R7h_N8tmvVxXKcyfGWAC8wH6xtFWgLz2ySJMZiITve7M8_A&__tn__=%2CO%2CP-R",
-          "text": "We are proud to fund the \"J Lab,\" a vital initiative empowering residents to tell the stories that matter most to their communities. \nN\u2026 See more",
+          "text": "We are proud to fund the \"J Lab,\" a vital initiative empowering residents to tell the stories that matter most to their communities. \nN… See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -428,5 +428,34 @@
       "posts": 1,
       "engagement": 2
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 459000,
+    "formattedFunding": "$459K",
+    "years": [
+      "2022",
+      "2024"
+    ],
+    "status": "active",
+    "county": "Statewide",
+    "city": "Trenton",
+    "focusArea": "Journalism pipeline",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2022",
+          "2024"
+        ],
+        "amount": 459000,
+        "formattedAmount": "$459K",
+        "description": "To fund the development of a statewide journalism training program in partnership with six New Jersey community colleges that equips citizens with skills to tell the stories of their communities. Journalism + Design and NJCH piloted a similar program in South Jersey in spring 2022.",
+        "focusArea": "Journalism pipeline",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://njhumanities.org/programs/informed-nj/#grassroots"
 }

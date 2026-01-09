@@ -297,5 +297,32 @@
       "posts": 1,
       "engagement": 5
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 99200,
+    "formattedFunding": "$99K",
+    "years": [
+      "2023"
+    ],
+    "status": "completed",
+    "county": "Statewide",
+    "city": "Trenton",
+    "focusArea": "Civic news and information reporting",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2023"
+        ],
+        "amount": 99200,
+        "formattedAmount": "$99K",
+        "description": "To support efforts to expand the reach and enhance the impact of Garden State Leaders, a statewide leadership and advocacy training program for New Jersey residents with lived experience of homelessness and poverty. The funds will enable them to formalize their ongoing statewide support and outcome tracking, and to pilot a local leadership program in collaboration with the Mercer Alliance to End Homelessness, for replication in other counties.",
+        "focusArea": "Civic news and information reporting",
+        "status": "completed"
+      }
+    ]
+  },
+  "website": "https://www.njceh.org/newsroom"
 }

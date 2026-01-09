@@ -48,7 +48,7 @@
         {
           "id": "3mbp2yf5lx32o",
           "url": "https://bsky.app/profile/montclairlocalnews.bsky.social/post/3mbp2yf5lx32o",
-          "text": "Hours Before Board\u2019s Vote, Montclair Superintendent Says New Ballot Questions Not\u00a0Finalized\n\nSuperintendent Turner: \u201cThe administration is continuing to work to ensure that any proposed language is ac",
+          "text": "Hours Before Board’s Vote, Montclair Superintendent Says New Ballot Questions Not Finalized\n\nSuperintendent Turner: “The administration is continuing to work to ensure that any proposed language is ac",
           "date": "2026-01-05T18:29:17",
           "engagement": {
             "likes": 2,
@@ -284,5 +284,44 @@
       "posts": 23,
       "engagement": 95
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 90000,
+    "formattedFunding": "$90K",
+    "years": [
+      "2024",
+      "2025"
+    ],
+    "status": "active",
+    "county": "Essex County",
+    "city": "Montclair",
+    "focusArea": "Blue Engine Tech & Sustainability Accelerator Grant; Civic news and information reporting",
+    "grantCount": 2,
+    "hasMultipleGrants": true,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2024"
+        ],
+        "amount": 10000,
+        "formattedAmount": "$10K",
+        "description": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+        "focusArea": "Blue Engine Tech & Sustainability Accelerator Grant",
+        "status": "active"
+      },
+      {
+        "id": 2,
+        "years": [
+          "2025"
+        ],
+        "amount": 80000,
+        "formattedAmount": "$80K",
+        "description": "To hire a senior reporter dedicated to covering Essex County and the issues facing its communities, including a wide range of topics such as public spending, county government, housing and development, environmental concerns, transportation, public safety, and local institutions, businesses, and arts and culture organizations that shape residents’ daily lives.",
+        "focusArea": "Civic news and information reporting",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://montclairlocal.news"
 }

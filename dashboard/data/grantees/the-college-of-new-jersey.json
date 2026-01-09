@@ -40,7 +40,7 @@
         {
           "id": "7474330270196419871",
           "url": "https://www.tiktok.com/@tcnjsignal/video/7474330270196419871",
-          "text": "Managing editors Ally and Izzy interview Cooper\u2019s Riverview, \u201cRho,\u201d s...",
+          "text": "Managing editors Ally and Izzy interview Cooper’s Riverview, “Rho,” s...",
           "date": "2025-02-22T12:39:26",
           "engagement": {
             "likes": 497,
@@ -54,7 +54,7 @@
         {
           "id": "7490605848465607966",
           "url": "https://www.tiktok.com/@tcnjsignal/video/7490605848465607966",
-          "text": "The College of New Jersey\u2019s President, Michael Bernstein, was joined ...",
+          "text": "The College of New Jersey’s President, Michael Bernstein, was joined ...",
           "date": "2025-04-07T09:17:02",
           "engagement": {
             "likes": 335,
@@ -311,7 +311,7 @@
     {
       "id": "7474330270196419871",
       "url": "https://www.tiktok.com/@tcnjsignal/video/7474330270196419871",
-      "text": "Managing editors Ally and Izzy interview Cooper\u2019s Riverview, \u201cRho,\u201d s...",
+      "text": "Managing editors Ally and Izzy interview Cooper’s Riverview, “Rho,” s...",
       "date": "2025-02-22T12:39:26",
       "engagement": {
         "likes": 497,
@@ -325,7 +325,7 @@
     {
       "id": "7490605848465607966",
       "url": "https://www.tiktok.com/@tcnjsignal/video/7490605848465607966",
-      "text": "The College of New Jersey\u2019s President, Michael Bernstein, was joined ...",
+      "text": "The College of New Jersey’s President, Michael Bernstein, was joined ...",
       "date": "2025-04-07T09:17:02",
       "engagement": {
         "likes": 335,
@@ -497,5 +497,32 @@
       "posts": 4,
       "engagement": 556
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 25950,
+    "formattedFunding": "$26K",
+    "years": [
+      "2025"
+    ],
+    "status": "active",
+    "county": "Central Jersey",
+    "city": "Ewing",
+    "focusArea": "Civic news and information reporting",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2025"
+        ],
+        "amount": 25950,
+        "formattedAmount": "$26K",
+        "description": "To support student-led investigative reporting, print distribution, and equipment upgrades that strengthen journalism training at TCNJ.",
+        "focusArea": "Civic news and information reporting",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://www.tcnjsignalnews.com/"
 }

@@ -283,5 +283,36 @@
       "posts": 1,
       "engagement": 47
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 270000,
+    "formattedFunding": "$270K",
+    "years": [
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "status": "active",
+    "county": "Middlesex County",
+    "city": "New Brunswick",
+    "focusArea": "Journalism pipeline",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "amount": 270000,
+        "formattedAmount": "$270K",
+        "description": "To fund the “Community-driven Journalism Project” to develop journalists, focusing on Black and Brown workers in low wage jobs across New Jersey.",
+        "focusArea": "Journalism pipeline",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://newlabor.org"
 }
