@@ -2238,16 +2238,29 @@ a.text-teal-accessible:hover {
 }
 
 /* Mobile menu slide animation - smoother */
+#mobile-menu {
+    background: var(--njcic-dark);
+}
+
 #mobile-menu.hidden {
-    display: block;
+    display: block !important;
     max-height: 0;
     overflow: hidden;
-    transition: max-height var(--transition-slow) var(--ease-in-out-cubic);
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height var(--transition-slow) var(--ease-in-out-cubic),
+                opacity var(--transition-base) ease,
+                visibility 0s linear var(--transition-slow);
 }
 
 #mobile-menu:not(.hidden) {
+    display: block !important;
     max-height: 300px;
-    transition: max-height var(--transition-slow) var(--ease-out-expo);
+    opacity: 1;
+    visibility: visible;
+    transition: max-height var(--transition-slow) var(--ease-out-expo),
+                opacity var(--transition-base) ease,
+                visibility 0s linear 0s;
 }
 
 /* --------------------------------------------------------------------------

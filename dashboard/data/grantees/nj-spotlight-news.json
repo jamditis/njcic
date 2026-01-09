@@ -1,6 +1,8 @@
 {
   "name": "NJ Spotlight News",
   "slug": "nj-spotlight-news",
+  "website": "https://www.njspotlightnews.org",
+  "description": "NJ Spotlight News is an independent, nonpartisan news service covering issues critical to New Jersey, including education, healthcare, environment, and government. The organization delivers in-depth reporting that keeps residents informed about the issues that matter most to Garden State communities.",
   "summary": {
     "total_posts": 63,
     "total_engagement": 12254,

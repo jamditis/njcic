@@ -1,6 +1,8 @@
 {
   "name": "The Jersey Vindicator",
   "slug": "the-jersey-vindicator",
+  "website": "https://www.thejerseyvindicator.com",
+  "description": "The Jersey Vindicator is an independent digital news outlet dedicated to covering politics, policy, and public affairs in New Jersey. With a focus on accountability journalism, The Jersey Vindicator provides voters with essential information about state government and elected officials.",
   "summary": {
     "total_posts": 25,
     "total_engagement": 9603,

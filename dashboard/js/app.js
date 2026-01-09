@@ -546,8 +546,12 @@
                                 ${getPlatformIcon(grantee.topPlatform)}
                                 <span class="capitalize">${grantee.topPlatform || 'N/A'}</span>
                             </div>
-                            <div class="text-gray-400 font-medium">
-                                ${engagementRate} <span class="text-xs">eng/post</span>
+                            <div class="text-gray-500 font-medium flex items-center gap-1" title="Average engagement per post (likes, comments, shares, views)">
+                                <svg class="w-3.5 h-3.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                </svg>
+                                <span>${engagementRate}</span>
+                                <span class="text-xs text-gray-400">avg/post</span>
                             </div>
                         </div>
                     </div>

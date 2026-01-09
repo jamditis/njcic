@@ -1,6 +1,8 @@
 {
   "name": "Inside Climate News",
   "slug": "inside-climate-news",
+  "website": "https://insideclimatenews.org",
+  "description": "Inside Climate News is a Pulitzer Prize-winning, nonprofit, nonpartisan news organization covering clean energy, carbon emissions, climate change, and environmental justice. Their New Jersey coverage explores how climate change impacts Garden State communities and ecosystems.",
   "summary": {
     "total_posts": 43,
     "total_engagement": 6323,

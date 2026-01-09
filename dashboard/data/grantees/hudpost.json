@@ -1,6 +1,8 @@
 {
   "name": "HudPost",
   "slug": "hudpost",
+  "website": "https://hudpost.com",
+  "description": "HudPost is a digital news platform serving Hudson County communities with local news, events, and stories that matter to Jersey City, Hoboken, and surrounding areas. Through engaging video content and social media, HudPost connects residents with their neighborhoods.",
   "summary": {
     "total_posts": 37,
     "total_engagement": 117913,
