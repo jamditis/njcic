@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grantees editor - NJCIC Dashboard</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="njcic-favicon-32.png">
+    <link rel="icon" type="image/x-icon" href="njcic-favicon.ico">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'njcic-teal': '#2dc8d2',
+                        'njcic-orange': '#f34213',
+                        'njcic-dark': '#183642',
+                        'njcic-gray': '#2b3436',
+                        'njcic-light': '#e8f9fa',
+                        primary: { DEFAULT: '#0e7c86', light: '#2dc8d2', dark: '#095057' },
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .login-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #183642 0%, #2b3436 100%);
+        }
+
+        .editor-container {
+            display: none;
+        }
+
+        .grantee-card {
+            transition: all 0.2s ease;
+        }
+
+        .grantee-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .grantee-card.editing {
+            border-color: #2dc8d2;
+            box-shadow: 0 0 0 3px rgba(45, 200, 210, 0.2);
+        }
+
+        .social-input-group {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .grant-item {
+            background: #f8fafc;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            padding: 1rem 1.5rem;
+            border-radius: 0.5rem;
+            color: white;
+            font-weight: 500;
+            z-index: 9999;
+            animation: slideIn 0.3s ease;
+        }
+
+        .toast.success { background: #10b981; }
+        .toast.error { background: #ef4444; }
+        .toast.info { background: #3b82f6; }
+
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 1rem;
+            max-width: 600px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 2rem;
+        }
+
+        .platform-icon {
+            width: 20px;
+            height: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased text-slate-900">
+
+    <!-- Login Screen -->
+    <div id="login-screen" class="login-container">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md">
+            <div class="text-center mb-8">
+                <img src="njcic-logo.png" alt="NJCIC Logo" class="w-16 h-16 mx-auto mb-4 rounded-full">
+                <h1 class="text-2xl font-bold text-njcic-dark">Grantees editor</h1>
+                <p class="text-gray-500 mt-2">Enter password to access the editor</p>
+            </div>
+
+            <form id="login-form" class="space-y-4">
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-njcic-teal focus:border-njcic-teal transition"
+                        placeholder="Enter admin password"
+                    >
+                </div>
+                <div id="login-error" class="text-red-500 text-sm hidden">Invalid password. Please try again.</div>
+                <button
+                    type="submit"
+                    class="w-full bg-njcic-teal text-white py-3 px-4 rounded-lg font-semibold hover:bg-primary-dark transition"
+                >
+                    Access editor
+                </button>
+            </form>
+
+            <div class="mt-6 pt-6 border-t text-center">
+                <a href="index.html" class="text-sm text-gray-500 hover:text-njcic-teal">
+                    &larr; Back to dashboard
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Editor (hidden until login) -->
+    <div id="editor-screen" class="editor-container">
+
+        <!-- Header -->
+        <div class="h-1 bg-gradient-to-r from-njcic-teal via-njcic-orange to-njcic-teal"></div>
+
+        <nav class="bg-njcic-dark sticky top-0 z-40">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center gap-3">
+                        <img src="njcic-logo.png" alt="NJCIC Logo" class="w-10 h-10 rounded-full">
+                        <div>
+                            <span class="text-lg font-bold text-white">NJCIC</span>
+                            <span class="text-xs text-gray-400 block -mt-1">Grantees editor</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <button
+                            id="btn-add-grantee"
+                            class="bg-njcic-teal text-white px-4 py-2 rounded-lg font-medium hover:bg-primary-dark transition flex items-center gap-2"
+                        >
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                            </svg>
+                            Add grantee
+                        </button>
+                        <button
+                            id="btn-export"
+                            class="bg-white/10 text-white px-4 py-2 rounded-lg font-medium hover:bg-white/20 transition flex items-center gap-2"
+                        >
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Export
+                        </button>
+                        <button
+                            id="btn-rebuild"
+                            class="bg-njcic-orange text-white px-4 py-2 rounded-lg font-medium hover:bg-orange-700 transition flex items-center gap-2"
+                        >
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                            </svg>
+                            Rebuild dashboard
+                        </button>
+                        <button
+                            id="btn-logout"
+                            class="text-gray-400 hover:text-white transition p-2"
+                            title="Logout"
+                        >
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+            <!-- Stats Bar -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="bg-white rounded-xl p-4 shadow-sm">
+                    <div class="text-sm text-gray-500">Total grantees</div>
+                    <div id="stat-total" class="text-2xl font-bold text-njcic-dark">0</div>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm">
+                    <div class="text-sm text-gray-500">Modified</div>
+                    <div id="stat-modified" class="text-2xl font-bold text-njcic-orange">0</div>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm">
+                    <div class="text-sm text-gray-500">New</div>
+                    <div id="stat-new" class="text-2xl font-bold text-green-600">0</div>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm">
+                    <div class="text-sm text-gray-500">Pending deletion</div>
+                    <div id="stat-deleted" class="text-2xl font-bold text-red-600">0</div>
+                </div>
+            </div>
+
+            <!-- Search and Filters -->
+            <div class="flex flex-col md:flex-row gap-4 mb-6">
+                <div class="flex-1 relative">
+                    <input
+                        type="text"
+                        id="search-input"
+                        placeholder="Search grantees by name..."
+                        class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-njcic-teal focus:border-njcic-teal"
+                    >
+                    <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </div>
+                <select
+                    id="filter-status"
+                    class="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-njcic-teal focus:border-njcic-teal"
+                >
+                    <option value="all">All statuses</option>
+                    <option value="active">Active</option>
+                    <option value="completed">Completed</option>
+                    <option value="modified">Modified</option>
+                    <option value="new">New</option>
+                </select>
+            </div>
+
+            <!-- Grantees List -->
+            <div id="grantees-list" class="space-y-4">
+                <div class="text-center py-12 text-gray-500">
+                    <div class="animate-spin w-8 h-8 border-2 border-njcic-teal border-t-transparent rounded-full mx-auto mb-4"></div>
+                    Loading grantees...
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-njcic-dark text-white py-8 mt-12">
+            <div class="max-w-7xl mx-auto px-4 text-center text-gray-400 text-sm">
+                <p>NJCIC Grantees Editor - For staff use only</p>
+                <p class="mt-2">Changes made here will need to be committed to GitHub to take effect.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Add/Edit Grantee Modal -->
+    <div id="modal-grantee" class="modal-backdrop hidden">
+        <div class="modal-content">
+            <div class="flex items-center justify-between mb-6">
+                <h2 id="modal-title" class="text-xl font-bold text-njcic-dark">Add new grantee</h2>
+                <button id="modal-close" class="text-gray-400 hover:text-gray-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <form id="grantee-form" class="space-y-6">
+                <!-- Basic Info -->
+                <div class="space-y-4">
+                    <h3 class="font-semibold text-gray-700 border-b pb-2">Basic information</h3>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Name *</label>
+                        <input type="text" name="name" required class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-njcic-teal">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Website</label>
+                        <input type="url" name="website" placeholder="https://" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-njcic-teal">
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">City</label>
+                            <input type="text" name="city" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-njcic-teal">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">County/Region</label>
+                            <input type="text" name="county" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-njcic-teal">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Status</label>
+                        <select name="status" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-njcic-teal">
+                            <option value="active">Active</option>
+                            <option value="completed">Completed</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Focus area</label>
+                        <input type="text" name="focusArea" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-njcic-teal">
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="space-y-4">
+                    <h3 class="font-semibold text-gray-700 border-b pb-2">Social media accounts</h3>
+
+                    <div class="space-y-3">
+                        <div class="social-input-group">
+                            <label class="text-sm font-medium text-gray-600">Twitter/X</label>
+                            <input type="url" name="social_twitter" placeholder="https://twitter.com/..." class="px-3 py-2 border rounded-lg focus:ring-2 focus:ring-njcic-teal text-sm">
+                        </div>
+                        <div class="social-input-group">
+                            <label class="text-sm font-medium text-gray-600">Facebook</label>
+                            <input type="url" name="social_facebook" placeholder="https://facebook.com/..." class="px-3 py-2 border rounded-lg focus:ring-2 focus:ring-njcic-teal text-sm">
+                        </div>
+                        <div class="social-input-group">
+                            <label class="text-sm font-medium text-gray-600">Instagram</label>
+                            <input type="url" name="social_instagram" placeholder="https://instagram.com/..." class="px-3 py-2 border rounded-lg focus:ring-2 focus:ring-njcic-teal text-sm">
+                        </div>
+                        <div class="social-input-group">
+                            <label class="text-sm font-medium text-gray-600">YouTube</label>
+                            <input type="url" name="social_youtube" placeholder="https://youtube.com/..." class="px-3 py-2 border rounded-lg focus:ring-2 focus:ring-njcic-teal text-sm">
+                        </div>
+                        <div class="social-input-group">
+                            <label class="text-sm font-medium text-gray-600">TikTok</label>
+                            <input type="url" name="social_tiktok" placeholder="https://tiktok.com/@..." class="px-3 py-2 border rounded-lg focus:ring-2 focus:ring-njcic-teal text-sm">
+                        </div>
+                        <div class="social-input-group">
+                            <label class="text-sm font-medium text-gray-600">LinkedIn</label>
+                            <input type="url" name="social_linkedin" placeholder="https://linkedin.com/..." class="px-3 py-2 border rounded-lg focus:ring-2 focus:ring-njcic-teal text-sm">
+                        </div>
+                        <div class="social-input-group">
+                            <label class="text-sm font-medium text-gray-600">Threads</label>
+                            <input type="url" name="social_threads" placeholder="https://threads.net/@..." class="px-3 py-2 border rounded-lg focus:ring-2 focus:ring-njcic-teal text-sm">
+                        </div>
+                        <div class="social-input-group">
+                            <label class="text-sm font-medium text-gray-600">Bluesky</label>
+                            <input type="url" name="social_bluesky" placeholder="https://bsky.app/profile/..." class="px-3 py-2 border rounded-lg focus:ring-2 focus:ring-njcic-teal text-sm">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grant Info -->
+                <div class="space-y-4">
+                    <h3 class="font-semibold text-gray-700 border-b pb-2">Grant information</h3>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Total funding ($)</label>
+                            <input type="number" name="totalFunding" min="0" step="1" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-njcic-teal">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Years (comma-separated)</label>
+                            <input type="text" name="years" placeholder="2023, 2024" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-njcic-teal">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Grant description</label>
+                        <textarea name="grantDescription" rows="3" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-njcic-teal" placeholder="Description of the grant..."></textarea>
+                    </div>
+                </div>
+
+                <input type="hidden" name="slug" value="">
+                <input type="hidden" name="isNew" value="false">
+
+                <div class="flex gap-3 pt-4 border-t">
+                    <button type="button" id="btn-cancel" class="flex-1 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition">
+                        Cancel
+                    </button>
+                    <button type="submit" class="flex-1 px-4 py-2 bg-njcic-teal text-white rounded-lg hover:bg-primary-dark transition font-medium">
+                        Save grantee
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Rebuild Modal -->
+    <div id="modal-rebuild" class="modal-backdrop hidden">
+        <div class="modal-content max-w-lg">
+            <div class="text-center">
+                <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-njcic-orange/10 flex items-center justify-center">
+                    <svg class="w-8 h-8 text-njcic-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold text-njcic-dark mb-2">Rebuild dashboard</h2>
+                <p class="text-gray-600 mb-6">
+                    This will trigger the GitHub Action to re-scrape social media data and rebuild the dashboard.
+                    The process takes about 30-60 minutes to complete.
+                </p>
+
+                <div class="bg-gray-50 rounded-lg p-4 mb-6 text-left">
+                    <h3 class="font-medium text-gray-700 mb-2">Before rebuilding:</h3>
+                    <ol class="text-sm text-gray-600 space-y-1 list-decimal list-inside">
+                        <li>Export your changes using the "Export" button</li>
+                        <li>Commit the exported changes to the repository</li>
+                        <li>Then trigger the rebuild</li>
+                    </ol>
+                </div>
+
+                <div class="space-y-3">
+                    <a
+                        href="https://github.com/jamditis/njcic/actions/workflows/update-dashboard.yml"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="block w-full px-4 py-3 bg-njcic-dark text-white rounded-lg hover:bg-njcic-gray transition font-medium"
+                    >
+                        Open GitHub Actions &rarr;
+                    </a>
+                    <p class="text-xs text-gray-500">
+                        Click "Run workflow" on the GitHub Actions page to start the rebuild.
+                    </p>
+                    <button id="btn-close-rebuild" class="w-full px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div id="modal-delete" class="modal-backdrop hidden">
+        <div class="modal-content max-w-md">
+            <div class="text-center">
+                <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-red-50 flex items-center justify-center">
+                    <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold text-njcic-dark mb-2">Delete grantee?</h2>
+                <p id="delete-message" class="text-gray-600 mb-6">
+                    Are you sure you want to delete this grantee? This action will be included in the next export.
+                </p>
+
+                <div class="flex gap-3">
+                    <button id="btn-cancel-delete" class="flex-1 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition">
+                        Cancel
+                    </button>
+                    <button id="btn-confirm-delete" class="flex-1 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition font-medium">
+                        Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Export Modal -->
+    <div id="modal-export" class="modal-backdrop hidden">
+        <div class="modal-content max-w-lg">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-xl font-bold text-njcic-dark">Export changes</h2>
+                <button id="btn-close-export" class="text-gray-400 hover:text-gray-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="space-y-4">
+                <p class="text-gray-600">
+                    Export your changes to update the grantee data. Choose an export format below.
+                </p>
+
+                <div id="export-summary" class="bg-gray-50 rounded-lg p-4">
+                    <h3 class="font-medium text-gray-700 mb-2">Changes summary:</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li><span id="export-modified">0</span> modified grantees</li>
+                        <li><span id="export-new">0</span> new grantees</li>
+                        <li><span id="export-deleted">0</span> grantees to delete</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-3">
+                    <button
+                        id="btn-export-all"
+                        class="w-full px-4 py-3 bg-njcic-teal text-white rounded-lg hover:bg-primary-dark transition font-medium flex items-center justify-center gap-2"
+                    >
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                        </svg>
+                        Download all grantee files (ZIP)
+                    </button>
+
+                    <button
+                        id="btn-export-changes"
+                        class="w-full px-4 py-3 border border-njcic-teal text-njcic-teal rounded-lg hover:bg-njcic-light transition font-medium flex items-center justify-center gap-2"
+                    >
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                        </svg>
+                        Download changes only (ZIP)
+                    </button>
+                </div>
+
+                <div class="pt-4 border-t">
+                    <p class="text-sm text-gray-500 mb-3">
+                        After downloading, commit the files to the repository's <code class="bg-gray-100 px-1 rounded">dashboard/data/grantees/</code> folder.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
