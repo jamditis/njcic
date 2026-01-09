@@ -3,17 +3,17 @@
   "slug": "daily-targum",
   "summary": {
     "total_posts": 39,
-    "total_engagement": 2180,
+    "total_engagement": 2181,
     "total_followers": 0,
     "platforms_active": 3,
-    "engagement_rate": 55.9,
-    "last_updated": "2026-01-08T21:40:23.427805"
+    "engagement_rate": 55.92,
+    "last_updated": "2026-01-08T21:54:09.580520"
   },
   "platform_breakdown": {
     "tiktok": {
       "posts": 26,
       "posts_pct": 66.7,
-      "engagement": 1611,
+      "engagement": 1612,
       "engagement_pct": 73.9
     },
     "instagram": {
@@ -32,10 +32,10 @@
   "platforms": {
     "tiktok": {
       "posts": 26,
-      "engagement": 1611,
-      "views": 48920,
+      "engagement": 1612,
+      "views": 49010,
       "followers": 0,
-      "engagement_rate": 61.96,
+      "engagement_rate": 62.0,
       "top_posts": [
         {
           "id": "7565301845900397879",
@@ -49,7 +49,7 @@
             "views": 25300,
             "total": 961
           },
-          "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIDACHt9A2ORrdIjGVIFOe1JBQgfgGX6cfve8M~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=sEL965alf8BlvIcUfAbrl%2BkKEN4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIDACHt9A2ORrdIjGVIFOe1JBQgfgGX6cfve8M~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=iHBT6xdJF%2BqLSM79Vl0rRw8wUuM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
         },
         {
           "id": "7564854208504040759",
@@ -57,13 +57,13 @@
           "text": "The Daily Targum interviewed Rutgers alum Drew Patel, who opened Pitc...",
           "date": "2025-10-24T11:18:28",
           "engagement": {
-            "likes": 189,
+            "likes": 190,
             "comments": 1,
             "shares": 21,
-            "views": 8859,
-            "total": 211
+            "views": 8947,
+            "total": 212
           },
-          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oUmuBYBWU747gn0TLIvBvg5ByPDwIASiEiavi~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=taJNtigUNka4DHkjQtLGUI99y3o%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oUmuBYBWU747gn0TLIvBvg5ByPDwIASiEiavi~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=dkV%2Fqee%2B8INTsydNRgsMaQ1NaJI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
         },
         {
           "id": "7553856050269556023",
@@ -77,7 +77,7 @@
             "views": 2090,
             "total": 153
           },
-          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/okC6saiEU3IzITAcdgv4BxUISANSICjwiBQ5P~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=zvTMQsc2NfL3Cn8jOi3Af8aHY7M%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+          "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/okC6saiEU3IzITAcdgv4BxUISANSICjwiBQ5P~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=NsgowNfuupr6FxPn0X34xanx%2B3k%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
         }
       ],
       "frequency": {
@@ -171,7 +171,7 @@
         {
           "date": "2025-10-20",
           "posts": 2,
-          "engagement": 1172
+          "engagement": 1173
         },
         {
           "date": "2025-12-01",
@@ -182,7 +182,7 @@
       "content_types": {
         "video": {
           "count": 26,
-          "engagement": 1611,
+          "engagement": 1612,
           "percentage": 100.0
         }
       }
@@ -336,7 +336,7 @@
         "views": 25300,
         "total": 961
       },
-      "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIDACHt9A2ORrdIjGVIFOe1JBQgfgGX6cfve8M~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=sEL965alf8BlvIcUfAbrl%2BkKEN4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIDACHt9A2ORrdIjGVIFOe1JBQgfgGX6cfve8M~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=iHBT6xdJF%2BqLSM79Vl0rRw8wUuM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
     },
     {
       "id": "7564854208504040759",
@@ -344,13 +344,13 @@
       "text": "The Daily Targum interviewed Rutgers alum Drew Patel, who opened Pitc...",
       "date": "2025-10-24T11:18:28",
       "engagement": {
-        "likes": 189,
+        "likes": 190,
         "comments": 1,
         "shares": 21,
-        "views": 8859,
-        "total": 211
+        "views": 8947,
+        "total": 212
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oUmuBYBWU747gn0TLIvBvg5ByPDwIASiEiavi~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=taJNtigUNka4DHkjQtLGUI99y3o%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oUmuBYBWU747gn0TLIvBvg5ByPDwIASiEiavi~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=dkV%2Fqee%2B8INTsydNRgsMaQ1NaJI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
     },
     {
       "id": "7553856050269556023",
@@ -364,7 +364,7 @@
         "views": 2090,
         "total": 153
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/okC6saiEU3IzITAcdgv4BxUISANSICjwiBQ5P~tplv-tiktokx-origin.image?dr=9636&x-expires=1768068000&x-signature=zvTMQsc2NfL3Cn8jOi3Af8aHY7M%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/okC6saiEU3IzITAcdgv4BxUISANSICjwiBQ5P~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=NsgowNfuupr6FxPn0X34xanx%2B3k%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
     },
     {
       "id": null,
@@ -486,7 +486,7 @@
     {
       "date": "2025-10-20",
       "posts": 2,
-      "engagement": 1172
+      "engagement": 1173
     },
     {
       "date": "2025-11-03",

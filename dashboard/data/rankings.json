@@ -4,19 +4,19 @@
       "rank": 1,
       "name": "Muslim",
       "slug": "muslim",
-      "value": 1943438
+      "value": 1965195
     },
     {
       "rank": 2,
       "name": "Global Patriot Newspapers online",
       "slug": "global-patriot-newspapers-online",
-      "value": 243587
+      "value": 242821
     },
     {
       "rank": 3,
       "name": "HudPost",
       "slug": "hudpost",
-      "value": 118560
+      "value": 118660
     },
     {
       "rank": 4,
@@ -46,7 +46,7 @@
       "rank": 8,
       "name": "The College of New Jersey",
       "slug": "the-college-of-new-jersey",
-      "value": 4681
+      "value": 4760
     },
     {
       "rank": 9,
@@ -76,13 +76,13 @@
       "rank": 13,
       "name": "Daily Targum",
       "slug": "daily-targum",
-      "value": 2180
+      "value": 2181
     },
     {
       "rank": 14,
       "name": "The Daily Targum  Targum Publishing Co  ",
       "slug": "the-daily-targum-targum-publishing-co",
-      "value": 2180
+      "value": 2181
     },
     {
       "rank": 15,
@@ -444,7 +444,7 @@
       "rank": 14,
       "name": "HudPost",
       "slug": "hudpost",
-      "value": 45
+      "value": 46
     },
     {
       "rank": 15,
@@ -454,15 +454,15 @@
     },
     {
       "rank": 16,
-      "name": "Daily Targum",
-      "slug": "daily-targum",
+      "name": "Chalkbeat Newark  Civic News Company ",
+      "slug": "chalkbeat-newark-civic-news-company",
       "value": 39
     },
     {
       "rank": 17,
-      "name": "Chalkbeat Newark  Civic News Company ",
-      "slug": "chalkbeat-newark-civic-news-company",
-      "value": 38
+      "name": "Daily Targum",
+      "slug": "daily-targum",
+      "value": 39
     },
     {
       "rank": 18,
@@ -504,7 +504,7 @@
       "rank": 24,
       "name": "Black in Jersey",
       "slug": "black-in-jersey",
-      "value": 31
+      "value": 32
     },
     {
       "rank": 25,
@@ -728,19 +728,19 @@
       "rank": 1,
       "name": "Muslim",
       "slug": "muslim",
-      "value": 19630.69
+      "value": 19850.45
     },
     {
       "rank": 2,
       "name": "Global Patriot Newspapers online",
       "slug": "global-patriot-newspapers-online",
-      "value": 9368.73
+      "value": 9339.27
     },
     {
       "rank": 3,
       "name": "HudPost",
       "slug": "hudpost",
-      "value": 2634.67
+      "value": 2579.57
     },
     {
       "rank": 4,
@@ -782,7 +782,7 @@
       "rank": 10,
       "name": "The College of New Jersey",
       "slug": "the-college-of-new-jersey",
-      "value": 123.18
+      "value": 125.26
     },
     {
       "rank": 11,
@@ -818,7 +818,7 @@
       "rank": 16,
       "name": "The Daily Targum  Targum Publishing Co  ",
       "slug": "the-daily-targum-targum-publishing-co",
-      "value": 57.37
+      "value": 57.39
     },
     {
       "rank": 17,
@@ -836,13 +836,13 @@
       "rank": 19,
       "name": "Daily Targum",
       "slug": "daily-targum",
-      "value": 55.9
+      "value": 55.92
     },
     {
       "rank": 20,
       "name": "Black in Jersey",
       "slug": "black-in-jersey",
-      "value": 53.35
+      "value": 51.69
     },
     {
       "rank": 21,
@@ -878,7 +878,7 @@
       "rank": 26,
       "name": "Chalkbeat Newark  Civic News Company ",
       "slug": "chalkbeat-newark-civic-news-company",
-      "value": 27.21
+      "value": 26.51
     },
     {
       "rank": 27,
@@ -1462,68 +1462,68 @@
     },
     {
       "rank": 3,
+      "name": "Black in Jersey",
+      "slug": "black-in-jersey",
+      "value": 4
+    },
+    {
+      "rank": 4,
       "name": "Camden Parent   Student Union",
       "slug": "camden-parent-student-union",
       "value": 4
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "name": "Chalkbeat Newark  Civic News Company ",
+      "slug": "chalkbeat-newark-civic-news-company",
+      "value": 4
+    },
+    {
+      "rank": 6,
       "name": "Clinton Hill Community Action",
       "slug": "clinton-hill-community-action",
       "value": 4
     },
     {
-      "rank": 5,
+      "rank": 7,
       "name": "HudPost",
       "slug": "hudpost",
       "value": 4
     },
     {
-      "rank": 6,
+      "rank": 8,
       "name": "Lens 15 Media",
       "slug": "lens-15-media",
       "value": 4
     },
     {
-      "rank": 7,
+      "rank": 9,
       "name": "Mental Health Association of New Jersey",
       "slug": "mental-health-association-of-new-jersey",
       "value": 4
     },
     {
-      "rank": 8,
+      "rank": 10,
       "name": "NJ Spotlight News",
       "slug": "nj-spotlight-news",
       "value": 4
     },
     {
-      "rank": 9,
+      "rank": 11,
       "name": "Slice of Culture   Saint Peter s University",
       "slug": "slice-of-culture-saint-peter-s-university",
       "value": 4
     },
     {
-      "rank": 10,
+      "rank": 12,
       "name": "South Jersey Climate News Project",
       "slug": "south-jersey-climate-news-project",
       "value": 4
     },
     {
-      "rank": 11,
-      "name": "Black in Jersey",
-      "slug": "black-in-jersey",
-      "value": 3
-    },
-    {
-      "rank": 12,
+      "rank": 13,
       "name": "Central New Jersey Network",
       "slug": "central-new-jersey-network",
-      "value": 3
-    },
-    {
-      "rank": 13,
-      "name": "Chalkbeat Newark  Civic News Company ",
-      "slug": "chalkbeat-newark-civic-news-company",
       "value": 3
     },
     {
@@ -1809,5 +1809,5 @@
       "value": 1
     }
   ],
-  "generated_at": "2026-01-08T21:40:23.521655"
+  "generated_at": "2026-01-08T21:54:09.694801"
 }

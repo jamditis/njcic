@@ -204,15 +204,16 @@ class YouTubeScraper(BaseScraper):
 
         for video in videos:
             try:
+                # Use 'or 0' to handle None values (API sometimes returns None for counts)
                 metadata = {
                     'video_id': video.get('id'),
                     'title': video.get('title'),
-                    'description': video.get('description', ''),
+                    'description': video.get('description') or '',
                     'upload_date': video.get('upload_date'),
-                    'views': video.get('view_count', 0),
-                    'likes': video.get('like_count', 0),
-                    'comments': video.get('comment_count', 0),
-                    'duration': video.get('duration'),
+                    'views': video.get('view_count') or 0,
+                    'likes': video.get('like_count') or 0,
+                    'comments': video.get('comment_count') or 0,
+                    'duration': video.get('duration') or 0,
                     'url': video.get('webpage_url') or f"https://www.youtube.com/watch?v={video.get('id')}",
                 }
                 extracted_videos.append(metadata)

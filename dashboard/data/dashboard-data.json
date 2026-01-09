@@ -1,12 +1,12 @@
 {
   "summary": {
     "totalGrantees": 60,
-    "totalPosts": 1827,
-    "totalEngagement": 2388108,
+    "totalPosts": 1830,
+    "totalEngagement": 2409280,
     "totalFollowers": 52152,
     "platformsTracked": 6,
-    "avgEngagementRate": 1307.12,
-    "lastUpdated": "2026-01-08T21:40:23.523538",
+    "avgEngagementRate": 1316.55,
+    "lastUpdated": "2026-01-08T21:54:09.696451",
     "scrapingDuration": "aggregated"
   },
   "platforms": {
@@ -24,19 +24,19 @@
       "grantees": 22,
       "avgEngagement": 43.05
     },
+    "tiktok": {
+      "posts": 308,
+      "engagement": 1693492,
+      "followers": 0,
+      "grantees": 16,
+      "avgEngagement": 5498.35
+    },
     "instagram": {
       "posts": 576,
       "engagement": 626252,
       "followers": 0,
       "grantees": 48,
       "avgEngagement": 1087.24
-    },
-    "tiktok": {
-      "posts": 305,
-      "engagement": 1672320,
-      "followers": 0,
-      "grantees": 14,
-      "avgEngagement": 5483.02
     },
     "twitter": {
       "posts": 30,
@@ -58,9 +58,9 @@
       "name": "Muslim",
       "slug": "muslim",
       "posts": 99,
-      "engagement": 1943438,
+      "engagement": 1965195,
       "followers": 0,
-      "engagementRate": 19630.69,
+      "engagementRate": 19850.45,
       "topPlatform": "tiktok",
       "platformsScraped": 5
     },
@@ -68,19 +68,19 @@
       "name": "Global Patriot Newspapers online",
       "slug": "global-patriot-newspapers-online",
       "posts": 26,
-      "engagement": 243587,
+      "engagement": 242821,
       "followers": 0,
-      "engagementRate": 9368.73,
+      "engagementRate": 9339.27,
       "topPlatform": "tiktok",
       "platformsScraped": 1
     },
     {
       "name": "HudPost",
       "slug": "hudpost",
-      "posts": 45,
-      "engagement": 118560,
+      "posts": 46,
+      "engagement": 118660,
       "followers": 0,
-      "engagementRate": 2634.67,
+      "engagementRate": 2579.57,
       "topPlatform": "tiktok",
       "platformsScraped": 4
     },
@@ -128,9 +128,9 @@
       "name": "The College of New Jersey",
       "slug": "the-college-of-new-jersey",
       "posts": 38,
-      "engagement": 4681,
+      "engagement": 4760,
       "followers": 0,
-      "engagementRate": 123.18,
+      "engagementRate": 125.26,
       "topPlatform": "tiktok",
       "platformsScraped": 2
     },
@@ -178,9 +178,9 @@
       "name": "Daily Targum",
       "slug": "daily-targum",
       "posts": 39,
-      "engagement": 2180,
+      "engagement": 2181,
       "followers": 0,
-      "engagementRate": 55.9,
+      "engagementRate": 55.92,
       "topPlatform": "tiktok",
       "platformsScraped": 3
     },
@@ -188,21 +188,21 @@
       "name": "The Daily Targum  Targum Publishing Co  ",
       "slug": "the-daily-targum-targum-publishing-co",
       "posts": 38,
-      "engagement": 2180,
+      "engagement": 2181,
       "followers": 0,
-      "engagementRate": 57.37,
+      "engagementRate": 57.39,
       "topPlatform": "tiktok",
       "platformsScraped": 2
     },
     {
       "name": "Black in Jersey",
       "slug": "black-in-jersey",
-      "posts": 31,
+      "posts": 32,
       "engagement": 1654,
       "followers": 0,
-      "engagementRate": 53.35,
+      "engagementRate": 51.69,
       "topPlatform": "instagram",
-      "platformsScraped": 3
+      "platformsScraped": 4
     },
     {
       "name": "Newark Water Coalition",
@@ -237,12 +237,12 @@
     {
       "name": "Chalkbeat Newark  Civic News Company ",
       "slug": "chalkbeat-newark-civic-news-company",
-      "posts": 38,
+      "posts": 39,
       "engagement": 1034,
       "followers": 11032,
-      "engagementRate": 27.21,
+      "engagementRate": 26.51,
       "topPlatform": "instagram",
-      "platformsScraped": 3
+      "platformsScraped": 4
     },
     {
       "name": "Newark News and Story Collaborative",
@@ -658,8 +658,8 @@
   "engagementByPlatform": [
     {
       "platform": "tiktok",
-      "engagement": 1672320,
-      "posts": 305,
+      "engagement": 1693492,
+      "posts": 308,
       "color": "#000000"
     },
     {
@@ -694,7 +694,7 @@
     }
   ],
   "metadata": {
-    "generatedAt": "2026-01-08T21:40:23.523593",
+    "generatedAt": "2026-01-08T21:54:09.696507",
     "platformColors": {
       "twitter": "#1DA1F2",
       "youtube": "#FF0000",

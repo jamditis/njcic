@@ -156,6 +156,84 @@
         }
       ]
     },
+    "tiktok": {
+      "color": "#000000",
+      "grantees": 16,
+      "total_posts": 308,
+      "total_engagement": 1693492,
+      "total_followers": 0,
+      "avg_engagement_per_post": 5498.35,
+      "avg_posts_per_grantee": 19.2,
+      "content_types": {
+        "video": {
+          "count": 308,
+          "engagement": 1693492,
+          "percentage": 100.0
+        }
+      },
+      "top_grantees": [
+        {
+          "name": "Muslim",
+          "slug": "muslim",
+          "posts": 26,
+          "engagement": 1327037
+        },
+        {
+          "name": "Global Patriot Newspapers online",
+          "slug": "global-patriot-newspapers-online",
+          "posts": 26,
+          "engagement": 242821
+        },
+        {
+          "name": "HudPost",
+          "slug": "hudpost",
+          "posts": 26,
+          "engagement": 105139
+        },
+        {
+          "name": "NJ Spotlight News",
+          "slug": "nj-spotlight-news",
+          "posts": 26,
+          "engagement": 8504
+        },
+        {
+          "name": "The College of New Jersey",
+          "slug": "the-college-of-new-jersey",
+          "posts": 26,
+          "engagement": 2967
+        },
+        {
+          "name": "Slice of Culture   Saint Peter s University",
+          "slug": "slice-of-culture-saint-peter-s-university",
+          "posts": 26,
+          "engagement": 1791
+        },
+        {
+          "name": "Daily Targum",
+          "slug": "daily-targum",
+          "posts": 26,
+          "engagement": 1612
+        },
+        {
+          "name": "The Daily Targum  Targum Publishing Co  ",
+          "slug": "the-daily-targum-targum-publishing-co",
+          "posts": 26,
+          "engagement": 1612
+        },
+        {
+          "name": "South Jersey Climate News Project",
+          "slug": "south-jersey-climate-news-project",
+          "posts": 13,
+          "engagement": 840
+        },
+        {
+          "name": "Lens 15 Media",
+          "slug": "lens-15-media",
+          "posts": 26,
+          "engagement": 496
+        }
+      ]
+    },
     "instagram": {
       "color": "#E1306C",
       "grantees": 48,
@@ -236,84 +314,6 @@
           "slug": "black-in-jersey",
           "posts": 12,
           "engagement": 1547
-        }
-      ]
-    },
-    "tiktok": {
-      "color": "#000000",
-      "grantees": 14,
-      "total_posts": 305,
-      "total_engagement": 1672320,
-      "total_followers": 0,
-      "avg_engagement_per_post": 5483.02,
-      "avg_posts_per_grantee": 21.8,
-      "content_types": {
-        "video": {
-          "count": 305,
-          "engagement": 1672320,
-          "percentage": 100.0
-        }
-      },
-      "top_grantees": [
-        {
-          "name": "Muslim",
-          "slug": "muslim",
-          "posts": 26,
-          "engagement": 1305280
-        },
-        {
-          "name": "Global Patriot Newspapers online",
-          "slug": "global-patriot-newspapers-online",
-          "posts": 26,
-          "engagement": 243587
-        },
-        {
-          "name": "HudPost",
-          "slug": "hudpost",
-          "posts": 25,
-          "engagement": 105039
-        },
-        {
-          "name": "NJ Spotlight News",
-          "slug": "nj-spotlight-news",
-          "posts": 26,
-          "engagement": 8504
-        },
-        {
-          "name": "The College of New Jersey",
-          "slug": "the-college-of-new-jersey",
-          "posts": 26,
-          "engagement": 2888
-        },
-        {
-          "name": "Slice of Culture   Saint Peter s University",
-          "slug": "slice-of-culture-saint-peter-s-university",
-          "posts": 26,
-          "engagement": 1791
-        },
-        {
-          "name": "Daily Targum",
-          "slug": "daily-targum",
-          "posts": 26,
-          "engagement": 1611
-        },
-        {
-          "name": "The Daily Targum  Targum Publishing Co  ",
-          "slug": "the-daily-targum-targum-publishing-co",
-          "posts": 26,
-          "engagement": 1611
-        },
-        {
-          "name": "South Jersey Climate News Project",
-          "slug": "south-jersey-climate-news-project",
-          "posts": 13,
-          "engagement": 840
-        },
-        {
-          "name": "Lens 15 Media",
-          "slug": "lens-15-media",
-          "posts": 26,
-          "engagement": 496
         }
       ]
     },
@@ -456,7 +456,7 @@
     "by_engagement": [
       {
         "platform": "tiktok",
-        "engagement": 1672320
+        "engagement": 1693492
       },
       {
         "platform": "instagram",
@@ -490,7 +490,7 @@
       },
       {
         "platform": "tiktok",
-        "posts": 305
+        "posts": 308
       },
       {
         "platform": "bluesky",
@@ -506,5 +506,5 @@
       }
     ]
   },
-  "generated_at": "2026-01-08T21:40:23.523009"
+  "generated_at": "2026-01-08T21:54:09.696014"
 }
