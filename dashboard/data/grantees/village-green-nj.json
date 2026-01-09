@@ -1,0 +1,52 @@
+{
+  "name": "Village Green NJ",
+  "slug": "village-green-nj",
+  "summary": {
+    "total_posts": 0,
+    "total_engagement": 0,
+    "total_followers": 0,
+    "platforms_active": 0,
+    "engagement_rate": 0,
+    "last_updated": null
+  },
+  "platform_breakdown": {},
+  "platforms": {},
+  "top_posts": [],
+  "overall_frequency": {
+    "posts_per_day": 0,
+    "posts_per_week": 0,
+    "date_range_days": 0,
+    "first_post": null,
+    "last_post": null
+  },
+  "time_series": [],
+  "grantInfo": {
+    "totalFunding": 40000,
+    "formattedFunding": "$40K",
+    "years": [
+      "2025",
+      "2026"
+    ],
+    "status": "active",
+    "county": "Essex",
+    "city": "Maplewood/South Orange",
+    "focusArea": "Civic news and information reporting",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "amount": 40000,
+        "formattedAmount": "$40K",
+        "description": "Civic news (Maplewood/South Orange)",
+        "focusArea": "Civic news and information reporting",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://villagegreennj.com"
+}

@@ -605,19 +605,21 @@
     }
   ],
   "grantInfo": {
-    "totalFunding": 225000,
-    "formattedFunding": "$225K",
+    "totalFunding": 300000,
+    "formattedFunding": "$300K",
     "years": [
       "2022",
       "2023",
-      "2024"
+      "2024",
+      "2025",
+      "2026"
     ],
     "status": "active",
     "county": "Essex County",
     "city": "Newark",
-    "focusArea": "Journalism pipeline",
-    "grantCount": 1,
-    "hasMultipleGrants": false,
+    "focusArea": "Journalism pipeline; Journalism pipeline (Brooklyn)",
+    "grantCount": 2,
+    "hasMultipleGrants": true,
     "grants": [
       {
         "id": 1,
@@ -628,9 +630,22 @@
         ],
         "amount": 225000,
         "formattedAmount": "$225K",
-        "description": "To fund journalism training for neighborhood residents to learn how to use storytelling as an advocacy strategy. This includes oral histories, podcasts, video reports and documentaries. The funding also is being used to establish a new media training, production, and webcast center through Clinton Hill’s Citizen Journalism Program.",
+        "description": "To fund journalism training for neighborhood residents to learn how to use storytelling as an advocacy strategy. This includes oral histories, podcasts, video reports and documentaries. The funding also is being used to establish a new media training, production, and webcast center through Clinton Hill's Citizen Journalism Program.",
         "focusArea": "Journalism pipeline",
         "status": "active"
+      },
+      {
+        "id": 2,
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "amount": 75000,
+        "formattedAmount": "$75K",
+        "description": "Renewal grant for journalism pipeline program in Brooklyn.",
+        "focusArea": "Journalism pipeline (Brooklyn)",
+        "status": "active",
+        "bipocLed": true
       }
     ]
   },

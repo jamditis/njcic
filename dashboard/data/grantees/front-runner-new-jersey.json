@@ -265,19 +265,20 @@
     }
   ],
   "grantInfo": {
-    "totalFunding": 398300,
-    "formattedFunding": "$398K",
+    "totalFunding": 418300,
+    "formattedFunding": "$418K",
     "years": [
       "2022",
       "2023",
       "2024",
-      "2025"
+      "2025",
+      "2026"
     ],
     "status": "active",
     "county": "South Jersey",
     "city": "Atlantic City",
     "focusArea": "Civic news and information reporting; Blue Engine Tech & Sustainability Accelerator Grant; Journalism pipeline",
-    "grantCount": 3,
+    "grantCount": 4,
     "hasMultipleGrants": true,
     "grants": [
       {
@@ -314,6 +315,18 @@
         "formattedAmount": "$3K",
         "description": "To support the placement of a student intern through the Statewide Paid Internship Program.",
         "focusArea": "Journalism pipeline",
+        "status": "active"
+      },
+      {
+        "id": 4,
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "amount": 20000,
+        "formattedAmount": "$20K",
+        "description": "Bump-up grant to support continued operations and growth",
+        "focusArea": "Civic news and information reporting",
         "status": "active"
       }
     ]

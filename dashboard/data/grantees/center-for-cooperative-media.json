@@ -1,6 +1,7 @@
 {
   "name": "Center for Cooperative Media",
   "slug": "center-for-cooperative-media",
+  "logo": "https://centerforcooperativemedia.org/wp-content/uploads/2025/07/ccm-logo-iso-2025.png",
   "summary": {
     "total_posts": 8,
     "total_engagement": 319,
@@ -267,18 +268,20 @@
     }
   ],
   "grantInfo": {
-    "totalFunding": 676063,
-    "formattedFunding": "$676K",
+    "totalFunding": 820108.88,
+    "formattedFunding": "$820K",
     "years": [
       "2022",
       "2023",
-      "2024"
+      "2024",
+      "2025",
+      "2026"
     ],
     "status": "active",
     "county": "Statewide",
     "city": "Montclair",
     "focusArea": "Civic news and information reporting; Civic engagement in NJ communities",
-    "grantCount": 4,
+    "grantCount": 6,
     "hasMultipleGrants": true,
     "grants": [
       {
@@ -327,6 +330,31 @@
         "formattedAmount": "$130K",
         "description": "To support the expansion of the South Jersey Information Equity Project (SJEIP) from a cohort of 5 to 10 fellows annually and establish an SJIEP community reporting workshop series to further engage local storytellers through intergenerational learning and co-creation workshops.",
         "focusArea": "Civic engagement in NJ communities",
+        "status": "active"
+      },
+      {
+        "id": 5,
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "amount": 94045.88,
+        "formattedAmount": "$94K",
+        "description": "Continued research support at the Center for Cooperative Media at Montclair State University for impact tracking and evaluation of the Consortium's grants",
+        "focusArea": "Impact tracking & evaluation",
+        "status": "active"
+      },
+      {
+        "id": 6,
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "amount": 50000,
+        "formattedAmount": "$50K",
+        "description": "Renewal of the NJ News Commons Spanish Translation Service",
+        "focusArea": "Spanish-language news service",
+        "bipocLed": true,
         "status": "active"
       }
     ]

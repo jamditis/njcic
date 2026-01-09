@@ -390,20 +390,21 @@
     }
   ],
   "grantInfo": {
-    "totalFunding": 403300,
-    "formattedFunding": "$403K",
+    "totalFunding": 423300,
+    "formattedFunding": "$423K",
     "years": [
       "2021",
       "2022",
       "2023",
       "2024",
-      "2025"
+      "2025",
+      "2026"
     ],
     "status": "active",
     "county": "Essex County",
     "city": "Bloomfield",
     "focusArea": "Civic news and information reporting; Journalism pipeline",
-    "grantCount": 2,
+    "grantCount": 3,
     "hasMultipleGrants": true,
     "grants": [
       {
@@ -430,6 +431,18 @@
         "formattedAmount": "$3K",
         "description": "To support the placement of a student intern through the Statewide Paid Internship Program.",
         "focusArea": "Journalism pipeline",
+        "status": "active"
+      },
+      {
+        "id": 3,
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "amount": 20000,
+        "formattedAmount": "$20K",
+        "description": "Bump-up grant to support continued operations and growth",
+        "focusArea": "Civic news and information reporting",
         "status": "active"
       }
     ]
