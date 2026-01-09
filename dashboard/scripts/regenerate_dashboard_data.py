@@ -75,7 +75,7 @@ def load_grantee_data():
 
             if total_posts > 0:
                 engagement_rate = round(total_engagement / total_posts, 2) if total_posts > 0 else 0
-                grantees.append({
+                grantee_entry = {
                     'name': name,
                     'slug': slug,
                     'posts': total_posts,
@@ -84,7 +84,11 @@ def load_grantee_data():
                     'engagementRate': engagement_rate,
                     'topPlatform': top_platform or 'N/A',
                     'platformsScraped': platforms_scraped
-                })
+                }
+                # Include logo URL if available
+                if data.get('logo'):
+                    grantee_entry['logo'] = data['logo']
+                grantees.append(grantee_entry)
 
         except (json.JSONDecodeError, IOError) as e:
             print(f"Warning: Could not load {json_file}: {e}")

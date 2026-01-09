@@ -475,11 +475,16 @@
     }
 
     /**
-     * Get grantee logo path from slug
+     * Get grantee logo path from slug or logo URL
      * @param {string} slug - Grantee slug
+     * @param {string} logoUrl - Optional logo URL from grantee data
      * @returns {string} Path to logo image
      */
-    function getGranteeLogoPath(slug) {
+    function getGranteeLogoPath(slug, logoUrl) {
+        // Use logo URL from grantee data if available
+        if (logoUrl) {
+            return logoUrl;
+        }
         // Map variant slugs to their logo files
         const logoMap = {
             'hopeloft-inc': 'hopeloft',
@@ -517,7 +522,7 @@
         grid.innerHTML = grantees.map((grantee, index) => {
             const engagementRate = grantee.posts > 0 ? (grantee.engagement / grantee.posts).toFixed(1) : 0;
             const platformColor = getPlatformColor(grantee.topPlatform);
-            const logoPath = getGranteeLogoPath(grantee.slug);
+            const logoPath = getGranteeLogoPath(grantee.slug, grantee.logo);
 
             return `
                 <a href="grantees/${grantee.slug}.html" class="grantee-card group block" style="animation-delay: ${index * 50}ms">
