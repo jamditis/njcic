@@ -509,19 +509,20 @@
     }
   ],
   "grantInfo": {
-    "totalFunding": 300000,
-    "formattedFunding": "$300K",
+    "totalFunding": 320000,
+    "formattedFunding": "$320K",
     "years": [
       "2023",
       "2024",
-      "2025"
+      "2025",
+      "2026"
     ],
     "status": "active",
     "county": "Essex County",
     "city": "Newark",
     "focusArea": "Civic engagement in NJ communities",
-    "grantCount": 1,
-    "hasMultipleGrants": false,
+    "grantCount": 2,
+    "hasMultipleGrants": true,
     "grants": [
       {
         "id": 1,
@@ -532,7 +533,19 @@
         ],
         "amount": 300000,
         "formattedAmount": "$300K",
-        "description": "To foster civic engagement in Newark public schools through: in-depth reporting on school segregation litigation and federal Covid relief spending; adding a state education policy reporting fellow; a texting service to inform the community about school board actions; a 2024 school board election guide; and first person student essays published through Chalkbeat Newark’s Student Voices program.",
+        "description": "To foster civic engagement in Newark public schools through: in-depth reporting on school segregation litigation and federal Covid relief spending; adding a state education policy reporting fellow; a texting service to inform the community about school board actions; a 2024 school board election guide; and first person student essays published through Chalkbeat Newark's Student Voices program.",
+        "focusArea": "Civic engagement in NJ communities",
+        "status": "active"
+      },
+      {
+        "id": 2,
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "amount": 20000,
+        "formattedAmount": "$20K",
+        "description": "Bump-up grant to support continued operations and growth",
         "focusArea": "Civic engagement in NJ communities",
         "status": "active"
       }

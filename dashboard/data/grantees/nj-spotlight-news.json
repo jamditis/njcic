@@ -678,19 +678,20 @@
     }
   ],
   "grantInfo": {
-    "totalFunding": 455000,
-    "formattedFunding": "$455K",
+    "totalFunding": 555000,
+    "formattedFunding": "$555K",
     "years": [
       "2022",
       "2023",
       "2024",
-      "2025"
+      "2025",
+      "2026"
     ],
     "status": "active",
     "county": "Statewide",
     "city": "Newark",
-    "focusArea": "Civic news and information reporting",
-    "grantCount": 2,
+    "focusArea": "Civic news and information reporting; Federal coverage reporter",
+    "grantCount": 3,
     "hasMultipleGrants": true,
     "grants": [
       {
@@ -716,6 +717,18 @@
         "formattedAmount": "$205K",
         "description": "To hire a Washington, D.C.-based correspondent to provide regular reporting to NJ Spotlight News and a collaborative network of newsrooms across the state on developments affecting New Jersey.",
         "focusArea": "Civic news and information reporting",
+        "status": "active"
+      },
+      {
+        "id": 3,
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "amount": 100000,
+        "formattedAmount": "$100K",
+        "description": "Renewal grant for federal coverage reporter.",
+        "focusArea": "Federal coverage reporter",
         "status": "active"
       }
     ]

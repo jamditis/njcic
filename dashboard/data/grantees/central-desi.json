@@ -263,19 +263,20 @@
     }
   ],
   "grantInfo": {
-    "totalFunding": 281066,
-    "formattedFunding": "$281K",
+    "totalFunding": 301066,
+    "formattedFunding": "$301K",
     "years": [
       "2023",
       "2024",
-      "2025"
+      "2025",
+      "2026"
     ],
     "status": "active",
     "county": "Mercer County",
     "city": "Trenton",
     "focusArea": "Journalism pipeline",
-    "grantCount": 1,
-    "hasMultipleGrants": false,
+    "grantCount": 2,
+    "hasMultipleGrants": true,
     "grants": [
       {
         "id": 1,
@@ -287,6 +288,18 @@
         "amount": 281066,
         "formattedAmount": "$281K",
         "description": "To fund a fellowship opportunity that will cultivate college students as future journalists in New Jersey and train them to report, write, and engage with local communities by covering the South Asian American community.",
+        "focusArea": "Journalism pipeline",
+        "status": "active"
+      },
+      {
+        "id": 2,
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "amount": 20000,
+        "formattedAmount": "$20K",
+        "description": "Bump-up grant to support continued operations and growth",
         "focusArea": "Journalism pipeline",
         "status": "active"
       }

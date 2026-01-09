@@ -615,20 +615,21 @@
     }
   ],
   "grantInfo": {
-    "totalFunding": 360000,
-    "formattedFunding": "$360K",
+    "totalFunding": 380000,
+    "formattedFunding": "$380K",
     "years": [
       "2022",
       "2023",
       "2024",
-      "2025"
+      "2025",
+      "2026"
     ],
     "status": "active",
     "county": "Hudson County",
     "city": "Jersey City",
     "focusArea": "Civic news and information reporting",
-    "grantCount": 1,
-    "hasMultipleGrants": false,
+    "grantCount": 2,
+    "hasMultipleGrants": true,
     "grants": [
       {
         "id": 1,
@@ -641,6 +642,18 @@
         "amount": 360000,
         "formattedAmount": "$360K",
         "description": "To support Slice of Culture, a group of young BIPOC storytellers who are bringing civic engagement to Jersey City and Hudson County through a series of how-to projects and informational stories targeted to immigrant families and communities of color. It is opening doors to aspiring journalists who are committed to strong, local journalism and stories that matter to the community.",
+        "focusArea": "Civic news and information reporting",
+        "status": "active"
+      },
+      {
+        "id": 2,
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "amount": 20000,
+        "formattedAmount": "$20K",
+        "description": "Bump-up grant to support continued operations and growth",
         "focusArea": "Civic news and information reporting",
         "status": "active"
       }

@@ -223,19 +223,20 @@
     }
   ],
   "grantInfo": {
-    "totalFunding": 308300,
-    "formattedFunding": "$308K",
+    "totalFunding": 408300,
+    "formattedFunding": "$408K",
     "years": [
       "2022",
       "2023",
       "2024",
-      "2025"
+      "2025",
+      "2026"
     ],
     "status": "active",
     "county": "Statewide",
     "city": "Newark",
-    "focusArea": "Civic news and information reporting; Blue Engine Tech & Sustainability Accelerator Grant; Journalism pipeline",
-    "grantCount": 3,
+    "focusArea": "Civic news and information reporting; Blue Engine Tech & Sustainability Accelerator Grant; Journalism pipeline; Investigative journalism",
+    "grantCount": 4,
     "hasMultipleGrants": true,
     "grants": [
       {
@@ -247,7 +248,7 @@
         ],
         "amount": 295000,
         "formattedAmount": "$295K",
-        "description": "To build The Jersey Vindicator — the “ProPublica of New Jersey” — with the goal of engaging and empowering the public through investigative journalism at the local, county, and state level in its publication, ultimately ensuring that residents — particularly those in underserved communities — are better informed about government, business, education, transportation, criminal justice reform, and the environment.",
+        "description": "To build The Jersey Vindicator — the "ProPublica of New Jersey" — with the goal of engaging and empowering the public through investigative journalism at the local, county, and state level in its publication, ultimately ensuring that residents — particularly those in underserved communities — are better informed about government, business, education, transportation, criminal justice reform, and the environment.",
         "focusArea": "Civic news and information reporting",
         "status": "active"
       },
@@ -271,6 +272,18 @@
         "formattedAmount": "$3K",
         "description": "To support the placement of a student intern through the Statewide Paid Internship Program.",
         "focusArea": "Journalism pipeline",
+        "status": "active"
+      },
+      {
+        "id": 4,
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "amount": 100000,
+        "formattedAmount": "$100K",
+        "description": "Renewal grant for investigative journalism.",
+        "focusArea": "Investigative journalism",
         "status": "active"
       }
     ]

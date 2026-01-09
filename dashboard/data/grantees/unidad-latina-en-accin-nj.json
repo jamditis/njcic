@@ -195,19 +195,21 @@
   },
   "time_series": [],
   "grantInfo": {
-    "totalFunding": 270000,
-    "formattedFunding": "$270K",
+    "totalFunding": 370000,
+    "formattedFunding": "$370K",
     "years": [
       "2022",
       "2023",
-      "2024"
+      "2024",
+      "2025",
+      "2026"
     ],
     "status": "active",
     "county": "Statewide",
     "city": "New Brunswick",
-    "focusArea": "Civic news and information reporting",
-    "grantCount": 1,
-    "hasMultipleGrants": false,
+    "focusArea": "Civic news and information reporting; Civic news (immigrant workers)",
+    "grantCount": 2,
+    "hasMultipleGrants": true,
     "grants": [
       {
         "id": 1,
@@ -218,9 +220,22 @@
         ],
         "amount": 270000,
         "formattedAmount": "$270K",
-        "description": "To support the Radio Jornalera NJ Communication Project, which brings together the development, production and dissemination of public service announcements from the Jornalero and Domestic Laborer Communicators throughout the state. The Public Service Announcements are on topics that affect daily life, such as housing rights, workers’ rights, wage theft, health and safety at work, healthy lifestyle, and/or climate change.",
+        "description": "To support the Radio Jornalera NJ Communication Project, which brings together the development, production and dissemination of public service announcements from the Jornalero and Domestic Laborer Communicators throughout the state. The Public Service Announcements are on topics that affect daily life, such as housing rights, workers' rights, wage theft, health and safety at work, healthy lifestyle, and/or climate change.",
         "focusArea": "Civic news and information reporting",
         "status": "active"
+      },
+      {
+        "id": 2,
+        "years": [
+          "2025",
+          "2026"
+        ],
+        "amount": 100000,
+        "formattedAmount": "$100K",
+        "description": "Renewal grant for civic news coverage serving immigrant workers.",
+        "focusArea": "Civic news (immigrant workers)",
+        "status": "active",
+        "bipocLed": true
       }
     ]
   },
