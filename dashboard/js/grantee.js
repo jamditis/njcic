@@ -398,14 +398,15 @@
 
         // Add logo to hero section
         const logoContainer = document.getElementById('grantee-logo');
-        if (logoContainer) {
+        if (logoContainer && granteeData.logo) {
             const logoPath = getGranteeLogoPath(granteeData);
             logoContainer.innerHTML = `
                 <img src="${logoPath}" alt="${granteeData.name}"
-                     class="max-h-20 w-auto object-contain"
+                     class="max-h-20 w-auto object-contain mx-auto"
                      loading="lazy"
-                     onerror="this.style.display='none'">
+                     onerror="this.parentElement.classList.add('hidden')">
             `;
+            logoContainer.classList.remove('hidden');
         }
 
         // Render description if available
