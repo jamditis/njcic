@@ -52,6 +52,7 @@ def load_grantee_data():
             top_engagement = 0
             platforms_scraped = 0
 
+            top_posts = 0
             for platform, pdata in platforms.items():
                 posts = pdata.get('posts', 0)
                 engagement = pdata.get('engagement', 0)
@@ -68,10 +69,19 @@ def load_grantee_data():
                     platform_totals[platform]['followers'] += followers
                     platform_totals[platform]['grantees'] += 1
 
-                    # Track top platform for this grantee
+                    # Track top platform for this grantee (by engagement)
                     if engagement > top_engagement:
                         top_engagement = engagement
                         top_platform = platform
+
+                    # Track platform with most posts as fallback
+                    if posts > top_posts:
+                        top_posts = posts
+                        top_platform_by_posts = platform
+
+            # Use platform with most posts if no engagement found
+            if top_platform is None and top_posts > 0:
+                top_platform = top_platform_by_posts
 
             if total_posts > 0:
                 engagement_rate = round(total_engagement / total_posts, 2) if total_posts > 0 else 0

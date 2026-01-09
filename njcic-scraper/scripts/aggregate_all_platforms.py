@@ -197,10 +197,20 @@ def create_dashboard_data(grantees: Dict, platform_stats: Dict) -> Dict[str, Any
     for name, data in grantees.items():
         top_platform = None
         top_platform_engagement = 0
+        top_platform_posts = 0
+
+        # First pass: find platform with highest engagement
         for platform, pdata in data.get("platforms", {}).items():
             if pdata.get("engagement", 0) > top_platform_engagement:
                 top_platform_engagement = pdata["engagement"]
                 top_platform = platform
+
+        # Fallback: if no engagement, use platform with most posts
+        if top_platform is None:
+            for platform, pdata in data.get("platforms", {}).items():
+                if pdata.get("posts", 0) > top_platform_posts:
+                    top_platform_posts = pdata["posts"]
+                    top_platform = platform
 
         engagement_rate = 0
         if data["posts"] > 0:

@@ -730,7 +730,12 @@ def generate_dashboard_summary(all_grantees: List[Dict], platform_analytics: Dic
         platforms = grantee.get('platforms', {})
         if not platforms:
             return 'N/A'
-        return max(platforms.keys(), key=lambda p: platforms[p]['engagement'])
+        # First try to find platform with highest engagement
+        top_by_engagement = max(platforms.keys(), key=lambda p: platforms[p].get('engagement', 0))
+        if platforms[top_by_engagement].get('engagement', 0) > 0:
+            return top_by_engagement
+        # Fallback: platform with most posts
+        return max(platforms.keys(), key=lambda p: platforms[p].get('posts', 0))
 
     return {
         'summary': {

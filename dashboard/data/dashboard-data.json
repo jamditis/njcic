@@ -6,7 +6,7 @@
     "totalFollowers": 1066161,
     "platformsTracked": 6,
     "avgEngagementRate": 250.18,
-    "lastUpdated": "2026-01-09T19:48:15.317801",
+    "lastUpdated": "2026-01-09T23:35:48.329219",
     "scrapingDuration": "aggregated"
   },
   "platforms": {
@@ -602,7 +602,7 @@
       "engagement": 0,
       "followers": 291,
       "engagementRate": 0.0,
-      "topPlatform": "N/A",
+      "topPlatform": "facebook",
       "platformsScraped": 1
     },
     {
@@ -612,7 +612,7 @@
       "engagement": 0,
       "followers": 21960,
       "engagementRate": 0.0,
-      "topPlatform": "N/A",
+      "topPlatform": "facebook",
       "platformsScraped": 1
     },
     {
@@ -622,7 +622,7 @@
       "engagement": 0,
       "followers": 59,
       "engagementRate": 0.0,
-      "topPlatform": "N/A",
+      "topPlatform": "facebook",
       "platformsScraped": 1
     },
     {
@@ -632,7 +632,7 @@
       "engagement": 0,
       "followers": 914,
       "engagementRate": 0.0,
-      "topPlatform": "N/A",
+      "topPlatform": "facebook",
       "platformsScraped": 1
     },
     {
@@ -642,7 +642,7 @@
       "engagement": 0,
       "followers": 2,
       "engagementRate": 0.0,
-      "topPlatform": "N/A",
+      "topPlatform": "facebook",
       "platformsScraped": 1
     }
   ],
@@ -685,7 +685,7 @@
     }
   ],
   "metadata": {
-    "generatedAt": "2026-01-09T19:48:15.317818",
+    "generatedAt": "2026-01-09T23:35:48.329233",
     "platformColors": {
       "twitter": "#1DA1F2",
       "youtube": "#FF0000",
