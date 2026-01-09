@@ -480,9 +480,15 @@
 
         if (!grid) return;
 
+        // Preserve scroll position to prevent auto-scroll on DOM update
+        const scrollX = window.scrollX;
+        const scrollY = window.scrollY;
+
         if (grantees.length === 0) {
             grid.innerHTML = '';
             noResults?.classList.remove('hidden');
+            // Restore scroll position
+            window.scrollTo(scrollX, scrollY);
             return;
         }
 
@@ -529,6 +535,9 @@
                 </a>
             `;
         }).join('');
+
+        // Restore scroll position to prevent auto-scroll on DOM update
+        window.scrollTo(scrollX, scrollY);
     }
 
     /**

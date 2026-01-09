@@ -684,6 +684,10 @@
         const tbody = document.getElementById('rankings-tbody');
         if (!tbody) return;
 
+        // Preserve scroll position to prevent auto-scroll on DOM update
+        const scrollX = window.scrollX;
+        const scrollY = window.scrollY;
+
         // Get paginated data
         const pageData = getCurrentPageData();
 
@@ -721,6 +725,9 @@
                 </td>
             </tr>
         `}).join('');
+
+        // Restore scroll position to prevent auto-scroll on DOM update
+        window.scrollTo(scrollX, scrollY);
 
         // Update pagination controls
         updatePaginationControls();
