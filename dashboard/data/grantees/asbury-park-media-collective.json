@@ -123,7 +123,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/AsburyParkReporter/posts/pfbid02bVsvpLXfD8UjfMELUTVPWwDvgqExBetW4kMN1gYxiebkEXcQpTt7YoReCR3PkGoZl?__cft__[0]=AZYto7foyLcTiucw39oGMWWP27YlZl1NnBj57atnGRBW8pSXbQ9nE6d03gzIZkABGC44EvR8ftxH3YPgAEL5Ek8JAjY-ammpagquL68OPZRs5gP_gCv0wycBhy11PJrZ4pjP1EhoMfwcyAW_6kz6aqvUBIpyYLS1Z7Cgq9bw4zYNiKzhrS1zDIQHK8wrcDrsLWOPRemsMqIxHGoiI6NnyMKG&__tn__=%2CO%2CP-R",
-          "text": "https://www.nj.com/.../how-a-snowstorm-miracle-turned...\u2026 See more",
+          "text": "https://www.nj.com/.../how-a-snowstorm-miracle-turned...… See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -231,5 +231,34 @@
     "first_post": null,
     "last_post": null
   },
-  "time_series": []
+  "time_series": [],
+  "grantInfo": {
+    "totalFunding": 112600,
+    "formattedFunding": "$113K",
+    "years": [
+      "2022",
+      "2023"
+    ],
+    "status": "completed",
+    "county": "Monmouth County",
+    "city": "Asbury Park",
+    "focusArea": "Civic engagement in NJ communities",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2022",
+          "2023"
+        ],
+        "amount": 112600,
+        "formattedAmount": "$113K",
+        "description": "To create an incubator for emerging community reporters and local media makers. The work the community reporters produce over the course of the training sessions — including news articles, news broadcasts for radio, news videos and documentary short subjects, podcasts, and social media posts — is published and disseminated through a website and a network of local media partners. The project has focused on live streaming city council and board of education meetings in Asbury Park.",
+        "focusArea": "Civic engagement in NJ communities",
+        "status": "completed"
+      }
+    ]
+  },
+  "website": "https://asburyparkreporter.com"
 }

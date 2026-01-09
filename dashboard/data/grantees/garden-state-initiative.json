@@ -129,7 +129,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/GardenStateInitiative/posts/pfbid0N5RuewgHDvBxW6XkfzDRNfSvPAGGtbvpKx9C4RetFvJYznjnnKPzud6RAg9wTz3Yl?__cft__[0]=AZYNEwYHcXniWJmoveIqJQ08cYeMWR89YsVtGR-mgC-R21kaGdbPEh8oA2x4EFUIQInOhU8q8ql8GBIrcNTzQG3XyYIqOhdfwo-elR8VFd_UWxbX04ccBP9ToZdWi5_KIK2_DhcKfU2DC65Wdv59OsDywI2XdugmMDnTCrD-N4hCrT0b-zrBQr37GiBgOWXn_cw&__tn__=%2CO%2CP-R",
-          "text": "GSI has consistently stated the obvious: NJ's current path is unsustainable.  Here's a preview of higher transportation costs for motorists and mass transit users for 2\u2026 See more",
+          "text": "GSI has consistently stated the obvious: NJ's current path is unsustainable.  Here's a preview of higher transportation costs for motorists and mass transit users for 2… See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -249,7 +249,7 @@
     {
       "id": null,
       "url": "https://www.youtube.com/watch?v=ewzycQfTVJI",
-      "text": "Why Long-Term Budget Planning Matters \u2013 NJ Senator Steinhardt Talks Accountability with Audrey Lane",
+      "text": "Why Long-Term Budget Planning Matters – NJ Senator Steinhardt Talks Accountability with Audrey Lane",
       "date": null,
       "engagement": {
         "likes": 1,
@@ -268,5 +268,32 @@
     "first_post": null,
     "last_post": null
   },
-  "time_series": []
+  "time_series": [],
+  "grantInfo": {
+    "totalFunding": 100000,
+    "formattedFunding": "$100K",
+    "years": [
+      "2025"
+    ],
+    "status": "active",
+    "county": "Statewide",
+    "city": "Trenton",
+    "focusArea": "Civic news and information reporting",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2025"
+        ],
+        "amount": 100000,
+        "formattedAmount": "$100K",
+        "description": "To support the Garden State Initiative (GSI) in its efforts to leverage expert resources to develop a comprehensive data warehouse and user-friendly reporting system that provides timely analysis of past and current state budgets, as well as the proposed FY 2026 budget, with a particular focus on so-called budget resolutions (more commonly referred to as earmarks). Guided by budget experts and financial journalists, this initiative aims to enhance transparency by making otherwise opaque public expenditures more accessible and understandable, ensuring that critical fiscal information serves the broader public policy interest. For the current fiscal year, over $1 billion were allocated to these resolutions.",
+        "focusArea": "Civic news and information reporting",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://www.gardenstateinitiative.org/?gad_source=1"
 }

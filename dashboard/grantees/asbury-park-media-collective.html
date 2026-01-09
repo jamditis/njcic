@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asbury Park Media Collective - NJCIC Social Media Dashboard</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'njcic-teal': '#2dc8d2',
+                        'njcic-dark': '#183642',
+                        'njcic-light': '#e8f9fa',
+                        'platform-tiktok': '#000000',
+                        'platform-bluesky': '#0085FF',
+                        'platform-instagram': '#E4405F',
+                        'platform-youtube': '#FF0000',
+                        'platform-twitter': '#1DA1F2',
+                        'platform-facebook': '#1877F2',
+                        'platform-linkedin': '#0A66C2',
+                        'platform-threads': '#000000'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans antialiased" data-slug="asbury-park-media-collective">
+    <!-- Loading State -->
+    <div id="loading-overlay" class="fixed inset-0 bg-white z-50 flex items-center justify-center">
+        <div class="text-center">
+            <div class="loading-spinner mx-auto mb-4"></div>
+            <p class="text-njcic-dark text-lg font-medium">Loading Asbury Park Media Collective...</p>
+        </div>
+    </div>
+
+    <!-- Error State -->
+    <div id="error-state" class="hidden fixed inset-0 bg-white z-50 flex items-center justify-center">
+        <div class="text-center max-w-md px-6">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-red-100 flex items-center justify-center">
+                <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+            </div>
+            <h2 class="text-xl font-bold text-gray-900 mb-2">Grantee Not Found</h2>
+            <p id="error-message" class="text-gray-600 mb-4">We couldn't find the grantee data you're looking for.</p>
+            <a href="../index.html" class="inline-block px-6 py-2 bg-njcic-teal text-white rounded-lg hover:bg-opacity-90 transition-colors">
+                Back to Dashboard
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="opacity-0 transition-opacity duration-500">
+        <!-- Header with Navigation -->
+        <header class="bg-njcic-dark text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                        <!-- Breadcrumb -->
+                        <nav class="flex items-center text-sm mb-2" aria-label="Breadcrumb">
+                            <a href="../index.html" class="text-gray-400 hover:text-njcic-teal transition-colors">
+                                Home
+                            </a>
+                            <svg class="w-4 h-4 mx-2 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                            <a href="../index.html#grantees" class="text-gray-400 hover:text-njcic-teal transition-colors">
+                                Grantees
+                            </a>
+                            <svg class="w-4 h-4 mx-2 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                            <span id="breadcrumb-name" class="text-njcic-teal font-medium">Asbury Park Media Collective</span>
+                        </nav>
+                        <h1 class="text-xl sm:text-2xl font-bold">
+                            <span class="text-njcic-teal">NJCIC</span> Social Media Impact
+                        </h1>
+                    </div>
+                    <div class="mt-3 sm:mt-0">
+                        <a href="../index.html" class="inline-flex items-center px-4 py-2 text-sm font-medium text-njcic-teal border border-njcic-teal rounded-lg hover:bg-njcic-teal hover:text-white transition-colors">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                            </svg>
+                            Back to Dashboard
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Grantee Hero Section -->
+        <section class="bg-gradient-to-br from-njcic-dark to-gray-800 text-white py-10 sm:py-14">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-8">
+                    <h2 id="grantee-name" class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3">Asbury Park Media Collective</h2>
+                    <div id="grantee-website" class="hidden">
+                        <a href="#" id="grantee-website-link" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-njcic-teal hover:text-white transition-colors">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                            <span id="grantee-website-text">Visit Website</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="platform-icons" class="flex justify-center gap-3 mb-8"></div>
+
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                    <div class="metric-card bg-white bg-opacity-10 backdrop-blur rounded-2xl p-5 sm:p-6 text-center transform hover:scale-105 transition-transform">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-3 rounded-full bg-njcic-teal bg-opacity-20 flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-njcic-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                            </svg>
+                        </div>
+                        <div id="stat-posts" class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-1">--</div>
+                        <div class="text-gray-300 text-sm font-medium">Total Posts</div>
+                    </div>
+
+                    <div class="metric-card bg-white bg-opacity-10 backdrop-blur rounded-2xl p-5 sm:p-6 text-center transform hover:scale-105 transition-transform">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-3 rounded-full bg-njcic-teal bg-opacity-20 flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-njcic-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <div id="stat-engagement" class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-1">--</div>
+                        <div class="text-gray-300 text-sm font-medium">Total Engagement</div>
+                    </div>
+
+                    <div class="metric-card bg-white bg-opacity-10 backdrop-blur rounded-2xl p-5 sm:p-6 text-center transform hover:scale-105 transition-transform">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-3 rounded-full bg-njcic-teal bg-opacity-20 flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-njcic-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div id="stat-platforms" class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-1">--</div>
+                        <div class="text-gray-300 text-sm font-medium">Platforms Active</div>
+                    </div>
+
+                    <div class="metric-card bg-white bg-opacity-10 backdrop-blur rounded-2xl p-5 sm:p-6 text-center transform hover:scale-105 transition-transform">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-3 rounded-full bg-njcic-teal bg-opacity-20 flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-njcic-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                            </svg>
+                        </div>
+                        <div id="stat-rate" class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-1">--</div>
+                        <div class="text-gray-300 text-sm font-medium">Avg. Engagement/Post</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grant Information Section -->
+        <section id="grant-info-section" class="py-10 sm:py-14 bg-white hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">About the grant</h3>
+                <!-- Content dynamically populated by grantee.js -->
+            </div>
+        </section>
+
+        <!-- Platform Breakdown Section -->
+        <section class="py-10 sm:py-14 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">Platform breakdown</h3>
+                <div id="platform-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+                    <div class="skeleton h-48 rounded-2xl"></div>
+                    <div class="skeleton h-48 rounded-2xl"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Charts Section -->
+        <section class="py-10 sm:py-14 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">Engagement analytics</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+                    <div class="chart-card bg-white rounded-2xl shadow-lg p-6 sm:p-8 border border-gray-100">
+                        <h4 class="text-lg font-bold text-njcic-dark mb-4">Engagement by Platform</h4>
+                        <div class="relative h-64 sm:h-72">
+                            <canvas id="engagementPieChart"></canvas>
+                        </div>
+                        <div id="engagement-pie-legend" class="mt-4 flex flex-wrap justify-center gap-3"></div>
+                    </div>
+
+                    <div class="chart-card bg-white rounded-2xl shadow-lg p-6 sm:p-8 border border-gray-100">
+                        <h4 class="text-lg font-bold text-njcic-dark mb-4">Posts by Platform</h4>
+                        <div class="relative h-64 sm:h-72">
+                            <canvas id="postsBarChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="bg-njcic-light rounded-xl p-5 text-center">
+                        <div class="text-2xl sm:text-3xl font-bold text-njcic-dark" id="avg-engagement-per-post">--</div>
+                        <div class="text-sm text-gray-600 mt-1">Avg. Engagement per Post</div>
+                    </div>
+                    <div class="bg-njcic-light rounded-xl p-5 text-center">
+                        <div id="best-platform" class="text-2xl sm:text-3xl font-bold text-njcic-dark">--</div>
+                        <div class="text-sm text-gray-600 mt-1">Best Performing Platform</div>
+                    </div>
+                    <div class="bg-njcic-light rounded-xl p-5 text-center">
+                        <div id="top-post-engagement" class="text-2xl sm:text-3xl font-bold text-njcic-dark">--</div>
+                        <div class="text-sm text-gray-600 mt-1">Top Post Engagement</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Posts Section -->
+        <section class="py-10 sm:py-14 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">Top posts</h3>
+                <div id="top-posts-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+                    <div class="skeleton h-64 rounded-2xl"></div>
+                    <div class="skeleton h-64 rounded-2xl"></div>
+                    <div class="skeleton h-64 rounded-2xl"></div>
+                </div>
+                <div id="no-posts-message" class="hidden text-center py-12">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-100 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <p class="text-gray-500">No detailed post data available yet.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Activity Timeline -->
+        <section id="timeline-section" class="py-10 sm:py-14 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">Recent activity</h3>
+                <div id="activity-timeline" class="relative">
+                    <div class="absolute left-4 sm:left-6 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+                    <div id="timeline-items" class="space-y-4">
+                        <div class="skeleton h-20 rounded-lg ml-12"></div>
+                        <div class="skeleton h-20 rounded-lg ml-12"></div>
+                        <div class="skeleton h-20 rounded-lg ml-12"></div>
+                    </div>
+                </div>
+                <div id="no-timeline-message" class="hidden text-center py-12">
+                    <p class="text-gray-500">No recent activity data available.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Widget -->
+        <section class="py-10 sm:py-14 bg-gradient-to-br from-njcic-dark to-gray-800 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto">
+                    <h3 class="text-xl sm:text-2xl font-bold mb-4">Performance ranking</h3>
+                    <div class="bg-white bg-opacity-10 backdrop-blur rounded-2xl p-6 sm:p-8">
+                        <div id="ranking-badge" class="mb-4">
+                            <span class="inline-flex items-center px-4 py-2 rounded-full text-lg font-bold bg-njcic-teal text-white">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <span id="ranking-text">Calculating...</span>
+                            </span>
+                        </div>
+                        <p class="text-gray-300 mb-4" id="ranking-description">
+                            Based on total engagement across all platforms.
+                        </p>
+                        <div class="flex items-center justify-center gap-6 text-sm">
+                            <div>
+                                <span class="text-gray-400">Rank:</span>
+                                <span id="rank-number" class="font-bold text-white ml-1">#--</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-400">of</span>
+                                <span id="total-grantees" class="font-bold text-white ml-1">-- grantees</span>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <a href="../rankings.html" class="inline-flex items-center text-njcic-teal hover:text-white transition-colors">
+                                <span>View All Rankings</span>
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-njcic-dark text-white py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                    <div class="text-center sm:text-left mb-4 sm:mb-0">
+                        <p class="text-gray-400 text-sm">
+                            <span class="text-njcic-teal font-semibold">NJCIC</span> - New Jersey Civic Information Consortium
+                        </p>
+                        <p class="text-gray-500 text-xs mt-1">
+                            Supporting local journalism and civic information across New Jersey
+                        </p>
+                    </div>
+                    <div class="text-center sm:text-right">
+                        <p class="text-gray-400 text-sm">
+                            Last Updated: <span id="last-updated" class="text-njcic-teal font-medium">--</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-6 pt-6 border-t border-gray-700 text-center">
+                    <p class="text-gray-500 text-xs">
+                        Dashboard powered by the Center for Cooperative Media at Montclair State University
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/charts.js"></script>
+    <script src="../js/grantee.js"></script>
+</body>
+</html>

@@ -180,7 +180,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/NJLocalMedia/posts/pfbid035Bp8xZuYtH7xkZgNa794TiZqJXWLZRXT4C418q5cVAttoa59wZc3UYL8WCgzVn6hl?__cft__[0]=AZas338CZoiyTsqZsc6EAl5Oa2a2jBu2avCW-qR8wNbJy9RWLTcJHWRNGWoayAaXawUgMNn1jn2iUvGUrREzdrK-055adVr1MOXUUbBIsalP-n8JzJx8jTTVy584WLUTOr0_1W42EwwJhLze5lB9Zv2jLbtgmiYUV3CJtlKKYPNYj2IFPUZJOCWS1sKpGewCifY&__tn__=%2CO%2CP-R",
-          "text": "CNJLM is pleased to announce the recipients of the Impact in Student Journalism Awards, recognizing outstanding high school and college reporters whose work has made a \u2026 See more",
+          "text": "CNJLM is pleased to announce the recipients of the Impact in Student Journalism Awards, recognizing outstanding high school and college reporters whose work has made a … See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -356,5 +356,34 @@
       "posts": 3,
       "engagement": 17
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 158315,
+    "formattedFunding": "$158K",
+    "years": [
+      "2023",
+      "2024"
+    ],
+    "status": "active",
+    "county": "Morris County",
+    "city": "New Vernon",
+    "focusArea": "Civic engagement in NJ communities",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2023",
+          "2024"
+        ],
+        "amount": 158315,
+        "formattedAmount": "$158K",
+        "description": "To fund the continuation of the work of the Northern NJ News Collaborative on its “Stormwater Matters” initiative and will grow community engagement.",
+        "focusArea": "Civic engagement in NJ communities",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://newsweneed.org"
 }

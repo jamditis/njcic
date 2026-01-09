@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movimiento Cosecha - NJCIC Social Media Dashboard</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="../njcic-favicon-32.png">
-    <link rel="icon" type="image/x-icon" href="../njcic-favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="../njcic-apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,11 +16,34 @@
     <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 
-    <!-- Custom Styles (includes fonts via @import) -->
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="../css/styles.css">
 
     <!-- Tailwind Config -->
-    <script src="../js/tailwind-config.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'njcic-teal': '#2dc8d2',
+                        'njcic-dark': '#183642',
+                        'njcic-light': '#e8f9fa',
+                        'platform-tiktok': '#000000',
+                        'platform-bluesky': '#0085FF',
+                        'platform-instagram': '#E4405F',
+                        'platform-youtube': '#FF0000',
+                        'platform-twitter': '#1DA1F2',
+                        'platform-facebook': '#1877F2',
+                        'platform-linkedin': '#0A66C2',
+                        'platform-threads': '#000000'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body class="bg-gray-50 font-sans antialiased" data-slug="movimiento-cosecha">
     <!-- Loading State -->
@@ -40,96 +64,64 @@
             </div>
             <h2 class="text-xl font-bold text-gray-900 mb-2">Grantee Not Found</h2>
             <p id="error-message" class="text-gray-600 mb-4">We couldn't find the grantee data you're looking for.</p>
-            <a href="../index.html" class="inline-block px-6 py-2 bg-[#0e7c86] text-white rounded-lg hover:bg-opacity-90 transition-colors">
-                Back to dashboard
+            <a href="../index.html" class="inline-block px-6 py-2 bg-njcic-teal text-white rounded-lg hover:bg-opacity-90 transition-colors">
+                Back to Dashboard
             </a>
         </div>
     </div>
 
     <!-- Main Content -->
     <div id="main-content" class="opacity-0 transition-opacity duration-500">
-    <!-- Skip Link for Accessibility -->
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-lg">
-        Skip to main content
-    </a>
-
-    <!-- Navigation -->
-    <nav id="main-nav" class="sticky top-0 z-40 w-full bg-white shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center gap-2">
-                    <a href="../index.html" class="flex items-center gap-2">
-                        <img src="../njcic-logo.png" alt="NJCIC Logo" class="w-8 h-8 rounded-lg">
-                        <span class="text-lg font-bold text-slate-900 tracking-tight">NJCIC <span class="text-slate-400 font-normal hidden sm:inline">Dashboard</span></span>
-                    </a>
-                </div>
-
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-1">
-                    <a href="../index.html#overview" class="nav-link px-3 py-2 rounded-md text-sm">Overview</a>
-                    <a href="../index.html#grantees" class="nav-link px-3 py-2 rounded-md text-sm font-semibold text-primary" aria-current="page">Grantees</a>
-                    <a href="../index.html#rankings" class="nav-link px-3 py-2 rounded-md text-sm">Rankings</a>
-                    <a href="../platforms.html" class="nav-link px-3 py-2 rounded-md text-sm">Platforms</a>
-                    <a href="../about.html" class="nav-link px-3 py-2 rounded-md text-sm">About</a>
-                </div>
-
-                <!-- Mobile Toggle -->
-                <div class="flex items-center gap-3">
-                    <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-slate-900" aria-expanded="false" aria-controls="mobile-menu">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                        </svg>
-                    </button>
+        <!-- Header with Navigation -->
+        <header class="bg-njcic-dark text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                        <!-- Breadcrumb -->
+                        <nav class="flex items-center text-sm mb-2" aria-label="Breadcrumb">
+                            <a href="../index.html" class="text-gray-400 hover:text-njcic-teal transition-colors">
+                                Home
+                            </a>
+                            <svg class="w-4 h-4 mx-2 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                            <a href="../index.html#grantees" class="text-gray-400 hover:text-njcic-teal transition-colors">
+                                Grantees
+                            </a>
+                            <svg class="w-4 h-4 mx-2 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                            <span id="breadcrumb-name" class="text-njcic-teal font-medium">Movimiento Cosecha</span>
+                        </nav>
+                        <h1 class="text-xl sm:text-2xl font-bold">
+                            <span class="text-njcic-teal">NJCIC</span> Social Media Impact
+                        </h1>
+                    </div>
+                    <div class="mt-3 sm:mt-0">
+                        <a href="../index.html" class="inline-flex items-center px-4 py-2 text-sm font-medium text-njcic-teal border border-njcic-teal rounded-lg hover:bg-njcic-teal hover:text-white transition-colors">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                            </svg>
+                            Back to Dashboard
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </header>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 py-2 shadow-lg">
-            <a href="../index.html#overview" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50">Overview</a>
-            <a href="../index.html#grantees" class="block px-4 py-2 text-sm text-primary font-semibold bg-slate-50" aria-current="page">Grantees</a>
-            <a href="../index.html#rankings" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50">Rankings</a>
-            <a href="../platforms.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50">Platforms</a>
-            <a href="../about.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50">About</a>
-        </div>
-    </nav>
-
-    <!-- Breadcrumb -->
-    <nav class="bg-slate-50 border-b border-slate-200" aria-label="Breadcrumb">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-            <ol class="flex items-center text-sm">
-                <li>
-                    <a href="../index.html" class="text-slate-500 hover:text-primary transition-colors">Dashboard</a>
-                </li>
-                <li class="flex items-center">
-                    <svg class="w-4 h-4 mx-2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                    <a href="../index.html#grantees" class="text-slate-500 hover:text-primary transition-colors">Grantees</a>
-                </li>
-                <li class="flex items-center">
-                    <svg class="w-4 h-4 mx-2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                    <span id="breadcrumb-name" class="text-slate-900 font-medium">Movimiento Cosecha</span>
-                </li>
-            </ol>
-        </div>
-    </nav>
-
-<!-- Grantee Hero Section -->
+        <!-- Grantee Hero Section -->
         <section class="bg-gradient-to-br from-njcic-dark to-gray-800 text-white py-10 sm:py-14">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-8">
-                    <!-- Grantee Logo -->
-                    <div id="grantee-logo" class="mb-4 flex justify-center">
-                        <!-- Logo will be inserted by JavaScript -->
-                    </div>
                     <h2 id="grantee-name" class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3">Movimiento Cosecha</h2>
-                    <div id="grantee-description" class="hidden mb-4 px-4"></div>
-                    <div id="grantee-website" class="hidden mt-4"></div>
+                    <div id="grantee-website" class="hidden">
+                        <a href="#" id="grantee-website-link" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-njcic-teal hover:text-white transition-colors">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                            <span id="grantee-website-text">Visit Website</span>
+                        </a>
+                    </div>
                 </div>
 
                 <div id="platform-icons" class="flex justify-center gap-3 mb-8"></div>
@@ -142,7 +134,7 @@
                             </svg>
                         </div>
                         <div id="stat-posts" class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-1">--</div>
-                        <div class="text-gray-200 text-sm font-medium">Total posts</div>
+                        <div class="text-gray-300 text-sm font-medium">Total Posts</div>
                     </div>
 
                     <div class="metric-card bg-white bg-opacity-10 backdrop-blur rounded-2xl p-5 sm:p-6 text-center transform hover:scale-105 transition-transform">
@@ -152,7 +144,7 @@
                             </svg>
                         </div>
                         <div id="stat-engagement" class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-1">--</div>
-                        <div class="text-gray-200 text-sm font-medium">Total engagement</div>
+                        <div class="text-gray-300 text-sm font-medium">Total Engagement</div>
                     </div>
 
                     <div class="metric-card bg-white bg-opacity-10 backdrop-blur rounded-2xl p-5 sm:p-6 text-center transform hover:scale-105 transition-transform">
@@ -162,7 +154,7 @@
                             </svg>
                         </div>
                         <div id="stat-platforms" class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-1">--</div>
-                        <div class="text-gray-200 text-sm font-medium">Platforms active</div>
+                        <div class="text-gray-300 text-sm font-medium">Platforms Active</div>
                     </div>
 
                     <div class="metric-card bg-white bg-opacity-10 backdrop-blur rounded-2xl p-5 sm:p-6 text-center transform hover:scale-105 transition-transform">
@@ -172,9 +164,17 @@
                             </svg>
                         </div>
                         <div id="stat-rate" class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-1">--</div>
-                        <div class="text-gray-200 text-sm font-medium">Avg. engagement/post</div>
+                        <div class="text-gray-300 text-sm font-medium">Avg. Engagement/Post</div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Grant Information Section -->
+        <section id="grant-info-section" class="py-10 sm:py-14 bg-white hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">About the grant</h3>
+                <!-- Content dynamically populated by grantee.js -->
             </div>
         </section>
 
@@ -195,7 +195,7 @@
                 <h3 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">Engagement analytics</h3>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
                     <div class="chart-card bg-white rounded-2xl shadow-lg p-6 sm:p-8 border border-gray-100">
-                        <h4 class="text-lg font-bold text-njcic-dark mb-4">Engagement by platform</h4>
+                        <h4 class="text-lg font-bold text-njcic-dark mb-4">Engagement by Platform</h4>
                         <div class="relative h-64 sm:h-72">
                             <canvas id="engagementPieChart"></canvas>
                         </div>
@@ -203,7 +203,7 @@
                     </div>
 
                     <div class="chart-card bg-white rounded-2xl shadow-lg p-6 sm:p-8 border border-gray-100">
-                        <h4 class="text-lg font-bold text-njcic-dark mb-4">Posts by platform</h4>
+                        <h4 class="text-lg font-bold text-njcic-dark mb-4">Posts by Platform</h4>
                         <div class="relative h-64 sm:h-72">
                             <canvas id="postsBarChart"></canvas>
                         </div>
@@ -213,15 +213,15 @@
                 <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
                     <div class="bg-njcic-light rounded-xl p-5 text-center">
                         <div class="text-2xl sm:text-3xl font-bold text-njcic-dark" id="avg-engagement-per-post">--</div>
-                        <div class="text-sm text-gray-600 mt-1">Avg. engagement per post</div>
+                        <div class="text-sm text-gray-600 mt-1">Avg. Engagement per Post</div>
                     </div>
                     <div class="bg-njcic-light rounded-xl p-5 text-center">
                         <div id="best-platform" class="text-2xl sm:text-3xl font-bold text-njcic-dark">--</div>
-                        <div class="text-sm text-gray-600 mt-1">Best performing platform</div>
+                        <div class="text-sm text-gray-600 mt-1">Best Performing Platform</div>
                     </div>
                     <div class="bg-njcic-light rounded-xl p-5 text-center">
                         <div id="top-post-engagement" class="text-2xl sm:text-3xl font-bold text-njcic-dark">--</div>
-                        <div class="text-sm text-gray-600 mt-1">Top post engagement</div>
+                        <div class="text-sm text-gray-600 mt-1">Top Post Engagement</div>
                     </div>
                 </div>
             </div>
@@ -294,7 +294,7 @@
                         </div>
                         <div class="mt-6">
                             <a href="../rankings.html" class="inline-flex items-center text-njcic-teal hover:text-white transition-colors">
-                                <span>View all rankings</span>
+                                <span>View All Rankings</span>
                                 <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                                 </svg>
@@ -310,21 +310,21 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
                     <div class="text-center sm:text-left mb-4 sm:mb-0">
-                        <p class="text-gray-300 text-sm">
-                            <span class="text-white font-semibold">NJCIC</span> - New Jersey Civic Information Consortium
+                        <p class="text-gray-400 text-sm">
+                            <span class="text-njcic-teal font-semibold">NJCIC</span> - New Jersey Civic Information Consortium
                         </p>
-                        <p class="text-gray-400 text-xs mt-1">
+                        <p class="text-gray-500 text-xs mt-1">
                             Supporting local journalism and civic information across New Jersey
                         </p>
                     </div>
                     <div class="text-center sm:text-right">
-                        <p class="text-gray-300 text-sm">
+                        <p class="text-gray-400 text-sm">
                             Last Updated: <span id="last-updated" class="text-njcic-teal font-medium">--</span>
                         </p>
                     </div>
                 </div>
                 <div class="mt-6 pt-6 border-t border-gray-700 text-center">
-                    <p class="text-gray-400 text-xs">
+                    <p class="text-gray-500 text-xs">
                         Dashboard powered by the Center for Cooperative Media at Montclair State University
                     </p>
                 </div>

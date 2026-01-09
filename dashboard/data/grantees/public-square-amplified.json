@@ -52,7 +52,7 @@
         {
           "id": "3m3ilniaahs2p",
           "url": "https://bsky.app/profile/publicsq.bsky.social/post/3m3ilniaahs2p",
-          "text": "\u201cIf you can't fly, then run,\nif you can't run, then walk,\nif you can't walk, then crawl,\nbut whatever you do,\nyou have to keep moving forward.\u201d\n- Dr. Martin Luther King Jr.\n\n#NoKings #NoKingsInAmerica",
+          "text": "“If you can't fly, then run,\nif you can't run, then walk,\nif you can't walk, then crawl,\nbut whatever you do,\nyou have to keep moving forward.”\n- Dr. Martin Luther King Jr.\n\n#NoKings #NoKingsInAmerica",
           "date": "2025-10-18T20:07:38.416000",
           "engagement": {
             "likes": 2,
@@ -66,7 +66,7 @@
         {
           "id": "3lzqzj7ivsc2w",
           "url": "https://bsky.app/profile/publicsq.bsky.social/post/3lzqzj7ivsc2w",
-          "text": "In pt. 2 of our 2025 Citizen Journalism class\u2019s series on the Essex-Hudson Greenway, the team explores national Greenway trends, the role of vegetation and biodiversity, and how public transit connect",
+          "text": "In pt. 2 of our 2025 Citizen Journalism class’s series on the Essex-Hudson Greenway, the team explores national Greenway trends, the role of vegetation and biodiversity, and how public transit connect",
           "date": "2025-09-26T17:46:42.078000",
           "engagement": {
             "likes": 3,
@@ -273,7 +273,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/publicsquarenews/posts/pfbid0kFbcwmC4deMTBeN4ownYF2Jun1Q5M4ufK3dijxKTR7MoVnr7b79iepHUGW59o1Tgl?__cft__[0]=AZZjjKiqcEdjrYzWL8gQfdF7ZftKaLnuauVYUc7VmHH9vTgdutv5VTuDLjvSypJ2W0HhVZddgDDWwhvh5xnGZvHBQafV4A4D7TL5KP4Glqb2ZkSk4gvnSxzMvWwkCXON-kumLqqzNRd4ytUZVRY_HOkkeX_lI92aBvuZ_J3LDgnkx0NSL_cXe_QTV7PnojorS24&__tn__=%2CO%2CP-R",
-          "text": "For his latest Opinion piece, Political Writer Matt Dragon uses the framework of US racialized political history to draw a direct trajectory to the actions of ICE on th\u2026 See more",
+          "text": "For his latest Opinion piece, Political Writer Matt Dragon uses the framework of US racialized political history to draw a direct trajectory to the actions of ICE on th… See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -439,5 +439,47 @@
       "posts": 1,
       "engagement": 2
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 300000,
+    "formattedFunding": "$300K",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "status": "active",
+    "county": "Essex County",
+    "city": "Newark",
+    "focusArea": "Journalism pipeline; Blue Engine Tech & Sustainability Accelerator Grant",
+    "grantCount": 2,
+    "hasMultipleGrants": true,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2022",
+          "2023",
+          "2024"
+        ],
+        "amount": 290000,
+        "formattedAmount": "$290K",
+        "description": "To fund a program to recruit, train, and promote community reporters and journalism students and provide an outlet for their work in Caribbean, African, Indigenous, and Immigrant communities.",
+        "focusArea": "Journalism pipeline",
+        "status": "active"
+      },
+      {
+        "id": 2,
+        "years": [
+          "2024"
+        ],
+        "amount": 10000,
+        "formattedAmount": "$10K",
+        "description": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+        "focusArea": "Blue Engine Tech & Sustainability Accelerator Grant",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://www.publicsq.org"
 }

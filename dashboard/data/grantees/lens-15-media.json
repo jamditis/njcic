@@ -483,5 +483,32 @@
       "posts": 1,
       "engagement": 3
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 50000,
+    "formattedFunding": "$50K",
+    "years": [
+      "2022"
+    ],
+    "status": "completed",
+    "county": "Statewide",
+    "city": "Newark",
+    "focusArea": "Civic news and information reporting",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2022"
+        ],
+        "amount": 50000,
+        "formattedAmount": "$50K",
+        "description": "To launch a news agency that produces accessible, multimedia reports for and about people with disabilities in New Jersey. This grant was funded in part by support from New Jersey Health Initiatives (NJHI), a statewide grantmaking program of the Robert Wood Johnson Foundation.",
+        "focusArea": "Civic news and information reporting",
+        "status": "completed"
+      }
+    ]
+  },
+  "website": "https://lens15.com"
 }

@@ -149,7 +149,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/mercerme/posts/pfbid0qDUY1zfyp4nqiGjrZP7LP2HJvzZCWa9xtjfQwNXwbf3mVXESvxma4ReuK6w8Rs8Hl?__cft__[0]=AZZoXluShqlVceV0PbJGtcb5t6HDRu0B_GcPEbsWsp9ahTXi91k0Sf0nfR36u4AZK1nY6bAQPBphzxgRk_exUkoJyY-z8q85oUuqbcmtQBJbw8PjT5VgFq6bd_QCe22W9vfeWOFZMraEPQLeBOeE_hGO0ebybgvxtzQObjRHQrtCAvN6BvOXJOp-O2EmWFWA2W4&__tn__=%2CO%2CP-R",
-          "text": "MercerMe\n1d\n\u00a0\n\u00b7\nMERCERME.COM\nHopewell Borough Property Owners Notice - MercerMe\nHopewell Borough\u2019s 2026 assessment list will be available for public inspection at the Municipal Building, 88 E. Broad S",
+          "text": "MercerMe\n1d\n \n·\nMERCERME.COM\nHopewell Borough Property Owners Notice - MercerMe\nHopewell Borough’s 2026 assessment list will be available for public inspection at the Municipal Building, 88 E. Broad S",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -283,5 +283,44 @@
       "posts": 2,
       "engagement": 23
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 13300,
+    "formattedFunding": "$13K",
+    "years": [
+      "2024",
+      "2025"
+    ],
+    "status": "active",
+    "county": "Mercer County",
+    "city": "Pennington",
+    "focusArea": "Blue Engine Tech & Sustainability Accelerator Grant; Journalism pipeline",
+    "grantCount": 2,
+    "hasMultipleGrants": true,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2024"
+        ],
+        "amount": 10000,
+        "formattedAmount": "$10K",
+        "description": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+        "focusArea": "Blue Engine Tech & Sustainability Accelerator Grant",
+        "status": "active"
+      },
+      {
+        "id": 2,
+        "years": [
+          "2025"
+        ],
+        "amount": 3300,
+        "formattedAmount": "$3K",
+        "description": "To support the placement of a student intern through the Statewide Paid Internship Program.",
+        "focusArea": "Journalism pipeline",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://www.mercerme.com"
 }

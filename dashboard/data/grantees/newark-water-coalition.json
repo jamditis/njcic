@@ -290,5 +290,36 @@
       "posts": 3,
       "engagement": 171
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 134930,
+    "formattedFunding": "$135K",
+    "years": [
+      "2021",
+      "2022",
+      "2023"
+    ],
+    "status": "completed",
+    "county": "Essex County",
+    "city": "Newark",
+    "focusArea": "Civic engagement in NJ communities",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "amount": 134930,
+        "formattedAmount": "$135K",
+        "description": "To create Newark Community Voices, a digital-media and community-organizing training program for Newark youth. The program produces and distributes multimedia health and environment stories that center Newark community-information needs, with a focus on an oral history of the advocates who worked to clean up Newark’s drinking water.",
+        "focusArea": "Civic engagement in NJ communities",
+        "status": "completed"
+      }
+    ]
+  },
+  "website": "https://www.newarkwatercoalition.org"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "Unidad Latina en Acci\u00f3n NJ",
+  "name": "Unidad Latina en Acción NJ",
   "slug": "unidad-latina-en-accin-nj",
   "summary": {
     "total_posts": 9,
@@ -48,7 +48,7 @@
         {
           "id": null,
           "url": "https://www.youtube.com/watch?v=jN6r18409EQ",
-          "text": "Unidad Latina en Acci\u00f3n apoyando a migrantes Venezolanos en Quito Ecuador",
+          "text": "Unidad Latina en Acción apoyando a migrantes Venezolanos en Quito Ecuador",
           "date": null,
           "engagement": {
             "likes": 1,
@@ -62,7 +62,7 @@
         {
           "id": null,
           "url": "https://www.youtube.com/watch?v=IATlN5a86iA",
-          "text": "Unidad latina En acci\u00f3n",
+          "text": "Unidad latina En acción",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -132,7 +132,7 @@
     {
       "id": null,
       "url": "https://www.youtube.com/watch?v=jN6r18409EQ",
-      "text": "Unidad Latina en Acci\u00f3n apoyando a migrantes Venezolanos en Quito Ecuador",
+      "text": "Unidad Latina en Acción apoyando a migrantes Venezolanos en Quito Ecuador",
       "date": null,
       "engagement": {
         "likes": 1,
@@ -146,7 +146,7 @@
     {
       "id": null,
       "url": "https://www.youtube.com/watch?v=IATlN5a86iA",
-      "text": "Unidad latina En acci\u00f3n",
+      "text": "Unidad latina En acción",
       "date": null,
       "engagement": {
         "likes": 0,
@@ -193,5 +193,36 @@
     "first_post": null,
     "last_post": null
   },
-  "time_series": []
+  "time_series": [],
+  "grantInfo": {
+    "totalFunding": 270000,
+    "formattedFunding": "$270K",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "status": "active",
+    "county": "Statewide",
+    "city": "New Brunswick",
+    "focusArea": "Civic news and information reporting",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2022",
+          "2023",
+          "2024"
+        ],
+        "amount": 270000,
+        "formattedAmount": "$270K",
+        "description": "To support the Radio Jornalera NJ Communication Project, which brings together the development, production and dissemination of public service announcements from the Jornalero and Domestic Laborer Communicators throughout the state. The Public Service Announcements are on topics that affect daily life, such as housing rights, workers’ rights, wage theft, health and safety at work, healthy lifestyle, and/or climate change.",
+        "focusArea": "Civic news and information reporting",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://unidadlatinanj.org"
 }

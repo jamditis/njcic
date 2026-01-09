@@ -261,5 +261,36 @@
       "posts": 1,
       "engagement": 259
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 281066,
+    "formattedFunding": "$281K",
+    "years": [
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "status": "active",
+    "county": "Mercer County",
+    "city": "Trenton",
+    "focusArea": "Journalism pipeline",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "amount": 281066,
+        "formattedAmount": "$281K",
+        "description": "To fund a fellowship opportunity that will cultivate college students as future journalists in New Jersey and train them to report, write, and engage with local communities by covering the South Asian American community.",
+        "focusArea": "Journalism pipeline",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://centraldesi.beehiiv.com"
 }

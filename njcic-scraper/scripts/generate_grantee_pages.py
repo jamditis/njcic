@@ -187,10 +187,18 @@ TEMPLATE = '''<!DOCTYPE html>
             </div>
         </section>
 
+        <!-- Grant Information Section -->
+        <section id="grant-info-section" class="py-10 sm:py-14 bg-white hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">About the grant</h3>
+                <!-- Content dynamically populated by grantee.js -->
+            </div>
+        </section>
+
         <!-- Platform Breakdown Section -->
         <section class="py-10 sm:py-14 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h3 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">Platform Breakdown</h3>
+                <h3 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">Platform breakdown</h3>
                 <div id="platform-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
                     <div class="skeleton h-48 rounded-2xl"></div>
                     <div class="skeleton h-48 rounded-2xl"></div>
@@ -201,7 +209,7 @@ TEMPLATE = '''<!DOCTYPE html>
         <!-- Charts Section -->
         <section class="py-10 sm:py-14 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h3 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">Engagement Analytics</h3>
+                <h3 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">Engagement analytics</h3>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
                     <div class="chart-card bg-white rounded-2xl shadow-lg p-6 sm:p-8 border border-gray-100">
                         <h4 class="text-lg font-bold text-njcic-dark mb-4">Engagement by Platform</h4>
@@ -239,7 +247,7 @@ TEMPLATE = '''<!DOCTYPE html>
         <!-- Top Posts Section -->
         <section class="py-10 sm:py-14 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h3 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">Top Posts</h3>
+                <h3 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">Top posts</h3>
                 <div id="top-posts-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                     <div class="skeleton h-64 rounded-2xl"></div>
                     <div class="skeleton h-64 rounded-2xl"></div>
@@ -259,7 +267,7 @@ TEMPLATE = '''<!DOCTYPE html>
         <!-- Recent Activity Timeline -->
         <section id="timeline-section" class="py-10 sm:py-14 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h3 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">Recent Activity</h3>
+                <h3 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-6">Recent activity</h3>
                 <div id="activity-timeline" class="relative">
                     <div class="absolute left-4 sm:left-6 top-0 bottom-0 w-0.5 bg-gray-200"></div>
                     <div id="timeline-items" class="space-y-4">
@@ -278,7 +286,7 @@ TEMPLATE = '''<!DOCTYPE html>
         <section class="py-10 sm:py-14 bg-gradient-to-br from-njcic-dark to-gray-800 text-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-2xl mx-auto">
-                    <h3 class="text-xl sm:text-2xl font-bold mb-4">Performance Ranking</h3>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-4">Performance ranking</h3>
                     <div class="bg-white bg-opacity-10 backdrop-blur rounded-2xl p-6 sm:p-8">
                         <div id="ranking-badge" class="mb-4">
                             <span class="inline-flex items-center px-4 py-2 rounded-full text-lg font-bold bg-njcic-teal text-white">

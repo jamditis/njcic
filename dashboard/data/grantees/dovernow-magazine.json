@@ -211,5 +211,32 @@
       "posts": 3,
       "engagement": 341
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 3300,
+    "formattedFunding": "$3K",
+    "years": [
+      "2025"
+    ],
+    "status": "active",
+    "county": "North Jersey",
+    "city": "Dover",
+    "focusArea": "Journalism pipeline",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2025"
+        ],
+        "amount": 3300,
+        "formattedAmount": "$3K",
+        "description": "To support the placement of a student intern through the Statewide Paid Internship Program.",
+        "focusArea": "Journalism pipeline",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://dovernow.com"
 }

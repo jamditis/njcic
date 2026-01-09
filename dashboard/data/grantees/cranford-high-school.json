@@ -131,7 +131,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/CranfordPublicSchools/posts/pfbid0RmhaiaU6ge3iZHJDb3S4Vt1xyUsNWPXS4PTra2DftLsHTxw3oEXo3a7RQf2w5wMBl?__cft__[0]=AZZI7E-96QSa9Ylpj31JsoSp4FVE-dRAQb3g4x1Y5wd2G9-b1jw5f3nyFAqa41Ovro2LQWJ9lsdSarEUPUM0ENR9lCOUkpyLr1bN8gKbiylgieUX4X8uYkFyUoiCgs6OiBlfJskfAWKN3QUwY-jpsJLGH9e4mH2qS1C7jf3-UlKT1h_q_ZQTfJJ3U8eyWURo1dE&__tn__=%2CO%2CP-R",
-          "text": "In a nutshell...\nThe Board took the following actions at the \u200bJ\u200banuary 5th meeting of the Cranford Board of Education:\nAPPROVED \u2026 See more",
+          "text": "In a nutshell...\nThe Board took the following actions at the ​J​anuary 5th meeting of the Cranford Board of Education:\nAPPROVED … See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -270,5 +270,34 @@
       "posts": 1,
       "engagement": 16
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 86497.75,
+    "formattedFunding": "$86K",
+    "years": [
+      "2022",
+      "2023"
+    ],
+    "status": "completed",
+    "county": "Union County",
+    "city": "Cranford",
+    "focusArea": "Journalism pipeline",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2022",
+          "2023"
+        ],
+        "amount": 86497.75,
+        "formattedAmount": "$86K",
+        "description": "To grow the content, readership, and capacity of a fledgling digital journalism program and school-wide digital news source by integrating curriculum from varied elective courses and leveraging the expertise of a local college or university.",
+        "focusArea": "Journalism pipeline",
+        "status": "completed"
+      }
+    ]
+  },
+  "website": "http://chs.cranfordschools.org"
 }

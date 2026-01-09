@@ -383,5 +383,34 @@
       "posts": 2,
       "engagement": 11
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 145000,
+    "formattedFunding": "$145K",
+    "years": [
+      "2024",
+      "2025"
+    ],
+    "status": "active",
+    "county": "Somerset County",
+    "city": "Somerville",
+    "focusArea": "Civic news and information reporting",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2024",
+          "2025"
+        ],
+        "amount": 145000,
+        "formattedAmount": "$145K",
+        "description": "To support The Central New Jersey Network, a non-profit community TV station based in Somerset County. Funding will be used to expand its programming and internship opportunities, with a focus on amplifying diverse voices and strengthening community connections. The project will cover local events in underrepresented areas like Trenton and rural Central Jersey while recruiting interns from local colleges, particularly from underrepresented and impoverished communities, to promote diversity in media production.",
+        "focusArea": "Civic news and information reporting",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "http://cnjn.org"
 }

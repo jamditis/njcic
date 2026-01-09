@@ -46,7 +46,7 @@
         {
           "id": "3m7lneybegc2b",
           "url": "https://bsky.app/profile/njspotlightnews.org/post/3m7lneybegc2b",
-          "text": "Within hours of a CDC advisory panel\u2019s vote on new guidelines, the state Department of Health issued an executive directive preserving NJ\u2019s requirement that infants receive the hepatitis B vaccine wit",
+          "text": "Within hours of a CDC advisory panel’s vote on new guidelines, the state Department of Health issued an executive directive preserving NJ’s requirement that infants receive the hepatitis B vaccine wit",
           "date": "2025-12-09T22:57:26.469000",
           "engagement": {
             "likes": 11,
@@ -60,7 +60,7 @@
         {
           "id": "3m7lxdztg6c2u",
           "url": "https://bsky.app/profile/bflanagannj.bsky.social/post/3m7lxdztg6c2u",
-          "text": "UPDATE: Sen. Pres. Scutari today announced he's pulling the controversial bill from consideration during this month\u2019s lame-duck legislative session.\n\u201cI\u2019ve heard the concerns, and I\u2019m going to listen t",
+          "text": "UPDATE: Sen. Pres. Scutari today announced he's pulling the controversial bill from consideration during this month’s lame-duck legislative session.\n“I’ve heard the concerns, and I’m going to listen t",
           "date": "2025-12-10T01:55:51.972000",
           "engagement": {
             "likes": 8,
@@ -74,7 +74,7 @@
         {
           "id": "3m7q4qyd5zk2t",
           "url": "https://bsky.app/profile/govmurphy.bsky.social/post/3m7q4qyd5zk2t",
-          "text": "Nice to catch up with Briana Vannozzi and the team at @njspotlightnews.org.\n \nWe had a chance to reflect on my Administration\u2019s proudest accomplishments over the past eight years \u2013 including our inves",
+          "text": "Nice to catch up with Briana Vannozzi and the team at @njspotlightnews.org.\n \nWe had a chance to reflect on my Administration’s proudest accomplishments over the past eight years – including our inves",
           "date": "2025-12-11T17:43:14.255000",
           "engagement": {
             "likes": 8,
@@ -427,7 +427,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/NJSpotlightNews/posts/pfbid02m3nvQGYZu7SBcriEfyTiR2CAmn6iq7YQu4yJubTgT33iDYSDCggzhQ9Vq9hcX9oyl?__cft__[0]=AZaUbSWXFq-TPo2LRJr4EN78s1bFEyaLQ9hQKr1P1PoB878uZTi5eW-KzfgQBiUGCNJ3aVuu3hTTKiZkEhJdYzzBROp-anJqcG1LgywH9oIE3CSrvcWTPSXEbus5n20LXxJDWZphqneqXv0r4VL6F0wKBk0LOj9SpDNBUJQMGuK3siIBWUUieVpaFec6HDA9j2s&__tn__=%2CO%2CP-R",
-          "text": "In NJ, about half of flu cases \u2014 some 6,000 so far \u2014 have involved children. But it\u2019s mostly people over the age of 65 who have ended up in the hospital with the flu.",
+          "text": "In NJ, about half of flu cases — some 6,000 so far — have involved children. But it’s mostly people over the age of 65 who have ended up in the hospital with the flu.",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -676,5 +676,49 @@
       "posts": 11,
       "engagement": 174
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 455000,
+    "formattedFunding": "$455K",
+    "years": [
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "status": "active",
+    "county": "Statewide",
+    "city": "Newark",
+    "focusArea": "Civic news and information reporting",
+    "grantCount": 2,
+    "hasMultipleGrants": true,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2022",
+          "2023",
+          "2025"
+        ],
+        "amount": 250000,
+        "formattedAmount": "$250K",
+        "description": "To support a new Report for America corps member to expand health coverage by focusing on mental health in underserved communities, at the intersection of the COVID-19 pandemic, health inequity, and rural New Jersey. The 2022 grant was funded in part by support from New Jersey Health Initiatives (NJHI), a statewide grantmaking program of the Robert Wood Johnson Foundation.",
+        "focusArea": "Civic news and information reporting",
+        "status": "active"
+      },
+      {
+        "id": 2,
+        "years": [
+          "2023",
+          "2024"
+        ],
+        "amount": 205000,
+        "formattedAmount": "$205K",
+        "description": "To hire a Washington, D.C.-based correspondent to provide regular reporting to NJ Spotlight News and a collaborative network of newsrooms across the state on developments affecting New Jersey.",
+        "focusArea": "Civic news and information reporting",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://www.njspotlightnews.org/?gad_source=1&gclid=Cj0KCQiAu8W6BhC-ARIsACEQoDD6AXC1bQlAk7_gREefC_S0FnIr46tD7EmNV97SoKrC_r04-l2YMHoaAlmNEALw_wcB"
 }

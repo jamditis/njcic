@@ -46,7 +46,7 @@
         {
           "id": "3lfuphv57bc2v",
           "url": "https://bsky.app/profile/detentionwatchnetwork.org/post/3lfuphv57bc2v",
-          "text": "This week Congress is fast-tracking two immigration bills that will vastly expand the incoming Trump administration\u2019s ability to carry out its mass deportation plans. \n\n\ud83d\udea8Take action now: contact your ",
+          "text": "This week Congress is fast-tracking two immigration bills that will vastly expand the incoming Trump administration’s ability to carry out its mass deportation plans. \n\n🚨Take action now: contact your ",
           "date": "2025-01-16T16:33:46.657000",
           "engagement": {
             "likes": 49,
@@ -74,7 +74,7 @@
         {
           "id": "3logkjyf3vk2l",
           "url": "https://bsky.app/profile/tusk81.bsky.social/post/3logkjyf3vk2l",
-          "text": "In New Jersey, @cosecha.bsky.social organizer Haydi Torres stressed the importance of solidarity and standing up for community members who are feeling vulnerable. \u201cWe have to take care of each other i",
+          "text": "In New Jersey, @cosecha.bsky.social organizer Haydi Torres stressed the importance of solidarity and standing up for community members who are feeling vulnerable. “We have to take care of each other i",
           "date": "2025-05-05T14:14:56.774000",
           "engagement": {
             "likes": 17,
@@ -471,5 +471,36 @@
       "posts": 1,
       "engagement": 84
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 185000,
+    "formattedFunding": "$185K",
+    "years": [
+      "2021",
+      "2022",
+      "2023"
+    ],
+    "status": "completed",
+    "county": "Union County",
+    "city": "Elizabeth",
+    "focusArea": "Civic news and information reporting",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "amount": 185000,
+        "formattedAmount": "$185K",
+        "description": "To work with Rutgers University to establish Radio Cosecha, a twice-weekly Spanish-language internet-radio program for the state’s Spanish-speaking immigrant community, telling the stories of seasonal agricultural workers in South Jersey. Cosecha researches and delivers important local, national, and international news in an accessible format, in order to achieve greater civic participation within New Jersey’s immigrant community.",
+        "focusArea": "Civic news and information reporting",
+        "status": "completed"
+      }
+    ]
+  },
+  "website": "https://www.lahuelga.com"
 }

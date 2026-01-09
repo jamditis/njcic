@@ -52,7 +52,7 @@
         {
           "id": "7311562190878788894",
           "url": "https://www.tiktok.com/@clintonhillaction/video/7311562190878788894",
-          "text": "Love our city. It's these moments that we Shout \ud83d\udde3\ufe0f we're from  #Newar...",
+          "text": "Love our city. It's these moments that we Shout 🗣️ we're from  #Newar...",
           "date": "2023-12-11T21:35:55",
           "engagement": {
             "likes": 48,
@@ -384,7 +384,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/clintonhillcommunityaction/posts/pfbid02ZqtBLC7mAyvEr2B8RVGszxfcRt4fZhBJMAMq6AczdYHjrUtz6LLSxqiT6TXLZhzwl?__cft__[0]=AZbZzBhAfOz8nSjykrr9TRCHhH02NjxH82fFGs8ZRqjP1VZil_3GS0IhwRkug45k4b_VU0lVfpHNnq8PjXwBh9zP5VV8IxJrsKKcRLxmG6HYOqFRFcNJCsgQPQoSWDDt7T_KJs0aylgEf2cjypma-e9UHjCM7vBlkFds0h-SlQHgK8uV3XG2zzNW8xZET41iQnM&__tn__=%2CO%2CP-R",
-          "text": "Come Join Us Clinton Hill Family! \nL\u2026 See more",
+          "text": "Come Join Us Clinton Hill Family! \nL… See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -445,7 +445,7 @@
     {
       "id": "7311562190878788894",
       "url": "https://www.tiktok.com/@clintonhillaction/video/7311562190878788894",
-      "text": "Love our city. It's these moments that we Shout \ud83d\udde3\ufe0f we're from  #Newar...",
+      "text": "Love our city. It's these moments that we Shout 🗣️ we're from  #Newar...",
       "date": "2023-12-11T21:35:55",
       "engagement": {
         "likes": 48,
@@ -603,5 +603,36 @@
       "posts": 3,
       "engagement": 24
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 225000,
+    "formattedFunding": "$225K",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "status": "active",
+    "county": "Essex County",
+    "city": "Newark",
+    "focusArea": "Journalism pipeline",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2022",
+          "2023",
+          "2024"
+        ],
+        "amount": 225000,
+        "formattedAmount": "$225K",
+        "description": "To fund journalism training for neighborhood residents to learn how to use storytelling as an advocacy strategy. This includes oral histories, podcasts, video reports and documentaries. The funding also is being used to establish a new media training, production, and webcast center through Clinton Hill’s Citizen Journalism Program.",
+        "focusArea": "Journalism pipeline",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://clintonhillaction.org"
 }

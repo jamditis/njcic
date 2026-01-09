@@ -240,7 +240,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/MentalHealthAssociationinNewJerseyInc/posts/pfbid021pDhG3iTSoga1t2rGR8jehARpuFTqJS5txzTTxjcs31kbH6vzraGGRojnCeE8sLdl?__cft__[0]=AZZFPSlLsfn-iXxxMZO6e583aJ4q1-b6xKhz1LnU_xGk9BBeXofhq1ZXaAMQzgDdGq3QhAQ1KyGt47xTEEBdM7qpltqKuTZQOMTLZKiIGYONGekINY4HZPyKY5xCUcm8EfRt608_0MKOylV6_YCuEmaG9rkXLOCuH-J_UFI-r7I_Zhij0DF6cSpwv5BxUWTmzrA&__tn__=%2CO%2CP-R",
-          "text": "In 2025, our Silver Level sponsor, minette's angels, partenered with us for an unforgettable Evening of Excellence\u2014our signature annual celebration recognizing the chan\u2026 See more",
+          "text": "In 2025, our Silver Level sponsor, minette's angels, partenered with us for an unforgettable Evening of Excellence—our signature annual celebration recognizing the chan… See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -359,5 +359,32 @@
       "posts": 3,
       "engagement": 10
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 75000,
+    "formattedFunding": "$75K",
+    "years": [
+      "2022"
+    ],
+    "status": "completed",
+    "county": "Statewide",
+    "city": "Trenton",
+    "focusArea": "Civic news and information reporting",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2022"
+        ],
+        "amount": 75000,
+        "formattedAmount": "$75K",
+        "description": "To conduct a research project assessing how community college students receive information on mental health services, key topics that resonate with them, and preferences on how they receive that information, and to identify the most effective ways to access services and stigma-breaking concepts.",
+        "focusArea": "Civic news and information reporting",
+        "status": "completed"
+      }
+    ]
+  },
+  "website": "https://www.mhanj.org"
 }
