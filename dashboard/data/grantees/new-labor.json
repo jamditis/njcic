@@ -233,5 +233,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/new-labor.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/new-labor.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/new-labor.png",
+  "website": "https://newlabor.org",
+  "description": "Fund the \u201cCommunity-driven Journalism Project\u201d to develop journalists, focusing on Black and Brown workers in low wage jobs across New Jersey."
 }

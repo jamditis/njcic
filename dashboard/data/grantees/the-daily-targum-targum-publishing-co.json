@@ -476,5 +476,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/daily-targum.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/daily-targum.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/daily-targum.png",
+  "website": "http://dailytargum.com",
+  "description": "This organization received 2 grants totaling $70,000."
 }

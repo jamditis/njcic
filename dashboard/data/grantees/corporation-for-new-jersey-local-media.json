@@ -268,5 +268,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/corporation-for-new-jersey-local-media.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/corporation-for-new-jersey-local-media.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/corporation-for-new-jersey-local-media.png",
+  "website": "https://newsweneed.org",
+  "description": "Fund the continuation of the work of the Northern NJ News Collaborative on its \u201cStormwater Matters\u201d initiative and will grow community engagement."
 }

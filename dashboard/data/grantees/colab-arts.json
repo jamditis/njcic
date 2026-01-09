@@ -233,5 +233,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/colab-arts.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/colab-arts.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/colab-arts.png",
+  "website": "https://colab-arts.org/",
+  "description": "This organization received 2 grants totaling $150,000."
 }

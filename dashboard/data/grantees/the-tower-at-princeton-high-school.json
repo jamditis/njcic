@@ -273,5 +273,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/the-tower-at-princeton-high-school.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/the-tower-at-princeton-high-school.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/the-tower-at-princeton-high-school.png",
+  "website": "https://www.towerphs.com/home",
+  "description": "To support technology and equipment upgrades that ensure equitable student participation in the newsroom and sustain print publication."
 }

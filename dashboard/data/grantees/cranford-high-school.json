@@ -228,5 +228,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/cranford-high-school.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/cranford-high-school.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/cranford-high-school.png",
+  "website": "http://chs.cranfordschools.org",
+  "description": "Grow the content, readership, and capacity of a fledgling digital journalism program and school-wide digital news source by integrating curriculum from varied elective courses and leveraging the expertise of a local college or university."
 }

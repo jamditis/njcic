@@ -253,5 +253,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/camden-fireworks.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/camden-fireworks.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/camden-fireworks.png",
+  "website": "https://camdenfireworks.org",
+  "description": "Undertake a community-centered storytelling project in Camden documenting the challenges and opportunities of living a long, healthful life amidst environmental injustice by interviewing, facilitating discussions, and documenting the personal narratives of community members."
 }

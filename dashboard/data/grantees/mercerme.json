@@ -218,5 +218,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/mercerme.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/mercerme.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/mercerme.png",
+  "website": "https://www.mercerme.com",
+  "description": "This organization received 2 grants totaling $13,300."
 }

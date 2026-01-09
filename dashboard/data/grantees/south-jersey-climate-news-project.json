@@ -604,5 +604,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/south-jersey-climate-news-project.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/south-jersey-climate-news-project.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/south-jersey-climate-news-project.png",
+  "website": "https://sjclimate.news",
+  "description": "Fund stipends for student interns providing high quality news coverage of climate change in South Jersey, including the impact on the environment, agriculture, the Pine Barrens, beaches, tourism, and wetlands."
 }

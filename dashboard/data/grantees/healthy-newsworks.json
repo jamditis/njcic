@@ -278,5 +278,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/healthy-newsworks.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/healthy-newsworks.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/healthy-newsworks.png",
+  "website": "https://www.healthynewsworks.org/",
+  "description": "Support the expansion of access to the Healthy NewsWorks literacy program and engage students and schools in Camden, New Jersey through community health journalism."
 }

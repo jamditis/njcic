@@ -351,5 +351,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/public-square-amplified.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/public-square-amplified.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/public-square-amplified.png",
+  "website": "https://www.publicsq.org",
+  "description": "This organization received 2 grants totaling $300,000."
 }

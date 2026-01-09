@@ -248,5 +248,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/new-jersey-urban-news.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/new-jersey-urban-news.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/new-jersey-urban-news.png",
+  "website": "https://www.njurbannews.com",
+  "description": "This organization received 3 grants totaling $233,300."
 }

@@ -1,6 +1,8 @@
 {
   "name": "TAPinto Hasbrouk Heights",
   "slug": "tapinto-hasbrouk-heights",
+  "website": "https://www.tapinto.net/towns/hasbrouck-heights",
+  "description": "TAPinto Hasbrouck Heights is a local online news site providing free, hyperlocal news coverage for Hasbrouck Heights and surrounding Bergen County communities, covering local government, schools, sports, and community events.",
   "summary": {
     "total_posts": 12,
     "total_engagement": 682,
@@ -263,5 +265,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/tapinto-hasbrouck-heights.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/tapinto-hasbrouck-heights.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/tapinto-hasbrouck-heights.png",
+  "website": "https://www.tapinto.net",
+  "description": "Received funding Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc. "
 }
