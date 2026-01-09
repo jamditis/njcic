@@ -97,6 +97,7 @@
             renderGranteeInfo();
             renderPlatformIcons();
             renderSummaryStats();
+            renderGrantInfo();
             renderPlatformCards();
             renderCharts();
             renderTopPosts();
@@ -479,6 +480,156 @@
         document.getElementById('stat-engagement').textContent = formatNumber(granteeData.totalEngagement);
         document.getElementById('stat-platforms').textContent = platforms;
         document.getElementById('stat-rate').textContent = formatNumber(avgEngagement);
+    }
+
+    /**
+     * Render grant information section
+     */
+    function renderGrantInfo() {
+        const container = document.getElementById('grant-info-section');
+        if (!container) return;
+
+        const grantInfo = granteeData.grantInfo;
+        if (!grantInfo || !grantInfo.grants || grantInfo.grants.length === 0) {
+            container.classList.add('hidden');
+            return;
+        }
+
+        container.classList.remove('hidden');
+
+        // Build focus area badges
+        const focusAreas = grantInfo.focusArea ? grantInfo.focusArea.split(';').map(a => a.trim()) : [];
+        const focusAreaBadges = focusAreas.map(area => {
+            // Color coding based on focus area type
+            let bgColor = 'bg-njcic-teal';
+            if (area.toLowerCase().includes('journalism pipeline')) {
+                bgColor = 'bg-purple-500';
+            } else if (area.toLowerCase().includes('civic engagement')) {
+                bgColor = 'bg-green-500';
+            } else if (area.toLowerCase().includes('blue engine') || area.toLowerCase().includes('accelerator')) {
+                bgColor = 'bg-orange-500';
+            }
+            return `<span class="inline-block px-3 py-1 ${bgColor} text-white text-xs font-medium rounded-full">${escapeHtml(area)}</span>`;
+        }).join('');
+
+        // Build location and status info
+        const locationParts = [];
+        if (grantInfo.city) locationParts.push(grantInfo.city);
+        if (grantInfo.county) locationParts.push(grantInfo.county);
+        const locationStr = locationParts.join(', ');
+
+        // Build years string
+        const yearsStr = grantInfo.years && grantInfo.years.length > 0
+            ? grantInfo.years.join(', ')
+            : '';
+
+        // Status badge
+        const statusBadge = grantInfo.status === 'active'
+            ? '<span class="inline-flex items-center gap-1 px-2 py-0.5 bg-green-100 text-green-700 text-xs font-medium rounded-full"><span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>Active</span>'
+            : '<span class="inline-flex items-center gap-1 px-2 py-0.5 bg-gray-100 text-gray-600 text-xs font-medium rounded-full">Completed</span>';
+
+        // Header with summary info
+        let html = `
+            <div class="bg-gradient-to-r from-njcic-light to-white rounded-2xl p-6 sm:p-8 border border-gray-100">
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
+                    <div>
+                        <h4 class="text-xl sm:text-2xl font-bold text-njcic-dark mb-2">
+                            NJCIC Grant${grantInfo.grantCount > 1 ? 's' : ''}
+                        </h4>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            ${focusAreaBadges}
+                        </div>
+                        ${locationStr ? `<p class="text-gray-500 text-sm"><svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>${escapeHtml(locationStr)}</p>` : ''}
+                    </div>
+                    <div class="text-left sm:text-right">
+                        <div class="text-3xl sm:text-4xl font-bold text-njcic-teal mb-1">
+                            ${grantInfo.formattedFunding || formatCurrency(grantInfo.totalFunding)}
+                        </div>
+                        <div class="text-sm text-gray-500 mb-2">Total funding</div>
+                        <div class="flex items-center gap-2 justify-start sm:justify-end">
+                            ${statusBadge}
+                            ${yearsStr ? `<span class="text-xs text-gray-400">${yearsStr}</span>` : ''}
+                        </div>
+                    </div>
+                </div>
+        `;
+
+        // Render individual grants
+        if (grantInfo.grants.length === 1) {
+            // Single grant - show description prominently
+            const grant = grantInfo.grants[0];
+            if (grant.description) {
+                html += `
+                    <div class="prose prose-gray max-w-none">
+                        <p class="text-gray-700 leading-relaxed">${escapeHtml(grant.description)}</p>
+                    </div>
+                `;
+            }
+        } else {
+            // Multiple grants - show as cards
+            html += `
+                <div class="grid gap-4 mt-4">
+                    ${grantInfo.grants.map((grant, index) => {
+                        const grantYears = grant.years && grant.years.length > 0 ? grant.years.join(', ') : '';
+                        const grantStatus = grant.status === 'active'
+                            ? '<span class="w-2 h-2 bg-green-500 rounded-full"></span>'
+                            : '<span class="w-2 h-2 bg-gray-400 rounded-full"></span>';
+
+                        return `
+                            <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                                <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                                    <div class="flex items-center gap-2">
+                                        ${grantStatus}
+                                        <span class="font-semibold text-njcic-dark">Grant ${index + 1}</span>
+                                        ${grant.focusArea ? `<span class="text-xs px-2 py-0.5 bg-gray-100 text-gray-600 rounded">${escapeHtml(grant.focusArea)}</span>` : ''}
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-lg font-bold text-njcic-teal">${grant.formattedAmount || formatCurrency(grant.amount)}</span>
+                                        ${grantYears ? `<span class="text-xs text-gray-400">${grantYears}</span>` : ''}
+                                    </div>
+                                </div>
+                                ${grant.description ? `<p class="text-gray-600 text-sm leading-relaxed">${escapeHtml(grant.description)}</p>` : ''}
+                            </div>
+                        `;
+                    }).join('')}
+                </div>
+            `;
+        }
+
+        // Link to grantees map
+        html += `
+                <div class="mt-6 pt-4 border-t border-gray-200">
+                    <a href="https://njcivicinfo.org/map/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center gap-2 text-sm text-njcic-teal hover:text-njcic-dark transition-colors">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                        </svg>
+                        View all NJCIC grantees on the map
+                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        `;
+
+        container.innerHTML = html;
+    }
+
+    /**
+     * Format currency helper
+     */
+    function formatCurrency(amount) {
+        if (!amount) return '$0';
+        if (amount >= 1000000) {
+            return '$' + (amount / 1000000).toFixed(1).replace(/\.0$/, '') + 'M';
+        }
+        if (amount >= 1000) {
+            return '$' + (amount / 1000).toFixed(0) + 'K';
+        }
+        return '$' + amount.toLocaleString();
     }
 
     /**

@@ -184,7 +184,7 @@
         {
           "id": null,
           "url": null,
-          "text": "Is this Hudson County resident onto something? How do you feel about receiving political mail\u2014does it influence you, or is it just a waste of paper? Share your thoughts!",
+          "text": "Is this Hudson County resident onto something? How do you feel about receiving political mail—does it influence you, or is it just a waste of paper? Share your thoughts!",
           "date": "2023-11-06T23:46:05",
           "engagement": {
             "likes": 101,
@@ -198,7 +198,7 @@
         {
           "id": null,
           "url": null,
-          "text": "Jersey City doesn\u2019t seem to be in the Christmas spirit.",
+          "text": "Jersey City doesn’t seem to be in the Christmas spirit.",
           "date": "2024-11-15T16:29:19",
           "engagement": {
             "likes": 103,
@@ -373,7 +373,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/hudpost/posts/pfbid0ibpYE2HiTCuxrFuEHRapiqFZ7QtinSnuvS9aPaBwyCmwovuoazQtL5qyibDP2CnMl?__cft__[0]=AZbqiZJmHxVMUecIYugDXlfqq8hCA4h1RdY7Ykh8siJu_xfw0fx9XybdWoJopXWxxwpPB_j58k7yCZ9Kz5iz-TrDtADE82iTpZXWFDCMcqjv2PGEtsEZo072wY1ug9JwG8SANCe0Lyij7_B6kn0VF9rhViYB6ZTPhv4bLKYNe_92hhxrgCy7G8Wwub14ssWiq1s&__tn__=%2CO%2CP-R",
-          "text": "On Tuesday, January 6, 2026, community groups and leaders gathered at a rally titled \u201cNo War on Venezuela / \u00a1No a la guerra contra Venezuela!\u201d at Riverview Fisk Park to\u2026 See more",
+          "text": "On Tuesday, January 6, 2026, community groups and leaders gathered at a rally titled “No War on Venezuela / ¡No a la guerra contra Venezuela!” at Riverview Fisk Park to… See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -618,5 +618,43 @@
       "posts": 3,
       "engagement": 1574
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 103300,
+    "formattedFunding": "$103K",
+    "years": [
+      "2025"
+    ],
+    "status": "active",
+    "county": "North Jersey",
+    "city": "Jersey City",
+    "focusArea": "Journalism pipeline; Civic news and information reporting",
+    "grantCount": 2,
+    "hasMultipleGrants": true,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2025"
+        ],
+        "amount": 3300,
+        "formattedAmount": "$3K",
+        "description": "To support the placement of a student intern through the Statewide Paid Internship Program.",
+        "focusArea": "Journalism pipeline",
+        "status": "active"
+      },
+      {
+        "id": 2,
+        "years": [
+          "2025"
+        ],
+        "amount": 100000,
+        "formattedAmount": "$100K",
+        "description": "To support expanded bilingual coverage in Hudson County through new reporting staff, print editions, and community engagement events.",
+        "focusArea": "Civic news and information reporting",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://HudPost.com"
 }

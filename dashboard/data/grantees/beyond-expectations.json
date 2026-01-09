@@ -187,5 +187,34 @@
     "first_post": null,
     "last_post": null
   },
-  "time_series": []
+  "time_series": [],
+  "grantInfo": {
+    "totalFunding": 93876,
+    "formattedFunding": "$94K",
+    "years": [
+      "2021",
+      "2022"
+    ],
+    "status": "completed",
+    "county": "Burlington County",
+    "city": "Mount Holly",
+    "focusArea": "Journalism pipeline",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2021",
+          "2022"
+        ],
+        "amount": 93876,
+        "formattedAmount": "$94K",
+        "description": "To launch and develop “be.tv eStudios,” an initiative teaching Burlington County students and young adults, ages 14-24, storytelling and media production skills with an emphasis on conducting interviews with professionals, business leaders, educators, etc., and using online gaming techniques for capturing and promoting interview highlights. It also teaches media and business skills and has involved students in organizing and staging esports tournaments and programs.",
+        "focusArea": "Journalism pipeline",
+        "status": "completed"
+      }
+    ]
+  },
+  "website": "https://beyondexp.net/collaborate"
 }

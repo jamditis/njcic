@@ -207,7 +207,7 @@
         {
           "id": "7354545334850227499",
           "url": "https://www.tiktok.com/@sjclimatenews/video/7354545334850227499",
-          "text": "A little vlog from today\u2019s Society of Environmental Journalists confe...",
+          "text": "A little vlog from today’s Society of Environmental Journalists confe...",
           "date": "2024-04-05T17:32:24",
           "engagement": {
             "likes": 189,
@@ -477,7 +477,7 @@
     {
       "id": "7354545334850227499",
       "url": "https://www.tiktok.com/@sjclimatenews/video/7354545334850227499",
-      "text": "A little vlog from today\u2019s Society of Environmental Journalists confe...",
+      "text": "A little vlog from today’s Society of Environmental Journalists confe...",
       "date": "2024-04-05T17:32:24",
       "engagement": {
         "likes": 189,
@@ -519,7 +519,7 @@
     {
       "id": "7522138144515362103",
       "url": "https://www.tiktok.com/@sjclimatenews/video/7522138144515362103",
-      "text": "As \u201cJurassic World: Rebirth\u201d hits theaters, check out South Jersey\u2019s ...",
+      "text": "As “Jurassic World: Rebirth” hits theaters, check out South Jersey’s ...",
       "date": "2025-07-01T08:38:28",
       "engagement": {
         "likes": 90,
@@ -674,5 +674,36 @@
       "posts": 2,
       "engagement": 26
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 115320,
+    "formattedFunding": "$115K",
+    "years": [
+      "2022",
+      "2023",
+      "2025"
+    ],
+    "status": "active",
+    "county": "South Jersey",
+    "city": "Glassboro",
+    "focusArea": "Civic news and information reporting",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2022",
+          "2023",
+          "2025"
+        ],
+        "amount": 115320,
+        "formattedAmount": "$115K",
+        "description": "To fund stipends for student interns providing high quality news coverage of climate change in South Jersey, including the impact on the environment, agriculture, the Pine Barrens, beaches, tourism, and wetlands.",
+        "focusArea": "Civic news and information reporting",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://sjclimate.news"
 }

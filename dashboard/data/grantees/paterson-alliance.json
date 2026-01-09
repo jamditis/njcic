@@ -131,7 +131,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/ThePatersonAlliance/posts/pfbid02bdrMCNGJpVrT3KEQ8Dw16KzgzyFq8hgiUH4V2CggcT3m6of6rV6sS46hJkXvsugEl?__cft__[0]=AZY64bXWtljY3z6a_N_9D8e5hCEgQtt1VsUAPYQeWYaCjQzqY32a6l_-K4uBLcJzLj_D3VsUjPeklZJLJ8n5LMNywq1UhR348ydobtSQq8l7kQ0M6CuI527QorUGLmjNgNilXCUC837wO2UnZW4FEqt80g63gkrt7T55rfTl9BdjYzeSC5OVf2GHfEwlMsddie8&__tn__=%2CO%2CP-R",
-          "text": "Check out this upcoming event and others on the Paterson Community Calendar! https://alliance.patersonpl.org/.../lets-talk-about-it.../\u2026 See more",
+          "text": "Check out this upcoming event and others on the Paterson Community Calendar! https://alliance.patersonpl.org/.../lets-talk-about-it.../… See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -270,5 +270,32 @@
       "posts": 1,
       "engagement": 1
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 33000,
+    "formattedFunding": "$33K",
+    "years": [
+      "2021"
+    ],
+    "status": "completed",
+    "county": "Passaic County",
+    "city": "Paterson",
+    "focusArea": "Civic engagement in NJ communities",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2021"
+        ],
+        "amount": 33000,
+        "formattedAmount": "$33K",
+        "description": "To manage the library-based Paterson Information Hub to provide the community with training in citizen journalism and news-production technology. The alliance also aimed to convene local events to assess community-information needs.",
+        "focusArea": "Civic engagement in NJ communities",
+        "status": "completed"
+      }
+    ]
+  },
+  "website": "https://patersonalliance.org"
 }

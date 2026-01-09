@@ -40,7 +40,7 @@
         {
           "id": null,
           "url": "https://www.youtube.com/watch?v=TV1Ct5qjRyY",
-          "text": "\ud83c\udfa5\ud83d\udcda Episodio 004 - HOY EN VIVO: DE TU HISTORIA NACE LA FUERZA",
+          "text": "🎥📚 Episodio 004 - HOY EN VIVO: DE TU HISTORIA NACE LA FUERZA",
           "date": null,
           "engagement": {
             "likes": 7,
@@ -54,7 +54,7 @@
         {
           "id": null,
           "url": "https://www.youtube.com/watch?v=lbRqi5-ateI",
-          "text": "\ud83c\udfa5\ud83d\udcda Episodio 003 - ESTAMOS CON DIEGO",
+          "text": "🎥📚 Episodio 003 - ESTAMOS CON DIEGO",
           "date": null,
           "engagement": {
             "likes": 5,
@@ -68,7 +68,7 @@
         {
           "id": null,
           "url": "https://www.youtube.com/watch?v=rvuTBbbHUIk",
-          "text": "\ud83c\udfa5\ud83d\udcda Episodio 001 - GRAN ESTRENO",
+          "text": "🎥📚 Episodio 001 - GRAN ESTRENO",
           "date": null,
           "engagement": {
             "likes": 3,
@@ -203,7 +203,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/thelatinospirit/posts/pfbid02eBW9K92W8kcQytaxUT3DRyMdTViD4eHPbdkLtcyBiukvyhqxkQeizQK7sS53FYVwl?__cft__[0]=AZZKR9jGgVtAo8reLyC0z73_dHeBi5jF1W8vWFh9Bxn2cz26GRmEtP3eNZkRq7lF3E4DQJmjEtddQvNqVLlxFH-uQKSlQdCQ0rP86Qg3h_ez2_waYlHidD5hDMk8GBGr4fJL_vm0TjvtkAd7q8zQsweuCfTMutaC776MJ0yfF8qzceZQnyKiGaJ7XUNK2cT2VnI&__tn__=%2CO%2CP-R",
-          "text": "Hoy reconocemos a Sr. Orlando Miranda, USA Top Latino de New Jersey #5, por su servicio ejemplar y su compromiso continuo con los veteranos latinos.\nComo veterano y l\u00edd\u2026 See more",
+          "text": "Hoy reconocemos a Sr. Orlando Miranda, USA Top Latino de New Jersey #5, por su servicio ejemplar y su compromiso continuo con los veteranos latinos.\nComo veterano y líd… See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -292,7 +292,7 @@
     {
       "id": null,
       "url": "https://www.youtube.com/watch?v=TV1Ct5qjRyY",
-      "text": "\ud83c\udfa5\ud83d\udcda Episodio 004 - HOY EN VIVO: DE TU HISTORIA NACE LA FUERZA",
+      "text": "🎥📚 Episodio 004 - HOY EN VIVO: DE TU HISTORIA NACE LA FUERZA",
       "date": null,
       "engagement": {
         "likes": 7,
@@ -306,7 +306,7 @@
     {
       "id": null,
       "url": "https://www.youtube.com/watch?v=lbRqi5-ateI",
-      "text": "\ud83c\udfa5\ud83d\udcda Episodio 003 - ESTAMOS CON DIEGO",
+      "text": "🎥📚 Episodio 003 - ESTAMOS CON DIEGO",
       "date": null,
       "engagement": {
         "likes": 5,
@@ -351,5 +351,32 @@
       "posts": 2,
       "engagement": 2
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 10000,
+    "formattedFunding": "$10K",
+    "years": [
+      "2024"
+    ],
+    "status": "active",
+    "county": "Statewide",
+    "city": "Newark",
+    "focusArea": "Blue Engine Tech & Sustainability Accelerator Grant",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2024"
+        ],
+        "amount": 10000,
+        "formattedAmount": "$10K",
+        "description": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+        "focusArea": "Blue Engine Tech & Sustainability Accelerator Grant",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://WWW.THELATINOSPIRIT.COM"
 }

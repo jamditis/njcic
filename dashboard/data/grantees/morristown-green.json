@@ -51,7 +51,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/MorristownGreen.comOfficialSite/posts/pfbid0SLnqhz9oyqUG5k6p8gXSN8sfVu1XKLAepgxY3MG8B6xoh6NhqxNQDBKSJGxY1bW6l?__cft__[0]=AZZi05K4slVt-Zb7ShiLYKhIrzNYMa0-NSzTlhIdQM31yKJVx2X-jQP1EEMYOOvrG0svpVvljkI_uEtXZPqH_VJITssU9rmsW2Lro2c91o1Zz0uqCTfWOdUMux6ulQ-KtvrBjSkdGdSQcMmpbLHBrBXocRaO6JbMpJt5_vjersk8OvlYurGsZ79DAeitvMtpTKU&__tn__=%2CO%2CP-R",
-          "text": "The holidays are over. But some engaging entertainment choices remain in Greater Morristown this weekend:\u2026 See more",
+          "text": "The holidays are over. But some engaging entertainment choices remain in Greater Morristown this weekend:… See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -84,7 +84,7 @@
     {
       "id": "post_0",
       "url": "https://www.facebook.com/MorristownGreen.comOfficialSite/posts/pfbid0SLnqhz9oyqUG5k6p8gXSN8sfVu1XKLAepgxY3MG8B6xoh6NhqxNQDBKSJGxY1bW6l?__cft__[0]=AZZi05K4slVt-Zb7ShiLYKhIrzNYMa0-NSzTlhIdQM31yKJVx2X-jQP1EEMYOOvrG0svpVvljkI_uEtXZPqH_VJITssU9rmsW2Lro2c91o1Zz0uqCTfWOdUMux6ulQ-KtvrBjSkdGdSQcMmpbLHBrBXocRaO6JbMpJt5_vjersk8OvlYurGsZ79DAeitvMtpTKU&__tn__=%2CO%2CP-R",
-      "text": "The holidays are over. But some engaging entertainment choices remain in Greater Morristown this weekend:\u2026 See more",
+      "text": "The holidays are over. But some engaging entertainment choices remain in Greater Morristown this weekend:… See more",
       "date": null,
       "engagement": {
         "likes": 0,
@@ -103,5 +103,48 @@
     "first_post": null,
     "last_post": null
   },
-  "time_series": []
+  "time_series": [],
+  "grantInfo": {
+    "totalFunding": 230000,
+    "formattedFunding": "$230K",
+    "years": [
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "status": "active",
+    "county": "Morris County",
+    "city": "Morristown",
+    "focusArea": "Civic news and information reporting; Blue Engine Tech & Sustainability Accelerator Grant",
+    "grantCount": 2,
+    "hasMultipleGrants": true,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2022",
+          "2023",
+          "2025"
+        ],
+        "amount": 220000,
+        "formattedAmount": "$220K",
+        "description": "To fund a paid internship program for this hyperlocal news site covering a robust range of topics in Morristown that include local government, arts and entertainment, crime, and sports.",
+        "focusArea": "Civic news and information reporting",
+        "status": "active"
+      },
+      {
+        "id": 2,
+        "years": [
+          "2024"
+        ],
+        "amount": 10000,
+        "formattedAmount": "$10K",
+        "description": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+        "focusArea": "Blue Engine Tech & Sustainability Accelerator Grant",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://morristowngreen.com"
 }

@@ -265,5 +265,71 @@
       "posts": 1,
       "engagement": 46
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 676063,
+    "formattedFunding": "$676K",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "status": "active",
+    "county": "Statewide",
+    "city": "Montclair",
+    "focusArea": "Civic news and information reporting; Civic engagement in NJ communities",
+    "grantCount": 4,
+    "hasMultipleGrants": true,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2022",
+          "2023",
+          "2024"
+        ],
+        "amount": 175000,
+        "formattedAmount": "$175K",
+        "description": "To launch the NJ News Commons Spanish Translation Service, partnering with the largest Spanish-language and mainstream media outlets in the state to translate statewide news — especially elections-related content and voter information — into Spanish. This project builds on previous pilot work around translating pandemic coverage.",
+        "focusArea": "Civic news and information reporting",
+        "status": "active"
+      },
+      {
+        "id": 2,
+        "years": [
+          "2022",
+          "2024"
+        ],
+        "amount": 271993,
+        "formattedAmount": "$272K",
+        "description": "To fund a researcher at the Center for Cooperative Media at Montclair State University to conduct research on the New Jersey local news ecosystem. The researcher will also conduct learning and impact evaluation for the Consortium.",
+        "focusArea": "Civic engagement in NJ communities",
+        "status": "active"
+      },
+      {
+        "id": 3,
+        "years": [
+          "2023"
+        ],
+        "amount": 99070,
+        "formattedAmount": "$99K",
+        "description": "To fund the making of the 2023 NJ Statewide Voting Guide, which helped encourage civic engagement. Citizens also had an interactive opportunity to vote their choices on statewide and local issues.",
+        "focusArea": "Civic engagement in NJ communities",
+        "status": "completed"
+      },
+      {
+        "id": 4,
+        "years": [
+          "2023",
+          "2024"
+        ],
+        "amount": 130000,
+        "formattedAmount": "$130K",
+        "description": "To support the expansion of the South Jersey Information Equity Project (SJEIP) from a cohort of 5 to 10 fellows annually and establish an SJIEP community reporting workshop series to further engage local storytellers through intergenerational learning and co-creation workshops.",
+        "focusArea": "Civic engagement in NJ communities",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://centerforcooperativemedia.org"
 }

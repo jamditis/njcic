@@ -191,7 +191,7 @@
         {
           "id": null,
           "url": "https://www.youtube.com/watch?v=lDnxxWfInSM",
-          "text": "Soulsville students learn physics in Jack Replinger\u2019s class",
+          "text": "Soulsville students learn physics in Jack Replinger’s class",
           "date": null,
           "engagement": {
             "likes": 9,
@@ -358,7 +358,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/ChalkbeatNewark/posts/pfbid02sNQnUdBzSNx2hu5ibWkgbaz3dWuLDLuYhF5hz5raznNDCynhdz4D5c5UYpFVESyyl?__cft__[0]=AZbD0NvrihNzxBEJCTumyNSCNvnoXv490UU9BR9ph9qCmCJCcjAuNAalTAVuK8VYL0CI7I4KwelWqvvr9DjMV2jiyDhhvmNZl4-JBJ-eRMlNP0zZA95jkWWknvkDls13TjmOJpzjwdIzyOf2dPMkH-xE7rueqCaXDK-SiEqyFBQXvkBN40tguui_Ucm8vFXwnaY&__tn__=%2CO%2CP-R",
-          "text": "The new policies should, at a minimum, provide \u201cage-appropriate and grade-level guidelines\u201d for restricting cellphone and social media use during classroom instruction.",
+          "text": "The new policies should, at a minimum, provide “age-appropriate and grade-level guidelines” for restricting cellphone and social media use during classroom instruction.",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -507,5 +507,36 @@
       "posts": 26,
       "engagement": 123
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 300000,
+    "formattedFunding": "$300K",
+    "years": [
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "status": "active",
+    "county": "Essex County",
+    "city": "Newark",
+    "focusArea": "Civic engagement in NJ communities",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "amount": 300000,
+        "formattedAmount": "$300K",
+        "description": "To foster civic engagement in Newark public schools through: in-depth reporting on school segregation litigation and federal Covid relief spending; adding a state education policy reporting fellow; a texting service to inform the community about school board actions; a 2024 school board election guide; and first person student essays published through Chalkbeat Newark’s Student Voices program.",
+        "focusArea": "Civic engagement in NJ communities",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://www.chalkbeat.org/newark/"
 }

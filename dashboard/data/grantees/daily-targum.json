@@ -74,7 +74,7 @@
         {
           "id": "7553856050269556023",
           "url": "https://www.tiktok.com/@thedailytargum/video/7553856050269556023",
-          "text": "It\u2019s been less than two months since Keli Zinn started her term as Ru...",
+          "text": "It’s been less than two months since Keli Zinn started her term as Ru...",
           "date": "2025-09-24T19:59:55",
           "engagement": {
             "likes": 149,
@@ -317,7 +317,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/thedailytargum/posts/pfbid0NPT3pPD6QLrxrKFEfwJhNGbfpXeXYaKhkjGF49EBiuq5KsT3JTAAjaC9WakzaGzLl?__cft__[0]=AZY9vHcI9Nq8O0XnYm3V4XUexWfpB7BW_Ngn1KBZUl-RFKziqSYztzCBwJmN_aaxPITxan6M7-A2VZnqKxm60dND753_vJspGqqBG-Rr-O9AABouhkFXcpTgbE_4cHramhq_RjaiwweKGB96qBHRnOgMse-wZHyAWYo9FpBsK4S76GiwKVaJbvglDzSPy9ErgRM&__tn__=%2CO%2CP-R",
-          "text": "Targum Family, starting Friday, November 14, your donations will train tomorrow\u2019s media leaders to deliver stronger local coverage. \u2026 See more",
+          "text": "Targum Family, starting Friday, November 14, your donations will train tomorrow’s media leaders to deliver stronger local coverage. … See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -378,7 +378,7 @@
     {
       "id": "7553856050269556023",
       "url": "https://www.tiktok.com/@thedailytargum/video/7553856050269556023",
-      "text": "It\u2019s been less than two months since Keli Zinn started her term as Ru...",
+      "text": "It’s been less than two months since Keli Zinn started her term as Ru...",
       "date": "2025-09-24T19:59:55",
       "engagement": {
         "likes": 149,
@@ -541,5 +541,32 @@
       "posts": 1,
       "engagement": 41
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 3300,
+    "formattedFunding": "$3K",
+    "years": [
+      "2025"
+    ],
+    "status": "active",
+    "county": "Central Jersey",
+    "city": "New Brunswick",
+    "focusArea": "Journalism pipeline",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2025"
+        ],
+        "amount": 3300,
+        "formattedAmount": "$3K",
+        "description": "To support the placement of a student intern through the Statewide Paid Internship Program.",
+        "focusArea": "Journalism pipeline",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://dailytargum.com"
 }

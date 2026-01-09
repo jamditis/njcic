@@ -175,7 +175,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/Hopeloft/posts/pfbid02CLhmhj3XC8YRYAYYbf1cnfdgMvRwftGmPh5mkfuAnFeNzGgT3jEiucaZms5dJWYsl?__cft__[0]=AZbVNDblTfdAn8vH2mdDsAjXjPL99Xe21S2TlKMYQ1BXXw7zNqVeBodKx_Ed0xVE340ASPwyraOiyi43OzO6eJVzfHQhQFskBnNoduYoyUmc3VAKQqeQdIv4miZzog8XzQaVG7wd8DGRd0dfsqa3b3ajj_Le-pVusKEs-PAuS6kMnJfSLVCkR7Yabu-i1VD4PhI&__tn__=%2CO%2CP-R",
-          "text": "We will be co-hosting our 4th Annual MLK Day of Service on Monday, January 19th, from 12-4pm.\u2026 See more",
+          "text": "We will be co-hosting our 4th Annual MLK Day of Service on Monday, January 19th, from 12-4pm.… See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -341,5 +341,40 @@
       "posts": 1,
       "engagement": 4
     }
-  ]
+  ],
+  "grantInfo": {
+    "totalFunding": 254690,
+    "formattedFunding": "$255K",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "status": "active",
+    "county": "South Jersey",
+    "city": "Bridgeton",
+    "focusArea": "Journalism pipeline",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "amount": 254690,
+        "formattedAmount": "$255K",
+        "description": "To develop and implement each year a 15-week training and internship program for youth/citizens in foster care and for children of incarcerated people to tell the stories of their peers for Hopeloft’s local news site, Follow South Jersey. This grant was funded in part in the first year by support from New Jersey Health Initiatives (NJHI), a statewide grantmaking program of the Robert Wood Johnson Foundation.",
+        "focusArea": "Journalism pipeline",
+        "status": "active"
+      }
+    ]
+  },
+  "website": "https://www.hopeloft.com"
 }

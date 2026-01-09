@@ -28,7 +28,7 @@
         {
           "id": "post_0",
           "url": "https://www.facebook.com/RadioRoujeBle/posts/pfbid0nqKpCraBGLdQXr9ifcgkRfGmzz1Msm1uik8bdUQQbxVM11dHC8mYraq5kQnDHdpVl?__cft__[0]=AZb12W919dAiInp8sQKE7bgkqiLxpeh9Lwco8xAYkTxS1xVCEjf_iXlhVwBoatVOSAu0cpkUaSHQeRTZWZi9f29966PEj9_ipIx9hFL9SBz3aRGE5eqG8Xoa15puVjygLGVulOWj6e_xVdWsGVZfHCgpd33CdJT5li_ioS8xXdUgOlgugTSYdLrd_TyrZN2oGS0&__tn__=%2CO%2CP-R",
-          "text": "Valentino VZ c est le nom d un jeune artiste Ivoirien chanteur compositeur qui vient tout juste de sortir son premier album intitul\u00e9 Valentino VZ Victoire vous n allez \u2026 See more",
+          "text": "Valentino VZ c est le nom d un jeune artiste Ivoirien chanteur compositeur qui vient tout juste de sortir son premier album intitulé Valentino VZ Victoire vous n allez … See more",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -61,7 +61,7 @@
     {
       "id": "post_0",
       "url": "https://www.facebook.com/RadioRoujeBle/posts/pfbid0nqKpCraBGLdQXr9ifcgkRfGmzz1Msm1uik8bdUQQbxVM11dHC8mYraq5kQnDHdpVl?__cft__[0]=AZb12W919dAiInp8sQKE7bgkqiLxpeh9Lwco8xAYkTxS1xVCEjf_iXlhVwBoatVOSAu0cpkUaSHQeRTZWZi9f29966PEj9_ipIx9hFL9SBz3aRGE5eqG8Xoa15puVjygLGVulOWj6e_xVdWsGVZfHCgpd33CdJT5li_ioS8xXdUgOlgugTSYdLrd_TyrZN2oGS0&__tn__=%2CO%2CP-R",
-      "text": "Valentino VZ c est le nom d un jeune artiste Ivoirien chanteur compositeur qui vient tout juste de sortir son premier album intitul\u00e9 Valentino VZ Victoire vous n allez \u2026 See more",
+      "text": "Valentino VZ c est le nom d un jeune artiste Ivoirien chanteur compositeur qui vient tout juste de sortir son premier album intitulé Valentino VZ Victoire vous n allez … See more",
       "date": null,
       "engagement": {
         "likes": 0,
@@ -80,5 +80,32 @@
     "first_post": null,
     "last_post": null
   },
-  "time_series": []
+  "time_series": [],
+  "grantInfo": {
+    "totalFunding": 40000,
+    "formattedFunding": "$40K",
+    "years": [
+      "2022"
+    ],
+    "status": "completed",
+    "county": "Essex County",
+    "city": "East Orange",
+    "focusArea": "Civic news and information reporting",
+    "grantCount": 1,
+    "hasMultipleGrants": false,
+    "grants": [
+      {
+        "id": 1,
+        "years": [
+          "2022"
+        ],
+        "amount": 40000,
+        "formattedAmount": "$40K",
+        "description": "To enable this online Haitian community radio organization to develop its own website, app, and weekly public service announcements, relevant to the more than 23,000 members of the Haitian community in Essex County. The project aim is to focus on translating and disseminating reliable information on civics, health, relevant news, and education and to create a platform where community members can address concerns and share experiences.",
+        "focusArea": "Civic news and information reporting",
+        "status": "completed"
+      }
+    ]
+  },
+  "website": "https://www.radioroujeble.com"
 }
