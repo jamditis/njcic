@@ -133,8 +133,8 @@ def read_json(path):
 
 def build_dashboard_data(grantees, platform_totals):
     """Build dashboard-ready JSON structure."""
-    # Sort grantees by engagement
-    top_grantees = sorted(grantees, key=lambda x: x['total_engagement'], reverse=True)[:12]
+    # Sort grantees by engagement - include ALL grantees, not just top 12
+    top_grantees = sorted(grantees, key=lambda x: x['total_engagement'], reverse=True)
 
     # Build platform data
     platforms = {}
