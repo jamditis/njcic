@@ -231,5 +231,7 @@
       "posts": 2,
       "engagement": 26
     }
-  ]
+  ],
+  "logo": "../../branding/logos/grantees-web/colab-arts.png",
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/colab-arts.png"
 }

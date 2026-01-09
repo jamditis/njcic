@@ -201,5 +201,7 @@
       "posts": 2,
       "engagement": 81
     }
-  ]
+  ],
+  "logo": "../../branding/logos/grantees-web/nj-pen.png",
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/nj-pen.png"
 }

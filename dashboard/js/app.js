@@ -471,6 +471,22 @@
     }
 
     /**
+     * Get grantee logo path from slug
+     * @param {string} slug - Grantee slug
+     * @returns {string} Path to logo image
+     */
+    function getGranteeLogoPath(slug) {
+        // Map variant slugs to their logo files
+        const logoMap = {
+            'hopeloft-inc': 'hopeloft',
+            'the-daily-targum-targum-publishing-co': 'daily-targum',
+            'tapinto-hasbrouk-heights': 'tapinto-hasbrouck-heights'
+        };
+        const logoSlug = logoMap[slug] || slug;
+        return `../branding/logos/grantees-web/thumbs/${logoSlug}.png`;
+    }
+
+    /**
      * Render grantees grid with cards
      * @param {Array} grantees - Array of grantee objects
      */
@@ -491,14 +507,23 @@
         grid.innerHTML = grantees.map((grantee, index) => {
             const engagementRate = grantee.posts > 0 ? (grantee.engagement / grantee.posts).toFixed(1) : 0;
             const platformColor = getPlatformColor(grantee.topPlatform);
+            const logoPath = getGranteeLogoPath(grantee.slug);
 
             return `
                 <a href="grantees/${grantee.slug}.html" class="grantee-card group block" style="animation-delay: ${index * 50}ms">
                     <div class="p-5">
-                        <!-- Header -->
-                        <div class="flex items-start justify-between mb-4">
-                            <h3 class="font-bold text-njcic-dark group-hover:text-njcic-teal transition-colors line-clamp-2 flex-1 mr-2">${grantee.name}</h3>
-                            <div class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center" style="background-color: ${platformColor}20; color: ${platformColor}">
+                        <!-- Header with logo -->
+                        <div class="flex items-start gap-3 mb-4">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-gray-50 flex items-center justify-center overflow-hidden">
+                                <img src="${logoPath}" alt="${grantee.name}"
+                                     class="max-w-full max-h-full object-contain"
+                                     loading="lazy"
+                                     onerror="this.parentElement.innerHTML='<span class=\\'text-lg font-bold text-gray-400\\'>${grantee.name.charAt(0)}</span>'">
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="font-bold text-njcic-dark group-hover:text-njcic-teal transition-colors line-clamp-2">${grantee.name}</h3>
+                            </div>
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center" style="background-color: ${platformColor}20; color: ${platformColor}">
                                 ${getPlatformIcon(grantee.topPlatform)}
                             </div>
                         </div>

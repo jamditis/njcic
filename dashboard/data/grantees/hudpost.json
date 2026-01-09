@@ -404,5 +404,7 @@
       "posts": 3,
       "engagement": 1570
     }
-  ]
+  ],
+  "logo": "../../branding/logos/grantees-web/hudpost.png",
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/hudpost.png"
 }

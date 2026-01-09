@@ -221,5 +221,7 @@
       "posts": 2,
       "engagement": 4
     }
-  ]
+  ],
+  "logo": "../../branding/logos/grantees-web/the-jersey-vindicator.png",
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/the-jersey-vindicator.png"
 }

@@ -226,5 +226,7 @@
       "posts": 1,
       "engagement": 1
     }
-  ]
+  ],
+  "logo": "../../branding/logos/grantees-web/paterson-alliance.png",
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/paterson-alliance.png"
 }

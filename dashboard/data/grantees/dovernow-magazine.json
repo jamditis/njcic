@@ -211,5 +211,7 @@
       "posts": 3,
       "engagement": 339
     }
-  ]
+  ],
+  "logo": "../../branding/logos/grantees-web/dovernow-magazine.png",
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/dovernow-magazine.png"
 }

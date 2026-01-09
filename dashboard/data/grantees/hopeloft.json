@@ -251,5 +251,7 @@
       "posts": 1,
       "engagement": 37
     }
-  ]
+  ],
+  "logo": "../../branding/logos/grantees-web/hopeloft.png",
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/hopeloft.png"
 }

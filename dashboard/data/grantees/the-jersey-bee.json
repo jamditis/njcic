@@ -344,5 +344,7 @@
       "posts": 1,
       "engagement": 27
     }
-  ]
+  ],
+  "logo": "../../branding/logos/grantees-web/the-jersey-bee.png",
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/the-jersey-bee.png"
 }

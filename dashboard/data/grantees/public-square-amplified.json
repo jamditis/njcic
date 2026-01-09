@@ -349,5 +349,7 @@
       "posts": 1,
       "engagement": 2
     }
-  ]
+  ],
+  "logo": "../../branding/logos/grantees-web/public-square-amplified.png",
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/public-square-amplified.png"
 }
