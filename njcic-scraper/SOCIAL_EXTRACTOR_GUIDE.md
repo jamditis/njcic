@@ -1,19 +1,19 @@
-# Social Media URL Extractor - User Guide
+# Social media URL extractor - user guide
 
 ## Overview
 
 The `extract_social_urls.py` script automatically extracts social media links from NJCIC grantee websites and outputs a structured JSON file with the results.
 
-## Quick Start
+## Quick start
 
-### 1. Install Dependencies
+### 1. Install dependencies
 
 ```bash
 cd /home/user/njcic/njcic-scraper
 pip install -r requirements.txt
 ```
 
-### 2. Run the Extractor
+### 2. Run the extractor
 
 ```bash
 python3 scripts/extract_social_urls.py
@@ -28,7 +28,7 @@ The script will:
 
 ## Features
 
-### Supported Platforms
+### Supported platforms
 
 ✓ Facebook  
 ✓ Twitter/X  
@@ -39,7 +39,7 @@ The script will:
 ✓ Threads  
 ✓ BlueSky  
 
-### Extraction Strategy
+### Extraction strategy
 
 The script uses a multi-layered approach to find social media links:
 
@@ -58,7 +58,7 @@ The script uses a multi-layered approach to find social media links:
 4. **Text Content** (fallback)
    - Plain text URLs in page content
 
-### Smart URL Normalization
+### Smart URL normalization
 
 - Adds `https://` protocol if missing
 - Normalizes platform-specific URLs:
@@ -68,7 +68,7 @@ The script uses a multi-layered approach to find social media links:
 - Removes unnecessary URL parameters
 - Removes trailing slashes
 
-### Error Handling
+### Error handling
 
 - **HTTP Errors**: Retries failed requests up to 2 times
 - **Timeouts**: 10-second timeout per request with retry
@@ -76,7 +76,7 @@ The script uses a multi-layered approach to find social media links:
 - **Missing Websites**: Skips gracefully and logs warning
 - **Rate Limiting**: 0.5-second delay between requests
 
-## Output Format
+## Output format
 
 ```json
 {
@@ -114,7 +114,7 @@ The script uses a multi-layered approach to find social media links:
 }
 ```
 
-## Configuration Options
+## Configuration options
 
 Edit the constants at the top of `extract_social_urls.py`:
 
@@ -125,7 +125,7 @@ MAX_RETRIES = 2          # Number of retry attempts
 USER_AGENT = "..."       # Browser user agent string
 ```
 
-## Example Output
+## Example output
 
 ```
 ======================================================================
@@ -211,7 +211,7 @@ pip install -r requirements.txt
 - **Total time for 75 grantees**: ~2-3 minutes
 - **Success rate**: ~95% (assuming websites are accessible)
 
-## Use Cases
+## Use cases
 
 1. **Social Media Audit**: Identify which grantees have social media presence
 2. **Contact Information**: Collect alternative contact channels
@@ -219,7 +219,7 @@ pip install -r requirements.txt
 4. **Data Analysis**: Analyze social media adoption by region/focus area
 5. **Report Generation**: Include social media links in grantee directories
 
-## Next Steps
+## Next steps
 
 After running the extractor, you can:
 
@@ -229,7 +229,7 @@ After running the extractor, you can:
 4. Identify grantees that need help with digital presence
 5. Create social media lists/groups for better communication
 
-## Technical Details
+## Technical details
 
 **Language**: Python 3.7+  
 **Dependencies**: requests, beautifulsoup4, tqdm  

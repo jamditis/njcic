@@ -1,6 +1,6 @@
-# CCM Repository - Technical Analysis
+# CCM repository - Technical analysis
 
-## Project Overview
+## Project overview
 
 **Center for Cooperative Media (CCM)** - A collection of free tools and resources for journalists, created by the Center for Cooperative Media at Montclair State University.
 
@@ -16,7 +16,7 @@
 
 ---
 
-## Repository Contents
+## Repository contents
 
 ### Public Tools (9)
 
@@ -32,7 +32,7 @@
 | **Grant Proposal Generator** | Grant proposal templates | HTML + React CDN |
 | **Collaboration Agreement Generator** | Partnership MOUs | HTML + React CDN |
 
-### Internal Research
+### Internal research
 
 **NJ Influencer Social Media Scraper**
 - Multi-platform scraping (TikTok, Instagram, YouTube)
@@ -42,7 +42,7 @@
 
 ---
 
-## Tech Stack
+## Tech stack
 
 ### Frontend
 - **HTML Tools:** HTML5 + Vanilla JS + Tailwind CSS + React (CDN)
@@ -61,7 +61,7 @@
 
 ---
 
-## Project Structure
+## Project structure
 
 ```
 ccm/
@@ -109,14 +109,14 @@ npm test         # Run tests
 
 ---
 
-## Social Scraper
+## Social scraper
 
-### Platform Support
+### Platform support
 - TikTok (via yt-dlp)
 - Instagram (via instaloader)
 - YouTube (via yt-dlp)
 
-### Analysis Capabilities
+### Analysis capabilities
 
 **Semantic Analysis:**
 - Topic classification
@@ -130,7 +130,7 @@ npm test         # Run tests
 - Authenticity scoring
 - Controversy potential
 
-### AI Providers
+### AI providers
 - Anthropic Claude (primary)
 - Google Gemini (fast/cheap)
 - OpenAI GPT (balanced)
@@ -154,9 +154,9 @@ python run_ai_analysis.py          # AI analysis
 
 ---
 
-## Key Features
+## Key features
 
-### Browser-Based Tools
+### Browser-based tools
 - Zero installation required
 - Work directly in browser
 - Local storage for persistence

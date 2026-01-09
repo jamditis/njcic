@@ -1,4 +1,4 @@
-# LinkedIn Scraper - Quick Start Guide
+# LinkedIn scraper - Quick start guide
 
 ## Installation
 
@@ -10,7 +10,7 @@ pip install playwright
 playwright install chromium
 ```
 
-## Quick Example
+## Quick example
 
 ```python
 from scrapers.linkedin import LinkedInScraper
@@ -32,7 +32,7 @@ else:
     print(f"Errors: {result['errors']}")
 ```
 
-## Key Features
+## Key features
 
 ✓ Company pages (`/company/name`)
 ✓ Personal profiles (`/in/username`)
@@ -41,7 +41,7 @@ else:
 ✓ Screenshot capture
 ✓ JSON metadata export
 
-## Expected Metrics
+## Expected metrics
 
 **Company Pages:**
 - `followers_count` - Number of followers (if public)
@@ -53,7 +53,7 @@ else:
 - `connections_count` - Connections (often restricted)
 - `posts_found` - Number of visible posts
 
-## Important Limitations
+## Important limitations
 
 ⚠️ **LinkedIn heavily restricts scraping**
 
@@ -63,14 +63,14 @@ else:
 - Terms of Service prohibit automation
 - Best effort only - expect failures
 
-## When It Works Best
+## When it works best
 
 - Public company pages
 - Profiles with public visibility settings
 - Single requests (not bulk scraping)
 - Viewing basic metrics only
 
-## When It Fails
+## When it fails
 
 - Profiles behind authentication wall
 - After too many requests (rate limiting)
@@ -78,7 +78,7 @@ else:
 - Detailed engagement metrics
 - Post content extraction
 
-## Output Location
+## Output location
 
 ```
 output/linkedin/{grantee_name}/{username}/
@@ -97,19 +97,19 @@ output/linkedin/{grantee_name}/{username}/
 **Problem**: "Could not extract username"
 **Solution**: Check URL format matches: `linkedin.com/company/name` or `linkedin.com/in/username`
 
-## Legal Notice
+## Legal notice
 
 This scraper is for **educational/research purposes only**.
 LinkedIn's Terms of Service prohibit automated scraping.
 Consider using LinkedIn's official API for production use.
 
-## Run Example
+## Run example
 
 ```bash
 cd /home/user/njcic/njcic-scraper
 python3 examples/linkedin_example.py
 ```
 
-## More Information
+## More information
 
 See `README_LINKEDIN.md` for full documentation.

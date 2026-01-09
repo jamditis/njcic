@@ -45,7 +45,7 @@ playwright install chromium
 
 ## Usage
 
-### Basic Usage
+### Basic usage
 
 ```python
 from scrapers.facebook import FacebookScraper
@@ -67,7 +67,7 @@ else:
     print(f"Errors: {result['errors']}")
 ```
 
-### Command Line
+### Command line
 
 ```bash
 # Test scraper
@@ -78,7 +78,7 @@ python scripts/test_facebook.py https://facebook.com/pages/name/123456 "Example 
 python scripts/test_facebook.py https://facebook.com/groups/example "Example Org"
 ```
 
-### Extract Username Only
+### Extract username only
 
 ```python
 scraper = FacebookScraper()
@@ -93,7 +93,7 @@ username = scraper.extract_username("https://facebook.com/groups/example")
 print(username)  # "group_example"
 ```
 
-## Output Structure
+## Output structure
 
 The scraper creates the following directory structure:
 
@@ -143,7 +143,7 @@ output/
 ]
 ```
 
-## API Reference
+## API reference
 
 ### FacebookScraper
 
@@ -210,9 +210,9 @@ if result['success']:
     print(f"Engagement Rate: {result['engagement_metrics']['avg_engagement_rate']}%")
 ```
 
-## Important Notes
+## Important notes
 
-### Facebook's Anti-Scraping Measures
+### Facebook's anti-scraping measures
 
 Facebook actively prevents scraping through:
 - CAPTCHAs
@@ -234,7 +234,7 @@ This scraper uses best-effort strategies:
 4. **CAPTCHA**: Manual intervention may be required if CAPTCHA appears.
 5. **Post Limit**: Extracts up to 25 posts to avoid excessive scraping time.
 
-### Best Practices
+### Best practices
 
 1. **Respect Rate Limits**: Don't scrape too frequently
 2. **Use Delays**: Add delays between requests
@@ -242,7 +242,7 @@ This scraper uses best-effort strategies:
 4. **Error Handling**: Always check `result['success']` and `result['errors']`
 5. **Monitor Changes**: Facebook updates its site regularly
 
-### Graceful Degradation
+### Graceful degradation
 
 The scraper is designed to:
 - Continue even if some elements aren't found
@@ -278,7 +278,7 @@ playwright install chromium
 - Facebook may hide metrics from scrapers
 - This is expected behavior for privacy-protected pages
 
-## Example: Batch Scraping
+## Example: Batch scraping
 
 ```python
 from scrapers.facebook import FacebookScraper

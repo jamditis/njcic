@@ -1,4 +1,4 @@
-# Instagram Scraper Quick Start
+# Instagram scraper quick start
 
 ## Installation
 
@@ -6,7 +6,7 @@
 pip install instaloader>=4.10.0
 ```
 
-## Basic Usage
+## Basic usage
 
 ```python
 from scrapers.instagram import InstagramScraper
@@ -28,7 +28,7 @@ else:
     print(f"Errors: {result['errors']}")
 ```
 
-## With Authentication
+## With authentication
 
 ```python
 import os
@@ -42,7 +42,7 @@ scraper = InstagramScraper()
 result = scraper.scrape(url, grantee_name)
 ```
 
-## Output Location
+## Output location
 
 ```
 output/
@@ -52,7 +52,7 @@ output/
             └── metadata.json
 ```
 
-## Key Features
+## Key features
 
 - Downloads metadata for last 25 posts (no media files)
 - Handles private profiles gracefully
@@ -60,7 +60,7 @@ output/
 - Supports session persistence
 - Production-ready error handling
 
-## Test It
+## Test it
 
 ```bash
 python test_instagram.py

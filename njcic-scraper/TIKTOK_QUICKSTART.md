@@ -1,9 +1,9 @@
-# TikTok Scraper - Quick Start Guide
+# TikTok scraper - quick start guide
 
 ## Overview
 Production-ready TikTok scraper that extracts metadata only (no video downloads) for maximum performance.
 
-## Files Created
+## Files created
 - `/home/user/njcic/njcic-scraper/scrapers/tiktok.py` - Main scraper implementation
 - `/home/user/njcic/njcic-scraper/scrapers/README_TIKTOK.md` - Comprehensive documentation
 - `/home/user/njcic/njcic-scraper/test_tiktok_scraper.py` - Test script
@@ -16,7 +16,7 @@ Ensure yt-dlp is installed (already in requirements.txt):
 pip install yt-dlp>=2024.0.0
 ```
 
-## Basic Usage
+## Basic usage
 
 ```python
 from scrapers.tiktok import TikTokScraper
@@ -38,21 +38,21 @@ print(f"Views: {result['engagement_metrics']['total_views']:,}")
 print(f"Engagement Rate: {result['engagement_metrics']['avg_engagement_rate']}%")
 ```
 
-## Key Features
+## Key features
 
-### 1. Metadata-Only Mode (Fast)
+### 1. Metadata-only mode (fast)
 - Uses `--skip-download` flag
 - ~2-5 seconds per post
 - 25 posts in ~1-2 minutes
 - No video storage needed
 
-### 2. Anti-Bot Measures
+### 2. Anti-bot measures
 - User-agent rotation (4 different browsers)
 - Rate limiting (1s delay between requests)
 - Automatic retry with exponential backoff (3 attempts)
 - Specific TikTok API endpoint configuration
 
-### 3. Comprehensive Metrics
+### 3. Comprehensive metrics
 ```python
 engagement_metrics = {
     "followers_count": None,  # Not available via yt-dlp
@@ -65,7 +65,7 @@ engagement_metrics = {
 }
 ```
 
-### 4. Extracted Post Data
+### 4. Extracted post data
 Each post includes:
 - post_id, title, description
 - date, timestamp
@@ -73,7 +73,7 @@ Each post includes:
 - duration, username, display_name
 - url, thumbnail
 
-## URL Formats Supported
+## URL formats supported
 
 All of these work:
 ```python
@@ -83,7 +83,7 @@ All of these work:
 "https://www.tiktok.com/username"
 ```
 
-## Output Structure
+## Output structure
 
 ```
 output/
@@ -106,7 +106,7 @@ Override max_posts per scrape:
 result = scraper.scrape(url, grantee_name, max_posts=50)
 ```
 
-## Error Handling
+## Error handling
 
 The scraper handles:
 - Anti-bot detection (403, captcha, blocked) → Auto-retry with delays
@@ -129,7 +129,7 @@ This tests:
 - Engagement metrics calculation
 - Error handling
 
-## Quick Test
+## Quick test
 
 ```python
 from scrapers.tiktok import TikTokScraper
@@ -156,7 +156,7 @@ print(f"Platform: {scraper.platform_name}")
 - Disk: ~50-100 KB per post (metadata only)
 - Network: ~50-100 KB per post
 
-## Production Considerations
+## Production considerations
 
 1. **Rate Limiting**: TikTok limits ~100-200 requests/hour
 2. **Batch Processing**: Add 5-10s delays between profiles
@@ -164,7 +164,7 @@ print(f"Platform: {scraper.platform_name}")
 4. **Error Handling**: Some profiles may be unavailable (handled gracefully)
 5. **Logging**: All activity logged to `logs/scraper.log`
 
-## Common Issues
+## Common issues
 
 ### "TikTok is blocking requests"
 - Wait 15-30 minutes
@@ -182,7 +182,7 @@ pip install yt-dlp>=2024.0.0
 - Check if profile is public
 - Account may have no posts
 
-## API Reference
+## API reference
 
 ### `TikTokScraper(output_dir=None)`
 Initialize scraper with optional output directory (defaults to config.OUTPUT_DIR).
@@ -204,7 +204,7 @@ Scrape TikTok profile metadata.
 }
 ```
 
-## Full Documentation
+## Full documentation
 
 See `/home/user/njcic/njcic-scraper/scrapers/README_TIKTOK.md` for:
 - Detailed API reference

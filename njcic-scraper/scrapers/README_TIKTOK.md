@@ -1,4 +1,4 @@
-# TikTok Scraper Documentation
+# TikTok scraper documentation
 
 ## Overview
 
@@ -23,7 +23,7 @@ pip install yt-dlp>=2024.0.0
 
 ## Usage
 
-### Basic Usage
+### Basic usage
 
 ```python
 from scrapers.tiktok import TikTokScraper
@@ -49,7 +49,7 @@ else:
     print(f"Errors: {result['errors']}")
 ```
 
-### URL Formats Supported
+### URL formats supported
 
 The scraper handles multiple TikTok URL formats:
 
@@ -62,14 +62,14 @@ The scraper handles multiple TikTok URL formats:
 "tiktok.com/username"
 ```
 
-### Extract Username Only
+### Extract username only
 
 ```python
 username = scraper.extract_username("https://www.tiktok.com/@thehobokengirl")
 # Returns: "thehobokengirl"
 ```
 
-## Return Value
+## Return value
 
 The `scrape()` method returns a dictionary with the following structure:
 
@@ -90,9 +90,9 @@ The `scrape()` method returns a dictionary with the following structure:
 }
 ```
 
-## Output Files
+## Output files
 
-### Directory Structure
+### Directory structure
 
 ```
 output/
@@ -125,37 +125,37 @@ output/
 ]
 ```
 
-## Anti-Bot Measures
+## Anti-bot measures
 
 The scraper implements several anti-bot techniques:
 
-### 1. User-Agent Rotation
+### 1. User-agent rotation
 Randomly selects from multiple browser user agents:
 - Chrome (Windows/Mac/Linux)
 - Firefox
 - Safari
 
-### 2. Rate Limiting
+### 2. Rate limiting
 - 1 second delay between requests
 - Configurable via `--sleep-requests` flag
 - Additional delays on retry attempts
 
-### 3. Retry Logic
+### 3. Retry logic
 - 3 automatic retries on network errors
 - Exponential backoff (5s, 10s, 15s)
 - Graceful handling of anti-bot detection
 
-### 4. API Endpoint Selection
+### 4. API endpoint selection
 Uses TikTok's specific API hostname:
 ```python
 --extractor-args tiktok:api_hostname=api22-normal-c-useast2a.tiktokv.com
 ```
 
-## Error Handling
+## Error handling
 
-### Common Errors and Solutions
+### Common errors and solutions
 
-#### 1. Anti-bot Detection (403, Captcha, Blocked)
+#### 1. Anti-bot detection (403, Captcha, Blocked)
 ```
 Error: "TikTok is blocking requests. Possible anti-bot measures detected."
 ```
@@ -165,7 +165,7 @@ Error: "TikTok is blocking requests. Possible anti-bot measures detected."
 - Try during off-peak hours
 - Reduce max_posts to lower request volume
 
-#### 2. Network Errors
+#### 2. Network errors
 ```
 Error: "network error", "connection timeout"
 ```
@@ -174,7 +174,7 @@ Error: "network error", "connection timeout"
 - Automatic retry will attempt 3 times
 - Increase timeout if needed
 
-#### 3. No Videos Found
+#### 3. No videos found
 ```
 Warning: "No videos found for profile"
 ```
@@ -192,9 +192,9 @@ Error: "yt-dlp not found. Install with: pip install yt-dlp"
 pip install yt-dlp>=2024.0.0
 ```
 
-## Configuration Options
+## Configuration options
 
-### Constructor Parameters
+### Constructor parameters
 
 ```python
 TikTokScraper(
@@ -228,9 +228,9 @@ To modify:
 - Increase `--sleep-requests` for slower requests
 - Add `--proxy` for proxy support
 
-## Performance Considerations
+## Performance considerations
 
-### Speed Optimization
+### Speed optimization
 
 **Metadata-only mode** (current implementation):
 - No video downloads
@@ -242,7 +242,7 @@ To modify:
 - ~30-60 seconds per post
 - 25 posts in ~15-25 minutes
 
-### Resource Usage
+### Resource usage
 
 - **Memory**: ~50-100 MB
 - **Disk**: ~50-100 KB per post (metadata only)
@@ -250,24 +250,24 @@ To modify:
 
 ## Limitations
 
-### 1. Follower Count Not Available
+### 1. Follower count not available
 yt-dlp doesn't extract follower count from video metadata. To get follower count:
 - Use TikTok API (requires API key)
 - Scrape profile page (requires additional tools)
 - Use third-party analytics services
 
-### 2. Rate Limiting
+### 2. Rate limiting
 TikTok enforces rate limits:
 - ~100-200 requests per hour
 - May be stricter without authentication
 - Use delays between batch scraping
 
-### 3. Regional Restrictions
+### 3. Regional restrictions
 Some content may be region-locked:
 - Use VPN if needed
 - May vary by account location
 
-### 4. Private Accounts
+### 4. Private accounts
 Cannot scrape private accounts:
 - Profile must be public
 - No authentication support in yt-dlp
@@ -288,7 +288,7 @@ This will test:
 
 ## Troubleshooting
 
-### Enable Debug Logging
+### Enable debug logging
 
 ```python
 import logging
@@ -313,13 +313,13 @@ Should be >= 2024.0.0
 yt-dlp --write-info-json --skip-download --playlist-end 1 https://www.tiktok.com/@username
 ```
 
-### Common Issues
+### Common issues
 
 1. **Import errors**: Make sure you're in the correct directory
 2. **Permission errors**: Check output directory permissions
 3. **Encoding errors**: Ensure UTF-8 encoding in environment
 
-## Best Practices
+## Best practices
 
 1. **Respect rate limits** - Don't scrape too aggressively
 2. **Monitor errors** - Check error logs regularly
@@ -330,7 +330,7 @@ yt-dlp --write-info-json --skip-download --playlist-end 1 https://www.tiktok.com
 
 ## Examples
 
-### Batch Scraping Multiple Profiles
+### Batch scraping multiple profiles
 
 ```python
 import time
@@ -357,7 +357,7 @@ for url, name in profiles:
     time.sleep(5)
 ```
 
-### Extract Engagement Metrics
+### Extract engagement metrics
 
 ```python
 result = scraper.scrape(url, grantee_name)

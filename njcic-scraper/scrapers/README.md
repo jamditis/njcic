@@ -1,4 +1,4 @@
-# Social Media Scrapers
+# Social media scrapers
 
 Production-ready scrapers for various social media platforms.
 
@@ -26,7 +26,7 @@ pip install -r ../requirements.txt
 
 ### Usage
 
-#### As a Module
+#### As a module
 
 ```python
 from scrapers.twitter import TwitterScraper
@@ -48,16 +48,16 @@ else:
     print(f"Errors: {result['errors']}")
 ```
 
-#### Command Line
+#### Command line
 
 ```bash
 cd /home/user/njcic/njcic-scraper/scrapers
 python twitter.py https://twitter.com/username "Organization Name"
 ```
 
-### Data Structure
+### Data structure
 
-#### Output Directory Structure
+#### Output directory structure
 
 ```
 output/
@@ -68,7 +68,7 @@ output/
             └── {tweet_id}.json (one per tweet)
 ```
 
-#### Metadata Format
+#### Metadata format
 
 ```json
 {
@@ -109,7 +109,7 @@ output/
 }
 ```
 
-#### Return Value
+#### Return value
 
 The `scrape()` method returns a dictionary with:
 
@@ -135,7 +135,7 @@ The `scrape()` method returns a dictionary with:
 }
 ```
 
-### Error Handling
+### Error handling
 
 The scraper handles various error conditions:
 
@@ -148,7 +148,7 @@ The scraper handles various error conditions:
 
 Errors are collected in the `errors` list and logged for debugging.
 
-### Rate Limiting
+### Rate limiting
 
 - Uses a 5-minute timeout for gallery-dl operations
 - Downloads only metadata by default (can be configured)
@@ -196,7 +196,7 @@ To scrape with authentication (for better rate limits):
 }
 ```
 
-## Base Scraper
+## Base scraper
 
 All platform scrapers inherit from `BaseScraper`, which provides:
 
@@ -206,7 +206,7 @@ All platform scrapers inherit from `BaseScraper`, which provides:
 - Metadata saving
 - Abstract methods for `extract_username()` and `scrape()`
 
-### Creating a New Scraper
+### Creating a new scraper
 
 ```python
 from scrapers.base import BaseScraper

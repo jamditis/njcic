@@ -293,7 +293,7 @@
                         <div>${formatAbbreviated(platform.engagement)} engagement</div>
                         <div>${platform.grantees} grantees</div>
                     </div>
-                    ${hasData ? '<div class="mt-2 inline-block px-2 py-0.5 bg-green-500 bg-opacity-20 text-green-300 text-xs rounded-full">Active</div>' : '<div class="mt-2 inline-block px-2 py-0.5 bg-gray-500 bg-opacity-20 text-gray-400 text-xs rounded-full">No Data</div>'}
+                    ${hasData ? '<div class="mt-2 inline-block px-2 py-0.5 bg-green-500 bg-opacity-20 text-green-300 text-xs rounded-full">Active</div>' : '<div class="mt-2 inline-block px-2 py-0.5 bg-gray-500 bg-opacity-20 text-gray-400 text-xs rounded-full">No data</div>'}
                 </a>
             `;
         }).join('');
@@ -334,19 +334,19 @@
                     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
                         <div class="bg-gray-50 rounded-lg p-4 text-center">
                             <div class="text-2xl font-bold text-njcic-dark">${formatNumber(platform.posts)}</div>
-                            <div class="text-xs text-gray-500">Total Posts</div>
+                            <div class="text-xs text-gray-500">Total posts</div>
                         </div>
                         <div class="bg-gray-50 rounded-lg p-4 text-center">
                             <div class="text-2xl font-bold text-njcic-dark">${formatAbbreviated(platform.engagement)}</div>
-                            <div class="text-xs text-gray-500">Total Engagement</div>
+                            <div class="text-xs text-gray-500">Total engagement</div>
                         </div>
                         <div class="bg-gray-50 rounded-lg p-4 text-center">
                             <div class="text-2xl font-bold text-njcic-dark">${platform.grantees}</div>
-                            <div class="text-xs text-gray-500">Active Grantees</div>
+                            <div class="text-xs text-gray-500">Active grantees</div>
                         </div>
                         <div class="bg-gray-50 rounded-lg p-4 text-center">
                             <div class="text-2xl font-bold text-njcic-dark">${formatNumber(Math.round(platform.avgEngagementPerPost))}</div>
-                            <div class="text-xs text-gray-500">Avg per Post</div>
+                            <div class="text-xs text-gray-500">Avg per post</div>
                         </div>
                     </div>
 
@@ -361,7 +361,7 @@
 
                     ${platform.contentTypes ? `
                         <div class="mb-6">
-                            <h4 class="text-sm font-semibold text-gray-700 mb-3">Content Types</h4>
+                            <h4 class="text-sm font-semibold text-gray-700 mb-3">Content types</h4>
                             <div class="flex flex-wrap gap-2">
                                 ${Object.entries(platform.contentTypes).map(([type, data]) => `
                                     <span class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700">
@@ -374,7 +374,7 @@
 
                     ${platform.topGrantees && platform.topGrantees.length > 0 ? `
                         <div>
-                            <h4 class="text-sm font-semibold text-gray-700 mb-3">Top Grantees on ${platform.name}</h4>
+                            <h4 class="text-sm font-semibold text-gray-700 mb-3">Top grantees on ${platform.name}</h4>
                             <div class="space-y-2">
                                 ${platform.topGrantees.slice(0, 5).map((g, i) => `
                                     <div class="flex items-center justify-between bg-gray-50 rounded-lg px-4 py-2">

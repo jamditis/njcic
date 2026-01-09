@@ -1,4 +1,4 @@
-# Threads Scraper Implementation Summary
+# Threads scraper implementation summary
 
 ## Overview
 
@@ -6,9 +6,9 @@ Production-ready Threads scraper created at `/home/user/njcic/njcic-scraper/scra
 
 This implementation uses Playwright for browser automation since Threads has no public API.
 
-## Files Created
+## Files created
 
-### 1. Core Scraper
+### 1. Core scraper
 **Location**: `/home/user/njcic/njcic-scraper/scrapers/threads.py` (17KB)
 
 **Key Features**:
@@ -27,7 +27,7 @@ This implementation uses Playwright for browser automation since Threads has no 
 - `_extract_post_data()` - Extracts post content and metrics
 - `_extract_follower_count()` - Gets follower count
 
-### 2. Test Script
+### 2. Test script
 **Location**: `/home/user/njcic/njcic-scraper/test_threads_scraper.py` (3.8KB)
 
 **Features**:
@@ -71,13 +71,13 @@ python test_threads_scraper.py "https://www.threads.net/@zuck" "Mark Zuckerberg"
 **Updated**: `/home/user/njcic/njcic-scraper/requirements.txt`
 - Added `playwright>=1.40.0`
 
-### 6. Module Registration
+### 6. Module registration
 **Updated**: `/home/user/njcic/njcic-scraper/scrapers/__init__.py`
 - `ThreadsScraper` registered and exported
 
-## Implementation Details
+## Implementation details
 
-### URL Pattern Support
+### URL pattern support
 
 The scraper handles these URL formats:
 ```python
@@ -88,7 +88,7 @@ The scraper handles these URL formats:
 "threads.net/username"
 ```
 
-### Data Extraction
+### Data extraction
 
 For each profile, the scraper extracts:
 
@@ -107,7 +107,7 @@ For each profile, the scraper extracts:
 - `total_reposts` - Sum of reposts across all posts
 - `avg_engagement_rate` - (total_engagement / followers) * 100
 
-### Return Value Structure
+### Return value structure
 
 ```python
 {
@@ -124,7 +124,7 @@ For each profile, the scraper extracts:
 }
 ```
 
-### Output Structure
+### Output structure
 
 ```
 output/
@@ -142,30 +142,30 @@ The `metadata.json` contains:
 - Timestamp of scraping
 - Platform identifier
 
-## Technical Implementation
+## Technical implementation
 
-### Browser Automation
+### Browser automation
 - **Library**: Playwright (async API)
 - **Browser**: Chromium
 - **Mode**: Headless by default (configurable)
 - **User Agent**: Realistic Chrome user agent
 - **Viewport**: 1920x1080
 
-### Content Loading Strategy
+### Content loading strategy
 1. Navigate to profile page
 2. Wait for initial content load
 3. Progressive scrolling to trigger lazy loading
 4. Extract data from loaded posts
 5. Limit to 25 most recent posts
 
-### Anti-Bot Measures
+### Anti-bot measures
 - Realistic user agent strings
 - Natural scrolling patterns with delays
 - Progressive timeouts
 - Graceful error handling
 - Non-headless mode available for debugging
 
-### Error Handling
+### Error handling
 - Comprehensive try-catch blocks
 - Detailed error messages
 - Graceful degradation
@@ -173,7 +173,7 @@ The `metadata.json` contains:
 - Connection error detection
 - Profile existence validation
 
-## Installation Requirements
+## Installation requirements
 
 ### Prerequisites
 ```bash
@@ -187,7 +187,7 @@ pip install -r requirements.txt
 playwright install chromium
 ```
 
-### Verify Installation
+### Verify installation
 ```bash
 # Check Playwright
 python -c "from playwright.async_api import async_playwright; print('✓ Playwright installed')"
@@ -196,9 +196,9 @@ python -c "from playwright.async_api import async_playwright; print('✓ Playwri
 playwright --version
 ```
 
-## Usage Examples
+## Usage examples
 
-### Basic Usage
+### Basic usage
 ```python
 from scrapers.threads import ThreadsScraper
 
@@ -212,7 +212,7 @@ if result['success']:
     print(f"Downloaded {result['posts_downloaded']} posts")
 ```
 
-### With Error Handling
+### With error handling
 ```python
 import time
 
@@ -229,7 +229,7 @@ for attempt in range(max_retries):
         time.sleep(10 * (attempt + 1))  # Exponential backoff
 ```
 
-### Multiple Profiles
+### Multiple profiles
 ```python
 profiles = [
     ("https://www.threads.net/@user1", "User 1"),
@@ -244,7 +244,7 @@ for url, name in profiles:
     time.sleep(5)  # Rate limiting
 ```
 
-## Known Limitations
+## Known limitations
 
 1. **No Public API**: Browser automation required (slower, more fragile)
 2. **Rate Limiting**: Threads may block rapid scraping
@@ -253,7 +253,7 @@ for url, name in profiles:
 5. **Engagement Accuracy**: Extracted from displayed text, may be approximate
 6. **JavaScript Required**: Won't work with JS disabled
 
-## Best Practices
+## Best practices
 
 1. **Always use rate limiting** (5-10 second delays between profiles)
 2. **Implement retry logic** for transient errors
@@ -264,22 +264,22 @@ for url, name in profiles:
 
 ## Testing
 
-### Test Username Extraction
+### Test username extraction
 ```bash
 python test_threads_scraper.py
 ```
 
-### Test Full Scraping (requires Playwright)
+### Test full scraping (requires Playwright)
 ```bash
 python test_threads_scraper.py "https://www.threads.net/@zuck" "Mark Zuckerberg"
 ```
 
-### Run Examples
+### Run examples
 ```bash
 python examples/threads_example.py
 ```
 
-### Debug Mode (see browser)
+### Debug mode (see browser)
 ```python
 scraper = ThreadsScraper(headless=False, timeout=60000)
 result = scraper.scrape(url, name)
@@ -287,7 +287,7 @@ result = scraper.scrape(url, name)
 
 ## Troubleshooting
 
-### Playwright Not Installed
+### Playwright not installed
 **Error**: `ModuleNotFoundError: No module named 'playwright'`
 
 **Solution**:
@@ -296,7 +296,7 @@ pip install playwright
 playwright install chromium
 ```
 
-### Browser Not Installed
+### Browser not installed
 **Error**: `Executable doesn't exist`
 
 **Solution**:
@@ -304,13 +304,13 @@ playwright install chromium
 playwright install chromium
 ```
 
-### Timeout Errors
+### Timeout errors
 **Solutions**:
 - Increase timeout: `ThreadsScraper(timeout=60000)`
 - Check internet connection
 - Try non-headless mode to debug
 
-### No Posts Found
+### No posts found
 **Possible Causes**:
 - Profile is private
 - Profile has no posts
@@ -321,14 +321,14 @@ playwright install chromium
 - Run with `headless=False` to inspect
 - Update selectors if UI changed
 
-## Performance Considerations
+## Performance considerations
 
 ### Speed
 - ~30-60 seconds per profile (depending on post count)
 - Includes scrolling time for lazy loading
 - Network speed dependent
 
-### Resource Usage
+### Resource usage
 - Browser process: ~100-200MB RAM
 - Headless mode uses less resources
 - One browser instance per scrape
@@ -339,7 +339,7 @@ playwright install chromium
 - Scrape during off-peak hours
 - Use connection pooling for multiple profiles
 
-## Security Considerations
+## Security considerations
 
 1. **No Authentication**: Scraper doesn't store credentials
 2. **Public Data Only**: Only scrapes publicly visible content
@@ -347,7 +347,7 @@ playwright install chromium
 4. **Rate Limiting**: Prevents excessive requests
 5. **Error Logging**: No sensitive data in logs
 
-## Future Enhancements
+## Future enhancements
 
 Possible improvements:
 1. Add authentication support for private profiles
@@ -358,7 +358,7 @@ Possible improvements:
 6. Real-time monitoring mode
 7. Batch processing with parallel browsers
 
-## Support Resources
+## Support resources
 
 - **Full Documentation**: `THREADS_SCRAPER_README.md`
 - **Quick Reference**: `THREADS_QUICK_START.md`
@@ -366,7 +366,7 @@ Possible improvements:
 - **Examples**: `examples/threads_example.py`
 - **Playwright Docs**: https://playwright.dev/python/
 
-## Code Quality
+## Code quality
 
 - ✓ Production-ready code
 - ✓ Comprehensive error handling
