@@ -7,7 +7,7 @@
     "total_followers": 11032,
     "platforms_active": 3,
     "engagement_rate": 27.21,
-    "last_updated": "2026-01-08T21:36:01.338473"
+    "last_updated": "2026-01-08T21:40:23.418079"
   },
   "platform_breakdown": {
     "bluesky": {
@@ -383,9 +383,5 @@
       "posts": 26,
       "engagement": 123
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/chalkbeat-newark-civic-news-company.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/chalkbeat-newark-civic-news-company.png",
-  "website": "https://www.chalkbeat.org/newark/",
-  "description": "Chalkbeat Newark is a nonprofit news organization providing in-depth, nonpartisan reporting on Newark public schools and New Jersey education policy. The organization covers issues from school board decisions to student achievement, chronic absenteeism, literacy initiatives, and state education reforms affecting Newark families."
+  ]
 }

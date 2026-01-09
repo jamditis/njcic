@@ -2,22 +2,94 @@
   "name": "Garden State Initiative",
   "slug": "garden-state-initiative",
   "summary": {
-    "total_posts": 2,
-    "total_engagement": 0,
+    "total_posts": 28,
+    "total_engagement": 8,
     "total_followers": 0,
-    "platforms_active": 1,
-    "engagement_rate": 0.0,
-    "last_updated": "2026-01-08T21:36:01.351533"
+    "platforms_active": 2,
+    "engagement_rate": 0.29,
+    "last_updated": "2026-01-08T21:40:23.432363"
   },
   "platform_breakdown": {
+    "youtube": {
+      "posts": 26,
+      "posts_pct": 92.9,
+      "engagement": 8,
+      "engagement_pct": 100.0
+    },
     "facebook": {
       "posts": 2,
-      "posts_pct": 100.0,
+      "posts_pct": 7.1,
       "engagement": 0,
-      "engagement_pct": 0
+      "engagement_pct": 0.0
     }
   },
   "platforms": {
+    "youtube": {
+      "posts": 26,
+      "engagement": 8,
+      "views": 1029,
+      "followers": 0,
+      "engagement_rate": 0.31,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.youtube.com/watch?v=38PVmPDDza0",
+          "text": "NJ Governor Thomas Kean Legacy: Governing and the Politics of Inclusion",
+          "date": null,
+          "engagement": {
+            "likes": 3,
+            "comments": 0,
+            "shares": 0,
+            "views": 132,
+            "total": 3
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.youtube.com/watch?v=1TA34RWrOvQ",
+          "text": "Garden State Initiative's Gov. Thomas Kean Leadership Award Gala - Thursday September 18th, 2025",
+          "date": null,
+          "engagement": {
+            "likes": 1,
+            "comments": 0,
+            "shares": 0,
+            "views": 79,
+            "total": 1
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.youtube.com/watch?v=2Zid9zJc5qQ",
+          "text": "GSI's Audrey Lane & NJ Assemblyman Michael Inganamort on $150M Aid Cut Threatening NJ Small Towns",
+          "date": null,
+          "engagement": {
+            "likes": 1,
+            "comments": 0,
+            "shares": 0,
+            "views": 69,
+            "total": 1
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {
+        "video": {
+          "count": 26,
+          "engagement": 8,
+          "percentage": 100.0
+        }
+      }
+    },
     "facebook": {
       "posts": 2,
       "engagement": 0,
@@ -73,30 +145,72 @@
   },
   "top_posts": [
     {
-      "id": "post_0",
-      "url": "https://www.facebook.com/GardenStateInitiative/posts/pfbid0N5RuewgHDvBxW6XkfzDRNfSvPAGGtbvpKx9C4RetFvJYznjnnKPzud6RAg9wTz3Yl?__cft__[0]=AZYNEwYHcXniWJmoveIqJQ08cYeMWR89YsVtGR-mgC-R21kaGdbPEh8oA2x4EFUIQInOhU8q8ql8GBIrcNTzQG3XyYIqOhdfwo-elR8VFd_UWxbX04ccBP9ToZdWi5_KIK2_DhcKfU2DC65Wdv59OsDywI2XdugmMDnTCrD-N4hCrT0b-zrBQr37GiBgOWXn_cw&__tn__=%2CO%2CP-R",
-      "text": "GSI has consistently stated the obvious: NJ's current path is unsustainable.  Here's a preview of higher transportation costs for motorists and mass transit users for 2\u2026 See more",
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=38PVmPDDza0",
+      "text": "NJ Governor Thomas Kean Legacy: Governing and the Politics of Inclusion",
       "date": null,
       "engagement": {
-        "likes": 0,
+        "likes": 3,
         "comments": 0,
         "shares": 0,
-        "views": 0,
-        "total": 0
+        "views": 132,
+        "total": 3
       },
       "thumbnail": null
     },
     {
-      "id": "post_1",
-      "url": "https://www.facebook.com/GardenStateInitiative/posts/pfbid0N5RuewgHDvBxW6XkfzDRNfSvPAGGtbvpKx9C4RetFvJYznjnnKPzud6RAg9wTz3Yl?comment_id=1517080246074064&__cft__[0]=AZYNEwYHcXniWJmoveIqJQ08cYeMWR89YsVtGR-mgC-R21kaGdbPEh8oA2x4EFUIQInOhU8q8ql8GBIrcNTzQG3XyYIqOhdfwo-elR8VFd_UWxbX04ccBP9ToZdWi5_KIK2_DhcKfU2DC65Wdv59OsDywI2XdugmMDnTCrD-N4hCrT0b-zrBQr37GiBgOWXn_cw&__tn__=R-R",
-      "text": "Don't worry, Helicopter Hero is going to change everything and make this state affordable!",
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=1TA34RWrOvQ",
+      "text": "Garden State Initiative's Gov. Thomas Kean Leadership Award Gala - Thursday September 18th, 2025",
       "date": null,
       "engagement": {
-        "likes": 0,
+        "likes": 1,
         "comments": 0,
         "shares": 0,
-        "views": 0,
-        "total": 0
+        "views": 79,
+        "total": 1
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=2Zid9zJc5qQ",
+      "text": "GSI's Audrey Lane & NJ Assemblyman Michael Inganamort on $150M Aid Cut Threatening NJ Small Towns",
+      "date": null,
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "views": 69,
+        "total": 1
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=_Ehrr543WKY",
+      "text": "GSI President Audrey Lane & NJ Assemblywoman Claire Swift on Revitalizing Atlantic City",
+      "date": null,
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "views": 45,
+        "total": 1
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=ewzycQfTVJI",
+      "text": "Why Long-Term Budget Planning Matters \u2013 NJ Senator Steinhardt Talks Accountability with Audrey Lane",
+      "date": null,
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "views": 35,
+        "total": 1
       },
       "thumbnail": null
     }

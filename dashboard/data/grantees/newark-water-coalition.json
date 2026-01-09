@@ -7,7 +7,7 @@
     "total_followers": 0,
     "platforms_active": 2,
     "engagement_rate": 96.85,
-    "last_updated": "2026-01-08T21:36:01.397832"
+    "last_updated": "2026-01-08T21:40:23.481252"
   },
   "platform_breakdown": {
     "instagram": {
@@ -290,9 +290,5 @@
       "posts": 3,
       "engagement": 171
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/newark-water-coalition.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/newark-water-coalition.png",
-  "website": "https://www.newarkwatercoalition.org",
-  "description": "Create Newark Community Voices, a digital-media and community-organizing training program for Newark youth. The program produces and distributes multimedia health and environment stories that center Newark community-information needs, with a focus on an oral history of the advocates who worked to clean up Newark\u2019s drinking water."
+  ]
 }

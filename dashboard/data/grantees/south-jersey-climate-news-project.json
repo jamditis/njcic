@@ -2,31 +2,37 @@
   "name": "South Jersey Climate News Project",
   "slug": "south-jersey-climate-news-project",
   "summary": {
-    "total_posts": 50,
-    "total_engagement": 1026,
+    "total_posts": 87,
+    "total_engagement": 1223,
     "total_followers": 43,
-    "platforms_active": 3,
-    "engagement_rate": 20.52,
-    "last_updated": "2026-01-08T21:36:01.409245"
+    "platforms_active": 4,
+    "engagement_rate": 14.06,
+    "last_updated": "2026-01-08T21:40:23.493765"
   },
   "platform_breakdown": {
     "bluesky": {
       "posts": 25,
-      "posts_pct": 50.0,
+      "posts_pct": 28.7,
       "engagement": 7,
-      "engagement_pct": 0.7
+      "engagement_pct": 0.6
     },
     "tiktok": {
       "posts": 13,
-      "posts_pct": 26.0,
+      "posts_pct": 14.9,
       "engagement": 840,
-      "engagement_pct": 81.9
+      "engagement_pct": 68.7
+    },
+    "youtube": {
+      "posts": 37,
+      "posts_pct": 42.5,
+      "engagement": 197,
+      "engagement_pct": 16.1
     },
     "instagram": {
       "posts": 12,
-      "posts_pct": 24.0,
+      "posts_pct": 13.8,
       "engagement": 179,
-      "engagement_pct": 17.4
+      "engagement_pct": 14.6
     }
   },
   "platforms": {
@@ -295,6 +301,72 @@
         "video": {
           "count": 13,
           "engagement": 840,
+          "percentage": 100.0
+        }
+      }
+    },
+    "youtube": {
+      "posts": 37,
+      "engagement": 197,
+      "views": 15765,
+      "followers": 0,
+      "engagement_rate": 5.32,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.youtube.com/watch?v=JCVbJsS2hRU",
+          "text": "Floatopia 2023 - Pyne Point Park, Camden, NJ",
+          "date": null,
+          "engagement": {
+            "likes": 70,
+            "comments": 1,
+            "shares": 0,
+            "views": 6329,
+            "total": 71
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.youtube.com/watch?v=olvifWaj24M",
+          "text": "Barnegat Oyster Collective looks to build the future of sustainable shellfish in New Jersey",
+          "date": null,
+          "engagement": {
+            "likes": 19,
+            "comments": 1,
+            "shares": 0,
+            "views": 588,
+            "total": 20
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.youtube.com/watch?v=F2x_7m2E0nk",
+          "text": "Finding a 65 million-year-old fossil at Edelman Fossil Park & Museum.",
+          "date": null,
+          "engagement": {
+            "likes": 11,
+            "comments": 5,
+            "shares": 0,
+            "views": 854,
+            "total": 16
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {
+        "video": {
+          "count": 37,
+          "engagement": 197,
           "percentage": 100.0
         }
       }
@@ -602,9 +674,5 @@
       "posts": 2,
       "engagement": 26
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/south-jersey-climate-news-project.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/south-jersey-climate-news-project.png",
-  "website": "https://sjclimate.news",
-  "description": "Fund stipends for student interns providing high quality news coverage of climate change in South Jersey, including the impact on the environment, agriculture, the Pine Barrens, beaches, tourism, and wetlands."
+  ]
 }

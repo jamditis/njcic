@@ -7,7 +7,7 @@
     "total_followers": 0,
     "platforms_active": 3,
     "engagement_rate": 55.9,
-    "last_updated": "2026-01-08T21:36:01.347228"
+    "last_updated": "2026-01-08T21:40:23.427805"
   },
   "platform_breakdown": {
     "tiktok": {
@@ -518,9 +518,5 @@
       "posts": 1,
       "engagement": 41
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/daily-targum.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/daily-targum.png",
-  "website": "https://dailytargum.com",
-  "description": "The Daily Targum is Rutgers University's student-run newspaper, founded in 1869 and one of the oldest and largest college news organizations in the nation."
+  ]
 }

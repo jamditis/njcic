@@ -7,7 +7,7 @@
     "total_followers": 1355,
     "platforms_active": 3,
     "engagement_rate": 644.42,
-    "last_updated": "2026-01-08T21:36:01.378654"
+    "last_updated": "2026-01-08T21:40:23.461265"
   },
   "platform_breakdown": {
     "bluesky": {
@@ -448,9 +448,5 @@
       "posts": 1,
       "engagement": 84
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/movimiento-cosecha.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/movimiento-cosecha.png",
-  "website": "https://www.lahuelga.com",
-  "description": "Work with Rutgers University to establish Radio Cosecha, a twice-weekly Spanish-language internet-radio program for the state\u2019s Spanish-speaking immigrant community, telling the stories of seasonal agricultural workers in South Jersey. Cosecha researches and delivers important local, national, and international news in an accessible format, in order to achieve greater civic participation within New Jersey\u2019s immigrant community."
+  ]
 }

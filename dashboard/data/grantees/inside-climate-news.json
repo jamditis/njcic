@@ -1,38 +1,48 @@
 {
   "name": "Inside Climate News",
   "slug": "inside-climate-news",
-  "website": "https://insideclimatenews.org",
-  "description": "Support Inside Climate News in strengthening New Jersey\u2019s local environmental reporting ecosystem through on-the-ground freelance journalism and collaborations with local media outlets, aiming to fill gaps in climate and environmental coverage while building a sustained reporting presence in communities across the state.",
   "summary": {
-    "total_posts": 44,
-    "total_engagement": 6323,
+    "total_posts": 77,
+    "total_engagement": 7741,
     "total_followers": 25584,
-    "platforms_active": 4,
-    "engagement_rate": 143.7,
-    "last_updated": "2026-01-08T21:36:01.364432"
+    "platforms_active": 6,
+    "engagement_rate": 100.53,
+    "last_updated": "2026-01-08T21:40:23.446030"
   },
   "platform_breakdown": {
     "bluesky": {
       "posts": 25,
-      "posts_pct": 56.8,
+      "posts_pct": 32.5,
       "engagement": 690,
-      "engagement_pct": 10.9
+      "engagement_pct": 8.9
     },
     "tiktok": {
       "posts": 6,
-      "posts_pct": 13.6,
+      "posts_pct": 7.8,
       "engagement": 355,
-      "engagement_pct": 5.6
+      "engagement_pct": 4.6
+    },
+    "youtube": {
+      "posts": 25,
+      "posts_pct": 32.5,
+      "engagement": 290,
+      "engagement_pct": 3.7
+    },
+    "twitter": {
+      "posts": 8,
+      "posts_pct": 10.4,
+      "engagement": 1128,
+      "engagement_pct": 14.6
     },
     "instagram": {
       "posts": 12,
-      "posts_pct": 27.3,
+      "posts_pct": 15.6,
       "engagement": 5278,
-      "engagement_pct": 83.5
+      "engagement_pct": 68.2
     },
     "facebook": {
       "posts": 1,
-      "posts_pct": 2.3,
+      "posts_pct": 1.3,
       "engagement": 0,
       "engagement_pct": 0.0
     }
@@ -208,6 +218,179 @@
         "video": {
           "count": 6,
           "engagement": 355,
+          "percentage": 100.0
+        }
+      }
+    },
+    "youtube": {
+      "posts": 25,
+      "engagement": 290,
+      "views": 25076,
+      "followers": 0,
+      "engagement_rate": 11.6,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.youtube.com/watch?v=nC3W-hWkyPU",
+          "text": "Inside Climate Talks: Disinformation on Steroids\u2014Climate Science Takes It on the Chin",
+          "date": null,
+          "engagement": {
+            "likes": 17,
+            "comments": 14,
+            "shares": 0,
+            "views": 1928,
+            "total": 31
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.youtube.com/watch?v=nGc6P7Nrdbk",
+          "text": "Inside Climate Talks: Is AI Throwing Climate Change Under the Bus?",
+          "date": null,
+          "engagement": {
+            "likes": 16,
+            "comments": 4,
+            "shares": 0,
+            "views": 1797,
+            "total": 20
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.youtube.com/watch?v=t8UcSruPuX8",
+          "text": "Inside Climate Talks: Can Pollution From Industrial Animal Agriculture Be Controlled?",
+          "date": null,
+          "engagement": {
+            "likes": 12,
+            "comments": 6,
+            "shares": 0,
+            "views": 1432,
+            "total": 18
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {
+        "video": {
+          "count": 25,
+          "engagement": 290,
+          "percentage": 100.0
+        }
+      }
+    },
+    "twitter": {
+      "posts": 8,
+      "engagement": 1128,
+      "views": 60,
+      "followers": 0,
+      "engagement_rate": 141.0,
+      "top_posts": [
+        {
+          "id": null,
+          "url": null,
+          "text": "Taking aim at the United States and an \u201cirresponsible lifestyle\u201d with some of the world\u2019s highest carbon emissions per capita, Pope Francis on Wednesday doubled down on his earlier call for urgent act",
+          "date": "2023-10-10T01:00:01",
+          "engagement": {
+            "likes": 132,
+            "comments": 30,
+            "shares": 0,
+            "views": 30,
+            "total": 162
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": null,
+          "text": "The Amazon is the most biodiverse environment in the world and its preservation is critical for controlling climate change. But its destruction hasn\u2019t stopped\u2014and has gotten worse under Brazil\u2019s curre",
+          "date": "2021-12-29T12:45:00",
+          "engagement": {
+            "likes": 147,
+            "comments": 8,
+            "shares": 0,
+            "views": 8,
+            "total": 155
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": null,
+          "text": "Peabody, Arch, Cloud Peak and now Murray Energy. The country\u2019s four largest coal producers have all filed for bankruptcy since 2016.",
+          "date": "2019-11-04T01:40:00",
+          "engagement": {
+            "likes": 129,
+            "comments": 13,
+            "shares": 0,
+            "views": 13,
+            "total": 142
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.0,
+        "posts_per_week": 0.0,
+        "date_range_days": 2327,
+        "first_post": "2017-05-26T14:50:00",
+        "last_post": "2023-10-10T01:00:01"
+      },
+      "time_series": [
+        {
+          "date": "2017-05-22",
+          "posts": 1,
+          "engagement": 140
+        },
+        {
+          "date": "2018-08-27",
+          "posts": 1,
+          "engagement": 139
+        },
+        {
+          "date": "2018-12-17",
+          "posts": 1,
+          "engagement": 128
+        },
+        {
+          "date": "2019-11-04",
+          "posts": 1,
+          "engagement": 142
+        },
+        {
+          "date": "2019-12-30",
+          "posts": 1,
+          "engagement": 138
+        },
+        {
+          "date": "2020-11-09",
+          "posts": 1,
+          "engagement": 124
+        },
+        {
+          "date": "2021-12-27",
+          "posts": 1,
+          "engagement": 155
+        },
+        {
+          "date": "2023-10-09",
+          "posts": 1,
+          "engagement": 162
+        }
+      ],
+      "content_types": {
+        "unknown": {
+          "count": 8,
+          "engagement": 1128,
           "percentage": 100.0
         }
       }
@@ -436,13 +619,48 @@
     }
   ],
   "overall_frequency": {
-    "posts_per_day": 0.04,
-    "posts_per_week": 0.28,
-    "date_range_days": 1130,
-    "first_post": "2022-12-05T13:05:32",
+    "posts_per_day": 0.02,
+    "posts_per_week": 0.14,
+    "date_range_days": 3149,
+    "first_post": "2017-05-26T14:50:00",
     "last_post": "2026-01-08T16:53:04.664000"
   },
   "time_series": [
+    {
+      "date": "2017-05-22",
+      "posts": 1,
+      "engagement": 140
+    },
+    {
+      "date": "2018-08-27",
+      "posts": 1,
+      "engagement": 139
+    },
+    {
+      "date": "2018-12-17",
+      "posts": 1,
+      "engagement": 128
+    },
+    {
+      "date": "2019-11-04",
+      "posts": 1,
+      "engagement": 142
+    },
+    {
+      "date": "2019-12-30",
+      "posts": 1,
+      "engagement": 138
+    },
+    {
+      "date": "2020-11-09",
+      "posts": 1,
+      "engagement": 124
+    },
+    {
+      "date": "2021-12-27",
+      "posts": 1,
+      "engagement": 155
+    },
     {
       "date": "2022-12-05",
       "posts": 1,
@@ -467,6 +685,11 @@
       "date": "2023-03-20",
       "posts": 1,
       "engagement": 88
+    },
+    {
+      "date": "2023-10-09",
+      "posts": 1,
+      "engagement": 162
     },
     {
       "date": "2025-09-08",
@@ -523,7 +746,5 @@
       "posts": 7,
       "engagement": 188
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/inside-climate-news.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/inside-climate-news.png"
+  ]
 }

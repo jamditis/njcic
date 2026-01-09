@@ -7,7 +7,7 @@
     "total_followers": 0,
     "platforms_active": 2,
     "engagement_rate": 123.18,
-    "last_updated": "2026-01-08T21:36:01.414836"
+    "last_updated": "2026-01-08T21:40:23.500882"
   },
   "platform_breakdown": {
     "tiktok": {
@@ -474,9 +474,5 @@
       "posts": 4,
       "engagement": 556
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/the-college-of-new-jersey.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/the-college-of-new-jersey.png",
-  "website": "https://www.tcnjsignalnews.com/",
-  "description": "The Signal is The College of New Jersey's award-winning student newspaper, established in 1885. The student-run publication covers campus news, investigations, sports, and arts."
+  ]
 }

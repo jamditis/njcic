@@ -7,7 +7,7 @@
     "total_followers": 1844,
     "platforms_active": 3,
     "engagement_rate": 6.37,
-    "last_updated": "2026-01-08T21:36:01.420371"
+    "last_updated": "2026-01-08T21:40:23.506698"
   },
   "platform_breakdown": {
     "bluesky": {
@@ -388,9 +388,5 @@
       "posts": 1,
       "engagement": 27
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/the-jersey-bee.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/the-jersey-bee.png",
-  "website": "https://jerseybee.org",
-  "description": "A nonprofit local news platform serving East Essex County communities. The Jersey Bee works to meet information needs, increase civic participation, and improve quality of life through local journalism."
+  ]
 }

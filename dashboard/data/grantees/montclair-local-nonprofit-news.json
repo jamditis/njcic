@@ -7,7 +7,7 @@
     "total_followers": 2468,
     "platforms_active": 2,
     "engagement_rate": 8.62,
-    "last_updated": "2026-01-08T21:36:01.375915"
+    "last_updated": "2026-01-08T21:40:23.458509"
   },
   "platform_breakdown": {
     "bluesky": {
@@ -284,9 +284,5 @@
       "posts": 23,
       "engagement": 95
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/montclair-local-nonprofit-news.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/montclair-local-nonprofit-news.png",
-  "website": "https://montclairlocal.news",
-  "description": "Montclair Local is an independent nonprofit local news organization covering Montclair, New Jersey, delivering in-depth reporting on local government, schools, community events, and issues that affect residents."
+  ]
 }

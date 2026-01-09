@@ -7,7 +7,7 @@
     "total_followers": 82,
     "platforms_active": 3,
     "engagement_rate": 3.47,
-    "last_updated": "2026-01-08T21:36:01.401710"
+    "last_updated": "2026-01-08T21:40:23.485378"
   },
   "platform_breakdown": {
     "bluesky": {
@@ -393,9 +393,5 @@
       "posts": 1,
       "engagement": 2
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/public-square-amplified.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/public-square-amplified.png",
-  "website": "https://www.publicsq.org",
-  "description": "Public Square Amplified is a grassroots nonprofit newsroom headquartered in Newark, led by Black women with journalism and community organizing experience, creating a pipeline for local journalists of color."
+  ]
 }

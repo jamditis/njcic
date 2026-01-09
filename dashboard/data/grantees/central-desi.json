@@ -7,7 +7,7 @@
     "total_followers": 0,
     "platforms_active": 1,
     "engagement_rate": 57.17,
-    "last_updated": "2026-01-08T21:36:01.334625"
+    "last_updated": "2026-01-08T21:40:23.413808"
   },
   "platform_breakdown": {
     "instagram": {
@@ -261,9 +261,5 @@
       "posts": 1,
       "engagement": 259
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/central-desi.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/central-desi.png",
-  "website": "https://centraldesi.beehiiv.com",
-  "description": "Fund a fellowship opportunity that will cultivate college students as future journalists in New Jersey and train them to report, write, and engage with local communities by covering the South Asian American community."
+  ]
 }

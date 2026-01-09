@@ -7,7 +7,7 @@
     "total_followers": 0,
     "platforms_active": 2,
     "engagement_rate": 3.15,
-    "last_updated": "2026-01-08T21:36:01.399392"
+    "last_updated": "2026-01-08T21:40:23.482879"
   },
   "platform_breakdown": {
     "instagram": {
@@ -270,9 +270,5 @@
       "posts": 1,
       "engagement": 1
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/paterson-alliance.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/paterson-alliance.png",
-  "website": "https://patersonalliance.org",
-  "description": "Manage the library-based Paterson Information Hub to provide the community with training in citizen journalism and news-production technology. The alliance also aimed to convene local events to assess community-information needs."
+  ]
 }

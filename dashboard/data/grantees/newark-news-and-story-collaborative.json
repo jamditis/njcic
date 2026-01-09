@@ -7,7 +7,7 @@
     "total_followers": 0,
     "platforms_active": 1,
     "engagement_rate": 84.5,
-    "last_updated": "2026-01-08T21:36:01.396795"
+    "last_updated": "2026-01-08T21:40:23.480118"
   },
   "platform_breakdown": {
     "instagram": {
@@ -251,9 +251,5 @@
       "posts": 1,
       "engagement": 12
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/newark-news-and-story-collaborative.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/newark-news-and-story-collaborative.png",
-  "website": "https://www.newarkstories.com",
-  "description": "Train residents, local reporters, and mediamakers to respond to Newark residents\u2019 information needs and concerns that capture the true essence of the city. Its lab comprises resident-reporters that produce unique coverage of issues impacting diverse communities in Newark that lack traditional media coverage and are not covered by traditional media."
+  ]
 }

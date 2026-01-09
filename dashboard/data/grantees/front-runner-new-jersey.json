@@ -7,7 +7,7 @@
     "total_followers": 0,
     "platforms_active": 2,
     "engagement_rate": 5.46,
-    "last_updated": "2026-01-08T21:36:01.349884"
+    "last_updated": "2026-01-08T21:40:23.430590"
   },
   "platform_breakdown": {
     "instagram": {
@@ -240,9 +240,5 @@
       "posts": 2,
       "engagement": 5
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/front-runner-new-jersey.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/front-runner-new-jersey.png",
-  "website": "https://frontrunnernewjersey.com",
-  "description": "Front Runner New Jersey highlights African-American leadership and culture in South Jersey through news coverage, featuring diverse voices from Atlantic, Camden, Cumberland, Gloucester, and Salem counties."
+  ]
 }

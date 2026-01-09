@@ -433,7 +433,14 @@ def load_platform_data(platform_dir: Path) -> Tuple[List[Dict], Optional[Dict]]:
             posts.extend(data.get('posts', []))
             metadata = data.get('engagement_metrics') or data
 
-    # Check for metadata.json (Instagram stores posts here)
+    # Check for tweets.json (Twitter stores tweets here)
+    tweets_file = platform_dir / "tweets.json"
+    if tweets_file.exists():
+        tweets_data = read_json(tweets_file)
+        if isinstance(tweets_data, list) and not posts:
+            posts.extend(tweets_data)
+
+    # Check for metadata.json (Instagram stores posts here, YouTube stores videos)
     metadata_file = platform_dir / "metadata.json"
     if metadata_file.exists():
         meta_data = read_json(metadata_file)
@@ -442,6 +449,9 @@ def load_platform_data(platform_dir: Path) -> Tuple[List[Dict], Optional[Dict]]:
             # Instagram stores posts inside metadata.json
             if 'posts' in meta_data and not posts:
                 posts.extend(meta_data.get('posts', []))
+            # YouTube stores videos inside metadata.json
+            if 'videos' in meta_data and not posts:
+                posts.extend(meta_data.get('videos', []))
 
     # Also check subdirectories (YouTube uses channel_id subdirs)
     for subdir in platform_dir.iterdir():

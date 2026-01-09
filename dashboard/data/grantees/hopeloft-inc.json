@@ -7,7 +7,7 @@
     "total_followers": 0,
     "platforms_active": 2,
     "engagement_rate": 5.62,
-    "last_updated": "2026-01-08T21:36:01.358990"
+    "last_updated": "2026-01-08T21:40:23.440185"
   },
   "platform_breakdown": {
     "instagram": {
@@ -295,9 +295,5 @@
       "posts": 1,
       "engagement": 4
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/hopeloft.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/hopeloft.png",
-  "website": "https://www.hopeloft.com",
-  "description": "Develop and implement each year a 15-week training and internship program for youth/citizens in foster care and for children of incarcerated people to tell the stories of their peers for Hopeloft\u2019s local news site, Follow South Jersey. This grant was funded in part in the first year by support from New Jersey Health Initiatives (NJHI), a statewide grantmaking program of the Robert Wood Johnson Foundation."
+  ]
 }

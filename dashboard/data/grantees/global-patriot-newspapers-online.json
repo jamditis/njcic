@@ -7,7 +7,7 @@
     "total_followers": 0,
     "platforms_active": 1,
     "engagement_rate": 9368.73,
-    "last_updated": "2026-01-08T21:36:01.353030"
+    "last_updated": "2026-01-08T21:40:23.433995"
   },
   "platform_breakdown": {
     "tiktok": {
@@ -276,9 +276,5 @@
       "posts": 3,
       "engagement": 6973
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/global-patriot-newspapers-online.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/global-patriot-newspapers-online.png",
-  "website": "https://www.tiktok.com/@globalpatriot",
-  "description": "Global Patriot is a digital news and advocacy platform by Richard Cannon III focusing on mental health awareness, special needs advocacy, and community building through social media content and livestreams."
+  ]
 }

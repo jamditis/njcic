@@ -1,32 +1,36 @@
 {
   "name": "HudPost",
   "slug": "hudpost",
-  "website": "https://hudpost.com",
-  "description": "HudPost is a local news organization covering Hudson County, New Jersey, with content spanning breaking news, sports, politics, entertainment, business, and community events.",
   "summary": {
-    "total_posts": 39,
-    "total_engagement": 117913,
+    "total_posts": 45,
+    "total_engagement": 118560,
     "total_followers": 0,
-    "platforms_active": 3,
-    "engagement_rate": 3023.41,
-    "last_updated": "2026-01-08T21:36:01.361206"
+    "platforms_active": 4,
+    "engagement_rate": 2634.67,
+    "last_updated": "2026-01-08T21:40:23.442644"
   },
   "platform_breakdown": {
     "tiktok": {
       "posts": 25,
-      "posts_pct": 64.1,
+      "posts_pct": 55.6,
       "engagement": 105039,
-      "engagement_pct": 89.1
+      "engagement_pct": 88.6
+    },
+    "twitter": {
+      "posts": 6,
+      "posts_pct": 13.3,
+      "engagement": 647,
+      "engagement_pct": 0.5
     },
     "instagram": {
       "posts": 12,
-      "posts_pct": 30.8,
+      "posts_pct": 26.7,
       "engagement": 12874,
       "engagement_pct": 10.9
     },
     "facebook": {
       "posts": 2,
-      "posts_pct": 5.1,
+      "posts_pct": 4.4,
       "engagement": 0,
       "engagement_pct": 0.0
     }
@@ -160,6 +164,103 @@
         "video": {
           "count": 25,
           "engagement": 105039,
+          "percentage": 100.0
+        }
+      }
+    },
+    "twitter": {
+      "posts": 6,
+      "engagement": 647,
+      "views": 60,
+      "followers": 0,
+      "engagement_rate": 107.83,
+      "top_posts": [
+        {
+          "id": null,
+          "url": null,
+          "text": "Is this Hudson County resident onto something? How do you feel about receiving political mail\u2014does it influence you, or is it just a waste of paper? Share your thoughts!",
+          "date": "2023-11-06T23:46:05",
+          "engagement": {
+            "likes": 101,
+            "comments": 26,
+            "shares": 0,
+            "views": 26,
+            "total": 127
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": null,
+          "text": "Jersey City doesn\u2019t seem to be in the Christmas spirit.",
+          "date": "2024-11-15T16:29:19",
+          "engagement": {
+            "likes": 103,
+            "comments": 12,
+            "shares": 0,
+            "views": 12,
+            "total": 115
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": null,
+          "text": "Police foot chase caught on video in North Bergen.",
+          "date": "2023-08-18T00:19:58",
+          "engagement": {
+            "likes": 100,
+            "comments": 6,
+            "shares": 0,
+            "views": 6,
+            "total": 106
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0.01,
+        "posts_per_week": 0.07,
+        "date_range_days": 1020,
+        "first_post": "2022-04-14T02:56:43",
+        "last_post": "2025-01-28T21:20:56"
+      },
+      "time_series": [
+        {
+          "date": "2022-04-11",
+          "posts": 1,
+          "engagement": 90
+        },
+        {
+          "date": "2023-02-06",
+          "posts": 1,
+          "engagement": 105
+        },
+        {
+          "date": "2023-08-14",
+          "posts": 1,
+          "engagement": 106
+        },
+        {
+          "date": "2023-11-06",
+          "posts": 1,
+          "engagement": 127
+        },
+        {
+          "date": "2024-11-11",
+          "posts": 1,
+          "engagement": 115
+        },
+        {
+          "date": "2025-01-27",
+          "posts": 1,
+          "engagement": 104
+        }
+      ],
+      "content_types": {
+        "unknown": {
+          "count": 6,
+          "engagement": 647,
           "percentage": 100.0
         }
       }
@@ -382,13 +483,43 @@
     }
   ],
   "overall_frequency": {
-    "posts_per_day": 0.29,
-    "posts_per_week": 2.03,
-    "date_range_days": 124,
-    "first_post": "2025-09-06T15:46:53",
+    "posts_per_day": 0.03,
+    "posts_per_week": 0.21,
+    "date_range_days": 1365,
+    "first_post": "2022-04-14T02:56:43",
     "last_post": "2026-01-08T16:31:10"
   },
   "time_series": [
+    {
+      "date": "2022-04-11",
+      "posts": 1,
+      "engagement": 90
+    },
+    {
+      "date": "2023-02-06",
+      "posts": 1,
+      "engagement": 105
+    },
+    {
+      "date": "2023-08-14",
+      "posts": 1,
+      "engagement": 106
+    },
+    {
+      "date": "2023-11-06",
+      "posts": 1,
+      "engagement": 127
+    },
+    {
+      "date": "2024-11-11",
+      "posts": 1,
+      "engagement": 115
+    },
+    {
+      "date": "2025-01-27",
+      "posts": 1,
+      "engagement": 104
+    },
     {
       "date": "2025-09-01",
       "posts": 1,
@@ -464,7 +595,5 @@
       "posts": 3,
       "engagement": 1570
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/hudpost.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/hudpost.png"
+  ]
 }

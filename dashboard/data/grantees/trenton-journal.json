@@ -7,7 +7,7 @@
     "total_followers": 0,
     "platforms_active": 2,
     "engagement_rate": 219.23,
-    "last_updated": "2026-01-08T21:36:01.424674"
+    "last_updated": "2026-01-08T21:40:23.511550"
   },
   "platform_breakdown": {
     "instagram": {
@@ -250,9 +250,5 @@
       "posts": 4,
       "engagement": 356
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/trenton-journal.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/trenton-journal.png",
-  "website": "https://trentonjournal.com",
-  "description": "An independently owned multimedia platform serving New Jersey's capital city through solutions-based journalism. Covers education, health, sports, city government, crime, and community events in Trenton."
+  ]
 }

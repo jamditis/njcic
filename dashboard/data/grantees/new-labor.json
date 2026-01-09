@@ -7,7 +7,7 @@
     "total_followers": 0,
     "platforms_active": 2,
     "engagement_rate": 212.31,
-    "last_updated": "2026-01-08T21:36:01.395638"
+    "last_updated": "2026-01-08T21:40:23.478898"
   },
   "platform_breakdown": {
     "instagram": {
@@ -260,9 +260,5 @@
       "posts": 1,
       "engagement": 47
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/new-labor.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/new-labor.png",
-  "website": "https://newlabor.org",
-  "description": "New Labor is a membership-based organization of low-wage immigrant workers in New Jersey with centers in New Brunswick, Lakewood, and Newark that educates, organizes, and advocates for better working conditions. Their Community-driven Journalism Project develops journalists focusing on Black and Brown workers."
+  ]
 }

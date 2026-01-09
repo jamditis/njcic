@@ -7,7 +7,7 @@
     "total_followers": 0,
     "platforms_active": 2,
     "engagement_rate": 3.92,
-    "last_updated": "2026-01-08T21:36:01.343478"
+    "last_updated": "2026-01-08T21:40:23.423678"
   },
   "platform_breakdown": {
     "instagram": {
@@ -310,9 +310,5 @@
       "posts": 3,
       "engagement": 17
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/corporation-for-new-jersey-local-media.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/corporation-for-new-jersey-local-media.png",
-  "website": "https://newsweneed.org",
-  "description": "Corporation for New Jersey Local Media owns and operates 13 local weekly newspapers including the NJ Hills Media Group and West Essex Tribune, advancing local journalism across New Jersey communities."
+  ]
 }

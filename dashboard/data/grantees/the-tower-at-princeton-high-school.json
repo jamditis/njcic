@@ -2,28 +2,100 @@
   "name": "The Tower at Princeton High School",
   "slug": "the-tower-at-princeton-high-school",
   "summary": {
-    "total_posts": 13,
-    "total_engagement": 1068,
+    "total_posts": 41,
+    "total_engagement": 1219,
     "total_followers": 0,
-    "platforms_active": 2,
-    "engagement_rate": 82.15,
-    "last_updated": "2026-01-08T21:36:01.423376"
+    "platforms_active": 3,
+    "engagement_rate": 29.73,
+    "last_updated": "2026-01-08T21:40:23.509811"
   },
   "platform_breakdown": {
+    "youtube": {
+      "posts": 28,
+      "posts_pct": 68.3,
+      "engagement": 151,
+      "engagement_pct": 12.4
+    },
     "instagram": {
       "posts": 12,
-      "posts_pct": 92.3,
+      "posts_pct": 29.3,
       "engagement": 1068,
-      "engagement_pct": 100.0
+      "engagement_pct": 87.6
     },
     "facebook": {
       "posts": 1,
-      "posts_pct": 7.7,
+      "posts_pct": 2.4,
       "engagement": 0,
       "engagement_pct": 0.0
     }
   },
   "platforms": {
+    "youtube": {
+      "posts": 28,
+      "engagement": 151,
+      "views": 2554,
+      "followers": 0,
+      "engagement_rate": 5.39,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.youtube.com/watch?v=zs78mOB0Ytg",
+          "text": "Who to vote for? - Tower Tidbits Ep. 01 #highschool #shorts  #studentcouncil #voting #phs",
+          "date": null,
+          "engagement": {
+            "likes": 17,
+            "comments": 0,
+            "shares": 0,
+            "views": 242,
+            "total": 17
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.youtube.com/watch?v=icIwD1E3_SI",
+          "text": "PHS Jazz Ensemble's Trip to Hawaii",
+          "date": null,
+          "engagement": {
+            "likes": 14,
+            "comments": 0,
+            "shares": 0,
+            "views": 211,
+            "total": 14
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.youtube.com/watch?v=OL0By_NUTP4",
+          "text": "Asian Fest Hosted by PHS",
+          "date": null,
+          "engagement": {
+            "likes": 13,
+            "comments": 0,
+            "shares": 0,
+            "views": 157,
+            "total": 13
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {
+        "video": {
+          "count": 28,
+          "engagement": 151,
+          "percentage": 100.0
+        }
+      }
+    },
     "instagram": {
       "posts": 12,
       "engagement": 1068,
@@ -315,9 +387,5 @@
       "posts": 1,
       "engagement": 99
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/the-tower-at-princeton-high-school.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/the-tower-at-princeton-high-school.png",
-  "website": "https://www.towerphs.com/",
-  "description": "The Tower is the student newspaper of Princeton High School. The student-run publication provides news coverage, features, and multimedia journalism for the Princeton High School community."
+  ]
 }

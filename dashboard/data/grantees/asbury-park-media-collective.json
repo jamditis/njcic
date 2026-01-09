@@ -2,22 +2,94 @@
   "name": "Asbury Park Media Collective",
   "slug": "asbury-park-media-collective",
   "summary": {
-    "total_posts": 1,
-    "total_engagement": 0,
+    "total_posts": 51,
+    "total_engagement": 58,
     "total_followers": 0,
-    "platforms_active": 1,
-    "engagement_rate": 0.0,
-    "last_updated": "2026-01-08T21:36:01.326502"
+    "platforms_active": 2,
+    "engagement_rate": 1.14,
+    "last_updated": "2026-01-08T21:40:23.404167"
   },
   "platform_breakdown": {
+    "youtube": {
+      "posts": 50,
+      "posts_pct": 98.0,
+      "engagement": 58,
+      "engagement_pct": 100.0
+    },
     "facebook": {
       "posts": 1,
-      "posts_pct": 100.0,
+      "posts_pct": 2.0,
       "engagement": 0,
-      "engagement_pct": 0
+      "engagement_pct": 0.0
     }
   },
   "platforms": {
+    "youtube": {
+      "posts": 50,
+      "engagement": 58,
+      "views": 4692,
+      "followers": 0,
+      "engagement_rate": 1.16,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.youtube.com/watch?v=pQdoi2f7nPQ",
+          "text": "Students from the Asbury Park Allied Health Program interviewed after speaking at Jan 26 BoE meeting",
+          "date": null,
+          "engagement": {
+            "likes": 8,
+            "comments": 3,
+            "shares": 0,
+            "views": 704,
+            "total": 11
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.youtube.com/watch?v=RN1vVjkoXWQ",
+          "text": "Longtime Asbury Resident Rita Marano and her daughter Denise attend the open house",
+          "date": null,
+          "engagement": {
+            "likes": 4,
+            "comments": 1,
+            "shares": 0,
+            "views": 233,
+            "total": 5
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.youtube.com/watch?v=XL-1tc4Tjcc",
+          "text": "No Kings Rally 6/14/25",
+          "date": null,
+          "engagement": {
+            "likes": 4,
+            "comments": 0,
+            "shares": 0,
+            "views": 135,
+            "total": 4
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {
+        "video": {
+          "count": 50,
+          "engagement": 58,
+          "percentage": 100.0
+        }
+      }
+    },
     "facebook": {
       "posts": 1,
       "engagement": 0,
@@ -59,16 +131,72 @@
   },
   "top_posts": [
     {
-      "id": "post_0",
-      "url": "https://www.facebook.com/AsburyParkReporter/posts/pfbid02bVsvpLXfD8UjfMELUTVPWwDvgqExBetW4kMN1gYxiebkEXcQpTt7YoReCR3PkGoZl?__cft__[0]=AZYto7foyLcTiucw39oGMWWP27YlZl1NnBj57atnGRBW8pSXbQ9nE6d03gzIZkABGC44EvR8ftxH3YPgAEL5Ek8JAjY-ammpagquL68OPZRs5gP_gCv0wycBhy11PJrZ4pjP1EhoMfwcyAW_6kz6aqvUBIpyYLS1Z7Cgq9bw4zYNiKzhrS1zDIQHK8wrcDrsLWOPRemsMqIxHGoiI6NnyMKG&__tn__=%2CO%2CP-R",
-      "text": "https://www.nj.com/.../how-a-snowstorm-miracle-turned...\u2026 See more",
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=pQdoi2f7nPQ",
+      "text": "Students from the Asbury Park Allied Health Program interviewed after speaking at Jan 26 BoE meeting",
       "date": null,
       "engagement": {
-        "likes": 0,
+        "likes": 8,
+        "comments": 3,
+        "shares": 0,
+        "views": 704,
+        "total": 11
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=RN1vVjkoXWQ",
+      "text": "Longtime Asbury Resident Rita Marano and her daughter Denise attend the open house",
+      "date": null,
+      "engagement": {
+        "likes": 4,
+        "comments": 1,
+        "shares": 0,
+        "views": 233,
+        "total": 5
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=XL-1tc4Tjcc",
+      "text": "No Kings Rally 6/14/25",
+      "date": null,
+      "engagement": {
+        "likes": 4,
         "comments": 0,
         "shares": 0,
-        "views": 0,
-        "total": 0
+        "views": 135,
+        "total": 4
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=3ovhaWY9Z_s",
+      "text": "Mayoral Candidate Felicia Simmons interviewed by Jayanna Lunsford",
+      "date": null,
+      "engagement": {
+        "likes": 4,
+        "comments": 0,
+        "shares": 0,
+        "views": 93,
+        "total": 4
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=IFiITXvug-g",
+      "text": "Transgender Day of Remembrance at Blackbird Community Commons in Asbury Park, NJ",
+      "date": null,
+      "engagement": {
+        "likes": 4,
+        "comments": 0,
+        "shares": 0,
+        "views": 90,
+        "total": 4
       },
       "thumbnail": null
     }

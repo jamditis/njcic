@@ -78,6 +78,84 @@
         }
       ]
     },
+    "youtube": {
+      "color": "#FF0000",
+      "grantees": 22,
+      "total_posts": 652,
+      "total_engagement": 28070,
+      "total_followers": 0,
+      "avg_engagement_per_post": 43.05,
+      "avg_posts_per_grantee": 29.6,
+      "content_types": {
+        "video": {
+          "count": 652,
+          "engagement": 28070,
+          "percentage": 100.0
+        }
+      },
+      "top_grantees": [
+        {
+          "name": "Muslim",
+          "slug": "muslim",
+          "posts": 50,
+          "engagement": 26663
+        },
+        {
+          "name": "Inside Climate News",
+          "slug": "inside-climate-news",
+          "posts": 25,
+          "engagement": 290
+        },
+        {
+          "name": "South Jersey Climate News Project",
+          "slug": "south-jersey-climate-news-project",
+          "posts": 37,
+          "engagement": 197
+        },
+        {
+          "name": "The Tower at Princeton High School",
+          "slug": "the-tower-at-princeton-high-school",
+          "posts": 28,
+          "engagement": 151
+        },
+        {
+          "name": "Central New Jersey Network",
+          "slug": "central-new-jersey-network",
+          "posts": 51,
+          "engagement": 138
+        },
+        {
+          "name": "Clinton Hill Community Action",
+          "slug": "clinton-hill-community-action",
+          "posts": 51,
+          "engagement": 122
+        },
+        {
+          "name": "Black in Jersey",
+          "slug": "black-in-jersey",
+          "posts": 18,
+          "engagement": 107
+        },
+        {
+          "name": "Mental Health Association of New Jersey",
+          "slug": "mental-health-association-of-new-jersey",
+          "posts": 44,
+          "engagement": 64
+        },
+        {
+          "name": "Asbury Park Media Collective",
+          "slug": "asbury-park-media-collective",
+          "posts": 50,
+          "engagement": 58
+        },
+        {
+          "name": "Lens 15 Media",
+          "slug": "lens-15-media",
+          "posts": 24,
+          "engagement": 55
+        }
+      ]
+    },
     "instagram": {
       "color": "#E1306C",
       "grantees": 48,
@@ -239,6 +317,48 @@
         }
       ]
     },
+    "twitter": {
+      "color": "#1DA1F2",
+      "grantees": 4,
+      "total_posts": 30,
+      "total_engagement": 50560,
+      "total_followers": 0,
+      "avg_engagement_per_post": 1685.33,
+      "avg_posts_per_grantee": 7.5,
+      "content_types": {
+        "unknown": {
+          "count": 30,
+          "engagement": 50560,
+          "percentage": 100.0
+        }
+      },
+      "top_grantees": [
+        {
+          "name": "Muslim",
+          "slug": "muslim",
+          "posts": 9,
+          "engagement": 48466
+        },
+        {
+          "name": "Inside Climate News",
+          "slug": "inside-climate-news",
+          "posts": 8,
+          "engagement": 1128
+        },
+        {
+          "name": "HudPost",
+          "slug": "hudpost",
+          "posts": 6,
+          "engagement": 647
+        },
+        {
+          "name": "Center for Cooperative Media",
+          "slug": "center-for-cooperative-media",
+          "posts": 7,
+          "engagement": 319
+        }
+      ]
+    },
     "bluesky": {
       "color": "#0085FF",
       "grantees": 9,
@@ -343,6 +463,14 @@
         "engagement": 626252
       },
       {
+        "platform": "twitter",
+        "engagement": 50560
+      },
+      {
+        "platform": "youtube",
+        "engagement": 28070
+      },
+      {
         "platform": "bluesky",
         "engagement": 10906
       },
@@ -352,6 +480,10 @@
       }
     ],
     "by_posts": [
+      {
+        "platform": "youtube",
+        "posts": 652
+      },
       {
         "platform": "instagram",
         "posts": 576
@@ -367,8 +499,12 @@
       {
         "platform": "facebook",
         "posts": 52
+      },
+      {
+        "platform": "twitter",
+        "posts": 30
       }
     ]
   },
-  "generated_at": "2026-01-08T21:36:01.433774"
+  "generated_at": "2026-01-08T21:40:23.523009"
 }

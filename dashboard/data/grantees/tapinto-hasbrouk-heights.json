@@ -1,15 +1,13 @@
 {
   "name": "TAPinto Hasbrouk Heights",
   "slug": "tapinto-hasbrouk-heights",
-  "website": "https://www.tapinto.net/towns/hasbrouck-heights",
-  "description": "TAPinto Hasbrouck Heights is a local online news site providing free, hyperlocal news coverage for Hasbrouck Heights and surrounding Bergen County communities, covering local government, schools, sports, and community events.",
   "summary": {
     "total_posts": 12,
     "total_engagement": 682,
     "total_followers": 0,
     "platforms_active": 1,
     "engagement_rate": 56.83,
-    "last_updated": "2026-01-08T21:36:01.412557"
+    "last_updated": "2026-01-08T21:40:23.498234"
   },
   "platform_breakdown": {
     "instagram": {
@@ -263,7 +261,5 @@
       "posts": 1,
       "engagement": 9
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/tapinto-hasbrouck-heights.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/tapinto-hasbrouck-heights.png"
+  ]
 }

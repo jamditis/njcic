@@ -7,7 +7,7 @@
     "total_followers": 0,
     "platforms_active": 1,
     "engagement_rate": 77.58,
-    "last_updated": "2026-01-08T21:36:01.330086"
+    "last_updated": "2026-01-08T21:40:23.408731"
   },
   "platform_breakdown": {
     "instagram": {
@@ -251,9 +251,5 @@
       "posts": 2,
       "engagement": 127
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/camden-fireworks.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/camden-fireworks.png",
-  "website": "https://camdenfireworks.org",
-  "description": "Camden FireWorks is a community-based arts organization housed in a historic firehouse in Camden's Waterfront South district. The organization provides gallery space, artist studios, and exhibitions, using art to create social change and empower the community."
+  ]
 }

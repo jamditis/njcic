@@ -7,7 +7,7 @@
     "total_followers": 0,
     "platforms_active": 1,
     "engagement_rate": 73.25,
-    "last_updated": "2026-01-08T21:36:01.348411"
+    "last_updated": "2026-01-08T21:40:23.429104"
   },
   "platform_breakdown": {
     "instagram": {
@@ -211,9 +211,5 @@
       "posts": 3,
       "engagement": 341
     }
-  ],
-  "logo": "../../branding/logos/grantees-web/dovernow-magazine.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/dovernow-magazine.png",
-  "website": "https://dovernow.com",
-  "description": "DoverNow Magazine serves Dover and surrounding Morris County communities with bilingual journalism covering local news, schools, business, sports, and history in both English and Spanish."
+  ]
 }
