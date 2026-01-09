@@ -220,5 +220,7 @@
       "posts": 3,
       "engagement": 10
     }
-  ]
+  ],
+  "logo": "../../branding/logos/grantees-web/mental-health-association-of-new-jersey.png",
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/mental-health-association-of-new-jersey.png"
 }

@@ -474,5 +474,7 @@
       "posts": 1,
       "engagement": 41
     }
-  ]
+  ],
+  "logo": "../../branding/logos/grantees-web/daily-targum.png",
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/daily-targum.png"
 }

@@ -251,5 +251,7 @@
       "posts": 2,
       "engagement": 127
     }
-  ]
+  ],
+  "logo": "../../branding/logos/grantees-web/camden-fireworks.png",
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/camden-fireworks.png"
 }

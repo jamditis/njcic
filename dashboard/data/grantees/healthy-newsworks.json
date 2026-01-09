@@ -276,5 +276,7 @@
       "posts": 1,
       "engagement": 4
     }
-  ]
+  ],
+  "logo": "../../branding/logos/grantees-web/healthy-newsworks.png",
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/healthy-newsworks.png"
 }

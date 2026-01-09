@@ -359,5 +359,7 @@
       "posts": 1,
       "engagement": 3
     }
-  ]
+  ],
+  "logo": "../../branding/logos/grantees-web/lens-15-media.png",
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/lens-15-media.png"
 }

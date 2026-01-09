@@ -419,5 +419,7 @@
       "posts": 1,
       "engagement": 84
     }
-  ]
+  ],
+  "logo": "../../branding/logos/grantees-web/movimiento-cosecha.png",
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/movimiento-cosecha.png"
 }

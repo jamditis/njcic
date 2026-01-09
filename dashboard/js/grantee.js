@@ -351,7 +351,27 @@
     }
 
     /**
-     * Render grantee basic info (name, breadcrumb, website)
+     * Get grantee logo path from slug or data
+     * @param {Object} data - Grantee data object
+     * @returns {string} Path to logo image
+     */
+    function getGranteeLogoPath(data) {
+        // Use logo from data if available
+        if (data.logo) {
+            return data.logo;
+        }
+        // Fallback to generated path
+        const logoMap = {
+            'hopeloft-inc': 'hopeloft',
+            'the-daily-targum-targum-publishing-co': 'daily-targum',
+            'tapinto-hasbrouk-heights': 'tapinto-hasbrouck-heights'
+        };
+        const logoSlug = logoMap[data.slug] || data.slug;
+        return `../../branding/logos/grantees-web/${logoSlug}.png`;
+    }
+
+    /**
+     * Render grantee basic info (name, breadcrumb, website, logo)
      */
     function renderGranteeInfo() {
         // Update page title
@@ -367,6 +387,18 @@
         const granteeName = document.getElementById('grantee-name');
         if (granteeName) {
             granteeName.textContent = granteeData.name;
+        }
+
+        // Add logo to hero section
+        const logoContainer = document.getElementById('grantee-logo');
+        if (logoContainer) {
+            const logoPath = getGranteeLogoPath(granteeData);
+            logoContainer.innerHTML = `
+                <img src="${logoPath}" alt="${granteeData.name}"
+                     class="max-h-20 w-auto object-contain"
+                     loading="lazy"
+                     onerror="this.style.display='none'">
+            `;
         }
 
         // Update website link if available

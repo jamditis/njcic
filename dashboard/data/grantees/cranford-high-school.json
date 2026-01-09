@@ -226,5 +226,7 @@
       "posts": 1,
       "engagement": 16
     }
-  ]
+  ],
+  "logo": "../../branding/logos/grantees-web/cranford-high-school.png",
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/cranford-high-school.png"
 }

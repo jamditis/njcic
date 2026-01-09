@@ -216,5 +216,7 @@
       "posts": 2,
       "engagement": 23
     }
-  ]
+  ],
+  "logo": "../../branding/logos/grantees-web/mercerme.png",
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/mercerme.png"
 }

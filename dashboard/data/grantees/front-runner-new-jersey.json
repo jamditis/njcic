@@ -196,5 +196,7 @@
       "posts": 2,
       "engagement": 5
     }
-  ]
+  ],
+  "logo": "../../branding/logos/grantees-web/front-runner-new-jersey.png",
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/front-runner-new-jersey.png"
 }
