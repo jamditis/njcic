@@ -486,7 +486,7 @@
 
         if (platformParam) {
             const normalizedPlatform = platformParam.toLowerCase();
-            const validPlatforms = ['all', 'tiktok', 'instagram', 'bluesky'];
+            const validPlatforms = ['all', 'tiktok', 'instagram', 'bluesky', 'youtube', 'twitter', 'facebook'];
 
             if (validPlatforms.includes(normalizedPlatform)) {
                 currentPlatformFilter = normalizedPlatform;
