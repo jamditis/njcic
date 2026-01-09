@@ -4,7 +4,7 @@
 
 This repository contains research and exploration materials related to the New Jersey Civic Information Consortium.
 
-## Project Structure
+## Project structure
 
 - `chats/` - Conversation transcripts and meeting notes
 - `research/` - Research findings and documentation
@@ -16,7 +16,7 @@ This repository contains research and exploration materials related to the New J
 
 The **New Jersey Civic Information Consortium** is the first publicly funded nonprofit in the United States dedicated to supporting local journalism and civic information needs. Established in 2018 through bipartisan legislation, the Consortium has invested **$12+ million** in local news and civic media projects since 2021.
 
-### Key Facts
+### Key facts
 - **Founded:** 2018 (operational 2021)
 - **Type:** 501(c)(3) nonprofit
 - **Host:** Montclair State University
@@ -26,7 +26,7 @@ The **New Jersey Civic Information Consortium** is the first publicly funded non
 - **Counties Reached:** 18 of 21 NJ counties (86%)
 - **BIPOC-led Projects:** 48%
 
-### Impact Metrics (since 2021)
+### Impact metrics (since 2021)
 - **Stories Published:** 9,065+
 - **News Briefs Published:** 14,493+
 - **Ethnic/BIPOC & Spanish-language Stories:** 3,856
@@ -34,7 +34,7 @@ The **New Jersey Civic Information Consortium** is the first publicly funded non
 - **Stories Amplified Across Platforms:** 2,327
 - **Residents Trained on Public Meeting Coverage:** 158
 
-### Member Universities
+### Member universities
 1. Montclair State University (host)
 2. Rutgers University
 3. Rowan University
@@ -42,7 +42,7 @@ The **New Jersey Civic Information Consortium** is the first publicly funded non
 5. New Jersey Institute of Technology
 6. Kean University
 
-## Related Repositories
+## Related repositories
 
 ### [njcic-grantees-map](https://github.com/jamditis/njcic-grantees-map)
 Interactive web map visualizing NJCIC grantees across New Jersey.
@@ -56,7 +56,7 @@ Collection of free tools for journalists from the Center for Cooperative Media.
 - **Tech:** React, Vite, HTML5, Tailwind CSS
 - **Research:** NJ Influencer Social Media Scraper with AI analysis
 
-## Research Documents
+## Research documents
 
 - [NJCIC Consortium Research](research/njcic-consortium-research.md) - History, mission, funding, impact
 - [Grantees Map Analysis](research/njcic-grantees-map-analysis.md) - Technical analysis of the mapping project

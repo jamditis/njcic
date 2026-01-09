@@ -1,21 +1,21 @@
 
 
-# PRD: Website Rankings Analytics Platform \- SimilarWeb Clone
+# PRD: Website rankings analytics platform - SimilarWeb clone
 
 ---
 
-## 1\. Executive Summary
+## 1\. Executive summary
 
 This PRD outlines the requirements for building a web analytics platform that provides comprehensive website traffic rankings and competitive intelligence across industries. The platform enables users to analyze website performance metrics, compare competitors, and gain market insights.  
 ---
 
-## 2\. Product Overview
+## 2\. Product overview
 
-### 2.1 Product Vision
+### 2.1 Product vision
 
 Create a data-driven analytics platform that allows businesses and researchers to discover, analyze, and compare website traffic and engagement metrics across different industries, regions, and time periods.
 
-### 2.2 Target Users
+### 2.2 Target users
 
 * Digital marketers and SEO professionals  
 * Business analysts and market researchers  
@@ -25,11 +25,11 @@ Create a data-driven analytics platform that allows businesses and researchers t
 
 ---
 
-## 3\. Core Features
+## 3\. Core features
 
-### 3.1 Website Rankings Dashboard
+### 3.1 Website rankings dashboard
 
-#### 3.1.1 Industry-Based Rankings Table
+#### 3.1.1 Industry-based rankings table
 
 A sortable, filterable data table displaying websites ranked by traffic share within a selected industry.  
 Table Columns:
@@ -58,7 +58,7 @@ Table Features:
 * Inline search/filter functionality  
 * Export to Excel capability
 
-#### 3.1.2 Traffic Source Tabs
+#### 3.1.2 Traffic source tabs
 
 Horizontal tab navigation to filter rankings by traffic channel:
 
@@ -70,7 +70,7 @@ Horizontal tab navigation to filter rankings by traffic channel:
 * Direct \- Direct/typed-in traffic  
 * Email \- Email marketing traffic
 
-#### 3.1.3 Website Type Filter
+#### 3.1.3 Website type filter
 
 Dropdown filter to categorize websites:
 
@@ -78,9 +78,9 @@ Dropdown filter to categorize websites:
 * Content Publishing Websites  
 * Other Websites
 
-### 3.2 Global Filters & Controls
+### 3.2 Global filters and controls
 
-#### 3.2.1 Industry Selector
+#### 3.2.1 Industry selector
 
 Functionality:
 
@@ -102,7 +102,7 @@ Sample Industry Structure:
 \- Business and Consumer Services  
 \- News and Media (current selection)
 
-#### 3.2.2 Date Range Selector
+#### 3.2.2 Date range selector
 
 Options:
 
@@ -111,7 +111,7 @@ Options:
 * Custom date range (premium feature with upsell)  
 * Display format: "MMM YYYY \- MMM YYYY (X Months)"
 
-#### 3.2.3 Geography Filter
+#### 3.2.3 Geography filter
 
 Functionality:
 
@@ -129,7 +129,7 @@ Sample Countries:
 * Belgium (flag)  
 * ... (alphabetical list)
 
-#### 3.2.4 Traffic Type Filter
+#### 3.2.4 Traffic type filter
 
 Options:
 
@@ -137,11 +137,11 @@ Options:
 * Desktop  
 * Mobile Web
 
-#### 3.2.5 Compare Button
+#### 3.2.5 Compare button
 
 Blue CTA button "+ Compare" to add websites for side-by-side comparison.
 
-### 3.3 Data Export & Actions
+### 3.3 Data export and actions
 
 #### 3.3.1 Export to Excel
 
@@ -150,24 +150,24 @@ Blue CTA button "+ Compare" to add websites for side-by-side comparison.
 * Includes all visible columns  
 * Respects current sort order
 
-#### 3.3.2 Column Configuration
+#### 3.3.2 Column configuration
 
 * "Columns (10/10)" dropdown  
 * Checkbox list for toggling columns  
 * Tooltip "Change table metrics"  
 * Persist user preferences
 
-#### 3.3.3 Add Website Button
+#### 3.3.3 Add website button
 
 * "+" icon button for adding custom websites to track
 
 ---
 
-## 4\. Website Detail View
+## 4\. Website detail view
 
 When clicking on a domain, users navigate to a comprehensive Website Analysis page.
 
-### 4.1 Website Header Section
+### 4.1 Website header section
 
 * Domain name with favicon  
 * Website description  
@@ -177,26 +177,26 @@ When clicking on a domain, users navigate to a comprehensive Website Analysis pa
 * App Store and Google Play links (if applicable)  
 * Website preview thumbnails
 
-### 4.2 Traffic & Engagement Section
+### 4.2 Traffic and engagement section
 
-#### 4.2.1 Total Visits Widget
+#### 4.2.1 Total visits widget
 
 * Large number display (9.141B format)  
 * MoM change indicator with arrow  
 * Date range context
 
-#### 4.2.2 Device Distribution
+#### 4.2.2 Device distribution
 
 * Donut chart showing Desktop vs Mobile Web split  
 * Percentage labels
 
-#### 4.2.3 Ranking Cards
+#### 4.2.3 Ranking cards
 
 * Global Rank (\#13 with trend bars)  
 * Country Rank (\#2 Japan) with flag  
 * Industry Rank (\#1 News and Media)
 
-#### 4.2.4 Engagement Metrics Grid
+#### 4.2.4 Engagement metrics grid
 
 | Metric | Example Value |
 | :---- | :---- |
@@ -207,16 +207,16 @@ When clicking on a domain, users navigate to a comprehensive Website Analysis pa
 | Pages/Visit | 7.22 |
 | Bounce Rate | 32.90% |
 
-#### 4.2.5 Visits Over Time Chart
+#### 4.2.5 Visits over time chart
 
 * Line chart with daily/weekly/monthly toggle (D/W/M)  
 * Multiple domain comparison capability  
 * Share icon for export  
 * Competitor benchmarks inline
 
-### 4.3 Geography Section
+### 4.3 Geography section
 
-#### 4.3.1 Top Countries Widget
+#### 4.3.1 Top countries widget
 
 * World map visualization  
 * Country list with:  
@@ -225,9 +225,9 @@ When clicking on a domain, users navigate to a comprehensive Website Analysis pa
   * MoM change indicator  
 * "See more countries" link
 
-### 4.4 Marketing Channels Section
+### 4.4 Marketing channels section
 
-#### 4.4.1 Channels Overview
+#### 4.4.1 Channels overview
 
 Bar chart showing traffic source breakdown:
 
@@ -239,7 +239,7 @@ Bar chart showing traffic source breakdown:
 * Mail (3.26%)  
 * Other (0.04%)
 
-#### 4.4.2 Organic Search Widget
+#### 4.4.2 Organic search widget
 
 * Branded vs Non-branded donut chart  
 * Top organic non-branded search terms table:  
@@ -248,36 +248,36 @@ Bar chart showing traffic source breakdown:
   * MoM change  
 * "See search overview" link
 
-#### 4.4.3 Paid Search Widget
+#### 4.4.3 Paid search widget
 
 * Top paid non-branded search terms  
 * Same format as organic
 
-### 4.5 Referrals Section
+### 4.5 Referrals section
 
-#### 4.5.1 Top Referring Websites
+#### 4.5.1 Top referring websites
 
 * Domain list with favicon  
 * Traffic share percentage  
 * MoM change indicator
 
-#### 4.5.2 Top Referring Industries
+#### 4.5.2 Top referring industries
 
 * Industry names  
 * Traffic share percentage  
 * "See more referring industries" link
 
-### 4.6 Outgoing Traffic Section
+### 4.6 Outgoing traffic section
 
-#### 4.6.1 Top Link Destinations
+#### 4.6.1 Top link destinations
 
 * Domain list with share and change
 
-#### 4.6.2 Top Ad Destinations
+#### 4.6.2 Top ad destinations
 
 * Ad platform breakdown (Google, Rakuten, etc.)
 
-### 4.7 Social Traffic Section
+### 4.7 Social traffic section
 
 * Bar chart by platform:  
   * YouTube  
@@ -290,9 +290,9 @@ Bar chart showing traffic source breakdown:
 
 ---
 
-## 5\. Navigation & Information Architecture
+## 5\. Navigation and information architecture
 
-### 5.1 Primary Navigation (Left Sidebar)
+### 5.1 Primary navigation (left sidebar)
 
 Collapsed icon navigation with expandable sections:
 
@@ -314,7 +314,7 @@ Collapsed icon navigation with expandable sections:
 14. Settings  
 15. Help/Support
 
-### 5.2 Website Analysis Sub-Navigation
+### 5.2 Website analysis sub-navigation
 
 When viewing a specific website:
 
@@ -333,7 +333,7 @@ When viewing a specific website:
 * Social  
 * Website Technologies (lock icon for premium)
 
-### 5.3 Top Navigation Bar
+### 5.3 Top navigation bar
 
 * Product logo (top-left)  
 * Global search bar (top-center)  
@@ -344,11 +344,11 @@ When viewing a specific website:
 
 ---
 
-## 6\. Data Requirements
+## 6\. Data requirements
 
-### 6.1 Core Data Entities
+### 6.1 Core data entities
 
-#### 6.1.1 Website Entity
+#### 6.1.1 Website entity
 
 {  
   domain: string,  
@@ -360,7 +360,7 @@ When viewing a specific website:
   technologies: string\[\]  
 }
 
-#### 6.1.2 Traffic Metrics Entity
+#### 6.1.2 Traffic metrics entity
 
 {  
   domain: string,  
@@ -391,7 +391,7 @@ When viewing a specific website:
   }  
 }
 
-#### 6.1.3 Industry Taxonomy
+#### 6.1.3 Industry taxonomy
 
 {  
   industry\_id: string,  
@@ -401,7 +401,7 @@ When viewing a specific website:
   website\_count: number  
 }
 
-### 6.2 Data Sources
+### 6.2 Data sources
 
 * Web traffic estimation algorithms  
 * Clickstream panel data  
@@ -409,7 +409,7 @@ When viewing a specific website:
 * Browser extension data (opt-in)  
 * Public API integrations (App Store, Play Store)
 
-### 6.3 Data Refresh Frequency
+### 6.3 Data refresh frequency
 
 * Monthly traffic metrics updated monthly  
 * Rankings refreshed weekly  
@@ -419,9 +419,9 @@ When viewing a specific website:
 
 ## 7\. UI/UX Specifications
 
-### 7.1 Design System
+### 7.1 Design system
 
-#### 7.1.1 Color Palette
+#### 7.1.1 Color palette
 
 * Primary Blue: \#1a73e8 (buttons, links, selected tabs)  
 * Success Green: \#34a853 (positive changes)  
@@ -445,9 +445,9 @@ When viewing a specific website:
 * Table row height: 48px  
 * Section margins: 24px
 
-### 7.2 Component Library
+### 7.2 Component library
 
-#### 7.2.1 Data Table Component
+#### 7.2.1 Data table component
 
 * Sticky header on scroll  
 * Alternating row backgrounds (subtle)  
@@ -457,14 +457,14 @@ When viewing a specific website:
 * Number formatting (B/M/K suffixes)  
 * Percentage bars with gradient fills
 
-#### 7.2.2 Filter Dropdowns
+#### 7.2.2 Filter dropdowns
 
 * Searchable with typeahead  
 * Clear selection option  
 * Multi-select where applicable  
 * Keyboard navigation support
 
-#### 7.2.3 Chart Components
+#### 7.2.3 Chart components
 
 * Line charts for time series  
 * Bar charts for distributions  
@@ -472,7 +472,7 @@ When viewing a specific website:
 * World map for geography  
 * Consistent color coding
 
-### 7.3 Responsive Behavior
+### 7.3 Responsive behavior
 
 * Desktop-first design (1280px+)  
 * Tablet adaptation (768px-1279px)  
@@ -480,9 +480,9 @@ When viewing a specific website:
 
 ---
 
-## 8\. Technical Architecture
+## 8\. Technical architecture
 
-### 8.1 Frontend Stack
+### 8.1 Frontend stack
 
 * Framework: React or Vue.js  
 * State Management: Redux/Vuex  
@@ -491,14 +491,14 @@ When viewing a specific website:
 * Styling: CSS-in-JS or Tailwind CSS  
 * Maps: Mapbox or Leaflet
 
-### 8.2 Backend Stack
+### 8.2 Backend stack
 
 * API: RESTful or GraphQL  
 * Database: PostgreSQL for relational data, ClickHouse/TimescaleDB for time-series  
 * Cache: Redis for frequently accessed data  
 * Search: Elasticsearch for domain/industry search
 
-### 8.3 Data Pipeline
+### 8.3 Data pipeline
 
 * ETL: Apache Airflow for data orchestration  
 * Processing: Apache Spark for large-scale data processing  
@@ -521,7 +521,7 @@ Query params:
   \- per\_page: number  
   \- search: string (domain filter)
 
-#### 8.4.2 Website Detail API
+#### 8.4.2 Website detail API
 
 GET /api/v1/websites/{domain}  
 GET /api/v1/websites/{domain}/traffic  
@@ -532,7 +532,7 @@ GET /api/v1/websites/{domain}/referrals
 
 ## 9\. Premium/Freemium Model
 
-### 9.1 Free Tier Limitations
+### 9.1 Free tier limitations
 
 * Limited to 3 industries  
 * Last 1 month data only  
@@ -540,7 +540,7 @@ GET /api/v1/websites/{domain}/referrals
 * No export functionality  
 * Worldwide only (no country filter)
 
-### 9.2 Premium Features
+### 9.2 Premium features
 
 * 211+ industries  
 * Up to 37 months historical data  
@@ -552,7 +552,7 @@ GET /api/v1/websites/{domain}/referrals
 * Similar sites discovery  
 * Website technologies detection
 
-### 9.3 Upsell Touchpoints
+### 9.3 Upsell touchpoints
 
 * Date range selector ("Get up to 37 months with our custom packages")  
 * Country selector ("Get 50+ countries with our custom package")  
@@ -561,23 +561,23 @@ GET /api/v1/websites/{domain}/referrals
 
 ---
 
-## 10\. Success Metrics
+## 10\. Success metrics
 
-### 10.1 User Engagement
+### 10.1 User engagement
 
 * Daily/Weekly/Monthly Active Users  
 * Average session duration  
 * Pages per session  
 * Feature adoption rates
 
-### 10.2 Business Metrics
+### 10.2 Business metrics
 
 * Free-to-paid conversion rate  
 * Premium feature usage  
 * Export/API usage  
 * Churn rate
 
-### 10.3 Performance Metrics
+### 10.3 Performance metrics
 
 * Page load time \< 2s  
 * API response time \< 500ms  
@@ -585,7 +585,7 @@ GET /api/v1/websites/{domain}/referrals
 
 ---
 
-## 11\. Development Phases
+## 11\. Development phases
 
 ### Phase 1: MVP (8-10 weeks)
 
@@ -595,7 +595,7 @@ GET /api/v1/websites/{domain}/referrals
 * Worldwide only  
 * Basic website detail page
 
-### Phase 2: Core Features (6-8 weeks)
+### Phase 2: Core features (6-8 weeks)
 
 * All traffic channel tabs  
 * Full industry taxonomy  
@@ -604,7 +604,7 @@ GET /api/v1/websites/{domain}/referrals
 * Export functionality  
 * Column configuration
 
-### Phase 3: Advanced Features (8-10 weeks)
+### Phase 3: Advanced features (8-10 weeks)
 
 * Website comparison tool  
 * Full website analysis sections  
@@ -612,7 +612,7 @@ GET /api/v1/websites/{domain}/referrals
 * Similar sites algorithm  
 * Search functionality
 
-### Phase 4: Premium & Scale (6-8 weeks)
+### Phase 4: Premium and scale (6-8 weeks)
 
 * Premium tier implementation  
 * API access  
@@ -624,7 +624,7 @@ GET /api/v1/websites/{domain}/referrals
 
 ## 12\. Appendix
 
-### A. Sample Industry List
+### A. Sample industry list
 
 * AI Chatbots and Tools  
 * Arts and Entertainment  
@@ -647,7 +647,7 @@ GET /api/v1/websites/{domain}/referrals
 * Sports  
 * Travel and Tourism
 
-### B. Competitive Analysis
+### B. Competitive analysis
 
 Key competitors to study:
 
@@ -657,7 +657,7 @@ Key competitors to study:
 * Alexa (discontinued)  
 * Quantcast
 
-### C. Data Privacy Considerations
+### C. Data privacy considerations
 
 * GDPR compliance required  
 * User consent for tracking  

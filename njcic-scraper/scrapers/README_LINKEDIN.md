@@ -1,4 +1,4 @@
-# LinkedIn Scraper Documentation
+# LinkedIn scraper documentation
 
 ## Overview
 
@@ -39,7 +39,7 @@ playwright install chromium
 
 ## Usage
 
-### Basic Example
+### Basic example
 
 ```python
 from scrapers.linkedin import LinkedInScraper
@@ -60,7 +60,7 @@ print(f"Success: {result['success']}")
 print(f"Metrics: {result['engagement_metrics']}")
 ```
 
-### URL Formats Supported
+### URL formats supported
 
 **Company Pages:**
 - `https://www.linkedin.com/company/companyname`
@@ -72,7 +72,7 @@ print(f"Metrics: {result['engagement_metrics']}")
 - `https://linkedin.com/in/username/`
 - `https://www.linkedin.com/in/username?trk=...`
 
-### Extract Username
+### Extract username
 
 ```python
 # Extract company name
@@ -84,7 +84,7 @@ username = scraper.extract_username("https://linkedin.com/in/williamhgates")
 # Returns: "williamhgates"
 ```
 
-## Return Value
+## Return value
 
 The `scrape()` method returns a dictionary with:
 
@@ -107,21 +107,21 @@ The `scrape()` method returns a dictionary with:
 }
 ```
 
-## Engagement Metrics
+## Engagement metrics
 
-### Company Pages
+### Company pages
 
 - `followers_count`: Number of company followers
 - `employee_count`: Employee count (often a range like "10,001+")
 - `posts_found`: Number of visible posts/updates
 
-### Personal Profiles
+### Personal profiles
 
 - `followers_count`: Number of profile followers
 - `connections_count`: Number of connections (often restricted)
 - `posts_found`: Number of visible posts
 
-## Output Files
+## Output files
 
 For each scraped page, the following files are created:
 
@@ -168,7 +168,7 @@ output/
 }
 ```
 
-## Error Handling
+## Error handling
 
 The scraper handles various error conditions:
 
@@ -180,7 +180,7 @@ The scraper handles various error conditions:
 
 All errors are logged and returned in the `errors` list.
 
-## Best Practices
+## Best practices
 
 1. **Rate Limiting**: Don't scrape too frequently (wait hours/days between requests)
 2. **Respect robots.txt**: LinkedIn's robots.txt disallows most scraping
@@ -221,7 +221,7 @@ playwright install chromium
 - Check for typos in URL
 - Ensure URL is a valid LinkedIn page
 
-## Legal & Ethical Considerations
+## Legal and ethical considerations
 
 ⚠️ **Important**:
 
@@ -232,7 +232,7 @@ playwright install chromium
 - Only collect publicly available information
 - Do not use scraped data for spam or harassment
 
-## Alternative Approaches
+## Alternative approaches
 
 1. **LinkedIn API**: Official API (requires partnership)
 2. **Manual Collection**: Copy data manually

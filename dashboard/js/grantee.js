@@ -384,7 +384,7 @@
                         const url = new URL(granteeData.website);
                         websiteText.textContent = url.hostname;
                     } catch {
-                        websiteText.textContent = 'Visit Website';
+                        websiteText.textContent = 'Visit website';
                     }
                 }
             }
@@ -504,7 +504,7 @@
 
                     ${topPost.preview ? `
                         <div class="border-t pt-4 mt-4">
-                            <div class="text-xs text-gray-400 mb-1">Top Post Preview</div>
+                            <div class="text-xs text-gray-400 mb-1">Top post preview</div>
                             <p class="text-sm text-gray-600 line-clamp-2">${escapeHtml(topPost.preview)}</p>
                             <div class="flex items-center justify-between mt-2">
                                 ${topPost.engagement ? `

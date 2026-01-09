@@ -1,24 +1,24 @@
-# Social Media URL Extractor - Script Created ✓
+# Social media URL extractor - script created ✓
 
 ## Summary
 
 I've created a production-ready Python script that extracts social media links from NJCIC grantee websites and outputs structured JSON data.
 
-## Files Created
+## Files created
 
-### Main Script
+### Main script
 - **Location**: `/home/user/njcic/njcic-scraper/scripts/extract_social_urls.py`
 - **Size**: 443 lines of code
 - **Status**: ✓ Syntax validated, ✓ Tested and working
 
-### Supporting Files
+### Supporting files
 - **Test Script**: `/home/user/njcic/njcic-scraper/scripts/test_extractor.py`
 - **Documentation**: 
   - `/home/user/njcic/njcic-scraper/README.md` (project overview)
   - `/home/user/njcic/njcic-scraper/SOCIAL_EXTRACTOR_GUIDE.md` (detailed guide)
 - **Dependencies**: Updated `/home/user/njcic/njcic-scraper/requirements.txt`
 
-## How to Run
+## How to run
 
 ```bash
 # Navigate to project directory
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 python3 scripts/extract_social_urls.py
 ```
 
-## What It Does
+## What it does
 
 1. **Reads** grantee data from: `/home/user/njcic/repos/njcic-grantees-map/data/grantees.json`
 2. **Fetches** each grantee's website HTML
@@ -62,7 +62,7 @@ python3 scripts/extract_social_urls.py
 ✓ **Statistics** - Shows extraction success rate for each platform
 ✓ **Production-ready** - Type hints, docstrings, proper exception handling
 
-## Output Format
+## Output format
 
 ```json
 {
@@ -95,7 +95,7 @@ python3 scripts/extract_social_urls.py
 }
 ```
 
-## Expected Performance
+## Expected performance
 
 - **Processing time**: ~2-3 minutes for 75 grantees
 - **Success rate**: ~95% (assuming websites are accessible)
@@ -112,7 +112,7 @@ Test command:
 python3 scripts/test_extractor.py
 ```
 
-## Configuration Options
+## Configuration options
 
 Edit these constants at the top of `extract_social_urls.py`:
 
@@ -123,7 +123,7 @@ MAX_RETRIES = 2         # Number of retry attempts
 USER_AGENT = "..."      # Browser user agent
 ```
 
-## Use Cases
+## Use cases
 
 1. **Social Media Audit** - Identify which grantees have social media presence
 2. **Contact Database** - Collect alternative contact channels
@@ -131,7 +131,7 @@ USER_AGENT = "..."      # Browser user agent
 4. **Analytics** - Analyze adoption by region/focus area
 5. **Directory** - Populate grantee listings with social links
 
-## Next Steps
+## Next steps
 
 1. **Run the script**: Process all grantees and generate the output file
 2. **Review results**: Check the JSON file for accuracy

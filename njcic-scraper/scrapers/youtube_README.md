@@ -38,14 +38,14 @@ else:
     print(f"Errors: {result['errors']}")
 ```
 
-## Supported URL Formats
+## Supported URL formats
 
 1. **@handle format**: `https://www.youtube.com/@mkbhd`
 2. **Channel name**: `https://www.youtube.com/c/Veritasium`
 3. **Channel ID**: `https://www.youtube.com/channel/UCBJycsmduvYEL83R_U4JriQ`
 4. **User format**: `https://www.youtube.com/user/CGPGrey`
 
-## Extracted Metadata
+## Extracted metadata
 
 For each video:
 - `video_id`: YouTube video ID
@@ -58,7 +58,7 @@ For each video:
 - `duration`: Video duration in seconds
 - `url`: Full video URL
 
-## Engagement Metrics
+## Engagement metrics
 
 - `subscribers_count`: Channel subscriber count (if available)
 - `total_views`: Sum of views across all scraped videos
@@ -67,7 +67,7 @@ For each video:
 - `avg_views_per_video`: Average views per video
 - `avg_engagement_rate`: Average engagement rate ((likes + comments) / views * 100)
 
-## Output Structure
+## Output structure
 
 ```
 output/
@@ -77,7 +77,7 @@ output/
               └── metadata.json
 ```
 
-## Error Handling
+## Error handling
 
 The scraper implements robust error handling:
 - Invalid URLs return empty results with error messages
@@ -85,7 +85,7 @@ The scraper implements robust error handling:
 - Partial results are saved even if some videos fail
 - All errors are logged to both console and log file
 
-## Rate Limiting
+## Rate limiting
 
 Built-in rate limiting respects YouTube's guidelines:
 - Configurable delay between requests (default: 2 seconds)

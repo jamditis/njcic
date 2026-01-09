@@ -1,9 +1,9 @@
-# Base Scraper Infrastructure - Creation Summary
+# Base scraper infrastructure - creation summary
 
 **Created:** January 7, 2026
 **Location:** `/home/user/njcic/njcic-scraper/`
 
-## Files Created
+## Files created
 
 ### 1. config.py
 **Purpose:** Central configuration management
@@ -122,7 +122,7 @@ Exports `BaseScraper` for use in platform-specific scrapers.
 - Output file creation
 - Engagement metrics calculation
 
-## Verification Results
+## Verification results
 
 ✓ All tests passed successfully
 ✓ Configuration loads correctly
@@ -135,7 +135,7 @@ Exports `BaseScraper` for use in platform-specific scrapers.
 ✓ Rate limiting implemented
 ✓ Logging configured (file + console)
 
-## Output Structure
+## Output structure
 
 ```
 output/
@@ -146,7 +146,7 @@ output/
         └── errors.json      # Error log (if any failures)
 ```
 
-## Post Data Format
+## Post data format
 
 ```json
 {
@@ -164,7 +164,7 @@ output/
 }
 ```
 
-## Metadata Format
+## Metadata format
 
 ```json
 {
@@ -183,7 +183,7 @@ output/
 }
 ```
 
-## Creating a Platform-Specific Scraper
+## Creating a platform-specific scraper
 
 Example implementation:
 
@@ -236,7 +236,7 @@ class FacebookScraper(BaseScraper):
         }
 ```
 
-## Next Steps
+## Next steps
 
 1. **Implement platform-specific scrapers:**
    - FacebookScraper
@@ -264,7 +264,7 @@ class FacebookScraper(BaseScraper):
    - Data analysis dashboard
    - Scheduling/automation
 
-## Production Readiness
+## Production readiness
 
 ✓ Error handling with graceful fallbacks
 ✓ Rate limiting to respect platform guidelines
@@ -276,7 +276,7 @@ class FacebookScraper(BaseScraper):
 ✓ Metadata tracking for audit trails
 ✓ Test suite for verification
 
-## Key Design Principles
+## Key design principles
 
 1. **Separation of Concerns:** Configuration, base logic, and platform-specific code are separated
 2. **DRY (Don't Repeat Yourself):** Common functionality in base class

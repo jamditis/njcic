@@ -1,18 +1,18 @@
-# New Jersey Civic Information Consortium (NJCIC) Research Report
+# New Jersey Civic Information Consortium (NJCIC) research report
 
-## Executive Summary
+## Executive summary
 
 The New Jersey Civic Information Consortium (NJCIC) is the first-of-its-kind publicly funded nonprofit organization in the United States dedicated to supporting local journalism and civic information needs. Established in 2018 through bipartisan legislation, the Consortium has invested more than $10 million in local news and civic media projects across New Jersey since launching its grant program in 2021.
 
 ---
 
-## 1. Mission, Purpose, and Goals
+## 1. Mission, purpose, and goals
 
 ### Overview
 
 The NJCIC is an independent 501(c)(3) nonprofit organization that funds initiatives to benefit the State's civic life and meet the evolving information needs of New Jersey's communities.
 
-### Statutory Goals (P.L. 2018, c.111)
+### Statutory goals (P.L. 2018, c.111)
 
 1. **Improve the quantity and quality** of civic information in New Jersey communities
 2. **Enhance access** to useful government data and public information through innovative applications, platforms, and technologies
@@ -23,24 +23,24 @@ The NJCIC is an independent 501(c)(3) nonprofit organization that funds initiati
 
 ---
 
-## 2. History and Founding
+## 2. History and founding
 
-### Legislative Origins (2017-2018)
+### Legislative origins (2017-2018)
 
 - **2017**: Free Press Action launched campaign for the Civic Info Bill
 - **2018**: Senate Majority Leader **Loretta Weinberg** (D-Bergen) and Assembly Majority Leader **Lou Greenwald** (D-Camden) introduced legislation
 - **August 2018**: Signed into law by Governor Phil Murphy
 
-### Formation Process
+### Formation process
 
 - **March 2021**: First grant proposals invited
 - **June 2021**: Inaugural awards to 14 of 74 applicants (grants capped at $35,000)
 
 ---
 
-## 3. Organizational Structure
+## 3. Organizational structure
 
-### Legal Structure
+### Legal structure
 - **Type**: Independent 501(c)(3) nonprofit
 - **EIN**: 85-3522347
 - **Location**: Housed within Montclair State University
@@ -50,10 +50,10 @@ The NJCIC is an independent 501(c)(3) nonprofit organization that funds initiati
 - 6 university representatives
 - 5 sector representatives (media, technology, nonprofit, public service)
 
-### Current Leadership
+### Current leadership
 - **Chris Daggett** - Board Chair and Interim Executive Director (Former CEO, Geraldine R. Dodge Foundation)
 
-### Member Universities
+### Member universities
 1. Montclair State University (host)
 2. Rutgers University
 3. Rowan University
@@ -63,30 +63,30 @@ The NJCIC is an independent 501(c)(3) nonprofit organization that funds initiati
 
 ---
 
-## 4. Funding Sources
+## 4. Funding sources
 
-### State Funding
+### State funding
 - **FY2021**: $500,000 (inaugural allocation)
 - **FY2026**: $2.5 million
 
-### Foundation and Private Funding
+### Foundation and private funding
 - **Press Forward Initiative**: National coalition pledging $500 million over five years
 - **Robert Wood Johnson Foundation**: Grants for Press Forward NJ projects
 - **Democracy Fund**: Grant support
 
-### Total Grantmaking
+### Total grantmaking
 - **Since 2021**: More than $10 million in total grants
 
 ---
 
-## 5. Impact and Outcomes (As of 2025)
+## 5. Impact and outcomes (as of 2025)
 
 ### Statistics
 - **Organizations Supported**: 65
 - **Geographic Reach**: 19 of 21 NJ counties
 - **BIPOC-led projects**: 48%
 
-### Measurable Outcomes
+### Measurable outcomes
 - **9,065 stories** produced by 32 grantees
 - **14,493 news briefs** published
 - **3,856 stories** for ethnic/BIPOC/Spanish-language communities
@@ -95,19 +95,19 @@ The NJCIC is an independent 501(c)(3) nonprofit organization that funds initiati
 
 ---
 
-## 6. Key Partners
+## 6. Key partners
 
-### Founding Partners
+### Founding partners
 - **Free Press Action** - Conceived and advocated for legislation
 
-### Philanthropic Partners
+### Philanthropic partners
 - Community Foundation of New Jersey
 - Community Foundation of South Jersey
 - Robert Wood Johnson Foundation
 - Democracy Fund
 - Press Forward (MacArthur Foundation, Knight Foundation)
 
-### Legislative Champions
+### Legislative champions
 - Assembly Majority Leader Lou Greenwald
 - Former Senate Majority Leader Loretta Weinberg
 

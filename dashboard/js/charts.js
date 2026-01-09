@@ -267,7 +267,7 @@ function createEngagementByPlatformChart(ctx, data) {
                             const lines = [` Engagement: ${formatNumber(engagement)}`];
                             if (posts > 0) {
                                 lines.push(` Posts: ${formatNumber(posts)}`);
-                                lines.push(` Avg per Post: ${formatNumber(Math.round(engagement / posts))}`);
+                                lines.push(` Avg per post: ${formatNumber(Math.round(engagement / posts))}`);
                             }
                             return lines;
                         }
@@ -375,7 +375,7 @@ function createGranteesChart(ctx, data, onClick) {
                                 lines.push(` Posts: ${formatNumber(grantee.posts)}`);
                             }
                             if (grantee.topPlatform) {
-                                lines.push(` Top Platform: ${grantee.topPlatform}`);
+                                lines.push(` Top platform: ${grantee.topPlatform}`);
                             }
                             return lines;
                         },

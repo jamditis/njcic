@@ -902,15 +902,15 @@
                         <span class="font-semibold text-njcic-teal">#${g.rank}</span>
                     </div>
                     <div class="flex justify-between">
-                        <span class="text-gray-600">Total Posts</span>
+                        <span class="text-gray-600">Total posts</span>
                         <span class="font-semibold">${formatNumber(g.posts)}</span>
                     </div>
                     <div class="flex justify-between">
-                        <span class="text-gray-600">Total Engagement</span>
+                        <span class="text-gray-600">Total engagement</span>
                         <span class="font-semibold">${formatNumber(g.engagement)}</span>
                     </div>
                     <div class="flex justify-between">
-                        <span class="text-gray-600">Engagement Rate</span>
+                        <span class="text-gray-600">Engagement rate</span>
                         <span class="font-semibold">${g.engagementRate}/post</span>
                     </div>
                     <div class="flex justify-between">
@@ -945,7 +945,7 @@
         comparisonChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['Total Posts', 'Total Engagement', 'Engagement Rate'],
+                labels: ['Total posts', 'Total engagement', 'Engagement rate'],
                 datasets: granteeList.map((g, index) => ({
                     label: truncateLabel(g.name, 15),
                     data: [
@@ -1213,8 +1213,8 @@
             'Grantee',
             'Posts',
             'Engagement',
-            'Engagement Rate',
-            'Top Platform',
+            'Engagement rate',
+            'Top platform',
             'Platforms'
         ];
 

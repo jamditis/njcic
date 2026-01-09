@@ -1,4 +1,4 @@
-# Threads Scraper - Quick Start Guide
+# Threads scraper - quick start guide
 
 ## Installation
 
@@ -10,7 +10,7 @@ pip install -r requirements.txt
 playwright install chromium
 ```
 
-## Basic Usage
+## Basic usage
 
 ```python
 from scrapers.threads import ThreadsScraper
@@ -30,7 +30,7 @@ if result['success']:
     print(f"Metrics: {result['engagement_metrics']}")
 ```
 
-## What Gets Scraped
+## What gets scraped
 
 For each profile:
 - **Up to 25 posts** (most recent)
@@ -39,7 +39,7 @@ For each profile:
 - **Profile metrics**: follower count
 - **Aggregate metrics**: totals and engagement rate
 
-## Output Format
+## Output format
 
 ```
 output/
@@ -49,7 +49,7 @@ output/
             └── metadata.json
 ```
 
-## Return Value
+## Return value
 
 ```python
 {
@@ -66,14 +66,14 @@ output/
 }
 ```
 
-## URL Formats Supported
+## URL formats supported
 
 - `https://www.threads.net/@username`
 - `https://threads.net/@username`
 - `threads.net/@username`
 - `threads.net/username`
 
-## Configuration Options
+## Configuration options
 
 ```python
 ThreadsScraper(
@@ -96,30 +96,30 @@ python test_threads_scraper.py "https://www.threads.net/@zuck" "Test User"
 python examples/threads_example.py
 ```
 
-## Common Issues
+## Common issues
 
-### Playwright Not Installed
+### Playwright not installed
 ```bash
 pip install playwright
 playwright install chromium
 ```
 
-### Timeout Errors
+### Timeout errors
 - Increase timeout: `ThreadsScraper(timeout=60000)`
 - Check internet connection
 - Try non-headless: `ThreadsScraper(headless=False)`
 
-### No Posts Found
+### No posts found
 - Profile may be private
 - Profile may have no posts
 - Threads UI may have changed
 
-### Rate Limiting
+### Rate limiting
 - Add delays between profiles (5-10 seconds)
 - Reduce concurrent scraping
 - Consider using proxies
 
-## Best Practices
+## Best practices
 
 1. **Rate Limiting**: Add 5-10 second delays between profiles
 2. **Error Handling**: Check `result['errors']` and implement retries
@@ -127,7 +127,7 @@ playwright install chromium
 4. **Logging**: Enable logging to debug issues
 5. **Testing**: Test with `headless=False` to see browser behavior
 
-## Integration Example
+## Integration example
 
 ```python
 import time

@@ -1,4 +1,4 @@
-# Twitter/X Scraper - Quick Reference
+# Twitter/X scraper - quick reference
 
 ## Location
 `/home/user/njcic/njcic-scraper/scrapers/twitter.py`
@@ -7,7 +7,7 @@
 
 Inherits from `BaseScraper` and implements Twitter/X specific scraping logic.
 
-### Key Features
+### Key features
 
 ✓ Handles both `twitter.com` and `x.com` URLs
 ✓ Downloads up to 25 posts (configurable)
@@ -17,7 +17,7 @@ Inherits from `BaseScraper` and implements Twitter/X specific scraping logic.
 ✓ Rate limit management
 ✓ Production-ready logging
 
-### Public Methods
+### Public methods
 
 #### 1. `extract_username(url: str) -> Optional[str]`
 
@@ -89,7 +89,7 @@ if result['success']:
 - `output_dir` (str): Base directory for output (default: "output")
 - `max_posts` (int): Maximum posts to scrape (default: 25)
 
-### Output Structure
+### Output structure
 
 ```
 output/
@@ -100,7 +100,7 @@ output/
             └── *.json              # Individual tweet metadata (from gallery-dl)
 ```
 
-### Engagement Metrics Explained
+### Engagement metrics explained
 
 | Metric | Description |
 |--------|-------------|
@@ -115,7 +115,7 @@ output/
 | `avg_engagement_rate` | (likes + retweets + replies) / views × 100 |
 | `posts_analyzed` | Number of posts included in calculations |
 
-### Error Handling
+### Error handling
 
 The scraper gracefully handles:
 - Invalid URLs
@@ -141,7 +141,7 @@ All errors are:
 pip install gallery-dl
 ```
 
-### Command Line Usage
+### Command line usage
 
 ```bash
 # Basic usage
@@ -155,7 +155,7 @@ python /home/user/njcic/njcic-scraper/scripts/test_twitter_scraper.py \
     "Test Org"
 ```
 
-### Integration Example
+### Integration example
 
 ```python
 #!/usr/bin/env python3
@@ -188,7 +188,7 @@ for url, grantee in accounts:
 3. **Historical data**: Limited by Twitter's public availability
 4. **Rate limits**: Subject to Twitter/gallery-dl rate limits
 
-### Advanced Configuration
+### Advanced configuration
 
 For better reliability, configure gallery-dl with authentication:
 
@@ -230,7 +230,7 @@ pip install --upgrade gallery-dl
 - Rate: ~2-3 posts/second
 - Metadata only: faster (no media download)
 
-## Security Considerations
+## Security considerations
 
 - Never commit Twitter credentials to git
 - Store cookies/auth in secure location

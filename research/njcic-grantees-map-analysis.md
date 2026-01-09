@@ -1,6 +1,6 @@
-# NJCIC Grantees Map - Technical Analysis
+# NJCIC grantees map - Technical analysis
 
-## Project Overview
+## Project overview
 
 **NJCIC Grantees Map** is an interactive web-based mapping application that visualizes grantees of the New Jersey Civic Information Consortium across New Jersey.
 
@@ -8,14 +8,14 @@
 - **Repository:** https://github.com/jamditis/njcic-grantees-map
 - **Creator:** Joe Amditis (Center for Cooperative Media at Montclair State University)
 
-### Key Statistics
+### Key statistics
 - 76+ grantee organizations
 - $10.8+ million in funding
 - Grant years: 2021-2025
 
 ---
 
-## Tech Stack
+## Tech stack
 
 | Category | Technologies |
 |----------|--------------|
@@ -30,27 +30,27 @@
 
 ---
 
-## Key Features
+## Key features
 
-### Map Display
+### Map display
 - Interactive Leaflet.js map centered on New Jersey
 - Custom markers with organization initials
 - Marker clustering with hover-to-expand
 - Mobile touch zoom support
 
-### Filtering System
+### Filtering system
 - Year filter (2021-2025)
 - County filter (21 NJ counties + regional)
 - Focus area filter
 - Status filter (Active/Completed)
 
-### Grantee Information
+### Grantee information
 - Marker tooltips with name, location, funding
 - Detail modals with full grant information
 - Multi-grant consolidation
 - Social sharing (Twitter, Facebook, LinkedIn, Email)
 
-### Data Flow
+### Data flow
 ```
 Airtable Database
     ↓ (7am ET daily)
@@ -65,7 +65,7 @@ Rendered map
 
 ---
 
-## Project Structure
+## Project structure
 
 ```
 njcic-grantees-map/
@@ -82,7 +82,7 @@ njcic-grantees-map/
 
 ---
 
-## Key Files
+## Key files
 
 ### `/js/app.js` (910 lines)
 - Map initialization and configuration
@@ -116,7 +116,7 @@ njcic-grantees-map/
 
 ## Configuration
 
-### Environment Variables
+### Environment variables
 ```
 AIRTABLE_PAT=personal_access_token
 AIRTABLE_BASE_ID=appryDZWgPpP0GmZw
@@ -124,7 +124,7 @@ AIRTABLE_TABLE_ID=tblFADXYCq495smGH
 AIRTABLE_VIEW_ID=viwjXro41ehrvxTfs
 ```
 
-### Brand Colors
+### Brand colors
 - Primary teal: `#2dc8d2`
 - Primary dark: `#183642`
 - New org orange: `#f34213`
@@ -139,7 +139,7 @@ npm install
 npm start  # http://localhost:8080
 ```
 
-### Automatic Sync
+### Automatic sync
 - GitHub Actions triggers daily at 7am ET
 - Calls sync.php on Nestify server
 - Updates grantees.json from Airtable

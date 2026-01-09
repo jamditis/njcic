@@ -13,21 +13,21 @@ The BlueSky scraper (`bluesky.py`) is a fully-functional implementation that:
 
 ## Features
 
-### Core Functionality
+### Core functionality
 - **Platform**: BlueSky (platform_name: "bluesky")
 - **API**: Public AT Protocol API at `https://public.api.bsky.app/xrpc`
 - **Authentication**: None required (public API)
 - **Rate Limiting**: Built-in via BaseScraper
 
-### URL Formats Supported
+### URL formats supported
 The scraper handles multiple URL formats:
 - Full profile URLs: `https://bsky.app/profile/username.bsky.social`
 - Custom domains: `https://bsky.app/profile/custom.domain`
 - Direct handles: `username.bsky.social`
 
-### Data Extracted
+### Data extracted
 
-#### Per Post:
+#### Per post:
 - Post ID and URI
 - Text content
 - Timestamp (ISO format + formatted)
@@ -39,7 +39,7 @@ The scraper handles multiple URL formats:
 - Media presence (embed type)
 - Post URL for web viewing
 
-#### Aggregate Metrics:
+#### Aggregate metrics:
 - `followers_count`: Number of followers
 - `following_count`: Number of accounts followed
 - `posts_count`: Total posts on profile
@@ -56,7 +56,7 @@ The scraper handles multiple URL formats:
 
 ## Usage
 
-### Basic Example
+### Basic example
 
 ```python
 from scrapers.bluesky import BlueSkyScraper
@@ -77,7 +77,7 @@ print(f"Posts downloaded: {result['posts_downloaded']}")
 print(f"Engagement metrics: {result['engagement_metrics']}")
 ```
 
-### Return Value
+### Return value
 
 The `scrape()` method returns a dictionary with:
 ```python
@@ -90,7 +90,7 @@ The `scrape()` method returns a dictionary with:
 }
 ```
 
-### Output Files
+### Output files
 
 Data is saved to: `output/{grantee_name}/bluesky/`
 
@@ -99,7 +99,7 @@ Files created:
 - `metadata.json`: Profile info, metrics, and scraping metadata
 - `errors.json`: Error log (if any errors occurred)
 
-## API Endpoints Used
+## API endpoints used
 
 1. **Profile Endpoint**: `app.bsky.actor.getProfile`
    - Fetches user profile information
@@ -110,7 +110,7 @@ Files created:
    - Supports pagination via cursor
    - Max 100 posts per request
 
-## Implementation Details
+## Implementation details
 
 ### Class: `BlueSkyScraper(BaseScraper)`
 
@@ -144,7 +144,7 @@ Files created:
 - `_calculate_engagement_metrics(posts: List, profile: Optional[Dict]) -> Dict`
   - Calculates aggregate engagement metrics
 
-## Error Handling
+## Error handling
 
 - All API errors are logged and included in errors list
 - Partial data is saved even if errors occur

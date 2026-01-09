@@ -1,16 +1,16 @@
-# Instagram Scraper Documentation
+# Instagram scraper documentation
 
 ## Overview
 
 Production-ready Instagram scraper built using the instaloader library. Scrapes post metadata without downloading media files for optimal speed and storage efficiency.
 
-## File Location
+## File location
 
 **Main scraper:** `/home/user/njcic/njcic-scraper/scrapers/instagram.py`
 
 ## Features
 
-### Core Functionality
+### Core functionality
 
 1. **Inherits from BaseScraper** - Follows the established scraper architecture
 2. **Platform name:** `instagram`
@@ -19,7 +19,7 @@ Production-ready Instagram scraper built using the instaloader library. Scrapes 
 5. **Graceful error handling** - Handles private profiles, rate limits, and API errors
 6. **Comprehensive metrics** - Calculates engagement rates and social metrics
 
-### URL Handling
+### URL handling
 
 The `extract_username()` method handles multiple URL formats:
 - `instagram.com/username`
@@ -30,7 +30,7 @@ The `extract_username()` method handles multiple URL formats:
 
 Automatically filters out non-profile URLs (posts, reels, stories, explore pages).
 
-### Data Extraction
+### Data extraction
 
 For each post, the scraper extracts:
 - Caption
@@ -44,7 +44,7 @@ For each post, the scraper extracts:
 - Hashtags
 - Post URL
 
-### Engagement Metrics
+### Engagement metrics
 
 The scraper calculates and returns:
 - `followers_count` - Number of followers
@@ -56,7 +56,7 @@ The scraper calculates and returns:
 
 **Engagement rate formula:** `((likes + comments) / followers) * 100`
 
-### Private Profile Handling
+### Private profile handling
 
 When encountering a private profile that the authenticated user doesn't follow:
 - Returns success=True (no error state)
@@ -80,7 +80,7 @@ export INSTAGRAM_PASSWORD="your_password"
 
 ## Usage
 
-### Basic Usage
+### Basic usage
 
 ```python
 from scrapers.instagram import InstagramScraper
@@ -100,7 +100,7 @@ print(f"Posts downloaded: {result['posts_downloaded']}")
 print(f"Engagement rate: {result['engagement_metrics']['avg_engagement_rate']}%")
 ```
 
-### With Session File
+### With session file
 
 ```python
 scraper = InstagramScraper(
@@ -111,7 +111,7 @@ scraper = InstagramScraper(
 result = scraper.scrape(url, grantee_name)
 ```
 
-### Using the Example Script
+### Using the example script
 
 ```bash
 # Simple usage (public profiles only)
@@ -129,7 +129,7 @@ python example_instagram.py --url https://instagram.com/username --session-file 
 python example_instagram.py --url https://instagram.com/username --debug
 ```
 
-## Return Structure
+## Return structure
 
 The `scrape()` method returns a dictionary with:
 
@@ -149,7 +149,7 @@ The `scrape()` method returns a dictionary with:
 }
 ```
 
-## Output Structure
+## Output structure
 
 Scraped data is saved to:
 ```
@@ -160,7 +160,7 @@ output/
             └── metadata.json
 ```
 
-### Metadata JSON Format
+### Metadata JSON format
 
 ```json
 {
@@ -227,12 +227,12 @@ Tests cover:
 
 ## Configuration
 
-### Environment Variables
+### Environment variables
 
 - `INSTAGRAM_USERNAME` - Instagram username for authentication
 - `INSTAGRAM_PASSWORD` - Instagram password for authentication
 
-### Instaloader Settings
+### Instaloader settings
 
 The scraper is configured with these optimizations:
 - `download_pictures=False` - Skip image downloads
@@ -243,7 +243,7 @@ The scraper is configured with these optimizations:
 - `save_metadata=False` - Skip instaloader's metadata files
 - `quiet=True` - Minimize console output
 
-## Error Handling
+## Error handling
 
 The scraper handles:
 - Invalid URLs (returns error immediately)
@@ -260,7 +260,7 @@ The scraper handles:
 3. **Post Limit:** Configured to download metadata for the last 25 posts only (configurable).
 4. **API Changes:** Instagram may change their API, requiring instaloader updates.
 
-## Technical Details
+## Technical details
 
 - **Lines of code:** 454
 - **Dependencies:** instaloader, pathlib, json, os, re, datetime, typing

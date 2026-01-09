@@ -16,13 +16,13 @@ The Threads scraper (`scrapers/threads.py`) is designed to scrape posts from Thr
 
 ## Installation
 
-### 1. Install Python Dependencies
+### 1. Install Python dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Install Playwright Browsers
+### 2. Install Playwright browsers
 
 After installing the playwright package, you need to install the browser binaries:
 
@@ -34,7 +34,7 @@ This downloads the Chromium browser that Playwright will use for automation.
 
 ## Usage
 
-### Basic Example
+### Basic example
 
 ```python
 from pathlib import Path
@@ -61,7 +61,7 @@ else:
     print(f"Errors: {result['errors']}")
 ```
 
-### Using the Test Script
+### Using the test script
 
 A test script is provided for easy testing:
 
@@ -73,7 +73,7 @@ python test_threads_scraper.py
 python test_threads_scraper.py "https://www.threads.net/@zuck" "Mark Zuckerberg"
 ```
 
-## URL Format Support
+## URL format support
 
 The scraper handles the following URL formats:
 
@@ -83,7 +83,7 @@ The scraper handles the following URL formats:
 - `https://www.threads.net/username`
 - `threads.net/username`
 
-## Output Structure
+## Output structure
 
 ```
 output/
@@ -93,7 +93,7 @@ output/
             └── metadata.json
 ```
 
-### metadata.json Structure
+### metadata.json structure
 
 ```json
 {
@@ -125,7 +125,7 @@ output/
 }
 ```
 
-## Return Value
+## Return value
 
 The `scrape()` method returns a dictionary with:
 
@@ -144,7 +144,7 @@ The `scrape()` method returns a dictionary with:
 }
 ```
 
-## Configuration Options
+## Configuration options
 
 ### ThreadsScraper Parameters
 
@@ -154,13 +154,13 @@ The `scrape()` method returns a dictionary with:
 | `headless` | bool | `True` | Run browser in headless mode |
 | `timeout` | int | `30000` | Page load timeout in milliseconds |
 
-### Post Limit
+### Post limit
 
 The scraper is configured to download up to **25 posts** per profile (as per requirements). This is hard-coded in the `ThreadsScraper` class.
 
-## Implementation Details
+## Implementation details
 
-### How It Works
+### How it works
 
 1. **URL Validation**: Extracts username from Threads URL
 2. **Browser Launch**: Launches Chromium browser via Playwright
@@ -169,13 +169,13 @@ The scraper is configured to download up to **25 posts** per profile (as per req
 5. **Data Extraction**: Extracts post content and engagement metrics using JavaScript
 6. **Metadata Saving**: Saves all data to `metadata.json`
 
-### Engagement Metrics Calculation
+### Engagement metrics calculation
 
 - **Followers Count**: Extracted from profile page (supports K/M/B notation)
 - **Total Likes/Replies/Reposts**: Sum across all scraped posts
 - **Avg Engagement Rate**: `(total_engagement / followers) * 100`
 
-### Anti-Bot Handling
+### Anti-bot handling
 
 The scraper implements several strategies to avoid detection:
 
@@ -185,9 +185,9 @@ The scraper implements several strategies to avoid detection:
 - Timeout handling for slow pages
 - Graceful degradation on errors
 
-## Known Limitations
+## Known limitations
 
-### 1. Browser Automation Required
+### 1. Browser automation required
 
 Threads has no public API, so browser automation is necessary. This means:
 
@@ -196,7 +196,7 @@ Threads has no public API, so browser automation is necessary. This means:
 - More resource-intensive
 - More fragile to UI changes
 
-### 2. Rate Limiting
+### 2. Rate limiting
 
 Threads may implement rate limiting or bot detection:
 
@@ -204,7 +204,7 @@ Threads may implement rate limiting or bot detection:
 - **Mitigation**: Use residential IPs if needed
 - **Mitigation**: Reduce concurrent scraping
 
-### 3. Dynamic Content
+### 3. Dynamic content
 
 Threads uses heavy JavaScript and lazy loading:
 
@@ -212,7 +212,7 @@ Threads uses heavy JavaScript and lazy loading:
 - **Mitigation**: Progressive waiting for selectors
 - **Limitation**: Some posts may not load on slow connections
 
-### 4. UI Changes
+### 4. UI changes
 
 Threads UI is subject to change:
 
@@ -228,7 +228,7 @@ This scraper works for **public profiles only**:
 - Private profiles cannot be scraped
 - Login-only features not accessible
 
-### 6. Accuracy of Engagement Metrics
+### 6. Accuracy of engagement metrics
 
 Engagement numbers are extracted from displayed text:
 
@@ -238,7 +238,7 @@ Engagement numbers are extracted from displayed text:
 
 ## Troubleshooting
 
-### Playwright Not Found
+### Playwright not found
 
 ```
 Error: Playwright not installed
@@ -250,7 +250,7 @@ pip install playwright
 playwright install chromium
 ```
 
-### Profile Not Found
+### Profile not found
 
 ```
 Error: Profile @username not found
@@ -262,7 +262,7 @@ Error: Profile @username not found
 - Profile is private or deleted
 - Threads is blocking the request
 
-### Timeout Errors
+### Timeout errors
 
 ```
 Error: Timeout loading profile page
@@ -273,7 +273,7 @@ Error: Timeout loading profile page
 - Check internet connection
 - Check if Threads is accessible in your region
 
-### No Posts Found
+### No posts found
 
 ```
 Error: No posts found on profile
@@ -289,7 +289,7 @@ Error: No posts found on profile
 - Check if profile actually has posts
 - Update scraper if Threads UI changed
 
-### Rate Limiting
+### Rate limiting
 
 ```
 Error: Connection error / 429 Too Many Requests
@@ -302,7 +302,7 @@ Error: Connection error / 429 Too Many Requests
 
 ## Development
 
-### Running Tests
+### Running tests
 
 ```bash
 # Test username extraction
@@ -337,7 +337,7 @@ To modify the scraper:
 3. **Change selectors**: Update JavaScript in `_extract_post_data()`
 4. **Add authentication**: Implement login in `_scrape_async()`
 
-## Best Practices
+## Best practices
 
 1. **Respect Rate Limits**: Add delays between scraping multiple profiles
 2. **Monitor Errors**: Check `result['errors']` for issues
@@ -346,7 +346,7 @@ To modify the scraper:
 5. **Handle Failures**: Implement retry logic for transient errors
 6. **Cache Results**: Store metadata to avoid re-scraping
 
-## Integration Example
+## Integration example
 
 ```python
 import logging

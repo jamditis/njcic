@@ -1,8 +1,8 @@
-# NJCIC Grantee Social Media Scraper
+# NJCIC grantee social media scraper
 
 Production-ready infrastructure for extracting social media URLs and scraping content from NJCIC grantee organizations across multiple platforms.
 
-## Project Overview
+## Project overview
 
 This project contains two main components:
 
@@ -30,7 +30,7 @@ cp .env.example .env
 playwright install
 ```
 
-## Project Structure
+## Project structure
 
 ```
 njcic-scraper/
@@ -49,7 +49,7 @@ njcic-scraper/
 └── logs/                         # Application logs (auto-created)
 ```
 
-## Base Scraper Infrastructure
+## Base scraper infrastructure
 
 ### Features
 
@@ -62,14 +62,14 @@ njcic-scraper/
 - **Data validation**: Ensures all posts contain required fields
 - **Metadata tracking**: Saves scraping metadata for audit trails
 
-### Key Configuration Settings
+### Key configuration settings
 
 - **MAX_POSTS_PER_ACCOUNT**: 25 (as requested)
 - **REQUEST_DELAY**: 2 seconds between requests
 - **TIMEOUT**: 30 seconds for requests
 - **MAX_RETRIES**: 3 retry attempts for failed requests
 
-### Creating a Platform-Specific Scraper
+### Creating a platform-specific scraper
 
 All platform scrapers inherit from `BaseScraper`:
 
@@ -117,7 +117,7 @@ class FacebookScraper(BaseScraper):
         }
 ```
 
-### Base Scraper Methods
+### Base scraper methods
 
 **Required (Abstract):**
 - `extract_username(url)` - Extract username from platform URL
@@ -132,7 +132,7 @@ class FacebookScraper(BaseScraper):
 - `calculate_engagement_metrics(posts)` - Calculate engagement statistics
 - `validate_post(post)` - Validate post has required fields
 
-### Output Structure
+### Output structure
 
 ```
 output/
@@ -267,7 +267,7 @@ All dependencies are listed in `requirements.txt`:
 - Links found in header/footer sections are prioritized
 - The script can handle various URL formats and edge cases
 
-## Future Enhancements
+## Future enhancements
 
 **Scraper Infrastructure:**
 - Implement platform-specific scrapers (Facebook, Instagram, Twitter, etc.)
@@ -283,7 +283,7 @@ All dependencies are listed in `requirements.txt`:
 - Check for broken links
 - Extract organization logos
 
-## Environment Variables
+## Environment variables
 
 Copy `.env.example` to `.env` and configure your API credentials:
 
