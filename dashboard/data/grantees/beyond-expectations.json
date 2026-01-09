@@ -216,5 +216,10 @@
       }
     ]
   },
-  "website": "https://beyondexp.net/collaborate"
+  "website": "https://beyondexp.net",
+  "social": {
+    "instagram": "https://www.instagram.com/hellobeyondexpectations/",
+    "linkedin": "https://www.linkedin.com/company/beyond-expectations-inc-",
+    "youtube": "https://www.youtube.com/@BeyondExpectationsTV"
+  }
 }

@@ -370,5 +370,11 @@
       }
     ]
   },
-  "website": "https://www.healthynewsworks.org/"
+  "website": "https://www.healthynewsworks.org",
+  "social": {
+    "instagram": "https://instagram.com/healthynewsworks",
+    "facebook": "https://facebook.com/HealthyNewsWorks",
+    "twitter": "https://twitter.com/HealthyNewsWks",
+    "linkedin": "https://linkedin.com/company/healthy-newsworks"
+  }
 }

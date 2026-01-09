@@ -301,5 +301,10 @@
       }
     ]
   },
-  "website": "https://camdenfireworks.org"
+  "website": "https://camdenfireworks.org",
+  "social": {
+    "instagram": "https://www.instagram.com/camdenfireworks/",
+    "linkedin": "https://www.linkedin.com/company/camdenfireworks",
+    "youtube": "https://www.youtube.com/@camdenfireworks2755"
+  }
 }

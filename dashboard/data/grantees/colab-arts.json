@@ -396,5 +396,13 @@
       }
     ]
   },
-  "website": "https://colab-arts.org/?gad_source=1&gclid=Cj0KCQiAu8W6BhC-ARIsACEQoDDK1acfRNlARS5FuRP4RqrMazI3HVmTC9iYJZlhcCg7EavH8TBWzhcaAoDvEALw_wcB"
+  "website": "https://colab-arts.org",
+  "social": {
+    "instagram": "https://instagram.com/colabarts",
+    "facebook": "https://facebook.com/colabarts",
+    "twitter": "https://twitter.com/colabarts",
+    "youtube": "https://youtube.com/@colabarts4468",
+    "linkedin": "https://linkedin.com/company/colab-arts",
+    "threads": "https://threads.net/@colabarts"
+  }
 }

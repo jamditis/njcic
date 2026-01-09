@@ -649,5 +649,12 @@
       }
     ]
   },
-  "website": "https://clintonhillaction.org"
+  "website": "https://clintonhillaction.org",
+  "social": {
+    "instagram": "https://www.instagram.com/clintonhillcommunityaction/",
+    "facebook": "https://www.facebook.com/clintonhillcommunityaction/",
+    "twitter": "https://x.com/CHCAction",
+    "tiktok": "https://www.tiktok.com/@clintonhillaction",
+    "youtube": "https://www.youtube.com/@ClintonHillCommunityAction"
+  }
 }

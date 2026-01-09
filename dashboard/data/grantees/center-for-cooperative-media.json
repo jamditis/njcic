@@ -362,9 +362,11 @@
   "website": "https://centerforcooperativemedia.org",
   "social": {
     "facebook": "https://www.facebook.com/centerforcooperativemedia",
-    "instagram": "https://instagram.com/centerforcooperativemedia/",
+    "instagram": "https://www.instagram.com/centerforcooperativemedia/",
+    "twitter": "https://x.com/CenterCoopMedia",
     "bluesky": "https://bsky.app/profile/centercoopmedia.bsky.social",
     "youtube": "https://www.youtube.com/@CenterCoopMedia",
-    "tiktok": "https://www.tiktok.com/@centercooperativemedia"
+    "tiktok": "https://www.tiktok.com/@centercooperativemedia",
+    "linkedin": "https://www.linkedin.com/company/center-for-cooperative-media"
   }
 }

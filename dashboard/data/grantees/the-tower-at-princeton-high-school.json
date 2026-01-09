@@ -414,5 +414,10 @@
       }
     ]
   },
-  "website": "https://www.towerphs.com/home"
+  "website": "https://www.towerphs.com/",
+  "social": {
+    "instagram": "https://www.instagram.com/thetowerphs/",
+    "facebook": "https://www.facebook.com/phstower",
+    "youtube": "https://www.youtube.com/@thetowerphs"
+  }
 }

@@ -409,5 +409,11 @@
       }
     ]
   },
-  "website": "https://www.hammontongazette.com"
+  "website": "https://www.hammontongazette.com",
+  "social": {
+    "instagram": "https://instagram.com/hammgazette",
+    "facebook": "https://facebook.com/HammontonGazette",
+    "twitter": "https://twitter.com/HammGazette",
+    "youtube": "https://youtube.com/@hammontongazette"
+  }
 }

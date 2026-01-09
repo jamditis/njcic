@@ -773,5 +773,13 @@
       }
     ]
   },
-  "website": "https://insideclimatenews.org/newsletter/?gad_source=1&gclid=Cj0KCQjwkN--BhDkARIsAD_mnIpM1joaw1gmG0B8QAFp33AGCU9ajNRulUr7X1OjmD1AGLZnZgEIGMQaAvyREALw_wcB"
+  "website": "https://insideclimatenews.org",
+  "social": {
+    "instagram": "https://www.instagram.com/insideclimatenews/",
+    "facebook": "https://www.facebook.com/insideclimatenews",
+    "twitter": "https://twitter.com/insideclimate",
+    "youtube": "https://www.youtube.com/@insideclimatenews",
+    "tiktok": "https://www.tiktok.com/@insideclimatenews",
+    "bluesky": "https://bsky.app/profile/insideclimatenews.org"
+  }
 }

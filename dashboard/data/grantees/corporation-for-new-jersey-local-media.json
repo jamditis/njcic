@@ -385,5 +385,11 @@
       }
     ]
   },
-  "website": "https://newsweneed.org"
+  "website": "https://newsweneed.org",
+  "social": {
+    "instagram": "https://instagram.com/njlocalmedia",
+    "facebook": "https://facebook.com/NJLocalMedia",
+    "twitter": "https://twitter.com/njlocalmedia",
+    "linkedin": "https://linkedin.com/company/cnjlm"
+  }
 }

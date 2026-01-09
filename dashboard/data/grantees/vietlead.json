@@ -379,5 +379,12 @@
       }
     ]
   },
-  "website": "https://www.vietlead.org/our-roots-youth-program"
+  "website": "https://www.vietlead.org/",
+  "social": {
+    "instagram": "https://www.instagram.com/vietlead/",
+    "twitter": "https://twitter.com/vietlead",
+    "facebook": "https://www.facebook.com/vietlead",
+    "linkedin": "https://www.linkedin.com/company/vietlead",
+    "youtube": "https://www.youtube.com/@vietlead"
+  }
 }

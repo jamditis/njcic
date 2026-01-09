@@ -321,5 +321,11 @@
       }
     ]
   },
-  "website": "https://www.newarkwatercoalition.org"
+  "website": "https://www.newarkwatercoalition.org",
+  "social": {
+    "instagram": "https://www.instagram.com/cleanwater4newark/",
+    "twitter": "https://twitter.com/CleanWater4Nwk",
+    "facebook": "https://www.facebook.com/newarkwatercoalition",
+    "linkedin": "https://www.linkedin.com/company/newark-water-coalition"
+  }
 }

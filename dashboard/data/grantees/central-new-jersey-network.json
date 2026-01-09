@@ -412,5 +412,12 @@
       }
     ]
   },
-  "website": "http://cnjn.org"
+  "website": "https://cnjn.org",
+  "social": {
+    "instagram": "https://www.instagram.com/centraljerseytv/",
+    "facebook": "https://www.facebook.com/CentralNewJerseyNetwork/",
+    "twitter": "https://x.com/CNJNTV",
+    "linkedin": "https://www.linkedin.com/company/central-new-jersey-network",
+    "youtube": "https://www.youtube.com/@CNJNTV"
+  }
 }

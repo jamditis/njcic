@@ -332,5 +332,10 @@
       }
     ]
   },
-  "website": "https://trentonjournal.com"
+  "website": "https://trentonjournal.com",
+  "social": {
+    "instagram": "https://www.instagram.com/trenton_journal/",
+    "twitter": "https://twitter.com/TrentonJournal",
+    "linkedin": "https://www.linkedin.com/company/trenton-journal"
+  }
 }

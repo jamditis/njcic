@@ -113,5 +113,8 @@
       }
     ]
   },
-  "website": "https://storiesofatlanticcity.com"
+  "website": "https://storiesofatlanticcity.com",
+  "social": {
+    "facebook": "https://www.facebook.com/storiesofatlanticcity"
+  }
 }

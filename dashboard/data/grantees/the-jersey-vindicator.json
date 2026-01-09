@@ -248,7 +248,7 @@
         ],
         "amount": 295000,
         "formattedAmount": "$295K",
-        "description": "To build The Jersey Vindicator — the "ProPublica of New Jersey" — with the goal of engaging and empowering the public through investigative journalism at the local, county, and state level in its publication, ultimately ensuring that residents — particularly those in underserved communities — are better informed about government, business, education, transportation, criminal justice reform, and the environment.",
+        "description": "To build The Jersey Vindicator — the 'ProPublica of New Jersey' — with the goal of engaging and empowering the public through investigative journalism at the local, county, and state level in its publication, ultimately ensuring that residents — particularly those in underserved communities — are better informed about government, business, education, transportation, criminal justice reform, and the environment.",
         "focusArea": "Civic news and information reporting",
         "status": "active"
       },
@@ -288,5 +288,11 @@
       }
     ]
   },
-  "website": "https://jerseyvindicator.org"
+  "website": "https://jerseyvindicator.org",
+  "social": {
+    "instagram": "https://www.instagram.com/jerseyvindicator/",
+    "twitter": "https://twitter.com/jerseyvindy",
+    "facebook": "https://www.facebook.com/jerseyvindicator",
+    "bluesky": "https://bsky.app/profile/jerseyvindicator.bsky.social"
+  }
 }

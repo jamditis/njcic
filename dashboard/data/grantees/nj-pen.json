@@ -307,5 +307,10 @@
       }
     ]
   },
-  "website": "https://www.njpen.com/"
+  "website": "https://www.njpen.com/",
+  "social": {
+    "instagram": "https://www.instagram.com/nj_pen/",
+    "twitter": "https://twitter.com/NJ_Pen",
+    "facebook": "https://www.facebook.com/njpen"
+  }
 }

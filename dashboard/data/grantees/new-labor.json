@@ -314,5 +314,10 @@
       }
     ]
   },
-  "website": "https://newlabor.org"
+  "website": "https://newlabor.org",
+  "social": {
+    "instagram": "https://www.instagram.com/newlabornj/",
+    "twitter": "https://twitter.com/NewLabor",
+    "facebook": "https://www.facebook.com/NewLabor"
+  }
 }

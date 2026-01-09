@@ -447,5 +447,11 @@
       }
     ]
   },
-  "website": "https://jerseybee.org"
+  "website": "https://jerseybee.org",
+  "social": {
+    "instagram": "https://www.instagram.com/jerseybeenews/",
+    "twitter": "https://twitter.com/jerseybeenews",
+    "facebook": "https://www.facebook.com/jerseybeenews",
+    "bluesky": "https://bsky.app/profile/jerseybeenews.bsky.social"
+  }
 }

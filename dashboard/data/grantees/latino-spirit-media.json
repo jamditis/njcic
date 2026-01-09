@@ -378,5 +378,11 @@
       }
     ]
   },
-  "website": "https://WWW.THELATINOSPIRIT.COM"
+  "website": "https://thelatinospirit.com",
+  "social": {
+    "instagram": "https://www.instagram.com/thelatinospirit/",
+    "facebook": "https://www.facebook.com/thelatinospirit",
+    "twitter": "https://twitter.com/TheLatinoSpirit",
+    "youtube": "https://www.youtube.com/@thelatinospirit"
+  }
 }

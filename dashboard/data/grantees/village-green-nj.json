@@ -48,5 +48,10 @@
       }
     ]
   },
-  "website": "https://villagegreennj.com"
+  "website": "https://villagegreennj.com",
+  "social": {
+    "instagram": "https://www.instagram.com/villagegreennj/",
+    "twitter": "https://twitter.com/villagegreennj",
+    "facebook": "https://www.facebook.com/villagegreennj"
+  }
 }
