@@ -1,12 +1,12 @@
 {
   "summary": {
     "totalGrantees": 60,
-    "totalPosts": 1830,
-    "totalEngagement": 2409280,
+    "totalPosts": 1875,
+    "totalEngagement": 2409264,
     "totalFollowers": 8177104,
     "platformsTracked": 7,
-    "avgEngagementRate": 1316.55,
-    "lastUpdated": "2026-01-08T22:22:46.882861",
+    "avgEngagementRate": 1284.94,
+    "lastUpdated": "2026-01-08T23:13:30.345008",
     "scrapingDuration": "aggregated"
   },
   "platforms": {
@@ -25,11 +25,11 @@
       "avgEngagement": 0.0
     },
     "youtube": {
-      "posts": 652,
-      "engagement": 28070,
+      "posts": 697,
+      "engagement": 28054,
       "followers": 0,
-      "grantees": 22,
-      "avgEngagement": 43.05
+      "grantees": 23,
+      "avgEngagement": 40.25
     },
     "linkedin": {
       "posts": 0,
@@ -65,9 +65,9 @@
       "name": "Muslim",
       "slug": "muslim",
       "posts": 99,
-      "engagement": 1965195,
+      "engagement": 1964937,
       "followers": 7110943,
-      "engagementRate": 19850.45,
+      "engagementRate": 19847.85,
       "topPlatform": "tiktok",
       "platformsScraped": 5
     },
@@ -212,6 +212,16 @@
       "platformsScraped": 4
     },
     {
+      "name": "Chalkbeat Newark  Civic News Company ",
+      "slug": "chalkbeat-newark-civic-news-company",
+      "posts": 84,
+      "engagement": 1276,
+      "followers": 22901,
+      "engagementRate": 15.19,
+      "topPlatform": "instagram",
+      "platformsScraped": 6
+    },
+    {
       "name": "Newark Water Coalition",
       "slug": "newark-water-coalition",
       "posts": 13,
@@ -240,16 +250,6 @@
       "engagementRate": 29.73,
       "topPlatform": "instagram",
       "platformsScraped": 3
-    },
-    {
-      "name": "Chalkbeat Newark  Civic News Company ",
-      "slug": "chalkbeat-newark-civic-news-company",
-      "posts": 39,
-      "engagement": 1034,
-      "followers": 22901,
-      "engagementRate": 26.51,
-      "topPlatform": "instagram",
-      "platformsScraped": 5
     },
     {
       "name": "Newark News and Story Collaborative",
@@ -683,8 +683,8 @@
     },
     {
       "platform": "youtube",
-      "engagement": 28070,
-      "posts": 652,
+      "engagement": 28054,
+      "posts": 697,
       "color": "#FF0000"
     },
     {
@@ -707,7 +707,7 @@
     }
   ],
   "metadata": {
-    "generatedAt": "2026-01-08T22:22:46.882923",
+    "generatedAt": "2026-01-08T23:13:30.345068",
     "platformColors": {
       "twitter": "#1DA1F2",
       "youtube": "#FF0000",

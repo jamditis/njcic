@@ -158,16 +158,16 @@
     },
     "youtube": {
       "color": "#FF0000",
-      "grantees": 22,
-      "total_posts": 652,
-      "total_engagement": 28070,
+      "grantees": 23,
+      "total_posts": 697,
+      "total_engagement": 28054,
       "total_followers": 0,
-      "avg_engagement_per_post": 43.05,
-      "avg_posts_per_grantee": 29.6,
+      "avg_engagement_per_post": 40.25,
+      "avg_posts_per_grantee": 30.3,
       "content_types": {
         "video": {
-          "count": 652,
-          "engagement": 28070,
+          "count": 697,
+          "engagement": 28054,
           "percentage": 100.0
         }
       },
@@ -176,13 +176,19 @@
           "name": "Muslim",
           "slug": "muslim",
           "posts": 50,
-          "engagement": 26663
+          "engagement": 26405
         },
         {
           "name": "Inside Climate News",
           "slug": "inside-climate-news",
           "posts": 25,
           "engagement": 290
+        },
+        {
+          "name": "Chalkbeat Newark  Civic News Company ",
+          "slug": "chalkbeat-newark-civic-news-company",
+          "posts": 45,
+          "engagement": 242
         },
         {
           "name": "South Jersey Climate News Project",
@@ -225,12 +231,6 @@
           "slug": "asbury-park-media-collective",
           "posts": 50,
           "engagement": 58
-        },
-        {
-          "name": "Lens 15 Media",
-          "slug": "lens-15-media",
-          "posts": 24,
-          "engagement": 55
         }
       ]
     },
@@ -576,7 +576,7 @@
       },
       {
         "platform": "youtube",
-        "engagement": 28070
+        "engagement": 28054
       },
       {
         "platform": "bluesky",
@@ -594,7 +594,7 @@
     "by_posts": [
       {
         "platform": "youtube",
-        "posts": 652
+        "posts": 697
       },
       {
         "platform": "instagram",
@@ -622,5 +622,5 @@
       }
     ]
   },
-  "generated_at": "2026-01-08T22:22:46.882315"
+  "generated_at": "2026-01-08T23:13:30.344479"
 }

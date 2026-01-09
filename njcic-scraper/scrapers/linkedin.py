@@ -276,7 +276,7 @@ class LinkedInScraper(BaseScraper):
                         # Extract number from text like "1,234 followers"
                         match = re.search(r'([\d,]+)\s*follower', text)
                         if match:
-                            data['followers_count'] = match.group(1).replace(',', '')
+                            data['followers_count'] = int(match.group(1).replace(',', ''))
                             break
                 if data['followers_count']:
                     break
@@ -381,11 +381,11 @@ class LinkedInScraper(BaseScraper):
                 if 'follower' in text:
                     match = re.search(r'([\d,]+)', text)
                     if match:
-                        data['followers_count'] = match.group(1).replace(',', '')
+                        data['followers_count'] = int(match.group(1).replace(',', ''))
                 elif 'connection' in text:
                     match = re.search(r'([\d,]+)', text)
                     if match:
-                        data['connections_count'] = match.group(1).replace(',', '')
+                        data['connections_count'] = int(match.group(1).replace(',', ''))
 
             # Count posts (usually very limited)
             post_selectors = [

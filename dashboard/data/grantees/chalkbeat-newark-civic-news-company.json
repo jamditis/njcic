@@ -2,25 +2,31 @@
   "name": "Chalkbeat Newark  Civic News Company ",
   "slug": "chalkbeat-newark-civic-news-company",
   "summary": {
-    "total_posts": 39,
-    "total_engagement": 1034,
+    "total_posts": 84,
+    "total_engagement": 1276,
     "total_followers": 22901,
-    "platforms_active": 5,
-    "engagement_rate": 26.51,
-    "last_updated": "2026-01-08T22:22:46.757154"
+    "platforms_active": 6,
+    "engagement_rate": 15.19,
+    "last_updated": "2026-01-08T23:13:30.175053"
   },
   "platform_breakdown": {
     "bluesky": {
       "posts": 25,
-      "posts_pct": 64.1,
+      "posts_pct": 29.8,
       "engagement": 109,
-      "engagement_pct": 10.5
+      "engagement_pct": 8.5
     },
     "tiktok": {
       "posts": 1,
-      "posts_pct": 2.6,
+      "posts_pct": 1.2,
       "engagement": 0,
       "engagement_pct": 0.0
+    },
+    "youtube": {
+      "posts": 45,
+      "posts_pct": 53.6,
+      "engagement": 242,
+      "engagement_pct": 19.0
     },
     "twitter": {
       "posts": 0,
@@ -30,13 +36,13 @@
     },
     "instagram": {
       "posts": 12,
-      "posts_pct": 30.8,
+      "posts_pct": 14.3,
       "engagement": 925,
-      "engagement_pct": 89.5
+      "engagement_pct": 72.5
     },
     "facebook": {
       "posts": 1,
-      "posts_pct": 2.6,
+      "posts_pct": 1.2,
       "engagement": 0,
       "engagement_pct": 0.0
     }
@@ -143,6 +149,72 @@
         "video": {
           "count": 1,
           "engagement": 0,
+          "percentage": 100.0
+        }
+      }
+    },
+    "youtube": {
+      "posts": 45,
+      "engagement": 242,
+      "views": 16457,
+      "followers": 0,
+      "engagement_rate": 5.38,
+      "top_posts": [
+        {
+          "id": null,
+          "url": "https://www.youtube.com/watch?v=d4TCzppOmn0",
+          "text": "Denver teachers strike sit-in at Abraham Lincoln High School",
+          "date": null,
+          "engagement": {
+            "likes": 116,
+            "comments": 4,
+            "shares": 0,
+            "views": 7077,
+            "total": 120
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.youtube.com/watch?v=RM5IvUTMiTo",
+          "text": "Memphis parent speaks with reporters after Cummings Elementary School shooting",
+          "date": null,
+          "engagement": {
+            "likes": 27,
+            "comments": 2,
+            "shares": 0,
+            "views": 1132,
+            "total": 29
+          },
+          "thumbnail": null
+        },
+        {
+          "id": null,
+          "url": "https://www.youtube.com/watch?v=lDnxxWfInSM",
+          "text": "Soulsville students learn physics in Jack Replinger\u2019s class",
+          "date": null,
+          "engagement": {
+            "likes": 9,
+            "comments": 0,
+            "shares": 0,
+            "views": 1004,
+            "total": 9
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {
+        "video": {
+          "count": 45,
+          "engagement": 242,
           "percentage": 100.0
         }
       }
@@ -332,6 +404,20 @@
     },
     {
       "id": null,
+      "url": "https://www.youtube.com/watch?v=d4TCzppOmn0",
+      "text": "Denver teachers strike sit-in at Abraham Lincoln High School",
+      "date": null,
+      "engagement": {
+        "likes": 116,
+        "comments": 4,
+        "shares": 0,
+        "views": 7077,
+        "total": 120
+      },
+      "thumbnail": null
+    },
+    {
+      "id": null,
       "url": "https://www.instagram.com/p/DF_cZYUsbcu/",
       "text": "",
       "date": "2025-02-12T23:31:57",
@@ -369,20 +455,6 @@
         "shares": 0,
         "views": 0,
         "total": 68
-      },
-      "thumbnail": null
-    },
-    {
-      "id": null,
-      "url": "https://www.instagram.com/p/DSZ8ezXDUig/",
-      "text": "",
-      "date": "2025-12-18T12:49:22",
-      "engagement": {
-        "likes": 48,
-        "comments": 0,
-        "shares": 0,
-        "views": 0,
-        "total": 48
       },
       "thumbnail": null
     }

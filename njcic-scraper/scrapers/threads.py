@@ -126,7 +126,7 @@ class ThreadsScraper(BaseScraper):
 
             # Check if login was successful
             current_url = page.url
-            if 'threads.net' in current_url and 'login' not in current_url:
+            if ('threads.net' in current_url or 'threads.com' in current_url) and 'login' not in current_url:
                 self.logger.info("Threads login successful")
                 self._logged_in = True
                 return True

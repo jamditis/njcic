@@ -3,11 +3,11 @@
   "slug": "muslim",
   "summary": {
     "total_posts": 99,
-    "total_engagement": 1965195,
+    "total_engagement": 1964937,
     "total_followers": 7110943,
     "platforms_active": 5,
-    "engagement_rate": 19850.45,
-    "last_updated": "2026-01-08T22:22:46.819747"
+    "engagement_rate": 19847.85,
+    "last_updated": "2026-01-08T23:13:30.254098"
   },
   "platform_breakdown": {
     "tiktok": {
@@ -19,8 +19,8 @@
     "youtube": {
       "posts": 50,
       "posts_pct": 50.5,
-      "engagement": 26663,
-      "engagement_pct": 1.4
+      "engagement": 26405,
+      "engagement_pct": 1.3
     },
     "twitter": {
       "posts": 9,
@@ -131,10 +131,10 @@
     },
     "youtube": {
       "posts": 50,
-      "engagement": 26663,
-      "views": 1030426,
+      "engagement": 26405,
+      "views": 1026304,
       "followers": 0,
-      "engagement_rate": 533.26,
+      "engagement_rate": 528.1,
       "top_posts": [
         {
           "id": null,
@@ -142,11 +142,11 @@
           "text": "WOMEN IN NEW YORK TRY HIJAB FOR FIRST TIME! *EMOTIONAL* | Social Experiment | MUSLIM",
           "date": null,
           "engagement": {
-            "likes": 13365,
+            "likes": 13364,
             "comments": 1000,
             "shares": 0,
-            "views": 732868,
-            "total": 14365
+            "views": 732889,
+            "total": 14364
           },
           "thumbnail": null
         },
@@ -159,7 +159,7 @@
             "likes": 1419,
             "comments": 259,
             "shares": 0,
-            "views": 35921,
+            "views": 35924,
             "total": 1678
           },
           "thumbnail": null
@@ -190,7 +190,7 @@
       "content_types": {
         "video": {
           "count": 50,
-          "engagement": 26663,
+          "engagement": 26405,
           "percentage": 100.0
         }
       }

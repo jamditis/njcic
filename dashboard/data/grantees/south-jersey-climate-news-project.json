@@ -7,7 +7,7 @@
     "total_followers": 452,
     "platforms_active": 4,
     "engagement_rate": 14.06,
-    "last_updated": "2026-01-08T22:22:46.852334"
+    "last_updated": "2026-01-08T23:13:30.299844"
   },
   "platform_breakdown": {
     "bluesky": {
@@ -308,7 +308,7 @@
     "youtube": {
       "posts": 37,
       "engagement": 197,
-      "views": 15765,
+      "views": 15769,
       "followers": 0,
       "engagement_rate": 5.32,
       "top_posts": [
@@ -335,7 +335,7 @@
             "likes": 19,
             "comments": 1,
             "shares": 0,
-            "views": 588,
+            "views": 589,
             "total": 20
           },
           "thumbnail": null
