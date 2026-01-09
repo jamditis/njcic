@@ -330,6 +330,10 @@
      */
     function formatNumber(num) {
         if (num === null || num === undefined) return '0';
+        // Use abbreviated format for large numbers to prevent clipping
+        if (num >= 1000000) {
+            return (num / 1000000).toFixed(1).replace(/\.0$/, '') + 'M';
+        }
         return new Intl.NumberFormat('en-US').format(Math.round(num));
     }
 
