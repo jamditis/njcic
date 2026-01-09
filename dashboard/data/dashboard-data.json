@@ -1,165 +1,222 @@
 {
   "summary": {
-    "totalGrantees": 50,
-    "totalPosts": 1093,
-    "totalEngagement": 2309445,
-    "totalFollowers": 52152,
-    "platformsTracked": 3,
-    "avgEngagementRate": 2112.94,
-    "lastUpdated": "2026-01-08T12:46:42.114775",
+    "totalGrantees": 67,
+    "totalPosts": 1827,
+    "totalEngagement": 14301942,
+    "totalFollowers": 8288309,
+    "platformsTracked": 6,
+    "avgEngagementRate": 7828.1,
+    "lastUpdated": "2026-01-08T18:01:18.869637",
     "scrapingDuration": "aggregated"
   },
   "platforms": {
+    "twitter": {
+      "posts": 30,
+      "engagement": 56865,
+      "followers": 410280,
+      "grantees": 43,
+      "avgEngagement": 1895.5
+    },
+    "youtube": {
+      "posts": 652,
+      "engagement": 1141719,
+      "followers": 105907,
+      "grantees": 22,
+      "avgEngagement": 1751.1
+    },
+    "facebook": {
+      "posts": 52,
+      "engagement": 0,
+      "followers": 686951,
+      "grantees": 45,
+      "avgEngagement": 0.0
+    },
     "instagram": {
       "posts": 576,
       "engagement": 626219,
-      "followers": 0,
+      "followers": 7033019,
       "grantees": 48,
       "avgEngagement": 1087.19
     },
     "tiktok": {
       "posts": 305,
-      "engagement": 1672320,
+      "engagement": 12466590,
       "followers": 0,
       "grantees": 14,
-      "avgEngagement": 5483.02
+      "avgEngagement": 40874.07
     },
     "bluesky": {
       "posts": 212,
-      "engagement": 10906,
+      "engagement": 10549,
       "followers": 52152,
       "grantees": 9,
-      "avgEngagement": 51.44
+      "avgEngagement": 49.76
     }
   },
   "topGrantees": [
     {
       "name": "Muslim",
       "slug": "muslim",
-      "posts": 38,
-      "engagement": 1868309,
-      "followers": 0,
-      "engagementRate": 49166.03,
+      "posts": 99,
+      "engagement": 11730771,
+      "followers": 7214943,
+      "engagementRate": 118492.64,
       "topPlatform": "tiktok",
-      "platformsScraped": 2
+      "platformsScraped": 5
+    },
+    {
+      "name": "HudPost",
+      "slug": "hudpost",
+      "posts": 45,
+      "engagement": 1257344,
+      "followers": 191155,
+      "engagementRate": 27940.98,
+      "topPlatform": "tiktok",
+      "platformsScraped": 4
     },
     {
       "name": "Global Patriot Newspapers online",
       "slug": "global-patriot-newspapers-online",
       "posts": 26,
-      "engagement": 243587,
-      "followers": 0,
-      "engagementRate": 9368.73,
+      "engagement": 672577,
+      "followers": 885,
+      "engagementRate": 25868.35,
       "topPlatform": "tiktok",
-      "platformsScraped": 1
-    },
-    {
-      "name": "HudPost",
-      "slug": "hudpost",
-      "posts": 37,
-      "engagement": 117913,
-      "followers": 0,
-      "engagementRate": 3186.84,
-      "topPlatform": "tiktok",
-      "platformsScraped": 2
-    },
-    {
-      "name": "Movimiento Cosecha",
-      "slug": "movimiento-cosecha",
-      "posts": 24,
-      "engagement": 16755,
-      "followers": 1355,
-      "engagementRate": 698.12,
-      "topPlatform": "instagram",
       "platformsScraped": 2
     },
     {
       "name": "NJ Spotlight News",
       "slug": "nj-spotlight-news",
-      "posts": 63,
-      "engagement": 12254,
-      "followers": 3301,
-      "engagementRate": 194.51,
+      "posts": 64,
+      "engagement": 208782,
+      "followers": 28637,
+      "engagementRate": 3262.22,
       "topPlatform": "tiktok",
-      "platformsScraped": 3
+      "platformsScraped": 4
     },
     {
-      "name": "The Jersey Vindicator",
-      "slug": "the-jersey-vindicator",
-      "posts": 25,
-      "engagement": 9603,
-      "followers": 6443,
-      "engagementRate": 384.12,
-      "topPlatform": "bluesky",
-      "platformsScraped": 1
-    },
-    {
-      "name": "Inside Climate News",
-      "slug": "inside-climate-news",
-      "posts": 43,
-      "engagement": 6323,
-      "followers": 25584,
-      "engagementRate": 147.05,
-      "topPlatform": "instagram",
-      "platformsScraped": 3
+      "name": "Slice of Culture @  Saint Peter's University",
+      "slug": "slice-of-culture-saint-peters-university",
+      "posts": 67,
+      "engagement": 74394,
+      "followers": 4492,
+      "engagementRate": 1110.36,
+      "topPlatform": "tiktok",
+      "platformsScraped": 5
     },
     {
       "name": "The College of New Jersey",
       "slug": "the-college-of-new-jersey",
       "posts": 38,
-      "engagement": 4681,
-      "followers": 0,
-      "engagementRate": 123.18,
+      "engagement": 67704,
+      "followers": 7262,
+      "engagementRate": 1781.68,
       "topPlatform": "tiktok",
-      "platformsScraped": 2
+      "platformsScraped": 3
     },
     {
-      "name": "Trenton Journal",
-      "slug": "trenton-journal",
-      "posts": 12,
-      "engagement": 2850,
-      "followers": 0,
-      "engagementRate": 237.5,
-      "topPlatform": "instagram",
-      "platformsScraped": 1
-    },
-    {
-      "name": "New Labor",
-      "slug": "new-labor",
-      "posts": 12,
-      "engagement": 2760,
-      "followers": 0,
-      "engagementRate": 230.0,
-      "topPlatform": "instagram",
-      "platformsScraped": 1
-    },
-    {
-      "name": "Slice of Culture   Saint Peter s University",
-      "slug": "slice-of-culture-saint-peter-s-university",
+      "name": "The Daily Targum @ Targum Publishing Co @",
+      "slug": "the-daily-targum-targum-publishing-co",
       "posts": 38,
-      "engagement": 2408,
-      "followers": 0,
-      "engagementRate": 63.37,
+      "engagement": 50780,
+      "followers": 15150,
+      "engagementRate": 1336.32,
       "topPlatform": "tiktok",
-      "platformsScraped": 2
+      "platformsScraped": 3
     },
     {
-      "name": "VietLead",
-      "slug": "vietlead",
-      "posts": 12,
-      "engagement": 2309,
-      "followers": 0,
-      "engagementRate": 192.42,
+      "name": "Daily Targum",
+      "slug": "daily-targum",
+      "posts": 39,
+      "engagement": 50780,
+      "followers": 15158,
+      "engagementRate": 1302.05,
+      "topPlatform": "tiktok",
+      "platformsScraped": 4
+    },
+    {
+      "name": "Inside Climate News",
+      "slug": "inside-climate-news",
+      "posts": 77,
+      "engagement": 45236,
+      "followers": 328230,
+      "engagementRate": 587.48,
+      "topPlatform": "youtube",
+      "platformsScraped": 6
+    },
+    {
+      "name": "South Jersey Climate News Project",
+      "slug": "south-jersey-climate-news-project",
+      "posts": 87,
+      "engagement": 27639,
+      "followers": 504,
+      "engagementRate": 317.69,
+      "topPlatform": "youtube",
+      "platformsScraped": 4
+    },
+    {
+      "name": "Movimiento Cosecha",
+      "slug": "movimiento-cosecha",
+      "posts": 26,
+      "engagement": 16750,
+      "followers": 70446,
+      "engagementRate": 644.23,
       "topPlatform": "instagram",
+      "platformsScraped": 4
+    },
+    {
+      "name": "Lens 15 Media",
+      "slug": "lens-15-media",
+      "posts": 63,
+      "engagement": 14906,
+      "followers": 192,
+      "engagementRate": 236.6,
+      "topPlatform": "tiktok",
+      "platformsScraped": 5
+    },
+    {
+      "name": "Clinton Hill Community Action",
+      "slug": "clinton-hill-community-action",
+      "posts": 90,
+      "engagement": 13714,
+      "followers": 1880,
+      "engagementRate": 152.38,
+      "topPlatform": "tiktok",
+      "platformsScraped": 5
+    },
+    {
+      "name": "The Jersey Vindicator",
+      "slug": "the-jersey-vindicator",
+      "posts": 25,
+      "engagement": 9277,
+      "followers": 6443,
+      "engagementRate": 371.08,
+      "topPlatform": "bluesky",
       "platformsScraped": 1
+    },
+    {
+      "name": "Central New Jersey Network",
+      "slug": "central-new-jersey-network",
+      "posts": 64,
+      "engagement": 9221,
+      "followers": 2277,
+      "engagementRate": 144.08,
+      "topPlatform": "youtube",
+      "platformsScraped": 4
     }
   ],
   "engagementByPlatform": [
     {
       "platform": "tiktok",
-      "engagement": 1672320,
+      "engagement": 12466590,
       "posts": 305,
       "color": "#000000"
+    },
+    {
+      "platform": "youtube",
+      "engagement": 1141719,
+      "posts": 652,
+      "color": "#FF0000"
     },
     {
       "platform": "instagram",
@@ -168,14 +225,26 @@
       "color": "#E1306C"
     },
     {
+      "platform": "twitter",
+      "engagement": 56865,
+      "posts": 30,
+      "color": "#1DA1F2"
+    },
+    {
       "platform": "bluesky",
-      "engagement": 10906,
+      "engagement": 10549,
       "posts": 212,
       "color": "#0085FF"
+    },
+    {
+      "platform": "facebook",
+      "engagement": 0,
+      "posts": 52,
+      "color": "#1877F2"
     }
   ],
   "metadata": {
-    "generatedAt": "2026-01-08T12:46:42.114795",
+    "generatedAt": "2026-01-08T18:01:18.869647",
     "platformColors": {
       "twitter": "#1DA1F2",
       "youtube": "#FF0000",

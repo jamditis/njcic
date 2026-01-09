@@ -124,13 +124,36 @@ class FacebookScraper(BaseScraper):
             self.logger.error(f"Error extracting username from {url}: {e}")
             return None
 
-    def scrape(self, url: str, grantee_name: str) -> Dict[str, Any]:
+    def _create_output_directory(self, grantee_name: str, username: str) -> Path:
+        """
+        Create and return Facebook-specific output directory.
+
+        Creates structure: output/facebook/{grantee_name}/{username}
+
+        Args:
+            grantee_name: Name of the grantee
+            username: Facebook username/page identifier
+
+        Returns:
+            Path object for the output directory
+        """
+        # Get base output path from parent class
+        base_path = self.get_output_path(grantee_name)
+
+        # Add username subdirectory
+        username_path = base_path / username
+        username_path.mkdir(exist_ok=True, parents=True)
+
+        return username_path
+
+    def scrape(self, url: str, grantee_name: str, max_posts: int = 25) -> Dict[str, Any]:
         """
         Scrape Facebook page/profile for posts and engagement metrics.
 
         Args:
             url: Facebook URL to scrape
             grantee_name: Name of the grantee
+            max_posts: Maximum posts to scrape
 
         Returns:
             Dictionary with:
@@ -271,7 +294,7 @@ class FacebookScraper(BaseScraper):
                     'engagement_metrics': engagement_metrics,
                     'scraped_at': datetime.now().isoformat()
                 }
-                self._save_metadata(output_dir, metadata)
+                self.save_metadata(output_dir, metadata)
 
                 # Save posts
                 if posts:

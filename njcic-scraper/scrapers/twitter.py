@@ -1,59 +1,50 @@
 """
-Twitter/X scraper implementation using gallery-dl.
+Twitter/X scraper implementation using Playwright with authentication.
 """
 
+import asyncio
 import json
+import os
 import re
-import subprocess
-import time
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, Any, Optional, List
 from urllib.parse import urlparse
 
+try:
+    from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeout
+    PLAYWRIGHT_AVAILABLE = True
+except ImportError:
+    PLAYWRIGHT_AVAILABLE = False
+    async_playwright = None
+    PlaywrightTimeout = Exception
+
 from .base import BaseScraper
 
 
 class TwitterScraper(BaseScraper):
-    """Scraper for Twitter/X platform using gallery-dl."""
+    """Scraper for Twitter/X platform using Playwright with authentication."""
 
     platform_name = "twitter"
 
-    # List of Nitter instances as fallback (though gallery-dl is preferred)
-    NITTER_INSTANCES = [
-        "nitter.net",
-        "nitter.poast.org",
-        "nitter.privacydev.net",
-    ]
-
-    def __init__(self, output_dir: str = "output", max_posts: int = 25):
+    def __init__(self, output_dir: str = "output", max_posts: int = 25, headless: bool = True):
         """
         Initialize Twitter scraper.
 
         Args:
             output_dir: Base directory for storing scraped data
             max_posts: Maximum number of posts to scrape (default: 25)
+            headless: Whether to run browser in headless mode
         """
-        super().__init__(output_dir)
+        super().__init__(Path(output_dir) if isinstance(output_dir, str) else output_dir)
         self.max_posts = max_posts
-        self._check_dependencies()
+        self.headless = headless
+        self.username = os.getenv('TWITTER_USERNAME')
+        self.password = os.getenv('TWITTER_PASSWORD')
 
-    def _check_dependencies(self) -> None:
-        """Check if required tools (gallery-dl) are installed."""
-        try:
-            result = subprocess.run(
-                ["gallery-dl", "--version"],
-                capture_output=True,
-                text=True,
-                timeout=5
-            )
-            if result.returncode != 0:
-                self.logger.warning(
-                    "gallery-dl not found. Install with: pip install gallery-dl"
-                )
-        except (subprocess.SubprocessError, FileNotFoundError):
+        if not PLAYWRIGHT_AVAILABLE:
             self.logger.warning(
-                "gallery-dl not found. Install with: pip install gallery-dl"
+                "Playwright not installed. Install with: pip install playwright && playwright install"
             )
 
     def extract_username(self, url: str) -> Optional[str]:
@@ -73,28 +64,19 @@ class TwitterScraper(BaseScraper):
             Extracted username or None if invalid
         """
         try:
-            # Parse the URL
             parsed = urlparse(url)
-
-            # Check if domain is twitter.com or x.com
             domain = parsed.netloc.lower()
             if not any(d in domain for d in ['twitter.com', 'x.com']):
                 self.logger.error(f"Invalid Twitter/X URL: {url}")
                 return None
 
-            # Extract path and get username
             path = parsed.path.strip('/')
             if not path:
                 return None
 
-            # Split path and get first component (username)
             parts = path.split('/')
-            username = parts[0]
+            username = parts[0].lstrip('@')
 
-            # Remove @ if present
-            username = username.lstrip('@')
-
-            # Validate username format (alphanumeric and underscore)
             if not re.match(r'^[A-Za-z0-9_]{1,15}$', username):
                 self.logger.error(f"Invalid username format: {username}")
                 return None
@@ -105,318 +87,368 @@ class TwitterScraper(BaseScraper):
             self.logger.error(f"Error extracting username from {url}: {e}")
             return None
 
-    def _scrape_with_gallery_dl(
-        self,
-        username: str,
-        output_dir: Path
-    ) -> Dict[str, Any]:
+    def _create_output_directory(self, grantee_name: str, username: str) -> Path:
+        """Create and return Twitter-specific output directory."""
+        base_path = self.get_output_path(grantee_name)
+        username_path = base_path / username
+        username_path.mkdir(exist_ok=True, parents=True)
+        return username_path
+
+    async def _login(self, page) -> bool:
         """
-        Scrape Twitter profile using gallery-dl.
+        Log in to Twitter/X.
 
         Args:
-            username: Twitter username
-            output_dir: Directory to save content
+            page: Playwright page object
 
         Returns:
-            Dictionary with scraping results
+            True if login successful, False otherwise
         """
-        errors = []
-        posts_data = []
+        if not self.username or not self.password:
+            self.logger.warning("Twitter credentials not configured in environment")
+            return False
 
         try:
-            # Create gallery-dl config for this scrape
-            config = {
-                "extractor": {
-                    "twitter": {
-                        "user": {
-                            "username": username
-                        },
-                        "retweets": False,
-                        "replies": False,
-                        "text-tweets": True,
-                        "videos": True,
-                    }
-                },
-                "output": {
-                    "mode": "terminal",
-                    "progress": False
-                }
-            }
+            self.logger.info("Navigating to Twitter login...")
+            await page.goto('https://x.com/i/flow/login', wait_until='domcontentloaded', timeout=60000)
+            await page.wait_for_timeout(2000)
 
-            # Save temporary config
-            config_path = output_dir / "gallery-dl-config.json"
-            with open(config_path, 'w') as f:
-                json.dump(config, f, indent=2)
+            # Wait for page to fully load
+            await page.wait_for_timeout(3000)
 
-            # Construct gallery-dl command
-            twitter_url = f"https://twitter.com/{username}"
+            # Enter username
+            self.logger.info("Entering username...")
+            username_input = await page.wait_for_selector('input[autocomplete="username"], input[name="text"]', timeout=15000)
+            await username_input.fill(self.username)
+            await page.wait_for_timeout(500)
 
-            # Use gallery-dl to fetch metadata
-            cmd = [
-                "gallery-dl",
-                "--config", str(config_path),
-                "--write-metadata",
-                "--no-download",  # Just get metadata first
-                "--range", f"1-{self.max_posts}",
-                "-D", str(output_dir),
-                twitter_url
-            ]
+            # Click Next button
+            next_button = await page.query_selector('[role="button"]:has-text("Next"), button:has-text("Next")')
+            if next_button:
+                await next_button.click()
+            else:
+                await page.keyboard.press('Enter')
+            await page.wait_for_timeout(3000)
 
-            self.logger.info(f"Running gallery-dl for @{username}")
-            self.logger.debug(f"Command: {' '.join(cmd)}")
+            # Check for unusual activity prompt (may ask for email/phone/username verification)
+            unusual_prompt = await page.query_selector('input[data-testid="ocfEnterTextTextInput"], input[name="text"]:not([autocomplete])')
+            if unusual_prompt:
+                self.logger.info("Handling unusual activity verification...")
+                await unusual_prompt.fill(self.username)
+                await page.keyboard.press('Enter')
+                await page.wait_for_timeout(2000)
 
-            # Execute gallery-dl
-            result = subprocess.run(
-                cmd,
-                capture_output=True,
-                text=True,
-                timeout=300  # 5 minute timeout
-            )
+            # Enter password
+            self.logger.info("Entering password...")
+            password_input = await page.wait_for_selector('input[name="password"], input[type="password"]', timeout=15000)
+            await password_input.fill(self.password)
+            await page.wait_for_timeout(500)
 
-            if result.returncode != 0:
-                error_msg = f"gallery-dl failed: {result.stderr}"
-                self.logger.error(error_msg)
-                errors.append(error_msg)
-                return {
-                    "success": False,
-                    "posts_downloaded": 0,
-                    "errors": errors,
-                    "posts_data": []
-                }
+            # Click Log in button
+            login_button = await page.query_selector('[role="button"]:has-text("Log in"), button:has-text("Log in")')
+            if login_button:
+                await login_button.click()
+            else:
+                await page.keyboard.press('Enter')
+            await page.wait_for_timeout(5000)
 
-            # Parse metadata files
-            posts_data = self._parse_metadata_files(output_dir)
-
-            # Clean up config
-            config_path.unlink(missing_ok=True)
-
-            return {
-                "success": len(posts_data) > 0,
-                "posts_downloaded": len(posts_data),
-                "errors": errors,
-                "posts_data": posts_data
-            }
-
-        except subprocess.TimeoutExpired:
-            error_msg = "gallery-dl timed out after 5 minutes"
-            self.logger.error(error_msg)
-            errors.append(error_msg)
-            return {
-                "success": False,
-                "posts_downloaded": 0,
-                "errors": errors,
-                "posts_data": []
-            }
+            # Verify login succeeded by checking for home timeline or profile elements
+            try:
+                await page.wait_for_selector('[data-testid="primaryColumn"]', timeout=15000)
+                self.logger.info("Login successful!")
+                return True
+            except PlaywrightTimeout:
+                self.logger.error("Login verification failed - could not find main content")
+                return False
 
         except Exception as e:
-            error_msg = f"Error during gallery-dl scraping: {str(e)}"
-            self.logger.error(error_msg)
-            errors.append(error_msg)
-            return {
-                "success": False,
-                "posts_downloaded": 0,
-                "errors": errors,
-                "posts_data": []
-            }
+            self.logger.error(f"Login failed: {e}")
+            return False
 
-    def _parse_metadata_files(self, output_dir: Path) -> List[Dict[str, Any]]:
+    async def _extract_tweets(self, page) -> List[Dict[str, Any]]:
         """
-        Parse gallery-dl metadata JSON files.
+        Extract tweets from the current page.
 
         Args:
-            output_dir: Directory containing metadata files
+            page: Playwright page object
 
         Returns:
-            List of parsed post data
+            List of tweet data dictionaries
         """
-        posts_data = []
+        tweets = []
 
-        # Find all .json files (gallery-dl metadata)
-        json_files = list(output_dir.glob("*.json"))
+        try:
+            # Try multiple selectors for tweets
+            await page.wait_for_selector('article[data-testid="tweet"], article[role="article"], [data-testid="cellInnerDiv"] article', timeout=15000)
 
-        # Exclude our own metadata.json and config
-        json_files = [
-            f for f in json_files
-            if f.name not in ["metadata.json", "gallery-dl-config.json"]
-        ]
+            # Get all tweet articles
+            tweet_elements = await page.query_selector_all('article[data-testid="tweet"]')
 
-        for json_file in json_files:
-            try:
-                with open(json_file, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
+            for i, tweet_el in enumerate(tweet_elements[:self.max_posts]):
+                try:
+                    tweet_data = {}
 
-                # Extract relevant fields
-                post_info = {
-                    "tweet_id": data.get("tweet_id", ""),
-                    "text": data.get("content", ""),
-                    "date": data.get("date", ""),
-                    "likes": data.get("favorite_count", 0),
-                    "retweets": data.get("retweet_count", 0),
-                    "replies": data.get("reply_count", 0),
-                    "views": data.get("view_count", 0),
-                    "author": data.get("author", {}).get("name", ""),
-                    "username": data.get("author", {}).get("nick", ""),
-                }
+                    # Extract text
+                    text_el = await tweet_el.query_selector('[data-testid="tweetText"]')
+                    if text_el:
+                        tweet_data['text'] = await text_el.inner_text()
+                    else:
+                        tweet_data['text'] = ''
 
-                posts_data.append(post_info)
+                    # Extract engagement metrics
+                    # Likes
+                    like_el = await tweet_el.query_selector('[data-testid="like"] span')
+                    tweet_data['likes'] = self._parse_count(await like_el.inner_text() if like_el else '0')
 
-            except Exception as e:
-                self.logger.warning(f"Error parsing {json_file}: {e}")
+                    # Retweets
+                    retweet_el = await tweet_el.query_selector('[data-testid="retweet"] span')
+                    tweet_data['retweets'] = self._parse_count(await retweet_el.inner_text() if retweet_el else '0')
 
-        return posts_data
+                    # Replies
+                    reply_el = await tweet_el.query_selector('[data-testid="reply"] span')
+                    tweet_data['replies'] = self._parse_count(await reply_el.inner_text() if reply_el else '0')
 
-    def _calculate_engagement_metrics(
-        self,
-        posts_data: List[Dict[str, Any]],
-        username: str
-    ) -> Dict[str, Any]:
+                    # Views (if available)
+                    view_el = await tweet_el.query_selector('[data-testid="app-text-transition-container"] span')
+                    tweet_data['views'] = self._parse_count(await view_el.inner_text() if view_el else '0')
+
+                    # Extract time/date
+                    time_el = await tweet_el.query_selector('time')
+                    if time_el:
+                        tweet_data['date'] = await time_el.get_attribute('datetime')
+                    else:
+                        tweet_data['date'] = None
+
+                    tweets.append(tweet_data)
+
+                except Exception as e:
+                    self.logger.warning(f"Error extracting tweet {i}: {e}")
+                    continue
+
+        except PlaywrightTimeout:
+            self.logger.warning("Timeout waiting for tweets to load")
+        except Exception as e:
+            self.logger.error(f"Error extracting tweets: {e}")
+
+        return tweets
+
+    def _parse_count(self, text: str) -> int:
+        """Parse engagement count from text (handles K, M suffixes)."""
+        if not text or text.strip() == '':
+            return 0
+        text = text.strip().upper()
+        try:
+            if 'K' in text:
+                return int(float(text.replace('K', '')) * 1000)
+            elif 'M' in text:
+                return int(float(text.replace('M', '')) * 1000000)
+            else:
+                return int(text.replace(',', ''))
+        except (ValueError, AttributeError):
+            return 0
+
+    async def _extract_follower_count(self, page) -> Optional[int]:
+        """Extract follower count from profile page."""
+        try:
+            # Look for followers link/count
+            followers_el = await page.query_selector('a[href$="/verified_followers"] span, a[href$="/followers"] span')
+            if followers_el:
+                text = await followers_el.inner_text()
+                return self._parse_count(text)
+        except Exception as e:
+            self.logger.warning(f"Could not extract follower count: {e}")
+        return None
+
+    async def _scrape_async(self, url: str, username: str, grantee_name: str) -> Dict[str, Any]:
         """
-        Calculate engagement metrics from posts data.
+        Async scraping implementation using Playwright.
 
         Args:
-            posts_data: List of post data dictionaries
-            username: Twitter username
+            url: Twitter profile URL
+            username: Extracted username
+            grantee_name: Grantee name
 
         Returns:
-            Dictionary of engagement metrics
+            Scraping results dictionary
         """
-        if not posts_data:
-            return {
-                "username": username,
-                "followers_count": None,
-                "total_likes": 0,
-                "total_retweets": 0,
-                "total_replies": 0,
-                "total_views": 0,
-                "avg_likes": 0.0,
-                "avg_retweets": 0.0,
-                "avg_replies": 0.0,
-                "avg_views": 0.0,
-                "avg_engagement_rate": 0.0,
-                "posts_analyzed": 0
-            }
-
-        total_likes = sum(post.get("likes", 0) for post in posts_data)
-        total_retweets = sum(post.get("retweets", 0) for post in posts_data)
-        total_replies = sum(post.get("replies", 0) for post in posts_data)
-        total_views = sum(post.get("views", 0) for post in posts_data)
-
-        num_posts = len(posts_data)
-
-        # Calculate averages
-        avg_likes = total_likes / num_posts if num_posts > 0 else 0
-        avg_retweets = total_retweets / num_posts if num_posts > 0 else 0
-        avg_replies = total_replies / num_posts if num_posts > 0 else 0
-        avg_views = total_views / num_posts if num_posts > 0 else 0
-
-        # Calculate average engagement rate
-        # Engagement rate = (likes + retweets + replies) / views
-        total_engagements = total_likes + total_retweets + total_replies
-        avg_engagement_rate = (
-            (total_engagements / total_views * 100)
-            if total_views > 0 else 0.0
-        )
-
-        return {
-            "username": username,
-            "followers_count": None,  # Not available without API access
-            "total_likes": total_likes,
-            "total_retweets": total_retweets,
-            "total_replies": total_replies,
-            "total_views": total_views,
-            "avg_likes": round(avg_likes, 2),
-            "avg_retweets": round(avg_retweets, 2),
-            "avg_replies": round(avg_replies, 2),
-            "avg_views": round(avg_views, 2),
-            "avg_engagement_rate": round(avg_engagement_rate, 2),
-            "posts_analyzed": num_posts
+        errors = []
+        tweets = []
+        engagement_metrics = {
+            'username': username,
+            'followers_count': None,
+            'total_likes': 0,
+            'total_retweets': 0,
+            'total_replies': 0,
+            'total_views': 0,
+            'avg_likes': 0.0,
+            'avg_retweets': 0.0,
+            'avg_engagement_rate': 0.0,
+            'posts_analyzed': 0
         }
 
-    def scrape(self, url: str, grantee_name: str) -> Dict[str, Any]:
+        async with async_playwright() as p:
+            browser = None
+            try:
+                # Launch browser
+                browser = await p.chromium.launch(
+                    headless=self.headless,
+                    args=[
+                        '--disable-blink-features=AutomationControlled',
+                        '--disable-dev-shm-usage',
+                        '--no-sandbox'
+                    ]
+                )
+
+                # Create context
+                context = await browser.new_context(
+                    viewport={'width': 1920, 'height': 1080},
+                    user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                    locale='en-US',
+                    timezone_id='America/New_York'
+                )
+
+                page = await context.new_page()
+
+                # Login first
+                login_success = await self._login(page)
+                if not login_success:
+                    errors.append("Failed to login to Twitter")
+                    # Try without login anyway
+                    self.logger.info("Attempting to scrape without login...")
+
+                # Navigate to profile
+                profile_url = f"https://x.com/{username}"
+                self.logger.info(f"Navigating to {profile_url}")
+                await page.goto(profile_url, wait_until='domcontentloaded', timeout=60000)
+                await page.wait_for_timeout(3000)
+
+                # Extract follower count
+                followers = await self._extract_follower_count(page)
+                if followers:
+                    engagement_metrics['followers_count'] = followers
+                    self.logger.info(f"Found {followers} followers")
+
+                # Scroll to load more tweets
+                self.logger.info("Scrolling to load tweets...")
+                for _ in range(3):
+                    await page.evaluate('window.scrollTo(0, document.body.scrollHeight)')
+                    await page.wait_for_timeout(2000)
+
+                # Extract tweets
+                tweets = await self._extract_tweets(page)
+                self.logger.info(f"Extracted {len(tweets)} tweets")
+
+                # Calculate metrics
+                if tweets:
+                    total_likes = sum(t.get('likes', 0) for t in tweets)
+                    total_retweets = sum(t.get('retweets', 0) for t in tweets)
+                    total_replies = sum(t.get('replies', 0) for t in tweets)
+                    total_views = sum(t.get('views', 0) for t in tweets)
+                    num_tweets = len(tweets)
+
+                    engagement_metrics.update({
+                        'total_likes': total_likes,
+                        'total_retweets': total_retweets,
+                        'total_replies': total_replies,
+                        'total_views': total_views,
+                        'avg_likes': round(total_likes / num_tweets, 2) if num_tweets > 0 else 0,
+                        'avg_retweets': round(total_retweets / num_tweets, 2) if num_tweets > 0 else 0,
+                        'avg_engagement_rate': round(
+                            ((total_likes + total_retweets + total_replies) / total_views * 100)
+                            if total_views > 0 else 0, 2
+                        ),
+                        'posts_analyzed': num_tweets
+                    })
+
+                # Save output
+                output_dir = self._create_output_directory(grantee_name, username)
+
+                # Save metadata
+                metadata = {
+                    'url': url,
+                    'username': username,
+                    'grantee_name': grantee_name,
+                    'scraped_at': datetime.now().isoformat(),
+                    'posts_downloaded': len(tweets),
+                    'engagement_metrics': engagement_metrics
+                }
+                self.save_metadata(output_dir, metadata)
+
+                # Save tweets
+                tweets_file = output_dir / 'tweets.json'
+                with open(tweets_file, 'w', encoding='utf-8') as f:
+                    json.dump(tweets, f, indent=2, ensure_ascii=False)
+
+                # Take screenshot
+                screenshot_path = output_dir / 'screenshot.png'
+                await page.screenshot(path=str(screenshot_path), full_page=False)
+
+                # Success if we got follower count OR tweets
+                success = len(tweets) > 0 or engagement_metrics.get('followers_count') is not None
+                return {
+                    'success': success,
+                    'posts_downloaded': len(tweets),
+                    'errors': errors,
+                    'engagement_metrics': engagement_metrics
+                }
+
+            except Exception as e:
+                self.logger.error(f"Error during scraping: {e}")
+                errors.append(str(e))
+                return {
+                    'success': False,
+                    'posts_downloaded': 0,
+                    'errors': errors,
+                    'engagement_metrics': engagement_metrics
+                }
+
+            finally:
+                if browser:
+                    await browser.close()
+
+    def scrape(self, url: str, grantee_name: str, max_posts: Optional[int] = None) -> Dict[str, Any]:
         """
         Scrape Twitter/X profile.
 
         Args:
             url: Twitter/X profile URL
             grantee_name: Name of the grantee
+            max_posts: Maximum posts to scrape (uses self.max_posts if None)
 
         Returns:
-            Dictionary containing:
-                - success (bool): Whether scraping was successful
-                - posts_downloaded (int): Number of posts downloaded
-                - errors (List[str]): List of errors encountered
-                - engagement_metrics (Dict): Engagement metrics
+            Dictionary containing scraping results
         """
-        errors = []
+        if not PLAYWRIGHT_AVAILABLE:
+            return {
+                'success': False,
+                'posts_downloaded': 0,
+                'errors': ['Playwright not installed'],
+                'engagement_metrics': {}
+            }
 
+        # Extract username
+        username = self.extract_username(url)
+        if not username:
+            return {
+                'success': False,
+                'posts_downloaded': 0,
+                'errors': ['Could not extract username from URL'],
+                'engagement_metrics': {}
+            }
+
+        self.logger.info(f"Starting Twitter scrape for @{username}")
+
+        # Run async scraping
         try:
-            # Extract username
-            username = self.extract_username(url)
-            if not username:
-                return {
-                    "success": False,
-                    "posts_downloaded": 0,
-                    "errors": ["Failed to extract username from URL"],
-                    "engagement_metrics": {}
-                }
-
-            self.logger.info(f"Scraping Twitter profile: @{username}")
-
-            # Create output directory
-            output_dir = self._create_output_directory(grantee_name, username)
-            self.logger.info(f"Output directory: {output_dir}")
-
-            # Scrape with gallery-dl
-            scrape_result = self._scrape_with_gallery_dl(username, output_dir)
-
-            if not scrape_result["success"]:
-                errors.extend(scrape_result["errors"])
-                return {
-                    "success": False,
-                    "posts_downloaded": 0,
-                    "errors": errors,
-                    "engagement_metrics": {}
-                }
-
-            posts_data = scrape_result["posts_data"]
-            errors.extend(scrape_result["errors"])
-
-            # Calculate engagement metrics
-            engagement_metrics = self._calculate_engagement_metrics(
-                posts_data,
-                username
-            )
-
-            # Save metadata
-            metadata = {
-                "url": url,
-                "username": username,
-                "grantee_name": grantee_name,
-                "posts_downloaded": len(posts_data),
-                "engagement_metrics": engagement_metrics,
-                "posts": posts_data,
-                "errors": errors
-            }
-
-            self._save_metadata(output_dir, metadata)
-
-            return {
-                "success": True,
-                "posts_downloaded": len(posts_data),
-                "errors": errors,
-                "engagement_metrics": engagement_metrics
-            }
-
+            result = asyncio.run(self._scrape_async(url, username, grantee_name))
+            return result
         except Exception as e:
-            error_msg = f"Unexpected error during scraping: {str(e)}"
-            self.logger.error(error_msg)
-            errors.append(error_msg)
-
+            self.logger.error(f"Fatal error during scrape: {e}", exc_info=True)
             return {
-                "success": False,
-                "posts_downloaded": 0,
-                "errors": errors,
-                "engagement_metrics": {}
+                'success': False,
+                'posts_downloaded': 0,
+                'errors': [f'Fatal error: {str(e)}'],
+                'engagement_metrics': {}
             }
 
 
@@ -425,13 +457,11 @@ if __name__ == "__main__":
     import sys
     import logging
 
-    # Set up logging
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     )
 
-    # Test the scraper
     if len(sys.argv) < 3:
         print("Usage: python twitter.py <twitter_url> <grantee_name>")
         sys.exit(1)

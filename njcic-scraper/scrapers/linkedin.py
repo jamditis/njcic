@@ -326,13 +326,14 @@ class LinkedInScraper(BaseScraper):
 
         return data
 
-    def scrape(self, url: str, grantee_name: str) -> Dict[str, Any]:
+    def scrape(self, url: str, grantee_name: str, max_posts: int = 25) -> Dict[str, Any]:
         """
         Scrape LinkedIn company or profile page.
 
         Args:
             url: LinkedIn URL to scrape
             grantee_name: Name of the grantee (for organization)
+            max_posts: Maximum posts to scrape
 
         Returns:
             Dictionary with:

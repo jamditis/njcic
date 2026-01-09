@@ -40,7 +40,7 @@ class ThreadsScraper(BaseScraper):
             headless: Whether to run browser in headless mode
             timeout: Page load timeout in milliseconds
         """
-        super().__init__(output_dir)
+        super().__init__(Path(output_dir) if isinstance(output_dir, str) else output_dir)
         self.headless = headless
         self.timeout = timeout
         self.max_posts = 25  # Threads specific limit as per requirements
@@ -72,10 +72,10 @@ class ThreadsScraper(BaseScraper):
         # Clean up the URL
         url = url.strip()
 
-        # Patterns for Threads URLs
+        # Patterns for Threads URLs (handles both .net and .com)
         patterns = [
-            r'threads\.net/@([^/?&#]+)',  # threads.net/@username
-            r'threads\.net/([^/@?&#]+)',  # threads.net/username
+            r'threads\.(?:net|com)/@([^/?&#]+)',  # threads.net/@username or threads.com/@username
+            r'threads\.(?:net|com)/([^/@?&#]+)',  # threads.net/username or threads.com/username
         ]
 
         for pattern in patterns:
@@ -87,6 +87,28 @@ class ThreadsScraper(BaseScraper):
                     return username
 
         return None
+
+    def _create_output_directory(self, grantee_name: str, username: str) -> Path:
+        """
+        Create and return Threads-specific output directory.
+
+        Creates structure: output/threads/{grantee_name}/{username}
+
+        Args:
+            grantee_name: Name of the grantee
+            username: Threads username
+
+        Returns:
+            Path object for the output directory
+        """
+        # Get base output path from parent class
+        base_path = self.get_output_path(grantee_name)
+
+        # Add username subdirectory
+        username_path = base_path / username
+        username_path.mkdir(exist_ok=True, parents=True)
+
+        return username_path
 
     async def _wait_for_page_load(self, page, selector: str = 'article', max_wait: int = 10):
         """
@@ -363,7 +385,7 @@ class ThreadsScraper(BaseScraper):
                     'scraped_at': datetime.now().isoformat()
                 }
 
-                self._save_metadata(output_dir, metadata)
+                self.save_metadata(output_dir, metadata)
 
                 result['success'] = True
                 result['posts_downloaded'] = len(posts)
@@ -382,13 +404,14 @@ class ThreadsScraper(BaseScraper):
 
         return result
 
-    def scrape(self, url: str, grantee_name: str) -> Dict[str, Any]:
+    def scrape(self, url: str, grantee_name: str, max_posts: int = 25) -> Dict[str, Any]:
         """
         Scrape Threads profile content.
 
         Args:
             url: Threads profile URL
             grantee_name: Name of the grantee
+            max_posts: Maximum posts to scrape
 
         Returns:
             Dictionary containing:
