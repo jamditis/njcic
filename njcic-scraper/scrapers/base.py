@@ -36,9 +36,15 @@ class BaseScraper(ABC):
         Initialize the scraper.
 
         Args:
-            output_dir: Base output directory. If None, uses config.OUTPUT_DIR
+            output_dir: Base output directory (Path or str). If None, uses config.OUTPUT_DIR
         """
-        self.output_dir = output_dir or config.OUTPUT_DIR
+        # Handle both string and Path objects
+        if output_dir is None:
+            self.output_dir = config.OUTPUT_DIR
+        elif isinstance(output_dir, str):
+            self.output_dir = Path(output_dir)
+        else:
+            self.output_dir = output_dir
         self.output_dir.mkdir(exist_ok=True, parents=True)
 
         # Set up logging

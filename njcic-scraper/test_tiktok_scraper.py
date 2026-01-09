@@ -47,8 +47,8 @@ def main():
         },
     ]
 
-    # Initialize scraper
-    scraper = TikTokScraper(output_dir="output", max_posts=25)
+    # Initialize scraper (max_posts is passed to scrape method, not constructor)
+    scraper = TikTokScraper(output_dir=Path("output"))
 
     logger.info("=" * 80)
     logger.info("TikTok Scraper Test")
