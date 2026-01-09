@@ -3,27 +3,27 @@
   "slug": "dovernow-magazine",
   "summary": {
     "total_posts": 12,
-    "total_engagement": 871,
+    "total_engagement": 879,
     "total_followers": 0,
     "platforms_active": 1,
-    "engagement_rate": 72.58,
-    "last_updated": "2026-01-08T12:46:42.050844"
+    "engagement_rate": 73.25,
+    "last_updated": "2026-01-08T21:36:01.348411"
   },
   "platform_breakdown": {
     "instagram": {
       "posts": 12,
       "posts_pct": 100.0,
-      "engagement": 871,
+      "engagement": 879,
       "engagement_pct": 100.0
     }
   },
   "platforms": {
     "instagram": {
       "posts": 12,
-      "engagement": 871,
+      "engagement": 879,
       "views": 0,
       "followers": 0,
-      "engagement_rate": 72.58,
+      "engagement_rate": 73.25,
       "top_posts": [
         {
           "id": null,
@@ -79,33 +79,33 @@
         {
           "date": "2025-12-15",
           "posts": 3,
-          "engagement": 157
+          "engagement": 159
         },
         {
           "date": "2025-12-22",
           "posts": 4,
-          "engagement": 372
+          "engagement": 374
         },
         {
           "date": "2025-12-29",
           "posts": 2,
-          "engagement": 3
+          "engagement": 5
         },
         {
           "date": "2026-01-05",
           "posts": 3,
-          "engagement": 339
+          "engagement": 341
         }
       ],
       "content_types": {
         "video": {
           "count": 10,
-          "engagement": 872,
+          "engagement": 878,
           "percentage": 83.3
         },
         "image": {
           "count": 2,
-          "engagement": -1,
+          "engagement": 1,
           "percentage": 16.7
         }
       }
@@ -174,11 +174,11 @@
       "text": "",
       "date": "2025-12-29T13:41:27",
       "engagement": {
-        "likes": -1,
+        "likes": 0,
         "comments": 5,
         "shares": 0,
         "views": 0,
-        "total": 4
+        "total": 5
       },
       "thumbnail": null
     }
@@ -194,22 +194,22 @@
     {
       "date": "2025-12-15",
       "posts": 3,
-      "engagement": 157
+      "engagement": 159
     },
     {
       "date": "2025-12-22",
       "posts": 4,
-      "engagement": 372
+      "engagement": 374
     },
     {
       "date": "2025-12-29",
       "posts": 2,
-      "engagement": 3
+      "engagement": 5
     },
     {
       "date": "2026-01-05",
       "posts": 3,
-      "engagement": 339
+      "engagement": 341
     }
   ],
   "logo": "../../branding/logos/grantees-web/dovernow-magazine.png",

@@ -1,0 +1,84 @@
+{
+  "name": "Morristown Green",
+  "slug": "morristown-green",
+  "summary": {
+    "total_posts": 1,
+    "total_engagement": 0,
+    "total_followers": 0,
+    "platforms_active": 1,
+    "engagement_rate": 0.0,
+    "last_updated": "2026-01-08T21:36:01.377065"
+  },
+  "platform_breakdown": {
+    "facebook": {
+      "posts": 1,
+      "posts_pct": 100.0,
+      "engagement": 0,
+      "engagement_pct": 0
+    }
+  },
+  "platforms": {
+    "facebook": {
+      "posts": 1,
+      "engagement": 0,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 0.0,
+      "top_posts": [
+        {
+          "id": "post_0",
+          "url": "https://www.facebook.com/MorristownGreen.comOfficialSite/posts/pfbid0SLnqhz9oyqUG5k6p8gXSN8sfVu1XKLAepgxY3MG8B6xoh6NhqxNQDBKSJGxY1bW6l?__cft__[0]=AZZi05K4slVt-Zb7ShiLYKhIrzNYMa0-NSzTlhIdQM31yKJVx2X-jQP1EEMYOOvrG0svpVvljkI_uEtXZPqH_VJITssU9rmsW2Lro2c91o1Zz0uqCTfWOdUMux6ulQ-KtvrBjSkdGdSQcMmpbLHBrBXocRaO6JbMpJt5_vjersk8OvlYurGsZ79DAeitvMtpTKU&__tn__=%2CO%2CP-R",
+          "text": "The holidays are over. But some engaging entertainment choices remain in Greater Morristown this weekend:\u2026 See more",
+          "date": null,
+          "engagement": {
+            "likes": 0,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 0
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {
+        "unknown": {
+          "count": 1,
+          "engagement": 0,
+          "percentage": 100.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": "post_0",
+      "url": "https://www.facebook.com/MorristownGreen.comOfficialSite/posts/pfbid0SLnqhz9oyqUG5k6p8gXSN8sfVu1XKLAepgxY3MG8B6xoh6NhqxNQDBKSJGxY1bW6l?__cft__[0]=AZZi05K4slVt-Zb7ShiLYKhIrzNYMa0-NSzTlhIdQM31yKJVx2X-jQP1EEMYOOvrG0svpVvljkI_uEtXZPqH_VJITssU9rmsW2Lro2c91o1Zz0uqCTfWOdUMux6ulQ-KtvrBjSkdGdSQcMmpbLHBrBXocRaO6JbMpJt5_vjersk8OvlYurGsZ79DAeitvMtpTKU&__tn__=%2CO%2CP-R",
+      "text": "The holidays are over. But some engaging entertainment choices remain in Greater Morristown this weekend:\u2026 See more",
+      "date": null,
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 0
+      },
+      "thumbnail": null
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0,
+    "posts_per_week": 0,
+    "date_range_days": 0,
+    "first_post": null,
+    "last_post": null
+  },
+  "time_series": []
+}

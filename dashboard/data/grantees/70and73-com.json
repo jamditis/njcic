@@ -1,0 +1,84 @@
+{
+  "name": "70and73 com",
+  "slug": "70and73-com",
+  "summary": {
+    "total_posts": 1,
+    "total_engagement": 0,
+    "total_followers": 0,
+    "platforms_active": 1,
+    "engagement_rate": 0.0,
+    "last_updated": "2026-01-08T21:36:01.325161"
+  },
+  "platform_breakdown": {
+    "facebook": {
+      "posts": 1,
+      "posts_pct": 100.0,
+      "engagement": 0,
+      "engagement_pct": 0
+    }
+  },
+  "platforms": {
+    "facebook": {
+      "posts": 1,
+      "engagement": 0,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 0.0,
+      "top_posts": [
+        {
+          "id": "post_0",
+          "url": "https://www.facebook.com/70and73com/posts/pfbid034h6FHGQpiveGkgxLNqkqVcMzWPffP3LaSvi3cPfugZ16DA2a2MY9tKSCHcVEotLGl?__cft__[0]=AZbbrWzB87Ju-tU0zuUHGovY-dPiNJgK5f_ProQLi-K-XFkTjwz5dwU9jzSoFUk8-AmKaWW2iRN9NmAbR2qdcxHvE5Wkh706LqZd4hAcPAcE3zgGFwl9n5v1FTtF3-2h-YnDFacmiYeX-kGk31ebp9pYgbSqGJA4-q4GBPtodFhGuuAgekJKmF8zwzely3qejAw&__tn__=%2CO%2CP-R",
+          "text": "70and73.com\n1d\n\u00a0\n\u00b7\n70AND73.COM\nLenape High's Cattani Wednesday named by state Board of Education '26 secondary principal of the year.\nTony Cattani, the principal of Lenape High School who last year wa",
+          "date": null,
+          "engagement": {
+            "likes": 0,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 0
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {
+        "unknown": {
+          "count": 1,
+          "engagement": 0,
+          "percentage": 100.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": "post_0",
+      "url": "https://www.facebook.com/70and73com/posts/pfbid034h6FHGQpiveGkgxLNqkqVcMzWPffP3LaSvi3cPfugZ16DA2a2MY9tKSCHcVEotLGl?__cft__[0]=AZbbrWzB87Ju-tU0zuUHGovY-dPiNJgK5f_ProQLi-K-XFkTjwz5dwU9jzSoFUk8-AmKaWW2iRN9NmAbR2qdcxHvE5Wkh706LqZd4hAcPAcE3zgGFwl9n5v1FTtF3-2h-YnDFacmiYeX-kGk31ebp9pYgbSqGJA4-q4GBPtodFhGuuAgekJKmF8zwzely3qejAw&__tn__=%2CO%2CP-R",
+      "text": "70and73.com\n1d\n\u00a0\n\u00b7\n70AND73.COM\nLenape High's Cattani Wednesday named by state Board of Education '26 secondary principal of the year.\nTony Cattani, the principal of Lenape High School who last year wa",
+      "date": null,
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 0
+      },
+      "thumbnail": null
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0,
+    "posts_per_week": 0,
+    "date_range_days": 0,
+    "first_post": null,
+    "last_post": null
+  },
+  "time_series": []
+}

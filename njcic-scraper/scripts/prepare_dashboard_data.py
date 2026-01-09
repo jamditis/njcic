@@ -117,8 +117,9 @@ def calculate_top_grantees(
         total_engagement = summary.get("total_engagement", 0)
 
         # Find the top platform by engagement
+        # Use -inf so platforms with negative engagement (from scraper errors) still get selected
         top_platform = None
-        top_platform_engagement = 0
+        top_platform_engagement = float("-inf")
 
         for platform, data in platforms_data.items():
             if data.get("success", False):

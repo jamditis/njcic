@@ -2,25 +2,31 @@
   "name": "Mental Health Association of New Jersey",
   "slug": "mental-health-association-of-new-jersey",
   "summary": {
-    "total_posts": 13,
+    "total_posts": 14,
     "total_engagement": 37,
     "total_followers": 0,
-    "platforms_active": 2,
-    "engagement_rate": 2.85,
-    "last_updated": "2026-01-08T12:46:42.070281"
+    "platforms_active": 3,
+    "engagement_rate": 2.64,
+    "last_updated": "2026-01-08T21:36:01.372076"
   },
   "platform_breakdown": {
     "tiktok": {
       "posts": 1,
-      "posts_pct": 7.7,
+      "posts_pct": 7.1,
       "engagement": 0,
       "engagement_pct": 0.0
     },
     "instagram": {
       "posts": 12,
-      "posts_pct": 92.3,
+      "posts_pct": 85.7,
       "engagement": 37,
       "engagement_pct": 100.0
+    },
+    "facebook": {
+      "posts": 1,
+      "posts_pct": 7.1,
+      "engagement": 0,
+      "engagement_pct": 0.0
     }
   },
   "platforms": {
@@ -126,6 +132,44 @@
           "count": 2,
           "engagement": 1,
           "percentage": 16.7
+        }
+      }
+    },
+    "facebook": {
+      "posts": 1,
+      "engagement": 0,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 0.0,
+      "top_posts": [
+        {
+          "id": "post_0",
+          "url": "https://www.facebook.com/MentalHealthAssociationinNewJerseyInc/posts/pfbid021pDhG3iTSoga1t2rGR8jehARpuFTqJS5txzTTxjcs31kbH6vzraGGRojnCeE8sLdl?__cft__[0]=AZZFPSlLsfn-iXxxMZO6e583aJ4q1-b6xKhz1LnU_xGk9BBeXofhq1ZXaAMQzgDdGq3QhAQ1KyGt47xTEEBdM7qpltqKuTZQOMTLZKiIGYONGekINY4HZPyKY5xCUcm8EfRt608_0MKOylV6_YCuEmaG9rkXLOCuH-J_UFI-r7I_Zhij0DF6cSpwv5BxUWTmzrA&__tn__=%2CO%2CP-R",
+          "text": "In 2025, our Silver Level sponsor, minette's angels, partenered with us for an unforgettable Evening of Excellence\u2014our signature annual celebration recognizing the chan\u2026 See more",
+          "date": null,
+          "engagement": {
+            "likes": 0,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 0
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {
+        "unknown": {
+          "count": 1,
+          "engagement": 0,
+          "percentage": 100.0
         }
       }
     }

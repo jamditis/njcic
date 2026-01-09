@@ -2,25 +2,31 @@
   "name": "Slice of Culture   Saint Peter s University",
   "slug": "slice-of-culture-saint-peter-s-university",
   "summary": {
-    "total_posts": 38,
+    "total_posts": 39,
     "total_engagement": 2408,
     "total_followers": 0,
-    "platforms_active": 2,
-    "engagement_rate": 63.37,
-    "last_updated": "2026-01-08T12:46:42.092295"
+    "platforms_active": 3,
+    "engagement_rate": 61.74,
+    "last_updated": "2026-01-08T21:36:01.406081"
   },
   "platform_breakdown": {
     "tiktok": {
       "posts": 26,
-      "posts_pct": 68.4,
+      "posts_pct": 66.7,
       "engagement": 1791,
       "engagement_pct": 74.4
     },
     "instagram": {
       "posts": 12,
-      "posts_pct": 31.6,
+      "posts_pct": 30.8,
       "engagement": 617,
       "engagement_pct": 25.6
+    },
+    "facebook": {
+      "posts": 1,
+      "posts_pct": 2.6,
+      "engagement": 0,
+      "engagement_pct": 0.0
     }
   },
   "platforms": {
@@ -275,6 +281,44 @@
           "count": 8,
           "engagement": 247,
           "percentage": 66.7
+        }
+      }
+    },
+    "facebook": {
+      "posts": 1,
+      "engagement": 0,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 0.0,
+      "top_posts": [
+        {
+          "id": "post_0",
+          "url": "https://www.facebook.com/SoCulOfficial/posts/pfbid0D4yBkcfZk1PE2WZRRJuFv4qHBf9pcGydvKcHdJ2aQWTsd4gagLUgVvDER87tdJWcl?__cft__[0]=AZb7m_kHzXs46YIgkgfaM4RlaV--j5orKEJ-VklxBvU-Ivc5cW49aCNL8hThsrrroDOqMH_EBG9scDIRL73AuHNo1POyleIUoST-7f3Vdu05Q7fhcEf9qe578bRQgJGv8K178ChbgLwvo1wRcwv-C5kkE-8IvVchzYPN4hhJfWtPMPbT2RpwtpMQHNlXJ9-0Uv8&__tn__=%2CO%2CP-R",
+          "text": "New year, new beginnings! \n\u2026 See more",
+          "date": null,
+          "engagement": {
+            "likes": 0,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 0
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {
+        "unknown": {
+          "count": 1,
+          "engagement": 0,
+          "percentage": 100.0
         }
       }
     }

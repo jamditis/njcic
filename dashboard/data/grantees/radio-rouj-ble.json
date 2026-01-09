@@ -1,0 +1,84 @@
+{
+  "name": "Radio Rouj   Ble",
+  "slug": "radio-rouj-ble",
+  "summary": {
+    "total_posts": 1,
+    "total_engagement": 0,
+    "total_followers": 0,
+    "platforms_active": 1,
+    "engagement_rate": 0.0,
+    "last_updated": "2026-01-08T21:36:01.403045"
+  },
+  "platform_breakdown": {
+    "facebook": {
+      "posts": 1,
+      "posts_pct": 100.0,
+      "engagement": 0,
+      "engagement_pct": 0
+    }
+  },
+  "platforms": {
+    "facebook": {
+      "posts": 1,
+      "engagement": 0,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 0.0,
+      "top_posts": [
+        {
+          "id": "post_0",
+          "url": "https://www.facebook.com/RadioRoujeBle/posts/pfbid0nqKpCraBGLdQXr9ifcgkRfGmzz1Msm1uik8bdUQQbxVM11dHC8mYraq5kQnDHdpVl?__cft__[0]=AZZpXD8MaW65hTTw7n55elkX8C3fi_mrPlIW5LpBI_lzqQuy6W2NqQVEOzkpttcLCYQRrw_q3cj_WBWR-Vs2aSpIR2pvI17cfm5L7cWnugcQFHyeQPX6wWWr-sOiT_hBRzmTkQ2vmSHRNUmMTfESOfmIgCyb95In9EnkqBnenwGG-6SQHBAEhTRm2gNYgrwSjAI&__tn__=%2CO%2CP-R",
+          "text": "Valentino VZ c est le nom d un jeune artiste Ivoirien chanteur compositeur qui vient tout juste de sortir son premier album intitul\u00e9 Valentino VZ Victoire vous n allez \u2026 See more",
+          "date": null,
+          "engagement": {
+            "likes": 0,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 0
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {
+        "unknown": {
+          "count": 1,
+          "engagement": 0,
+          "percentage": 100.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": "post_0",
+      "url": "https://www.facebook.com/RadioRoujeBle/posts/pfbid0nqKpCraBGLdQXr9ifcgkRfGmzz1Msm1uik8bdUQQbxVM11dHC8mYraq5kQnDHdpVl?__cft__[0]=AZZpXD8MaW65hTTw7n55elkX8C3fi_mrPlIW5LpBI_lzqQuy6W2NqQVEOzkpttcLCYQRrw_q3cj_WBWR-Vs2aSpIR2pvI17cfm5L7cWnugcQFHyeQPX6wWWr-sOiT_hBRzmTkQ2vmSHRNUmMTfESOfmIgCyb95In9EnkqBnenwGG-6SQHBAEhTRm2gNYgrwSjAI&__tn__=%2CO%2CP-R",
+      "text": "Valentino VZ c est le nom d un jeune artiste Ivoirien chanteur compositeur qui vient tout juste de sortir son premier album intitul\u00e9 Valentino VZ Victoire vous n allez \u2026 See more",
+      "date": null,
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 0
+      },
+      "thumbnail": null
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0,
+    "posts_per_week": 0,
+    "date_range_days": 0,
+    "first_post": null,
+    "last_post": null
+  },
+  "time_series": []
+}

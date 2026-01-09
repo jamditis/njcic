@@ -1,0 +1,84 @@
+{
+  "name": "Asbury Park Media Collective",
+  "slug": "asbury-park-media-collective",
+  "summary": {
+    "total_posts": 1,
+    "total_engagement": 0,
+    "total_followers": 0,
+    "platforms_active": 1,
+    "engagement_rate": 0.0,
+    "last_updated": "2026-01-08T21:36:01.326502"
+  },
+  "platform_breakdown": {
+    "facebook": {
+      "posts": 1,
+      "posts_pct": 100.0,
+      "engagement": 0,
+      "engagement_pct": 0
+    }
+  },
+  "platforms": {
+    "facebook": {
+      "posts": 1,
+      "engagement": 0,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 0.0,
+      "top_posts": [
+        {
+          "id": "post_0",
+          "url": "https://www.facebook.com/AsburyParkReporter/posts/pfbid02bVsvpLXfD8UjfMELUTVPWwDvgqExBetW4kMN1gYxiebkEXcQpTt7YoReCR3PkGoZl?__cft__[0]=AZYto7foyLcTiucw39oGMWWP27YlZl1NnBj57atnGRBW8pSXbQ9nE6d03gzIZkABGC44EvR8ftxH3YPgAEL5Ek8JAjY-ammpagquL68OPZRs5gP_gCv0wycBhy11PJrZ4pjP1EhoMfwcyAW_6kz6aqvUBIpyYLS1Z7Cgq9bw4zYNiKzhrS1zDIQHK8wrcDrsLWOPRemsMqIxHGoiI6NnyMKG&__tn__=%2CO%2CP-R",
+          "text": "https://www.nj.com/.../how-a-snowstorm-miracle-turned...\u2026 See more",
+          "date": null,
+          "engagement": {
+            "likes": 0,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 0
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {
+        "unknown": {
+          "count": 1,
+          "engagement": 0,
+          "percentage": 100.0
+        }
+      }
+    }
+  },
+  "top_posts": [
+    {
+      "id": "post_0",
+      "url": "https://www.facebook.com/AsburyParkReporter/posts/pfbid02bVsvpLXfD8UjfMELUTVPWwDvgqExBetW4kMN1gYxiebkEXcQpTt7YoReCR3PkGoZl?__cft__[0]=AZYto7foyLcTiucw39oGMWWP27YlZl1NnBj57atnGRBW8pSXbQ9nE6d03gzIZkABGC44EvR8ftxH3YPgAEL5Ek8JAjY-ammpagquL68OPZRs5gP_gCv0wycBhy11PJrZ4pjP1EhoMfwcyAW_6kz6aqvUBIpyYLS1Z7Cgq9bw4zYNiKzhrS1zDIQHK8wrcDrsLWOPRemsMqIxHGoiI6NnyMKG&__tn__=%2CO%2CP-R",
+      "text": "https://www.nj.com/.../how-a-snowstorm-miracle-turned...\u2026 See more",
+      "date": null,
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 0
+      },
+      "thumbnail": null
+    }
+  ],
+  "overall_frequency": {
+    "posts_per_day": 0,
+    "posts_per_week": 0,
+    "date_range_days": 0,
+    "first_post": null,
+    "last_post": null
+  },
+  "time_series": []
+}

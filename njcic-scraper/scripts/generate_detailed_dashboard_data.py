@@ -177,16 +177,18 @@ def get_post_engagement(post: Dict) -> Dict[str, int]:
     Returns:
         Dictionary with likes, comments, shares, views, and total
     """
-    likes = safe_int(post.get('likes') or post.get('like_count') or post.get('likeCount'))
-    comments = safe_int(post.get('comments') or post.get('comment_count') or post.get('commentCount') or post.get('replies'))
-    shares = safe_int(post.get('shares') or post.get('share_count') or post.get('shareCount') or
-                      post.get('reposts') or post.get('repost_count'))
-    views = safe_int(post.get('views') or post.get('view_count') or post.get('viewCount') or
-                     post.get('play_count') or post.get('playCount'))
+    # Use max(0, ...) to handle negative values from rate-limited Instagram scrapes
+    # where instaloader returns -1 when it can't fetch like counts
+    likes = max(0, safe_int(post.get('likes') or post.get('like_count') or post.get('likeCount')))
+    comments = max(0, safe_int(post.get('comments') or post.get('comment_count') or post.get('commentCount') or post.get('replies')))
+    shares = max(0, safe_int(post.get('shares') or post.get('share_count') or post.get('shareCount') or
+                      post.get('reposts') or post.get('repost_count')))
+    views = max(0, safe_int(post.get('views') or post.get('view_count') or post.get('viewCount') or
+                     post.get('play_count') or post.get('playCount')))
 
     # For Bluesky, also check total_engagement field
     if 'total_engagement' in post:
-        total = safe_int(post.get('total_engagement'))
+        total = max(0, safe_int(post.get('total_engagement')))
     else:
         total = likes + comments + shares
 
@@ -706,8 +708,8 @@ def generate_dashboard_summary(all_grantees: List[Dict], platform_analytics: Dic
     total_engagement = sum(g['summary']['total_engagement'] for g in valid_grantees)
     total_followers = sum(g['summary']['total_followers'] for g in valid_grantees)
 
-    # Build top grantees list
-    top_grantees = sorted(valid_grantees, key=lambda x: x['summary']['total_engagement'], reverse=True)[:12]
+    # Build grantees list (all grantees, sorted by engagement)
+    top_grantees = sorted(valid_grantees, key=lambda x: x['summary']['total_engagement'], reverse=True)
 
     # Find top platform for each grantee
     def get_top_platform(grantee):

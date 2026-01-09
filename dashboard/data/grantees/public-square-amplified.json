@@ -2,25 +2,31 @@
   "name": "Public Square Amplified",
   "slug": "public-square-amplified",
   "summary": {
-    "total_posts": 37,
+    "total_posts": 38,
     "total_engagement": 132,
     "total_followers": 82,
-    "platforms_active": 2,
-    "engagement_rate": 3.57,
-    "last_updated": "2026-01-08T12:46:42.089851"
+    "platforms_active": 3,
+    "engagement_rate": 3.47,
+    "last_updated": "2026-01-08T21:36:01.401710"
   },
   "platform_breakdown": {
     "bluesky": {
       "posts": 25,
-      "posts_pct": 67.6,
+      "posts_pct": 65.8,
       "engagement": 58,
       "engagement_pct": 43.9
     },
     "instagram": {
       "posts": 12,
-      "posts_pct": 32.4,
+      "posts_pct": 31.6,
       "engagement": 74,
       "engagement_pct": 56.1
+    },
+    "facebook": {
+      "posts": 1,
+      "posts_pct": 2.6,
+      "engagement": 0,
+      "engagement_pct": 0.0
     }
   },
   "platforms": {
@@ -225,6 +231,44 @@
           "count": 3,
           "engagement": 28,
           "percentage": 25.0
+        }
+      }
+    },
+    "facebook": {
+      "posts": 1,
+      "engagement": 0,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 0.0,
+      "top_posts": [
+        {
+          "id": "post_0",
+          "url": "https://www.facebook.com/publicsquarenews/posts/pfbid0kFbcwmC4deMTBeN4ownYF2Jun1Q5M4ufK3dijxKTR7MoVnr7b79iepHUGW59o1Tgl?__cft__[0]=AZZjjKiqcEdjrYzWL8gQfdF7ZftKaLnuauVYUc7VmHH9vTgdutv5VTuDLjvSypJ2W0HhVZddgDDWwhvh5xnGZvHBQafV4A4D7TL5KP4Glqb2ZkSk4gvnSxzMvWwkCXON-kumLqqzNRd4ytUZVRY_HOkkeX_lI92aBvuZ_J3LDgnkx0NSL_cXe_QTV7PnojorS24&__tn__=%2CO%2CP-R",
+          "text": "For his latest Opinion piece, Political Writer Matt Dragon uses the framework of US racialized political history to draw a direct trajectory to the actions of ICE on th\u2026 See more",
+          "date": null,
+          "engagement": {
+            "likes": 0,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 0
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {
+        "unknown": {
+          "count": 1,
+          "engagement": 0,
+          "percentage": 100.0
         }
       }
     }

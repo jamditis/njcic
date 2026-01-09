@@ -3,27 +3,27 @@
   "slug": "newark-news-and-story-collaborative",
   "summary": {
     "total_posts": 12,
-    "total_engagement": 1011,
+    "total_engagement": 1014,
     "total_followers": 0,
     "platforms_active": 1,
-    "engagement_rate": 84.25,
-    "last_updated": "2026-01-08T12:46:42.086010"
+    "engagement_rate": 84.5,
+    "last_updated": "2026-01-08T21:36:01.396795"
   },
   "platform_breakdown": {
     "instagram": {
       "posts": 12,
       "posts_pct": 100.0,
-      "engagement": 1011,
+      "engagement": 1014,
       "engagement_pct": 100.0
     }
   },
   "platforms": {
     "instagram": {
       "posts": 12,
-      "engagement": 1011,
+      "engagement": 1014,
       "views": 0,
       "followers": 0,
-      "engagement_rate": 84.25,
+      "engagement_rate": 84.5,
       "top_posts": [
         {
           "id": null,
@@ -79,12 +79,12 @@
         {
           "date": "2023-02-06",
           "posts": 1,
-          "engagement": 16
+          "engagement": 17
         },
         {
           "date": "2025-03-31",
           "posts": 2,
-          "engagement": 30
+          "engagement": 31
         },
         {
           "date": "2025-04-07",
@@ -109,7 +109,7 @@
         {
           "date": "2025-08-11",
           "posts": 1,
-          "engagement": 0
+          "engagement": 1
         },
         {
           "date": "2026-01-05",
@@ -120,12 +120,12 @@
       "content_types": {
         "image": {
           "count": 7,
-          "engagement": 770,
+          "engagement": 772,
           "percentage": 58.3
         },
         "video": {
           "count": 5,
-          "engagement": 241,
+          "engagement": 242,
           "percentage": 41.7
         }
       }
@@ -214,12 +214,12 @@
     {
       "date": "2023-02-06",
       "posts": 1,
-      "engagement": 16
+      "engagement": 17
     },
     {
       "date": "2025-03-31",
       "posts": 2,
-      "engagement": 30
+      "engagement": 31
     },
     {
       "date": "2025-04-07",
@@ -244,7 +244,7 @@
     {
       "date": "2025-08-11",
       "posts": 1,
-      "engagement": 0
+      "engagement": 1
     },
     {
       "date": "2026-01-05",

@@ -206,13 +206,18 @@ class InstagramScraper(BaseScraper):
         Returns:
             Dictionary with post metadata
         """
+        # Instaloader returns -1 for likes/comments when rate-limited or data unavailable
+        # Convert negative values to 0 to avoid corrupting engagement calculations
+        likes = post.likes if post.likes >= 0 else 0
+        comments = post.comments if post.comments >= 0 else 0
+
         metadata = {
             'shortcode': post.shortcode,
             'url': f"https://www.instagram.com/p/{post.shortcode}/",
             'caption': post.caption if post.caption else '',
             'date': post.date_utc.isoformat() if post.date_utc else None,
-            'likes': post.likes,
-            'comments': post.comments,
+            'likes': likes,
+            'comments': comments,
             'is_video': post.is_video,
             'video_views': post.video_view_count if post.is_video else None,
             'typename': post.typename,
@@ -251,10 +256,11 @@ class InstagramScraper(BaseScraper):
         Returns:
             Dictionary with engagement metrics
         """
-        total_likes = sum(post.get('likes', 0) for post in posts)
-        total_comments = sum(post.get('comments', 0) for post in posts)
+        # Use max(0, value) to handle any negative values from rate-limited scrapes
+        total_likes = sum(max(0, post.get('likes', 0)) for post in posts)
+        total_comments = sum(max(0, post.get('comments', 0)) for post in posts)
         total_video_views = sum(
-            post.get('video_views', 0) or 0
+            max(0, post.get('video_views', 0) or 0)
             for post in posts
             if post.get('is_video')
         )

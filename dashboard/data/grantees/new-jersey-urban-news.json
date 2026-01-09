@@ -2,28 +2,34 @@
   "name": "New Jersey Urban News",
   "slug": "new-jersey-urban-news",
   "summary": {
-    "total_posts": 12,
-    "total_engagement": -4,
+    "total_posts": 13,
+    "total_engagement": 8,
     "total_followers": 0,
-    "platforms_active": 1,
-    "engagement_rate": -0.33,
-    "last_updated": "2026-01-08T12:46:42.084340"
+    "platforms_active": 2,
+    "engagement_rate": 0.62,
+    "last_updated": "2026-01-08T21:36:01.393856"
   },
   "platform_breakdown": {
     "instagram": {
       "posts": 12,
-      "posts_pct": 100.0,
-      "engagement": -4,
-      "engagement_pct": 0
+      "posts_pct": 92.3,
+      "engagement": 8,
+      "engagement_pct": 100.0
+    },
+    "facebook": {
+      "posts": 1,
+      "posts_pct": 7.7,
+      "engagement": 0,
+      "engagement_pct": 0.0
     }
   },
   "platforms": {
     "instagram": {
       "posts": 12,
-      "engagement": -4,
+      "engagement": 8,
       "views": 0,
       "followers": 0,
-      "engagement_rate": -0.33,
+      "engagement_rate": 0.67,
       "top_posts": [
         {
           "id": null,
@@ -31,11 +37,11 @@
           "text": "",
           "date": "2025-12-12T17:42:33",
           "engagement": {
-            "likes": -1,
+            "likes": 0,
             "comments": 6,
             "shares": 0,
             "views": 0,
-            "total": 5
+            "total": 6
           },
           "thumbnail": null
         },
@@ -45,11 +51,11 @@
           "text": "",
           "date": "2025-12-02T19:44:08",
           "engagement": {
-            "likes": -1,
+            "likes": 0,
             "comments": 1,
             "shares": 0,
             "views": 0,
-            "total": 0
+            "total": 1
           },
           "thumbnail": null
         },
@@ -59,11 +65,11 @@
           "text": "",
           "date": "2025-11-03T15:17:25",
           "engagement": {
-            "likes": -1,
+            "likes": 0,
             "comments": 1,
             "shares": 0,
             "views": 0,
-            "total": 0
+            "total": 1
           },
           "thumbnail": null
         }
@@ -79,48 +85,86 @@
         {
           "date": "2025-10-27",
           "posts": 2,
-          "engagement": -2
+          "engagement": 0
         },
         {
           "date": "2025-11-03",
           "posts": 3,
-          "engagement": -2
+          "engagement": 1
         },
         {
           "date": "2025-11-10",
           "posts": 1,
-          "engagement": -1
+          "engagement": 0
         },
         {
           "date": "2025-11-17",
           "posts": 2,
-          "engagement": -2
+          "engagement": 0
         },
         {
           "date": "2025-11-24",
           "posts": 1,
-          "engagement": -1
+          "engagement": 0
         },
         {
           "date": "2025-12-01",
           "posts": 1,
-          "engagement": 0
+          "engagement": 1
         },
         {
           "date": "2025-12-08",
           "posts": 1,
-          "engagement": 5
+          "engagement": 6
         },
         {
           "date": "2025-12-22",
           "posts": 1,
-          "engagement": -1
+          "engagement": 0
         }
       ],
       "content_types": {
         "image": {
           "count": 12,
-          "engagement": -4,
+          "engagement": 8,
+          "percentage": 100.0
+        }
+      }
+    },
+    "facebook": {
+      "posts": 1,
+      "engagement": 0,
+      "views": 0,
+      "followers": 0,
+      "engagement_rate": 0.0,
+      "top_posts": [
+        {
+          "id": "post_0",
+          "url": "https://www.facebook.com/njurbannews/posts/pfbid0BRxRH4QYDmfUcptVBRSGyCesgbAbKJJaKyh6BcCZ3AGWrzQfQEodwh3yD6nRybAgl?__cft__[0]=AZaVaO05265Bx0DbFHGrOUaYrl7MvsfkpiWALQFZP-kaq656p0Wn1_Ps-IqCJgfa9PsKHf7zRrKGnbgHdj4ofjJzC9fIdIuf_gTlZWztsYYz0jjFBakcaJVDpdBWiPjTzbwhjv-9id5mfO7t5tazFlfSXPtCruRVmnyeghQtqxk6SOLhvygod_7VwQrjDP8QVfA&__tn__=%2CO%2CP-R",
+          "text": "NJ Transit has rolled out its holiday schedule and special fare deals, including free rides for kids, BOGO train tickets, and late-night New Year\u2019s Eve service through \u2026 See more",
+          "date": null,
+          "engagement": {
+            "likes": 0,
+            "comments": 0,
+            "shares": 0,
+            "views": 0,
+            "total": 0
+          },
+          "thumbnail": null
+        }
+      ],
+      "frequency": {
+        "posts_per_day": 0,
+        "posts_per_week": 0,
+        "date_range_days": 0,
+        "first_post": null,
+        "last_post": null
+      },
+      "time_series": [],
+      "content_types": {
+        "unknown": {
+          "count": 1,
+          "engagement": 0,
           "percentage": 100.0
         }
       }
@@ -133,11 +177,11 @@
       "text": "",
       "date": "2025-12-12T17:42:33",
       "engagement": {
-        "likes": -1,
+        "likes": 0,
         "comments": 6,
         "shares": 0,
         "views": 0,
-        "total": 5
+        "total": 6
       },
       "thumbnail": null
     },
@@ -147,11 +191,11 @@
       "text": "",
       "date": "2025-12-02T19:44:08",
       "engagement": {
-        "likes": -1,
+        "likes": 0,
         "comments": 1,
         "shares": 0,
         "views": 0,
-        "total": 0
+        "total": 1
       },
       "thumbnail": null
     },
@@ -161,11 +205,11 @@
       "text": "",
       "date": "2025-11-03T15:17:25",
       "engagement": {
-        "likes": -1,
+        "likes": 0,
         "comments": 1,
         "shares": 0,
         "views": 0,
-        "total": 0
+        "total": 1
       },
       "thumbnail": null
     },
@@ -175,11 +219,11 @@
       "text": "",
       "date": "2025-11-06T18:50:39",
       "engagement": {
-        "likes": -1,
+        "likes": 0,
         "comments": 0,
         "shares": 0,
         "views": 0,
-        "total": -1
+        "total": 0
       },
       "thumbnail": null
     },
@@ -189,11 +233,11 @@
       "text": "",
       "date": "2025-10-29T17:57:51",
       "engagement": {
-        "likes": -1,
+        "likes": 0,
         "comments": 0,
         "shares": 0,
         "views": 0,
-        "total": -1
+        "total": 0
       },
       "thumbnail": null
     }
@@ -209,42 +253,42 @@
     {
       "date": "2025-10-27",
       "posts": 2,
-      "engagement": -2
+      "engagement": 0
     },
     {
       "date": "2025-11-03",
       "posts": 3,
-      "engagement": -2
+      "engagement": 1
     },
     {
       "date": "2025-11-10",
       "posts": 1,
-      "engagement": -1
+      "engagement": 0
     },
     {
       "date": "2025-11-17",
       "posts": 2,
-      "engagement": -2
+      "engagement": 0
     },
     {
       "date": "2025-11-24",
       "posts": 1,
-      "engagement": -1
+      "engagement": 0
     },
     {
       "date": "2025-12-01",
       "posts": 1,
-      "engagement": 0
+      "engagement": 1
     },
     {
       "date": "2025-12-08",
       "posts": 1,
-      "engagement": 5
+      "engagement": 6
     },
     {
       "date": "2025-12-22",
       "posts": 1,
-      "engagement": -1
+      "engagement": 0
     }
   ],
   "logo": "../../branding/logos/grantees-web/new-jersey-urban-news.png",
