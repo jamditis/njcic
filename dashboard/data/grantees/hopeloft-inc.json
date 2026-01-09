@@ -376,5 +376,11 @@
       }
     ]
   },
-  "website": "https://www.hopeloft.com"
+  "website": "https://www.hopeloft.com",
+  "social": {
+    "instagram": "https://instagram.com/hopeloft",
+    "facebook": "https://facebook.com/Hopeloft",
+    "twitter": "https://twitter.com/TheHopeloft",
+    "linkedin": "https://linkedin.com/company/hopeloft"
+  }
 }

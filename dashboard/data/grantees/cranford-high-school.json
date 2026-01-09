@@ -299,5 +299,9 @@
       }
     ]
   },
-  "website": "http://chs.cranfordschools.org"
+  "website": "https://cranforddialogue.com",
+  "social": {
+    "instagram": "https://instagram.com/cranforddialogue",
+    "facebook": "https://facebook.com/CranfordPublicSchools"
+  }
 }

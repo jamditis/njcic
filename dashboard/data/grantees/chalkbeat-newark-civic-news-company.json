@@ -551,5 +551,14 @@
       }
     ]
   },
-  "website": "https://www.chalkbeat.org/newark/"
+  "website": "https://www.chalkbeat.org/newark/",
+  "social": {
+    "instagram": "https://www.instagram.com/chalkbeatorg/",
+    "facebook": "https://www.facebook.com/ChalkbeatNewark/",
+    "twitter": "https://x.com/Chalkbeat",
+    "linkedin": "https://www.linkedin.com/showcase/chalkbeat-newark/",
+    "bluesky": "https://bsky.app/profile/chalkbeat.org",
+    "youtube": "https://www.youtube.com/@Chalkbeat",
+    "tiktok": "https://www.tiktok.com/@chalkbeat"
+  }
 }

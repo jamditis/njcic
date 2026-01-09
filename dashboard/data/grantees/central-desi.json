@@ -305,5 +305,8 @@
       }
     ]
   },
-  "website": "https://centraldesi.beehiiv.com"
+  "website": "https://centraldesi.beehiiv.com",
+  "social": {
+    "instagram": "https://www.instagram.com/central_desi/"
+  }
 }

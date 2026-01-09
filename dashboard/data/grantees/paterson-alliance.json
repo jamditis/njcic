@@ -297,5 +297,9 @@
       }
     ]
   },
-  "website": "https://patersonalliance.org"
+  "website": "https://patersonalliance.org",
+  "social": {
+    "instagram": "https://www.instagram.com/patersonalliance/",
+    "facebook": "https://www.facebook.com/ThePatersonAlliance"
+  }
 }

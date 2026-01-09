@@ -161,5 +161,10 @@
       }
     ]
   },
-  "website": "https://ridgeviewecho.com"
+  "website": "https://ridgeviewecho.com",
+  "social": {
+    "instagram": "https://www.instagram.com/ridgeviewecho/",
+    "facebook": "https://www.facebook.com/RidgeViewEcho",
+    "linkedin": "https://www.linkedin.com/company/ridge-view-echo"
+  }
 }

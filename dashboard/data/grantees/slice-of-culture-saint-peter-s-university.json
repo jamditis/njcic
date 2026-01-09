@@ -659,5 +659,12 @@
       }
     ]
   },
-  "website": "https://www.sliceofculture.com"
+  "website": "https://www.sliceofculture.com",
+  "social": {
+    "instagram": "https://www.instagram.com/sliceofculture/",
+    "twitter": "https://twitter.com/slaborwithsoc",
+    "facebook": "https://www.facebook.com/SoCulOfficial",
+    "tiktok": "https://www.tiktok.com/@sliceofculture",
+    "youtube": "https://www.youtube.com/@sliceofculture"
+  }
 }

@@ -457,5 +457,12 @@
       }
     ]
   },
-  "website": "https://njhumanities.org/programs/informed-nj/#grassroots"
+  "website": "https://njhumanities.org",
+  "social": {
+    "instagram": "https://www.instagram.com/nj.humanities/",
+    "facebook": "https://www.facebook.com/NJHumanities",
+    "twitter": "https://twitter.com/njhumanities",
+    "youtube": "https://www.youtube.com/channel/UCk3IDsjzTJD1fccFpZp6sQQ",
+    "linkedin": "https://www.linkedin.com/company/njhumanities"
+  }
 }

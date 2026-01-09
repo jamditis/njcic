@@ -705,5 +705,11 @@
       }
     ]
   },
-  "website": "https://sjclimate.news"
+  "website": "https://sjclimate.news",
+  "social": {
+    "instagram": "https://www.instagram.com/sjclimatenews/",
+    "tiktok": "https://www.tiktok.com/@sjclimatenews",
+    "youtube": "https://www.youtube.com/@sjclimatenews",
+    "bluesky": "https://bsky.app/profile/sjclimatenews.bsky.social"
+  }
 }

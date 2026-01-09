@@ -107,5 +107,8 @@
       }
     ]
   },
-  "website": "https://www.radioroujeble.com"
+  "website": "https://www.radioroujeble.com",
+  "social": {
+    "facebook": "https://www.facebook.com/RadioRoujeBle"
+  }
 }

@@ -331,5 +331,10 @@
       }
     ]
   },
-  "website": "https://frontrunnernewjersey.com"
+  "website": "https://frontrunnernewjersey.com",
+  "social": {
+    "instagram": "https://instagram.com/frontrunnernewjersey",
+    "facebook": "https://facebook.com/FrontRunnerNewJersey",
+    "twitter": "https://twitter.com/FrontJersey"
+  }
 }

@@ -609,5 +609,12 @@
       }
     ]
   },
-  "website": "https://www.camdenpsu.com"
+  "website": "https://www.camdenpsu.com",
+  "social": {
+    "instagram": "https://www.instagram.com/camdenpsu/",
+    "facebook": "https://www.facebook.com/camdenparentunion/",
+    "twitter": "https://x.com/camdenpsu",
+    "tiktok": "https://www.tiktok.com/@camdenpsu",
+    "youtube": "https://www.youtube.com/@RonnieDandWesWill"
+  }
 }

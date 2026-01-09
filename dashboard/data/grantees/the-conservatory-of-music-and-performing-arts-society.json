@@ -246,5 +246,9 @@
       }
     ]
   },
-  "website": "https://www.facebook.com/COMPAStrentonnj/"
+  "website": "https://www.compascampus.org/",
+  "social": {
+    "facebook": "https://www.facebook.com/COMPAStrentonnj/",
+    "instagram": "https://www.instagram.com/compastrentonnj/"
+  }
 }

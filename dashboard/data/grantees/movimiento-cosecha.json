@@ -502,5 +502,11 @@
       }
     ]
   },
-  "website": "https://www.lahuelga.com"
+  "website": "https://www.lahuelga.com",
+  "social": {
+    "instagram": "https://www.instagram.com/cosecha_harvest/",
+    "facebook": "https://www.facebook.com/CosechaMovement",
+    "twitter": "https://twitter.com/CosechaMovement",
+    "bluesky": "https://bsky.app/profile/cosecha.bsky.social"
+  }
 }

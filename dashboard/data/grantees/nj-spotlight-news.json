@@ -733,5 +733,14 @@
       }
     ]
   },
-  "website": "https://www.njspotlightnews.org/?gad_source=1&gclid=Cj0KCQiAu8W6BhC-ARIsACEQoDD6AXC1bQlAk7_gREefC_S0FnIr46tD7EmNV97SoKrC_r04-l2YMHoaAlmNEALw_wcB"
+  "website": "https://www.njspotlightnews.org/",
+  "social": {
+    "instagram": "https://www.instagram.com/njspotlightnews/",
+    "twitter": "https://twitter.com/NJSpotlightNews",
+    "facebook": "https://www.facebook.com/NJSpotlightNews",
+    "tiktok": "https://www.tiktok.com/@njspotlightnews",
+    "youtube": "https://www.youtube.com/@njspotlightnews",
+    "linkedin": "https://www.linkedin.com/company/njspotlightnews",
+    "bluesky": "https://bsky.app/profile/njspotlightnews.org"
+  }
 }

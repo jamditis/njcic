@@ -305,5 +305,9 @@
       }
     ]
   },
-  "website": "https://www.newarkstories.com"
+  "website": "https://www.newarkstories.com",
+  "social": {
+    "instagram": "https://www.instagram.com/newarkstories/",
+    "twitter": "https://twitter.com/NewarkStories"
+  }
 }

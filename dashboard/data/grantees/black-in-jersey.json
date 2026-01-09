@@ -423,5 +423,11 @@
       }
     ]
   },
-  "website": "https://www.blackinjersey.com"
+  "website": "https://www.blackinjersey.com",
+  "social": {
+    "instagram": "https://www.instagram.com/blackinjersey/",
+    "facebook": "https://www.facebook.com/blackinjersey/",
+    "tiktok": "https://www.tiktok.com/@blackinjersey",
+    "youtube": "https://www.youtube.com/@BlackinJersey"
+  }
 }

@@ -238,5 +238,8 @@
       }
     ]
   },
-  "website": "https://dovernow.com"
+  "website": "https://dovernow.com",
+  "social": {
+    "instagram": "https://instagram.com/dovernownj"
+  }
 }

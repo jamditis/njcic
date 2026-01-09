@@ -386,5 +386,12 @@
       }
     ]
   },
-  "website": "https://www.mhanj.org"
+  "website": "https://www.mhanj.org",
+  "social": {
+    "instagram": "https://www.instagram.com/mhanj4u/",
+    "facebook": "https://www.facebook.com/MentalHealthAssociationinNewJerseyInc",
+    "twitter": "https://twitter.com/MHANJ1",
+    "youtube": "https://www.youtube.com/@mhanj",
+    "linkedin": "https://www.linkedin.com/company/mhanj"
+  }
 }

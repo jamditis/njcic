@@ -439,5 +439,12 @@
       }
     ]
   },
-  "website": "https://tworivertimes.com/"
+  "website": "https://tworivertimes.com/",
+  "social": {
+    "instagram": "https://www.instagram.com/thetworivertimes/",
+    "twitter": "https://twitter.com/TwoRiverTimes",
+    "facebook": "https://www.facebook.com/thetworivertimes",
+    "linkedin": "https://www.linkedin.com/company/the-two-river-times",
+    "youtube": "https://www.youtube.com/@thetworivertimes"
+  }
 }

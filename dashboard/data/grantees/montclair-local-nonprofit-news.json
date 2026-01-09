@@ -323,5 +323,12 @@
       }
     ]
   },
-  "website": "https://montclairlocal.news"
+  "website": "https://montclairlocal.news",
+  "social": {
+    "instagram": "https://www.instagram.com/montclairlocalnews/",
+    "facebook": "https://www.facebook.com/montclairlocalnews",
+    "twitter": "https://twitter.com/montclairlocal",
+    "bluesky": "https://bsky.app/profile/montclairlocalnews.bsky.social",
+    "linkedin": "https://www.linkedin.com/company/montclair-local"
+  }
 }

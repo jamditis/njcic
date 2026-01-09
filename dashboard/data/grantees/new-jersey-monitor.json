@@ -48,5 +48,12 @@
       }
     ]
   },
-  "website": "https://newjerseymonitor.com"
+  "website": "https://newjerseymonitor.com",
+  "social": {
+    "instagram": "https://www.instagram.com/njmonitor/",
+    "facebook": "https://www.facebook.com/NJMonitor",
+    "twitter": "https://twitter.com/NJMonitor",
+    "bluesky": "https://bsky.app/profile/newjerseymonitor.com",
+    "linkedin": "https://www.linkedin.com/company/new-jersey-monitor"
+  }
 }

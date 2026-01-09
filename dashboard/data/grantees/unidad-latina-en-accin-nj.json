@@ -239,5 +239,11 @@
       }
     ]
   },
-  "website": "https://unidadlatinanj.org"
+  "website": "https://unidadlatinanj.org",
+  "social": {
+    "instagram": "https://www.instagram.com/unidad_latina_en_accion_nj/",
+    "twitter": "https://twitter.com/unidadlatinanj1",
+    "facebook": "https://www.facebook.com/unidadlatinanj",
+    "youtube": "https://www.youtube.com/@unidadlatinanj"
+  }
 }

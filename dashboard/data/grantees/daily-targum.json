@@ -568,5 +568,11 @@
       }
     ]
   },
-  "website": "https://dailytargum.com"
+  "website": "https://dailytargum.com",
+  "social": {
+    "instagram": "https://instagram.com/dailytargum",
+    "facebook": "https://facebook.com/thedailytargum",
+    "twitter": "https://twitter.com/daily_targum",
+    "tiktok": "https://tiktok.com/@thedailytargum"
+  }
 }

@@ -130,5 +130,11 @@
       }
     ]
   },
-  "website": "https://www.70and73.com"
+  "website": "https://www.70and73.com",
+  "social": {
+    "instagram": "https://www.instagram.com/70and73com/",
+    "facebook": "https://www.facebook.com/70and73com/",
+    "twitter": "https://x.com/70and73com",
+    "linkedin": "https://www.linkedin.com/company/70and73"
+  }
 }

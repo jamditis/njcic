@@ -303,5 +303,9 @@
       }
     ]
   },
-  "website": "https://whhspatriotpress.com/category/multimedia/"
+  "website": "https://whhspatriotpress.com/",
+  "social": {
+    "instagram": "https://www.instagram.com/hillspatriotpress/",
+    "twitter": "https://twitter.com/whhspatriotpres"
+  }
 }

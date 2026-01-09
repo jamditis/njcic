@@ -324,5 +324,11 @@
       }
     ]
   },
-  "website": "https://www.njceh.org/newsroom"
+  "website": "https://www.njceh.org",
+  "social": {
+    "instagram": "https://www.instagram.com/njcoalitiontoendhomelessness/",
+    "twitter": "https://twitter.com/NJCEH",
+    "facebook": "https://www.facebook.com/njceh",
+    "linkedin": "https://www.linkedin.com/company/nj-coalition-to-end-homelessness"
+  }
 }

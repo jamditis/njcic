@@ -146,5 +146,9 @@
       }
     ]
   },
-  "website": "https://morristowngreen.com"
+  "website": "https://morristowngreen.com",
+  "social": {
+    "facebook": "https://www.facebook.com/MorristownGreen.comOfficialSite",
+    "twitter": "https://twitter.com/morristowngreen"
+  }
 }

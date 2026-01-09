@@ -322,5 +322,10 @@
       }
     ]
   },
-  "website": "https://www.mercerme.com"
+  "website": "https://www.mercerme.com",
+  "social": {
+    "instagram": "https://www.instagram.com/mercerme/",
+    "facebook": "https://www.facebook.com/mercerme",
+    "twitter": "https://twitter.com/MercerMeNJ"
+  }
 }

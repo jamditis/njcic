@@ -260,5 +260,10 @@
       }
     ]
   },
-  "website": "https://asburyparkreporter.com"
+  "website": "https://asburyparkreporter.com",
+  "social": {
+    "facebook": "https://www.facebook.com/AsburyParkReporter/",
+    "twitter": "https://x.com/AsburyParkRprtr",
+    "youtube": "https://www.youtube.com/@asburyparkreporter"
+  }
 }

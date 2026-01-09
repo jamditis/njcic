@@ -368,5 +368,10 @@
       }
     ]
   },
-  "website": "https://www.followsouthjersey.com"
+  "website": "https://followsouthjersey.com",
+  "social": {
+    "instagram": "https://instagram.com/followsouthjerseynews",
+    "facebook": "https://facebook.com/FollowSouthJerseyNews",
+    "twitter": "https://twitter.com/FollowSJNews"
+  }
 }
