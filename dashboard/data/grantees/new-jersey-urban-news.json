@@ -248,5 +248,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/new-jersey-urban-news.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/new-jersey-urban-news.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/new-jersey-urban-news.png",
+  "website": "https://www.njurbannews.com",
+  "description": "New Jersey Urban News is a Black-owned news organization serving New Jersey's African American community, covering local urban news, politics, business, education, criminal justice, and cultural issues affecting the Garden State's Black communities."
 }

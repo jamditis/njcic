@@ -263,5 +263,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/newark-water-coalition.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/newark-water-coalition.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/newark-water-coalition.png",
+  "website": "https://www.newarkwatercoalition.org",
+  "description": "Create Newark Community Voices, a digital-media and community-organizing training program for Newark youth. The program produces and distributes multimedia health and environment stories that center Newark community-information needs, with a focus on an oral history of the advocates who worked to clean up Newark\u2019s drinking water."
 }

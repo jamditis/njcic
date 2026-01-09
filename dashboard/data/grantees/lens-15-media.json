@@ -361,5 +361,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/lens-15-media.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/lens-15-media.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/lens-15-media.png",
+  "website": "https://lens15.com",
+  "description": "Launch a news agency that produces accessible, multimedia reports for and about people with disabilities in New Jersey. This grant was funded in part by support from New Jersey Health Initiatives (NJHI), a statewide grantmaking program of the Robert Wood Johnson Foundation."
 }

@@ -476,5 +476,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/daily-targum.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/daily-targum.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/daily-targum.png",
+  "website": "https://dailytargum.com",
+  "description": "The Daily Targum is Rutgers University's student-run newspaper, founded in 1869 and one of the oldest and largest college news organizations in the nation."
 }

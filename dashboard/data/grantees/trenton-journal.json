@@ -223,5 +223,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/trenton-journal.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/trenton-journal.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/trenton-journal.png",
+  "website": "https://trentonjournal.com",
+  "description": "An independently owned multimedia platform serving New Jersey's capital city through solutions-based journalism. Covers education, health, sports, city government, crime, and community events in Trenton."
 }

@@ -238,5 +238,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/central-new-jersey-network.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/central-new-jersey-network.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/central-new-jersey-network.png",
+  "website": "https://cnjn.org",
+  "description": "Central New Jersey Network is a non-profit community television station serving Somerset, Mercer, Hunterdon, and Middlesex counties. CNJN produces local programming featuring business and legislative leaders, nonprofits, and community stories while providing media production training and opportunities for aspiring journalists."
 }

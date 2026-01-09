@@ -1,6 +1,8 @@
 {
   "name": "The Jersey Vindicator",
   "slug": "the-jersey-vindicator",
+  "website": "https://jerseyvindicator.org",
+  "description": "An independent, nonpartisan newsroom founded in 2023 dedicated to investigative and public-service journalism about New Jersey government. Covers elections, public accountability, education, environment, and statewide issues.",
   "summary": {
     "total_posts": 25,
     "total_engagement": 9603,

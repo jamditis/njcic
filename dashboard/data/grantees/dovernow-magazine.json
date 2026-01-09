@@ -213,5 +213,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/dovernow-magazine.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/dovernow-magazine.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/dovernow-magazine.png",
+  "website": "https://dovernow.com",
+  "description": "DoverNow Magazine serves Dover and surrounding Morris County communities with bilingual journalism covering local news, schools, business, sports, and history in both English and Spanish."
 }

@@ -238,5 +238,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/vietlead.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/vietlead.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/vietlead.png",
+  "website": "https://www.vietlead.org/",
+  "description": "A grassroots organization rooted in Southeast Asian leadership serving Philadelphia and South Jersey. Focuses on community empowerment, civic engagement, community defense, food sovereignty, health initiatives, and youth development."
 }

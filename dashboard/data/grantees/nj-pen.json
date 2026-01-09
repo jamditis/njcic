@@ -203,5 +203,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/nj-pen.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/nj-pen.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/nj-pen.png",
+  "website": "https://www.njpen.com/",
+  "description": "Founded in 2014 by journalist Matt Skoufalos, NJ Pen is a local online news site covering issues, events, and people in Camden County, New Jersey."
 }

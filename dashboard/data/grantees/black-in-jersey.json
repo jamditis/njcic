@@ -253,5 +253,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/black-in-jersey.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/black-in-jersey.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/black-in-jersey.png",
+  "website": "https://www.blackinjersey.com",
+  "description": "Black in Jersey is a digital storytelling and media production company based in Trenton that centers Black voices and experiences across New Jersey. The organization coaches citizen journalists and produces documentary-style content including interviews, cultural reporting, and street photography that amplifies underrepresented communities."
 }

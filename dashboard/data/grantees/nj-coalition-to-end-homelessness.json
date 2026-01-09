@@ -253,5 +253,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/nj-coalition-to-end-homelessness.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/nj-coalition-to-end-homelessness.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/nj-coalition-to-end-homelessness.png",
+  "website": "https://www.njceh.org/",
+  "description": "The New Jersey Coalition to End Homelessness is a statewide nonprofit organization working to ensure homelessness in New Jersey is rare, brief, and non-recurring through advocacy, education, and systemic change."
 }

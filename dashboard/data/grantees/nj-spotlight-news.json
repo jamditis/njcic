@@ -1,6 +1,8 @@
 {
   "name": "NJ Spotlight News",
   "slug": "nj-spotlight-news",
+  "website": "https://www.njspotlightnews.org/",
+  "description": "This organization received 2 grants totaling $455,000.",
   "summary": {
     "total_posts": 63,
     "total_engagement": 12254,
@@ -634,5 +636,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/nj-spotlight-news.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/nj-spotlight-news.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/nj-spotlight-news.png",
+  "website": "https://www.njspotlightnews.org/",
+  "description": "NJ Spotlight News is NJTV's nightly news program covering news across New Jersey with a concentration on government and public policy."
 }

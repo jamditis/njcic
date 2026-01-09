@@ -263,5 +263,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/central-desi.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/central-desi.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/central-desi.png",
+  "website": "https://centraldesi.beehiiv.com",
+  "description": "Fund a fellowship opportunity that will cultivate college students as future journalists in New Jersey and train them to report, write, and engage with local communities by covering the South Asian American community."
 }

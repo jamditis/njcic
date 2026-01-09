@@ -228,5 +228,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/paterson-alliance.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/paterson-alliance.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/paterson-alliance.png",
+  "website": "https://patersonalliance.org",
+  "description": "Manage the library-based Paterson Information Hub to provide the community with training in citizen journalism and news-production technology. The alliance also aimed to convene local events to assess community-information needs."
 }

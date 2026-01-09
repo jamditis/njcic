@@ -238,5 +238,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/two-river-times.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/two-river-times.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/two-river-times.png",
+  "website": "https://tworivertimes.com/",
+  "description": "A weekly newspaper founded in 1990 based in Red Bank serving Monmouth County communities on or near the Navesink and Shrewsbury Rivers. Covers local news, government, development, and sports."
 }

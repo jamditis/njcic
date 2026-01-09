@@ -351,5 +351,7 @@
     }
   ],
   "logo": "../../branding/logos/grantees-web/public-square-amplified.png",
-  "logoThumb": "../../branding/logos/grantees-web/thumbs/public-square-amplified.png"
+  "logoThumb": "../../branding/logos/grantees-web/thumbs/public-square-amplified.png",
+  "website": "https://www.publicsq.org",
+  "description": "Public Square Amplified is a grassroots nonprofit newsroom headquartered in Newark, led by Black women with journalism and community organizing experience, creating a pipeline for local journalists of color."
 }

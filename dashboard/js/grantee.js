@@ -185,6 +185,7 @@
             slug: data.slug || slug,
             name: data.name || slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
             website: data.website || null,
+            description: data.description || null,
             totalPosts: data.totalPosts || data.posts || 0,
             totalEngagement: data.totalEngagement || data.engagement || 0,
             platforms: data.platforms || {},
@@ -267,6 +268,7 @@
             slug: data.slug || slug,
             name: data.name || slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
             website: data.website || null,
+            description: data.description || null,
             totalPosts: summary.total_posts || 0,
             totalEngagement: summary.total_engagement || 0,
             totalFollowers: summary.total_followers || 0,
@@ -371,7 +373,7 @@
     }
 
     /**
-     * Render grantee basic info (name, breadcrumb, website, logo)
+     * Render grantee basic info (name, breadcrumb, website, logo, description)
      */
     function renderGranteeInfo() {
         // Update page title
@@ -401,25 +403,43 @@
             `;
         }
 
-        // Update website link if available
-        if (granteeData.website) {
-            const websiteContainer = document.getElementById('grantee-website');
-            const websiteLink = document.getElementById('grantee-website-link');
-            const websiteText = document.getElementById('grantee-website-text');
+        // Render description if available
+        const descriptionContainer = document.getElementById('grantee-description');
+        if (descriptionContainer && granteeData.description) {
+            descriptionContainer.innerHTML = `
+                <p class="text-gray-300 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
+                    ${escapeHtml(granteeData.description)}
+                </p>
+            `;
+            descriptionContainer.classList.remove('hidden');
+        }
 
-            if (websiteContainer && websiteLink) {
-                websiteContainer.classList.remove('hidden');
-                websiteLink.href = granteeData.website;
-                if (websiteText) {
-                    // Show domain name
-                    try {
-                        const url = new URL(granteeData.website);
-                        websiteText.textContent = url.hostname;
-                    } catch {
-                        websiteText.textContent = 'Visit website';
-                    }
-                }
+        // Update website link if available - render as prominent button
+        const websiteContainer = document.getElementById('grantee-website');
+        if (websiteContainer && granteeData.website) {
+            let displayUrl = 'Visit website';
+            try {
+                const url = new URL(granteeData.website);
+                displayUrl = url.hostname.replace('www.', '');
+            } catch {
+                // Use default text
             }
+
+            websiteContainer.innerHTML = `
+                <a href="${escapeHtml(granteeData.website)}"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="inline-flex items-center gap-2 px-5 py-2.5 bg-njcic-teal hover:bg-njcic-orange text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                    </svg>
+                    <span>${displayUrl}</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                    </svg>
+                </a>
+            `;
+            websiteContainer.classList.remove('hidden');
         }
     }
 
