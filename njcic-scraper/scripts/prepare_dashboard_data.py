@@ -120,14 +120,25 @@ def calculate_top_grantees(
         # Use -inf so platforms with negative engagement (from scraper errors) still get selected
         top_platform = None
         top_platform_engagement = float("-inf")
+        top_platform_by_posts = None
+        top_platform_posts = 0
 
         for platform, data in platforms_data.items():
             if data.get("success", False):
                 metrics = data.get("engagement_metrics", {})
                 platform_engagement = sum(metrics.values())
+                platform_posts = data.get("posts_downloaded", 0) or data.get("posts_scraped", 0) or 0
                 if platform_engagement > top_platform_engagement:
                     top_platform_engagement = platform_engagement
                     top_platform = platform
+                # Track platform with most posts as fallback
+                if platform_posts > top_platform_posts:
+                    top_platform_posts = platform_posts
+                    top_platform_by_posts = platform
+
+        # Use platform with most posts if no engagement found
+        if top_platform is None and top_platform_by_posts is not None:
+            top_platform = top_platform_by_posts
 
         top_grantees.append(
             {
