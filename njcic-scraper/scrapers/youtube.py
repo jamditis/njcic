@@ -2,6 +2,7 @@
 YouTube scraper using yt-dlp.
 """
 import subprocess
+import sys
 import json
 import re
 import logging
@@ -99,9 +100,9 @@ class YouTubeScraper(BaseScraper):
             RuntimeError: If yt-dlp command fails
         """
         try:
-            # Construct yt-dlp command
+            # Construct yt-dlp command (use python -m to ensure it works on Windows)
             cmd = [
-                'yt-dlp',
+                sys.executable, '-m', 'yt_dlp',
                 '--flat-playlist',
                 '--dump-json',
                 '--playlist-end', str(max_videos),
@@ -162,7 +163,7 @@ class YouTubeScraper(BaseScraper):
 
                 video_url = f"https://www.youtube.com/watch?v={video_id}"
                 cmd = [
-                    'yt-dlp',
+                    sys.executable, '-m', 'yt_dlp',
                     '--dump-json',
                     '--no-warnings',
                     '--quiet',

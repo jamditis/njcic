@@ -7,6 +7,7 @@ extracting engagement metrics and post information from TikTok profiles.
 import re
 import json
 import subprocess
+import sys
 import time
 import random
 import os
@@ -247,9 +248,9 @@ class TikTokScraper(BaseScraper):
         """
         output_template = str(temp_dir / "%(id)s.%(ext)s")
 
-        # Build yt-dlp command with anti-bot measures
+        # Build yt-dlp command with anti-bot measures (use python -m for Windows compatibility)
         cmd = [
-            "yt-dlp",
+            sys.executable, "-m", "yt_dlp",
             "--write-info-json",      # Save metadata to .info.json
             "--skip-download",         # Don't download videos (metadata only)
             "--no-warnings",           # Suppress warnings for cleaner output
