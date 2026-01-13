@@ -1,42 +1,113 @@
 {
   "platforms": {
-    "twitter": {
-      "color": "#1DA1F2",
-      "grantees": 36,
-      "total_posts": 30,
-      "total_engagement": 50560,
-      "total_followers": 400043,
-      "avg_engagement_per_post": 1685.33,
-      "avg_posts_per_grantee": 0.8,
+    "instagram": {
+      "color": "#E1306C",
+      "grantees": 52,
+      "total_posts": 1359,
+      "total_engagement": 62848,
+      "total_followers": 338257,
+      "avg_engagement_per_post": 46.25,
+      "avg_posts_per_grantee": 26.1,
       "content_types": {
-        "unknown": {
-          "count": 30,
-          "engagement": 50560,
-          "percentage": 100.0
+        "image": {
+          "count": 390,
+          "engagement": 46922,
+          "percentage": 72.2
+        },
+        "video": {
+          "count": 150,
+          "engagement": 15659,
+          "percentage": 27.8
         }
       },
       "top_grantees": [
         {
-          "name": "Inside Climate News",
-          "slug": "inside-climate-news",
-          "posts": 8,
-          "engagement": 1128
+          "name": "Movimiento Cosecha",
+          "slug": "movimiento-cosecha",
+          "posts": 36,
+          "engagement": 16484
         },
         {
           "name": "HudPost",
           "slug": "hudpost",
-          "posts": 6,
-          "engagement": 647
+          "posts": 30,
+          "engagement": 12874
         },
         {
-          "name": "Center for Cooperative Media",
-          "slug": "center-for-cooperative-media",
-          "posts": 7,
-          "engagement": 319
+          "name": "Inside Climate News",
+          "slug": "inside-climate-news",
+          "posts": 37,
+          "engagement": 5278
         },
         {
-          "name": "70and73 com",
-          "slug": "70and73-com",
+          "name": "NJ Spotlight News",
+          "slug": "nj-spotlight-news",
+          "posts": 37,
+          "engagement": 3643
+        },
+        {
+          "name": "Trenton Journal",
+          "slug": "trenton-journal",
+          "posts": 30,
+          "engagement": 2850
+        },
+        {
+          "name": "New Labor",
+          "slug": "new-labor",
+          "posts": 36,
+          "engagement": 2760
+        },
+        {
+          "name": "VietLead",
+          "slug": "vietlead",
+          "posts": 35,
+          "engagement": 2310
+        },
+        {
+          "name": "The College of New Jersey",
+          "slug": "the-college-of-new-jersey",
+          "posts": 30,
+          "engagement": 1793
+        },
+        {
+          "name": "Black in Jersey",
+          "slug": "black-in-jersey",
+          "posts": 12,
+          "engagement": 1547
+        },
+        {
+          "name": "Newark Water Coalition",
+          "slug": "newark-water-coalition",
+          "posts": 31,
+          "engagement": 1259
+        }
+      ]
+    },
+    "linkedin": {
+      "color": "#0A66C2",
+      "grantees": 30,
+      "total_posts": 301,
+      "total_engagement": 0,
+      "total_followers": 18547,
+      "avg_engagement_per_post": 0.0,
+      "avg_posts_per_grantee": 10.0,
+      "content_types": {},
+      "top_grantees": [
+        {
+          "name": "Camden Fireworks",
+          "slug": "camden-fireworks",
+          "posts": 18,
+          "engagement": 0
+        },
+        {
+          "name": "Garden State Initiative",
+          "slug": "garden-state-initiative",
+          "posts": 17,
+          "engagement": 0
+        },
+        {
+          "name": "Central New Jersey Network",
+          "slug": "central-new-jersey-network",
           "posts": 0,
           "engagement": 0
         },
@@ -47,26 +118,38 @@
           "engagement": 0
         },
         {
-          "name": "Camden Parent   Student Union",
-          "slug": "camden-parent-student-union",
+          "name": "70and73 com",
+          "slug": "70and73-com",
           "posts": 0,
           "engagement": 0
         },
         {
-          "name": "Central New Jersey Network",
-          "slug": "central-new-jersey-network",
+          "name": "Morristown Green",
+          "slug": "morristown-green",
           "posts": 0,
           "engagement": 0
         },
         {
-          "name": "Chalkbeat Newark  Civic News Company ",
-          "slug": "chalkbeat-newark-civic-news-company",
+          "name": "Trenton Journal",
+          "slug": "trenton-journal",
+          "posts": 18,
+          "engagement": 0
+        },
+        {
+          "name": "Hopeloft",
+          "slug": "hopeloft",
           "posts": 0,
           "engagement": 0
         },
         {
-          "name": "Clinton Hill Community Action",
-          "slug": "clinton-hill-community-action",
+          "name": "Center for Cooperative Media",
+          "slug": "center-for-cooperative-media",
+          "posts": 6,
+          "engagement": 0
+        },
+        {
+          "name": "VietLead",
+          "slug": "vietlead",
           "posts": 0,
           "engagement": 0
         }
@@ -74,48 +157,48 @@
     },
     "facebook": {
       "color": "#1877F2",
-      "grantees": 45,
-      "total_posts": 52,
-      "total_engagement": 0,
-      "total_followers": 686951,
-      "avg_engagement_per_post": 0.0,
-      "avg_posts_per_grantee": 1.2,
+      "grantees": 48,
+      "total_posts": 284,
+      "total_engagement": 8,
+      "total_followers": 436646,
+      "avg_engagement_per_post": 0.03,
+      "avg_posts_per_grantee": 5.9,
       "content_types": {
         "unknown": {
-          "count": 52,
+          "count": 49,
           "engagement": 0,
           "percentage": 100.0
         }
       },
       "top_grantees": [
         {
-          "name": "70and73 com",
-          "slug": "70and73-com",
-          "posts": 1,
-          "engagement": 0
-        },
-        {
-          "name": "Asbury Park Media Collective",
-          "slug": "asbury-park-media-collective",
-          "posts": 1,
-          "engagement": 0
-        },
-        {
-          "name": "Black in Jersey",
-          "slug": "black-in-jersey",
-          "posts": 1,
-          "engagement": 0
-        },
-        {
-          "name": "Camden Parent   Student Union",
-          "slug": "camden-parent-student-union",
-          "posts": 1,
-          "engagement": 0
-        },
-        {
           "name": "Center for Cooperative Media",
           "slug": "center-for-cooperative-media",
-          "posts": 1,
+          "posts": 13,
+          "engagement": 8
+        },
+        {
+          "name": "Camden Fireworks",
+          "slug": "camden-fireworks",
+          "posts": 5,
+          "engagement": 0
+        },
+        {
+          "name": "Unidad Latina en Acci\u00f3n NJ",
+          "slug": "unidad-latina-en-accin-nj",
+          "posts": 16,
+          "engagement": 0
+        },
+        {
+          "name": "Movimiento Cosecha",
+          "slug": "movimiento-cosecha",
+          "posts": 2,
+          "engagement": 0
+        },
+        {
+          "name": "Garden State Initiative",
+          "slug": "garden-state-initiative",
+          "posts": 22,
           "engagement": 0
         },
         {
@@ -125,64 +208,70 @@
           "engagement": 0
         },
         {
-          "name": "Chalkbeat Newark  Civic News Company ",
-          "slug": "chalkbeat-newark-civic-news-company",
+          "name": "Latino Spirit Media",
+          "slug": "latino-spirit-media",
+          "posts": 5,
+          "engagement": 0
+        },
+        {
+          "name": "The Conservatory of Music and Performing Arts Society",
+          "slug": "the-conservatory-of-music-and-performing-arts-society",
+          "posts": 0,
+          "engagement": 0
+        },
+        {
+          "name": "The Tower at Princeton High School",
+          "slug": "the-tower-at-princeton-high-school",
           "posts": 1,
           "engagement": 0
         },
         {
-          "name": "Clinton Hill Community Action",
-          "slug": "clinton-hill-community-action",
-          "posts": 1,
-          "engagement": 0
-        },
-        {
-          "name": "Corporation for New Jersey Local Media",
-          "slug": "corporation-for-new-jersey-local-media",
-          "posts": 1,
-          "engagement": 0
-        },
-        {
-          "name": "Cranford High School",
-          "slug": "cranford-high-school",
-          "posts": 1,
+          "name": "Asbury Park Media Collective",
+          "slug": "asbury-park-media-collective",
+          "posts": 7,
           "engagement": 0
         }
       ]
     },
     "youtube": {
       "color": "#FF0000",
-      "grantees": 23,
-      "total_posts": 697,
-      "total_engagement": 28054,
+      "grantees": 25,
+      "total_posts": 702,
+      "total_engagement": 4650,
       "total_followers": 0,
-      "avg_engagement_per_post": 40.25,
-      "avg_posts_per_grantee": 30.3,
+      "avg_engagement_per_post": 6.62,
+      "avg_posts_per_grantee": 28.1,
       "content_types": {
         "video": {
-          "count": 697,
-          "engagement": 28054,
+          "count": 647,
+          "engagement": 1649,
           "percentage": 100.0
         }
       },
       "top_grantees": [
         {
-          "name": "Inside Climate News",
-          "slug": "inside-climate-news",
-          "posts": 25,
-          "engagement": 290
+          "name": "NJ Spotlight News",
+          "slug": "nj-spotlight-news",
+          "posts": 0,
+          "engagement": 2968
+        },
+        {
+          "name": "Center for Cooperative Media",
+          "slug": "center-for-cooperative-media",
+          "posts": 0,
+          "engagement": 512
         },
         {
           "name": "Chalkbeat Newark  Civic News Company ",
           "slug": "chalkbeat-newark-civic-news-company",
-          "posts": 45,
-          "engagement": 242
+          "posts": 50,
+          "engagement": 230
         },
         {
           "name": "South Jersey Climate News Project",
           "slug": "south-jersey-climate-news-project",
           "posts": 37,
-          "engagement": 197
+          "engagement": 177
         },
         {
           "name": "The Tower at Princeton High School",
@@ -194,19 +283,13 @@
           "name": "Central New Jersey Network",
           "slug": "central-new-jersey-network",
           "posts": 51,
-          "engagement": 138
-        },
-        {
-          "name": "Clinton Hill Community Action",
-          "slug": "clinton-hill-community-action",
-          "posts": 51,
-          "engagement": 122
+          "engagement": 117
         },
         {
           "name": "Black in Jersey",
           "slug": "black-in-jersey",
           "posts": 18,
-          "engagement": 107
+          "engagement": 101
         },
         {
           "name": "Mental Health Association of New Jersey",
@@ -215,248 +298,28 @@
           "engagement": 64
         },
         {
+          "name": "Lens 15 Media",
+          "slug": "lens-15-media",
+          "posts": 24,
+          "engagement": 55
+        },
+        {
           "name": "Asbury Park Media Collective",
           "slug": "asbury-park-media-collective",
           "posts": 50,
-          "engagement": 58
-        }
-      ]
-    },
-    "linkedin": {
-      "color": "#0A66C2",
-      "grantees": 16,
-      "total_posts": 0,
-      "total_engagement": 0,
-      "total_followers": 4939,
-      "avg_engagement_per_post": 0.0,
-      "avg_posts_per_grantee": 0.0,
-      "content_types": {},
-      "top_grantees": [
-        {
-          "name": "Beyond Expectations",
-          "slug": "beyond-expectations",
-          "posts": 0,
-          "engagement": 0
-        },
-        {
-          "name": "Camden Fireworks",
-          "slug": "camden-fireworks",
-          "posts": 0,
-          "engagement": 0
-        },
-        {
-          "name": "Central New Jersey Network",
-          "slug": "central-new-jersey-network",
-          "posts": 0,
-          "engagement": 0
-        },
-        {
-          "name": "Corporation for New Jersey Local Media",
-          "slug": "corporation-for-new-jersey-local-media",
-          "posts": 0,
-          "engagement": 0
-        },
-        {
-          "name": "Garden State Initiative",
-          "slug": "garden-state-initiative",
-          "posts": 0,
-          "engagement": 0
-        },
-        {
-          "name": "Healthy NewsWorks",
-          "slug": "healthy-newsworks",
-          "posts": 0,
-          "engagement": 0
-        },
-        {
-          "name": "Hopeloft",
-          "slug": "hopeloft",
-          "posts": 0,
-          "engagement": 0
-        },
-        {
-          "name": "Hopeloft  Inc ",
-          "slug": "hopeloft-inc",
-          "posts": 0,
-          "engagement": 0
-        },
-        {
-          "name": "HudPost",
-          "slug": "hudpost",
-          "posts": 0,
-          "engagement": 0
-        },
-        {
-          "name": "NJ Coalition to End Homelessness",
-          "slug": "nj-coalition-to-end-homelessness",
-          "posts": 0,
-          "engagement": 0
-        }
-      ]
-    },
-    "tiktok": {
-      "color": "#000000",
-      "grantees": 16,
-      "total_posts": 308,
-      "total_engagement": 1693492,
-      "total_followers": 0,
-      "avg_engagement_per_post": 5498.35,
-      "avg_posts_per_grantee": 19.2,
-      "content_types": {
-        "video": {
-          "count": 308,
-          "engagement": 1693492,
-          "percentage": 100.0
-        }
-      },
-      "top_grantees": [
-        {
-          "name": "Global Patriot Newspapers online",
-          "slug": "global-patriot-newspapers-online",
-          "posts": 26,
-          "engagement": 242821
-        },
-        {
-          "name": "HudPost",
-          "slug": "hudpost",
-          "posts": 26,
-          "engagement": 105139
-        },
-        {
-          "name": "NJ Spotlight News",
-          "slug": "nj-spotlight-news",
-          "posts": 26,
-          "engagement": 8504
-        },
-        {
-          "name": "The College of New Jersey",
-          "slug": "the-college-of-new-jersey",
-          "posts": 26,
-          "engagement": 2967
-        },
-        {
-          "name": "Slice of Culture   Saint Peter s University",
-          "slug": "slice-of-culture-saint-peter-s-university",
-          "posts": 26,
-          "engagement": 1791
-        },
-        {
-          "name": "Daily Targum",
-          "slug": "daily-targum",
-          "posts": 26,
-          "engagement": 1612
-        },
-        {
-          "name": "The Daily Targum  Targum Publishing Co  ",
-          "slug": "the-daily-targum-targum-publishing-co",
-          "posts": 26,
-          "engagement": 1612
-        },
-        {
-          "name": "South Jersey Climate News Project",
-          "slug": "south-jersey-climate-news-project",
-          "posts": 13,
-          "engagement": 840
-        },
-        {
-          "name": "Lens 15 Media",
-          "slug": "lens-15-media",
-          "posts": 26,
-          "engagement": 496
-        }
-      ]
-    },
-    "instagram": {
-      "color": "#E1306C",
-      "grantees": 48,
-      "total_posts": 576,
-      "total_engagement": 626252,
-      "total_followers": 7033019,
-      "avg_engagement_per_post": 1087.24,
-      "avg_posts_per_grantee": 12.0,
-      "content_types": {
-        "video": {
-          "count": 160,
-          "engagement": 186634,
-          "percentage": 27.8
-        },
-        "image": {
-          "count": 416,
-          "engagement": 439618,
-          "percentage": 72.2
-        }
-      },
-      "top_grantees": [
-        {
-          "name": "Movimiento Cosecha",
-          "slug": "movimiento-cosecha",
-          "posts": 12,
-          "engagement": 16484
-        },
-        {
-          "name": "HudPost",
-          "slug": "hudpost",
-          "posts": 12,
-          "engagement": 12874
-        },
-        {
-          "name": "Inside Climate News",
-          "slug": "inside-climate-news",
-          "posts": 12,
-          "engagement": 5278
-        },
-        {
-          "name": "NJ Spotlight News",
-          "slug": "nj-spotlight-news",
-          "posts": 12,
-          "engagement": 3643
-        },
-        {
-          "name": "Trenton Journal",
-          "slug": "trenton-journal",
-          "posts": 12,
-          "engagement": 2850
-        },
-        {
-          "name": "New Labor",
-          "slug": "new-labor",
-          "posts": 12,
-          "engagement": 2760
-        },
-        {
-          "name": "VietLead",
-          "slug": "vietlead",
-          "posts": 12,
-          "engagement": 2310
-        },
-        {
-          "name": "The College of New Jersey",
-          "slug": "the-college-of-new-jersey",
-          "posts": 12,
-          "engagement": 1793
-        },
-        {
-          "name": "Black in Jersey",
-          "slug": "black-in-jersey",
-          "posts": 12,
-          "engagement": 1547
+          "engagement": 51
         }
       ]
     },
     "bluesky": {
       "color": "#0085FF",
-      "grantees": 9,
-      "total_posts": 212,
-      "total_engagement": 10906,
-      "total_followers": 52152,
-      "avg_engagement_per_post": 51.44,
-      "avg_posts_per_grantee": 23.6,
+      "grantees": 11,
+      "total_posts": 13808,
+      "total_engagement": 21271,
+      "total_followers": 61260,
+      "avg_engagement_per_post": 1.54,
+      "avg_posts_per_grantee": 1255.3,
       "content_types": {
-        "link": {
-          "count": 137,
-          "engagement": 1237,
-          "percentage": 64.6
-        },
         "text": {
           "count": 11,
           "engagement": 56,
@@ -467,71 +330,238 @@
           "engagement": 143,
           "percentage": 27.8
         },
-        "quote": {
-          "count": 4,
-          "engagement": 21,
-          "percentage": 1.9
+        "link": {
+          "count": 137,
+          "engagement": 1237,
+          "percentage": 64.6
         },
         "video": {
           "count": 1,
           "engagement": 9449,
           "percentage": 0.5
+        },
+        "quote": {
+          "count": 4,
+          "engagement": 21,
+          "percentage": 1.9
         }
       },
       "top_grantees": [
         {
           "name": "The Jersey Vindicator",
           "slug": "the-jersey-vindicator",
-          "posts": 25,
-          "engagement": 9603
+          "posts": 268,
+          "engagement": 9761
+        },
+        {
+          "name": "Center for Cooperative Media",
+          "slug": "center-for-cooperative-media",
+          "posts": 78,
+          "engagement": 8752
         },
         {
           "name": "Inside Climate News",
           "slug": "inside-climate-news",
-          "posts": 25,
-          "engagement": 690
+          "posts": 834,
+          "engagement": 1471
         },
         {
           "name": "Movimiento Cosecha",
           "slug": "movimiento-cosecha",
-          "posts": 12,
+          "posts": 8,
           "engagement": 271
-        },
-        {
-          "name": "Chalkbeat Newark  Civic News Company ",
-          "slug": "chalkbeat-newark-civic-news-company",
-          "posts": 25,
-          "engagement": 109
         },
         {
           "name": "NJ Spotlight News",
           "slug": "nj-spotlight-news",
-          "posts": 25,
-          "engagement": 107
+          "posts": 460,
+          "engagement": 253
         },
         {
-          "name": "Public Square Amplified",
-          "slug": "public-square-amplified",
-          "posts": 25,
-          "engagement": 58
+          "name": "New Jersey Monitor",
+          "slug": "new-jersey-monitor",
+          "posts": 4662,
+          "engagement": 252
+        },
+        {
+          "name": "Chalkbeat Newark  Civic News Company ",
+          "slug": "chalkbeat-newark-civic-news-company",
+          "posts": 5548,
+          "engagement": 245
         },
         {
           "name": "Montclair Local Nonprofit News",
           "slug": "montclair-local-nonprofit-news",
-          "posts": 25,
-          "engagement": 35
+          "posts": 1713,
+          "engagement": 142
+        },
+        {
+          "name": "Public Square Amplified",
+          "slug": "public-square-amplified",
+          "posts": 24,
+          "engagement": 58
         },
         {
           "name": "The Jersey Bee",
           "slug": "the-jersey-bee",
-          "posts": 25,
-          "engagement": 26
+          "posts": 154,
+          "engagement": 50
+        }
+      ]
+    },
+    "twitter": {
+      "color": "#1DA1F2",
+      "grantees": 45,
+      "total_posts": 2033,
+      "total_engagement": 1775,
+      "total_followers": 250385,
+      "avg_engagement_per_post": 0.87,
+      "avg_posts_per_grantee": 45.2,
+      "content_types": {
+        "unknown": {
+          "count": 14,
+          "engagement": 1775,
+          "percentage": 100.0
+        }
+      },
+      "top_grantees": [
+        {
+          "name": "Inside Climate News",
+          "slug": "inside-climate-news",
+          "posts": 52,
+          "engagement": 1128
+        },
+        {
+          "name": "HudPost",
+          "slug": "hudpost",
+          "posts": 54,
+          "engagement": 647
+        },
+        {
+          "name": "Movimiento Cosecha",
+          "slug": "movimiento-cosecha",
+          "posts": 50,
+          "engagement": 0
+        },
+        {
+          "name": "Garden State Initiative",
+          "slug": "garden-state-initiative",
+          "posts": 51,
+          "engagement": 0
+        },
+        {
+          "name": "Central New Jersey Network",
+          "slug": "central-new-jersey-network",
+          "posts": 53,
+          "engagement": 0
+        },
+        {
+          "name": "Latino Spirit Media",
+          "slug": "latino-spirit-media",
+          "posts": 53,
+          "engagement": 0
+        },
+        {
+          "name": "The Conservatory of Music and Performing Arts Society",
+          "slug": "the-conservatory-of-music-and-performing-arts-society",
+          "posts": 0,
+          "engagement": 0
+        },
+        {
+          "name": "TAPinto Hasbrouck Heights",
+          "slug": "tapinto-hasbrouck-heights",
+          "posts": 51,
+          "engagement": 0
+        },
+        {
+          "name": "Asbury Park Media Collective",
+          "slug": "asbury-park-media-collective",
+          "posts": 0,
+          "engagement": 0
+        },
+        {
+          "name": "70and73 com",
+          "slug": "70and73-com",
+          "posts": 50,
+          "engagement": 0
+        }
+      ]
+    },
+    "tiktok": {
+      "color": "#000000",
+      "grantees": 15,
+      "total_posts": 389,
+      "total_engagement": 365179,
+      "total_followers": 598174,
+      "avg_engagement_per_post": 938.76,
+      "avg_posts_per_grantee": 25.9,
+      "content_types": {
+        "video": {
+          "count": 256,
+          "engagement": 364843,
+          "percentage": 100.0
+        }
+      },
+      "top_grantees": [
+        {
+          "name": "Global Patriot Newspapers online",
+          "slug": "global-patriot-newspapers-online",
+          "posts": 44,
+          "engagement": 242821
+        },
+        {
+          "name": "HudPost",
+          "slug": "hudpost",
+          "posts": 46,
+          "engagement": 105139
+        },
+        {
+          "name": "NJ Spotlight News",
+          "slug": "nj-spotlight-news",
+          "posts": 44,
+          "engagement": 8504
+        },
+        {
+          "name": "The College of New Jersey",
+          "slug": "the-college-of-new-jersey",
+          "posts": 46,
+          "engagement": 2967
+        },
+        {
+          "name": "Slice of Culture   Saint Peter s University",
+          "slug": "slice-of-culture-saint-peter-s-university",
+          "posts": 11,
+          "engagement": 1791
+        },
+        {
+          "name": "Daily Targum",
+          "slug": "daily-targum",
+          "posts": 26,
+          "engagement": 1626
         },
         {
           "name": "South Jersey Climate News Project",
           "slug": "south-jersey-climate-news-project",
-          "posts": 25,
-          "engagement": 7
+          "posts": 11,
+          "engagement": 840
+        },
+        {
+          "name": "Lens 15 Media",
+          "slug": "lens-15-media",
+          "posts": 45,
+          "engagement": 496
+        },
+        {
+          "name": "Inside Climate News",
+          "slug": "inside-climate-news",
+          "posts": 16,
+          "engagement": 355
+        },
+        {
+          "name": "Center for Cooperative Media",
+          "slug": "center-for-cooperative-media",
+          "posts": 34,
+          "engagement": 322
         }
       ]
     }
@@ -540,27 +570,27 @@
     "by_engagement": [
       {
         "platform": "tiktok",
-        "engagement": 1693492
+        "engagement": 365179
       },
       {
         "platform": "instagram",
-        "engagement": 626252
-      },
-      {
-        "platform": "twitter",
-        "engagement": 50560
-      },
-      {
-        "platform": "youtube",
-        "engagement": 28054
+        "engagement": 62848
       },
       {
         "platform": "bluesky",
-        "engagement": 10906
+        "engagement": 21271
+      },
+      {
+        "platform": "youtube",
+        "engagement": 4650
+      },
+      {
+        "platform": "twitter",
+        "engagement": 1775
       },
       {
         "platform": "facebook",
-        "engagement": 0
+        "engagement": 8
       },
       {
         "platform": "linkedin",
@@ -569,34 +599,34 @@
     ],
     "by_posts": [
       {
-        "platform": "youtube",
-        "posts": 697
-      },
-      {
-        "platform": "instagram",
-        "posts": 576
-      },
-      {
-        "platform": "tiktok",
-        "posts": 308
-      },
-      {
         "platform": "bluesky",
-        "posts": 212
-      },
-      {
-        "platform": "facebook",
-        "posts": 52
+        "posts": 13808
       },
       {
         "platform": "twitter",
-        "posts": 30
+        "posts": 2033
+      },
+      {
+        "platform": "instagram",
+        "posts": 1359
+      },
+      {
+        "platform": "youtube",
+        "posts": 702
+      },
+      {
+        "platform": "tiktok",
+        "posts": 389
       },
       {
         "platform": "linkedin",
-        "posts": 0
+        "posts": 301
+      },
+      {
+        "platform": "facebook",
+        "posts": 284
       }
     ]
   },
-  "generated_at": "2026-01-08T23:13:30.344479"
+  "generated_at": "2026-01-13T22:29:58.082023"
 }
