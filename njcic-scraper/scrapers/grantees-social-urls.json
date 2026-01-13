@@ -1,0 +1,947 @@
+{
+  "grantees": [
+    {
+      "name": "70and73 com",
+      "slug": "70and73-com",
+      "website": "https://www.70and73.com",
+      "social": {
+        "instagram": "https://www.instagram.com/70and73com/",
+        "facebook": "https://www.facebook.com/70and73com/",
+        "twitter": "https://x.com/70and73com",
+        "linkedin": "https://www.linkedin.com/company/70and73",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Asbury Park Media Collective",
+      "slug": "asbury-park-media-collective",
+      "website": "https://asburyparkreporter.com",
+      "social": {
+        "instagram": "https://www.instagram.com/asburyparkreporter/",
+        "facebook": "https://www.facebook.com/AsburyParkReporter/",
+        "twitter": "https://x.com/AsburyParkRprtr",
+        "linkedin": "https://www.linkedin.com/company/asburyparkreporter",
+        "youtube": "https://www.youtube.com/@asburyparkreporter",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Beyond Expectations",
+      "slug": "beyond-expectations",
+      "website": "https://beyondexp.net",
+      "social": {
+        "instagram": "https://www.instagram.com/hellobeyondexpectations/",
+        "facebook": "",
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/company/beyond-expectations-inc-",
+        "youtube": "https://www.youtube.com/@BeyondExpectationsTV",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Black in Jersey",
+      "slug": "black-in-jersey",
+      "website": "https://www.blackinjersey.com",
+      "social": {
+        "instagram": "https://www.instagram.com/blackinjersey/",
+        "facebook": "https://www.facebook.com/blackinjersey/",
+        "twitter": "",
+        "linkedin": "",
+        "youtube": "https://www.youtube.com/@BlackinJersey",
+        "tiktok": "https://www.tiktok.com/@blackinjersey",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Camden Fireworks",
+      "slug": "camden-fireworks",
+      "website": "https://camdenfireworks.org",
+      "social": {
+        "instagram": "https://www.instagram.com/camdenfireworks/",
+        "facebook": "",
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/company/camdenfireworks",
+        "youtube": "https://www.youtube.com/@camdenfireworks2755",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Camden Parent Student Union",
+      "slug": "camden-parent-student-union",
+      "website": "https://www.camdenpsu.com",
+      "social": {
+        "instagram": "https://www.instagram.com/camdenpsu/",
+        "facebook": "https://www.facebook.com/camdenparentunion/",
+        "twitter": "https://x.com/camdenpsu",
+        "linkedin": "",
+        "youtube": "https://www.youtube.com/@RonnieDandWesWill",
+        "tiktok": "https://www.tiktok.com/@camdenpsu",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Center for Cooperative Media",
+      "slug": "center-for-cooperative-media",
+      "website": "https://centerforcooperativemedia.org",
+      "social": {
+        "instagram": "https://www.instagram.com/centerforcooperativemedia/",
+        "facebook": "https://www.facebook.com/centerforcooperativemedia",
+        "twitter": "https://x.com/CenterCoopMedia",
+        "linkedin": "https://www.linkedin.com/company/center-for-cooperative-media",
+        "youtube": "https://www.youtube.com/@CenterCoopMedia",
+        "tiktok": "https://www.tiktok.com/@centercooperativemedia",
+        "bluesky": "https://bsky.app/profile/centercoopmedia.bsky.social",
+        "threads": "https://www.threads.com/@centerforcooperativemedia"
+      }
+    },
+    {
+      "name": "Central Desi",
+      "slug": "central-desi",
+      "website": "https://centraldesi.beehiiv.com",
+      "social": {
+        "instagram": "https://www.instagram.com/central_desi/",
+        "facebook": "",
+        "twitter": "",
+        "linkedin": "",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Central New Jersey Network",
+      "slug": "central-new-jersey-network",
+      "website": "https://cnjn.org",
+      "social": {
+        "instagram": "https://www.instagram.com/centraljerseytv/",
+        "facebook": "https://www.facebook.com/CentralNewJerseyNetwork/",
+        "twitter": "https://x.com/CNJNTV",
+        "linkedin": "https://www.linkedin.com/company/central-new-jersey-network",
+        "youtube": "https://www.youtube.com/@CNJNTV",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Chalkbeat Newark (Civic News Company)",
+      "slug": "chalkbeat-newark-civic-news-company",
+      "website": "https://www.chalkbeat.org/newark/",
+      "social": {
+        "instagram": "https://www.instagram.com/chalkbeatorg/",
+        "facebook": "https://www.facebook.com/ChalkbeatNewark/",
+        "twitter": "https://x.com/Chalkbeat",
+        "linkedin": "https://www.linkedin.com/showcase/chalkbeat-newark/",
+        "youtube": "https://www.youtube.com/@Chalkbeat",
+        "tiktok": "https://www.tiktok.com/@chalkbeat",
+        "bluesky": "https://bsky.app/profile/chalkbeat.org",
+        "threads": "https://www.threads.net/@chalkbeatorg"
+      }
+    },
+    {
+      "name": "Clinton Hill Community Action",
+      "slug": "clinton-hill-community-action",
+      "website": "https://clintonhillaction.org",
+      "social": {
+        "instagram": "https://www.instagram.com/clintonhillcommunityaction/",
+        "facebook": "https://www.facebook.com/clintonhillcommunityaction/",
+        "twitter": "https://x.com/CHCAction",
+        "linkedin": "https://www.linkedin.com/company/clinton-hill-community-action-org",
+        "youtube": "https://www.youtube.com/@ClintonHillCommunityAction",
+        "tiktok": "https://www.tiktok.com/@clintonhillaction",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "coLAB Arts",
+      "slug": "colab-arts",
+      "website": "https://colab-arts.org",
+      "social": {
+        "instagram": "https://instagram.com/colabarts",
+        "facebook": "https://facebook.com/colabarts",
+        "twitter": "https://x.com/colabarts",
+        "linkedin": "https://linkedin.com/company/colab-arts",
+        "youtube": "https://youtube.com/@colabarts4468",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": "https://threads.net/@colabarts"
+      }
+    },
+    {
+      "name": "Corporation for New Jersey Local Media",
+      "slug": "corporation-for-new-jersey-local-media",
+      "website": "https://newsweneed.org",
+      "social": {
+        "instagram": "https://instagram.com/njlocalmedia",
+        "facebook": "https://facebook.com/NJLocalMedia",
+        "twitter": "https://x.com/njlocalmedia",
+        "linkedin": "https://linkedin.com/company/cnjlm",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Cranford High School",
+      "slug": "cranford-high-school",
+      "website": "https://cranforddialogue.com",
+      "social": {
+        "instagram": "https://instagram.com/cranforddialogue",
+        "facebook": "https://facebook.com/CranfordPublicSchools",
+        "twitter": "",
+        "linkedin": "",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Daily Targum",
+      "slug": "daily-targum",
+      "website": "https://dailytargum.com",
+      "social": {
+        "instagram": "https://instagram.com/dailytargum",
+        "facebook": "https://facebook.com/thedailytargum",
+        "twitter": "https://x.com/daily_targum",
+        "linkedin": "https://www.linkedin.com/company/the-daily-targum-official",
+        "youtube": "",
+        "tiktok": "https://tiktok.com/@thedailytargum",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "DoverNow Magazine",
+      "slug": "dovernow-magazine",
+      "website": "https://dovernow.com",
+      "social": {
+        "instagram": "https://instagram.com/dovernownj",
+        "facebook": "",
+        "twitter": "",
+        "linkedin": "",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Front Runner New Jersey",
+      "slug": "front-runner-new-jersey",
+      "website": "https://frontrunnernewjersey.com",
+      "social": {
+        "instagram": "https://instagram.com/frontrunnernewjersey",
+        "facebook": "https://facebook.com/FrontRunnerNewJersey",
+        "twitter": "https://x.com/FrontJersey",
+        "linkedin": "https://www.linkedin.com/company/frontrunnernewjersey",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Garden State Initiative",
+      "slug": "garden-state-initiative",
+      "website": "https://www.gardenstateinitiative.org",
+      "social": {
+        "instagram": "https://www.instagram.com/gardenstateinitiative/",
+        "facebook": "https://facebook.com/GardenStateInitiative",
+        "twitter": "https://x.com/GSI_NewJersey",
+        "linkedin": "https://linkedin.com/company/garden-state-initiative",
+        "youtube": "https://youtube.com/@GardenStateInitiative",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Global Patriot Newspapers online",
+      "slug": "global-patriot-newspapers-online",
+      "website": "https://www.globalpatriotnews.com",
+      "social": {
+        "instagram": "",
+        "facebook": "",
+        "twitter": "https://x.com/globalpatriot",
+        "linkedin": "",
+        "youtube": "",
+        "tiktok": "https://tiktok.com/@globalpatriot",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Hammonton Gazette",
+      "slug": "hammonton-gazette",
+      "website": "https://www.hammontongazette.com",
+      "social": {
+        "instagram": "https://instagram.com/hammgazette",
+        "facebook": "https://facebook.com/HammontonGazette",
+        "twitter": "https://x.com/HammGazette",
+        "linkedin": "",
+        "youtube": "https://youtube.com/@hammontongazette",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Healthy NewsWorks",
+      "slug": "healthy-newsworks",
+      "website": "https://www.healthynewsworks.org",
+      "social": {
+        "instagram": "https://instagram.com/healthynewsworks",
+        "facebook": "https://facebook.com/HealthyNewsWorks",
+        "twitter": "https://x.com/HealthyNewsWks",
+        "linkedin": "https://linkedin.com/company/healthy-newsworks",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Hopeloft Inc",
+      "slug": "hopeloft-inc",
+      "website": "https://www.hopeloft.com",
+      "social": {
+        "instagram": "https://instagram.com/hopeloft",
+        "facebook": "https://facebook.com/Hopeloft",
+        "twitter": "https://x.com/TheHopeloft",
+        "linkedin": "https://linkedin.com/company/hopeloft",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Hopeloft (Follow South Jersey)",
+      "slug": "hopeloft",
+      "website": "https://followsouthjersey.com",
+      "social": {
+        "instagram": "https://instagram.com/followsouthjerseynews",
+        "facebook": "https://facebook.com/FollowSouthJerseyNews",
+        "twitter": "https://x.com/FollowSJNews",
+        "linkedin": "",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "HudPost",
+      "slug": "hudpost",
+      "website": "https://hudpost.com",
+      "social": {
+        "instagram": "https://www.instagram.com/hudpost/",
+        "facebook": "https://www.facebook.com/hudpost",
+        "twitter": "https://x.com/hudpost",
+        "linkedin": "https://www.linkedin.com/company/hudpost",
+        "youtube": "https://www.youtube.com/@HudPost",
+        "tiktok": "https://www.tiktok.com/@hudpost",
+        "bluesky": "",
+        "threads": "https://www.threads.net/@hudpost"
+      }
+    },
+    {
+      "name": "Inside Climate News",
+      "slug": "inside-climate-news",
+      "website": "https://insideclimatenews.org",
+      "social": {
+        "instagram": "https://www.instagram.com/insideclimatenews/",
+        "facebook": "https://www.facebook.com/insideclimatenews",
+        "twitter": "https://x.com/insideclimate",
+        "linkedin": "https://www.linkedin.com/company/inside-climate-news",
+        "youtube": "https://www.youtube.com/@insideclimatenews",
+        "tiktok": "https://www.tiktok.com/@insideclimatenews",
+        "bluesky": "https://bsky.app/profile/insideclimatenews.org",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Latino Spirit Media",
+      "slug": "latino-spirit-media",
+      "website": "https://thelatinospirit.com",
+      "social": {
+        "instagram": "https://www.instagram.com/thelatinospirit/",
+        "facebook": "https://www.facebook.com/thelatinospirit",
+        "twitter": "https://x.com/TheLatinoSpirit",
+        "linkedin": "https://www.linkedin.com/company/the-latino-spirit",
+        "youtube": "https://www.youtube.com/@thelatinospirit",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Lens 15 Media",
+      "slug": "lens-15-media",
+      "website": "https://lens15.com",
+      "social": {
+        "instagram": "https://www.instagram.com/lens15media/",
+        "facebook": "https://www.facebook.com/lens15media",
+        "twitter": "https://x.com/lens15media",
+        "linkedin": "",
+        "youtube": "https://www.youtube.com/@lens15media",
+        "tiktok": "https://www.tiktok.com/@lens15media",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Mental Health Association of New Jersey",
+      "slug": "mental-health-association-of-new-jersey",
+      "website": "https://www.mhanj.org",
+      "social": {
+        "instagram": "https://www.instagram.com/mhanj4u/",
+        "facebook": "https://www.facebook.com/MentalHealthAssociationinNewJerseyInc",
+        "twitter": "https://x.com/MHANJ1",
+        "linkedin": "https://www.linkedin.com/company/mhanj",
+        "youtube": "https://www.youtube.com/@mhanj",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "MercerMe",
+      "slug": "mercerme",
+      "website": "https://www.mercerme.com",
+      "social": {
+        "instagram": "https://www.instagram.com/mercerme/",
+        "facebook": "https://www.facebook.com/mercerme",
+        "twitter": "https://x.com/MercerMeNJ",
+        "linkedin": "https://www.linkedin.com/company/mercerme",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Montclair Local Nonprofit News",
+      "slug": "montclair-local-nonprofit-news",
+      "website": "https://montclairlocal.news",
+      "social": {
+        "instagram": "https://www.instagram.com/montclairlocalnews/",
+        "facebook": "https://www.facebook.com/montclairlocalnews",
+        "twitter": "https://x.com/montclairlocal",
+        "linkedin": "https://www.linkedin.com/company/montclair-local",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "https://bsky.app/profile/montclairlocalnews.bsky.social",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Morristown Green",
+      "slug": "morristown-green",
+      "website": "https://morristowngreen.com",
+      "social": {
+        "instagram": "",
+        "facebook": "https://www.facebook.com/MorristownGreen.comOfficialSite",
+        "twitter": "https://x.com/morristowngreen",
+        "linkedin": "",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Movimiento Cosecha",
+      "slug": "movimiento-cosecha",
+      "website": "https://www.lahuelga.com",
+      "social": {
+        "instagram": "https://www.instagram.com/cosecha_harvest/",
+        "facebook": "https://www.facebook.com/CosechaMovement",
+        "twitter": "https://x.com/CosechaMovement",
+        "linkedin": "",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "https://bsky.app/profile/cosecha.bsky.social",
+        "threads": ""
+      }
+    },
+    {
+      "name": "New Jersey Council for the Humanities and Journalism Design",
+      "slug": "new-jersey-council-for-the-humanities-and-journalism-design",
+      "website": "https://njhumanities.org",
+      "social": {
+        "instagram": "https://www.instagram.com/nj.humanities/",
+        "facebook": "https://www.facebook.com/NJHumanities",
+        "twitter": "https://x.com/njhumanities",
+        "linkedin": "https://www.linkedin.com/company/njhumanities",
+        "youtube": "https://www.youtube.com/channel/UCk3IDsjzTJD1fccFpZp6sQQ",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "New Jersey Monitor",
+      "slug": "new-jersey-monitor",
+      "website": "https://newjerseymonitor.com",
+      "social": {
+        "instagram": "https://www.instagram.com/njmonitor/",
+        "facebook": "https://www.facebook.com/NJMonitor",
+        "twitter": "https://x.com/NJMonitor",
+        "linkedin": "https://www.linkedin.com/company/new-jersey-monitor",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "https://bsky.app/profile/newjerseymonitor.com",
+        "threads": ""
+      }
+    },
+    {
+      "name": "New Jersey Urban News",
+      "slug": "new-jersey-urban-news",
+      "website": "https://www.njurbannews.com",
+      "social": {
+        "instagram": "https://www.instagram.com/newjerseyurbannews/",
+        "facebook": "https://www.facebook.com/njurbannews",
+        "twitter": "https://x.com/NJUrbNews",
+        "linkedin": "https://www.linkedin.com/company/njun",
+        "youtube": "https://www.youtube.com/@njurbannews",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "New Labor",
+      "slug": "new-labor",
+      "website": "https://newlabor.org",
+      "social": {
+        "instagram": "https://www.instagram.com/newlabornj/",
+        "facebook": "https://www.facebook.com/NewLabor",
+        "twitter": "https://x.com/NewLabor",
+        "linkedin": "",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Newark News and Story Collaborative",
+      "slug": "newark-news-and-story-collaborative",
+      "website": "https://www.newarkstories.com",
+      "social": {
+        "instagram": "https://www.instagram.com/newarkstories/",
+        "facebook": "",
+        "twitter": "https://x.com/NewarkStories",
+        "linkedin": "https://www.linkedin.com/company/newark-stories",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Newark Water Coalition",
+      "slug": "newark-water-coalition",
+      "website": "https://www.newarkwatercoalition.org",
+      "social": {
+        "instagram": "https://www.instagram.com/cleanwater4newark/",
+        "facebook": "https://www.facebook.com/newarkwatercoalition",
+        "twitter": "https://x.com/CleanWater4Nwk",
+        "linkedin": "https://www.linkedin.com/company/newark-water-coalition",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "NJ Coalition to End Homelessness",
+      "slug": "nj-coalition-to-end-homelessness",
+      "website": "https://www.njceh.org",
+      "social": {
+        "instagram": "https://www.instagram.com/njcoalitiontoendhomelessness/",
+        "facebook": "https://www.facebook.com/njceh",
+        "twitter": "https://x.com/NJCEH",
+        "linkedin": "https://www.linkedin.com/company/nj-coalition-to-end-homelessness",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "NJ Pen",
+      "slug": "nj-pen",
+      "website": "https://www.njpen.com/",
+      "social": {
+        "instagram": "https://www.instagram.com/nj_pen/",
+        "facebook": "https://www.facebook.com/njpen",
+        "twitter": "https://x.com/NJ_Pen",
+        "linkedin": "",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "NJ Spotlight News",
+      "slug": "nj-spotlight-news",
+      "website": "https://www.njspotlightnews.org/",
+      "social": {
+        "instagram": "https://www.instagram.com/njspotlightnews/",
+        "facebook": "https://www.facebook.com/NJSpotlightNews",
+        "twitter": "https://x.com/NJSpotlightNews",
+        "linkedin": "https://www.linkedin.com/company/njspotlightnews",
+        "youtube": "https://www.youtube.com/@njspotlightnews",
+        "tiktok": "https://www.tiktok.com/@njspotlightnews",
+        "bluesky": "https://bsky.app/profile/njspotlightnews.org",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Paterson Alliance",
+      "slug": "paterson-alliance",
+      "website": "https://patersonalliance.org",
+      "social": {
+        "instagram": "https://www.instagram.com/patersonalliance/",
+        "facebook": "https://www.facebook.com/ThePatersonAlliance",
+        "twitter": "https://x.com/vibrantpaterson",
+        "linkedin": "",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Public Square Amplified",
+      "slug": "public-square-amplified",
+      "website": "https://www.publicsq.org",
+      "social": {
+        "instagram": "https://www.instagram.com/publicsquare.news/",
+        "facebook": "https://www.facebook.com/publicsquarenews",
+        "twitter": "https://x.com/publicsq_news",
+        "linkedin": "https://www.linkedin.com/company/public-square-amplified",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "https://bsky.app/profile/publicsq.bsky.social",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Radio Rouj Ble",
+      "slug": "radio-rouj-ble",
+      "website": "https://www.radioroujeble.com",
+      "social": {
+        "instagram": "",
+        "facebook": "https://www.facebook.com/RadioRoujeBle",
+        "twitter": "",
+        "linkedin": "",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Ridge View Echo",
+      "slug": "ridge-view-echo",
+      "website": "https://ridgeviewecho.com",
+      "social": {
+        "instagram": "https://www.instagram.com/ridgeviewecho/",
+        "facebook": "https://www.facebook.com/RidgeViewEcho",
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/company/ridge-view-echo",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Slice of Culture (Saint Peter's University)",
+      "slug": "slice-of-culture-saint-peter-s-university",
+      "website": "https://www.sliceofculture.com",
+      "social": {
+        "instagram": "https://www.instagram.com/sliceofculture/",
+        "facebook": "https://www.facebook.com/SoCulOfficial",
+        "twitter": "https://x.com/slaborwithsoc",
+        "linkedin": "https://www.linkedin.com/company/slice-of-culture",
+        "youtube": "https://www.youtube.com/@sliceofculture",
+        "tiktok": "https://www.tiktok.com/@sliceofculture",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "South Jersey Climate News Project",
+      "slug": "south-jersey-climate-news-project",
+      "website": "https://sjclimate.news",
+      "social": {
+        "instagram": "https://www.instagram.com/sjclimatenews/",
+        "facebook": "",
+        "twitter": "https://twitter.com/sjclimatenews",
+        "linkedin": "",
+        "youtube": "https://www.youtube.com/@sjclimatenews",
+        "tiktok": "https://www.tiktok.com/@sjclimatenews",
+        "bluesky": "https://bsky.app/profile/sjclimatenews.bsky.social",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Stories of Atlantic City",
+      "slug": "stories-of-atlantic-city",
+      "website": "https://storiesofatlanticcity.com",
+      "social": {
+        "instagram": "https://www.instagram.com/stories_of_ac/",
+        "facebook": "https://www.facebook.com/storiesofatlanticcity",
+        "twitter": "",
+        "linkedin": "",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "TAPinto Hasbrouck Heights",
+      "slug": "tapinto-hasbrouck-heights",
+      "website": "https://www.tapinto.net/towns/hasbrouck-heights-slash-wood-ridge-slash-teterboro",
+      "social": {
+        "instagram": "https://www.instagram.com/taphasbrouckheightswrteterboro/",
+        "facebook": "",
+        "twitter": "https://x.com/HHeightsWRidgeT",
+        "linkedin": "",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "The College of New Jersey (TCNJ Signal)",
+      "slug": "the-college-of-new-jersey",
+      "website": "https://www.tcnjsignalnews.com/",
+      "social": {
+        "instagram": "https://www.instagram.com/tcnjsignal/",
+        "facebook": "",
+        "twitter": "https://x.com/tcnjsignal",
+        "linkedin": "https://www.linkedin.com/company/the-signal-newspaper",
+        "youtube": "",
+        "tiktok": "https://www.tiktok.com/@tcnjsignal",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "The Conservatory of Music and Performing Arts Society",
+      "slug": "the-conservatory-of-music-and-performing-arts-society",
+      "website": "https://www.compascampus.org/",
+      "social": {
+        "instagram": "https://www.instagram.com/compastrentonnj/",
+        "facebook": "https://www.facebook.com/COMPAStrentonnj/",
+        "twitter": "",
+        "linkedin": "",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "The Daily Targum (Targum Publishing Co)",
+      "slug": "the-daily-targum-targum-publishing-co",
+      "website": "https://dailytargum.com",
+      "social": {
+        "instagram": "https://www.instagram.com/dailytargum/",
+        "facebook": "https://www.facebook.com/thedailytargum",
+        "twitter": "https://x.com/daily_targum",
+        "linkedin": "https://www.linkedin.com/company/the-daily-targum-official",
+        "youtube": "",
+        "tiktok": "https://www.tiktok.com/@thedailytargum",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "The Jersey Bee",
+      "slug": "the-jersey-bee",
+      "website": "https://jerseybee.org",
+      "social": {
+        "instagram": "https://www.instagram.com/jerseybeenews/",
+        "facebook": "https://www.facebook.com/jerseybeenews",
+        "twitter": "https://x.com/jerseybeenews",
+        "linkedin": "",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "https://bsky.app/profile/jerseybeenews.bsky.social",
+        "threads": ""
+      }
+    },
+    {
+      "name": "The Jersey Vindicator",
+      "slug": "the-jersey-vindicator",
+      "website": "https://jerseyvindicator.org",
+      "social": {
+        "instagram": "https://www.instagram.com/jerseyvindicator/",
+        "facebook": "https://www.facebook.com/jerseyvindicator",
+        "twitter": "https://x.com/jerseyvindy",
+        "linkedin": "",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "https://bsky.app/profile/jerseyvindicator.bsky.social",
+        "threads": ""
+      }
+    },
+    {
+      "name": "The Tower at Princeton High School",
+      "slug": "the-tower-at-princeton-high-school",
+      "website": "https://www.towerphs.com/",
+      "social": {
+        "instagram": "https://www.instagram.com/thetowerphs/",
+        "facebook": "https://www.facebook.com/phstower",
+        "twitter": "",
+        "linkedin": "",
+        "youtube": "https://www.youtube.com/@thetowerphs",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Trenton Journal",
+      "slug": "trenton-journal",
+      "website": "https://trentonjournal.com",
+      "social": {
+        "instagram": "https://www.instagram.com/trenton_journal/",
+        "facebook": "",
+        "twitter": "https://x.com/TrentonJournal",
+        "linkedin": "https://www.linkedin.com/company/trenton-journal",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Two River Times",
+      "slug": "two-river-times",
+      "website": "https://tworivertimes.com/",
+      "social": {
+        "instagram": "https://www.instagram.com/thetworivertimes/",
+        "facebook": "https://www.facebook.com/thetworivertimes",
+        "twitter": "https://x.com/TwoRiverTimes",
+        "linkedin": "https://www.linkedin.com/company/the-two-river-times",
+        "youtube": "https://www.youtube.com/@thetworivertimes",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Unidad Latina en Acción NJ",
+      "slug": "unidad-latina-en-accin-nj",
+      "website": "https://unidadlatinanj.org",
+      "social": {
+        "instagram": "https://www.instagram.com/unidad_latina_en_accion_nj/",
+        "facebook": "https://www.facebook.com/unidadlatinanj",
+        "twitter": "https://x.com/unidadlatinanj1",
+        "linkedin": "",
+        "youtube": "https://www.youtube.com/@unidadlatinanj",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "VietLead",
+      "slug": "vietlead",
+      "website": "https://www.vietlead.org/",
+      "social": {
+        "instagram": "https://www.instagram.com/vietlead/",
+        "facebook": "https://www.facebook.com/vietlead",
+        "twitter": "https://x.com/vietlead",
+        "linkedin": "https://www.linkedin.com/company/vietlead",
+        "youtube": "https://www.youtube.com/@vietlead",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Village Green NJ",
+      "slug": "village-green-nj",
+      "website": "https://villagegreennj.com",
+      "social": {
+        "instagram": "https://www.instagram.com/villagegreennj/",
+        "facebook": "https://www.facebook.com/villagegreennj",
+        "twitter": "https://x.com/villagegreennj",
+        "linkedin": "",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    },
+    {
+      "name": "Wayne Hills High School",
+      "slug": "wayne-hills-high-school",
+      "website": "https://whhspatriotpress.com/",
+      "social": {
+        "instagram": "https://www.instagram.com/hillspatriotpress/",
+        "facebook": "",
+        "twitter": "https://x.com/whhspatriotpres",
+        "linkedin": "",
+        "youtube": "",
+        "tiktok": "",
+        "bluesky": "",
+        "threads": ""
+      }
+    }
+  ],
+  "metadata": {
+    "total_grantees": 61,
+    "last_updated": "2026-01-13",
+    "source": "NJCIC dashboard grantee data with web research updates",
+    "platforms_tracked": ["instagram", "facebook", "twitter", "linkedin", "youtube", "tiktok", "bluesky", "threads"],
+    "updates_applied": {
+      "description": "Social URLs discovered through web research",
+      "new_urls_found": 17,
+      "grantees_updated": [
+        "asbury-park-media-collective",
+        "chalkbeat-newark-civic-news-company",
+        "clinton-hill-community-action",
+        "daily-targum",
+        "front-runner-new-jersey",
+        "garden-state-initiative",
+        "hudpost",
+        "inside-climate-news",
+        "latino-spirit-media",
+        "mercerme",
+        "newark-news-and-story-collaborative",
+        "paterson-alliance",
+        "slice-of-culture-saint-peter-s-university",
+        "south-jersey-climate-news-project",
+        "stories-of-atlantic-city",
+        "the-college-of-new-jersey"
+      ]
+    }
+  }
+}
