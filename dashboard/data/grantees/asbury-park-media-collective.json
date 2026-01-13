@@ -2,12 +2,12 @@
   "name": "Asbury Park Media Collective",
   "slug": "asbury-park-media-collective",
   "summary": {
-    "total_posts": 51,
-    "total_engagement": 58,
-    "total_followers": 15,
-    "platforms_active": 3,
-    "engagement_rate": 1.14,
-    "last_updated": "2026-01-08T23:13:30.143935"
+    "total_posts": 92,
+    "total_engagement": 51,
+    "total_followers": 1304,
+    "platforms_active": 4,
+    "engagement_rate": 0.55,
+    "last_updated": "2026-01-13T17:16:09.445400"
   },
   "platform_breakdown": {
     "youtube": {
@@ -23,8 +23,14 @@
       "engagement_pct": 0.0
     },
     "facebook": {
-      "posts": 1,
-      "posts_pct": 2.0,
+      "posts": 7,
+      "posts_pct": 7.6,
+      "engagement": 0,
+      "engagement_pct": 0.0
+    },
+    "instagram": {
+      "posts": 35,
+      "posts_pct": 38.0,
       "engagement": 0,
       "engagement_pct": 0.0
     }
@@ -32,10 +38,10 @@
   "platforms": {
     "youtube": {
       "posts": 50,
-      "engagement": 58,
-      "views": 4692,
+      "engagement": 51,
+      "views": 4696,
       "followers": 0,
-      "engagement_rate": 1.16,
+      "engagement_rate": 1.1633,
       "top_posts": [
         {
           "id": null,
@@ -94,7 +100,8 @@
           "engagement": 58,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-12T16:18:40.722716"
     },
     "twitter": {
       "posts": 0,
@@ -114,10 +121,10 @@
       "content_types": {}
     },
     "facebook": {
-      "posts": 1,
+      "posts": 7,
       "engagement": 0,
       "views": 0,
-      "followers": 1,
+      "followers": 1300,
       "engagement_rate": 0.0,
       "top_posts": [
         {
@@ -149,7 +156,16 @@
           "engagement": 0,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-13T15:28:11.088918"
+    },
+    "instagram": {
+      "posts": 35,
+      "last_scraped": "2026-01-13T14:35:01.835120"
+    },
+    "linkedin": {
+      "followers": 4,
+      "last_scraped": "2026-01-13T15:49:36.113933"
     }
   },
   "top_posts": [

@@ -2,33 +2,33 @@
   "name": "Global Patriot Newspapers online",
   "slug": "global-patriot-newspapers-online",
   "summary": {
-    "total_posts": 26,
+    "total_posts": 95,
     "total_engagement": 242821,
-    "total_followers": 885,
+    "total_followers": 578310,
     "platforms_active": 2,
-    "engagement_rate": 9339.27,
-    "last_updated": "2026-01-08T23:13:30.201686"
+    "engagement_rate": 2556.01,
+    "last_updated": "2026-01-13T17:16:09.546201"
   },
   "platform_breakdown": {
     "tiktok": {
-      "posts": 26,
-      "posts_pct": 100.0,
-      "engagement": 242821,
-      "engagement_pct": 100.0
+      "posts": 44,
+      "posts_pct": 46.3,
+      "engagement": 0,
+      "engagement_pct": 0.0
     },
     "twitter": {
-      "posts": 0,
-      "posts_pct": 0.0,
+      "posts": 51,
+      "posts_pct": 53.7,
       "engagement": 0,
       "engagement_pct": 0.0
     }
   },
   "platforms": {
     "tiktok": {
-      "posts": 26,
+      "posts": 44,
       "engagement": 242821,
       "views": 516800,
-      "followers": 0,
+      "followers": 570500,
       "engagement_rate": 9339.27,
       "top_posts": [
         {
@@ -144,13 +144,14 @@
           "engagement": 242821,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-13T16:32:05.212949"
     },
     "twitter": {
-      "posts": 0,
+      "posts": 51,
       "engagement": 0,
       "views": 0,
-      "followers": 885,
+      "followers": 7810,
       "engagement_rate": 0.0,
       "top_posts": [],
       "frequency": {
@@ -161,7 +162,8 @@
         "last_post": null
       },
       "time_series": [],
-      "content_types": {}
+      "content_types": {},
+      "last_scraped": "2026-01-13T13:40:19.025790"
     }
   },
   "top_posts": [

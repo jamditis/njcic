@@ -2,12 +2,12 @@
   "name": "coLAB Arts",
   "slug": "colab-arts",
   "summary": {
-    "total_posts": 67,
-    "total_engagement": 355,
-    "total_followers": 3762,
-    "platforms_active": 4,
-    "engagement_rate": 5.3,
-    "last_updated": "2026-01-08T23:13:30.342063"
+    "total_posts": 137,
+    "total_engagement": 504,
+    "total_followers": 7554,
+    "platforms_active": 5,
+    "engagement_rate": 3.68,
+    "last_updated": "2026-01-13T17:16:09.523186"
   },
   "platform_breakdown": {
     "youtube": {
@@ -18,19 +18,25 @@
     },
     "instagram": {
       "posts": 12,
-      "posts_pct": 17.9,
-      "engagement": 312,
-      "engagement_pct": 87.9
+      "posts_pct": 8.8,
+      "engagement": 462,
+      "engagement_pct": 91.7
     },
     "facebook": {
       "posts": 1,
-      "posts_pct": 1.5,
+      "posts_pct": 0.7,
       "engagement": 0,
       "engagement_pct": 0.0
     },
     "linkedin": {
-      "posts": 0,
-      "posts_pct": 0.0,
+      "posts": 17,
+      "posts_pct": 12.4,
+      "engagement": 0,
+      "engagement_pct": 0.0
+    },
+    "twitter": {
+      "posts": 53,
+      "posts_pct": 38.7,
       "engagement": 0,
       "engagement_pct": 0.0
     }
@@ -38,10 +44,10 @@
   "platforms": {
     "youtube": {
       "posts": 54,
-      "engagement": 43,
-      "views": 1303,
+      "engagement": 42,
+      "views": 1305,
       "followers": 0,
-      "engagement_rate": 0.8,
+      "engagement_rate": 5.0036,
       "top_posts": [
         {
           "id": null,
@@ -100,14 +106,15 @@
           "engagement": 43,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-12T16:27:30.987877"
     },
     "instagram": {
       "posts": 12,
-      "engagement": 312,
+      "engagement": 462,
       "views": 0,
-      "followers": 3136,
-      "engagement_rate": 26.0,
+      "followers": 3164,
+      "engagement_rate": 1.22,
       "top_posts": [
         {
           "id": null,
@@ -202,13 +209,14 @@
           "engagement": 3,
           "percentage": 8.3
         }
-      }
+      },
+      "last_scraped": "2026-01-12T13:16:38.654695"
     },
     "facebook": {
       "posts": 1,
       "engagement": 0,
       "views": 0,
-      "followers": 3,
+      "followers": 3200,
       "engagement_rate": 0.0,
       "top_posts": [],
       "frequency": {
@@ -225,10 +233,11 @@
           "engagement": 0,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-13T15:44:09.206357"
     },
     "linkedin": {
-      "posts": 0,
+      "posts": 17,
       "engagement": 0,
       "views": 0,
       "followers": 623,
@@ -242,7 +251,13 @@
         "last_post": null
       },
       "time_series": [],
-      "content_types": {}
+      "content_types": {},
+      "last_scraped": "2026-01-13T15:59:56.732566"
+    },
+    "twitter": {
+      "followers": 567,
+      "posts": 53,
+      "last_scraped": "2026-01-13T13:50:19.050672"
     }
   },
   "top_posts": [

@@ -2,39 +2,45 @@
   "name": "Trenton Journal",
   "slug": "trenton-journal",
   "summary": {
-    "total_posts": 13,
+    "total_posts": 109,
     "total_engagement": 2850,
-    "total_followers": 4122,
-    "platforms_active": 3,
-    "engagement_rate": 219.23,
-    "last_updated": "2026-01-08T23:13:30.327684"
+    "total_followers": 12586,
+    "platforms_active": 4,
+    "engagement_rate": 26.15,
+    "last_updated": "2026-01-13T17:16:09.734380"
   },
   "platform_breakdown": {
     "twitter": {
-      "posts": 0,
-      "posts_pct": 0.0,
+      "posts": 50,
+      "posts_pct": 45.9,
       "engagement": 0,
       "engagement_pct": 0.0
     },
     "instagram": {
-      "posts": 12,
-      "posts_pct": 92.3,
-      "engagement": 2850,
-      "engagement_pct": 100.0
+      "posts": 30,
+      "posts_pct": 27.5,
+      "engagement": 0,
+      "engagement_pct": 0.0
     },
     "facebook": {
-      "posts": 1,
-      "posts_pct": 7.7,
+      "posts": 11,
+      "posts_pct": 10.1,
+      "engagement": 0,
+      "engagement_pct": 0.0
+    },
+    "linkedin": {
+      "posts": 18,
+      "posts_pct": 16.5,
       "engagement": 0,
       "engagement_pct": 0.0
     }
   },
   "platforms": {
     "twitter": {
-      "posts": 0,
+      "posts": 50,
       "engagement": 0,
       "views": 0,
-      "followers": 242,
+      "followers": 241,
       "engagement_rate": 0.0,
       "top_posts": [],
       "frequency": {
@@ -45,10 +51,11 @@
         "last_post": null
       },
       "time_series": [],
-      "content_types": {}
+      "content_types": {},
+      "last_scraped": "2026-01-13T14:12:11.905301"
     },
     "instagram": {
-      "posts": 12,
+      "posts": 30,
       "engagement": 2850,
       "views": 0,
       "followers": 3872,
@@ -142,13 +149,14 @@
           "engagement": 352,
           "percentage": 41.7
         }
-      }
+      },
+      "last_scraped": "2026-01-13T14:57:57.407589"
     },
     "facebook": {
-      "posts": 1,
+      "posts": 11,
       "engagement": 0,
       "views": 0,
-      "followers": 8,
+      "followers": 8400,
       "engagement_rate": 0.0,
       "top_posts": [],
       "frequency": {
@@ -165,7 +173,13 @@
           "engagement": 0,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-13T15:42:05.029470"
+    },
+    "linkedin": {
+      "followers": 73,
+      "posts": 18,
+      "last_scraped": "2026-01-13T15:58:43.925063"
     }
   },
   "top_posts": [

@@ -2,12 +2,12 @@
   "name": "Wayne Hills High School",
   "slug": "wayne-hills-high-school",
   "summary": {
-    "total_posts": 12,
+    "total_posts": 34,
     "total_engagement": 370,
-    "total_followers": 1326,
-    "platforms_active": 2,
-    "engagement_rate": 30.83,
-    "last_updated": "2026-01-08T23:13:30.338882"
+    "total_followers": 1048,
+    "platforms_active": 1,
+    "engagement_rate": 10.88,
+    "last_updated": "2026-01-13T17:16:09.748586"
   },
   "platform_breakdown": {
     "twitter": {
@@ -17,10 +17,10 @@
       "engagement_pct": 0.0
     },
     "instagram": {
-      "posts": 12,
+      "posts": 34,
       "posts_pct": 100.0,
-      "engagement": 370,
-      "engagement_pct": 100.0
+      "engagement": 0,
+      "engagement_pct": 0.0
     }
   },
   "platforms": {
@@ -42,7 +42,7 @@
       "content_types": {}
     },
     "instagram": {
-      "posts": 12,
+      "posts": 34,
       "engagement": 370,
       "views": 0,
       "followers": 1048,
@@ -151,7 +151,8 @@
           "engagement": 27,
           "percentage": 8.3
         }
-      }
+      },
+      "last_scraped": "2026-01-13T15:01:04.566125"
     }
   },
   "top_posts": [

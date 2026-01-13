@@ -2,15 +2,55 @@
   "name": "New Jersey Monitor",
   "slug": "new-jersey-monitor",
   "summary": {
-    "total_posts": 0,
-    "total_engagement": 0,
-    "total_followers": 0,
-    "platforms_active": 0,
-    "engagement_rate": 0,
-    "last_updated": null
+    "total_posts": 4728,
+    "total_engagement": 252,
+    "total_followers": 15637,
+    "platforms_active": 4,
+    "engagement_rate": 0.05,
+    "last_updated": "2026-01-13T17:16:09.617981"
   },
-  "platform_breakdown": {},
-  "platforms": {},
+  "platform_breakdown": {
+    "bluesky": {
+      "posts": 4662,
+      "posts_pct": 98.6,
+      "engagement": 252,
+      "engagement_pct": 100.0
+    },
+    "facebook": {
+      "posts": 13,
+      "posts_pct": 0.3,
+      "engagement": 0,
+      "engagement_pct": 0.0
+    },
+    "twitter": {
+      "posts": 53,
+      "posts_pct": 1.1,
+      "engagement": 0,
+      "engagement_pct": 0.0
+    }
+  },
+  "platforms": {
+    "bluesky": {
+      "followers": 7686,
+      "posts": 4662,
+      "engagement": 252,
+      "last_scraped": "2026-01-13T13:21:25.416151"
+    },
+    "facebook": {
+      "followers": 2500,
+      "posts": 13,
+      "last_scraped": "2026-01-13T15:38:24.414246"
+    },
+    "linkedin": {
+      "followers": 26,
+      "last_scraped": "2026-01-13T15:56:00.756698"
+    },
+    "twitter": {
+      "followers": 5425,
+      "posts": 53,
+      "last_scraped": "2026-01-13T14:06:15.577498"
+    }
+  },
   "top_posts": [],
   "overall_frequency": {
     "posts_per_day": 0,

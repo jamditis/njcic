@@ -2,30 +2,36 @@
   "name": "70and73 com",
   "slug": "70and73-com",
   "summary": {
-    "total_posts": 1,
-    "total_engagement": 0,
-    "total_followers": 291,
-    "platforms_active": 2,
-    "engagement_rate": 0.0,
-    "last_updated": "2026-01-08T23:13:30.139875"
+    "total_posts": 88,
+    "total_engagement": 85,
+    "total_followers": 10195,
+    "platforms_active": 4,
+    "engagement_rate": 0.97,
+    "last_updated": "2026-01-13T17:16:09.441779"
   },
   "platform_breakdown": {
     "twitter": {
-      "posts": 0,
-      "posts_pct": 0.0,
+      "posts": 50,
+      "posts_pct": 56.8,
       "engagement": 0,
-      "engagement_pct": 0
+      "engagement_pct": 0.0
     },
     "facebook": {
-      "posts": 1,
-      "posts_pct": 100.0,
+      "posts": 13,
+      "posts_pct": 14.8,
       "engagement": 0,
-      "engagement_pct": 0
+      "engagement_pct": 0.0
+    },
+    "instagram": {
+      "posts": 25,
+      "posts_pct": 28.4,
+      "engagement": 85,
+      "engagement_pct": 100.0
     }
   },
   "platforms": {
     "twitter": {
-      "posts": 0,
+      "posts": 50,
       "engagement": 0,
       "views": 0,
       "followers": 282,
@@ -39,19 +45,20 @@
         "last_post": null
       },
       "time_series": [],
-      "content_types": {}
+      "content_types": {},
+      "last_scraped": "2026-01-13T13:35:05.324205"
     },
     "facebook": {
-      "posts": 1,
+      "posts": 13,
       "engagement": 0,
       "views": 0,
-      "followers": 9,
+      "followers": 9200,
       "engagement_rate": 0.0,
       "top_posts": [
         {
           "id": "post_0",
           "url": "https://www.facebook.com/70and73com/posts/pfbid034h6FHGQpiveGkgxLNqkqVcMzWPffP3LaSvi3cPfugZ16DA2a2MY9tKSCHcVEotLGl?__cft__[0]=AZbbrWzB87Ju-tU0zuUHGovY-dPiNJgK5f_ProQLi-K-XFkTjwz5dwU9jzSoFUk8-AmKaWW2iRN9NmAbR2qdcxHvE5Wkh706LqZd4hAcPAcE3zgGFwl9n5v1FTtF3-2h-YnDFacmiYeX-kGk31ebp9pYgbSqGJA4-q4GBPtodFhGuuAgekJKmF8zwzely3qejAw&__tn__=%2CO%2CP-R",
-          "text": "70and73.com\n1d\n\u00a0\n\u00b7\n70AND73.COM\nLenape High's Cattani Wednesday named by state Board of Education '26 secondary principal of the year.\nTony Cattani, the principal of Lenape High School who last year wa",
+          "text": "70and73.com\n1d\n \n·\n70AND73.COM\nLenape High's Cattani Wednesday named by state Board of Education '26 secondary principal of the year.\nTony Cattani, the principal of Lenape High School who last year wa",
           "date": null,
           "engagement": {
             "likes": 0,
@@ -77,14 +84,26 @@
           "engagement": 0,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-13T15:27:44.533302"
+    },
+    "instagram": {
+      "followers": 689,
+      "posts": 25,
+      "engagement": 85,
+      "engagement_rate": 0.49,
+      "last_scraped": "2026-01-12T12:39:20.837490"
+    },
+    "linkedin": {
+      "followers": 24,
+      "last_scraped": "2026-01-13T15:49:20.660980"
     }
   },
   "top_posts": [
     {
       "id": "post_0",
       "url": "https://www.facebook.com/70and73com/posts/pfbid034h6FHGQpiveGkgxLNqkqVcMzWPffP3LaSvi3cPfugZ16DA2a2MY9tKSCHcVEotLGl?__cft__[0]=AZbbrWzB87Ju-tU0zuUHGovY-dPiNJgK5f_ProQLi-K-XFkTjwz5dwU9jzSoFUk8-AmKaWW2iRN9NmAbR2qdcxHvE5Wkh706LqZd4hAcPAcE3zgGFwl9n5v1FTtF3-2h-YnDFacmiYeX-kGk31ebp9pYgbSqGJA4-q4GBPtodFhGuuAgekJKmF8zwzely3qejAw&__tn__=%2CO%2CP-R",
-      "text": "70and73.com\n1d\n\u00a0\n\u00b7\n70AND73.COM\nLenape High's Cattani Wednesday named by state Board of Education '26 secondary principal of the year.\nTony Cattani, the principal of Lenape High School who last year wa",
+      "text": "70and73.com\n1d\n \n·\n70AND73.COM\nLenape High's Cattani Wednesday named by state Board of Education '26 secondary principal of the year.\nTony Cattani, the principal of Lenape High School who last year wa",
       "date": null,
       "engagement": {
         "likes": 0,

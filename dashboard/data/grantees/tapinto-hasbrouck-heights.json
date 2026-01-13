@@ -2,33 +2,33 @@
   "name": "TAPinto Hasbrouck Heights",
   "slug": "tapinto-hasbrouck-heights",
   "summary": {
-    "total_posts": 12,
+    "total_posts": 84,
     "total_engagement": 682,
-    "total_followers": 1645,
+    "total_followers": 1643,
     "platforms_active": 2,
-    "engagement_rate": 56.83,
-    "last_updated": "2026-01-08T23:13:30.306073"
+    "engagement_rate": 8.12,
+    "last_updated": "2026-01-13T17:16:09.706218"
   },
   "platform_breakdown": {
     "twitter": {
-      "posts": 0,
-      "posts_pct": 0.0,
+      "posts": 51,
+      "posts_pct": 60.7,
       "engagement": 0,
       "engagement_pct": 0.0
     },
     "instagram": {
-      "posts": 12,
-      "posts_pct": 100.0,
-      "engagement": 682,
-      "engagement_pct": 100.0
+      "posts": 33,
+      "posts_pct": 39.3,
+      "engagement": 0,
+      "engagement_pct": 0.0
     }
   },
   "platforms": {
     "twitter": {
-      "posts": 0,
+      "posts": 51,
       "engagement": 0,
       "views": 0,
-      "followers": 901,
+      "followers": 899,
       "engagement_rate": 0.0,
       "top_posts": [],
       "frequency": {
@@ -39,10 +39,11 @@
         "last_post": null
       },
       "time_series": [],
-      "content_types": {}
+      "content_types": {},
+      "last_scraped": "2026-01-13T14:10:19.761635"
     },
     "instagram": {
-      "posts": 12,
+      "posts": 33,
       "engagement": 682,
       "views": 0,
       "followers": 744,
@@ -156,7 +157,8 @@
           "engagement": 369,
           "percentage": 58.3
         }
-      }
+      },
+      "last_scraped": "2026-01-13T14:53:52.863996"
     }
   },
   "top_posts": [

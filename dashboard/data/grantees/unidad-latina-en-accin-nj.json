@@ -2,12 +2,12 @@
   "name": "Unidad Latina en Acción NJ",
   "slug": "unidad-latina-en-accin-nj",
   "summary": {
-    "total_posts": 9,
+    "total_posts": 24,
     "total_engagement": 3,
-    "total_followers": 16000,
+    "total_followers": 18000,
     "platforms_active": 2,
-    "engagement_rate": 0.33,
-    "last_updated": "2026-01-08T23:13:30.334365"
+    "engagement_rate": 0.12,
+    "last_updated": "2026-01-13T17:16:09.741375"
   },
   "platform_breakdown": {
     "youtube": {
@@ -17,8 +17,8 @@
       "engagement_pct": 100.0
     },
     "facebook": {
-      "posts": 1,
-      "posts_pct": 11.1,
+      "posts": 16,
+      "posts_pct": 66.7,
       "engagement": 0,
       "engagement_pct": 0.0
     }
@@ -88,13 +88,14 @@
           "engagement": 3,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-12T16:53:01.875372"
     },
     "facebook": {
-      "posts": 1,
+      "posts": 16,
       "engagement": 0,
       "views": 0,
-      "followers": 16000,
+      "followers": 18000,
       "engagement_rate": 0.0,
       "top_posts": [],
       "frequency": {
@@ -111,7 +112,8 @@
           "engagement": 0,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-13T15:43:22.239614"
     }
   },
   "top_posts": [

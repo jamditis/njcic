@@ -2,16 +2,22 @@
   "name": "Stories of Atlantic City",
   "slug": "stories-of-atlantic-city",
   "summary": {
-    "total_posts": 1,
+    "total_posts": 33,
     "total_engagement": 0,
-    "total_followers": 2,
+    "total_followers": 0,
     "platforms_active": 1,
     "engagement_rate": 0.0,
-    "last_updated": "2026-01-08T23:13:30.302155"
+    "last_updated": "2026-01-13T17:16:09.701792"
   },
   "platform_breakdown": {
     "facebook": {
       "posts": 1,
+      "posts_pct": 100.0,
+      "engagement": 0,
+      "engagement_pct": 0
+    },
+    "instagram": {
+      "posts": 33,
       "posts_pct": 100.0,
       "engagement": 0,
       "engagement_pct": 0
@@ -55,6 +61,10 @@
           "percentage": 100.0
         }
       }
+    },
+    "instagram": {
+      "posts": 33,
+      "last_scraped": "2026-01-13T14:53:01.366310"
     }
   },
   "top_posts": [

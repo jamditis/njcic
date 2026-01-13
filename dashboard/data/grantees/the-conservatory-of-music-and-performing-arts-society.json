@@ -2,12 +2,12 @@
   "name": "The Conservatory of Music and Performing Arts Society",
   "slug": "the-conservatory-of-music-and-performing-arts-society",
   "summary": {
-    "total_posts": 12,
-    "total_engagement": 38,
-    "total_followers": 629,
-    "platforms_active": 2,
+    "total_posts": 0,
+    "total_engagement": 0,
+    "total_followers": 222,
+    "platforms_active": 1,
     "engagement_rate": 3.17,
-    "last_updated": "2026-01-08T23:13:30.313583"
+    "last_updated": "2026-01-13T17:16:09.716526"
   },
   "platform_breakdown": {
     "twitter": {
@@ -122,6 +122,10 @@
           "percentage": 100.0
         }
       }
+    },
+    "facebook": {
+      "followers": 222,
+      "last_scraped": "2026-01-13T15:40:56.222057"
     }
   },
   "top_posts": [

@@ -2,12 +2,12 @@
   "name": "Central New Jersey Network",
   "slug": "central-new-jersey-network",
   "summary": {
-    "total_posts": 64,
-    "total_engagement": 483,
-    "total_followers": 1939,
-    "platforms_active": 5,
-    "engagement_rate": 7.55,
-    "last_updated": "2026-01-08T23:13:30.169204"
+    "total_posts": 116,
+    "total_engagement": 485,
+    "total_followers": 1942,
+    "platforms_active": 4,
+    "engagement_rate": 4.18,
+    "last_updated": "2026-01-13T17:16:09.495111"
   },
   "platform_breakdown": {
     "youtube": {
@@ -17,16 +17,16 @@
       "engagement_pct": 28.6
     },
     "twitter": {
-      "posts": 0,
-      "posts_pct": 0.0,
+      "posts": 53,
+      "posts_pct": 45.7,
       "engagement": 0,
       "engagement_pct": 0.0
     },
     "instagram": {
       "posts": 12,
-      "posts_pct": 18.8,
-      "engagement": 345,
-      "engagement_pct": 71.4
+      "posts_pct": 10.3,
+      "engagement": 368,
+      "engagement_pct": 75.9
     },
     "facebook": {
       "posts": 1,
@@ -44,10 +44,10 @@
   "platforms": {
     "youtube": {
       "posts": 51,
-      "engagement": 138,
-      "views": 8759,
+      "engagement": 117,
+      "views": 8762,
       "followers": 0,
-      "engagement_rate": 2.71,
+      "engagement_rate": 5.3653,
       "top_posts": [
         {
           "id": null,
@@ -106,10 +106,11 @@
           "engagement": 138,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-12T16:23:01.881474"
     },
     "twitter": {
-      "posts": 0,
+      "posts": 53,
       "engagement": 0,
       "views": 0,
       "followers": 1432,
@@ -123,14 +124,15 @@
         "last_post": null
       },
       "time_series": [],
-      "content_types": {}
+      "content_types": {},
+      "last_scraped": "2026-01-13T13:36:27.379752"
     },
     "instagram": {
       "posts": 12,
-      "engagement": 345,
+      "engagement": 368,
       "views": 0,
-      "followers": 480,
-      "engagement_rate": 28.75,
+      "followers": 483,
+      "engagement_rate": 6.35,
       "top_posts": [
         {
           "id": null,
@@ -225,7 +227,8 @@
           "engagement": 345,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-12T13:03:50.714461"
     },
     "facebook": {
       "posts": 1,
@@ -254,7 +257,7 @@
       "posts": 0,
       "engagement": 0,
       "views": 0,
-      "followers": 26,
+      "followers": 27,
       "engagement_rate": 0.0,
       "top_posts": [],
       "frequency": {
@@ -265,7 +268,8 @@
         "last_post": null
       },
       "time_series": [],
-      "content_types": {}
+      "content_types": {},
+      "last_scraped": "2026-01-13T15:50:40.142754"
     }
   },
   "top_posts": [

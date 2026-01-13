@@ -2,19 +2,19 @@
   "name": "Camden Parent   Student Union",
   "slug": "camden-parent-student-union",
   "summary": {
-    "total_posts": 77,
+    "total_posts": 84,
     "total_engagement": 71,
-    "total_followers": 1047,
-    "platforms_active": 5,
-    "engagement_rate": 0.92,
-    "last_updated": "2026-01-08T23:13:30.160625"
+    "total_followers": 988,
+    "platforms_active": 4,
+    "engagement_rate": 0.85,
+    "last_updated": "2026-01-13T17:16:09.466014"
   },
   "platform_breakdown": {
     "tiktok": {
-      "posts": 26,
-      "posts_pct": 33.8,
-      "engagement": 17,
-      "engagement_pct": 23.9
+      "posts": 32,
+      "posts_pct": 38.1,
+      "engagement": 0,
+      "engagement_pct": 0.0
     },
     "youtube": {
       "posts": 38,
@@ -30,23 +30,23 @@
     },
     "instagram": {
       "posts": 12,
-      "posts_pct": 15.6,
+      "posts_pct": 14.3,
       "engagement": 5,
       "engagement_pct": 7.0
     },
     "facebook": {
-      "posts": 1,
-      "posts_pct": 1.3,
+      "posts": 2,
+      "posts_pct": 2.4,
       "engagement": 0,
       "engagement_pct": 0.0
     }
   },
   "platforms": {
     "tiktok": {
-      "posts": 26,
+      "posts": 32,
       "engagement": 17,
       "views": 2606,
-      "followers": 0,
+      "followers": 3,
       "engagement_rate": 0.65,
       "top_posts": [
         {
@@ -187,7 +187,8 @@
           "engagement": 17,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-13T16:31:12.957326"
     },
     "youtube": {
       "posts": 38,
@@ -253,7 +254,8 @@
           "engagement": 49,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-12T12:53:05.884338"
     },
     "twitter": {
       "posts": 0,
@@ -277,7 +279,7 @@
       "engagement": 5,
       "views": 0,
       "followers": 181,
-      "engagement_rate": 0.42,
+      "engagement_rate": 0.23,
       "top_posts": [
         {
           "id": null,
@@ -357,10 +359,11 @@
           "engagement": 5,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-12T12:53:03.729391"
     },
     "facebook": {
-      "posts": 1,
+      "posts": 2,
       "engagement": 0,
       "views": 0,
       "followers": 804,
@@ -395,7 +398,8 @@
           "engagement": 0,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-13T15:29:07.775054"
     }
   },
   "top_posts": [

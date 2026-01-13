@@ -2,23 +2,23 @@
   "name": "Ridge View Echo",
   "slug": "ridge-view-echo",
   "summary": {
-    "total_posts": 1,
+    "total_posts": 6,
     "total_engagement": 0,
-    "total_followers": 914,
+    "total_followers": 917,
     "platforms_active": 2,
     "engagement_rate": 0.0,
-    "last_updated": "2026-01-08T23:13:30.290032"
+    "last_updated": "2026-01-13T17:16:09.681443"
   },
   "platform_breakdown": {
     "facebook": {
       "posts": 1,
-      "posts_pct": 100.0,
+      "posts_pct": 16.7,
       "engagement": 0,
       "engagement_pct": 0
     },
     "linkedin": {
-      "posts": 0,
-      "posts_pct": 0.0,
+      "posts": 5,
+      "posts_pct": 83.3,
       "engagement": 0,
       "engagement_pct": 0
     }
@@ -28,7 +28,7 @@
       "posts": 1,
       "engagement": 0,
       "views": 0,
-      "followers": 819,
+      "followers": 820,
       "engagement_rate": 0.0,
       "top_posts": [
         {
@@ -60,13 +60,14 @@
           "engagement": 0,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-13T15:40:14.520595"
     },
     "linkedin": {
-      "posts": 0,
+      "posts": 5,
       "engagement": 0,
       "views": 0,
-      "followers": 95,
+      "followers": 97,
       "engagement_rate": 0.0,
       "top_posts": [],
       "frequency": {
@@ -77,7 +78,8 @@
         "last_post": null
       },
       "time_series": [],
-      "content_types": {}
+      "content_types": {},
+      "last_scraped": "2026-01-13T15:58:14.360205"
     }
   },
   "top_posts": [

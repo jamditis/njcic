@@ -2,25 +2,25 @@
   "name": "Inside Climate News",
   "slug": "inside-climate-news",
   "summary": {
-    "total_posts": 77,
-    "total_engagement": 7741,
-    "total_followers": 327841,
+    "total_posts": 984,
+    "total_engagement": 8241,
+    "total_followers": 327954,
     "platforms_active": 6,
-    "engagement_rate": 100.53,
-    "last_updated": "2026-01-08T23:13:30.224116"
+    "engagement_rate": 8.38,
+    "last_updated": "2026-01-13T17:16:09.568562"
   },
   "platform_breakdown": {
     "bluesky": {
-      "posts": 25,
-      "posts_pct": 32.5,
-      "engagement": 690,
-      "engagement_pct": 8.9
+      "posts": 834,
+      "posts_pct": 84.8,
+      "engagement": 1471,
+      "engagement_pct": 17.8
     },
     "tiktok": {
-      "posts": 6,
-      "posts_pct": 7.8,
-      "engagement": 355,
-      "engagement_pct": 4.6
+      "posts": 16,
+      "posts_pct": 1.6,
+      "engagement": 0,
+      "engagement_pct": 0.0
     },
     "youtube": {
       "posts": 25,
@@ -29,30 +29,30 @@
       "engagement_pct": 3.7
     },
     "twitter": {
-      "posts": 8,
-      "posts_pct": 10.4,
-      "engagement": 1128,
-      "engagement_pct": 14.6
+      "posts": 52,
+      "posts_pct": 5.3,
+      "engagement": 0,
+      "engagement_pct": 0.0
     },
     "instagram": {
-      "posts": 12,
-      "posts_pct": 15.6,
-      "engagement": 5278,
-      "engagement_pct": 68.2
+      "posts": 37,
+      "posts_pct": 3.8,
+      "engagement": 0,
+      "engagement_pct": 0.0
     },
     "facebook": {
-      "posts": 1,
-      "posts_pct": 1.3,
+      "posts": 20,
+      "posts_pct": 2.0,
       "engagement": 0,
       "engagement_pct": 0.0
     }
   },
   "platforms": {
     "bluesky": {
-      "posts": 25,
-      "engagement": 690,
+      "posts": 834,
+      "engagement": 1471,
       "views": 0,
-      "followers": 25584,
+      "followers": 25621,
       "engagement_rate": 27.6,
       "top_posts": [
         {
@@ -128,13 +128,14 @@
           "engagement": 690,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-13T13:21:18.079377"
     },
     "tiktok": {
-      "posts": 6,
+      "posts": 16,
       "engagement": 355,
       "views": 11803,
-      "followers": 0,
+      "followers": 76,
       "engagement_rate": 59.17,
       "top_posts": [
         {
@@ -220,14 +221,15 @@
           "engagement": 355,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-13T16:32:27.115362"
     },
     "youtube": {
       "posts": 25,
-      "engagement": 290,
-      "views": 25081,
+      "engagement": 9,
+      "views": 58977,
       "followers": 0,
-      "engagement_rate": 11.6,
+      "engagement_rate": 0.1409,
       "top_posts": [
         {
           "id": null,
@@ -286,10 +288,11 @@
           "engagement": 290,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-12T14:06:21.166837"
     },
     "twitter": {
-      "posts": 8,
+      "posts": 52,
       "engagement": 1128,
       "views": 60,
       "followers": 162200,
@@ -393,10 +396,11 @@
           "engagement": 1128,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-13T13:42:33.382231"
     },
     "instagram": {
-      "posts": 12,
+      "posts": 37,
       "engagement": 5278,
       "views": 0,
       "followers": 60057,
@@ -505,10 +509,11 @@
           "engagement": 4507,
           "percentage": 58.3
         }
-      }
+      },
+      "last_scraped": "2026-01-13T14:38:16.388961"
     },
     "facebook": {
-      "posts": 1,
+      "posts": 20,
       "engagement": 0,
       "views": 0,
       "followers": 80000,
@@ -543,7 +548,8 @@
           "engagement": 0,
           "percentage": 100.0
         }
-      }
+      },
+      "last_scraped": "2026-01-13T15:34:15.255122"
     }
   },
   "top_posts": [
