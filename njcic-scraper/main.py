@@ -32,7 +32,7 @@ from tqdm import tqdm
 # Import all scrapers
 from scrapers.twitter import TwitterScraper
 from scrapers.bluesky import BlueSkyScraper
-from scrapers.instagram import InstagramScraper
+from scrapers.instagram_playwright import InstagramPlaywrightScraper
 from scrapers.facebook import FacebookScraper
 from scrapers.linkedin import LinkedInScraper
 from scrapers.tiktok import TikTokScraper
@@ -50,7 +50,7 @@ ENGAGEMENT_SUMMARY_PATH = BASE_DIR / "output" / "engagement_summary.csv"
 PLATFORM_SCRAPERS = {
     'twitter': TwitterScraper,
     'bluesky': BlueSkyScraper,
-    'instagram': InstagramScraper,
+    'instagram': InstagramPlaywrightScraper,
     'facebook': FacebookScraper,
     'linkedin': LinkedInScraper,
     'tiktok': TikTokScraper,
@@ -151,8 +151,8 @@ class ScraperOrchestrator:
                     )
                 elif platform == 'instagram':
                     self.scrapers[platform] = scraper_class(
-                        output_dir=str(config.OUTPUT_DIR),
-                        session_file=None
+                        output_dir=config.OUTPUT_DIR,
+                        headless=True
                     )
                 else:
                     self.scrapers[platform] = scraper_class(
