@@ -15,3 +15,7 @@ Thumbs.db
 # Environment files
 .env
 .env.local
+
+# Claude Code temp files
+tmpclaude-*
+nul
