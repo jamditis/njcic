@@ -285,7 +285,8 @@
         "views": 0,
         "total": 154
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -299,7 +300,8 @@
         "views": 0,
         "total": 78
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -313,7 +315,8 @@
         "views": 0,
         "total": 38
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -327,21 +330,38 @@
         "views": 3120,
         "total": 29
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "youtube"
     },
     {
       "id": null,
-      "url": "https://www.instagram.com/p/DSVp0oED58N/",
-      "text": "",
-      "date": "2025-12-16T20:51:36",
+      "url": "https://www.youtube.com/watch?v=gdoaEVYRnlM",
+      "text": "Noneillah",
+      "date": null,
       "engagement": {
-        "likes": 28,
-        "comments": 0,
+        "likes": 16,
+        "comments": 4,
         "shares": 0,
-        "views": 0,
-        "total": 28
+        "views": 433,
+        "total": 20
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "youtube"
+    },
+    {
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=raLBdGnQLDs",
+      "text": "Noneillah",
+      "date": null,
+      "engagement": {
+        "likes": 13,
+        "comments": 1,
+        "shares": 0,
+        "views": 331,
+        "total": 14
+      },
+      "thumbnail": null,
+      "platform": "youtube"
     }
   ],
   "overall_frequency": {

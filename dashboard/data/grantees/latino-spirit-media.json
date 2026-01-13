@@ -273,7 +273,8 @@
         "views": 0,
         "total": 14
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -287,7 +288,8 @@
         "views": 0,
         "total": 11
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -301,7 +303,8 @@
         "views": 0,
         "total": 8
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -315,7 +318,8 @@
         "views": 36,
         "total": 7
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "youtube"
     },
     {
       "id": null,
@@ -329,7 +333,53 @@
         "views": 60,
         "total": 5
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "youtube"
+    },
+    {
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=rvuTBbbHUIk",
+      "text": "🎥📚 Episodio 001 - GRAN ESTRENO",
+      "date": null,
+      "engagement": {
+        "likes": 3,
+        "comments": 0,
+        "shares": 0,
+        "views": 34,
+        "total": 3
+      },
+      "thumbnail": null,
+      "platform": "youtube"
+    },
+    {
+      "id": "post_0",
+      "url": "https://www.facebook.com/thelatinospirit/posts/pfbid02eBW9K92W8kcQytaxUT3DRyMdTViD4eHPbdkLtcyBiukvyhqxkQeizQK7sS53FYVwl?__cft__[0]=AZZKR9jGgVtAo8reLyC0z73_dHeBi5jF1W8vWFh9Bxn2cz26GRmEtP3eNZkRq7lF3E4DQJmjEtddQvNqVLlxFH-uQKSlQdCQ0rP86Qg3h_ez2_waYlHidD5hDMk8GBGr4fJL_vm0TjvtkAd7q8zQsweuCfTMutaC776MJ0yfF8qzceZQnyKiGaJ7XUNK2cT2VnI&__tn__=%2CO%2CP-R",
+      "text": "Hoy reconocemos a Sr. Orlando Miranda, USA Top Latino de New Jersey #5, por su servicio ejemplar y su compromiso continuo con los veteranos latinos.\nComo veterano y líd… See more",
+      "date": null,
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 0
+      },
+      "thumbnail": null,
+      "platform": "facebook"
+    },
+    {
+      "id": "post_1",
+      "url": "https://www.facebook.com/thelatinospirit/posts/pfbid02eBW9K92W8kcQytaxUT3DRyMdTViD4eHPbdkLtcyBiukvyhqxkQeizQK7sS53FYVwl?comment_id=26340435108892941&__cft__[0]=AZZKR9jGgVtAo8reLyC0z73_dHeBi5jF1W8vWFh9Bxn2cz26GRmEtP3eNZkRq7lF3E4DQJmjEtddQvNqVLlxFH-uQKSlQdCQ0rP86Qg3h_ez2_waYlHidD5hDMk8GBGr4fJL_vm0TjvtkAd7q8zQsweuCfTMutaC776MJ0yfF8qzceZQnyKiGaJ7XUNK2cT2VnI&__tn__=R-R",
+      "text": "Un abrazo mi estimado Sr: Miranda congratulaciones",
+      "date": null,
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 0
+      },
+      "thumbnail": null,
+      "platform": "facebook"
     }
   ],
   "overall_frequency": {

@@ -363,7 +363,8 @@
         "views": 25300,
         "total": 961
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIDACHt9A2ORrdIjGVIFOe1JBQgfgGX6cfve8M~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=iHBT6xdJF%2BqLSM79Vl0rRw8wUuM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oIDACHt9A2ORrdIjGVIFOe1JBQgfgGX6cfve8M~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=iHBT6xdJF%2BqLSM79Vl0rRw8wUuM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "platform": "tiktok"
     },
     {
       "id": "7564854208504040759",
@@ -377,7 +378,8 @@
         "views": 8947,
         "total": 212
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oUmuBYBWU747gn0TLIvBvg5ByPDwIASiEiavi~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=dkV%2Fqee%2B8INTsydNRgsMaQ1NaJI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oUmuBYBWU747gn0TLIvBvg5ByPDwIASiEiavi~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=dkV%2Fqee%2B8INTsydNRgsMaQ1NaJI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "platform": "tiktok"
     },
     {
       "id": "7553856050269556023",
@@ -391,7 +393,8 @@
         "views": 2090,
         "total": 153
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/okC6saiEU3IzITAcdgv4BxUISANSICjwiBQ5P~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=NsgowNfuupr6FxPn0X34xanx%2B3k%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/okC6saiEU3IzITAcdgv4BxUISANSICjwiBQ5P~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=NsgowNfuupr6FxPn0X34xanx%2B3k%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "platform": "tiktok"
     },
     {
       "id": null,
@@ -405,7 +408,8 @@
         "views": 0,
         "total": 128
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -419,7 +423,38 @@
         "views": 0,
         "total": 123
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DOXgBIFjgCw/",
+      "text": "",
+      "date": "2025-09-09T03:56:42",
+      "engagement": {
+        "likes": 61,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 61
+      },
+      "thumbnail": null,
+      "platform": "instagram"
+    },
+    {
+      "id": "post_0",
+      "url": "https://www.facebook.com/thedailytargum/posts/pfbid0NPT3pPD6QLrxrKFEfwJhNGbfpXeXYaKhkjGF49EBiuq5KsT3JTAAjaC9WakzaGzLl?__cft__[0]=AZY9vHcI9Nq8O0XnYm3V4XUexWfpB7BW_Ngn1KBZUl-RFKziqSYztzCBwJmN_aaxPITxan6M7-A2VZnqKxm60dND753_vJspGqqBG-Rr-O9AABouhkFXcpTgbE_4cHramhq_RjaiwweKGB96qBHRnOgMse-wZHyAWYo9FpBsK4S76GiwKVaJbvglDzSPy9ErgRM&__tn__=%2CO%2CP-R",
+      "text": "Targum Family, starting Friday, November 14, your donations will train tomorrow’s media leaders to deliver stronger local coverage. … See more",
+      "date": null,
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 0
+      },
+      "thumbnail": null,
+      "platform": "facebook"
     }
   ],
   "overall_frequency": {

@@ -277,7 +277,8 @@
         "views": 0,
         "total": 484
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -291,7 +292,8 @@
         "views": 0,
         "total": 248
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -305,35 +307,53 @@
         "views": 0,
         "total": 223
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
-      "url": "https://www.instagram.com/p/C_u2lkrOcMz/",
-      "text": "",
-      "date": "2024-09-10T09:47:55",
+      "url": "https://www.youtube.com/watch?v=-apG5IWfzJU",
+      "text": "House Music at Military Park: Juneteenth Weekend 2022 - NEWARK, NJ",
+      "date": null,
       "engagement": {
-        "likes": 141,
-        "comments": 5,
+        "likes": 40,
+        "comments": 3,
         "shares": 0,
-        "views": 0,
-        "total": 146
+        "views": 3337,
+        "total": 43
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "youtube"
     },
     {
       "id": null,
-      "url": "https://www.instagram.com/p/DKPY2hcOzWO/",
-      "text": "",
-      "date": "2025-05-29T14:26:12",
+      "url": "https://www.youtube.com/watch?v=KkmDk-j3VYA",
+      "text": "Art and Newark history collide in this piece titled “Monumental Newark.”",
+      "date": null,
       "engagement": {
-        "likes": 111,
-        "comments": 7,
+        "likes": 10,
+        "comments": 0,
         "shares": 0,
-        "views": 0,
-        "total": 118
+        "views": 188,
+        "total": 10
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "youtube"
+    },
+    {
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=GV1z0YOcRjc",
+      "text": "Newark’s Hip-Hop Festival Brick City Jam Showcases Art and Music From Around the Globe",
+      "date": null,
+      "engagement": {
+        "likes": 10,
+        "comments": 0,
+        "shares": 0,
+        "views": 127,
+        "total": 10
+      },
+      "thumbnail": null,
+      "platform": "youtube"
     }
   ],
   "overall_frequency": {

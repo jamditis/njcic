@@ -285,7 +285,8 @@
         "views": 0,
         "total": 33
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -299,7 +300,8 @@
         "views": 0,
         "total": 32
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -313,35 +315,68 @@
         "views": 0,
         "total": 27
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
-      "id": null,
-      "url": "https://www.instagram.com/p/DSxkWD-j3rd/",
-      "text": "",
-      "date": "2025-12-27T17:00:10",
+      "id": "3m776kqvayp2x",
+      "url": "https://bsky.app/profile/jerseybeenews.bsky.social/post/3m776kqvayp2x",
+      "text": "Read more news for East Essex County and New Jersey from Dec 4, 2025 at jerseybee.org/news.",
+      "date": "2025-12-05T00:00:17.060000",
       "engagement": {
-        "likes": 22,
+        "likes": 4,
+        "comments": 0,
+        "shares": 1,
+        "views": 0,
+        "total": 5
+      },
+      "thumbnail": null,
+      "platform": "bluesky"
+    },
+    {
+      "id": "3m5zhmcitdw2t",
+      "url": "https://bsky.app/profile/jerseybeenews.bsky.social/post/3m5zhmcitdw2t",
+      "text": "Read more news for East Essex County and New Jersey from Nov 19, 2025 at jerseybee.org/news.",
+      "date": "2025-11-20T00:01:02.688000",
+      "engagement": {
+        "likes": 2,
+        "comments": 0,
+        "shares": 1,
+        "views": 0,
+        "total": 3
+      },
+      "thumbnail": null,
+      "platform": "bluesky"
+    },
+    {
+      "id": "3m4wb2xwguw26",
+      "url": "https://bsky.app/profile/jerseybeenews.bsky.social/post/3m4wb2xwguw26",
+      "text": "Read more news for East Essex County and New Jersey from Nov 5, 2025 at jerseybee.org/news.",
+      "date": "2025-11-06T00:00:47.892000",
+      "engagement": {
+        "likes": 2,
+        "comments": 0,
+        "shares": 1,
+        "views": 0,
+        "total": 3
+      },
+      "thumbnail": null,
+      "platform": "bluesky"
+    },
+    {
+      "id": "post_0",
+      "url": "https://www.facebook.com/jerseybeenews/posts/pfbid044Q5bccsesmk4xAx8jEurpG1YCoxyBbxzoQ7yjyo5wMf7nEfgzwPbvAGq12xUxUtl?__cft__[0]=AZZ9wYZS-HwctDou_Z0KqJvdiYwzts1xdXjGEnHXeJWqJOMOeeLnVrsbEplNkCSxu2RCQeGP80wP1mbnLoehOvVtbZrjF6TvVn0SIGNLOwPkEK6ARcTiX0guyWFQRzjkCSDCgDDaw1EnxtitApb52fGiQP5OvX58JMXrj-I9Y7S9tzCkiHg0zQLliQKhCWyZVLw&__tn__=%2CO%2CP-R",
+      "text": "Become a  member of The Jersey Bee by Dec. 31 to have your monthly contribution matched for the year and sustain good local news in Essex County. Help keep The Bee buzzing in 2026.",
+      "date": null,
+      "engagement": {
+        "likes": 0,
         "comments": 0,
         "shares": 0,
         "views": 0,
-        "total": 22
+        "total": 0
       },
-      "thumbnail": null
-    },
-    {
-      "id": null,
-      "url": "https://www.instagram.com/p/DS0BOtXj9gT/",
-      "text": "",
-      "date": "2025-12-28T15:51:03",
-      "engagement": {
-        "likes": 19,
-        "comments": 0,
-        "shares": 0,
-        "views": 0,
-        "total": 19
-      },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "facebook"
     }
   ],
   "overall_frequency": {

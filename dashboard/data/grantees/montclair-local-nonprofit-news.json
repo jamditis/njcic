@@ -226,7 +226,8 @@
         "views": 0,
         "total": 50
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -240,7 +241,8 @@
         "views": 0,
         "total": 41
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -254,35 +256,53 @@
         "views": 0,
         "total": 40
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
-      "id": null,
-      "url": "https://www.instagram.com/p/DS3NmDGkjQ2/",
-      "text": "",
-      "date": "2025-12-29T21:40:17",
+      "id": "3mbi4sbcdgs2u",
+      "url": "https://bsky.app/profile/montclairlocalnews.bsky.social/post/3mbi4sbcdgs2u",
+      "text": "When a heavy snowstorm collapsed the roof of a kennel at a busy Newark animal shelter, displacing more than 30 dogs, the community quickly stepped in, with more than 100 foster applications pouring in",
+      "date": "2026-01-03T00:13:02.576000",
       "engagement": {
-        "likes": 23,
+        "likes": 4,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 4
+      },
+      "thumbnail": null,
+      "platform": "bluesky"
+    },
+    {
+      "id": "3mbp2yf5lx32o",
+      "url": "https://bsky.app/profile/montclairlocalnews.bsky.social/post/3mbp2yf5lx32o",
+      "text": "Hours Before Board’s Vote, Montclair Superintendent Says New Ballot Questions Not Finalized\n\nSuperintendent Turner: “The administration is continuing to work to ensure that any proposed language is ac",
+      "date": "2026-01-05T18:29:17",
+      "engagement": {
+        "likes": 2,
         "comments": 1,
         "shares": 0,
         "views": 0,
-        "total": 24
+        "total": 3
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "bluesky"
     },
     {
-      "id": null,
-      "url": "https://www.instagram.com/p/DS5qjTnknI6/",
-      "text": "",
-      "date": "2025-12-30T20:29:46",
+      "id": "3mbmax5bjgs2o",
+      "url": "https://bsky.app/profile/montclairlocalnews.bsky.social/post/3mbmax5bjgs2o",
+      "text": "From the camper kitchen to the heart of the home, she was always ready to make you a legendary sandwich or her famous waffles. Her skills with brain teasers and puzzles were unmatched, and you could a",
+      "date": "2026-01-04T15:38:00.048000",
       "engagement": {
-        "likes": 21,
-        "comments": 2,
+        "likes": 3,
+        "comments": 0,
         "shares": 0,
         "views": 0,
-        "total": 23
+        "total": 3
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "bluesky"
     }
   ],
   "overall_frequency": {

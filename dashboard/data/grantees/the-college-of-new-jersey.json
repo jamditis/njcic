@@ -323,7 +323,8 @@
         "views": 13700,
         "total": 881
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/ogbuDfhYEEoVQfTF4AnAFBS0QhRiAaRkVEHGd4~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=meqphm7uL6OBdX2Xi6%2Bfk6bh6S0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/ogbuDfhYEEoVQfTF4AnAFBS0QhRiAaRkVEHGd4~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=meqphm7uL6OBdX2Xi6%2Bfk6bh6S0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "platform": "tiktok"
     },
     {
       "id": "7490605848465607966",
@@ -337,7 +338,8 @@
         "views": 11000,
         "total": 386
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oE2LeiKlQYMo3MbbyehHnQf2fo3ewGLrzCIAAg~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=W0DTwo%2BahIDOrwQ2WSKtX0QBsYo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oE2LeiKlQYMo3MbbyehHnQf2fo3ewGLrzCIAAg~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=W0DTwo%2BahIDOrwQ2WSKtX0QBsYo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "platform": "tiktok"
     },
     {
       "id": null,
@@ -351,7 +353,8 @@
         "views": 0,
         "total": 317
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -365,7 +368,8 @@
         "views": 0,
         "total": 309
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": "7479135200203607326",
@@ -379,7 +383,23 @@
         "views": 14000,
         "total": 247
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/okDLLKAyfAIDwLLFADRnqgB1OEEVFENJezDIL4~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=YEg3C45qpBEVRo4khmmOsFQ%2FdAM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/okDLLKAyfAIDwLLFADRnqgB1OEEVFENJezDIL4~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=YEg3C45qpBEVRo4khmmOsFQ%2FdAM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "platform": "tiktok"
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DR27Flqifj_/",
+      "text": "",
+      "date": "2025-12-04T22:23:42",
+      "engagement": {
+        "likes": 161,
+        "comments": 29,
+        "shares": 0,
+        "views": 0,
+        "total": 190
+      },
+      "thumbnail": null,
+      "platform": "instagram"
     }
   ],
   "overall_frequency": {

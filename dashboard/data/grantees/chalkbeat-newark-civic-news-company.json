@@ -406,7 +406,8 @@
         "views": 0,
         "total": 529
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -420,7 +421,8 @@
         "views": 7077,
         "total": 120
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "youtube"
     },
     {
       "id": null,
@@ -434,7 +436,8 @@
         "views": 0,
         "total": 84
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -448,21 +451,83 @@
         "views": 0,
         "total": 77
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
-      "url": "https://www.instagram.com/p/DSIgATRkUpA/",
-      "text": "",
-      "date": "2025-12-11T18:17:18",
+      "url": "https://www.youtube.com/watch?v=RM5IvUTMiTo",
+      "text": "Memphis parent speaks with reporters after Cummings Elementary School shooting",
+      "date": null,
       "engagement": {
-        "likes": 66,
+        "likes": 27,
+        "comments": 2,
+        "shares": 0,
+        "views": 1132,
+        "total": 29
+      },
+      "thumbnail": null,
+      "platform": "youtube"
+    },
+    {
+      "id": "3mbuqwmb5ax2q",
+      "url": "https://bsky.app/profile/chalkbeat.org/post/3mbuqwmb5ax2q",
+      "text": "After the Trump administration announced Monday that it was freezing funding for social programs in Colorado and four other states, officials said funds that help low-income families pay for child car",
+      "date": "2026-01-08T00:45:19",
+      "engagement": {
+        "likes": 8,
+        "comments": 4,
+        "shares": 5,
+        "views": 0,
+        "total": 17
+      },
+      "thumbnail": null,
+      "platform": "bluesky"
+    },
+    {
+      "id": "3mbpkpybis224",
+      "url": "https://bsky.app/profile/chalkbeat.org/post/3mbpkpybis224",
+      "text": "Gov. Kathy Hochul wants every 10th grader across New York to take the Teen Mental Health First Aid course to help them spot signs of crisis and support their peers.",
+      "date": "2026-01-05T23:10:56",
+      "engagement": {
+        "likes": 12,
+        "comments": 1,
+        "shares": 1,
+        "views": 0,
+        "total": 14
+      },
+      "thumbnail": null,
+      "platform": "bluesky"
+    },
+    {
+      "id": "3mbpihqhqzs2u",
+      "url": "https://bsky.app/profile/chalkbeat.org/post/3mbpihqhqzs2u",
+      "text": "NYC schools Chancellor Kamar Samuels said every student deserves an integrated school in his opening letter to Education Department staff.",
+      "date": "2026-01-05T22:30:32",
+      "engagement": {
+        "likes": 11,
         "comments": 2,
         "shares": 0,
         "views": 0,
-        "total": 68
+        "total": 13
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "bluesky"
+    },
+    {
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=lDnxxWfInSM",
+      "text": "Soulsville students learn physics in Jack Replinger’s class",
+      "date": null,
+      "engagement": {
+        "likes": 9,
+        "comments": 0,
+        "shares": 0,
+        "views": 1004,
+        "total": 9
+      },
+      "thumbnail": null,
+      "platform": "youtube"
     }
   ],
   "overall_frequency": {
