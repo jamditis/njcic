@@ -365,7 +365,8 @@
         "views": 655,
         "total": 63
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/0069dd10387b4f11aca5c596b0ff3b78_1667856095~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=MORrQR4ZUITff675p4mLt6TfVY0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/0069dd10387b4f11aca5c596b0ff3b78_1667856095~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=MORrQR4ZUITff675p4mLt6TfVY0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "platform": "tiktok"
     },
     {
       "id": "7164072234359852290",
@@ -379,7 +380,8 @@
         "views": 307,
         "total": 54
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/b4a0a6717a044db0a652fa195432306c_1668015566~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=%2FEKigH2VG6YgTHXTFPqIuFThUvo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/b4a0a6717a044db0a652fa195432306c_1668015566~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=%2FEKigH2VG6YgTHXTFPqIuFThUvo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "platform": "tiktok"
     },
     {
       "id": "7162165446160977154",
@@ -393,35 +395,98 @@
         "views": 545,
         "total": 45
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/d50a10c49507433bbeb4bfa02af48c0f_1667571603~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=GdSeMcgGfLzkBVcjUg4%2F9186vy8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/d50a10c49507433bbeb4bfa02af48c0f_1667571603~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=GdSeMcgGfLzkBVcjUg4%2F9186vy8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "platform": "tiktok"
     },
     {
-      "id": "7163377610737601793",
-      "url": "https://www.tiktok.com/@lens15media/video/7163377610737601793",
-      "text": "Norman Smith, who runs Project Freedom, an apartment complex for peop...",
-      "date": "2022-11-07T13:43:47",
+      "id": null,
+      "url": "https://www.instagram.com/p/CoWSo-3NEyO/",
+      "text": "",
+      "date": "2023-02-07T04:47:25",
       "engagement": {
-        "likes": 41,
+        "likes": 14,
+        "comments": 4,
+        "shares": 0,
+        "views": 0,
+        "total": 18
+      },
+      "thumbnail": null,
+      "platform": "instagram"
+    },
+    {
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=d77cMw18unk",
+      "text": "Invisible Impact; Disability on Climate Change's Frontline (Trailer)",
+      "date": null,
+      "engagement": {
+        "likes": 15,
+        "comments": 2,
+        "shares": 0,
+        "views": 477,
+        "total": 17
+      },
+      "thumbnail": null,
+      "platform": "youtube"
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/CpTj6yjNnmc/",
+      "text": "",
+      "date": "2023-03-02T23:52:04",
+      "engagement": {
+        "likes": 16,
         "comments": 1,
-        "shares": 1,
-        "views": 1323,
-        "total": 43
+        "shares": 0,
+        "views": 0,
+        "total": 17
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/4bd10c8822304ce1a136581a06e79da0_1667853829~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=TonJQdlbz5dNsH3sAGMeQbhwfIw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
-      "id": "7163741022978116865",
-      "url": "https://www.tiktok.com/@lens15media/video/7163741022978116865",
-      "text": "Timika Cheek has 3 go-bags in her home just in case she needs to quic...",
-      "date": "2022-11-08T13:14:10",
+      "id": null,
+      "url": "https://www.instagram.com/p/ClHjM4cpi2A/",
+      "text": "",
+      "date": "2022-11-18T21:49:20",
       "engagement": {
-        "likes": 35,
-        "comments": 0,
-        "shares": 1,
-        "views": 601,
-        "total": 36
+        "likes": 9,
+        "comments": 1,
+        "shares": 0,
+        "views": 0,
+        "total": 10
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/af8001465ea74485b6b96462359ce865_1667938451~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=FZHK4ccyDw0LuujYF2l2Wfd%2FlL0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": null,
+      "platform": "instagram"
+    },
+    {
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=7xU50JEHhkk",
+      "text": "Using Aira to food shop",
+      "date": null,
+      "engagement": {
+        "likes": 8,
+        "comments": 0,
+        "shares": 0,
+        "views": 372,
+        "total": 8
+      },
+      "thumbnail": null,
+      "platform": "youtube"
+    },
+    {
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=57uhSWMXO9U",
+      "text": "Disability & Evacuations",
+      "date": null,
+      "engagement": {
+        "likes": 5,
+        "comments": 0,
+        "shares": 0,
+        "views": 154,
+        "total": 5
+      },
+      "thumbnail": null,
+      "platform": "youtube"
     }
   ],
   "overall_frequency": {

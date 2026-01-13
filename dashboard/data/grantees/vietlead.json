@@ -268,7 +268,8 @@
         "views": 0,
         "total": 474
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -282,7 +283,8 @@
         "views": 0,
         "total": 431
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -296,35 +298,68 @@
         "views": 0,
         "total": 373
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
-      "url": "https://www.instagram.com/p/DQw3PvACR6q/",
-      "text": "",
-      "date": "2025-11-07T17:23:18",
+      "url": "https://www.youtube.com/watch?v=rmsemFtYk7E",
+      "text": "Biết Quyền Của Bạn: Hội Thảo Trực Tuyến Dành Cho Người Viên Tiệm Nail Việt (Know Your Rights Info)",
+      "date": null,
       "engagement": {
-        "likes": 179,
-        "comments": 7,
+        "likes": 1,
+        "comments": 0,
         "shares": 0,
-        "views": 0,
-        "total": 186
+        "views": 7,
+        "total": 1
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "youtube"
     },
     {
       "id": null,
-      "url": "https://www.instagram.com/p/DSm8E-0lsfT/",
-      "text": "",
-      "date": "2025-12-23T13:55:54",
+      "url": "https://www.youtube.com/watch?v=OxhW7U9BdN8",
+      "text": "[Bằng Tiếng Việt] VietLead Crimmigration Resource Webpage Overview",
+      "date": null,
       "engagement": {
-        "likes": 176,
-        "comments": 3,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "views": 1,
+        "total": 1
+      },
+      "thumbnail": null,
+      "platform": "youtube"
+    },
+    {
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=6A8_L7iGSj8",
+      "text": "VietLead Crimmigration Resource Webpage Overview in English",
+      "date": null,
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 7,
+        "total": 0
+      },
+      "thumbnail": null,
+      "platform": "youtube"
+    },
+    {
+      "id": "post_0",
+      "url": "https://www.facebook.com/vietlead/posts/pfbid0nfPNwBFawothVxhrB3f884ookReT7yw6FbzGpzJYUobVtNM55EDs8DBbQdNuoRRzl?__cft__[0]=AZa3g2sEEasQUoKKdFLJnrlT4rnpB5gT6_WQUQcNeIJDMSNLoClQt8okv2dDHEQbeEvwp_HauFdlx4aZyYvcB_5XU5l6mSHAUdo63K_vJoYTV2KtmnArJsfDuvdfG59R3kj7owEK-d67Y6tNCx7RvK4Z358LWpR8YdaYL4y_J3r7XeGMjXlgzfEptlZ6e79HyQE&__tn__=%2CO%2CP-R",
+      "text": "Home Is Where the Heart Is Recap & Update on the Community Defense Fund \nTh… See more",
+      "date": null,
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
         "shares": 0,
         "views": 0,
-        "total": 179
+        "total": 0
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "facebook"
     }
   ],
   "overall_frequency": {

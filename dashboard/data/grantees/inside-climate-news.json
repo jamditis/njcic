@@ -565,7 +565,8 @@
         "views": 0,
         "total": 3226
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -579,7 +580,8 @@
         "views": 0,
         "total": 415
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -593,35 +595,98 @@
         "views": 0,
         "total": 373
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
-      "url": "https://www.instagram.com/p/DOWbJpUAQu5/",
-      "text": "",
-      "date": "2025-09-08T17:54:45",
+      "url": null,
+      "text": "Taking aim at the United States and an “irresponsible lifestyle” with some of the world’s highest carbon emissions per capita, Pope Francis on Wednesday doubled down on his earlier call for urgent act",
+      "date": "2023-10-10T01:00:01",
       "engagement": {
-        "likes": 315,
-        "comments": 36,
+        "likes": 132,
+        "comments": 30,
         "shares": 0,
-        "views": 0,
-        "total": 351
+        "views": 30,
+        "total": 162
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "twitter"
+    },
+    {
+      "id": "7184855000902896942",
+      "url": "https://www.tiktok.com/@insideclimatenews/video/7184855000902896942",
+      "text": "This loud oil well sits just about 25 feet from the home that Yesinia...",
+      "date": "2023-01-04T10:47:13",
+      "engagement": {
+        "likes": 110,
+        "comments": 37,
+        "shares": 10,
+        "views": 6272,
+        "total": 157
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/60058d385dd641a7ba31777bcc5f35a5_1672854524~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=Ccsb6X9lCi9x9keLxX7a56Fm7Ss%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "platform": "tiktok"
     },
     {
       "id": null,
-      "url": "https://www.instagram.com/p/DRiHaM_Dtw9/",
-      "text": "",
-      "date": "2025-11-26T20:27:24",
+      "url": null,
+      "text": "The Amazon is the most biodiverse environment in the world and its preservation is critical for controlling climate change. But its destruction hasn’t stopped—and has gotten worse under Brazil’s curre",
+      "date": "2021-12-29T12:45:00",
       "engagement": {
-        "likes": 247,
-        "comments": 2,
+        "likes": 147,
+        "comments": 8,
         "shares": 0,
-        "views": 0,
-        "total": 249
+        "views": 8,
+        "total": 155
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "twitter"
+    },
+    {
+      "id": null,
+      "url": null,
+      "text": "Peabody, Arch, Cloud Peak and now Murray Energy. The country’s four largest coal producers have all filed for bankruptcy since 2016.",
+      "date": "2019-11-04T01:40:00",
+      "engagement": {
+        "likes": 129,
+        "comments": 13,
+        "shares": 0,
+        "views": 13,
+        "total": 142
+      },
+      "thumbnail": null,
+      "platform": "twitter"
+    },
+    {
+      "id": "7213429581087313194",
+      "url": "https://www.tiktok.com/@insideclimatenews/video/7213429581087313194",
+      "text": "Cyclone Freddy was an exceptionally powerful, long-lasting and devast...",
+      "date": "2023-03-22T10:51:07",
+      "engagement": {
+        "likes": 87,
+        "comments": 0,
+        "shares": 1,
+        "views": 1056,
+        "total": 88
+      },
+      "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/83fcfc37e2b6436c98a9401c0ba2e46a_1679507469~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=oe6Q%2B8a4SdiBAk9MchOhSwuPxLE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "platform": "tiktok"
+    },
+    {
+      "id": "7195268559507852590",
+      "url": "https://www.tiktok.com/@insideclimatenews/video/7195268559507852590",
+      "text": "The coral reefs in the northern Red Sea could show scientists how oth...",
+      "date": "2023-02-01T12:16:59",
+      "engagement": {
+        "likes": 64,
+        "comments": 1,
+        "shares": 1,
+        "views": 1562,
+        "total": 66
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/2fbebf80f6284782b540f1caf7a00e3d_1675279020~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=i1WMhd3cGmSvBWr2q3la9Ysadbo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "platform": "tiktok"
     }
   ],
   "overall_frequency": {

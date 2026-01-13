@@ -316,7 +316,8 @@
         "views": 0,
         "total": 26
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -330,7 +331,8 @@
         "views": 0,
         "total": 15
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -344,35 +346,68 @@
         "views": 0,
         "total": 7
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
-      "url": "https://www.instagram.com/p/DQZiq0mER3U/",
-      "text": "",
-      "date": "2025-10-29T16:00:57",
+      "url": "https://www.youtube.com/watch?v=89GD4Bm_k-k",
+      "text": "Applying for a NJCH Grant",
+      "date": null,
       "engagement": {
-        "likes": 4,
-        "comments": 0,
+        "likes": 1,
+        "comments": 1,
         "shares": 0,
-        "views": 0,
-        "total": 4
+        "views": 104,
+        "total": 2
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "youtube"
     },
     {
       "id": null,
-      "url": "https://www.instagram.com/p/DPjM_UNDkPB/",
-      "text": "",
-      "date": "2025-10-08T13:32:32",
+      "url": "https://www.youtube.com/watch?v=8pRC0EXR84A",
+      "text": "Applying for an NJCH Grant (Sept 2023)",
+      "date": null,
       "engagement": {
-        "likes": 4,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0,
+        "views": 102,
+        "total": 2
+      },
+      "thumbnail": null,
+      "platform": "youtube"
+    },
+    {
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=TuYa3LUcfRE",
+      "text": "Creating an Outstanding Proposal - Narrative",
+      "date": null,
+      "engagement": {
+        "likes": 2,
+        "comments": 0,
+        "shares": 0,
+        "views": 70,
+        "total": 2
+      },
+      "thumbnail": null,
+      "platform": "youtube"
+    },
+    {
+      "id": "post_0",
+      "url": "https://www.facebook.com/NJHumanities/posts/pfbid024PWW7roGgtbYY2gCnJ9bPyRRhFjC9TLWgU4Z4p71XH6WHpwLpJUVo76o5TgXWvdZl?__cft__[0]=AZZzAiGA87mdKJtXgmy8QO-TczNF8eoGG0oy4Kd19qWgml0OXAIuwVJ4w0QU4MYnvlgEUTrC3dHBUxLwkH9WWhinW3QZCmV7lJ41OJhDVWKQZeWlzRsNNIXhV4IbVXmnXIy4t1kaqpfleEINfEVUMrmeY2zSUyPSudlZorEbMI9EtOOSp7y80vKRaVKbiG4R7h_N8tmvVxXKcyfGWAC8wH6xtFWgLz2ySJMZiITve7M8_A&__tn__=%2CO%2CP-R",
+      "text": "We are proud to fund the \"J Lab,\" a vital initiative empowering residents to tell the stories that matter most to their communities. \nN… See more",
+      "date": null,
+      "engagement": {
+        "likes": 0,
         "comments": 0,
         "shares": 0,
         "views": 0,
-        "total": 4
+        "total": 0
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "facebook"
     }
   ],
   "overall_frequency": {

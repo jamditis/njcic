@@ -273,7 +273,8 @@
         "views": 0,
         "total": 45
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -287,7 +288,8 @@
         "views": 0,
         "total": 32
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -301,35 +303,83 @@
         "views": 0,
         "total": 24
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
-      "url": "https://www.instagram.com/p/DH6xaVnt1Px/",
-      "text": "",
-      "date": "2025-04-01T21:02:29",
+      "url": "https://www.youtube.com/watch?v=2or_W7Dweps",
+      "text": "3 Rounds Episode 003 Jeff Dey",
+      "date": null,
       "engagement": {
-        "likes": 15,
-        "comments": 0,
+        "likes": 2,
+        "comments": 1,
         "shares": 0,
-        "views": 0,
-        "total": 15
+        "views": 21,
+        "total": 3
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "youtube"
     },
     {
       "id": null,
-      "url": "https://www.instagram.com/p/DIPjcJssOGe/",
-      "text": "",
-      "date": "2025-04-09T22:44:08",
+      "url": "https://www.youtube.com/watch?v=dpF8YTqGI0o",
+      "text": "3 Rounds #001: Guest Chris Scott",
+      "date": null,
       "engagement": {
-        "likes": 13,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0,
+        "views": 44,
+        "total": 2
+      },
+      "thumbnail": null,
+      "platform": "youtube"
+    },
+    {
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=7j-PGa4oFSE",
+      "text": "3 Rounds #002 Nicole Fox",
+      "date": null,
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "views": 108,
+        "total": 1
+      },
+      "thumbnail": null,
+      "platform": "youtube"
+    },
+    {
+      "id": "post_0",
+      "url": "https://www.facebook.com/HammontonGazette/posts/pfbid0deGejdiDtjGWPmGySYqeC5oKfZJzua6w9Q8LeL1WRVTgRxu5hMU3YMYPd1DTgPiJl?__cft__[0]=AZYCr1tiYM16pA5X_y6rdg2WbG0vNiGtr5np2OS7WHNyYORW6g7lXGcvltMay3D3o30O6RT5U4uIHUNB5YAaQKAhRY8k3qLLCBsga1U0hUyY6la2F_oxpDLute6VH78KeIBM5WMOuss-D3fTq0qS4eewHuT7Z90ORVwjYHsOxDGWSEm49rSyz34jk-Xphcdu810&__tn__=%2CO%2CP-R",
+      "text": "Merry Christmas and Happy Holidays from the Hammonton Gazette!",
+      "date": null,
+      "engagement": {
+        "likes": 0,
         "comments": 0,
         "shares": 0,
         "views": 0,
-        "total": 13
+        "total": 0
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "facebook"
+    },
+    {
+      "id": "post_1",
+      "url": "https://www.facebook.com/HammontonGazette/posts/pfbid0deGejdiDtjGWPmGySYqeC5oKfZJzua6w9Q8LeL1WRVTgRxu5hMU3YMYPd1DTgPiJl?comment_id=4135294983450422&__cft__[0]=AZYCr1tiYM16pA5X_y6rdg2WbG0vNiGtr5np2OS7WHNyYORW6g7lXGcvltMay3D3o30O6RT5U4uIHUNB5YAaQKAhRY8k3qLLCBsga1U0hUyY6la2F_oxpDLute6VH78KeIBM5WMOuss-D3fTq0qS4eewHuT7Z90ORVwjYHsOxDGWSEm49rSyz34jk-Xphcdu810&__tn__=R-R",
+      "text": "Merry Christmas!",
+      "date": null,
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 0
+      },
+      "thumbnail": null,
+      "platform": "facebook"
     }
   ],
   "overall_frequency": {

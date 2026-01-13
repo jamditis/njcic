@@ -415,7 +415,8 @@
         "views": 711,
         "total": 10
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "youtube"
     },
     {
       "id": null,
@@ -429,21 +430,8 @@
         "views": 695,
         "total": 6
       },
-      "thumbnail": null
-    },
-    {
-      "id": null,
-      "url": "https://www.youtube.com/watch?v=wecbAW0IW5M",
-      "text": "Impact of Tariffs on Small Businesses#rdww #RonnieDandWeswillShow #cpsu #camden",
-      "date": null,
-      "engagement": {
-        "likes": 3,
-        "comments": 2,
-        "shares": 0,
-        "views": 729,
-        "total": 5
-      },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "youtube"
     },
     {
       "id": "7460211313306914055",
@@ -457,21 +445,98 @@
         "views": 259,
         "total": 5
       },
-      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oMKeSF0XWAQpBsrRAQFiHfgDffdyirfEMSKcPQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=jVJypjoUM9FcDfo6TQfdP66nzT0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oMKeSF0XWAQpBsrRAQFiHfgDffdyirfEMSKcPQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=jVJypjoUM9FcDfo6TQfdP66nzT0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "platform": "tiktok"
     },
     {
       "id": null,
-      "url": "https://www.youtube.com/watch?v=WblefcZMQJA",
-      "text": "Ronnie D & Wes Will Ep.4",
+      "url": "https://www.youtube.com/watch?v=wecbAW0IW5M",
+      "text": "Impact of Tariffs on Small Businesses#rdww #RonnieDandWeswillShow #cpsu #camden",
       "date": null,
       "engagement": {
-        "likes": 5,
-        "comments": 0,
+        "likes": 3,
+        "comments": 2,
         "shares": 0,
-        "views": 14,
+        "views": 729,
         "total": 5
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "youtube"
+    },
+    {
+      "id": "7468810695950306578",
+      "url": "https://www.tiktok.com/@camdenpsu/video/7468810695950306578",
+      "text": "The Importance of Family Visits During the Holidays#camdencountynj #c...",
+      "date": "2025-02-07T15:40:19",
+      "engagement": {
+        "likes": 2,
+        "comments": 0,
+        "shares": 0,
+        "views": 195,
+        "total": 2
+      },
+      "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okrmriAT8AgUgceyCMrPC9CAiQDoWEievRfg3m~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=nBl%2F6rFWHFN9dY4JyxRnHCjArOE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "platform": "tiktok"
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DSfJXTDjBon/",
+      "text": "",
+      "date": "2025-12-20T13:18:04",
+      "engagement": {
+        "likes": 2,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 2
+      },
+      "thumbnail": null,
+      "platform": "instagram"
+    },
+    {
+      "id": "7536343053146049793",
+      "url": "https://www.tiktok.com/@camdenpsu/video/7536343053146049793",
+      "text": "Dance Teacher Racist Incedent #ronniedAndWeswill #cpsu #camden",
+      "date": "2025-08-08T15:20:14",
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "views": 122,
+        "total": 1
+      },
+      "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUeTmeC0disrQAIIeWCLJJNGFxXmWQWsfpwACG~tplv-tiktokx-origin.image?dr=9636&x-expires=1768104000&x-signature=ZnmS8QRm%2BVXcsP%2FNCVdqiq4JPPs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "platform": "tiktok"
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DSbN0rFDK56/",
+      "text": "",
+      "date": "2025-12-19T00:40:05",
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 1
+      },
+      "thumbnail": null,
+      "platform": "instagram"
+    },
+    {
+      "id": null,
+      "url": "https://www.instagram.com/p/DSGQL7xjQei/",
+      "text": "",
+      "date": "2025-12-10T21:16:41",
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 1
+      },
+      "thumbnail": null,
+      "platform": "instagram"
     }
   ],
   "overall_frequency": {

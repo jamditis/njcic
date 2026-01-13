@@ -290,7 +290,8 @@
         "views": 0,
         "total": 9
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -304,7 +305,8 @@
         "views": 70,
         "total": 8
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "youtube"
     },
     {
       "id": null,
@@ -318,7 +320,8 @@
         "views": 0,
         "total": 7
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -332,7 +335,8 @@
         "views": 0,
         "total": 5
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -346,7 +350,38 @@
         "views": 137,
         "total": 4
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "youtube"
+    },
+    {
+      "id": null,
+      "url": "https://www.youtube.com/watch?v=zzTDEzRuhgU",
+      "text": "Women's History Month 2024",
+      "date": null,
+      "engagement": {
+        "likes": 4,
+        "comments": 0,
+        "shares": 0,
+        "views": 64,
+        "total": 4
+      },
+      "thumbnail": null,
+      "platform": "youtube"
+    },
+    {
+      "id": "post_0",
+      "url": "https://www.facebook.com/MentalHealthAssociationinNewJerseyInc/posts/pfbid021pDhG3iTSoga1t2rGR8jehARpuFTqJS5txzTTxjcs31kbH6vzraGGRojnCeE8sLdl?__cft__[0]=AZZFPSlLsfn-iXxxMZO6e583aJ4q1-b6xKhz1LnU_xGk9BBeXofhq1ZXaAMQzgDdGq3QhAQ1KyGt47xTEEBdM7qpltqKuTZQOMTLZKiIGYONGekINY4HZPyKY5xCUcm8EfRt608_0MKOylV6_YCuEmaG9rkXLOCuH-J_UFI-r7I_Zhij0DF6cSpwv5BxUWTmzrA&__tn__=%2CO%2CP-R",
+      "text": "In 2025, our Silver Level sponsor, minette's angels, partenered with us for an unforgettable Evening of Excellence—our signature annual celebration recognizing the chan… See more",
+      "date": null,
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0,
+        "total": 0
+      },
+      "thumbnail": null,
+      "platform": "facebook"
     }
   ],
   "overall_frequency": {

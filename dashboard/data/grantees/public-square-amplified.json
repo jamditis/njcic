@@ -337,7 +337,8 @@
         "views": 0,
         "total": 13
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -351,7 +352,8 @@
         "views": 0,
         "total": 9
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -365,35 +367,68 @@
         "views": 0,
         "total": 8
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
-      "id": null,
-      "url": "https://www.instagram.com/p/DP69ty-jWx3/",
-      "text": "",
-      "date": "2025-10-17T19:01:23",
+      "id": "3m3ilniaahs2p",
+      "url": "https://bsky.app/profile/publicsq.bsky.social/post/3m3ilniaahs2p",
+      "text": "“If you can't fly, then run,\nif you can't run, then walk,\nif you can't walk, then crawl,\nbut whatever you do,\nyou have to keep moving forward.”\n- Dr. Martin Luther King Jr.\n\n#NoKings #NoKingsInAmerica",
+      "date": "2025-10-18T20:07:38.416000",
       "engagement": {
-        "likes": 7,
+        "likes": 2,
+        "comments": 0,
+        "shares": 2,
+        "views": 0,
+        "total": 4
+      },
+      "thumbnail": null,
+      "platform": "bluesky"
+    },
+    {
+      "id": "3lzqzj7ivsc2w",
+      "url": "https://bsky.app/profile/publicsq.bsky.social/post/3lzqzj7ivsc2w",
+      "text": "In pt. 2 of our 2025 Citizen Journalism class’s series on the Essex-Hudson Greenway, the team explores national Greenway trends, the role of vegetation and biodiversity, and how public transit connect",
+      "date": "2025-09-26T17:46:42.078000",
+      "engagement": {
+        "likes": 3,
+        "comments": 0,
+        "shares": 1,
+        "views": 0,
+        "total": 4
+      },
+      "thumbnail": null,
+      "platform": "bluesky"
+    },
+    {
+      "id": "3lz5rgkh3qc2n",
+      "url": "https://bsky.app/profile/publicsq.bsky.social/post/3lz5rgkh3qc2n",
+      "text": "Our community news platform includes news stories in the form of \"News Poems\" to offers everyone a unique storytelling venue. Read one from Political Writer, @mattdragon.com",
+      "date": "2025-09-19T02:01:27.947000",
+      "engagement": {
+        "likes": 3,
+        "comments": 0,
+        "shares": 1,
+        "views": 0,
+        "total": 4
+      },
+      "thumbnail": null,
+      "platform": "bluesky"
+    },
+    {
+      "id": "post_0",
+      "url": "https://www.facebook.com/publicsquarenews/posts/pfbid0kFbcwmC4deMTBeN4ownYF2Jun1Q5M4ufK3dijxKTR7MoVnr7b79iepHUGW59o1Tgl?__cft__[0]=AZZjjKiqcEdjrYzWL8gQfdF7ZftKaLnuauVYUc7VmHH9vTgdutv5VTuDLjvSypJ2W0HhVZddgDDWwhvh5xnGZvHBQafV4A4D7TL5KP4Glqb2ZkSk4gvnSxzMvWwkCXON-kumLqqzNRd4ytUZVRY_HOkkeX_lI92aBvuZ_J3LDgnkx0NSL_cXe_QTV7PnojorS24&__tn__=%2CO%2CP-R",
+      "text": "For his latest Opinion piece, Political Writer Matt Dragon uses the framework of US racialized political history to draw a direct trajectory to the actions of ICE on th… See more",
+      "date": null,
+      "engagement": {
+        "likes": 0,
         "comments": 0,
         "shares": 0,
         "views": 0,
-        "total": 7
+        "total": 0
       },
-      "thumbnail": null
-    },
-    {
-      "id": null,
-      "url": "https://www.instagram.com/p/DQZpcPACU-P/",
-      "text": "",
-      "date": "2025-10-29T17:00:08",
-      "engagement": {
-        "likes": 6,
-        "comments": 1,
-        "shares": 0,
-        "views": 0,
-        "total": 7
-      },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "facebook"
     }
   ],
   "overall_frequency": {

@@ -327,7 +327,8 @@
         "views": 0,
         "total": 11970
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -341,7 +342,8 @@
         "views": 0,
         "total": 1617
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
       "id": null,
@@ -355,35 +357,53 @@
         "views": 0,
         "total": 1295
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "instagram"
     },
     {
-      "id": null,
-      "url": "https://www.instagram.com/p/DFVVtW_u2YU/",
-      "text": "",
-      "date": "2025-01-27T15:05:25",
+      "id": "3lfuphv57bc2v",
+      "url": "https://bsky.app/profile/detentionwatchnetwork.org/post/3lfuphv57bc2v",
+      "text": "This week Congress is fast-tracking two immigration bills that will vastly expand the incoming Trump administration’s ability to carry out its mass deportation plans. \n\n🚨Take action now: contact your ",
+      "date": "2025-01-16T16:33:46.657000",
       "engagement": {
-        "likes": 494,
+        "likes": 49,
         "comments": 1,
-        "shares": 0,
+        "shares": 44,
         "views": 0,
-        "total": 495
+        "total": 94
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "bluesky"
     },
     {
-      "id": null,
-      "url": "https://www.instagram.com/p/DPIQjXBjjlX/",
-      "text": "",
-      "date": "2025-09-28T02:24:10",
+      "id": "3lfuphxduyc2v",
+      "url": "https://bsky.app/profile/detentionwatchnetwork.org/post/3lfuphxduyc2v",
+      "text": "Both immigration bills will lead to many more people being detained without access to bond and will have a disproportionate impact on Black and brown communities as well as survivors of domestic viole",
+      "date": "2025-01-16T16:33:46.658000",
       "engagement": {
-        "likes": 233,
-        "comments": 61,
-        "shares": 0,
+        "likes": 55,
+        "comments": 1,
+        "shares": 26,
         "views": 0,
-        "total": 294
+        "total": 82
       },
-      "thumbnail": null
+      "thumbnail": null,
+      "platform": "bluesky"
+    },
+    {
+      "id": "3logkjyf3vk2l",
+      "url": "https://bsky.app/profile/tusk81.bsky.social/post/3logkjyf3vk2l",
+      "text": "In New Jersey, @cosecha.bsky.social organizer Haydi Torres stressed the importance of solidarity and standing up for community members who are feeling vulnerable. “We have to take care of each other i",
+      "date": "2025-05-05T14:14:56.774000",
+      "engagement": {
+        "likes": 17,
+        "comments": 1,
+        "shares": 3,
+        "views": 0,
+        "total": 21
+      },
+      "thumbnail": null,
+      "platform": "bluesky"
     }
   ],
   "overall_frequency": {
