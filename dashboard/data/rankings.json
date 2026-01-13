@@ -62,7 +62,7 @@
     },
     {
       "rank": 11,
-      "name": "Slice of Culture   Saint Peter s University",
+      "name": "Slice of Culture (Saint Peter's University)",
       "slug": "slice-of-culture-saint-peter-s-university",
       "value": 2436
     },
@@ -86,7 +86,7 @@
     },
     {
       "rank": 15,
-      "name": "Chalkbeat Newark  Civic News Company ",
+      "name": "Chalkbeat Newark (Civic News Company)",
       "slug": "chalkbeat-newark-civic-news-company",
       "value": 1454
     },
@@ -248,13 +248,13 @@
     },
     {
       "rank": 42,
-      "name": "New Jersey Council for the Humanities and Journalism   Design",
+      "name": "New Jersey Council for the Humanities and Journalism Design",
       "slug": "new-jersey-council-for-the-humanities-and-journalism-design",
       "value": 73
     },
     {
       "rank": 43,
-      "name": "Camden Parent   Student Union",
+      "name": "Camden Parent Student Union",
       "slug": "camden-parent-student-union",
       "value": 71
     },
@@ -320,7 +320,7 @@
     },
     {
       "rank": 54,
-      "name": "Radio Rouj   Ble",
+      "name": "Radio Rouj Ble",
       "slug": "radio-rouj-ble",
       "value": 0
     },
@@ -358,7 +358,7 @@
   "by_posts": [
     {
       "rank": 1,
-      "name": "Chalkbeat Newark  Civic News Company ",
+      "name": "Chalkbeat Newark (Civic News Company)",
       "slug": "chalkbeat-newark-civic-news-company",
       "value": 5693
     },
@@ -478,7 +478,7 @@
     },
     {
       "rank": 21,
-      "name": "New Jersey Council for the Humanities and Journalism   Design",
+      "name": "New Jersey Council for the Humanities and Journalism Design",
       "slug": "new-jersey-council-for-the-humanities-and-journalism-design",
       "value": 115
     },
@@ -568,7 +568,7 @@
     },
     {
       "rank": 36,
-      "name": "Camden Parent   Student Union",
+      "name": "Camden Parent Student Union",
       "slug": "camden-parent-student-union",
       "value": 84
     },
@@ -598,7 +598,7 @@
     },
     {
       "rank": 41,
-      "name": "Slice of Culture   Saint Peter s University",
+      "name": "Slice of Culture (Saint Peter's University)",
       "slug": "slice-of-culture-saint-peter-s-university",
       "value": 71
     },
@@ -700,7 +700,7 @@
     },
     {
       "rank": 58,
-      "name": "Radio Rouj   Ble",
+      "name": "Radio Rouj Ble",
       "slug": "radio-rouj-ble",
       "value": 1
     },
@@ -711,5 +711,5 @@
       "value": 0
     }
   ],
-  "generated_at": "2026-01-13T23:07:34.083718"
+  "generated_at": "2026-01-13T23:11:36.754606"
 }
