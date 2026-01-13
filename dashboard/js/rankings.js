@@ -43,7 +43,6 @@
             'Wayne Hills High School'
         ],
         'nonprofit': [
-            'Muslim',
             'Movimiento Cosecha',
             'Clinton Hill Community Action',
             'Newark Water Coalition',

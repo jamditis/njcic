@@ -1,12 +1,6 @@
 {
   "by_engagement": [
     {
-      "rank": 1,
-      "name": "Muslim",
-      "slug": "muslim",
-      "value": 1964937
-    },
-    {
       "rank": 2,
       "name": "Global Patriot Newspapers online",
       "slug": "global-patriot-newspapers-online",
@@ -362,12 +356,6 @@
     }
   ],
   "by_posts": [
-    {
-      "rank": 1,
-      "name": "Muslim",
-      "slug": "muslim",
-      "value": 99
-    },
     {
       "rank": 2,
       "name": "Clinton Hill Community Action",
@@ -725,12 +713,6 @@
   ],
   "by_engagement_rate": [
     {
-      "rank": 1,
-      "name": "Muslim",
-      "slug": "muslim",
-      "value": 19847.85
-    },
-    {
       "rank": 2,
       "name": "Global Patriot Newspapers online",
       "slug": "global-patriot-newspapers-online",
@@ -1086,12 +1068,6 @@
     }
   ],
   "by_followers": [
-    {
-      "rank": 1,
-      "name": "Muslim",
-      "slug": "muslim",
-      "value": 7110943
-    },
     {
       "rank": 2,
       "name": "Inside Climate News",
@@ -1494,12 +1470,6 @@
       "rank": 8,
       "name": "Mental Health Association of New Jersey",
       "slug": "mental-health-association-of-new-jersey",
-      "value": 5
-    },
-    {
-      "rank": 9,
-      "name": "Muslim",
-      "slug": "muslim",
       "value": 5
     },
     {
