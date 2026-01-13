@@ -370,8 +370,7 @@
         // Fallback to generated path
         const logoMap = {
             'hopeloft-inc': 'hopeloft',
-            'the-daily-targum-targum-publishing-co': 'daily-targum',
-            'tapinto-hasbrouk-heights': 'tapinto-hasbrouck-heights'
+            'the-daily-targum-targum-publishing-co': 'daily-targum'
         };
         const logoSlug = logoMap[data.slug] || data.slug;
         return `../../branding/logos/grantees-web/${logoSlug}.png`;
