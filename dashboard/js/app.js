@@ -27,7 +27,7 @@
     let currentFilters = {
         search: '',
         platform: 'all',
-        sort: 'engagement-desc'
+        sort: 'name-asc'
     };
     let tableSort = {
         column: 'engagement',
@@ -180,27 +180,37 @@
     function getSampleData() {
         return {
             summary: {
-                totalGrantees: 14,
-                totalPosts: 371,
-                totalEngagement: 130252,
-                platformsTracked: 2,
+                totalGrantees: 59,
+                totalPosts: 18716,
+                totalEngagement: 455120,
+                platformsTracked: 7,
                 lastUpdated: new Date().toISOString()
             },
             platforms: {
-                tiktok: { posts: 196, engagement: 119632, grantees: 9 },
-                bluesky: { posts: 175, engagement: 10620, grantees: 7 }
+                tiktok: { posts: 389, engagement: 365179, grantees: 15 },
+                instagram: { posts: 1359, engagement: 62848, grantees: 52 },
+                bluesky: { posts: 13808, engagement: 21271, grantees: 11 },
+                youtube: { posts: 702, engagement: 4650, grantees: 25 },
+                twitter: { posts: 2033, engagement: 1775, grantees: 45 },
+                facebook: { posts: 284, engagement: 8, grantees: 48 },
+                linkedin: { posts: 301, engagement: 0, grantees: 30 }
             },
             topGrantees: [
-                { name: "HudPost", posts: 26, engagement: 103604, topPlatform: "tiktok", platformsScraped: 1 },
-                { name: "The Jersey Vindicator", posts: 25, engagement: 9610, topPlatform: "bluesky", platformsScraped: 1 },
-                { name: "NJ Spotlight News", posts: 51, engagement: 8623, topPlatform: "tiktok", platformsScraped: 2 },
-                { name: "The College of New Jersey", posts: 26, engagement: 2966, topPlatform: "tiktok", platformsScraped: 1 },
-                { name: "Slice of Culture Saint Peter's University", posts: 26, engagement: 1791, topPlatform: "tiktok", platformsScraped: 1 },
-                { name: "Daily Targum", posts: 26, engagement: 1609, topPlatform: "tiktok", platformsScraped: 1 }
+                { name: "Global Patriot Newspapers online", posts: 44, engagement: 242821, topPlatform: "tiktok", platformsScraped: 1 },
+                { name: "HudPost", posts: 130, engagement: 118660, topPlatform: "tiktok", platformsScraped: 2 },
+                { name: "Movimiento Cosecha", posts: 96, engagement: 16755, topPlatform: "instagram", platformsScraped: 4 },
+                { name: "NJ Spotlight News", posts: 541, engagement: 15368, topPlatform: "tiktok", platformsScraped: 4 },
+                { name: "Inside Climate News", posts: 939, engagement: 8232, topPlatform: "instagram", platformsScraped: 4 },
+                { name: "The Jersey Vindicator", posts: 268, engagement: 9761, topPlatform: "bluesky", platformsScraped: 1 }
             ],
             engagementByPlatform: [
-                { platform: "tiktok", engagement: 119632, posts: 196, color: "#000000" },
-                { platform: "bluesky", engagement: 10620, posts: 175, color: "#0085FF" }
+                { platform: "tiktok", engagement: 365179, posts: 389, color: "#000000" },
+                { platform: "instagram", engagement: 62848, posts: 1359, color: "#E1306C" },
+                { platform: "bluesky", engagement: 21271, posts: 13808, color: "#0085FF" },
+                { platform: "youtube", engagement: 4650, posts: 702, color: "#FF0000" },
+                { platform: "twitter", engagement: 1775, posts: 2033, color: "#1DA1F2" },
+                { platform: "facebook", engagement: 8, posts: 284, color: "#1877F2" },
+                { platform: "linkedin", engagement: 0, posts: 301, color: "#0A66C2" }
             ],
             metadata: {
                 generatedAt: new Date().toISOString(),
@@ -469,7 +479,8 @@
             instagram: `<svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>`,
             youtube: `<svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>`,
             twitter: `<svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>`,
-            facebook: `<svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>`
+            facebook: `<svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>`,
+            linkedin: `<svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>`
         };
         return icons[platform.toLowerCase()] || '';
     }
@@ -589,7 +600,8 @@
             instagram: '#E4405F',
             youtube: '#FF0000',
             twitter: '#1DA1F2',
-            facebook: '#1877F2'
+            facebook: '#1877F2',
+            linkedin: '#0A66C2'
         };
         return colors[platform?.toLowerCase()] || '#6B7280';
     }
