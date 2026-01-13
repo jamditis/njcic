@@ -266,28 +266,31 @@
     function getSampleData() {
         return {
             summary: {
-                totalGrantees: 14,
-                totalPosts: 371,
-                totalEngagement: 130252,
-                platformsTracked: 2
+                totalGrantees: 59,
+                totalPosts: 18716,
+                totalEngagement: 455120,
+                platformsTracked: 7
             },
             platforms: {
-                tiktok: { posts: 196, engagement: 119632, grantees: 9 },
-                bluesky: { posts: 175, engagement: 10620, grantees: 7 }
+                tiktok: { posts: 389, engagement: 365179, grantees: 15 },
+                instagram: { posts: 1359, engagement: 62848, grantees: 52 },
+                bluesky: { posts: 13808, engagement: 21271, grantees: 11 },
+                youtube: { posts: 702, engagement: 4650, grantees: 25 },
+                twitter: { posts: 2033, engagement: 1775, grantees: 45 },
+                facebook: { posts: 284, engagement: 8, grantees: 48 },
+                linkedin: { posts: 301, engagement: 0, grantees: 30 }
             },
             topGrantees: [
-                { name: "HudPost", posts: 26, engagement: 103604, topPlatform: "tiktok", platformsScraped: 1 },
-                { name: "The Jersey Vindicator", posts: 25, engagement: 9610, topPlatform: "bluesky", platformsScraped: 1 },
-                { name: "NJ Spotlight News", posts: 51, engagement: 8623, topPlatform: "tiktok", platformsScraped: 2 },
-                { name: "The College of New Jersey", posts: 26, engagement: 2966, topPlatform: "tiktok", platformsScraped: 1 },
-                { name: "Slice of Culture - Saint Peter's University", posts: 26, engagement: 1791, topPlatform: "tiktok", platformsScraped: 1 },
-                { name: "Daily Targum", posts: 26, engagement: 1609, topPlatform: "tiktok", platformsScraped: 1 },
-                { name: "South Jersey Climate News Project", posts: 38, engagement: 847, topPlatform: "tiktok", platformsScraped: 2 },
-                { name: "Inside Climate News", posts: 25, engagement: 675, topPlatform: "bluesky", platformsScraped: 1 },
-                { name: "Clinton Hill Community Action", posts: 26, engagement: 301, topPlatform: "tiktok", platformsScraped: 1 },
-                { name: "Chalkbeat Newark (Civic News Company)", posts: 25, engagement: 113, topPlatform: "bluesky", platformsScraped: 1 },
-                { name: "Public Square Amplified", posts: 25, engagement: 58, topPlatform: "bluesky", platformsScraped: 1 },
-                { name: "Montclair Local Nonprofit News", posts: 25, engagement: 38, topPlatform: "bluesky", platformsScraped: 1 }
+                { name: "Global Patriot Newspapers online", posts: 44, engagement: 242821, topPlatform: "tiktok", platformsScraped: 1 },
+                { name: "HudPost", posts: 130, engagement: 118660, topPlatform: "tiktok", platformsScraped: 2 },
+                { name: "Movimiento Cosecha", posts: 96, engagement: 16755, topPlatform: "instagram", platformsScraped: 4 },
+                { name: "NJ Spotlight News", posts: 541, engagement: 15368, topPlatform: "tiktok", platformsScraped: 4 },
+                { name: "Inside Climate News", posts: 939, engagement: 8232, topPlatform: "instagram", platformsScraped: 4 },
+                { name: "The Jersey Vindicator", posts: 268, engagement: 9761, topPlatform: "bluesky", platformsScraped: 1 },
+                { name: "Center for Cooperative Media", posts: 131, engagement: 9594, topPlatform: "bluesky", platformsScraped: 6 },
+                { name: "The College of New Jersey", posts: 76, engagement: 4760, topPlatform: "tiktok", platformsScraped: 2 },
+                { name: "Trenton Journal", posts: 48, engagement: 2850, topPlatform: "instagram", platformsScraped: 2 },
+                { name: "New Labor", posts: 36, engagement: 2760, topPlatform: "instagram", platformsScraped: 1 }
             ],
             metadata: {
                 generatedAt: new Date().toISOString()
@@ -485,7 +488,7 @@
 
         if (platformParam) {
             const normalizedPlatform = platformParam.toLowerCase();
-            const validPlatforms = ['all', 'tiktok', 'instagram', 'bluesky', 'youtube', 'twitter', 'facebook'];
+            const validPlatforms = ['all', 'tiktok', 'instagram', 'bluesky', 'youtube', 'twitter', 'facebook', 'linkedin'];
 
             if (validPlatforms.includes(normalizedPlatform)) {
                 currentPlatformFilter = normalizedPlatform;

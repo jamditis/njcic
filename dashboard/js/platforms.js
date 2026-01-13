@@ -17,7 +17,7 @@
     // Platform metadata for platforms not yet in the data
     const PLATFORM_METADATA = {
         tiktok: { name: 'TikTok', color: '#000000' },
-        bluesky: { name: 'BlueSky', color: '#0085FF' },
+        bluesky: { name: 'Bluesky', color: '#0085FF' },
         youtube: { name: 'YouTube', color: '#FF0000' },
         twitter: { name: 'Twitter/X', color: '#1DA1F2' },
         instagram: { name: 'Instagram', color: '#E4405F' },
@@ -682,7 +682,7 @@
      * Update last updated timestamp
      */
     function updateLastUpdated() {
-        const element = document.getElementById('last-updated');
+        const element = document.getElementById('footer-last-updated');
         if (!element) return;
 
         const timestamp = platformData?.generated_at || new Date().toISOString();
