@@ -316,21 +316,6 @@
       }
     },
     {
-      "name": "Hopeloft Inc",
-      "slug": "hopeloft-inc",
-      "website": "https://www.hopeloft.com",
-      "social": {
-        "instagram": "https://instagram.com/hopeloft",
-        "facebook": "https://facebook.com/Hopeloft",
-        "twitter": "https://x.com/TheHopeloft",
-        "linkedin": "https://linkedin.com/company/hopeloft",
-        "youtube": "",
-        "tiktok": "",
-        "bluesky": "",
-        "threads": ""
-      }
-    },
-    {
       "name": "Hopeloft (Follow South Jersey)",
       "slug": "hopeloft",
       "website": "https://followsouthjersey.com",
@@ -766,21 +751,6 @@
       }
     },
     {
-      "name": "The Daily Targum (Targum Publishing Co)",
-      "slug": "the-daily-targum-targum-publishing-co",
-      "website": "https://dailytargum.com",
-      "social": {
-        "instagram": "https://www.instagram.com/dailytargum/",
-        "facebook": "https://www.facebook.com/thedailytargum",
-        "twitter": "https://x.com/daily_targum",
-        "linkedin": "https://www.linkedin.com/company/the-daily-targum-official",
-        "youtube": "",
-        "tiktok": "https://www.tiktok.com/@thedailytargum",
-        "bluesky": "",
-        "threads": ""
-      }
-    },
-    {
       "name": "The Jersey Bee",
       "slug": "the-jersey-bee",
       "website": "https://jerseybee.org",
@@ -917,7 +887,7 @@
     }
   ],
   "metadata": {
-    "total_grantees": 61,
+    "total_grantees": 59,
     "last_updated": "2026-01-13",
     "source": "NJCIC dashboard grantee data with web research updates",
     "platforms_tracked": ["instagram", "facebook", "twitter", "linkedin", "youtube", "tiktok", "bluesky", "threads"],
