@@ -1,0 +1,3 @@
+[submodule "grantees-map"]
+	path = grantees-map
+	url = https://github.com/jamditis/njcic-grantees-map.git
