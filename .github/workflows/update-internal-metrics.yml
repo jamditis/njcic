@@ -1,0 +1,201 @@
+name: Update NJCIC internal metrics
+
+on:
+  schedule:
+    # Run weekly on Monday at 6:00 AM ET (11:00 UTC)
+    - cron: '0 11 * * 1'
+  workflow_dispatch:
+    inputs:
+      platforms:
+        description: 'Platforms to scrape (comma-separated, leave empty for all enabled)'
+        required: false
+        default: ''
+      max_posts:
+        description: 'Maximum posts per platform'
+        required: false
+        default: '50'
+
+env:
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  # Dummy job that succeeds on push events to prevent workflow failure status
+  skip-on-push:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Skip - internal metrics only runs on schedule
+        run: echo "Skipping internal metrics workflow on push event. Runs weekly on Mondays at 6 AM ET."
+
+  update-internal-metrics:
+    # Only run on schedule or manual trigger
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60  # 1-hour timeout
+
+    steps:
+      # Step 1: Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 2: Set up Python with pip caching
+      - name: Set up Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+          cache-dependency-path: 'njcic-scraper/requirements.txt'
+
+      # Step 3: Install Python dependencies
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r njcic-scraper/requirements.txt
+
+      # Step 4: Install Playwright with Chromium
+      - name: Install Playwright browsers
+        run: |
+          pip install playwright
+          playwright install chromium --with-deps
+
+      # Step 5: Run internal metrics scraper
+      - name: Scrape NJCIC internal social media metrics
+        id: scraper
+        continue-on-error: true
+        run: |
+          cd njcic-scraper
+          PLATFORMS="${{ github.event.inputs.platforms }}"
+          MAX_POSTS="${{ github.event.inputs.max_posts || '50' }}"
+
+          if [ -n "$PLATFORMS" ]; then
+            python scrape_internal.py --platforms "$PLATFORMS" --max-posts "$MAX_POSTS" 2>&1 | tee ../internal_scraper.log
+          else
+            python scrape_internal.py --max-posts "$MAX_POSTS" 2>&1 | tee ../internal_scraper.log
+          fi
+          echo "scraper_status=$?" >> $GITHUB_OUTPUT
+        env:
+          PYTHONUNBUFFERED: 1
+          # Twitter/X API credentials
+          TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
+          TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+          TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+          # YouTube API
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          # Bluesky credentials
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          # Instagram credentials
+          INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
+          INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
+          INSTAGRAM_SESSION_FILE: ${{ secrets.INSTAGRAM_SESSION_FILE }}
+          # Facebook credentials
+          FACEBOOK_ACCESS_TOKEN: ${{ secrets.FACEBOOK_ACCESS_TOKEN }}
+
+      # Step 6: Copy internal metrics data to dashboard
+      - name: Copy internal metrics to dashboard
+        run: |
+          INTERNAL_JSON="njcic-scraper/output/njcic-internal-metrics.json"
+
+          if [ -f "$INTERNAL_JSON" ]; then
+            echo "Found internal metrics data at: $INTERNAL_JSON"
+            mkdir -p dashboard/data
+            cp "$INTERNAL_JSON" dashboard/data/njcic-internal-metrics.json
+            echo "Internal metrics data copied successfully"
+          else
+            echo "Warning: njcic-internal-metrics.json not found"
+            echo "Listing available output files:"
+            find njcic-scraper/output -name "*.json" -type f 2>/dev/null | head -20 || true
+          fi
+
+      # Step 7: Commit and push changes
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          # Add relevant files
+          git add -A dashboard/data/njcic-internal-metrics.json || true
+          git add -A njcic-scraper/output/njcic-internal/ || true
+          git add -A njcic-scraper/output/njcic-internal-metrics.json || true
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+            git commit -m "Update NJCIC internal social metrics - $TIMESTAMP
+
+            Weekly automated update of NJCIC's organizational social media metrics.
+            Triggered by GitHub Actions cron job (Mondays at 6 AM ET)."
+
+            git push
+            echo "Changes committed and pushed successfully"
+          fi
+
+      # Step 8: Upload scraping artifacts
+      - name: Upload scraping artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: internal-metrics-artifacts-${{ github.run_number }}
+          retention-days: 30
+          path: |
+            njcic-scraper/output/njcic-internal/**/*.json
+            njcic-scraper/output/njcic-internal-metrics.json
+            njcic-scraper/logs/internal_scraper.log
+            *.log
+          if-no-files-found: warn
+
+      # Step 9: Generate run summary
+      - name: Generate workflow summary
+        if: always()
+        run: |
+          echo "## NJCIC Internal metrics update summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Run date:** $(date -u +"%Y-%m-%d %H:%M UTC")" >> $GITHUB_STEP_SUMMARY
+          echo "**Schedule:** Monday 6:00 AM ET" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Scraping result" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Step | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Internal metrics scraper | ${{ steps.scraper.outcome || 'skipped' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          # Display metrics summary if available
+          if [ -f "dashboard/data/njcic-internal-metrics.json" ]; then
+            echo "### Metrics snapshot" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`json" >> $GITHUB_STEP_SUMMARY
+            cat dashboard/data/njcic-internal-metrics.json | python -c "import sys,json; d=json.load(sys.stdin); print(json.dumps(d.get('summary',{}), indent=2))" 2>/dev/null || echo "Unable to parse metrics"
+            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          fi
+
+  # Notification job - runs after main job completes
+  notify:
+    needs: update-internal-metrics
+    runs-on: ubuntu-latest
+    if: always() && needs.update-internal-metrics.result == 'failure' && github.event_name != 'push'
+
+    steps:
+      - name: Send Slack notification on failure
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          fields: repo,message,commit,author,action,eventName,ref,workflow
+          text: 'NJCIC internal metrics update failed! Check the workflow run for details.'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
+        continue-on-error: true
+
+      - name: Log failure info
+        run: |
+          echo "Workflow failed. GitHub will send automatic notifications to repository watchers."
+          echo "To receive email notifications, ensure you're watching this repository."
+          echo ""
+          echo "Failed run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

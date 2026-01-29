@@ -1,0 +1,72 @@
+{
+  "organization": {
+    "name": "New Jersey Civic Information Consortium",
+    "slug": "njcic",
+    "website": "https://njcivicinfo.org",
+    "description": "The New Jersey Civic Information Consortium is the first state-funded initiative in the nation dedicated to supporting local news and civic information."
+  },
+  "lastUpdated": "2026-01-29T06:00:00.000000",
+  "scrapingDuration": "0s",
+  "summary": {
+    "totalPosts": 0,
+    "totalFollowers": 0,
+    "totalEngagement": 0,
+    "platformsTracked": 4,
+    "engagementRate": 0
+  },
+  "platforms": {
+    "twitter": {
+      "url": "https://x.com/njcivicinfo",
+      "username": "njcivicinfo",
+      "posts": 0,
+      "followers": 0,
+      "engagement": 0,
+      "engagementRate": 0,
+      "metrics": {},
+      "color": "#1DA1F2",
+      "success": false
+    },
+    "instagram": {
+      "url": "https://www.instagram.com/njcivicinfo/",
+      "username": "njcivicinfo",
+      "posts": 0,
+      "followers": 0,
+      "engagement": 0,
+      "engagementRate": 0,
+      "metrics": {},
+      "color": "#E1306C",
+      "success": false
+    },
+    "facebook": {
+      "url": "https://www.facebook.com/njcivicinfo",
+      "username": "njcivicinfo",
+      "posts": 0,
+      "followers": 0,
+      "engagement": 0,
+      "engagementRate": 0,
+      "metrics": {},
+      "color": "#1877F2",
+      "success": false
+    },
+    "linkedin": {
+      "url": "https://www.linkedin.com/company/njcivicinfo",
+      "username": "njcivicinfo",
+      "posts": 0,
+      "followers": 0,
+      "engagement": 0,
+      "engagementRate": 0,
+      "metrics": {},
+      "color": "#0A66C2",
+      "success": false
+    }
+  },
+  "weeklySnapshot": {
+    "weekOf": "2026-01-29",
+    "dayOfWeek": "Monday"
+  },
+  "history": [],
+  "metadata": {
+    "note": "Initial seed data - will be updated by weekly cron job running Monday at 6 AM ET",
+    "version": "1.0.0"
+  }
+}

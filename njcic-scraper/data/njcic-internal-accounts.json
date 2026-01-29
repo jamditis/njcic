@@ -1,0 +1,55 @@
+{
+  "organization": {
+    "name": "New Jersey Civic Information Consortium",
+    "slug": "njcic",
+    "website": "https://njcivicinfo.org",
+    "description": "The New Jersey Civic Information Consortium is the first state-funded initiative in the nation dedicated to supporting local news and civic information."
+  },
+  "social_accounts": {
+    "twitter": {
+      "url": "https://x.com/njcivicinfo",
+      "username": "njcivicinfo",
+      "enabled": true
+    },
+    "instagram": {
+      "url": "https://www.instagram.com/njcivicinfo/",
+      "username": "njcivicinfo",
+      "enabled": true
+    },
+    "facebook": {
+      "url": "https://www.facebook.com/njcivicinfo",
+      "username": "njcivicinfo",
+      "enabled": true
+    },
+    "linkedin": {
+      "url": "https://www.linkedin.com/company/njcivicinfo",
+      "username": "njcivicinfo",
+      "enabled": true
+    },
+    "youtube": {
+      "url": "",
+      "username": "",
+      "enabled": false
+    },
+    "tiktok": {
+      "url": "",
+      "username": "",
+      "enabled": false
+    },
+    "bluesky": {
+      "url": "",
+      "username": "",
+      "enabled": false
+    },
+    "threads": {
+      "url": "",
+      "username": "",
+      "enabled": false
+    }
+  },
+  "metadata": {
+    "created": "2026-01-29",
+    "last_updated": "2026-01-29",
+    "notes": "Configuration for NJCIC's own organizational social media accounts for internal staff metrics dashboard"
+  }
+}
