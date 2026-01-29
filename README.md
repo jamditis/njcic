@@ -27,11 +27,11 @@ The **New Jersey Civic Information Consortium** is the first publicly funded non
 - **BIPOC-led Projects:** 48%
 
 ### Impact metrics (since 2021)
-- **Stories Published:** 9,065+
-- **News Briefs Published:** 14,493+
-- **Ethnic/BIPOC & Spanish-language Stories:** 3,856
-- **New Storytellers Trained:** 1,271
-- **Stories Amplified Across Platforms:** 2,327
+- **Stories Published:** 13,407+
+- **News Briefs Published:** 16,694+
+- **Ethnic/BIPOC & Spanish-language Stories:** 5,900+
+- **New Storytellers Trained:** 1,601
+- **Stories Amplified Across Platforms:** 2,300+
 - **Residents Trained on Public Meeting Coverage:** 158
 
 ### Member universities
