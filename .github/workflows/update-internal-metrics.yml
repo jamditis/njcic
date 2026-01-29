@@ -78,23 +78,15 @@ jobs:
           echo "scraper_status=$?" >> $GITHUB_OUTPUT
         env:
           PYTHONUNBUFFERED: 1
-          # Twitter/X API credentials
-          TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
-          TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
-          TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
-          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-          TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
-          # YouTube API
-          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-          # Bluesky credentials
-          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
-          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
-          # Instagram credentials
+          # Instagram credentials (also used by Threads for Meta login)
           INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
           INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
-          INSTAGRAM_SESSION_FILE: ${{ secrets.INSTAGRAM_SESSION_FILE }}
-          # Facebook credentials
-          FACEBOOK_ACCESS_TOKEN: ${{ secrets.FACEBOOK_ACCESS_TOKEN }}
+          # LinkedIn credentials
+          LINKEDIN_EMAIL: ${{ secrets.LINKEDIN_EMAIL }}
+          LINKEDIN_PASSWORD: ${{ secrets.LINKEDIN_PASSWORD }}
+          # Twitter/X Playwright credentials (optional - works without)
+          TWITTER_USERNAME: ${{ secrets.TWITTER_USERNAME }}
+          TWITTER_PASSWORD: ${{ secrets.TWITTER_PASSWORD }}
 
       # Step 6: Copy internal metrics data to dashboard
       - name: Copy internal metrics to dashboard
