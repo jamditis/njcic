@@ -42,9 +42,9 @@
       "enabled": false
     },
     "threads": {
-      "url": "",
-      "username": "",
-      "enabled": false
+      "url": "https://www.threads.net/@njcivicinfo",
+      "username": "njcivicinfo",
+      "enabled": true
     }
   },
   "metadata": {

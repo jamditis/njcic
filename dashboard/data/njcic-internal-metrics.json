@@ -11,7 +11,7 @@
     "totalPosts": 0,
     "totalFollowers": 0,
     "totalEngagement": 0,
-    "platformsTracked": 4,
+    "platformsTracked": 5,
     "engagementRate": 0
   },
   "platforms": {
@@ -57,6 +57,17 @@
       "engagementRate": 0,
       "metrics": {},
       "color": "#0A66C2",
+      "success": false
+    },
+    "threads": {
+      "url": "https://www.threads.net/@njcivicinfo",
+      "username": "njcivicinfo",
+      "posts": 0,
+      "followers": 0,
+      "engagement": 0,
+      "engagementRate": 0,
+      "metrics": {},
+      "color": "#000000",
       "success": false
     }
   },
