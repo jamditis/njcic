@@ -62,6 +62,11 @@ Collection of free tools for journalists from the Center for Cooperative Media.
 - [Grantees Map Analysis](research/njcic-grantees-map-analysis.md) - Technical analysis of the mapping project
 - [CCM Repository Analysis](research/ccm-repository-analysis.md) - Technical analysis of CCM tools
 
+## Contributors
+
+- **[Madison McCool](https://www.linkedin.com/in/madisonmccool)** — Grants and communications manager, NJCIC
+- **[Joe Amditis](https://github.com/jamditis)** — Assistant director, Center for Cooperative Media
+
 ## Links
 
 - **NJCIC Website:** https://njcivicinfo.org/
