@@ -80,17 +80,17 @@ class InternalMetricsScraper:
         # Initialize logging
         self.logger = self._setup_logging()
 
-        # Initialize scrapers
-        self.scrapers: Dict[str, Any] = {}
-        self._initialize_scrapers()
-
-        # Statistics tracking
+        # Statistics tracking (must be initialized before scrapers)
         self.stats = {
             'start_time': None,
             'end_time': None,
             'platforms': {},
             'errors': []
         }
+
+        # Initialize scrapers
+        self.scrapers: Dict[str, Any] = {}
+        self._initialize_scrapers()
 
     def _load_config(self) -> Dict[str, Any]:
         """Load internal accounts configuration."""

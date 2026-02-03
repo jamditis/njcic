@@ -5,11 +5,11 @@
     "website": "https://njcivicinfo.org",
     "description": "The New Jersey Civic Information Consortium is the first state-funded initiative in the nation dedicated to supporting local news and civic information."
   },
-  "lastUpdated": "2026-01-29T06:00:00.000000",
-  "scrapingDuration": "0s",
+  "lastUpdated": "2026-02-03T15:30:00.000000",
+  "scrapingDuration": "manual",
   "summary": {
-    "totalPosts": 0,
-    "totalFollowers": 0,
+    "totalPosts": 1336,
+    "totalFollowers": 500,
     "totalEngagement": 0,
     "platformsTracked": 5,
     "engagementRate": 0
@@ -18,13 +18,13 @@
     "twitter": {
       "url": "https://x.com/njcivicinfo",
       "username": "njcivicinfo",
-      "posts": 0,
-      "followers": 0,
+      "posts": 1336,
+      "followers": 500,
       "engagement": 0,
       "engagementRate": 0,
       "metrics": {},
       "color": "#1DA1F2",
-      "success": false
+      "success": true
     },
     "instagram": {
       "url": "https://www.instagram.com/njcivicinfo/",
@@ -49,7 +49,7 @@
       "success": false
     },
     "linkedin": {
-      "url": "https://www.linkedin.com/company/njcivicinfo",
+      "url": "https://www.linkedin.com/company/new-jersey-civic-information-consortium",
       "username": "njcivicinfo",
       "posts": 0,
       "followers": 0,
@@ -72,12 +72,12 @@
     }
   },
   "weeklySnapshot": {
-    "weekOf": "2026-01-29",
+    "weekOf": "2026-02-03",
     "dayOfWeek": "Monday"
   },
   "history": [],
   "metadata": {
-    "note": "Initial seed data - will be updated by weekly cron job running Monday at 6 AM ET",
-    "version": "1.0.0"
+    "note": "Partial data from web search - Twitter/X metrics confirmed. Other platforms pending automated scrape via GitHub Actions workflow.",
+    "version": "1.0.1"
   }
 }
