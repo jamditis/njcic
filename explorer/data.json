@@ -1,0 +1,4198 @@
+{
+  "generatedAt": "2026-04-21",
+  "summary": {
+    "totalGrantees": 92,
+    "totalGrants": 118,
+    "totalAwarded": 12070437,
+    "activeGrantees": 87
+  },
+  "facets": {
+    "areas": [
+      "Central",
+      "North",
+      "South"
+    ],
+    "focusAreas": [
+      "Blue Engine Tech & Sustainability Accelerator Grant",
+      "Civic engagement in NJ communities",
+      "Civic news and information reporting",
+      "Journalism pipeline"
+    ],
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2025-2026"
+    ]
+  },
+  "grantees": [
+    {
+      "name": "New Jersey Council for the Humanities and Journalism + Design",
+      "total": 459000,
+      "grantCount": 1,
+      "years": [
+        "2022",
+        "2024"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "Trenton",
+      "bipocLed": null,
+      "website": "https://njhumanities.org/programs/informed-nj/#grassroots",
+      "lat": 40.2206,
+      "lng": -74.7597,
+      "grants": [
+        {
+          "grantee": "New Jersey Council for the Humanities and Journalism + Design",
+          "amount": 459000,
+          "purpose": "to fund the development of a statewide journalism training program in partnership with six New Jersey community colleges that equips citizens with skills to tell the stories of their communities. Journalism + Design and NJCH piloted a similar program in South Jersey in spring 2022.",
+          "website": "https://njhumanities.org/programs/informed-nj/#grassroots",
+          "year": "2022,2024",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.2206,
+          "lng": -74.7597,
+          "city": "Trenton"
+        }
+      ]
+    },
+    {
+      "name": "NJ Spotlight News",
+      "total": 455000,
+      "grantCount": 2,
+      "years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "Newark",
+      "bipocLed": null,
+      "website": "https://www.njspotlightnews.org/?gad_source=1&gclid=Cj0KCQiAu8W6BhC-ARIsACEQoDD6AXC1bQlAk7_gREefC_S0FnIr46tD7EmNV97SoKrC_r04-l2YMHoaAlmNEALw_wcB",
+      "lat": 40.7357,
+      "lng": -74.1724,
+      "grants": [
+        {
+          "grantee": "NJ Spotlight News",
+          "amount": 250000,
+          "purpose": "to support a new Report for America corps member to expand health coverage by focusing on mental health in underserved communities, at the intersection of the COVID-19 pandemic, health inequity, and rural New Jersey. The 2022 grant was funded in part by support from New Jersey Health Initiatives (NJHI), a statewide grantmaking program of the Robert Wood Johnson Foundation.",
+          "website": "https://www.njspotlightnews.org/?gad_source=1&gclid=Cj0KCQiAu8W6BhC-ARIsACEQoDD6AXC1bQlAk7_gREefC_S0FnIr46tD7EmNV97SoKrC_r04-l2YMHoaAlmNEALw_wcB",
+          "year": "2022,2023,2025",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        },
+        {
+          "grantee": "NJ Spotlight News",
+          "amount": 205000,
+          "purpose": "to hire a Washington, D.C.-based correspondent to provide regular reporting to NJ Spotlight News and a collaborative network of newsrooms across the state on developments affecting New Jersey.",
+          "website": "https://www.njspotlightnews.org",
+          "year": "2023,2024",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        }
+      ]
+    },
+    {
+      "name": "The Jersey Bee",
+      "total": 423300,
+      "grantCount": 3,
+      "years": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting",
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Essex County",
+      "city": "Bloomfield",
+      "bipocLed": false,
+      "website": "https://jerseybee.org",
+      "lat": 40.8068,
+      "lng": -74.1854,
+      "grants": [
+        {
+          "grantee": "The Jersey Bee",
+          "amount": 400000,
+          "purpose": "to launch a community-reporter corps pilot program that trains residents in news gathering, writing, and production and provides paid reporting assignments that prioritize the information needs of underserved populations in the surrounding community, inspire civic participation, and build narrative power.",
+          "website": "https://jerseybee.org",
+          "year": "2021,2022,2023,2024,2025",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Essex County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.8068,
+          "lng": -74.1854,
+          "city": "Bloomfield"
+        },
+        {
+          "grantee": "The Jersey Bee",
+          "amount": 3300,
+          "purpose": "to support the placement of a student intern through the Statewide Paid Internship Program.",
+          "website": "jerseybee.org",
+          "year": "2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "North Jersey",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.8068,
+          "lng": -74.1854,
+          "city": "Bloomfield"
+        },
+        {
+          "grantee": "The Jersey Bee",
+          "amount": 20000,
+          "purpose": "The Jersey Bee is a public service news and information provider that collaborates with the communities it serves to produce content that reflects local needs, encourages civic participation, and enhances the quality of life for BIPOC and working-class residents. The organization focuses on delivering accessible, relevant reporting that informs and empowers through newsletters, a community website, a local events calendar, social media, and SMS updates",
+          "website": "https://jerseybee.org",
+          "year": "2025-2026",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Essex County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": false,
+          "grantType": "Bump Up",
+          "category": "Civic news and information reporting",
+          "lat": 40.8068,
+          "lng": -74.1854,
+          "city": "Bloomfield"
+        }
+      ]
+    },
+    {
+      "name": "Trenton Journal",
+      "total": 420000,
+      "grantCount": 3,
+      "years": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant",
+        "Civic engagement in NJ communities",
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Mercer County",
+      "city": "Trenton",
+      "bipocLed": true,
+      "website": "https://trentonjournal.com",
+      "lat": 40.2206,
+      "lng": -74.7597,
+      "grants": [
+        {
+          "grantee": "Trenton Journal",
+          "amount": 390000,
+          "purpose": "to train local contributors to increase the frequency of Trenton Journal\u2019s editorial output, help change the narrative, bridge information gaps, and connect communities in Trenton. The Trenton Journal focuses on addressing the disparities faced by the Black and Brown community in Trenton using solutions-based journalism via a newsletter, video, and audio stories.",
+          "website": "https://trentonjournal.com",
+          "year": "2021,2022,2023,2024,2025",
+          "focus": "Civic engagement in NJ communities",
+          "serviceArea": "Mercer County",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic engagement in NJ communities",
+          "lat": 40.2206,
+          "lng": -74.7597,
+          "city": "Trenton"
+        },
+        {
+          "grantee": "Trenton Journal",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "www.trentonjournal.com",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 40.2206,
+          "lng": -74.7597,
+          "city": "Trenton"
+        },
+        {
+          "grantee": "Trenton Journal",
+          "amount": 20000,
+          "purpose": "Trenton Journal is a multimedia news outlet committed to filling information gaps and amplifying positive voices within the community through original, fact-based reporting. Over the past five years, the publication has served as a trusted source of local news, highlighting stories often overlooked by larger media and fostering civic engagement among Trenton residents.",
+          "website": "https://trentonjournal.com",
+          "year": "2025-2026",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Mercer County",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": true,
+          "grantType": "Bump Up",
+          "category": "Civic news and information reporting",
+          "lat": 40.2206,
+          "lng": -74.7597,
+          "city": "Trenton"
+        }
+      ]
+    },
+    {
+      "name": "Front Runner New Jersey",
+      "total": 418300,
+      "grantCount": 4,
+      "years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant",
+        "Civic news and information reporting",
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "South"
+      ],
+      "serviceArea": "South Jersey",
+      "city": "Atlantic City",
+      "bipocLed": true,
+      "website": "https://frontrunnernewjersey.com",
+      "lat": 39.3643,
+      "lng": -74.4229,
+      "grants": [
+        {
+          "grantee": "Front Runner New Jersey",
+          "amount": 385000,
+          "purpose": "to support Front Runner New Jersey, a new site led by a veteran journalist who seeks to maintain and expand its coverage and bring a new perspective on the people, events, and issues making an impact on the African American and Latino communities in Atlantic City and South Jersey. Front Runner brings a restorative perspective to news and information reporting.",
+          "website": "https://frontrunnernewjersey.com",
+          "year": "2022,2023,2024,2025",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "South Jersey",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 39.3643,
+          "lng": -74.4229,
+          "city": "Atlantic City"
+        },
+        {
+          "grantee": "Front Runner New Jersey",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "https://frontrunnernewjersey.com",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "South Jersey",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 39.3643,
+          "lng": -74.4229,
+          "city": "Atlantic City"
+        },
+        {
+          "grantee": "Front Runner New Jersey",
+          "amount": 3300,
+          "purpose": "to support the placement of a student intern through the Statewide Paid Internship Program.",
+          "website": "https://frontrunnernewjersey.com",
+          "year": "2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "South Jersey",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 39.3643,
+          "lng": -74.4229,
+          "city": "Atlantic City"
+        },
+        {
+          "grantee": "Front Runner New Jersey",
+          "amount": 20000,
+          "purpose": "Front Runner New Jersey.com is a news and information website dedicated to covering Black, Latino, and other marginalized communities across South Jersey. The platform serves two primary purposes: to amplify the voices of Black and Brown communities in the region and to educate the broader public about the people, events, and issues that matter to them. It accomplishes this by publishing original stories and actively engaging with communities to highlight what is most important to them.",
+          "website": "https://frontrunnernewjersey.com",
+          "year": "2025-2026",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "South Jersey",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": true,
+          "grantType": "Bump Up",
+          "category": "Civic news and information reporting",
+          "lat": 39.3643,
+          "lng": -74.4229,
+          "city": "Atlantic City"
+        }
+      ]
+    },
+    {
+      "name": "The Jersey Vindicator",
+      "total": 408300,
+      "grantCount": 4,
+      "years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant",
+        "Civic news and information reporting",
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Statewide",
+      "city": "Newark",
+      "bipocLed": false,
+      "website": "https://jerseyvindicator.org",
+      "lat": 40.7357,
+      "lng": -74.1724,
+      "grants": [
+        {
+          "grantee": "The Jersey Vindicator",
+          "amount": 295000,
+          "purpose": "to build The Jersey Vindicator \u2014 the \u201cProPublica of New Jersey\u201d \u2014 with the goal of engaging and empowering the public through investigative journalism at the local, county, and state level in its publication, ultimately ensuring that residents \u2014 particularly those in underserved communities \u2014 are better informed about government, business, education, transportation, criminal justice reform, and the environment.",
+          "website": "https://jerseyvindicator.org",
+          "year": "2022,2023,2024",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        },
+        {
+          "grantee": "The Jersey Vindicator",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "jerseyvindicator.org",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        },
+        {
+          "grantee": "The Jersey Vindicator",
+          "amount": 3300,
+          "purpose": "to support the placement of a student intern through the Statewide Paid Internship Program.",
+          "website": "jerseyvindicator.org",
+          "year": "2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Central Jersey",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        },
+        {
+          "grantee": "The Jersey Vindicator",
+          "amount": 100000,
+          "purpose": "The Jersey Vindicator onboarded journalists Steve Janoski and Jeff Pillets as staff reporter and contributing editor, achieving a more consistent publishing schedule and expanded accountability coverage. In addition, the newsroom contracted award-winning visual journalist and Spanish speaker Andres Kudacki as multimedia and engagement director. Kudacki is broadening statewide reach by expanding Spanish-language coverage and enhancing visual storytelling and social media presence. The Vindicator also established a physical office in Trenton, creating a visible and accessible hub for reporting.",
+          "website": "https://jerseyvindicator.org",
+          "year": "2025-2026",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": false,
+          "grantType": "Renewal",
+          "category": "Civic news and information reporting",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        }
+      ]
+    },
+    {
+      "name": "Public Square Amplified",
+      "total": 400000,
+      "grantCount": 3,
+      "years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant",
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Essex County",
+      "city": "Newark",
+      "bipocLed": true,
+      "website": "https://www.publicsq.org",
+      "lat": 40.7357,
+      "lng": -74.1724,
+      "grants": [
+        {
+          "grantee": "Public Square Amplified",
+          "amount": 290000,
+          "purpose": "to fund a program to recruit, train, and promote community reporters and journalism students and provide an outlet for their work in Caribbean, African, Indigenous, and Immigrant communities.",
+          "website": "https://www.publicsq.org",
+          "year": "2022,2023,2024",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Essex County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        },
+        {
+          "grantee": "Public Square Amplified",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "https://www.publicsq.org",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Essex County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        },
+        {
+          "grantee": "Public Square Amplified",
+          "amount": 100000,
+          "purpose": "PSA earned the National Headliner Award and an SPJ-NJ Award for its photo essay on Black childbirth. The 2025 Citizen as Journalist program was held for the third consecutive summer and received more than 50 inquiries and applications for its three-month curriculum. The newsroom has maintained a consistent publication schedule, and the addition of a freelance reporter has strengthened its capacity to cover breaking news within its editorial framework.\nSince the launch of the Citizen Journalism class, 50 community reporters have been trained, contributing 195 stories that reflect the voices and experiences of their communities.",
+          "website": "https://www.publicsq.org",
+          "year": "2025-2026",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Essex County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": true,
+          "grantType": "Renewal",
+          "category": "Journalism pipeline",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        }
+      ]
+    },
+    {
+      "name": "Unidad Latina en Acci\u00f3n NJ",
+      "total": 370000,
+      "grantCount": 2,
+      "years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "New Brunswick",
+      "bipocLed": true,
+      "website": "https://unidadlatinanj.org",
+      "lat": 40.5008,
+      "lng": -74.4474,
+      "grants": [
+        {
+          "grantee": "Unidad Latina en Acci\u00f3n NJ",
+          "amount": 270000,
+          "purpose": "to support the Radio Jornalera NJ Communication Project, which brings together the development, production and dissemination of public service announcements from the Jornalero and Domestic Laborer Communicators throughout the state. The Public Service Announcements are on topics that affect daily life, such as housing rights, workers\u2019 rights, wage theft, health and safety at work, healthy lifestyle, and/or climate change.",
+          "website": "https://unidadlatinanj.org",
+          "year": "2022,2023,2024",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.5008,
+          "lng": -74.4474,
+          "city": "New Brunswick"
+        },
+        {
+          "grantee": "Unidad Latina en Acci\u00f3n NJ",
+          "amount": 100000,
+          "purpose": "Radio Jornalera NJ has expanded its reach and capacity this year, now streaming 12 regular shows on Facebook and Spotify. The team of street reporters has completed two rounds of training and is actively producing original content. The newsroom has trained a rapid response team in Mercer County, with audience engagement ranging from 42,000 to 97,000 views on social media platforms. Radio Jornalera NJ is also participating in the GNI State News Sustainability Accelerator program hosted by Blue Engine, gaining tools and strategies to strengthen long-term sustainability. In addition, a Substack channel has been launched to provide written news in both English and Spanish. The studio\u2019s technology and design have been upgraded with new cameras and an improved layout to create a more comfortable environment for live, in-person recordings.",
+          "website": "https://unidadlatinanj.org",
+          "year": "2025-2026",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": true,
+          "grantType": "Renewal",
+          "category": "Civic news and information reporting",
+          "lat": 40.5008,
+          "lng": -74.4474,
+          "city": "New Brunswick"
+        }
+      ]
+    },
+    {
+      "name": "Slice of Culture @ Saint Peter's University",
+      "total": 360000,
+      "grantCount": 1,
+      "years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Hudson County",
+      "city": "Jersey City",
+      "bipocLed": null,
+      "website": "https://www.sliceofculture.com",
+      "lat": 40.7237,
+      "lng": -74.0468,
+      "grants": [
+        {
+          "grantee": "Slice of Culture @ Saint Peter's University",
+          "amount": 360000,
+          "purpose": "to support Slice of Culture, a group of young BIPOC storytellers who are bringing civic engagement to Jersey City and Hudson County through a series of how-to projects and informational stories targeted to immigrant families and communities of color. It is opening doors to aspiring journalists who are committed to strong, local journalism and stories that matter to the community.",
+          "website": "https://www.sliceofculture.com",
+          "year": "2022,2023,2024,2025",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Hudson County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.7237,
+          "lng": -74.0468,
+          "city": "Jersey City"
+        }
+      ]
+    },
+    {
+      "name": "Black in Jersey",
+      "total": 320000,
+      "grantCount": 2,
+      "years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting",
+        "Journalism pipeline"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "Trenton",
+      "bipocLed": true,
+      "website": "https://www.blackinjersey.com",
+      "lat": 40.2171,
+      "lng": -74.7429,
+      "grants": [
+        {
+          "grantee": "Black in Jersey",
+          "amount": 260000,
+          "purpose": "to support the launch of Black in Jersey as a reliable news and information hub serving New Jersey\u2019s Black communities, and also to provide support for the organization\u2019s first statehouse and local government reporting cohort, and to launch its incubator program featuring Millennial and Generation Z-led news services \u2014 including the Hotspot Podcast.",
+          "website": "https://www.blackinjersey.com",
+          "year": "2022,2023,2024",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.2171,
+          "lng": -74.7429,
+          "city": "Trenton"
+        },
+        {
+          "grantee": "Black in Jersey",
+          "amount": 60000,
+          "purpose": "Black In Jersey\u2019s most notable improvements came through staffing additions. Frank Santos stepped into the leadership role of Head of Creative Marketing. Adrienne Bauldock was brought on to refine the organization\u2019s social media presence and community engagement strategy while taking on a larger role in event coordination.\nThe publication\u2019s most engaging story focused on Camden and was co-produced by SJIEP fellow Jewel Justice and team member Frank Santos. It covered the environmental hazard caused by the European Metal Recycling Company (EMR), which caught fire and forced thousands of residents to evacuate. Black In Jersey\u2019s team was among the first publications to break the story and was one of the few, if not the only, outlets present at the subsequent hearings and community organizing events around the city\u2019s incinerator. The piece went viral, drawing over 15,000 page views and sparking local action through the Fight Fire with Fire advocacy group formed by local Camden residents.",
+          "website": "www.blackinjersey.com",
+          "year": "2025-2026",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": true,
+          "grantType": "Renewal",
+          "category": "Journalism pipeline",
+          "lat": 40.2171,
+          "lng": -74.7429,
+          "city": "Trenton"
+        }
+      ]
+    },
+    {
+      "name": "Atlantic City Focus",
+      "total": 310000,
+      "grantCount": 2,
+      "years": [
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant",
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "South"
+      ],
+      "serviceArea": "Atlantic County",
+      "city": "Atlantic City",
+      "bipocLed": null,
+      "website": "https://www.atlanticcityfocus.com",
+      "lat": 39.3643,
+      "lng": -74.4229,
+      "grants": [
+        {
+          "grantee": "Atlantic City Focus",
+          "amount": 300000,
+          "purpose": "to fund a project to create a Civic Engagement Guide for Atlantic City that provides residents with a comprehensive directory of information on local elections, community resources, and leadership.",
+          "website": "https://www.atlanticcityfocus.com",
+          "year": "2023,2024,2025",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Atlantic County",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 39.3643,
+          "lng": -74.4229,
+          "city": "Atlantic City"
+        },
+        {
+          "grantee": "Atlantic City Focus",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "www.atlanticcityfocus.com",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Atlantic County",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 39.3643,
+          "lng": -74.4229,
+          "city": "Atlantic City"
+        }
+      ]
+    },
+    {
+      "name": "Hammonton Gazette",
+      "total": 307343,
+      "grantCount": 3,
+      "years": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting",
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "South"
+      ],
+      "serviceArea": "Atlantic County",
+      "city": "Hammonton",
+      "bipocLed": null,
+      "website": "https://www.hammontongazette.com",
+      "lat": 39.6368,
+      "lng": -74.8021,
+      "grants": [
+        {
+          "grantee": "Hammonton Gazette",
+          "amount": 204043,
+          "purpose": "to launch its Spanish publication, \u201cNoticias\u201d, making its news coverage more representative of Hammonton\u2019s southern New Jersey community. The paper offers news articles in Spanish and initiates outreach to seasonal agricultural workers and more permanent members of the local Spanish-speaking community. It also funds freelance reporters to cover municipal meetings in news deserts in Atlantic County and Camden County. Noticias was the first local newspaper to offer news articles in Spanish (Mexican Dialect).",
+          "website": "https://www.hammontongazette.com",
+          "year": "2021,2022,2023,2024,2025",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Atlantic County",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 39.6368,
+          "lng": -74.8021,
+          "city": "Hammonton"
+        },
+        {
+          "grantee": "Hammonton Gazette",
+          "amount": 100000,
+          "purpose": "to fund the expansion of its coverage to neighboring communities in South-Central New Jersey that currently lack local news. It will fund additional staff, including a new position and an expanded freelance budget involving Rowan students, enabling the Gazette to provide weekly coverage of local events, activities, and sports. The project also offers young journalists practical experience, supporting the Gazette's mission to deliver reliable news in an area facing a decline in traditional news sources.",
+          "website": "http://hammontongazette.com",
+          "year": "2024,2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Atlantic County",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 39.6368,
+          "lng": -74.8021,
+          "city": "Hammonton"
+        },
+        {
+          "grantee": "Hammonton Gazette",
+          "amount": 3300,
+          "purpose": "to support the placement of a student intern through the Statewide Paid Internship Program.",
+          "website": "LNNUSA.com",
+          "year": "2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "South Jersey",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 39.6368,
+          "lng": -74.8021,
+          "city": "Hammonton"
+        }
+      ]
+    },
+    {
+      "name": "Ridge View Echo",
+      "total": 305000,
+      "grantCount": 2,
+      "years": [
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant",
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Warren County",
+      "city": "Blairstown",
+      "bipocLed": null,
+      "website": "https://ridgeviewecho.com",
+      "lat": 40.9912,
+      "lng": -74.9471,
+      "grants": [
+        {
+          "grantee": "Ridge View Echo",
+          "amount": 295000,
+          "purpose": "to address the loss of local-news outlets by launching the Greater Blairstown News Project online publication, the Ridge View Echo, reporting on Blairstown, Frelinghuysen, Hardwick and Knowlton, all Warren County communities with no other dedicated local news sources. This effort provides residents with vital and timely government announcements about public health and safety, and foster greater connection to and awareness of local issues across northwest New Jersey.",
+          "website": "https://ridgeviewecho.com",
+          "year": "2021,2022,2023,2024",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Warren County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.9912,
+          "lng": -74.9471,
+          "city": "Blairstown"
+        },
+        {
+          "grantee": "Ridge View Echo",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "www.ridgeviewecho.com",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Warren County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 40.9912,
+          "lng": -74.9471,
+          "city": "Blairstown"
+        }
+      ]
+    },
+    {
+      "name": "Central Desi",
+      "total": 301066,
+      "grantCount": 2,
+      "years": [
+        "2023",
+        "2024",
+        "2025",
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Mercer County",
+      "city": "Trenton",
+      "bipocLed": true,
+      "website": "https://centraldesi.beehiiv.com",
+      "lat": 40.2206,
+      "lng": -74.7597,
+      "grants": [
+        {
+          "grantee": "Central Desi",
+          "amount": 281066,
+          "purpose": "to fund a fellowship opportunity that will cultivate college students as future journalists in New Jersey and train them to report, write, and engage with local communities by covering the South Asian American community.",
+          "website": "https://centraldesi.beehiiv.com",
+          "year": "2023,2024,2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Mercer County",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.2206,
+          "lng": -74.7597,
+          "city": "Trenton"
+        },
+        {
+          "grantee": "Central Desi",
+          "amount": 20000,
+          "purpose": "This fellowship opportunity will cultivate college students as future journalists in New Jersey and train them to report, write and engage with local communities by covering the South Asian American community. It will also result in coverage of this underreported community and drive engagement through community events and social media.",
+          "website": "https://centraldesi.beehiiv.com",
+          "year": "2025-2026",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Mercer County",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": true,
+          "grantType": "Bump Up",
+          "category": "Journalism pipeline",
+          "lat": 40.2206,
+          "lng": -74.7597,
+          "city": "Trenton"
+        }
+      ]
+    },
+    {
+      "name": "Clinton Hill Community Action",
+      "total": 300000,
+      "grantCount": 2,
+      "years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Essex County",
+      "city": "Newark",
+      "bipocLed": true,
+      "website": "https://clintonhillaction.org",
+      "lat": 40.7357,
+      "lng": -74.1724,
+      "grants": [
+        {
+          "grantee": "Clinton Hill Community Action",
+          "amount": 225000,
+          "purpose": "to fund journalism training for neighborhood residents to learn how to use storytelling as an advocacy strategy. This includes oral histories, podcasts, video reports and documentaries. The funding also is being used to establish a new media training, production, and webcast center through Clinton Hill\u2019s Citizen Journalism Program.",
+          "website": "https://clintonhillaction.org",
+          "year": "2022,2023,2024",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Essex County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        },
+        {
+          "grantee": "Clinton Hill Community Action",
+          "amount": 75000,
+          "purpose": "The newsroom is developing a regular publishing schedule and employs trained community members to report on local issues, share resident perspectives, and strengthen civic awareness across the neighborhood. To advance this effort, CHCA engaged Sheryl Hilliard Tucker as a planning consultant to shape the newsroom\u2019s vision and guide content development, and hired Jordann Peters, a recent journalism graduate, to assist with news production.",
+          "website": "https://clintonhillaction.org",
+          "year": "2025-2026",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Essex County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": true,
+          "grantType": "Renewal",
+          "category": "Journalism pipeline",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        }
+      ]
+    },
+    {
+      "name": "Chalkbeat Newark (Civic News Company)",
+      "total": 300000,
+      "grantCount": 1,
+      "years": [
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "focusAreas": [
+        "Civic engagement in NJ communities"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Essex County",
+      "city": "Newark",
+      "bipocLed": null,
+      "website": "https://www.chalkbeat.org/newark/",
+      "lat": 40.7357,
+      "lng": -74.1724,
+      "grants": [
+        {
+          "grantee": "Chalkbeat Newark (Civic News Company)",
+          "amount": 300000,
+          "purpose": "to foster civic engagement in Newark public schools through: in-depth reporting on school segregation litigation and federal Covid relief spending; adding a state education policy reporting fellow; a texting service to inform the community about school board actions; a 2024 school board election guide; and first person student essays published through Chalkbeat Newark\u2019s Student Voices program.",
+          "website": "https://www.chalkbeat.org/newark/",
+          "year": "2023,2024,2025",
+          "focus": "Civic engagement in NJ communities",
+          "serviceArea": "Essex County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic engagement in NJ communities",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        }
+      ]
+    },
+    {
+      "name": "Camden Parent & Student Union",
+      "total": 280000,
+      "grantCount": 1,
+      "years": [
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "focusAreas": [
+        "Civic engagement in NJ communities"
+      ],
+      "areas": [
+        "South"
+      ],
+      "serviceArea": "Camden County",
+      "city": "Camden",
+      "bipocLed": null,
+      "website": "https://www.camdenpsu.com",
+      "lat": 39.9259,
+      "lng": -75.1196,
+      "grants": [
+        {
+          "grantee": "Camden Parent & Student Union",
+          "amount": 280000,
+          "purpose": "to train Camden high school students in interviewing and media reporting so they can become community reporters and storytellers. The grant also will fund voter education programs and training.",
+          "website": "https://www.camdenpsu.com",
+          "year": "2023,2024,2025",
+          "focus": "Civic engagement in NJ communities",
+          "serviceArea": "Camden County",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic engagement in NJ communities",
+          "lat": 39.9259,
+          "lng": -75.1196,
+          "city": "Camden"
+        }
+      ]
+    },
+    {
+      "name": "Industry Media Arts",
+      "total": 274720,
+      "grantCount": 1,
+      "years": [
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "South"
+      ],
+      "serviceArea": "Ocean County",
+      "city": "Toms River",
+      "bipocLed": null,
+      "website": "https://www.industryarts.tv",
+      "lat": 39.9526,
+      "lng": -74.1937,
+      "grants": [
+        {
+          "grantee": "Industry Media Arts",
+          "amount": 274720,
+          "purpose": "to fund a Journalism Mentorship Program that provides high school students with early awareness and readiness training for undergraduate collegiate journalism programs.",
+          "website": "https://www.industryarts.tv",
+          "year": "2023,2024,2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Ocean County",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 39.9526,
+          "lng": -74.1937,
+          "city": "Toms River"
+        }
+      ]
+    },
+    {
+      "name": "Center for Cooperative Media: Research and Development",
+      "total": 271993,
+      "grantCount": 1,
+      "years": [
+        "2022",
+        "2024"
+      ],
+      "focusAreas": [
+        "Civic engagement in NJ communities"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "",
+      "bipocLed": null,
+      "website": "https://centerforcooperativemedia.org",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "Center for Cooperative Media: Research and Development",
+          "amount": 271993,
+          "purpose": "to fund a researcher at the Center for Cooperative Media at Montclair State University to conduct research on the New Jersey local news ecosystem. The researcher will also conduct learning and impact evaluation for the Consortium.",
+          "website": "https://centerforcooperativemedia.org",
+          "year": "2022,2024",
+          "focus": "Civic engagement in NJ communities",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic engagement in NJ communities",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
+      "name": "New Labor",
+      "total": 270000,
+      "grantCount": 1,
+      "years": [
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Middlesex County",
+      "city": "New Brunswick",
+      "bipocLed": null,
+      "website": "https://newlabor.org",
+      "lat": 40.5008,
+      "lng": -74.4474,
+      "grants": [
+        {
+          "grantee": "New Labor",
+          "amount": 270000,
+          "purpose": "to fund the \u201cCommunity-driven Journalism Project\u201d to develop journalists, focusing on Black and Brown workers in low wage jobs across New Jersey.",
+          "website": "https://newlabor.org",
+          "year": "2023,2024,2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Middlesex County",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.5008,
+          "lng": -74.4474,
+          "city": "New Brunswick"
+        }
+      ]
+    },
+    {
+      "name": "Hopeloft, Inc.",
+      "total": 254690,
+      "grantCount": 1,
+      "years": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "South"
+      ],
+      "serviceArea": "South Jersey",
+      "city": "Bridgeton",
+      "bipocLed": null,
+      "website": "https://www.hopeloft.com",
+      "lat": 39.4273,
+      "lng": -75.2341,
+      "grants": [
+        {
+          "grantee": "Hopeloft, Inc.",
+          "amount": 254690,
+          "purpose": "to develop and implement each year a 15-week training and internship program for youth/citizens in foster care and for children of incarcerated people to tell the stories of their peers for Hopeloft\u2019s local news site, Follow South Jersey. This grant was funded in part in the first year by support from New Jersey Health Initiatives (NJHI), a statewide grantmaking program of the Robert Wood Johnson Foundation.",
+          "website": "https://www.hopeloft.com",
+          "year": "2021,2022,2023,2024,2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "South Jersey",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 39.4273,
+          "lng": -75.2341,
+          "city": "Bridgeton"
+        }
+      ]
+    },
+    {
+      "name": "New Jersey Urban News",
+      "total": 233300,
+      "grantCount": 3,
+      "years": [
+        "2024",
+        "2025"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant",
+        "Civic news and information reporting",
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Statewide",
+      "city": "Newark",
+      "bipocLed": null,
+      "website": "https://www.njurbannews.com",
+      "lat": 40.7357,
+      "lng": -74.1724,
+      "grants": [
+        {
+          "grantee": "New Jersey Urban News",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "https://www.njurbannews.com",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        },
+        {
+          "grantee": "New Jersey Urban News",
+          "amount": 220000,
+          "purpose": "to fund New Jersey Urban News, an online news platform dedicated to covering New Jersey\u2019s vibrant African American community through informative stories and thorough coverage. NJUN will use this funding to hire a full-time editor and reporter, improving the depth and quality of local reporting for New Jersey's urban communities. This initiative aims to address critical issues, amplify marginalized voices, and foster civic engagement by ensuring residents are well-informed and connected to local resources.",
+          "website": "https://www.njurbannews.com",
+          "year": "2024,2025",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        },
+        {
+          "grantee": "New Jersey Urban News",
+          "amount": 3300,
+          "purpose": "to support the placement of a student intern through the Statewide Paid Internship Program.",
+          "website": "https://www.njurbannews.com",
+          "year": "2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "North Jersey",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        }
+      ]
+    },
+    {
+      "name": "Morristown Green",
+      "total": 230000,
+      "grantCount": 2,
+      "years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant",
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Morris County",
+      "city": "Morristown",
+      "bipocLed": null,
+      "website": "https://morristowngreen.com",
+      "lat": 40.7968,
+      "lng": -74.4815,
+      "grants": [
+        {
+          "grantee": "Morristown Green",
+          "amount": 220000,
+          "purpose": "to fund a paid internship program for this hyperlocal news site covering a robust range of topics in Morristown that include local government, arts and entertainment, crime, and sports.",
+          "website": "https://morristowngreen.com",
+          "year": "2022,2023,2025",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Morris County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.7968,
+          "lng": -74.4815,
+          "city": "Morristown"
+        },
+        {
+          "grantee": "Morristown Green",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "MorristownGreen.com",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Morris County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 40.7968,
+          "lng": -74.4815,
+          "city": "Morristown"
+        }
+      ]
+    },
+    {
+      "name": "New Jersey State House News Service",
+      "total": 220000,
+      "grantCount": 1,
+      "years": [
+        "2024",
+        "2025"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "Trenton",
+      "bipocLed": null,
+      "website": "http://njstatenews.com",
+      "lat": 40.2206,
+      "lng": -74.7597,
+      "grants": [
+        {
+          "grantee": "New Jersey State House News Service",
+          "amount": 220000,
+          "purpose": "to fund The News Service, a nonprofit, collaborative effort that trains and develops student journalists by providing professional reporting on government and politics from Trenton\u2019s statehouse for use by independent local news outlets across New Jersey. The program offers college level students hands-on experience, with guidance from an experienced, full-time editor.",
+          "website": "http://njstatenews.com",
+          "year": "2024,2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.2206,
+          "lng": -74.7597,
+          "city": "Trenton"
+        }
+      ]
+    },
+    {
+      "name": "Newark News and Story Collaborative",
+      "total": 210000,
+      "grantCount": 1,
+      "years": [
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Essex County",
+      "city": "Newark",
+      "bipocLed": null,
+      "website": "https://www.newarkstories.com",
+      "lat": 40.7357,
+      "lng": -74.1724,
+      "grants": [
+        {
+          "grantee": "Newark News and Story Collaborative",
+          "amount": 210000,
+          "purpose": "to train residents, local reporters, and mediamakers to respond to Newark residents\u2019 information needs and concerns that capture the true essence of the city. Its lab comprises resident-reporters that produce unique coverage of issues impacting diverse communities in Newark that lack traditional media coverage and are not covered by traditional media.",
+          "website": "https://www.newarkstories.com",
+          "year": "2021,2022,2023",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Essex County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        }
+      ]
+    },
+    {
+      "name": "New Jersey Monitor",
+      "total": 210000,
+      "grantCount": 1,
+      "years": [
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "",
+      "city": "",
+      "bipocLed": false,
+      "website": "",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "New Jersey Monitor",
+          "amount": 210000,
+          "purpose": "Prior to the September board meeting, we received an emergency request to support the New Jersey Monitor in its effort to hire healthcare reporter Lilo Stainton, who was laid off from NJ Spotlight following federal funding losses. We requested your support, which the Grants Committee approved for presentation to the full board.\nAfter further discussion with New Jersey Monitor editor Terrence McDonald, it was determined that funds for the planned hire would not be needed until January 2026. To allow time to finalize details with the Robert Wood Johnson Foundation (RWJF) contribution of $150K, we agreed to wait until the December grantmaking cycle to award this project - provided all conditions are met.\nSince then, RWJF has awarded the Consortium $150,000 over two years to support this position. The Consortium will grant these funds to the New Jersey Monitor over a three-year period. We are now requesting the board\u2019s consideration to supplement this support with an additional $60,000 over three years.",
+          "website": "",
+          "year": "2025-2026",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": false,
+          "grantType": "New Grant",
+          "category": "Civic news and information reporting",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
+      "name": "Movimiento Cosecha",
+      "total": 185000,
+      "grantCount": 1,
+      "years": [
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Union County",
+      "city": "Elizabeth",
+      "bipocLed": null,
+      "website": "https://www.lahuelga.com",
+      "lat": 40.666,
+      "lng": -74.2009,
+      "grants": [
+        {
+          "grantee": "Movimiento Cosecha",
+          "amount": 185000,
+          "purpose": "to work with Rutgers University to establish Radio Cosecha, a twice-weekly Spanish-language internet-radio program for the state\u2019s Spanish-speaking immigrant community, telling the stories of seasonal agricultural workers in South Jersey. Cosecha researches and delivers important local, national, and international news in an accessible format, in order to achieve greater civic participation within New Jersey\u2019s immigrant community.",
+          "website": "https://www.lahuelga.com",
+          "year": "2021,2022,2023",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Union County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.666,
+          "lng": -74.2009,
+          "city": "Elizabeth"
+        }
+      ]
+    },
+    {
+      "name": "Center for Cooperative Media: NJ News Commons Spanish Translation Service",
+      "total": 175000,
+      "grantCount": 1,
+      "years": [
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "",
+      "bipocLed": null,
+      "website": "https://centerforcooperativemedia.org",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "Center for Cooperative Media: NJ News Commons Spanish Translation Service",
+          "amount": 175000,
+          "purpose": "to launch the NJ News Commons Spanish Translation Service, partnering with the largest Spanish-language and mainstream media outlets in the state to translate statewide news \u2014 especially elections-related content and voter information \u2014 into Spanish. This project builds on previous pilot work around translating pandemic coverage.",
+          "website": "https://centerforcooperativemedia.org",
+          "year": "2022,2023,2024",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
+      "name": "Corporation for New Jersey Local Media",
+      "total": 158315,
+      "grantCount": 1,
+      "years": [
+        "2023",
+        "2024"
+      ],
+      "focusAreas": [
+        "Civic engagement in NJ communities"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Morris County",
+      "city": "New Vernon",
+      "bipocLed": null,
+      "website": "https://newsweneed.org",
+      "lat": 40.8568,
+      "lng": -74.481,
+      "grants": [
+        {
+          "grantee": "Corporation for New Jersey Local Media",
+          "amount": 158315,
+          "purpose": "to fund the continuation of the work of the Northern NJ News Collaborative on its \u201cStormwater Matters\u201d initiative and will grow community engagement.",
+          "website": "https://newsweneed.org",
+          "year": "2023,2024",
+          "focus": "Civic engagement in NJ communities",
+          "serviceArea": "Morris County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic engagement in NJ communities",
+          "lat": 40.8568,
+          "lng": -74.481,
+          "city": "New Vernon"
+        }
+      ]
+    },
+    {
+      "name": "coLAB Arts",
+      "total": 150000,
+      "grantCount": 2,
+      "years": [
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant",
+        "Civic engagement in NJ communities"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Middlesex County",
+      "city": "New Brunswick",
+      "bipocLed": null,
+      "website": "https://colab-arts.org/?gad_source=1&gclid=Cj0KCQiAu8W6BhC-ARIsACEQoDDK1acfRNlARS5FuRP4RqrMazI3HVmTC9iYJZlhcCg7EavH8TBWzhcaAoDvEALw_wcB",
+      "lat": 40.4922,
+      "lng": -74.4513,
+      "grants": [
+        {
+          "grantee": "coLAB Arts",
+          "amount": 140000,
+          "purpose": "to fund a program in collaboration with New Brunswick Tomorrow to create a community-based memory and story-telling project, Teatro Esperanza, in the Esperanza and Unity Square neighborhoods of New Brunswick.",
+          "website": "https://colab-arts.org/?gad_source=1&gclid=Cj0KCQiAu8W6BhC-ARIsACEQoDDK1acfRNlARS5FuRP4RqrMazI3HVmTC9iYJZlhcCg7EavH8TBWzhcaAoDvEALw_wcB",
+          "year": "2022,2023",
+          "focus": "Civic engagement in NJ communities",
+          "serviceArea": "Middlesex County",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic engagement in NJ communities",
+          "lat": 40.4922,
+          "lng": -74.4513,
+          "city": "New Brunswick"
+        },
+        {
+          "grantee": "coLAB Arts",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "www.colab-arts.org",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Central Jersey",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 40.4922,
+          "lng": -74.4513,
+          "city": "New Brunswick"
+        }
+      ]
+    },
+    {
+      "name": "Central New Jersey Network",
+      "total": 145000,
+      "grantCount": 1,
+      "years": [
+        "2024",
+        "2025"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Somerset County",
+      "city": "Somerville",
+      "bipocLed": null,
+      "website": "http://cnjn.org",
+      "lat": 40.5693,
+      "lng": -74.6094,
+      "grants": [
+        {
+          "grantee": "Central New Jersey Network",
+          "amount": 145000,
+          "purpose": "to support The Central New Jersey Network, a non-profit community TV station based in Somerset County. Funding will be used to expand its programming and internship opportunities, with a focus on amplifying diverse voices and strengthening community connections. The project will cover local events in underrepresented areas like Trenton and rural Central Jersey while recruiting interns from local colleges, particularly from underrepresented and impoverished communities, to promote diversity in media production.",
+          "website": "http://cnjn.org",
+          "year": "2024,2025",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Somerset County",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.5693,
+          "lng": -74.6094,
+          "city": "Somerville"
+        }
+      ]
+    },
+    {
+      "name": "New Jersey YMCA State Alliance",
+      "total": 135000,
+      "grantCount": 1,
+      "years": [
+        "2022",
+        "2023"
+      ],
+      "focusAreas": [
+        "Civic engagement in NJ communities"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "Trenton",
+      "bipocLed": null,
+      "website": "https://www.njymca.org",
+      "lat": 40.2206,
+      "lng": -74.7597,
+      "grants": [
+        {
+          "grantee": "New Jersey YMCA State Alliance",
+          "amount": 135000,
+          "purpose": "to support an ongoing statewide storytelling project focused on documenting resident perspectives about COVID-19 vaccination. Insights have been incorporated into a digital and print \u201cfeature\u201d for local dissemination with resident experiences, recommendations, and best practices for communicating about the vaccine in a community-centered, culturally relevant way that enhances access to documented stories, promotes information-sharing, and strengthens communities.",
+          "website": "https://www.njymca.org",
+          "year": "2022,2023",
+          "focus": "Civic engagement in NJ communities",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic engagement in NJ communities",
+          "lat": 40.2206,
+          "lng": -74.7597,
+          "city": "Trenton"
+        }
+      ]
+    },
+    {
+      "name": "Newark Water Coalition",
+      "total": 134930,
+      "grantCount": 1,
+      "years": [
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "focusAreas": [
+        "Civic engagement in NJ communities"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Essex County",
+      "city": "Newark",
+      "bipocLed": null,
+      "website": "https://www.newarkwatercoalition.org",
+      "lat": 40.7357,
+      "lng": -74.1724,
+      "grants": [
+        {
+          "grantee": "Newark Water Coalition",
+          "amount": 134930,
+          "purpose": "to create Newark Community Voices, a digital-media and community-organizing training program for Newark youth. The program produces and distributes multimedia health and environment stories that center Newark community-information needs, with a focus on an oral history of the advocates who worked to clean up Newark\u2019s drinking water.",
+          "website": "https://www.newarkwatercoalition.org",
+          "year": "2021,2022,2023",
+          "focus": "Civic engagement in NJ communities",
+          "serviceArea": "Essex County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic engagement in NJ communities",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        }
+      ]
+    },
+    {
+      "name": "Center for Cooperative Media: South Jersey Information Equity Project",
+      "total": 130000,
+      "grantCount": 1,
+      "years": [
+        "2023",
+        "2024"
+      ],
+      "focusAreas": [
+        "Civic engagement in NJ communities"
+      ],
+      "areas": [
+        "South"
+      ],
+      "serviceArea": "South Jersey",
+      "city": "",
+      "bipocLed": null,
+      "website": "https://centerforcooperativemedia.org",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "Center for Cooperative Media: South Jersey Information Equity Project",
+          "amount": 130000,
+          "purpose": "to support the expansion of the South Jersey Information Equity Project (SJEIP) from a cohort of 5 to 10 fellows annually and establish an SJIEP community reporting workshop series to further engage local storytellers through intergenerational learning and co-creation workshops.",
+          "website": "https://centerforcooperativemedia.org",
+          "year": "2023,2024",
+          "focus": "Civic engagement in NJ communities",
+          "serviceArea": "South Jersey",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic engagement in NJ communities",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
+      "name": "South Jersey Climate News Project",
+      "total": 115320,
+      "grantCount": 1,
+      "years": [
+        "2022",
+        "2023",
+        "2025"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "South"
+      ],
+      "serviceArea": "South Jersey",
+      "city": "Glassboro",
+      "bipocLed": null,
+      "website": "https://sjclimate.news",
+      "lat": 39.7029,
+      "lng": -75.1118,
+      "grants": [
+        {
+          "grantee": "South Jersey Climate News Project",
+          "amount": 115320,
+          "purpose": "to fund stipends for student interns providing high quality news coverage of climate change in South Jersey, including the impact on the environment, agriculture, the Pine Barrens, beaches, tourism, and wetlands.",
+          "website": "https://sjclimate.news",
+          "year": "2022,2023,2025",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "South Jersey",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 39.7029,
+          "lng": -75.1118,
+          "city": "Glassboro"
+        }
+      ]
+    },
+    {
+      "name": "Asbury Park Media Collective",
+      "total": 112600,
+      "grantCount": 1,
+      "years": [
+        "2022",
+        "2023"
+      ],
+      "focusAreas": [
+        "Civic engagement in NJ communities"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Monmouth County",
+      "city": "Asbury Park",
+      "bipocLed": null,
+      "website": "https://asburyparkreporter.com",
+      "lat": 40.2204,
+      "lng": -74.0121,
+      "grants": [
+        {
+          "grantee": "Asbury Park Media Collective",
+          "amount": 112600,
+          "purpose": "to create an incubator for emerging community reporters and local media makers. The work the community reporters produce over the course of the training sessions \u2014 including news articles, news broadcasts for radio, news videos and documentary short subjects, podcasts, and social media posts \u2014 is published and disseminated through a website and a network of local media partners. The project has focused on live streaming city council and board of education meetings in Asbury Park.",
+          "website": "https://asburyparkreporter.com",
+          "year": "2022,2023",
+          "focus": "Civic engagement in NJ communities",
+          "serviceArea": "Monmouth County",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic engagement in NJ communities",
+          "lat": 40.2204,
+          "lng": -74.0121,
+          "city": "Asbury Park"
+        }
+      ]
+    },
+    {
+      "name": "HudPost",
+      "total": 103300,
+      "grantCount": 2,
+      "years": [
+        "2025"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting",
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "North Jersey",
+      "city": "Jersey City",
+      "bipocLed": null,
+      "website": "HudPost.com",
+      "lat": 40.7178,
+      "lng": -74.0431,
+      "grants": [
+        {
+          "grantee": "HudPost",
+          "amount": 3300,
+          "purpose": "to support the placement of a student intern through the Statewide Paid Internship Program.",
+          "website": "HudPost.com",
+          "year": "2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "North Jersey",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.7178,
+          "lng": -74.0431,
+          "city": "Jersey City"
+        },
+        {
+          "grantee": "HudPost",
+          "amount": 100000,
+          "purpose": "To support expanded bilingual coverage in Hudson County through new reporting staff, print editions, and community engagement events.",
+          "website": "https://hudpost.com/",
+          "year": "2025",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Hudson County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.7178,
+          "lng": -74.0431,
+          "city": "Jersey City"
+        }
+      ]
+    },
+    {
+      "name": "Garden State Initiative",
+      "total": 100000,
+      "grantCount": 1,
+      "years": [
+        "2025"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "Trenton",
+      "bipocLed": null,
+      "website": "https://www.gardenstateinitiative.org/?gad_source=1",
+      "lat": 40.2206,
+      "lng": -74.7597,
+      "grants": [
+        {
+          "grantee": "Garden State Initiative",
+          "amount": 100000,
+          "purpose": "to support the Garden State Initiative (GSI) in its efforts to leverage expert resources to develop a comprehensive data warehouse and user-friendly reporting system that provides timely analysis of past and current state budgets, as well as the proposed FY 2026 budget, with a particular focus on so-called budget resolutions (more commonly referred to as earmarks). Guided by budget experts and financial journalists, this initiative aims to enhance transparency by making otherwise opaque public expenditures more accessible and understandable, ensuring that critical fiscal information serves the broader public policy interest. For the current fiscal year, over $1 billion were allocated to these resolutions.",
+          "website": "https://www.gardenstateinitiative.org/?gad_source=1",
+          "year": "2025",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.2206,
+          "lng": -74.7597,
+          "city": "Trenton"
+        }
+      ]
+    },
+    {
+      "name": "CAIR NJ",
+      "total": 100000,
+      "grantCount": 1,
+      "years": [
+        "2025"
+      ],
+      "focusAreas": [
+        "Civic engagement in NJ communities"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "Newark",
+      "bipocLed": null,
+      "website": "https://cair-nj.org/?gad_source=1&gad_campaignid=22804431776&gbraid=0AAAAAo5RPHDNS5X6Dl1Z8PSI93YhC8_U1&gclid=Cj0KCQjw58PGBhCkARIsADbDilzICFHnaVE2mDoofyQk0b2FnGoZHh_xrtLvwJr8NK8iashAzmX52UYaAn9dEALw_wcB",
+      "lat": 40.7357,
+      "lng": -74.1724,
+      "grants": [
+        {
+          "grantee": "CAIR NJ",
+          "amount": 100000,
+          "purpose": "To support the launch of a multimedia civic news platform created by and for Muslim-Americans, including staff hiring, student internships, and community engagement.",
+          "website": "https://cair-nj.org/?gad_source=1&gad_campaignid=22804431776&gbraid=0AAAAAo5RPHDNS5X6Dl1Z8PSI93YhC8_U1&gclid=Cj0KCQjw58PGBhCkARIsADbDilzICFHnaVE2mDoofyQk0b2FnGoZHh_xrtLvwJr8NK8iashAzmX52UYaAn9dEALw_wcB",
+          "year": "2025",
+          "focus": "Civic engagement in NJ communities",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic engagement in NJ communities",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        }
+      ]
+    },
+    {
+      "name": "NJ Spotlight LLC / WNET",
+      "total": 100000,
+      "grantCount": 1,
+      "years": [
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "",
+      "city": "",
+      "bipocLed": false,
+      "website": "",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "NJ Spotlight LLC / WNET",
+          "amount": 100000,
+          "purpose": "This calendar year, Ben Hulac has produced 135 stories and made numerous appearances on NJ Spotlight News with Briana Vannozzi. On social media, he is a frequent and engaging presence on the NJ Spotlight News branded account, regularly breaking down his stories and the issues behind them while maintaining steady audience interaction. He also contributes to the monthly NJSN Coffee Chat virtual events for members and the weekly Statehouse podcast Hey NJ.",
+          "website": "",
+          "year": "2025-2026",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": false,
+          "grantType": "Renewal",
+          "category": "Civic news and information reporting",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
+      "name": "Ridgeview Echo",
+      "total": 100000,
+      "grantCount": 1,
+      "years": [
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "",
+      "city": "",
+      "bipocLed": false,
+      "website": "",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "Ridgeview Echo",
+          "amount": 100000,
+          "purpose": "A major leadership transition was completed with the appointment of a new Executive Director and Managing Editor. Coverage of municipal, school board, and community issues expanded and reader engagement grew through a weekly newsletter, community submissions, and new partnerships with Sussex County Community College. RVE participated in the Blue Engine Collaborative Accelerator, which contributed to a 67% increase in newsletter growth and supported development of a donation-based revenue model.",
+          "website": "",
+          "year": "2025-2026",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": false,
+          "grantType": "Renewal",
+          "category": "Civic news and information reporting",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
+      "name": "Stories of Atlantic City",
+      "total": 99892,
+      "grantCount": 1,
+      "years": [
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "focusAreas": [
+        "Civic engagement in NJ communities"
+      ],
+      "areas": [
+        "South"
+      ],
+      "serviceArea": "Atlantic County",
+      "city": "Atlantic City",
+      "bipocLed": null,
+      "website": "https://storiesofatlanticcity.com",
+      "lat": 39.3643,
+      "lng": -74.4229,
+      "grants": [
+        {
+          "grantee": "Stories of Atlantic City",
+          "amount": 99892,
+          "purpose": "to pilot an initiative to train and pay community members as reporters covering the local city council, planning board, board of education, and casino reinvestment authority meetings, and to develop new ways to engage community members in the decision-making processes that impact their lives. Traditional journalism methods are not meeting the larger Atlantic City community\u2019s information needs.",
+          "website": "https://storiesofatlanticcity.com",
+          "year": "2021,2022,2023,2024",
+          "focus": "Civic engagement in NJ communities",
+          "serviceArea": "Atlantic County",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic engagement in NJ communities",
+          "lat": 39.3643,
+          "lng": -74.4229,
+          "city": "Atlantic City"
+        }
+      ]
+    },
+    {
+      "name": "NJ Coalition to End Homelessness",
+      "total": 99200,
+      "grantCount": 1,
+      "years": [
+        "2023"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "Trenton",
+      "bipocLed": null,
+      "website": "https://www.njceh.org/newsroom",
+      "lat": 40.2206,
+      "lng": -74.7597,
+      "grants": [
+        {
+          "grantee": "NJ Coalition to End Homelessness",
+          "amount": 99200,
+          "purpose": "to support efforts to expand the reach and enhance the impact of Garden State Leaders, a statewide leadership and advocacy training program for New Jersey residents with lived experience of homelessness and poverty. The funds will enable them to formalize their ongoing statewide support and outcome tracking, and to pilot a local leadership program in collaboration with the Mercer Alliance to End Homelessness, for replication in other counties.",
+          "website": "https://www.njceh.org/newsroom",
+          "year": "2023",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.2206,
+          "lng": -74.7597,
+          "city": "Trenton"
+        }
+      ]
+    },
+    {
+      "name": "Center for Cooperative Media: Statewide Voting Guide",
+      "total": 99070,
+      "grantCount": 1,
+      "years": [
+        "2023"
+      ],
+      "focusAreas": [
+        "Civic engagement in NJ communities"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "",
+      "bipocLed": null,
+      "website": "https://centerforcooperativemedia.org",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "Center for Cooperative Media: Statewide Voting Guide",
+          "amount": 99070,
+          "purpose": "to fund the making of the 2023 NJ Statewide Voting Guide, which helped encourage civic engagement. Citizens also had an interactive opportunity to vote their choices on statewide and local issues.",
+          "website": "https://centerforcooperativemedia.org",
+          "year": "2023",
+          "focus": "Civic engagement in NJ communities",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic engagement in NJ communities",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
+      "name": "CCM (Research): Montclair State University",
+      "total": 94045,
+      "grantCount": 1,
+      "years": [
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "",
+      "city": "",
+      "bipocLed": false,
+      "website": "",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "CCM (Research): Montclair State University",
+          "amount": 94045,
+          "purpose": "Conducted in-depth impact tracking for the Consortium\u2019s grantees, holding monthly meetings with 35+ organizations to provide guidance on tracking outcomes and identifying meaningful impact metrics for their work.\n\nLed the production and publication of the second impact report for the Consortium, a critical deliverable completed after it became clear that the Consortium\u2019s state funding might not be renewed. Hanna contributed preliminary insights through an impact-at-a-glance one-pager, developed in collaboration with Madi McCool, allowing key findings to be presented ahead of state budget decisions. Ultimately, these efforts supported the partial renewal of the Consortium\u2019s funding at $2.5 million.",
+          "website": "",
+          "year": "2025-2026",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": false,
+          "grantType": "Renewal",
+          "category": "Civic news and information reporting",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
+      "name": "Beyond Expectations",
+      "total": 93876,
+      "grantCount": 1,
+      "years": [
+        "2021",
+        "2022"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "South"
+      ],
+      "serviceArea": "Burlington County",
+      "city": "Mount Holly",
+      "bipocLed": null,
+      "website": "https://beyondexp.net/collaborate",
+      "lat": 39.9929,
+      "lng": -74.7877,
+      "grants": [
+        {
+          "grantee": "Beyond Expectations",
+          "amount": 93876,
+          "purpose": "to launch and develop \u201cbe.tv eStudios,\u201d an initiative teaching Burlington County students and young adults, ages 14-24, storytelling and media production skills with an emphasis on conducting interviews with professionals, business leaders, educators, etc., and using online gaming techniques for capturing and promoting interview highlights. It also teaches media and business skills and has involved students in organizing and staging esports tournaments and programs.",
+          "website": "https://beyondexp.net/collaborate",
+          "year": "2021,2022",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Burlington County",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 39.9929,
+          "lng": -74.7877,
+          "city": "Mount Holly"
+        }
+      ]
+    },
+    {
+      "name": "Montclair Local Nonprofit News",
+      "total": 90000,
+      "grantCount": 2,
+      "years": [
+        "2024",
+        "2025"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant",
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Essex County",
+      "city": "Montclair",
+      "bipocLed": null,
+      "website": "montclairlocal.news",
+      "lat": 40.8259,
+      "lng": -74.209,
+      "grants": [
+        {
+          "grantee": "Montclair Local Nonprofit News",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "montclairlocal.news",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Essex County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 40.8259,
+          "lng": -74.209,
+          "city": "Montclair"
+        },
+        {
+          "grantee": "Montclair Local Nonprofit News",
+          "amount": 80000,
+          "purpose": "to hire a senior reporter dedicated to covering Essex County and the issues facing its communities, including a wide range of topics such as public spending, county government, housing and development, environmental concerns, transportation, public safety, and local institutions, businesses, and arts and culture organizations that shape residents\u2019 daily lives.",
+          "website": "https://montclairlocal.news/",
+          "year": "2025",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Essex County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.8259,
+          "lng": -74.209,
+          "city": "Montclair"
+        }
+      ]
+    },
+    {
+      "name": "MercerMe",
+      "total": 88300,
+      "grantCount": 3,
+      "years": [
+        "2024",
+        "2025",
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant",
+        "Civic news and information reporting",
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Mercer County",
+      "city": "Pennington",
+      "bipocLed": false,
+      "website": "www.mercerme.com",
+      "lat": 40.3249,
+      "lng": -74.7888,
+      "grants": [
+        {
+          "grantee": "MercerMe",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "www.mercerme.com",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Mercer County",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 40.3249,
+          "lng": -74.7888,
+          "city": "Pennington"
+        },
+        {
+          "grantee": "MercerMe",
+          "amount": 3300,
+          "purpose": "to support the placement of a student intern through the Statewide Paid Internship Program.",
+          "website": "mercerme.com",
+          "year": "2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Central Jersey",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.3249,
+          "lng": -74.7888,
+          "city": "Pennington"
+        },
+        {
+          "grantee": "MercerMe",
+          "amount": 75000,
+          "purpose": "To accelerate MercerMe\u2019s progress toward long-term sustainability in 2026 by funding a full-time publisher position, hiring an advertising sales representative, and strengthening operational infrastructure. This investment is projected to generate a 25% return in the first year through expanded advertising, increased reader support, and new earned-revenue initiatives, ensuring that Hopewell Valley residents continue to have access to timely and trustworthy local news.",
+          "website": "www.mercerme.com",
+          "year": "2025-2026",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Mercer County",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": false,
+          "grantType": "New Grant",
+          "category": "Civic news and information reporting",
+          "lat": 40.3249,
+          "lng": -74.7888,
+          "city": "Pennington"
+        }
+      ]
+    },
+    {
+      "name": "Cranford High School",
+      "total": 86497,
+      "grantCount": 1,
+      "years": [
+        "2022",
+        "2023"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Union County",
+      "city": "Cranford",
+      "bipocLed": null,
+      "website": "http://chs.cranfordschools.org",
+      "lat": 40.6546,
+      "lng": -74.2993,
+      "grants": [
+        {
+          "grantee": "Cranford High School",
+          "amount": 86497,
+          "purpose": "to grow the content, readership, and capacity of a fledgling digital journalism program and school-wide digital news source by integrating curriculum from varied elective courses and leveraging the expertise of a local college or university.",
+          "website": "http://chs.cranfordschools.org",
+          "year": "2022,2023",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Union County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.6546,
+          "lng": -74.2993,
+          "city": "Cranford"
+        }
+      ]
+    },
+    {
+      "name": "Mental Health Association of New Jersey",
+      "total": 75000,
+      "grantCount": 1,
+      "years": [
+        "2022"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "Trenton",
+      "bipocLed": null,
+      "website": "https://www.mhanj.org",
+      "lat": 40.2206,
+      "lng": -74.7597,
+      "grants": [
+        {
+          "grantee": "Mental Health Association of New Jersey",
+          "amount": 75000,
+          "purpose": "to conduct a research project assessing how community college students receive information on mental health services, key topics that resonate with them, and preferences on how they receive that information, and to identify the most effective ways to access services and stigma-breaking concepts.",
+          "website": "https://www.mhanj.org",
+          "year": "2022",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.2206,
+          "lng": -74.7597,
+          "city": "Trenton"
+        }
+      ]
+    },
+    {
+      "name": "The Daily Targum (Targum Publishing Co.)",
+      "total": 70000,
+      "grantCount": 2,
+      "years": [
+        "2024"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant",
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Middlesex County",
+      "city": "New Brunswick",
+      "bipocLed": null,
+      "website": "http://dailytargum.com",
+      "lat": 40.5008,
+      "lng": -74.4474,
+      "grants": [
+        {
+          "grantee": "The Daily Targum (Targum Publishing Co.)",
+          "amount": 60000,
+          "purpose": "to support The Daily Targum, Rutgers University\u2019s student-run news outlet, aims to expand its digital presence, attract advertisers, and secure a 2025 student fee referendum to restore University funding. As one of New Jersey's largest journalism training grounds, employing over 30 student journalists each year, the Targum aligns with the Consortium's mission by producing civic news and covering the Rutgers communities of New Brunswick, Newark, and Camden.",
+          "website": "http://dailytargum.com",
+          "year": "2024",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Middlesex County",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.5008,
+          "lng": -74.4474,
+          "city": "New Brunswick"
+        },
+        {
+          "grantee": "The Daily Targum (Targum Publishing Co.)",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "http://dailytargum.com",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Middlesex County",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 40.5008,
+          "lng": -74.4474,
+          "city": "New Brunswick"
+        }
+      ]
+    },
+    {
+      "name": "Camden Fireworks",
+      "total": 64460,
+      "grantCount": 1,
+      "years": [
+        "2023"
+      ],
+      "focusAreas": [
+        "Civic engagement in NJ communities"
+      ],
+      "areas": [
+        "South"
+      ],
+      "serviceArea": "Camden County",
+      "city": "Camden",
+      "bipocLed": null,
+      "website": "https://camdenfireworks.org",
+      "lat": 39.9259,
+      "lng": -75.1196,
+      "grants": [
+        {
+          "grantee": "Camden Fireworks",
+          "amount": 64460,
+          "purpose": "to undertake a community-centered storytelling project in Camden documenting the challenges and opportunities of living a long, healthful life amidst environmental injustice by interviewing, facilitating discussions, and documenting the personal narratives of community members.",
+          "website": "https://camdenfireworks.org",
+          "year": "2023",
+          "focus": "Civic engagement in NJ communities",
+          "serviceArea": "Camden County",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic engagement in NJ communities",
+          "lat": 39.9259,
+          "lng": -75.1196,
+          "city": "Camden"
+        }
+      ]
+    },
+    {
+      "name": "Inside Climate News",
+      "total": 62000,
+      "grantCount": 1,
+      "years": [
+        "2025"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "Newark",
+      "bipocLed": null,
+      "website": "https://insideclimatenews.org/newsletter/?gad_source=1&gclid=Cj0KCQjwkN--BhDkARIsAD_mnIpM1joaw1gmG0B8QAFp33AGCU9ajNRulUr7X1OjmD1AGLZnZgEIGMQaAvyREALw_wcB",
+      "lat": 40.7357,
+      "lng": -74.1724,
+      "grants": [
+        {
+          "grantee": "Inside Climate News",
+          "amount": 62000,
+          "purpose": "to support Inside Climate News in strengthening New Jersey\u2019s local environmental reporting ecosystem through on-the-ground freelance journalism and collaborations with local media outlets, aiming to fill gaps in climate and environmental coverage while building a sustained reporting presence in communities across the state.",
+          "website": "https://insideclimatenews.org/newsletter/?gad_source=1&gclid=Cj0KCQjwkN--BhDkARIsAD_mnIpM1joaw1gmG0B8QAFp33AGCU9ajNRulUr7X1OjmD1AGLZnZgEIGMQaAvyREALw_wcB",
+          "year": "2025",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        }
+      ]
+    },
+    {
+      "name": "Lens 15 Media",
+      "total": 50000,
+      "grantCount": 1,
+      "years": [
+        "2022"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "Newark",
+      "bipocLed": null,
+      "website": "https://lens15.com",
+      "lat": 40.7357,
+      "lng": -74.1724,
+      "grants": [
+        {
+          "grantee": "Lens 15 Media",
+          "amount": 50000,
+          "purpose": "to launch a news agency that produces accessible, multimedia reports for and about people with disabilities in New Jersey. This grant was funded in part by support from New Jersey Health Initiatives (NJHI), a statewide grantmaking program of the Robert Wood Johnson Foundation.",
+          "website": "https://lens15.com",
+          "year": "2022",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        }
+      ]
+    },
+    {
+      "name": "DataSourceNJ Inc.",
+      "total": 50000,
+      "grantCount": 1,
+      "years": [
+        "2023"
+      ],
+      "focusAreas": [
+        "Civic engagement in NJ communities"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "Newark",
+      "bipocLed": null,
+      "website": "https://datasourcenj.org",
+      "lat": 40.7357,
+      "lng": -74.1724,
+      "grants": [
+        {
+          "grantee": "DataSourceNJ Inc.",
+          "amount": 50000,
+          "purpose": "to develop from an operating prototype a repository to collect, clean, host, integrate, analyze, and present data and resulting insights to local investigative journalists, community activists, small businesses, academicians, and students.",
+          "website": "https://datasourcenj.org",
+          "year": "2023",
+          "focus": "Civic engagement in NJ communities",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic engagement in NJ communities",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        }
+      ]
+    },
+    {
+      "name": "CCM (Spanish Translation): Montclair State University",
+      "total": 50000,
+      "grantCount": 1,
+      "years": [
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "",
+      "city": "",
+      "bipocLed": true,
+      "website": "",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "CCM (Spanish Translation): Montclair State University",
+          "amount": 50000,
+          "purpose": "The translated stories now span a broad range of topics, including immigration, education, healthcare, housing, transportation, the economy, and the environment. Since January 2025, heightened federal enforcement actions under the Trump administration have driven an increase in immigration-related arrests at workplaces and other locations, and a significant portion of recent translations has focused on immigration as a result. Over the past three years, interest in republishing STNS translated stories has grown steadily, supported by project leadership\u2019s efforts to standardize translation practices while preserving cultural nuance and linguistic accuracy. This growth in republication across both English- and Spanish-language outlets reflects a wider recognition among English-focused news partners of the importance of Spanish translation in reaching and informing diverse audiences. As of October 2025, approximately 190 stories have been translated into Spanish, and the number of STNS partners has expanded to 19, including seven Spanish-language and 12 English-language organizations.",
+          "website": "",
+          "year": "2025-2026",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": true,
+          "grantType": "Renewal",
+          "category": "Civic news and information reporting",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
+      "name": "South Jersey Emerging Journalism Project",
+      "total": 50000,
+      "grantCount": 1,
+      "years": [
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [],
+      "serviceArea": "",
+      "city": "",
+      "bipocLed": true,
+      "website": "",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "South Jersey Emerging Journalism Project",
+          "amount": 50000,
+          "purpose": "Significant changes have taken place since the last grant period, most notably the end of Montclair State University\u2019s formal relationship with the program following statewide rollbacks of DEI initiatives. As a result, Montclair no longer provides direction, staffing, or financial support. In response to this shift, Velvet McNeil has assumed the role of Executive Director, taking on expanded leadership responsibilities to guide the program forward. During this period, the organization also hosted a full-day professional development session led by award-winning investigative journalist Nicole Carr, formerly of ProPublica, focused on the legacy of the Black press and approaches to long-form investigative reporting.",
+          "website": "",
+          "year": "2025-2026",
+          "focus": "Journalism pipeline",
+          "serviceArea": "",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": true,
+          "grantType": "Renewal",
+          "category": "Journalism pipeline",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
+      "name": "VietLead",
+      "total": 48000,
+      "grantCount": 1,
+      "years": [
+        "2023"
+      ],
+      "focusAreas": [
+        "Civic engagement in NJ communities"
+      ],
+      "areas": [
+        "South"
+      ],
+      "serviceArea": "Camden County",
+      "city": "Camden",
+      "bipocLed": null,
+      "website": "https://www.vietlead.org/our-roots-youth-program",
+      "lat": 39.9259,
+      "lng": -75.1196,
+      "grants": [
+        {
+          "grantee": "VietLead",
+          "amount": 48000,
+          "purpose": "to hold neighborhood listening sessions in the 2023-2024 growing season through its Jersey Roots Youth Program, in collaboration with its Resilient Roots Farm Project, and to learn about what local issues are top of mind for its Black, Brown, and Southeast Asian neighbors who live, work, and play in East Camden neighborhoods.",
+          "website": "https://www.vietlead.org/our-roots-youth-program",
+          "year": "2023",
+          "focus": "Civic engagement in NJ communities",
+          "serviceArea": "Camden County",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic engagement in NJ communities",
+          "lat": 39.9259,
+          "lng": -75.1196,
+          "city": "Camden"
+        }
+      ]
+    },
+    {
+      "name": "Radio Rouj & Ble",
+      "total": 40000,
+      "grantCount": 1,
+      "years": [
+        "2022"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Essex County",
+      "city": "East Orange",
+      "bipocLed": null,
+      "website": "https://www.radioroujeble.com",
+      "lat": 40.7673,
+      "lng": -74.2049,
+      "grants": [
+        {
+          "grantee": "Radio Rouj & Ble",
+          "amount": 40000,
+          "purpose": "to enable this online Haitian community radio organization to develop its own website, app, and weekly public service announcements, relevant to the more than 23,000 members of the Haitian community in Essex County. The project aim is to focus on translating and disseminating reliable information on civics, health, relevant news, and education and to create a platform where community members can address concerns and share experiences.",
+          "website": "https://www.radioroujeble.com",
+          "year": "2022",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Essex County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.7673,
+          "lng": -74.2049,
+          "city": "East Orange"
+        }
+      ]
+    },
+    {
+      "name": "Village Green NJ",
+      "total": 40000,
+      "grantCount": 1,
+      "years": [
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "",
+      "city": "",
+      "bipocLed": false,
+      "website": "",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "Village Green NJ",
+          "amount": 40000,
+          "purpose": "The goal of this initiative is to add an education and training component to Village Green\u2019s coverage by hiring and mentoring high school and college students. The program will intentionally recruit and support a diverse group of aspiring journalists while expanding both the topics and geographic scope of Village Green\u2019s reporting.",
+          "website": "",
+          "year": "2025-2026",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": false,
+          "grantType": "New Grant",
+          "category": "Civic news and information reporting",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
+      "name": "Wayne Hills High School",
+      "total": 35991,
+      "grantCount": 1,
+      "years": [
+        "2023",
+        "2024"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Passaic County",
+      "city": "Wayne",
+      "bipocLed": null,
+      "website": "https://whhspatriotpress.com/category/multimedia/",
+      "lat": 40.9472,
+      "lng": -74.2474,
+      "grants": [
+        {
+          "grantee": "Wayne Hills High School",
+          "amount": 35991,
+          "purpose": "to fund the creation of a podcasting studio and support the digital journalism program for students in Wayne Township.",
+          "website": "https://whhspatriotpress.com/category/multimedia/",
+          "year": "2023,2024",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Passaic County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.9472,
+          "lng": -74.2474,
+          "city": "Wayne"
+        }
+      ]
+    },
+    {
+      "name": "The Conservatory of Music and Performing Arts Society",
+      "total": 35000,
+      "grantCount": 1,
+      "years": [
+        "2021"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Mercer County",
+      "city": "Trenton",
+      "bipocLed": null,
+      "website": "https://www.facebook.com/COMPAStrentonnj/",
+      "lat": 40.2206,
+      "lng": -74.7597,
+      "grants": [
+        {
+          "grantee": "The Conservatory of Music and Performing Arts Society",
+          "amount": 35000,
+          "purpose": "to support Let My People Learn-HistorVic Education, a project that helps young people learn more about the workings of local governments and how policies and laws impact their communities.",
+          "website": "https://www.facebook.com/COMPAStrentonnj/",
+          "year": "2021",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Mercer County",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.2206,
+          "lng": -74.7597,
+          "city": "Trenton"
+        }
+      ]
+    },
+    {
+      "name": "Old Bridge NJ Resident",
+      "total": 35000,
+      "grantCount": 1,
+      "years": [
+        "2021"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Middlesex County",
+      "city": "Old Bridge",
+      "bipocLed": null,
+      "website": "https://www.facebook.com/groups/oldbridgenewjerseyresidents/",
+      "lat": 40.4115,
+      "lng": -74.3654,
+      "grants": [
+        {
+          "grantee": "Old Bridge NJ Resident",
+          "amount": 35000,
+          "purpose": "to create a comprehensive and searchable archive of local-government activity spanning more than two decades. The project was completed and the tool made available to area residents and journalists.",
+          "website": "https://www.facebook.com/groups/oldbridgenewjerseyresidents/",
+          "year": "2021",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Middlesex County",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.4115,
+          "lng": -74.3654,
+          "city": "Old Bridge"
+        }
+      ]
+    },
+    {
+      "name": "VaccinateNJ.com",
+      "total": 35000,
+      "grantCount": 1,
+      "years": [
+        "2021"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "Newark",
+      "bipocLed": null,
+      "website": "",
+      "lat": 40.7357,
+      "lng": -74.1724,
+      "grants": [
+        {
+          "grantee": "VaccinateNJ.com",
+          "amount": 35000,
+          "purpose": "will add more features to its health information website to help residents statewide \u2014 including native Spanish speakers and others in underserved communities \u2014 get real-time information about vaccination appointment locations and vaccine availability.",
+          "website": "",
+          "year": "2021",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        }
+      ]
+    },
+    {
+      "name": "Intersystemz",
+      "total": 35000,
+      "grantCount": 1,
+      "years": [
+        "2022"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Mercer County",
+      "city": "Trenton",
+      "bipocLed": null,
+      "website": "",
+      "lat": 40.2206,
+      "lng": -74.7597,
+      "grants": [
+        {
+          "grantee": "Intersystemz",
+          "amount": 35000,
+          "purpose": "to fund the creation of a new community centered news platform covering Trenton, in partnership with COMPAS, Pod City Trenton, Kean University and The College of New Jersey.",
+          "website": "",
+          "year": "2022",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Mercer County",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.2206,
+          "lng": -74.7597,
+          "city": "Trenton"
+        }
+      ]
+    },
+    {
+      "name": "Patterson Alliance",
+      "total": 33000,
+      "grantCount": 1,
+      "years": [
+        "2021"
+      ],
+      "focusAreas": [
+        "Civic engagement in NJ communities"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Passaic County",
+      "city": "",
+      "bipocLed": null,
+      "website": "https://patersonalliance.org",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "Patterson Alliance",
+          "amount": 33000,
+          "purpose": "to manage the library-based Paterson Information Hub to provide the community with training in citizen journalism and news-production technology. The alliance also aimed to convene local events to assess community-information needs.",
+          "website": "https://patersonalliance.org",
+          "year": "2021",
+          "focus": "Civic engagement in NJ communities",
+          "serviceArea": "Passaic County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic engagement in NJ communities",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
+      "name": "Two River Times",
+      "total": 31879,
+      "grantCount": 1,
+      "years": [
+        "2024"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Monmouth County",
+      "city": "Red Bank",
+      "bipocLed": null,
+      "website": "https://tworivertimes.com/",
+      "lat": 40.3943,
+      "lng": -74.0632,
+      "grants": [
+        {
+          "grantee": "Two River Times",
+          "amount": 31879,
+          "purpose": "to support the Two River Times with costs associated with its organization\u2019s transition from a for-profit to a non-profit.",
+          "website": "https://tworivertimes.com/",
+          "year": "2024",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Monmouth County",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.3943,
+          "lng": -74.0632,
+          "city": "Red Bank"
+        }
+      ]
+    },
+    {
+      "name": "Healthy NewsWorks",
+      "total": 30000,
+      "grantCount": 1,
+      "years": [
+        "2025"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "Camden",
+      "bipocLed": null,
+      "website": "https://www.healthynewsworks.org/",
+      "lat": 39.9259,
+      "lng": -75.1196,
+      "grants": [
+        {
+          "grantee": "Healthy NewsWorks",
+          "amount": 30000,
+          "purpose": "to support the expansion of access to the Healthy NewsWorks literacy program and engage students and schools in Camden, New Jersey through community health journalism.",
+          "website": "https://www.healthynewsworks.org/",
+          "year": "2025",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 39.9259,
+          "lng": -75.1196,
+          "city": "Camden"
+        }
+      ]
+    },
+    {
+      "name": "The College of New Jersey",
+      "total": 25950,
+      "grantCount": 1,
+      "years": [
+        "2025"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Central Jersey",
+      "city": "Ewing",
+      "bipocLed": null,
+      "website": "https://www.tcnjsignalnews.com/",
+      "lat": 40.2651,
+      "lng": -74.786,
+      "grants": [
+        {
+          "grantee": "The College of New Jersey",
+          "amount": 25950,
+          "purpose": "To support student-led investigative reporting, print distribution, and equipment upgrades that strengthen journalism training at TCNJ.",
+          "website": "https://www.tcnjsignalnews.com/",
+          "year": "2025",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Central Jersey",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.2651,
+          "lng": -74.786,
+          "city": "Ewing"
+        }
+      ]
+    },
+    {
+      "name": "Chalkbeat Newark",
+      "total": 20000,
+      "grantCount": 1,
+      "years": [
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "",
+      "city": "",
+      "bipocLed": false,
+      "website": "",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "Chalkbeat Newark",
+          "amount": 20000,
+          "purpose": "Chalkbeat\u2019s newsroom in Essex County focused exclusively on schools, provides information to families, educators, and community leaders with a focus on those in historically underserved communities, so they can advocate effectively for better educational outcomes. \nThe newsroom covers urgent issues in Newark\u2019s schools by examining policy changes, legislative developments, and school operations, while also providing essential data and context. Through its in-depth reporting, Chalkbeat Newark helps expand public understanding of the complex challenges and innovations shaping education, ultimately supporting more informed and engaged communities.",
+          "website": "",
+          "year": "2025-2026",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": false,
+          "grantType": "Bump Up",
+          "category": "Civic news and information reporting",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
+      "name": "Slice of Culture",
+      "total": 20000,
+      "grantCount": 1,
+      "years": [
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "",
+      "city": "",
+      "bipocLed": true,
+      "website": "",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "Slice of Culture",
+          "amount": 20000,
+          "purpose": "Slice of Culture (SOC) is an online media platform dedicated to local news, civic engagement, and community empowerment. Led by a team of young BIPOC storytellers, many of whom were raised in and currently reside in Hudson County. SOC produces accessible, engaging content that covers community events, civic issues, and public resource guides.",
+          "website": "",
+          "year": "2025-2026",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": true,
+          "grantType": "Bump Up",
+          "category": "Civic news and information reporting",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
+      "name": "The Tower at Princeton High School",
+      "total": 13700,
+      "grantCount": 1,
+      "years": [
+        "2025"
+      ],
+      "focusAreas": [
+        "Civic engagement in NJ communities"
+      ],
+      "areas": [
+        "South"
+      ],
+      "serviceArea": "Gloucester County",
+      "city": "Princeton",
+      "bipocLed": null,
+      "website": "https://www.towerphs.com/home",
+      "lat": 40.3573,
+      "lng": -74.6672,
+      "grants": [
+        {
+          "grantee": "The Tower at Princeton High School",
+          "amount": 13700,
+          "purpose": "To support technology and equipment upgrades that ensure equitable student participation in the newsroom and sustain print publication.",
+          "website": "https://www.towerphs.com/home",
+          "year": "2025",
+          "focus": "Civic engagement in NJ communities",
+          "serviceArea": "Gloucester County",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic engagement in NJ communities",
+          "lat": 40.3573,
+          "lng": -74.6672,
+          "city": "Princeton"
+        }
+      ]
+    },
+    {
+      "name": "NJ Pen",
+      "total": 13300,
+      "grantCount": 2,
+      "years": [
+        "2024",
+        "2025"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant",
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "North",
+        "South"
+      ],
+      "serviceArea": "Passaic County",
+      "city": "Haddonfield",
+      "bipocLed": null,
+      "website": "https://www.njpen.com/",
+      "lat": 39.8915,
+      "lng": -75.0379,
+      "grants": [
+        {
+          "grantee": "NJ Pen",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "https://www.njpen.com/",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Passaic County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 39.8915,
+          "lng": -75.0379,
+          "city": "Haddonfield"
+        },
+        {
+          "grantee": "NJ Pen",
+          "amount": 3300,
+          "purpose": "to support the placement of a student intern through the Statewide Paid Internship Program.",
+          "website": "https://www.njpen.com",
+          "year": "2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "South Jersey",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 39.8915,
+          "lng": -75.0379,
+          "city": "Haddonfield"
+        }
+      ]
+    },
+    {
+      "name": "70and73.com",
+      "total": 10000,
+      "grantCount": 1,
+      "years": [
+        "2024"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant"
+      ],
+      "areas": [
+        "South"
+      ],
+      "serviceArea": "South Jersey",
+      "city": "Marlton",
+      "bipocLed": null,
+      "website": "https://www.70and73.com",
+      "lat": 39.8989,
+      "lng": -74.9275,
+      "grants": [
+        {
+          "grantee": "70and73.com",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "https://www.70and73.com",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "South Jersey",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 39.8989,
+          "lng": -74.9275,
+          "city": "Marlton"
+        }
+      ]
+    },
+    {
+      "name": "Black In Jersey",
+      "total": 10000,
+      "grantCount": 1,
+      "years": [
+        "2024"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "Trenton",
+      "bipocLed": null,
+      "website": "www.blackinjersey.com",
+      "lat": 40.2171,
+      "lng": -74.7429,
+      "grants": [
+        {
+          "grantee": "Black In Jersey",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "www.blackinjersey.com",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 40.2171,
+          "lng": -74.7429,
+          "city": "Trenton"
+        }
+      ]
+    },
+    {
+      "name": "Latino Spirit Media",
+      "total": 10000,
+      "grantCount": 1,
+      "years": [
+        "2024"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "Newark",
+      "bipocLed": null,
+      "website": "WWW.THELATINOSPIRIT.COM",
+      "lat": 40.7357,
+      "lng": -74.1724,
+      "grants": [
+        {
+          "grantee": "Latino Spirit Media",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "WWW.THELATINOSPIRIT.COM",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        }
+      ]
+    },
+    {
+      "name": "Hopeloft",
+      "total": 10000,
+      "grantCount": 1,
+      "years": [
+        "2024"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant"
+      ],
+      "areas": [
+        "South"
+      ],
+      "serviceArea": "South Jersey",
+      "city": "Bridgeton",
+      "bipocLed": null,
+      "website": "www.followsouthjersey.com",
+      "lat": 39.4273,
+      "lng": -75.2341,
+      "grants": [
+        {
+          "grantee": "Hopeloft",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "www.followsouthjersey.com",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "South Jersey",
+          "area": "South",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 39.4273,
+          "lng": -75.2341,
+          "city": "Bridgeton"
+        }
+      ]
+    },
+    {
+      "name": "Heady NJ",
+      "total": 10000,
+      "grantCount": 1,
+      "years": [
+        "2024"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "Hazlet",
+      "bipocLed": null,
+      "website": "headynj.com",
+      "lat": 40.4289,
+      "lng": -74.1651,
+      "grants": [
+        {
+          "grantee": "Heady NJ",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "headynj.com",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 40.4289,
+          "lng": -74.1651,
+          "city": "Hazlet"
+        }
+      ]
+    },
+    {
+      "name": "Muslim",
+      "total": 10000,
+      "grantCount": 1,
+      "years": [
+        "2024"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "Newark",
+      "bipocLed": null,
+      "website": "http://muslim.co",
+      "lat": 40.7357,
+      "lng": -74.1724,
+      "grants": [
+        {
+          "grantee": "Muslim",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "http://muslim.co",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 40.7357,
+          "lng": -74.1724,
+          "city": "Newark"
+        }
+      ]
+    },
+    {
+      "name": "TAPinto FairLawn/GlenRock",
+      "total": 10000,
+      "grantCount": 1,
+      "years": [
+        "2024"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Bergen County",
+      "city": "Fair Lawn",
+      "bipocLed": null,
+      "website": "https://www.tapinto.net",
+      "lat": 40.9401,
+      "lng": -74.1321,
+      "grants": [
+        {
+          "grantee": "TAPinto FairLawn/GlenRock",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "https://www.tapinto.net",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Bergen County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 40.9401,
+          "lng": -74.1321,
+          "city": "Fair Lawn"
+        }
+      ]
+    },
+    {
+      "name": "TAPinto Hasbrouk Heights",
+      "total": 10000,
+      "grantCount": 1,
+      "years": [
+        "2024"
+      ],
+      "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "Bergen County",
+      "city": "Hasbrouck Heights",
+      "bipocLed": null,
+      "website": "https://www.tapinto.net",
+      "lat": 40.8584,
+      "lng": -74.0821,
+      "grants": [
+        {
+          "grantee": "TAPinto Hasbrouk Heights",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "https://www.tapinto.net",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Bergen County",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 40.8584,
+          "lng": -74.0821,
+          "city": "Hasbrouck Heights"
+        }
+      ]
+    },
+    {
+      "name": "Daily Targum",
+      "total": 3300,
+      "grantCount": 1,
+      "years": [
+        "2025"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Central Jersey",
+      "city": "New Brunswick",
+      "bipocLed": null,
+      "website": "dailytargum.com",
+      "lat": 40.5008,
+      "lng": -74.4474,
+      "grants": [
+        {
+          "grantee": "Daily Targum",
+          "amount": 3300,
+          "purpose": "to support the placement of a student intern through the Statewide Paid Internship Program.",
+          "website": "dailytargum.com",
+          "year": "2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Central Jersey",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.5008,
+          "lng": -74.4474,
+          "city": "New Brunswick"
+        }
+      ]
+    },
+    {
+      "name": "DoverNow Magazine",
+      "total": 3300,
+      "grantCount": 1,
+      "years": [
+        "2025"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "North Jersey",
+      "city": "Dover",
+      "bipocLed": null,
+      "website": "dovernow.com",
+      "lat": 40.8837,
+      "lng": -74.5622,
+      "grants": [
+        {
+          "grantee": "DoverNow Magazine",
+          "amount": 3300,
+          "purpose": "to support the placement of a student intern through the Statewide Paid Internship Program.",
+          "website": "dovernow.com",
+          "year": "2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "North Jersey",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.8837,
+          "lng": -74.5622,
+          "city": "Dover"
+        }
+      ]
+    },
+    {
+      "name": "Global Patriot Newspapers online",
+      "total": 3300,
+      "grantCount": 1,
+      "years": [
+        "2025"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "North Jersey",
+      "city": "Paterson",
+      "bipocLed": null,
+      "website": "www.globalpatriotnews.com",
+      "lat": 40.9168,
+      "lng": -74.1718,
+      "grants": [
+        {
+          "grantee": "Global Patriot Newspapers online",
+          "amount": 3300,
+          "purpose": "to support the placement of a student intern through the Statewide Paid Internship Program.",
+          "website": "www.globalpatriotnews.com",
+          "year": "2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "North Jersey",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.9168,
+          "lng": -74.1718,
+          "city": "Paterson"
+        }
+      ]
+    },
+    {
+      "name": "TAPinto Bayonne, Hamilton/Robbinsville, Hoboken, Jersey City, Paterson.",
+      "total": 3300,
+      "grantCount": 1,
+      "years": [
+        "2025"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "North Jersey",
+      "city": "Jersey City",
+      "bipocLed": null,
+      "website": "TAPinto.net",
+      "lat": 40.7178,
+      "lng": -74.0431,
+      "grants": [
+        {
+          "grantee": "TAPinto Bayonne, Hamilton/Robbinsville, Hoboken, Jersey City, Paterson.",
+          "amount": 3300,
+          "purpose": "to support the placement of a student intern through the Statewide Paid Internship Program.",
+          "website": "TAPinto.net",
+          "year": "2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "North Jersey",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.7178,
+          "lng": -74.0431,
+          "city": "Jersey City"
+        }
+      ]
+    },
+    {
+      "name": "TAPinto Raritan Bay (Sayreville/South Amboy) and TAPinto Scotch Plains-Fanwood",
+      "total": 3300,
+      "grantCount": 1,
+      "years": [
+        "2025"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Central Jersey",
+      "city": "Sayreville",
+      "bipocLed": null,
+      "website": "www.tapintoRaritanBay.net, www.tapintoSPF.net",
+      "lat": 40.4587,
+      "lng": -74.361,
+      "grants": [
+        {
+          "grantee": "TAPinto Raritan Bay (Sayreville/South Amboy) and TAPinto Scotch Plains-Fanwood",
+          "amount": 3300,
+          "purpose": "to support the placement of a student intern through the Statewide Paid Internship Program.",
+          "website": "www.tapintoRaritanBay.net, www.tapintoSPF.net",
+          "year": "2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Central Jersey",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.4587,
+          "lng": -74.361,
+          "city": "Sayreville"
+        }
+      ]
+    },
+    {
+      "name": "New Jersey Hills Media Group",
+      "total": 3300,
+      "grantCount": 1,
+      "years": [
+        "2025"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "North"
+      ],
+      "serviceArea": "North Jersey",
+      "city": "Morristown",
+      "bipocLed": null,
+      "website": "newjerseyhills.com",
+      "lat": 40.7968,
+      "lng": -74.4815,
+      "grants": [
+        {
+          "grantee": "New Jersey Hills Media Group",
+          "amount": 3300,
+          "purpose": "to support the placement of a student intern through the Statewide Paid Internship Program.",
+          "website": "newjerseyhills.com",
+          "year": "2025",
+          "focus": "Journalism pipeline",
+          "serviceArea": "North Jersey",
+          "area": "North",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": 40.7968,
+          "lng": -74.4815,
+          "city": "Morristown"
+        }
+      ]
+    },
+    {
+      "name": "If I Can, You Can Inc.",
+      "total": 0,
+      "grantCount": 1,
+      "years": [
+        "2021"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "South"
+      ],
+      "serviceArea": "Salem County",
+      "city": "",
+      "bipocLed": null,
+      "website": "",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "If I Can, You Can Inc.",
+          "amount": 35000,
+          "purpose": "to help revitalize the online neighborhood news franchise TAPInto.net in Salem County, with the goal of sharing news articles across New Jersey tow",
+          "website": "",
+          "year": "2021",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Salem County",
+          "area": "South",
+          "cancelled": true,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
+      "name": "New Brunswick Today",
+      "total": 0,
+      "grantCount": 1,
+      "years": [
+        "2021"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Middlesex County",
+      "city": "",
+      "bipocLed": null,
+      "website": "https://newbrunswicktoday.com",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "New Brunswick Today",
+          "amount": 40000,
+          "purpose": "to launch an investigative project on the census, focusing on the immigrant and non-English speaking communities in New Brunswick. New Brunswick Today proposed to examine the extent to which those communities may have been undercounted in the most recent census and any resulting implications. The project intended to analyze the past three census counts to examine the effects of gentrification in the city.",
+          "website": "https://newbrunswicktoday.com",
+          "year": "2021",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Middlesex County",
+          "area": "Central",
+          "cancelled": true,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
+      "name": "NJ Society of Professional Journalists",
+      "total": 0,
+      "grantCount": 1,
+      "years": [
+        "2022"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "",
+      "bipocLed": null,
+      "website": "https://www.njspj.org",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "NJ Society of Professional Journalists",
+          "amount": 35000,
+          "purpose": "to fund a census of student journalists and journalism programs around the state, along with the development of a central database of scholastic journalism websites and publications. The grant will also fund student press identification cards.",
+          "website": "https://www.njspj.org",
+          "year": "2022",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": true,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
+      "name": "Muslim.co",
+      "total": 0,
+      "grantCount": 1,
+      "years": [
+        "2023"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [],
+      "serviceArea": "Statewide",
+      "city": "",
+      "bipocLed": null,
+      "website": "https://www.muslim.co",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "Muslim.co",
+          "amount": 175000,
+          "purpose": "to fund a media publication centering Muslim news, with coverage affecting the New Jersey Muslim community. New Jersey contains the highest percentage of Muslims to the state population in the United States. The money also is helping Muslim.co expand its coverage of the Palestinian community in New Jersey, particularly in the context of the conflict in Gaza.",
+          "website": "https://www.muslim.co",
+          "year": "2023",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Statewide",
+          "area": "",
+          "cancelled": true,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
+      "name": "NJ Advance Media",
+      "total": 0,
+      "grantCount": 1,
+      "years": [
+        "2023"
+      ],
+      "focusAreas": [
+        "Journalism pipeline"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Middlesex County",
+      "city": "",
+      "bipocLed": null,
+      "website": "https://www.njadvancemedia.com",
+      "lat": null,
+      "lng": null,
+      "grants": [
+        {
+          "grantee": "NJ Advance Media",
+          "amount": 25000,
+          "purpose": "to fund the creation of a Journalism Talent Pipeline for aspiring journalists  of color or from an underrepresented community. Nationally, journalists of color make up less than 17% of newsrooms and just 13% of newsroom leadership.",
+          "website": "https://www.njadvancemedia.com",
+          "year": "2023",
+          "focus": "Journalism pipeline",
+          "serviceArea": "Middlesex County",
+          "area": "Central",
+          "cancelled": true,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Journalism pipeline",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    }
+  ]
+}
