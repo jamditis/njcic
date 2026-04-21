@@ -1,12 +1,18 @@
 """Merge NJCIC grants data into a single clean JSON for the explorer UI.
 Produces: grantees (deduped, org-aggregated) + grants (per-award rows).
+
+Source data lives in the `grantees-map` submodule by default. Override with
+env vars `NJCIC_GRANTEES_MAP_DATA` (source CSV dir) and `NJCIC_EXPLORER_OUT`
+(output JSON path) if the data lives elsewhere on disk.
 """
-import csv, json, re
+import csv, json, os
 from collections import defaultdict
+from datetime import date
 from pathlib import Path
 
-SRC = Path('/home/jamditis/projects/njcic-grantees-map/data')
-OUT = Path('/home/jamditis/projects/njcic-explorer/data.json')
+REPO_ROOT = Path(__file__).resolve().parent.parent
+SRC = Path(os.environ.get('NJCIC_GRANTEES_MAP_DATA', REPO_ROOT / 'grantees-map' / 'data'))
+OUT = Path(os.environ.get('NJCIC_EXPLORER_OUT', REPO_ROOT / 'explorer' / 'data.json'))
 
 # Load grid view (2021-2024 grants) — the historical dataset
 grid_rows = []
@@ -87,7 +93,7 @@ for r in grid_rows:
         'cancelled': bool(r.get('Returned/Cancelled grant?', '').strip()),
         'bipocLed': None,
         'grantType': 'Historical',
-        'category': r.get('Focus area', ''),
+        'category': norm_focus(r.get('Focus area', '')),
         'lat': geo.get('lat'),
         'lng': geo.get('lng'),
         'city': geo.get('city', ''),
@@ -111,7 +117,7 @@ for r in new_rows:
         'cancelled': r.get('Action', '').lower().startswith('deny') or r.get('Action', '').lower().startswith('decline'),
         'bipocLed': bipoc,
         'grantType': r.get('Grant Type', 'New Grant'),
-        'category': r.get('Category', ''),
+        'category': norm_focus(r.get('Category', '')),
         'lat': geo.get('lat'),
         'lng': geo.get('lng'),
         'city': geo.get('city', ''),
@@ -166,11 +172,15 @@ all_years = sorted({y for g in grantees for y in g['years'] if y})
 total_all = sum(g['total'] for g in grantees)
 active_count = sum(1 for g in grantees if g['total'] > 0)
 
+awarded_grants = sum(
+    1 for g in grantees for gr in g['grants'] if not gr['cancelled']
+)
+
 payload = {
-    'generatedAt': '2026-04-16',
+    'generatedAt': date.today().isoformat(),
     'summary': {
         'totalGrantees': len(grantees),
-        'totalGrants': sum(g['grantCount'] for g in grantees),
+        'totalGrants': awarded_grants,
         'totalAwarded': total_all,
         'activeGrantees': active_count,
     },

@@ -136,6 +136,7 @@ header.masthead {
   position: relative;
 }
 .card:hover { border-color: var(--accent); transform: translateY(-1px); }
+.card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .card .top-rule { position: absolute; left: 0; top: 0; width: 100%; height: 2px; background: var(--accent); opacity: 0.7; }
 .card h3 { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.15rem; line-height: 1.25; color: var(--ink); letter-spacing: -0.01em; margin-bottom: 0.45rem; }
 .card .loc { font-size: 0.82rem; color: var(--ink-3); margin-bottom: 0.9rem; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em; }
@@ -277,7 +278,7 @@ footer.page-foot .note { font-family: 'IBM Plex Mono', monospace; font-size: 0.7
 <div class="grid" id="grid"></div>
 
 <div class="modal-backdrop" id="modal">
-  <div class="modal" role="dialog" aria-modal="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="m-name">
     <div class="modal-head">
       <h2 id="m-name"></h2>
       <button class="close" id="m-close" aria-label="Close">x</button>
@@ -298,16 +299,46 @@ footer.page-foot .note { font-family: 'IBM Plex Mono', monospace; font-size: 0.7
 const fmtMoney = v => '$' + (v || 0).toLocaleString();
 const esc = s => String(s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
+// safeURL: reject javascript:/data:/vbscript: schemes, prepend https:// for
+// scheme-less inputs, return null on anything that won't parse as http(s).
+function safeURL(raw) {
+  const s = String(raw || '').trim();
+  if (!s) return null;
+  const candidate = /^[a-z][a-z0-9+\-.]*:/i.test(s) ? s : 'https://' + s;
+  try {
+    const u = new URL(candidate);
+    return (u.protocol === 'http:' || u.protocol === 'https:') ? u.href : null;
+  } catch {
+    return null;
+  }
+}
+
 let DATA = null;
 let filtered = [];
 
+function renderBootError(msg) {
+  document.getElementById('count').textContent = '';
+  const grid = document.getElementById('grid');
+  grid.textContent = '';
+  const box = document.createElement('div');
+  box.className = 'empty';
+  box.textContent = `Could not load grantee data. ${msg}`;
+  grid.appendChild(box);
+}
+
 async function boot() {
-  const resp = await fetch('data.json');
-  DATA = await resp.json();
-  renderStats();
-  populateFacets();
-  wireEvents();
-  applyFilters();
+  try {
+    const resp = await fetch('data.json', { cache: 'no-cache' });
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    DATA = await resp.json();
+    renderStats();
+    populateFacets();
+    wireEvents();
+    applyFilters();
+  } catch (err) {
+    console.error('explorer boot failed:', err);
+    renderBootError(err.message || 'Unknown error');
+  }
 }
 
 function renderStats() {
@@ -371,7 +402,7 @@ function applyFilters() {
     'name-asc':   (a,b) => a.name.localeCompare(b.name),
     'grants-desc':(a,b) => b.grantCount - a.grantCount || b.total - a.total,
   };
-  filtered.sort(sorters[sort]);
+  filtered.sort(sorters[sort] || sorters['total-desc']);
   renderGrid();
   renderCount();
 }
@@ -393,7 +424,7 @@ function renderGrid() {
     const bipocTag = g.bipocLed === true ? `<span class="tag bipoc">BIPOC-led</span>` : '';
     const loc = g.serviceArea || g.city || '';
     return `
-      <article class="card" data-idx="${i}">
+      <article class="card" data-idx="${i}" role="button" tabindex="0" aria-label="${esc(g.name)}, view grant details">
         <div class="top-rule"></div>
         <h3>${esc(g.name)}</h3>
         <div class="loc">${esc(loc)}</div>
@@ -408,7 +439,11 @@ function renderGrid() {
       </article>`;
   }).join('');
   grid.querySelectorAll('.card').forEach(el => {
-    el.addEventListener('click', () => openModal(parseInt(el.dataset.idx, 10)));
+    const open = () => openModal(parseInt(el.dataset.idx, 10));
+    el.addEventListener('click', open);
+    el.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
+    });
   });
 }
 
@@ -440,7 +475,12 @@ function openModal(idx) {
       <div><dt>City</dt><dd>${esc(g.city || '-')}</dd></div>
       <div><dt>Focus areas</dt><dd>${esc(g.focusAreas.join(' / ') || '-')}</dd></div>
       <div><dt>BIPOC status</dt><dd>${esc(bipocLine)}</dd></div>
-      <div><dt>Website</dt><dd>${g.website ? `<a href="${esc(g.website)}" target="_blank" rel="noopener">${esc(g.website.replace(/^https?:\/\//, '').replace(/\/$/, ''))}</a>` : '-'}</dd></div>
+      <div><dt>Website</dt><dd>${(() => {
+        const href = safeURL(g.website);
+        if (!href) return '-';
+        const display = href.replace(/^https?:\/\//, '').replace(/\/$/, '');
+        return `<a href="${esc(href)}" target="_blank" rel="noopener noreferrer">${esc(display)}</a>`;
+      })()}</dd></div>
       <div><dt>Years funded</dt><dd>${esc(g.years.join(', ') || '-')}</dd></div>
     </dl>
     <h3>All grants (${g.grantCount})</h3>

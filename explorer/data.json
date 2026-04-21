@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-16",
+  "generatedAt": "2026-04-21",
   "summary": {
     "totalGrantees": 92,
-    "totalGrants": 123,
+    "totalGrants": 118,
     "totalAwarded": 12070437,
     "activeGrantees": 87
   },
@@ -544,7 +544,7 @@
           "cancelled": false,
           "bipocLed": true,
           "grantType": "Renewal",
-          "category": "Journalism pipline",
+          "category": "Journalism pipeline",
           "lat": 40.7357,
           "lng": -74.1724,
           "city": "Newark"
@@ -701,7 +701,7 @@
           "cancelled": false,
           "bipocLed": true,
           "grantType": "Renewal",
-          "category": "Journalism pipline",
+          "category": "Journalism pipeline",
           "lat": 40.2171,
           "lng": -74.7429,
           "city": "Trenton"
@@ -957,7 +957,7 @@
           "cancelled": false,
           "bipocLed": true,
           "grantType": "Bump Up",
-          "category": "Journalism pipline",
+          "category": "Journalism pipeline",
           "lat": 40.2206,
           "lng": -74.7597,
           "city": "Trenton"
@@ -1016,7 +1016,7 @@
           "cancelled": false,
           "bipocLed": true,
           "grantType": "Renewal",
-          "category": "Journalism pipline",
+          "category": "Journalism pipeline",
           "lat": 40.7357,
           "lng": -74.1724,
           "city": "Newark"
@@ -2823,7 +2823,7 @@
           "cancelled": false,
           "bipocLed": true,
           "grantType": "Renewal",
-          "category": "Journalism pipline",
+          "category": "Journalism pipeline",
           "lat": null,
           "lng": null,
           "city": ""
