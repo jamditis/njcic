@@ -75,12 +75,25 @@ def area_from_county(county):
         if k in c: return 'South'
     return ''
 
+def _maybe_float(s):
+    s = (s or '').strip()
+    if not s: return None
+    try: return float(s)
+    except ValueError: return None
+
 # Build the canonical per-grant list
 grants = []
 for r in grid_rows:
     name = r.get('Grantee', '').strip()
     if not name: continue
     geo = geo_by_name.get(name.lower(), {})
+    # Prefer lat/lng/city/area from the CSV (Airtable is source of truth).
+    # Fall back to the legacy grantees.json lookup for rows that predate the
+    # extended export or for CSVs produced by Airtable's built-in UI export.
+    csv_lat = _maybe_float(r.get('Lat'))
+    csv_lng = _maybe_float(r.get('Long'))
+    csv_city = (r.get('City') or '').strip()
+    csv_area = (r.get('Area') or '').strip()
     grants.append({
         'grantee': name,
         'amount': norm_amount(r.get('Total awarded', '')),
@@ -89,14 +102,21 @@ for r in grid_rows:
         'year': r.get('Year(s) granted', ''),
         'focus': norm_focus(r.get('Focus area', '')),
         'serviceArea': r.get('Service area', ''),
-        'area': area_from_county(r.get('Service area', '') or geo.get('county', '')),
+        'area': (
+            # Prefer the explicit location-based Area column from Airtable
+            # (values like 'North Jersey' / 'Central Jersey' / 'South Jersey').
+            csv_area.replace(' Jersey', '') if csv_area
+            else area_from_county(r.get('Service area', '') or geo.get('county', ''))
+        ),
         'cancelled': bool(r.get('Returned/Cancelled grant?', '').strip()),
         'bipocLed': None,
         'grantType': 'Historical',
         'category': norm_focus(r.get('Focus area', '')),
-        'lat': geo.get('lat'),
-        'lng': geo.get('lng'),
-        'city': geo.get('city', ''),
+        'lat': csv_lat if csv_lat is not None else geo.get('lat'),
+        'lng': csv_lng if csv_lng is not None else geo.get('lng'),
+        'city': csv_city or geo.get('city', ''),
+        'legislativeDistrict': (r.get('Legislative district') or '').strip(),
+        'project': (r.get('Project') or '').strip(),
     })
 
 for r in new_rows:
