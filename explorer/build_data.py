@@ -146,6 +146,7 @@ for r in new_rows:
 # Aggregate by grantee
 by_grantee = defaultdict(lambda: {'grants': [], 'total': 0, 'years': set(),
                                    'focusAreas': set(), 'areas': set(),
+                                   'projects': set(), 'legislativeDistricts': set(),
                                    'bipocLed': None, 'website': '', 'city': '',
                                    'lat': None, 'lng': None, 'serviceArea': ''})
 for g in grants:
@@ -158,12 +159,22 @@ for g in grants:
         rec['years'].add(y)
     if g['focus']: rec['focusAreas'].add(g['focus'])
     if g['area']: rec['areas'].add(g['area'])
+    if g.get('project'): rec['projects'].add(g['project'])
+    if g.get('legislativeDistrict'): rec['legislativeDistricts'].add(g['legislativeDistrict'])
     if g['website'] and not rec['website']: rec['website'] = g['website']
     if g['city'] and not rec['city']: rec['city'] = g['city']
     if g['lat'] and not rec['lat']: rec['lat'] = g['lat']; rec['lng'] = g['lng']
     if g['serviceArea'] and not rec['serviceArea']: rec['serviceArea'] = g['serviceArea']
     if g['bipocLed'] is True: rec['bipocLed'] = True
     elif g['bipocLed'] is False and rec['bipocLed'] is None: rec['bipocLed'] = False
+
+def _ld_sort_key(s):
+    # Legislative districts are numeric strings ("1"–"40"); sort numerically
+    # where possible and fall back to string comparison for anything unexpected.
+    try:
+        return (0, int(s))
+    except (TypeError, ValueError):
+        return (1, str(s))
 
 grantees = []
 for name, rec in by_grantee.items():
@@ -174,6 +185,8 @@ for name, rec in by_grantee.items():
         'years': sorted(rec['years']),
         'focusAreas': sorted(rec['focusAreas']),
         'areas': sorted(rec['areas']),
+        'projects': sorted(rec['projects']),
+        'legislativeDistricts': sorted(rec['legislativeDistricts'], key=_ld_sort_key),
         'serviceArea': rec['serviceArea'],
         'city': rec['city'],
         'bipocLed': rec['bipocLed'],
@@ -188,6 +201,8 @@ grantees.sort(key=lambda x: x['total'], reverse=True)
 all_areas = sorted({a for g in grantees for a in g['areas'] if a})
 all_focus = sorted({f for g in grantees for f in g['focusAreas'] if f})
 all_years = sorted({y for g in grantees for y in g['years'] if y})
+all_lds   = sorted({d for g in grantees for d in g['legislativeDistricts'] if d},
+                   key=_ld_sort_key)
 
 total_all = sum(g['total'] for g in grantees)
 active_count = sum(1 for g in grantees if g['total'] > 0)
@@ -204,7 +219,12 @@ payload = {
         'totalAwarded': total_all,
         'activeGrantees': active_count,
     },
-    'facets': {'areas': all_areas, 'focusAreas': all_focus, 'years': all_years},
+    'facets': {
+        'areas': all_areas,
+        'focusAreas': all_focus,
+        'years': all_years,
+        'legislativeDistricts': all_lds,
+    },
     'grantees': grantees,
 }
 

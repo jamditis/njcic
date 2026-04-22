@@ -26,6 +26,34 @@
       "2025",
       "2025-2026",
       "2026"
+    ],
+    "legislativeDistricts": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "6",
+      "8",
+      "10",
+      "11",
+      "12",
+      "13",
+      "15",
+      "16",
+      "17",
+      "19",
+      "20",
+      "22",
+      "23",
+      "25",
+      "27",
+      "28",
+      "29",
+      "32",
+      "34",
+      "35",
+      "38",
+      "40"
     ]
   },
   "grantees": [
@@ -45,6 +73,15 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "NJ News Commons Spanish Translation Service",
+        "Research and Development",
+        "South Jersey Information Equity Project",
+        "Statewide Voting Guide"
+      ],
+      "legislativeDistricts": [
+        "27"
       ],
       "serviceArea": "South Jersey",
       "city": "Montclair",
@@ -147,6 +184,13 @@
       "areas": [
         "North"
       ],
+      "projects": [
+        "Report for America mental health corps member",
+        "Washington, D.C. correspondent"
+      ],
+      "legislativeDistricts": [
+        "29"
+      ],
       "serviceArea": "Statewide",
       "city": "Newark",
       "bipocLed": null,
@@ -212,6 +256,14 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort",
+        "Investigative journalism launch",
+        "Statewide Paid Internship Program"
+      ],
+      "legislativeDistricts": [
+        "29"
       ],
       "serviceArea": "Statewide",
       "city": "Newark",
@@ -314,6 +366,13 @@
       "areas": [
         "North"
       ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort",
+        "Community reporter training program"
+      ],
+      "legislativeDistricts": [
+        "29"
+      ],
       "serviceArea": "Essex County",
       "city": "Newark",
       "bipocLed": true,
@@ -395,6 +454,12 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "Radio Jornalera NJ Communication Project"
+      ],
+      "legislativeDistricts": [
+        "17"
+      ],
       "serviceArea": "Statewide",
       "city": "New Brunswick",
       "bipocLed": true,
@@ -454,6 +519,12 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "Statewide community journalism training"
+      ],
+      "legislativeDistricts": [
+        "15"
+      ],
       "serviceArea": "Statewide",
       "city": "Trenton",
       "bipocLed": null,
@@ -500,6 +571,13 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "Community reporter corps pilot",
+        "Statewide Paid Internship Program"
+      ],
+      "legislativeDistricts": [
+        "34"
       ],
       "serviceArea": "Essex County",
       "city": "Bloomfield",
@@ -585,6 +663,13 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort",
+        "Local contributor training"
+      ],
+      "legislativeDistricts": [
+        "15"
+      ],
       "serviceArea": "Mercer County",
       "city": "Trenton",
       "bipocLed": true,
@@ -667,6 +752,14 @@
       ],
       "areas": [
         "South"
+      ],
+      "projects": [
+        "African American and Latino community coverage",
+        "Blue Engine Technology & Sustainability Accelerator cohort",
+        "Statewide Paid Internship Program"
+      ],
+      "legislativeDistricts": [
+        "2"
       ],
       "serviceArea": "South Jersey",
       "city": "Atlantic City",
@@ -765,6 +858,12 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "Health care reporter"
+      ],
+      "legislativeDistricts": [
+        "15"
+      ],
       "serviceArea": "Statewide",
       "city": "Trenton",
       "bipocLed": false,
@@ -795,18 +894,18 @@
           "grantee": "NJ Monitor",
           "amount": 210000,
           "purpose": "Prior to the September board meeting, we received an emergency request to support the New Jersey Monitor in its effort to hire healthcare reporter Lilo Stainton, who was laid off from NJ Spotlight following federal funding losses. We requested your support, which the Grants Committee approved for presentation to the full board.\nAfter further discussion with New Jersey Monitor editor Terrence McDonald, it was determined that funds for the planned hire would not be needed until January 2026. To allow time to finalize details with the Robert Wood Johnson Foundation (RWJF) contribution of $150K, we agreed to wait until the December grantmaking cycle to award this project - provided all conditions are met.\nSince then, RWJF has awarded the Consortium $150,000 over two years to support this position. The Consortium will grant these funds to the New Jersey Monitor over a three-year period. We are now requesting the board\u2019s consideration to supplement this support with an additional $60,000 over three years.",
-          "website": "",
+          "website": "https://newjerseymonitor.com/",
           "year": "2025-2026",
           "focus": "Civic news and information reporting",
-          "serviceArea": "",
+          "serviceArea": "Statewide",
           "area": "",
           "cancelled": false,
           "bipocLed": false,
           "grantType": "New Grant",
           "category": "Civic news and information reporting",
-          "lat": null,
-          "lng": null,
-          "city": ""
+          "lat": 40.2206,
+          "lng": -74.7597,
+          "city": "Trenton"
         }
       ]
     },
@@ -827,6 +926,13 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort",
+        "Greater Blairstown News Project"
+      ],
+      "legislativeDistricts": [
+        "23"
       ],
       "serviceArea": "Warren County",
       "city": "Blairstown",
@@ -894,6 +1000,13 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "Black news and information hub",
+        "Blue Engine Technology & Sustainability Accelerator cohort"
+      ],
+      "legislativeDistricts": [
+        "15"
+      ],
       "serviceArea": "Statewide",
       "city": "Trenton",
       "bipocLed": true,
@@ -943,7 +1056,7 @@
           "grantee": "Black in Jersey",
           "amount": 60000,
           "purpose": "Black In Jersey\u2019s most notable improvements came through staffing additions. Frank Santos stepped into the leadership role of Head of Creative Marketing. Adrienne Bauldock was brought on to refine the organization\u2019s social media presence and community engagement strategy while taking on a larger role in event coordination.\nThe publication\u2019s most engaging story focused on Camden and was co-produced by SJIEP fellow Jewel Justice and team member Frank Santos. It covered the environmental hazard caused by the European Metal Recycling Company (EMR), which caught fire and forced thousands of residents to evacuate. Black In Jersey\u2019s team was among the first publications to break the story and was one of the few, if not the only, outlets present at the subsequent hearings and community organizing events around the city\u2019s incinerator. The piece went viral, drawing over 15,000 page views and sparking local action through the Fight Fire with Fire advocacy group formed by local Camden residents.",
-          "website": "www.blackinjersey.com",
+          "website": "https://www.blackinjersey.com",
           "year": "2025-2026",
           "focus": "Journalism pipeline",
           "serviceArea": "Statewide",
@@ -973,6 +1086,12 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "Slice of Culture"
+      ],
+      "legislativeDistricts": [
+        "32"
       ],
       "serviceArea": "Hudson County",
       "city": "Jersey City",
@@ -1018,6 +1137,12 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "Citizen Journalism Program"
+      ],
+      "legislativeDistricts": [
+        "29"
       ],
       "serviceArea": "Essex County",
       "city": "Newark",
@@ -1080,6 +1205,12 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "South Asian journalism fellowship"
+      ],
+      "legislativeDistricts": [
+        "15"
+      ],
       "serviceArea": "Mercer County",
       "city": "Trenton",
       "bipocLed": true,
@@ -1140,6 +1271,12 @@
       "areas": [
         "North"
       ],
+      "projects": [
+        "Newark civic engagement reporting"
+      ],
+      "legislativeDistricts": [
+        "29"
+      ],
       "serviceArea": "Essex County",
       "city": "Newark",
       "bipocLed": null,
@@ -1183,6 +1320,13 @@
       ],
       "areas": [
         "South"
+      ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort",
+        "Civic Engagement Guide"
+      ],
+      "legislativeDistricts": [
+        "2"
       ],
       "serviceArea": "Atlantic County",
       "city": "Atlantic City",
@@ -1248,6 +1392,14 @@
       ],
       "areas": [
         "South"
+      ],
+      "projects": [
+        "Noticias Spanish publication",
+        "South-central NJ coverage expansion",
+        "Statewide Paid Internship Program"
+      ],
+      "legislativeDistricts": [
+        "8"
       ],
       "serviceArea": "Atlantic County",
       "city": "Hammonton",
@@ -1330,6 +1482,12 @@
       "areas": [
         "South"
       ],
+      "projects": [
+        "Camden student reporter training"
+      ],
+      "legislativeDistricts": [
+        "5"
+      ],
       "serviceArea": "Camden County",
       "city": "Camden",
       "bipocLed": null,
@@ -1373,6 +1531,12 @@
       "areas": [
         "South"
       ],
+      "projects": [
+        "Journalism Mentorship Program"
+      ],
+      "legislativeDistricts": [
+        "10"
+      ],
       "serviceArea": "Ocean County",
       "city": "Toms River",
       "bipocLed": null,
@@ -1415,6 +1579,12 @@
       ],
       "areas": [
         "Central"
+      ],
+      "projects": [
+        "Community-driven Journalism Project"
+      ],
+      "legislativeDistricts": [
+        "17"
       ],
       "serviceArea": "Middlesex County",
       "city": "New Brunswick",
@@ -1461,6 +1631,12 @@
       "areas": [
         "South"
       ],
+      "projects": [
+        "Follow South Jersey internship program"
+      ],
+      "legislativeDistricts": [
+        "1"
+      ],
       "serviceArea": "South Jersey",
       "city": "Bridgeton",
       "bipocLed": null,
@@ -1504,6 +1680,14 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort",
+        "Editor and reporter hiring",
+        "Statewide Paid Internship Program"
+      ],
+      "legislativeDistricts": [
+        "29"
       ],
       "serviceArea": "Statewide",
       "city": "Newark",
@@ -1588,6 +1772,13 @@
       "areas": [
         "North"
       ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort",
+        "Paid internship program"
+      ],
+      "legislativeDistricts": [
+        "25"
+      ],
       "serviceArea": "Morris County",
       "city": "Morristown",
       "bipocLed": null,
@@ -1649,6 +1840,12 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "The News Service"
+      ],
+      "legislativeDistricts": [
+        "15"
+      ],
       "serviceArea": "Statewide",
       "city": "Trenton",
       "bipocLed": null,
@@ -1691,6 +1888,12 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "Newark news lab"
+      ],
+      "legislativeDistricts": [
+        "29"
       ],
       "serviceArea": "Essex County",
       "city": "Newark",
@@ -1735,6 +1938,13 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort",
+        "Essex County senior reporter"
+      ],
+      "legislativeDistricts": [
+        "27"
       ],
       "serviceArea": "Essex County",
       "city": "Montclair",
@@ -1798,6 +2008,12 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "Radio Cosecha"
+      ],
+      "legislativeDistricts": [
+        "20"
+      ],
       "serviceArea": "Union County",
       "city": "Elizabeth",
       "bipocLed": null,
@@ -1842,6 +2058,14 @@
       ],
       "areas": [
         "Central"
+      ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort",
+        "Organizational sustainability support",
+        "Statewide Paid Internship Program"
+      ],
+      "legislativeDistricts": [
+        "15"
       ],
       "serviceArea": "Mercer County",
       "city": "Pennington",
@@ -1940,6 +2164,12 @@
       "areas": [
         "North"
       ],
+      "projects": [
+        "Stormwater Matters initiative"
+      ],
+      "legislativeDistricts": [
+        "25"
+      ],
       "serviceArea": "Morris County",
       "city": "New Vernon",
       "bipocLed": null,
@@ -1983,6 +2213,13 @@
       ],
       "areas": [
         "Central"
+      ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort",
+        "Teatro Esperanza"
+      ],
+      "legislativeDistricts": [
+        "17"
       ],
       "serviceArea": "Middlesex County",
       "city": "New Brunswick",
@@ -2045,6 +2282,12 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "Community TV programming and internships"
+      ],
+      "legislativeDistricts": [
+        "23"
+      ],
       "serviceArea": "Somerset County",
       "city": "Somerville",
       "bipocLed": null,
@@ -2086,6 +2329,12 @@
       ],
       "areas": [
         "Central"
+      ],
+      "projects": [
+        "COVID-19 vaccination storytelling"
+      ],
+      "legislativeDistricts": [
+        "15"
       ],
       "serviceArea": "Statewide",
       "city": "Trenton",
@@ -2130,6 +2379,12 @@
       "areas": [
         "North"
       ],
+      "projects": [
+        "Newark Community Voices"
+      ],
+      "legislativeDistricts": [
+        "29"
+      ],
       "serviceArea": "Essex County",
       "city": "Newark",
       "bipocLed": null,
@@ -2173,6 +2428,12 @@
       "areas": [
         "South"
       ],
+      "projects": [
+        "Climate reporting student internships"
+      ],
+      "legislativeDistricts": [
+        "3"
+      ],
       "serviceArea": "South Jersey",
       "city": "Glassboro",
       "bipocLed": null,
@@ -2215,6 +2476,12 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "Community reporter incubator"
+      ],
+      "legislativeDistricts": [
+        "11"
+      ],
       "serviceArea": "Monmouth County",
       "city": "Asbury Park",
       "bipocLed": null,
@@ -2256,6 +2523,13 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "Bilingual Hudson County coverage",
+        "Statewide Paid Internship Program"
+      ],
+      "legislativeDistricts": [
+        "32"
       ],
       "serviceArea": "Hudson County",
       "city": "Jersey City",
@@ -2317,6 +2591,12 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "State budget data warehouse"
+      ],
+      "legislativeDistricts": [
+        "15"
+      ],
       "serviceArea": "Statewide",
       "city": "Trenton",
       "bipocLed": null,
@@ -2358,6 +2638,12 @@
       "areas": [
         "North"
       ],
+      "projects": [
+        "Muslim-American civic news platform"
+      ],
+      "legislativeDistricts": [
+        "29"
+      ],
       "serviceArea": "Statewide",
       "city": "Newark",
       "bipocLed": null,
@@ -2397,6 +2683,8 @@
         "Civic news and information reporting"
       ],
       "areas": [],
+      "projects": [],
+      "legislativeDistricts": [],
       "serviceArea": "",
       "city": "",
       "bipocLed": false,
@@ -2434,6 +2722,8 @@
         "Civic news and information reporting"
       ],
       "areas": [],
+      "projects": [],
+      "legislativeDistricts": [],
       "serviceArea": "",
       "city": "",
       "bipocLed": false,
@@ -2476,6 +2766,12 @@
       "areas": [
         "South"
       ],
+      "projects": [
+        "Community reporter pilot"
+      ],
+      "legislativeDistricts": [
+        "2"
+      ],
       "serviceArea": "Atlantic County",
       "city": "Atlantic City",
       "bipocLed": null,
@@ -2517,6 +2813,12 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "Garden State Leaders"
+      ],
+      "legislativeDistricts": [
+        "15"
+      ],
       "serviceArea": "Statewide",
       "city": "Trenton",
       "bipocLed": null,
@@ -2556,6 +2858,8 @@
         "Civic news and information reporting"
       ],
       "areas": [],
+      "projects": [],
+      "legislativeDistricts": [],
       "serviceArea": "",
       "city": "",
       "bipocLed": false,
@@ -2595,6 +2899,12 @@
       ],
       "areas": [
         "South"
+      ],
+      "projects": [
+        "be.tv eStudios"
+      ],
+      "legislativeDistricts": [
+        "8"
       ],
       "serviceArea": "Burlington County",
       "city": "Mount Holly",
@@ -2638,6 +2948,12 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "Digital journalism program expansion"
+      ],
+      "legislativeDistricts": [
+        "22"
+      ],
       "serviceArea": "Union County",
       "city": "Cranford",
       "bipocLed": null,
@@ -2678,6 +2994,12 @@
       ],
       "areas": [
         "Central"
+      ],
+      "projects": [
+        "Community college mental health research"
+      ],
+      "legislativeDistricts": [
+        "15"
       ],
       "serviceArea": "Statewide",
       "city": "Trenton",
@@ -2720,6 +3042,13 @@
       ],
       "areas": [
         "Central"
+      ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort",
+        "Daily Targum digital expansion"
+      ],
+      "legislativeDistricts": [
+        "17"
       ],
       "serviceArea": "Middlesex County",
       "city": "New Brunswick",
@@ -2782,6 +3111,12 @@
       "areas": [
         "South"
       ],
+      "projects": [
+        "Camden health journalism literacy"
+      ],
+      "legislativeDistricts": [
+        "5"
+      ],
       "serviceArea": "Statewide",
       "city": "Camden",
       "bipocLed": null,
@@ -2822,6 +3157,12 @@
       ],
       "areas": [
         "South"
+      ],
+      "projects": [
+        "Camden environmental storytelling"
+      ],
+      "legislativeDistricts": [
+        "5"
       ],
       "serviceArea": "Camden County",
       "city": "Camden",
@@ -2864,6 +3205,12 @@
       "areas": [
         "North"
       ],
+      "projects": [
+        "NJ environmental reporting collaboration"
+      ],
+      "legislativeDistricts": [
+        "29"
+      ],
       "serviceArea": "Statewide",
       "city": "Newark",
       "bipocLed": null,
@@ -2904,6 +3251,12 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "Journalism data repository"
+      ],
+      "legislativeDistricts": [
+        "29"
       ],
       "serviceArea": "Statewide",
       "city": "Newark",
@@ -2946,6 +3299,12 @@
       "areas": [
         "North"
       ],
+      "projects": [
+        "Disability news agency"
+      ],
+      "legislativeDistricts": [
+        "29"
+      ],
       "serviceArea": "Statewide",
       "city": "Newark",
       "bipocLed": null,
@@ -2987,6 +3346,12 @@
       "areas": [
         "South"
       ],
+      "projects": [
+        "South Jersey Emerging Journalists Project"
+      ],
+      "legislativeDistricts": [
+        "5"
+      ],
       "serviceArea": "South Jersey",
       "city": "Camden",
       "bipocLed": null,
@@ -3026,6 +3391,8 @@
         "Civic news and information reporting"
       ],
       "areas": [],
+      "projects": [],
+      "legislativeDistricts": [],
       "serviceArea": "",
       "city": "",
       "bipocLed": true,
@@ -3063,6 +3430,8 @@
         "Journalism pipeline"
       ],
       "areas": [],
+      "projects": [],
+      "legislativeDistricts": [],
       "serviceArea": "",
       "city": "",
       "bipocLed": true,
@@ -3101,6 +3470,12 @@
       ],
       "areas": [
         "South"
+      ],
+      "projects": [
+        "Jersey Roots Youth Program listening sessions"
+      ],
+      "legislativeDistricts": [
+        "5"
       ],
       "serviceArea": "Camden County",
       "city": "Camden",
@@ -3143,6 +3518,12 @@
       "areas": [
         "North"
       ],
+      "projects": [
+        "Haitian community radio platform"
+      ],
+      "legislativeDistricts": [
+        "34"
+      ],
       "serviceArea": "Essex County",
       "city": "East Orange",
       "bipocLed": null,
@@ -3184,6 +3565,12 @@
       "areas": [
         "North"
       ],
+      "projects": [
+        "Student newsroom internships"
+      ],
+      "legislativeDistricts": [
+        "28"
+      ],
       "serviceArea": "Essex County",
       "city": "Maplewood",
       "bipocLed": null,
@@ -3223,6 +3610,8 @@
         "Civic news and information reporting"
       ],
       "areas": [],
+      "projects": [],
+      "legislativeDistricts": [],
       "serviceArea": "",
       "city": "",
       "bipocLed": false,
@@ -3262,6 +3651,12 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "Podcasting studio and digital journalism program"
+      ],
+      "legislativeDistricts": [
+        "40"
       ],
       "serviceArea": "Passaic County",
       "city": "Wayne",
@@ -3304,6 +3699,12 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "Local government archive"
+      ],
+      "legislativeDistricts": [
+        "12"
+      ],
       "serviceArea": "Middlesex County",
       "city": "Old Bridge",
       "bipocLed": null,
@@ -3344,6 +3745,12 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "Vaccination information website expansion"
+      ],
+      "legislativeDistricts": [
+        "29"
       ],
       "serviceArea": "Statewide",
       "city": "Newark",
@@ -3386,6 +3793,12 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "Trenton community news platform"
+      ],
+      "legislativeDistricts": [
+        "15"
+      ],
       "serviceArea": "Mercer County",
       "city": "Trenton",
       "bipocLed": null,
@@ -3426,6 +3839,12 @@
       ],
       "areas": [
         "Central"
+      ],
+      "projects": [
+        "Let My People Learn-HistorVic Education"
+      ],
+      "legislativeDistricts": [
+        "15"
       ],
       "serviceArea": "Mercer County",
       "city": "Trenton",
@@ -3468,6 +3887,12 @@
       "areas": [
         "North"
       ],
+      "projects": [
+        "Paterson Information Hub"
+      ],
+      "legislativeDistricts": [
+        "35"
+      ],
       "serviceArea": "Passaic County",
       "city": "Paterson",
       "bipocLed": null,
@@ -3508,6 +3933,12 @@
       ],
       "areas": [
         "Central"
+      ],
+      "projects": [
+        "Nonprofit conversion support"
+      ],
+      "legislativeDistricts": [
+        "11"
       ],
       "serviceArea": "Monmouth County",
       "city": "Red Bank",
@@ -3550,6 +3981,12 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "Student investigative reporting at TCNJ"
+      ],
+      "legislativeDistricts": [
+        "15"
+      ],
       "serviceArea": "Central Jersey",
       "city": "Ewing",
       "bipocLed": null,
@@ -3589,6 +4026,8 @@
         "Civic news and information reporting"
       ],
       "areas": [],
+      "projects": [],
+      "legislativeDistricts": [],
       "serviceArea": "",
       "city": "",
       "bipocLed": false,
@@ -3626,6 +4065,8 @@
         "Civic news and information reporting"
       ],
       "areas": [],
+      "projects": [],
+      "legislativeDistricts": [],
       "serviceArea": "",
       "city": "",
       "bipocLed": true,
@@ -3664,6 +4105,12 @@
       ],
       "areas": [
         "Central"
+      ],
+      "projects": [
+        "Newsroom technology upgrades"
+      ],
+      "legislativeDistricts": [
+        "16"
       ],
       "serviceArea": "Gloucester County",
       "city": "Princeton",
@@ -3707,6 +4154,13 @@
       ],
       "areas": [
         "South"
+      ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort",
+        "Statewide Paid Internship Program"
+      ],
+      "legislativeDistricts": [
+        "6"
       ],
       "serviceArea": "South Jersey",
       "city": "Haddonfield",
@@ -3768,6 +4222,12 @@
       "areas": [
         "South"
       ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort"
+      ],
+      "legislativeDistricts": [
+        "8"
+      ],
       "serviceArea": "South Jersey",
       "city": "Marlton",
       "bipocLed": null,
@@ -3808,6 +4268,12 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort"
+      ],
+      "legislativeDistricts": [
+        "29"
       ],
       "serviceArea": "Statewide",
       "city": "Newark",
@@ -3850,6 +4316,12 @@
       "areas": [
         "North"
       ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort"
+      ],
+      "legislativeDistricts": [
+        "38"
+      ],
       "serviceArea": "Bergen County",
       "city": "Hasbrouck Heights",
       "bipocLed": null,
@@ -3890,6 +4362,12 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort"
+      ],
+      "legislativeDistricts": [
+        "29"
       ],
       "serviceArea": "Statewide",
       "city": "Newark",
@@ -3932,6 +4410,12 @@
       "areas": [
         "South"
       ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort"
+      ],
+      "legislativeDistricts": [
+        "1"
+      ],
       "serviceArea": "South Jersey",
       "city": "Bridgeton",
       "bipocLed": null,
@@ -3972,6 +4456,12 @@
       ],
       "areas": [
         "Central"
+      ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort"
+      ],
+      "legislativeDistricts": [
+        "13"
       ],
       "serviceArea": "Statewide",
       "city": "Hazlet",
@@ -4014,6 +4504,12 @@
       "areas": [
         "North"
       ],
+      "projects": [
+        "Blue Engine Technology & Sustainability Accelerator cohort"
+      ],
+      "legislativeDistricts": [
+        "38"
+      ],
       "serviceArea": "Bergen County",
       "city": "Fair Lawn",
       "bipocLed": null,
@@ -4054,6 +4550,12 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "Statewide Paid Internship Program"
+      ],
+      "legislativeDistricts": [
+        "25"
       ],
       "serviceArea": "North Jersey",
       "city": "Dover",
@@ -4096,6 +4598,12 @@
       "areas": [
         "North"
       ],
+      "projects": [
+        "Statewide Paid Internship Program"
+      ],
+      "legislativeDistricts": [
+        "35"
+      ],
       "serviceArea": "North Jersey",
       "city": "Paterson",
       "bipocLed": null,
@@ -4136,6 +4644,12 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "Statewide Paid Internship Program"
+      ],
+      "legislativeDistricts": [
+        "32"
       ],
       "serviceArea": "North Jersey",
       "city": "Jersey City",
@@ -4178,6 +4692,12 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "Statewide Paid Internship Program"
+      ],
+      "legislativeDistricts": [
+        "19"
+      ],
       "serviceArea": "Central Jersey",
       "city": "Sayreville",
       "bipocLed": null,
@@ -4218,6 +4738,12 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "Statewide Paid Internship Program"
+      ],
+      "legislativeDistricts": [
+        "25"
       ],
       "serviceArea": "North Jersey",
       "city": "Morristown",
@@ -4260,6 +4786,12 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "Statewide Paid Internship Program"
+      ],
+      "legislativeDistricts": [
+        "17"
+      ],
       "serviceArea": "Central Jersey",
       "city": "New Brunswick",
       "bipocLed": null,
@@ -4300,6 +4832,12 @@
       ],
       "areas": [
         "North"
+      ],
+      "projects": [
+        "Muslim community news coverage"
+      ],
+      "legislativeDistricts": [
+        "29"
       ],
       "serviceArea": "Statewide",
       "city": "Newark",
@@ -4342,6 +4880,12 @@
       "areas": [
         "South"
       ],
+      "projects": [
+        "TAPinto Salem County launch"
+      ],
+      "legislativeDistricts": [
+        "3"
+      ],
       "serviceArea": "Salem County",
       "city": "Salem",
       "bipocLed": null,
@@ -4382,6 +4926,12 @@
       ],
       "areas": [
         "Central"
+      ],
+      "projects": [
+        "Student journalism census"
+      ],
+      "legislativeDistricts": [
+        "15"
       ],
       "serviceArea": "Statewide",
       "city": "Trenton",
@@ -4424,6 +4974,12 @@
       "areas": [
         "Central"
       ],
+      "projects": [
+        "Journalism Talent Pipeline"
+      ],
+      "legislativeDistricts": [
+        "17"
+      ],
       "serviceArea": "Middlesex County",
       "city": "New Brunswick",
       "bipocLed": null,
@@ -4464,6 +5020,12 @@
       ],
       "areas": [
         "Central"
+      ],
+      "projects": [
+        "Census undercount investigation"
+      ],
+      "legislativeDistricts": [
+        "17"
       ],
       "serviceArea": "Middlesex County",
       "city": "New Brunswick",
