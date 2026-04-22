@@ -1,10 +1,10 @@
 {
   "generatedAt": "2026-04-22",
   "summary": {
-    "totalGrantees": 92,
+    "totalGrantees": 90,
     "totalGrants": 122,
     "totalAwarded": 13484482,
-    "activeGrantees": 87
+    "activeGrantees": 85
   },
   "facets": {
     "areas": [
@@ -752,6 +752,65 @@
       ]
     },
     {
+      "name": "NJ Monitor",
+      "total": 420000,
+      "grantCount": 2,
+      "years": [
+        "2025",
+        "2025-2026"
+      ],
+      "focusAreas": [
+        "Civic news and information reporting"
+      ],
+      "areas": [
+        "Central"
+      ],
+      "serviceArea": "Statewide",
+      "city": "Trenton",
+      "bipocLed": false,
+      "website": "https://newjerseymonitor.com/",
+      "lat": 40.2206,
+      "lng": -74.7597,
+      "grants": [
+        {
+          "grantee": "NJ Monitor",
+          "amount": 210000,
+          "purpose": "to support a dedicated health care reporter at the New Jersey Monitor, strengthening coverage of health policy, public health, and the health care system across the state. This funding supports up to three years and is funded in part by the Robert Wood Johnson Foundation.",
+          "website": "https://newjerseymonitor.com/",
+          "year": "2025",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "Statewide",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Civic news and information reporting",
+          "lat": 40.2206,
+          "lng": -74.7597,
+          "city": "Trenton",
+          "legislativeDistrict": "15",
+          "project": "Health care reporter"
+        },
+        {
+          "grantee": "NJ Monitor",
+          "amount": 210000,
+          "purpose": "Prior to the September board meeting, we received an emergency request to support the New Jersey Monitor in its effort to hire healthcare reporter Lilo Stainton, who was laid off from NJ Spotlight following federal funding losses. We requested your support, which the Grants Committee approved for presentation to the full board.\nAfter further discussion with New Jersey Monitor editor Terrence McDonald, it was determined that funds for the planned hire would not be needed until January 2026. To allow time to finalize details with the Robert Wood Johnson Foundation (RWJF) contribution of $150K, we agreed to wait until the December grantmaking cycle to award this project - provided all conditions are met.\nSince then, RWJF has awarded the Consortium $150,000 over two years to support this position. The Consortium will grant these funds to the New Jersey Monitor over a three-year period. We are now requesting the board\u2019s consideration to supplement this support with an additional $60,000 over three years.",
+          "website": "",
+          "year": "2025-2026",
+          "focus": "Civic news and information reporting",
+          "serviceArea": "",
+          "area": "",
+          "cancelled": false,
+          "bipocLed": false,
+          "grantType": "New Grant",
+          "category": "Civic news and information reporting",
+          "lat": null,
+          "lng": null,
+          "city": ""
+        }
+      ]
+    },
+    {
       "name": "Ridge View Echo",
       "total": 405000,
       "grantCount": 2,
@@ -818,8 +877,8 @@
     },
     {
       "name": "Black in Jersey",
-      "total": 380000,
-      "grantCount": 2,
+      "total": 390000,
+      "grantCount": 3,
       "years": [
         "2022",
         "2023",
@@ -828,6 +887,7 @@
         "2025-2026"
       ],
       "focusAreas": [
+        "Blue Engine Tech & Sustainability Accelerator Grant",
         "Civic news and information reporting",
         "Journalism pipeline"
       ],
@@ -859,6 +919,25 @@
           "city": "Trenton",
           "legislativeDistrict": "15",
           "project": "Black news and information hub"
+        },
+        {
+          "grantee": "Black in Jersey",
+          "amount": 10000,
+          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
+          "website": "www.blackinjersey.com",
+          "year": "2024",
+          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "serviceArea": "Statewide",
+          "area": "Central",
+          "cancelled": false,
+          "bipocLed": null,
+          "grantType": "Historical",
+          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
+          "lat": 40.2171,
+          "lng": -74.7429,
+          "city": "Trenton",
+          "legislativeDistrict": "15",
+          "project": "Blue Engine Technology & Sustainability Accelerator cohort"
         },
         {
           "grantee": "Black in Jersey",
@@ -1599,47 +1678,6 @@
       ]
     },
     {
-      "name": "NJ Monitor",
-      "total": 210000,
-      "grantCount": 1,
-      "years": [
-        "2025"
-      ],
-      "focusAreas": [
-        "Civic news and information reporting"
-      ],
-      "areas": [
-        "Central"
-      ],
-      "serviceArea": "Statewide",
-      "city": "Trenton",
-      "bipocLed": null,
-      "website": "https://newjerseymonitor.com/",
-      "lat": 40.2206,
-      "lng": -74.7597,
-      "grants": [
-        {
-          "grantee": "NJ Monitor",
-          "amount": 210000,
-          "purpose": "to support a dedicated health care reporter at the New Jersey Monitor, strengthening coverage of health policy, public health, and the health care system across the state. This funding supports up to three years and is funded in part by the Robert Wood Johnson Foundation.",
-          "website": "https://newjerseymonitor.com/",
-          "year": "2025",
-          "focus": "Civic news and information reporting",
-          "serviceArea": "Statewide",
-          "area": "Central",
-          "cancelled": false,
-          "bipocLed": null,
-          "grantType": "Historical",
-          "category": "Civic news and information reporting",
-          "lat": 40.2206,
-          "lng": -74.7597,
-          "city": "Trenton",
-          "legislativeDistrict": "15",
-          "project": "Health care reporter"
-        }
-      ]
-    },
-    {
       "name": "Newark News and Story Collaborative",
       "total": 210000,
       "grantCount": 1,
@@ -1679,43 +1717,6 @@
           "city": "Newark",
           "legislativeDistrict": "29",
           "project": "Newark news lab"
-        }
-      ]
-    },
-    {
-      "name": "New Jersey Monitor",
-      "total": 210000,
-      "grantCount": 1,
-      "years": [
-        "2025-2026"
-      ],
-      "focusAreas": [
-        "Civic news and information reporting"
-      ],
-      "areas": [],
-      "serviceArea": "",
-      "city": "",
-      "bipocLed": false,
-      "website": "",
-      "lat": null,
-      "lng": null,
-      "grants": [
-        {
-          "grantee": "New Jersey Monitor",
-          "amount": 210000,
-          "purpose": "Prior to the September board meeting, we received an emergency request to support the New Jersey Monitor in its effort to hire healthcare reporter Lilo Stainton, who was laid off from NJ Spotlight following federal funding losses. We requested your support, which the Grants Committee approved for presentation to the full board.\nAfter further discussion with New Jersey Monitor editor Terrence McDonald, it was determined that funds for the planned hire would not be needed until January 2026. To allow time to finalize details with the Robert Wood Johnson Foundation (RWJF) contribution of $150K, we agreed to wait until the December grantmaking cycle to award this project - provided all conditions are met.\nSince then, RWJF has awarded the Consortium $150,000 over two years to support this position. The Consortium will grant these funds to the New Jersey Monitor over a three-year period. We are now requesting the board\u2019s consideration to supplement this support with an additional $60,000 over three years.",
-          "website": "",
-          "year": "2025-2026",
-          "focus": "Civic news and information reporting",
-          "serviceArea": "",
-          "area": "",
-          "cancelled": false,
-          "bipocLed": false,
-          "grantType": "New Grant",
-          "category": "Civic news and information reporting",
-          "lat": null,
-          "lng": null,
-          "city": ""
         }
       ]
     },
@@ -4037,47 +4038,6 @@
           "lng": -74.1321,
           "city": "Fair Lawn",
           "legislativeDistrict": "38",
-          "project": "Blue Engine Technology & Sustainability Accelerator cohort"
-        }
-      ]
-    },
-    {
-      "name": "Black In Jersey",
-      "total": 10000,
-      "grantCount": 1,
-      "years": [
-        "2024"
-      ],
-      "focusAreas": [
-        "Blue Engine Tech & Sustainability Accelerator Grant"
-      ],
-      "areas": [
-        "Central"
-      ],
-      "serviceArea": "Statewide",
-      "city": "Trenton",
-      "bipocLed": null,
-      "website": "www.blackinjersey.com",
-      "lat": 40.2171,
-      "lng": -74.7429,
-      "grants": [
-        {
-          "grantee": "Black In Jersey",
-          "amount": 10000,
-          "purpose": "Blue Engine Technology & Sustainability Accelerator cohort members all received a $10,000 technology grant used to implement new technological solutions for the respective organizations. This includes, but is not limited to, software and hardware updates including website development, subscriptions for cloud-based applications, computer equipment, etc.",
-          "website": "www.blackinjersey.com",
-          "year": "2024",
-          "focus": "Blue Engine Tech & Sustainability Accelerator Grant",
-          "serviceArea": "Statewide",
-          "area": "Central",
-          "cancelled": false,
-          "bipocLed": null,
-          "grantType": "Historical",
-          "category": "Blue Engine Tech & Sustainability Accelerator Grant",
-          "lat": 40.2171,
-          "lng": -74.7429,
-          "city": "Trenton",
-          "legislativeDistrict": "15",
           "project": "Blue Engine Technology & Sustainability Accelerator cohort"
         }
       ]
