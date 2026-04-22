@@ -70,13 +70,20 @@ PORT=$(printf '%s' "$CREDS_RAW" | awk -F': ' '/^port:/{print $2}')
 USER=$(printf '%s' "$CREDS_RAW" | awk -F': ' '/^username:/{print $2}')
 PASS=$(printf '%s' "$CREDS_RAW" | awk -F': ' '/^password:/{print $2}')
 
+# Pass the password to lftp through the environment (--env-password) instead
+# of the -u USER,PASS argv form so the secret isn't visible to other users
+# via `ps`. Unsetting after each call is belt-and-suspenders.
+export LFTP_PASSWORD="$PASS"
+LFTP="lftp --env-password -u $USER"
+
 # 4. Download the CURRENT remote grantees.json as a backup before overwriting
 BACKUP_REMOTE="$BACKUP_DIR/grantees.json.remote-$TS"
 log "Backing up remote grantees.json to $BACKUP_REMOTE"
-lftp -u "$USER,$PASS" -e "set sftp:auto-confirm yes; get public_html/map/data/grantees.json -o $BACKUP_REMOTE; bye" \
+$LFTP -e "set sftp:auto-confirm yes; get public_html/map/data/grantees.json -o $BACKUP_REMOTE; bye" \
     "sftp://$HOST:$PORT" >/dev/null 2>&1
 if [ ! -s "$BACKUP_REMOTE" ]; then
     log "FAIL: could not download current remote grantees.json for backup"
+    unset LFTP_PASSWORD
     exit 1
 fi
 log "Remote backup ok: $(stat -c %s "$BACKUP_REMOTE") bytes"
@@ -84,9 +91,10 @@ log "Remote backup ok: $(stat -c %s "$BACKUP_REMOTE") bytes"
 # 5. Upload the new file
 log "Uploading new grantees.json ($(stat -c %s "$NEW_JSON") bytes)"
 cd "$REPO/data"
-lftp -u "$USER,$PASS" -e "set sftp:auto-confirm yes; lcd $REPO/data; cd public_html/map/data/; put grantees.json; bye" \
+$LFTP -e "set sftp:auto-confirm yes; lcd $REPO/data; cd public_html/map/data/; put grantees.json; bye" \
     "sftp://$HOST:$PORT" >/tmp/njcic-upload.log 2>&1 \
-    || { log "FAIL: upload"; cat /tmp/njcic-upload.log; exit 1; }
+    || { log "FAIL: upload"; cat /tmp/njcic-upload.log; unset LFTP_PASSWORD; exit 1; }
+unset LFTP_PASSWORD
 log "Upload complete"
 
 # 6. Verify remote file size + mtime via HEAD

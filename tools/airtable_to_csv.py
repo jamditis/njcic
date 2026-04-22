@@ -15,7 +15,6 @@ Existing file is backed up to .bak-YYYYMMDD-HHMMSS before overwrite.
 import argparse
 import csv
 import json
-import os
 import shutil
 import subprocess
 import sys

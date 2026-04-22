@@ -51,10 +51,10 @@ if ! NJCIC_GRANTEES_MAP_DATA="$DATA_DIR" python3 "$REPO/explorer/build_data.py";
 fi
 
 # 3. Verification gate
-python3 - <<'PY' || fail "verification failed"
+python3 - "$BUILD_OUT" "$LIVE_OUT" <<'PY' || fail "verification failed"
 import json, sys
-NEW = json.load(open('/home/jamditis/projects/njcic/explorer/data.json'))
-LIVE = json.load(open('/srv/pages/njcic/explorer/data.json'))
+NEW = json.load(open(sys.argv[1]))
+LIVE = json.load(open(sys.argv[2]))
 errors = []
 
 s = NEW['summary']

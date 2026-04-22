@@ -2,6 +2,11 @@
 Description=Refresh NJCIC grantee explorer data from Airtable
 After=network-online.target
 Wants=network-online.target
+# Don't swamp the journal if something goes wrong and it fails repeatedly.
+# (These directives only take effect in [Unit] — systemd silently ignores
+# them when placed under [Service].)
+StartLimitIntervalSec=600
+StartLimitBurst=3
 
 [Service]
 Type=oneshot
@@ -13,6 +18,3 @@ ExecStart=/bin/bash /home/jamditis/projects/njcic/tools/refresh_explorer.sh
 # Allow sudo cp (already passwordless on this host per CLAUDE.md)
 StandardOutput=journal
 StandardError=journal
-# Don't swamp the journal if something goes wrong and it fails repeatedly
-StartLimitIntervalSec=600
-StartLimitBurst=3
