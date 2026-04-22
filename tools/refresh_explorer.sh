@@ -79,6 +79,15 @@ if not NEW['facets'].get('areas'):
 if not NEW['facets'].get('focusAreas'):
     errors.append("focusAreas facet is empty")
 
+# New schema fields (Phase 4): legislativeDistricts + projects aggregates
+# exist on every grantee, and the LD facet is populated.
+if not NEW['facets'].get('legislativeDistricts'):
+    errors.append("legislativeDistricts facet is empty")
+missing_new = [g['name'] for g in NEW['grantees']
+               if 'projects' not in g or 'legislativeDistricts' not in g]
+if missing_new:
+    errors.append(f"{len(missing_new)} grantees missing projects/legislativeDistricts keys; first: {missing_new[:3]}")
+
 if errors:
     for e in errors:
         print(f"VERIFY ERROR: {e}")
