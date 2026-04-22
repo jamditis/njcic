@@ -75,12 +75,25 @@ def area_from_county(county):
         if k in c: return 'South'
     return ''
 
+def _maybe_float(s):
+    s = (s or '').strip()
+    if not s: return None
+    try: return float(s)
+    except ValueError: return None
+
 # Build the canonical per-grant list
 grants = []
 for r in grid_rows:
     name = r.get('Grantee', '').strip()
     if not name: continue
     geo = geo_by_name.get(name.lower(), {})
+    # Prefer lat/lng/city/area from the CSV (Airtable is source of truth).
+    # Fall back to the legacy grantees.json lookup for rows that predate the
+    # extended export or for CSVs produced by Airtable's built-in UI export.
+    csv_lat = _maybe_float(r.get('Lat'))
+    csv_lng = _maybe_float(r.get('Long'))
+    csv_city = (r.get('City') or '').strip()
+    csv_area = (r.get('Area') or '').strip()
     grants.append({
         'grantee': name,
         'amount': norm_amount(r.get('Total awarded', '')),
@@ -89,14 +102,21 @@ for r in grid_rows:
         'year': r.get('Year(s) granted', ''),
         'focus': norm_focus(r.get('Focus area', '')),
         'serviceArea': r.get('Service area', ''),
-        'area': area_from_county(r.get('Service area', '') or geo.get('county', '')),
+        'area': (
+            # Prefer the explicit location-based Area column from Airtable
+            # (values like 'North Jersey' / 'Central Jersey' / 'South Jersey').
+            csv_area.replace(' Jersey', '') if csv_area
+            else area_from_county(r.get('Service area', '') or geo.get('county', ''))
+        ),
         'cancelled': bool(r.get('Returned/Cancelled grant?', '').strip()),
         'bipocLed': None,
         'grantType': 'Historical',
         'category': norm_focus(r.get('Focus area', '')),
-        'lat': geo.get('lat'),
-        'lng': geo.get('lng'),
-        'city': geo.get('city', ''),
+        'lat': csv_lat if csv_lat is not None else geo.get('lat'),
+        'lng': csv_lng if csv_lng is not None else geo.get('lng'),
+        'city': csv_city or geo.get('city', ''),
+        'legislativeDistrict': (r.get('Legislative district') or '').strip(),
+        'project': (r.get('Project') or '').strip(),
     })
 
 for r in new_rows:
@@ -126,6 +146,7 @@ for r in new_rows:
 # Aggregate by grantee
 by_grantee = defaultdict(lambda: {'grants': [], 'total': 0, 'years': set(),
                                    'focusAreas': set(), 'areas': set(),
+                                   'projects': set(), 'legislativeDistricts': set(),
                                    'bipocLed': None, 'website': '', 'city': '',
                                    'lat': None, 'lng': None, 'serviceArea': ''})
 for g in grants:
@@ -138,12 +159,22 @@ for g in grants:
         rec['years'].add(y)
     if g['focus']: rec['focusAreas'].add(g['focus'])
     if g['area']: rec['areas'].add(g['area'])
+    if g.get('project'): rec['projects'].add(g['project'])
+    if g.get('legislativeDistrict'): rec['legislativeDistricts'].add(g['legislativeDistrict'])
     if g['website'] and not rec['website']: rec['website'] = g['website']
     if g['city'] and not rec['city']: rec['city'] = g['city']
     if g['lat'] and not rec['lat']: rec['lat'] = g['lat']; rec['lng'] = g['lng']
     if g['serviceArea'] and not rec['serviceArea']: rec['serviceArea'] = g['serviceArea']
     if g['bipocLed'] is True: rec['bipocLed'] = True
     elif g['bipocLed'] is False and rec['bipocLed'] is None: rec['bipocLed'] = False
+
+def _ld_sort_key(s):
+    # Legislative districts are numeric strings ("1"–"40"); sort numerically
+    # where possible and fall back to string comparison for anything unexpected.
+    try:
+        return (0, int(s))
+    except (TypeError, ValueError):
+        return (1, str(s))
 
 grantees = []
 for name, rec in by_grantee.items():
@@ -154,6 +185,8 @@ for name, rec in by_grantee.items():
         'years': sorted(rec['years']),
         'focusAreas': sorted(rec['focusAreas']),
         'areas': sorted(rec['areas']),
+        'projects': sorted(rec['projects']),
+        'legislativeDistricts': sorted(rec['legislativeDistricts'], key=_ld_sort_key),
         'serviceArea': rec['serviceArea'],
         'city': rec['city'],
         'bipocLed': rec['bipocLed'],
@@ -168,6 +201,8 @@ grantees.sort(key=lambda x: x['total'], reverse=True)
 all_areas = sorted({a for g in grantees for a in g['areas'] if a})
 all_focus = sorted({f for g in grantees for f in g['focusAreas'] if f})
 all_years = sorted({y for g in grantees for y in g['years'] if y})
+all_lds   = sorted({d for g in grantees for d in g['legislativeDistricts'] if d},
+                   key=_ld_sort_key)
 
 total_all = sum(g['total'] for g in grantees)
 active_count = sum(1 for g in grantees if g['total'] > 0)
@@ -184,7 +219,12 @@ payload = {
         'totalAwarded': total_all,
         'activeGrantees': active_count,
     },
-    'facets': {'areas': all_areas, 'focusAreas': all_focus, 'years': all_years},
+    'facets': {
+        'areas': all_areas,
+        'focusAreas': all_focus,
+        'years': all_years,
+        'legislativeDistricts': all_lds,
+    },
     'grantees': grantees,
 }
 

@@ -1,0 +1,15 @@
+[Unit]
+Description=Hourly refresh of the NJCIC explorer data (pulls from Airtable)
+
+[Timer]
+# Every hour at :07 past the hour. Slight offset so we're not on the round
+# hour alongside every other cron on this box.
+OnCalendar=*:07:00
+# If the machine was off when a scheduled run should have fired, run it now.
+Persistent=true
+# Randomize by up to 60 s so identical timers across hosts don't synchronize.
+RandomizedDelaySec=60
+Unit=njcic-explorer-refresh.service
+
+[Install]
+WantedBy=timers.target
