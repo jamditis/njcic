@@ -12,9 +12,11 @@ StartLimitBurst=3
 Type=oneshot
 User=jamditis
 Group=jamditis
-# Refuse to run if a previous invocation is still going
-ExecStartPre=/bin/bash -c 'pgrep -fx "/bin/bash /home/jamditis/projects/njcic/tools/refresh_explorer.sh" && exit 1 || exit 0'
-ExecStart=/bin/bash /home/jamditis/projects/njcic/tools/refresh_explorer.sh
+# Refuse to run if a previous invocation (timer-driven OR hand-run with
+# any args) is still going. flock(1) catches all callers because they
+# all contend for the same lockfile, unlike pgrep -fx which only matches
+# the exact argv we expect from the timer.
+ExecStart=/usr/bin/flock -n /tmp/njcic-explorer-refresh.lock /bin/bash /home/jamditis/projects/njcic/tools/refresh_explorer.sh
 # Allow sudo cp (already passwordless on this host per CLAUDE.md)
 StandardOutput=journal
 StandardError=journal
