@@ -1,0 +1,14 @@
+[Unit]
+Description=Weekly run of the NJCIC grantees-map sync
+
+[Timer]
+# Mondays at 06:05 ET — staggered 5 min after the explorer refresh so the
+# two Airtable pulls don't fire simultaneously. Same rate-limit / DST
+# rationale as njcic-explorer-refresh.timer.
+OnCalendar=Mon *-*-* 06:05:00 America/New_York
+Persistent=true
+RandomizedDelaySec=60
+Unit=njcic-grantees-map-sync.service
+
+[Install]
+WantedBy=timers.target

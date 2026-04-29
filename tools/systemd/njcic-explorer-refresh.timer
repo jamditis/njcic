@@ -1,10 +1,13 @@
 [Unit]
-Description=Hourly refresh of the NJCIC explorer data (pulls from Airtable)
+Description=Weekly refresh of the NJCIC explorer data (pulls from Airtable)
 
 [Timer]
-# Every hour at :07 past the hour. Slight offset so we're not on the round
-# hour alongside every other cron on this box.
-OnCalendar=*:07:00
+# Mondays at 06:00 ET. Aligned with the existing weekly scraper workflows
+# (.github/workflows/update-dashboard.yml runs Mon 12:00 UTC = 07:00 ET;
+# update-internal-metrics.yml runs Mon 11:00 UTC = 06:00 ET) so the
+# explorer refresh lands in the same morning window. Timezone is pinned
+# explicitly so DST shifts don't drift the run time.
+OnCalendar=Mon *-*-* 06:00:00 America/New_York
 # If the machine was off when a scheduled run should have fired, run it now.
 Persistent=true
 # Randomize by up to 60 s so identical timers across hosts don't synchronize.

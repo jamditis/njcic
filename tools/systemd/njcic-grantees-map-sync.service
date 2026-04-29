@@ -1,0 +1,19 @@
+[Unit]
+Description=Refresh NJCIC grantees-map data from Airtable and SFTP-upload to njcivicinfo.org
+After=network-online.target
+Wants=network-online.target
+# Don't swamp the journal if something goes wrong and it fails repeatedly.
+# (These directives only take effect in [Unit] — systemd silently ignores
+# them when placed under [Service].)
+StartLimitIntervalSec=600
+StartLimitBurst=3
+
+[Service]
+Type=oneshot
+User=jamditis
+Group=jamditis
+# Refuse to run if a previous invocation is still going
+ExecStartPre=/bin/bash -c 'pgrep -fx "/bin/bash /home/jamditis/projects/njcic/tools/sync_grantees_map.sh --force" && exit 1 || exit 0'
+ExecStart=/bin/bash /home/jamditis/projects/njcic/tools/sync_grantees_map.sh --force
+StandardOutput=journal
+StandardError=journal
