@@ -1,5 +1,5 @@
 [Unit]
-Description=Refresh NJCIC grantee explorer data from Airtable
+Description=Refresh NJCIC grantees-map data from Airtable and SFTP-upload to njcivicinfo.org
 After=network-online.target
 Wants=network-online.target
 # Don't swamp the journal if something goes wrong and it fails repeatedly.
@@ -16,7 +16,6 @@ Group=jamditis
 # any args) is still going. flock(1) catches all callers because they
 # all contend for the same lockfile, unlike pgrep -fx which only matches
 # the exact argv we expect from the timer.
-ExecStart=/usr/bin/flock -n /tmp/njcic-explorer-refresh.lock /bin/bash /home/jamditis/projects/njcic/tools/refresh_explorer.sh
-# Allow sudo cp (already passwordless on this host per CLAUDE.md)
+ExecStart=/usr/bin/flock -n /tmp/njcic-grantees-map-sync.lock /bin/bash /home/jamditis/projects/njcic/tools/sync_grantees_map.sh --force
 StandardOutput=journal
 StandardError=journal

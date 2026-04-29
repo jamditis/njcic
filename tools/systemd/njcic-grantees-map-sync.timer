@@ -1,0 +1,21 @@
+[Unit]
+Description=Weekly run of the NJCIC grantees-map sync
+
+[Timer]
+# Mondays at 06:05 ET — staggered 5 min after the explorer refresh so the
+# two Airtable pulls don't fire simultaneously. Same DST rationale as
+# njcic-explorer-refresh.timer (timezone pinned to keep the run time
+# steady across DST shifts).
+OnCalendar=Mon *-*-* 06:05:00 America/New_York
+# Persistent=false — if the Pi is off Monday morning, skip that week's
+# sync rather than catching up on next boot. Catch-up would defeat the
+# 5-min stagger with the explorer refresh (whose own timer DOES use
+# Persistent=true), since both would fire simultaneously post-boot. A
+# week of staleness on the map data is preferable to a colliding pair
+# of Airtable pulls during a recovery window.
+Persistent=false
+RandomizedDelaySec=60
+Unit=njcic-grantees-map-sync.service
+
+[Install]
+WantedBy=timers.target
