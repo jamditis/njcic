@@ -92,7 +92,7 @@ header.masthead {
 
 .controls {
   max-width: 1280px; margin: 1.6rem auto 0; padding: 0 2rem;
-  display: grid; grid-template-columns: minmax(260px, 1.6fr) repeat(4, 1fr) auto;
+  display: grid; grid-template-columns: minmax(220px, 1.4fr) repeat(5, 1fr) auto;
   gap: 0.6rem; align-items: end;
 }
 .field label {
@@ -147,6 +147,9 @@ header.masthead {
 .card .tag { font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.15rem 0.45rem; border: 1px solid var(--rule-2); border-radius: 2px; color: var(--ink-2); }
 .card .tag.bipoc { border-color: var(--bipoc); color: var(--bipoc); }
 .card .tag.area { border-color: var(--accent); color: var(--accent); }
+.card .tag.ld { border-color: var(--ink-4); color: var(--ink-3); }
+.card .projects { font-size: 0.85rem; color: var(--ink-2); margin: 0.2rem 0 0.6rem; line-height: 1.45; }
+.card .projects .more { color: var(--ink-3); font-size: 0.78rem; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em; }
 
 .modal-backdrop { position: fixed; inset: 0; background: rgba(20, 18, 15, 0.55); backdrop-filter: blur(3px); z-index: 100; display: none; align-items: center; justify-content: center; padding: 2rem; }
 .modal-backdrop.open { display: flex; }
@@ -165,6 +168,7 @@ header.masthead {
 .grant-item .grant-amt { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.1rem; color: var(--money); }
 .grant-item .grant-year { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--ink-3); letter-spacing: 0.06em; }
 .grant-item .grant-focus { font-size: 0.82rem; color: var(--accent); font-weight: 500; margin-bottom: 0.3rem; }
+.grant-item .grant-project { font-size: 0.85rem; color: var(--ink-2); font-weight: 500; margin-bottom: 0.25rem; }
 .grant-item .grant-purpose { font-size: 0.92rem; color: var(--ink-2); line-height: 1.55; }
 .grant-item.cancelled .grant-amt { text-decoration: line-through; color: var(--ink-4); }
 .grant-item .cancelled-tag { font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); padding: 0.1rem 0.4rem; border-radius: 2px; }
@@ -250,6 +254,10 @@ footer.page-foot .note { font-family: 'IBM Plex Mono', monospace; font-size: 0.7
   <div class="field">
     <label for="year">Year</label>
     <select id="year"><option value="">All years</option></select>
+  </div>
+  <div class="field">
+    <label for="ld">Legislative district</label>
+    <select id="ld"><option value="">All districts</option></select>
   </div>
   <div class="field">
     <label for="bipoc">BIPOC-led</label>
@@ -358,15 +366,17 @@ function populateFacets() {
   DATA.facets.focusAreas.forEach(f => focusSel.insertAdjacentHTML('beforeend', `<option value="${esc(f)}">${esc(f)}</option>`));
   const yearSel = document.getElementById('year');
   DATA.facets.years.forEach(y => yearSel.insertAdjacentHTML('beforeend', `<option value="${esc(y)}">${esc(y)}</option>`));
+  const ldSel = document.getElementById('ld');
+  (DATA.facets.legislativeDistricts || []).forEach(d => ldSel.insertAdjacentHTML('beforeend', `<option value="${esc(d)}">LD ${esc(d)}</option>`));
 }
 
 function wireEvents() {
-  ['q','area','focus','year','bipoc','sort'].forEach(id => {
+  ['q','area','focus','year','ld','bipoc','sort'].forEach(id => {
     document.getElementById(id).addEventListener('input', applyFilters);
     document.getElementById(id).addEventListener('change', applyFilters);
   });
   document.getElementById('reset').addEventListener('click', () => {
-    ['q','area','focus','year','bipoc'].forEach(id => document.getElementById(id).value = '');
+    ['q','area','focus','year','ld','bipoc'].forEach(id => document.getElementById(id).value = '');
     document.getElementById('sort').value = 'total-desc';
     applyFilters();
   });
@@ -380,17 +390,19 @@ function applyFilters() {
   const area = document.getElementById('area').value;
   const focus = document.getElementById('focus').value;
   const year = document.getElementById('year').value;
+  const ld = document.getElementById('ld').value;
   const bipoc = document.getElementById('bipoc').value;
   const sort = document.getElementById('sort').value;
 
   filtered = DATA.grantees.filter(g => {
     if (q) {
-      const hay = (g.name + ' ' + (g.serviceArea || '') + ' ' + (g.city || '') + ' ' + g.focusAreas.join(' ') + ' ' + g.grants.map(x => x.purpose || '').join(' ')).toLowerCase();
+      const hay = (g.name + ' ' + (g.serviceArea || '') + ' ' + (g.city || '') + ' ' + g.focusAreas.join(' ') + ' ' + (g.projects || []).join(' ') + ' ' + g.grants.map(x => x.purpose || '').join(' ')).toLowerCase();
       if (!hay.includes(q)) return false;
     }
     if (area && !g.areas.includes(area)) return false;
     if (focus && !g.focusAreas.includes(focus)) return false;
     if (year && !g.years.includes(year)) return false;
+    if (ld && !(g.legislativeDistricts || []).includes(ld)) return false;
     if (bipoc === 'yes' && g.bipocLed !== true) return false;
     if (bipoc === 'no' && g.bipocLed !== false) return false;
     return true;
@@ -422,7 +434,13 @@ function renderGrid() {
   grid.innerHTML = filtered.map((g, i) => {
     const areaTag = g.areas.length ? `<span class="tag area">${esc(g.areas.join(' / '))}</span>` : '';
     const bipocTag = g.bipocLed === true ? `<span class="tag bipoc">BIPOC-led</span>` : '';
+    const lds = g.legislativeDistricts || [];
+    const ldTag = lds.length ? `<span class="tag ld">LD ${esc(lds.join(', '))}</span>` : '';
     const loc = g.serviceArea || g.city || '';
+    const projects = g.projects || [];
+    const projectsLine = projects.length
+      ? `<div class="projects">${esc(projects[0])}${projects.length > 1 ? ` <span class="more">+${projects.length - 1} more</span>` : ''}</div>`
+      : '';
     return `
       <article class="card" data-idx="${i}" role="button" tabindex="0" aria-label="${esc(g.name)}, view grant details">
         <div class="top-rule"></div>
@@ -432,8 +450,9 @@ function renderGrid() {
           <div class="amt">${fmtMoney(g.total)}</div>
           <div class="count-pill">${g.grantCount} ${g.grantCount === 1 ? 'grant' : 'grants'}</div>
         </div>
+        ${projectsLine}
         <div class="meta">
-          ${areaTag}${bipocTag}
+          ${areaTag}${bipocTag}${ldTag}
           <span class="tag">${esc(g.years.join(', '))}</span>
         </div>
       </article>`;
@@ -459,6 +478,7 @@ function openModal(idx) {
         <span class="grant-year">${esc(x.year || '-')} ${x.cancelled ? '<span class="cancelled-tag">returned/cancelled</span>' : ''}</span>
       </div>
       <div class="grant-focus">${esc(x.focus || x.category || '')}</div>
+      ${x.project ? `<div class="grant-project">${esc(x.project)}</div>` : ''}
       <div class="grant-purpose">${esc(x.purpose || '-')}</div>
     </div>
   `).join('');
@@ -474,6 +494,7 @@ function openModal(idx) {
       <div><dt>Service area</dt><dd>${esc(g.serviceArea || '-')}</dd></div>
       <div><dt>City</dt><dd>${esc(g.city || '-')}</dd></div>
       <div><dt>Focus areas</dt><dd>${esc(g.focusAreas.join(' / ') || '-')}</dd></div>
+      <div><dt>Legislative district</dt><dd>${esc((g.legislativeDistricts || []).map(d => 'LD ' + d).join(', ') || '-')}</dd></div>
       <div><dt>BIPOC status</dt><dd>${esc(bipocLine)}</dd></div>
       <div><dt>Website</dt><dd>${(() => {
         const href = safeURL(g.website);
